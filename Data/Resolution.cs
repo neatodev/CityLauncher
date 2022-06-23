@@ -10,15 +10,12 @@ namespace CityLauncher
 
 
         // string list to store resolution values
-        public static List<string>? ResolutionList
-        {
-            get { return ResolutionList; }
-            private set { ResolutionList = value; }
-        }
+        public static List<string>? ResolutionList = new List<string>();
 
         public Resolution()
         {
             Nlog = LogManager.GetCurrentClassLogger();
+            GetResolutions();
         }
 
         [DllImport("user32.dll")]
@@ -29,7 +26,7 @@ namespace CityLauncher
         ///     Getter for user resolutions.
         ///     Called by Program upon application start.
         /// </summary>
-        public void getResolutions()
+        private void GetResolutions()
         {
             List<string> TempList = new List<string>();
             DEVMODE vDevMode = new DEVMODE();

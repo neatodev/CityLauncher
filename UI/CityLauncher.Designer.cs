@@ -30,6 +30,10 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DisplayTab = new System.Windows.Forms.TabPage();
+            this.Dx11Box = new System.Windows.Forms.ComboBox();
+            this.FrameCapTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.DetailModeBox = new System.Windows.Forms.ComboBox();
+            this.FullscreenBox = new System.Windows.Forms.ComboBox();
             this.ResolutionBox = new System.Windows.Forms.ComboBox();
             this.Dx11FeatureLabel = new System.Windows.Forms.Label();
             this.LanguageLabel = new System.Windows.Forms.Label();
@@ -38,11 +42,14 @@
             this.FrameCapLabel = new System.Windows.Forms.Label();
             this.ResolutionLabel = new System.Windows.Forms.Label();
             this.FullscreenLabel = new System.Windows.Forms.Label();
+            this.BasicDisplayGroupBox = new System.Windows.Forms.GroupBox();
+            this.VsyncBox = new System.Windows.Forms.ComboBox();
             this.ControlTab = new System.Windows.Forms.TabPage();
             this.AboutTab = new System.Windows.Forms.TabPage();
-            this.FullscreenBox = new System.Windows.Forms.ComboBox();
+            this.LanguageBox = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
+            this.BasicDisplayGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -61,15 +68,10 @@
             // 
             // DisplayTab
             // 
-            this.DisplayTab.Controls.Add(this.FullscreenBox);
+            this.DisplayTab.Controls.Add(this.Dx11Box);
             this.DisplayTab.Controls.Add(this.ResolutionBox);
             this.DisplayTab.Controls.Add(this.Dx11FeatureLabel);
-            this.DisplayTab.Controls.Add(this.LanguageLabel);
-            this.DisplayTab.Controls.Add(this.DetailModeLabel);
-            this.DisplayTab.Controls.Add(this.VsyncLabel);
-            this.DisplayTab.Controls.Add(this.FrameCapLabel);
-            this.DisplayTab.Controls.Add(this.ResolutionLabel);
-            this.DisplayTab.Controls.Add(this.FullscreenLabel);
+            this.DisplayTab.Controls.Add(this.BasicDisplayGroupBox);
             this.DisplayTab.Location = new System.Drawing.Point(4, 38);
             this.DisplayTab.Name = "DisplayTab";
             this.DisplayTab.Padding = new System.Windows.Forms.Padding(3);
@@ -78,11 +80,58 @@
             this.DisplayTab.Text = "Display";
             this.DisplayTab.UseVisualStyleBackColor = true;
             // 
+            // Dx11Box
+            // 
+            this.Dx11Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Dx11Box.FormattingEnabled = true;
+            this.Dx11Box.Items.AddRange(new object[] {
+            "True",
+            "False"});
+            this.Dx11Box.Location = new System.Drawing.Point(328, 149);
+            this.Dx11Box.Name = "Dx11Box";
+            this.Dx11Box.Size = new System.Drawing.Size(152, 34);
+            this.Dx11Box.TabIndex = 12;
+            // 
+            // FrameCapTextBox
+            // 
+            this.FrameCapTextBox.Location = new System.Drawing.Point(146, 105);
+            this.FrameCapTextBox.Mask = "000";
+            this.FrameCapTextBox.Name = "FrameCapTextBox";
+            this.FrameCapTextBox.PromptChar = ' ';
+            this.FrameCapTextBox.Size = new System.Drawing.Size(152, 33);
+            this.FrameCapTextBox.TabIndex = 11;
+            this.FrameCapTextBox.ValidatingType = typeof(int);
+            // 
+            // DetailModeBox
+            // 
+            this.DetailModeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DetailModeBox.FormattingEnabled = true;
+            this.DetailModeBox.Items.AddRange(new object[] {
+            "Low",
+            "Medium",
+            "High"});
+            this.DetailModeBox.Location = new System.Drawing.Point(456, 68);
+            this.DetailModeBox.Name = "DetailModeBox";
+            this.DetailModeBox.Size = new System.Drawing.Size(152, 34);
+            this.DetailModeBox.TabIndex = 10;
+            // 
+            // FullscreenBox
+            // 
+            this.FullscreenBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FullscreenBox.FormattingEnabled = true;
+            this.FullscreenBox.Items.AddRange(new object[] {
+            "True",
+            "False"});
+            this.FullscreenBox.Location = new System.Drawing.Point(456, 30);
+            this.FullscreenBox.Name = "FullscreenBox";
+            this.FullscreenBox.Size = new System.Drawing.Size(152, 34);
+            this.FullscreenBox.TabIndex = 8;
+            // 
             // ResolutionBox
             // 
             this.ResolutionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ResolutionBox.FormattingEnabled = true;
-            this.ResolutionBox.Location = new System.Drawing.Point(149, 15);
+            this.ResolutionBox.Location = new System.Drawing.Point(149, 33);
             this.ResolutionBox.Name = "ResolutionBox";
             this.ResolutionBox.Size = new System.Drawing.Size(152, 34);
             this.ResolutionBox.TabIndex = 7;
@@ -91,7 +140,7 @@
             // 
             this.Dx11FeatureLabel.AutoSize = true;
             this.Dx11FeatureLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Dx11FeatureLabel.Location = new System.Drawing.Point(127, 134);
+            this.Dx11FeatureLabel.Location = new System.Drawing.Point(140, 154);
             this.Dx11FeatureLabel.Name = "Dx11FeatureLabel";
             this.Dx11FeatureLabel.Size = new System.Drawing.Size(161, 23);
             this.Dx11FeatureLabel.TabIndex = 6;
@@ -101,7 +150,7 @@
             // 
             this.LanguageLabel.AutoSize = true;
             this.LanguageLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LanguageLabel.Location = new System.Drawing.Point(345, 88);
+            this.LanguageLabel.Location = new System.Drawing.Point(353, 110);
             this.LanguageLabel.Name = "LanguageLabel";
             this.LanguageLabel.Size = new System.Drawing.Size(83, 23);
             this.LanguageLabel.TabIndex = 5;
@@ -111,7 +160,7 @@
             // 
             this.DetailModeLabel.AutoSize = true;
             this.DetailModeLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DetailModeLabel.Location = new System.Drawing.Point(328, 53);
+            this.DetailModeLabel.Location = new System.Drawing.Point(333, 73);
             this.DetailModeLabel.Name = "DetailModeLabel";
             this.DetailModeLabel.Size = new System.Drawing.Size(103, 23);
             this.DetailModeLabel.TabIndex = 4;
@@ -121,7 +170,7 @@
             // 
             this.VsyncLabel.AutoSize = true;
             this.VsyncLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.VsyncLabel.Location = new System.Drawing.Point(25, 88);
+            this.VsyncLabel.Location = new System.Drawing.Point(21, 73);
             this.VsyncLabel.Name = "VsyncLabel";
             this.VsyncLabel.Size = new System.Drawing.Size(108, 23);
             this.VsyncLabel.TabIndex = 3;
@@ -131,7 +180,7 @@
             // 
             this.FrameCapLabel.AutoSize = true;
             this.FrameCapLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FrameCapLabel.Location = new System.Drawing.Point(12, 53);
+            this.FrameCapLabel.Location = new System.Drawing.Point(6, 110);
             this.FrameCapLabel.Name = "FrameCapLabel";
             this.FrameCapLabel.Size = new System.Drawing.Size(123, 23);
             this.FrameCapLabel.TabIndex = 2;
@@ -141,7 +190,7 @@
             // 
             this.ResolutionLabel.AutoSize = true;
             this.ResolutionLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResolutionLabel.Location = new System.Drawing.Point(38, 20);
+            this.ResolutionLabel.Location = new System.Drawing.Point(37, 35);
             this.ResolutionLabel.Name = "ResolutionLabel";
             this.ResolutionLabel.Size = new System.Drawing.Size(92, 23);
             this.ResolutionLabel.TabIndex = 1;
@@ -151,11 +200,44 @@
             // 
             this.FullscreenLabel.AutoSize = true;
             this.FullscreenLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FullscreenLabel.Location = new System.Drawing.Point(342, 20);
+            this.FullscreenLabel.Location = new System.Drawing.Point(348, 35);
             this.FullscreenLabel.Name = "FullscreenLabel";
             this.FullscreenLabel.Size = new System.Drawing.Size(88, 23);
             this.FullscreenLabel.TabIndex = 0;
             this.FullscreenLabel.Text = "Fullscreen";
+            // 
+            // BasicDisplayGroupBox
+            // 
+            this.BasicDisplayGroupBox.AutoSize = true;
+            this.BasicDisplayGroupBox.Controls.Add(this.LanguageBox);
+            this.BasicDisplayGroupBox.Controls.Add(this.FrameCapTextBox);
+            this.BasicDisplayGroupBox.Controls.Add(this.VsyncBox);
+            this.BasicDisplayGroupBox.Controls.Add(this.FullscreenBox);
+            this.BasicDisplayGroupBox.Controls.Add(this.DetailModeBox);
+            this.BasicDisplayGroupBox.Controls.Add(this.DetailModeLabel);
+            this.BasicDisplayGroupBox.Controls.Add(this.VsyncLabel);
+            this.BasicDisplayGroupBox.Controls.Add(this.FrameCapLabel);
+            this.BasicDisplayGroupBox.Controls.Add(this.ResolutionLabel);
+            this.BasicDisplayGroupBox.Controls.Add(this.LanguageLabel);
+            this.BasicDisplayGroupBox.Controls.Add(this.FullscreenLabel);
+            this.BasicDisplayGroupBox.Location = new System.Drawing.Point(3, 3);
+            this.BasicDisplayGroupBox.Name = "BasicDisplayGroupBox";
+            this.BasicDisplayGroupBox.Size = new System.Drawing.Size(640, 191);
+            this.BasicDisplayGroupBox.TabIndex = 13;
+            this.BasicDisplayGroupBox.TabStop = false;
+            this.BasicDisplayGroupBox.Text = "Basic";
+            // 
+            // VsyncBox
+            // 
+            this.VsyncBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.VsyncBox.FormattingEnabled = true;
+            this.VsyncBox.Items.AddRange(new object[] {
+            "True",
+            "False"});
+            this.VsyncBox.Location = new System.Drawing.Point(146, 68);
+            this.VsyncBox.Name = "VsyncBox";
+            this.VsyncBox.Size = new System.Drawing.Size(152, 34);
+            this.VsyncBox.TabIndex = 9;
             // 
             // ControlTab
             // 
@@ -176,17 +258,26 @@
             this.AboutTab.Text = "About";
             this.AboutTab.UseVisualStyleBackColor = true;
             // 
-            // FullscreenBox
+            // LanguageBox
             // 
-            this.FullscreenBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.FullscreenBox.FormattingEnabled = true;
-            this.FullscreenBox.Items.AddRange(new object[] {
-            "True",
-            "False"});
-            this.FullscreenBox.Location = new System.Drawing.Point(459, 15);
-            this.FullscreenBox.Name = "FullscreenBox";
-            this.FullscreenBox.Size = new System.Drawing.Size(152, 34);
-            this.FullscreenBox.TabIndex = 8;
+            this.LanguageBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.LanguageBox.FormattingEnabled = true;
+            this.LanguageBox.Items.AddRange(new object[] {
+            "English",
+            "Deutsch",
+            "Español (México)",
+            "Español (España)",
+            "Français",
+            "Italiano",
+            "やまと",
+            "한국인",
+            "Polskie",
+            "Português",
+            "Русский"});
+            this.LanguageBox.Location = new System.Drawing.Point(456, 105);
+            this.LanguageBox.Name = "LanguageBox";
+            this.LanguageBox.Size = new System.Drawing.Size(152, 34);
+            this.LanguageBox.TabIndex = 14;
             // 
             // CityLauncher
             // 
@@ -203,6 +294,8 @@
             this.tabControl1.ResumeLayout(false);
             this.DisplayTab.ResumeLayout(false);
             this.DisplayTab.PerformLayout();
+            this.BasicDisplayGroupBox.ResumeLayout(false);
+            this.BasicDisplayGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -220,7 +313,13 @@
         private Label FrameCapLabel;
         private Label LanguageLabel;
         private Label Dx11FeatureLabel;
-        private ComboBox ResolutionBox;
         public ComboBox FullscreenBox;
+        public ComboBox ResolutionBox;
+        public ComboBox VsyncBox;
+        public ComboBox DetailModeBox;
+        public MaskedTextBox FrameCapTextBox;
+        public ComboBox Dx11Box;
+        private GroupBox BasicDisplayGroupBox;
+        public ComboBox LanguageBox;
     }
 }
