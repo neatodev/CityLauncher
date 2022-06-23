@@ -31,10 +31,20 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DisplayTab = new System.Windows.Forms.TabPage();
             this.AdvancedDisplayGroupBox = new System.Windows.Forms.GroupBox();
+            this.PhysXLabel = new System.Windows.Forms.Label();
+            this.MVSSLabel = new System.Windows.Forms.Label();
+            this.LensFlareLabel = new System.Windows.Forms.Label();
+            this.DistortionLabel = new System.Windows.Forms.Label();
+            this.BloomLabel = new System.Windows.Forms.Label();
+            this.LightRayLabel = new System.Windows.Forms.Label();
+            this.MotionBlurLabel = new System.Windows.Forms.Label();
+            this.DOFLabel = new System.Windows.Forms.Label();
+            this.DynLightLabel = new System.Windows.Forms.Label();
+            this.DynShadowLabel = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.AmbientOcclusionBox = new System.Windows.Forms.MaskedTextBox();
+            this.AntiAliasingBox = new System.Windows.Forms.ComboBox();
+            this.AnisoBox = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.TessellationLabel = new System.Windows.Forms.Label();
             this.AmbientOcclusionLabel = new System.Windows.Forms.Label();
@@ -59,16 +69,6 @@
             this.FullscreenLabel = new System.Windows.Forms.Label();
             this.ControlTab = new System.Windows.Forms.TabPage();
             this.AboutTab = new System.Windows.Forms.TabPage();
-            this.MotionBlurLabel = new System.Windows.Forms.Label();
-            this.DOFLabel = new System.Windows.Forms.Label();
-            this.DynLightLabel = new System.Windows.Forms.Label();
-            this.DynShadowLabel = new System.Windows.Forms.Label();
-            this.LensFlareLabel = new System.Windows.Forms.Label();
-            this.DistortionLabel = new System.Windows.Forms.Label();
-            this.BloomLabel = new System.Windows.Forms.Label();
-            this.LightRayLabel = new System.Windows.Forms.Label();
-            this.MVSSLabel = new System.Windows.Forms.Label();
-            this.PhysXLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -83,6 +83,7 @@
             this.tabControl1.Controls.Add(this.ControlTab);
             this.tabControl1.Controls.Add(this.AboutTab);
             this.tabControl1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tabControl1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -118,9 +119,9 @@
             this.AdvancedDisplayGroupBox.Controls.Add(this.DynLightLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.DynShadowLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.comboBox1);
-            this.AdvancedDisplayGroupBox.Controls.Add(this.maskedTextBox1);
-            this.AdvancedDisplayGroupBox.Controls.Add(this.comboBox2);
-            this.AdvancedDisplayGroupBox.Controls.Add(this.comboBox3);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.AmbientOcclusionBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.AntiAliasingBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.AnisoBox);
             this.AdvancedDisplayGroupBox.Controls.Add(this.comboBox4);
             this.AdvancedDisplayGroupBox.Controls.Add(this.TessellationLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.AmbientOcclusionLabel);
@@ -134,6 +135,106 @@
             this.AdvancedDisplayGroupBox.TabIndex = 15;
             this.AdvancedDisplayGroupBox.TabStop = false;
             this.AdvancedDisplayGroupBox.Text = "Advanced";
+            // 
+            // PhysXLabel
+            // 
+            this.PhysXLabel.AutoSize = true;
+            this.PhysXLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PhysXLabel.Location = new System.Drawing.Point(307, 314);
+            this.PhysXLabel.Name = "PhysXLabel";
+            this.PhysXLabel.Size = new System.Drawing.Size(109, 23);
+            this.PhysXLabel.TabIndex = 24;
+            this.PhysXLabel.Text = "Nvidia PhysX";
+            // 
+            // MVSSLabel
+            // 
+            this.MVSSLabel.AutoSize = true;
+            this.MVSSLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MVSSLabel.Location = new System.Drawing.Point(31, 314);
+            this.MVSSLabel.Name = "MVSSLabel";
+            this.MVSSLabel.Size = new System.Drawing.Size(131, 23);
+            this.MVSSLabel.TabIndex = 23;
+            this.MVSSLabel.Text = "MVSS Coverage";
+            // 
+            // LensFlareLabel
+            // 
+            this.LensFlareLabel.AutoSize = true;
+            this.LensFlareLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LensFlareLabel.Location = new System.Drawing.Point(343, 229);
+            this.LensFlareLabel.Name = "LensFlareLabel";
+            this.LensFlareLabel.Size = new System.Drawing.Size(95, 23);
+            this.LensFlareLabel.TabIndex = 21;
+            this.LensFlareLabel.Text = "Lens Flares";
+            // 
+            // DistortionLabel
+            // 
+            this.DistortionLabel.AutoSize = true;
+            this.DistortionLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DistortionLabel.Location = new System.Drawing.Point(31, 229);
+            this.DistortionLabel.Name = "DistortionLabel";
+            this.DistortionLabel.Size = new System.Drawing.Size(88, 23);
+            this.DistortionLabel.TabIndex = 20;
+            this.DistortionLabel.Text = "Distortion";
+            // 
+            // BloomLabel
+            // 
+            this.BloomLabel.AutoSize = true;
+            this.BloomLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BloomLabel.Location = new System.Drawing.Point(16, 266);
+            this.BloomLabel.Name = "BloomLabel";
+            this.BloomLabel.Size = new System.Drawing.Size(59, 23);
+            this.BloomLabel.TabIndex = 19;
+            this.BloomLabel.Text = "Bloom";
+            // 
+            // LightRayLabel
+            // 
+            this.LightRayLabel.AutoSize = true;
+            this.LightRayLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LightRayLabel.Location = new System.Drawing.Point(363, 266);
+            this.LightRayLabel.Name = "LightRayLabel";
+            this.LightRayLabel.Size = new System.Drawing.Size(87, 23);
+            this.LightRayLabel.TabIndex = 22;
+            this.LightRayLabel.Text = "Light Rays";
+            // 
+            // MotionBlurLabel
+            // 
+            this.MotionBlurLabel.AutoSize = true;
+            this.MotionBlurLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MotionBlurLabel.Location = new System.Drawing.Point(328, 150);
+            this.MotionBlurLabel.Name = "MotionBlurLabel";
+            this.MotionBlurLabel.Size = new System.Drawing.Size(102, 23);
+            this.MotionBlurLabel.TabIndex = 17;
+            this.MotionBlurLabel.Text = "Motion Blur";
+            // 
+            // DOFLabel
+            // 
+            this.DOFLabel.AutoSize = true;
+            this.DOFLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DOFLabel.Location = new System.Drawing.Point(16, 150);
+            this.DOFLabel.Name = "DOFLabel";
+            this.DOFLabel.Size = new System.Drawing.Size(117, 23);
+            this.DOFLabel.TabIndex = 16;
+            this.DOFLabel.Text = "Depth of Field";
+            // 
+            // DynLightLabel
+            // 
+            this.DynLightLabel.AutoSize = true;
+            this.DynLightLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DynLightLabel.Location = new System.Drawing.Point(1, 187);
+            this.DynLightLabel.Name = "DynLightLabel";
+            this.DynLightLabel.Size = new System.Drawing.Size(142, 23);
+            this.DynLightLabel.TabIndex = 15;
+            this.DynLightLabel.Text = "Dynamic Lighting";
+            // 
+            // DynShadowLabel
+            // 
+            this.DynShadowLabel.AutoSize = true;
+            this.DynShadowLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DynShadowLabel.Location = new System.Drawing.Point(348, 187);
+            this.DynShadowLabel.Name = "DynShadowLabel";
+            this.DynShadowLabel.Size = new System.Drawing.Size(151, 23);
+            this.DynShadowLabel.TabIndex = 18;
+            this.DynShadowLabel.Text = "Dynamic Shadows";
             // 
             // comboBox1
             // 
@@ -156,39 +257,45 @@
             this.comboBox1.Size = new System.Drawing.Size(152, 34);
             this.comboBox1.TabIndex = 14;
             // 
-            // maskedTextBox1
+            // AmbientOcclusionBox
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(146, 105);
-            this.maskedTextBox1.Mask = "000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PromptChar = ' ';
-            this.maskedTextBox1.Size = new System.Drawing.Size(152, 33);
-            this.maskedTextBox1.TabIndex = 11;
-            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.AmbientOcclusionBox.Location = new System.Drawing.Point(131, 64);
+            this.AmbientOcclusionBox.Mask = "000";
+            this.AmbientOcclusionBox.Name = "AmbientOcclusionBox";
+            this.AmbientOcclusionBox.PromptChar = ' ';
+            this.AmbientOcclusionBox.Size = new System.Drawing.Size(152, 33);
+            this.AmbientOcclusionBox.TabIndex = 11;
+            this.AmbientOcclusionBox.ValidatingType = typeof(int);
             // 
-            // comboBox2
+            // AntiAliasingBox
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "True",
-            "False"});
-            this.comboBox2.Location = new System.Drawing.Point(146, 68);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(152, 34);
-            this.comboBox2.TabIndex = 9;
+            this.AntiAliasingBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AntiAliasingBox.FormattingEnabled = true;
+            this.AntiAliasingBox.Items.AddRange(new object[] {
+            "Off",
+            "FXAA Low",
+            "FXAA Medium",
+            "FXAA High",
+            "2x MSAA",
+            "4x MSAA",
+            "8x MSAA"});
+            this.AntiAliasingBox.Location = new System.Drawing.Point(129, 24);
+            this.AntiAliasingBox.Name = "AntiAliasingBox";
+            this.AntiAliasingBox.Size = new System.Drawing.Size(152, 34);
+            this.AntiAliasingBox.TabIndex = 9;
             // 
-            // comboBox3
+            // AnisoBox
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "True",
-            "False"});
-            this.comboBox3.Location = new System.Drawing.Point(456, 30);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(152, 34);
-            this.comboBox3.TabIndex = 8;
+            this.AnisoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AnisoBox.FormattingEnabled = true;
+            this.AnisoBox.Items.AddRange(new object[] {
+            "4x",
+            "8x",
+            "16x"});
+            this.AnisoBox.Location = new System.Drawing.Point(456, 24);
+            this.AnisoBox.Name = "AnisoBox";
+            this.AnisoBox.Size = new System.Drawing.Size(152, 34);
+            this.AnisoBox.TabIndex = 8;
             // 
             // comboBox4
             // 
@@ -448,7 +555,7 @@
             this.ControlTab.Location = new System.Drawing.Point(4, 38);
             this.ControlTab.Name = "ControlTab";
             this.ControlTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ControlTab.Size = new System.Drawing.Size(655, 488);
+            this.ControlTab.Size = new System.Drawing.Size(655, 581);
             this.ControlTab.TabIndex = 1;
             this.ControlTab.Text = "Controls";
             this.ControlTab.UseVisualStyleBackColor = true;
@@ -457,110 +564,10 @@
             // 
             this.AboutTab.Location = new System.Drawing.Point(4, 38);
             this.AboutTab.Name = "AboutTab";
-            this.AboutTab.Size = new System.Drawing.Size(655, 488);
+            this.AboutTab.Size = new System.Drawing.Size(655, 581);
             this.AboutTab.TabIndex = 2;
             this.AboutTab.Text = "About";
             this.AboutTab.UseVisualStyleBackColor = true;
-            // 
-            // MotionBlurLabel
-            // 
-            this.MotionBlurLabel.AutoSize = true;
-            this.MotionBlurLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MotionBlurLabel.Location = new System.Drawing.Point(328, 150);
-            this.MotionBlurLabel.Name = "MotionBlurLabel";
-            this.MotionBlurLabel.Size = new System.Drawing.Size(102, 23);
-            this.MotionBlurLabel.TabIndex = 17;
-            this.MotionBlurLabel.Text = "Motion Blur";
-            // 
-            // DOFLabel
-            // 
-            this.DOFLabel.AutoSize = true;
-            this.DOFLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DOFLabel.Location = new System.Drawing.Point(16, 150);
-            this.DOFLabel.Name = "DOFLabel";
-            this.DOFLabel.Size = new System.Drawing.Size(117, 23);
-            this.DOFLabel.TabIndex = 16;
-            this.DOFLabel.Text = "Depth of Field";
-            // 
-            // DynLightLabel
-            // 
-            this.DynLightLabel.AutoSize = true;
-            this.DynLightLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DynLightLabel.Location = new System.Drawing.Point(1, 187);
-            this.DynLightLabel.Name = "DynLightLabel";
-            this.DynLightLabel.Size = new System.Drawing.Size(142, 23);
-            this.DynLightLabel.TabIndex = 15;
-            this.DynLightLabel.Text = "Dynamic Lighting";
-            // 
-            // DynShadowLabel
-            // 
-            this.DynShadowLabel.AutoSize = true;
-            this.DynShadowLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DynShadowLabel.Location = new System.Drawing.Point(348, 187);
-            this.DynShadowLabel.Name = "DynShadowLabel";
-            this.DynShadowLabel.Size = new System.Drawing.Size(151, 23);
-            this.DynShadowLabel.TabIndex = 18;
-            this.DynShadowLabel.Text = "Dynamic Shadows";
-            // 
-            // LensFlareLabel
-            // 
-            this.LensFlareLabel.AutoSize = true;
-            this.LensFlareLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LensFlareLabel.Location = new System.Drawing.Point(343, 229);
-            this.LensFlareLabel.Name = "LensFlareLabel";
-            this.LensFlareLabel.Size = new System.Drawing.Size(95, 23);
-            this.LensFlareLabel.TabIndex = 21;
-            this.LensFlareLabel.Text = "Lens Flares";
-            // 
-            // DistortionLabel
-            // 
-            this.DistortionLabel.AutoSize = true;
-            this.DistortionLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DistortionLabel.Location = new System.Drawing.Point(31, 229);
-            this.DistortionLabel.Name = "DistortionLabel";
-            this.DistortionLabel.Size = new System.Drawing.Size(88, 23);
-            this.DistortionLabel.TabIndex = 20;
-            this.DistortionLabel.Text = "Distortion";
-            // 
-            // BloomLabel
-            // 
-            this.BloomLabel.AutoSize = true;
-            this.BloomLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BloomLabel.Location = new System.Drawing.Point(16, 266);
-            this.BloomLabel.Name = "BloomLabel";
-            this.BloomLabel.Size = new System.Drawing.Size(59, 23);
-            this.BloomLabel.TabIndex = 19;
-            this.BloomLabel.Text = "Bloom";
-            // 
-            // LightRayLabel
-            // 
-            this.LightRayLabel.AutoSize = true;
-            this.LightRayLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LightRayLabel.Location = new System.Drawing.Point(363, 266);
-            this.LightRayLabel.Name = "LightRayLabel";
-            this.LightRayLabel.Size = new System.Drawing.Size(87, 23);
-            this.LightRayLabel.TabIndex = 22;
-            this.LightRayLabel.Text = "Light Rays";
-            // 
-            // MVSSLabel
-            // 
-            this.MVSSLabel.AutoSize = true;
-            this.MVSSLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MVSSLabel.Location = new System.Drawing.Point(31, 314);
-            this.MVSSLabel.Name = "MVSSLabel";
-            this.MVSSLabel.Size = new System.Drawing.Size(131, 23);
-            this.MVSSLabel.TabIndex = 23;
-            this.MVSSLabel.Text = "MVSS Coverage";
-            // 
-            // PhysXLabel
-            // 
-            this.PhysXLabel.AutoSize = true;
-            this.PhysXLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PhysXLabel.Location = new System.Drawing.Point(307, 314);
-            this.PhysXLabel.Name = "PhysXLabel";
-            this.PhysXLabel.Size = new System.Drawing.Size(109, 23);
-            this.PhysXLabel.TabIndex = 24;
-            this.PhysXLabel.Text = "Nvidia PhysX";
             // 
             // CityLauncher
             // 
@@ -608,9 +615,9 @@
         public ComboBox LanguageBox;
         private GroupBox AdvancedDisplayGroupBox;
         public ComboBox comboBox1;
-        public MaskedTextBox maskedTextBox1;
-        public ComboBox comboBox2;
-        public ComboBox comboBox3;
+        public MaskedTextBox AmbientOcclusionBox;
+        public ComboBox AntiAliasingBox;
+        public ComboBox AnisoBox;
         public ComboBox comboBox4;
         private Label TessellationLabel;
         private Label AmbientOcclusionLabel;

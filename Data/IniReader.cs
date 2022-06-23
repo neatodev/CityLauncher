@@ -17,6 +17,12 @@ namespace CityLauncher
 
         public void InitDisplay()
         {
+            InitDisplayBasic();
+            InitDisplayAdvanced();
+        }
+
+        public void InitDisplayBasic()
+        {
             // Resolution
             var ResX = BmEngineData["SystemSettings"]["ResX"];
             var ResY = BmEngineData["SystemSettings"]["ResY"];
@@ -114,6 +120,60 @@ namespace CityLauncher
                     break;
                 default:
                     Program.MainWindow.LanguageBox.SelectedIndex = 0;
+                    break;
+            }
+
+        }
+
+        public void InitDisplayAdvanced()
+        {
+            // Anti-Aliasing
+            switch (BmEngineData["SystemSettings"]["PostProcessAAType"])
+            {
+                case "1":
+                    Program.MainWindow.AntiAliasingBox.SelectedIndex = 1;
+                    break;
+                case "2":
+                    Program.MainWindow.LanguageBox.SelectedIndex = 2;
+                    break;
+                case "3":
+                    Program.MainWindow.LanguageBox.SelectedIndex = 3;
+                    break;
+                default:
+                    if (BmEngineData["SystemSettings"]["MultisampleMode"] == "1xMSAA")
+                    {
+                        Program.MainWindow.LanguageBox.SelectedIndex = 0;
+                        break;
+                    }
+                    else
+                    {
+                        switch (BmEngineData["SystemSettings"]["MultisampleMode"])
+                        {
+                            case "2xMSAA":
+                                Program.MainWindow.AntiAliasingBox.SelectedIndex = 4;
+                                break;
+                            case "4xMSAA":
+                                Program.MainWindow.AntiAliasingBox.SelectedIndex = 5;
+                                break;
+                            default:
+                                Program.MainWindow.AntiAliasingBox.SelectedIndex = 6;
+                                break;
+                        }
+                        break;
+                    }
+            }
+
+            // Anisotropic Filtering
+            switch (BmEngineData["SystemSettings"]["MaxAnisotropy"])
+            {
+                case "4":
+                    Program.MainWindow.DetailModeBox.SelectedIndex = 0;
+                    break;
+                case "8":
+                    Program.MainWindow.DetailModeBox.SelectedIndex = 1;
+                    break;
+                default:
+                    Program.MainWindow.DetailModeBox.SelectedIndex = 2;
                     break;
             }
         }
