@@ -31,6 +31,22 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DisplayTab = new System.Windows.Forms.TabPage();
             this.AdvancedDisplayGroupBox = new System.Windows.Forms.GroupBox();
+            this.PoolsizeBox = new System.Windows.Forms.ComboBox();
+            this.PoolsizeLabel = new System.Windows.Forms.Label();
+            this.PhysXBox = new System.Windows.Forms.ComboBox();
+            this.ShadowDrawDistBox = new System.Windows.Forms.ComboBox();
+            this.ShadowDrawLabel = new System.Windows.Forms.Label();
+            this.MVSSBox = new System.Windows.Forms.ComboBox();
+            this.LightRayBox = new System.Windows.Forms.ComboBox();
+            this.BloomBox = new System.Windows.Forms.ComboBox();
+            this.LensFlareBox = new System.Windows.Forms.ComboBox();
+            this.DistortionBox = new System.Windows.Forms.ComboBox();
+            this.DynShadowBox = new System.Windows.Forms.ComboBox();
+            this.DynLightBox = new System.Windows.Forms.ComboBox();
+            this.MotionBlurBox = new System.Windows.Forms.ComboBox();
+            this.DOFBox = new System.Windows.Forms.ComboBox();
+            this.ShadowQualityBox = new System.Windows.Forms.ComboBox();
+            this.AmbientOcclusionBox = new System.Windows.Forms.ComboBox();
             this.PhysXLabel = new System.Windows.Forms.Label();
             this.MVSSLabel = new System.Windows.Forms.Label();
             this.LensFlareLabel = new System.Windows.Forms.Label();
@@ -41,11 +57,10 @@
             this.DOFLabel = new System.Windows.Forms.Label();
             this.DynLightLabel = new System.Windows.Forms.Label();
             this.DynShadowLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.AmbientOcclusionBox = new System.Windows.Forms.MaskedTextBox();
+            this.HbaoBox = new System.Windows.Forms.ComboBox();
             this.AntiAliasingBox = new System.Windows.Forms.ComboBox();
             this.AnisoBox = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.TessellationBox = new System.Windows.Forms.ComboBox();
             this.TessellationLabel = new System.Windows.Forms.Label();
             this.AmbientOcclusionLabel = new System.Windows.Forms.Label();
             this.HBAOLabel = new System.Windows.Forms.Label();
@@ -87,7 +102,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(663, 623);
+            this.tabControl1.Size = new System.Drawing.Size(657, 660);
             this.tabControl1.TabIndex = 0;
             // 
             // DisplayTab
@@ -100,7 +115,7 @@
             this.DisplayTab.Location = new System.Drawing.Point(4, 38);
             this.DisplayTab.Name = "DisplayTab";
             this.DisplayTab.Padding = new System.Windows.Forms.Padding(3);
-            this.DisplayTab.Size = new System.Drawing.Size(655, 581);
+            this.DisplayTab.Size = new System.Drawing.Size(649, 618);
             this.DisplayTab.TabIndex = 0;
             this.DisplayTab.Text = "Display";
             this.DisplayTab.UseVisualStyleBackColor = true;
@@ -108,6 +123,22 @@
             // AdvancedDisplayGroupBox
             // 
             this.AdvancedDisplayGroupBox.AutoSize = true;
+            this.AdvancedDisplayGroupBox.Controls.Add(this.PoolsizeBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.PoolsizeLabel);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.PhysXBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.ShadowDrawDistBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.ShadowDrawLabel);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.MVSSBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.LightRayBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.BloomBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.LensFlareBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.DistortionBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.DynShadowBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.DynLightBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.MotionBlurBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.DOFBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.ShadowQualityBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.AmbientOcclusionBox);
             this.AdvancedDisplayGroupBox.Controls.Add(this.PhysXLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.MVSSLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.LensFlareLabel);
@@ -118,29 +149,226 @@
             this.AdvancedDisplayGroupBox.Controls.Add(this.DOFLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.DynLightLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.DynShadowLabel);
-            this.AdvancedDisplayGroupBox.Controls.Add(this.comboBox1);
-            this.AdvancedDisplayGroupBox.Controls.Add(this.AmbientOcclusionBox);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.HbaoBox);
             this.AdvancedDisplayGroupBox.Controls.Add(this.AntiAliasingBox);
             this.AdvancedDisplayGroupBox.Controls.Add(this.AnisoBox);
-            this.AdvancedDisplayGroupBox.Controls.Add(this.comboBox4);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.TessellationBox);
             this.AdvancedDisplayGroupBox.Controls.Add(this.TessellationLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.AmbientOcclusionLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.HBAOLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.AntiAliasingLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.MaxShadowLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.AnisotropyLabel);
-            this.AdvancedDisplayGroupBox.Location = new System.Drawing.Point(9, 200);
+            this.AdvancedDisplayGroupBox.Location = new System.Drawing.Point(9, 197);
             this.AdvancedDisplayGroupBox.Name = "AdvancedDisplayGroupBox";
-            this.AdvancedDisplayGroupBox.Size = new System.Drawing.Size(644, 378);
+            this.AdvancedDisplayGroupBox.Size = new System.Drawing.Size(644, 418);
             this.AdvancedDisplayGroupBox.TabIndex = 15;
             this.AdvancedDisplayGroupBox.TabStop = false;
             this.AdvancedDisplayGroupBox.Text = "Advanced";
+            // 
+            // PoolsizeBox
+            // 
+            this.PoolsizeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PoolsizeBox.FormattingEnabled = true;
+            this.PoolsizeBox.Items.AddRange(new object[] {
+            "512 (Default)",
+            "1024",
+            "2048",
+            "3072",
+            "4096",
+            "Infinite"});
+            this.PoolsizeBox.Location = new System.Drawing.Point(456, 352);
+            this.PoolsizeBox.Name = "PoolsizeBox";
+            this.PoolsizeBox.Size = new System.Drawing.Size(152, 34);
+            this.PoolsizeBox.TabIndex = 40;
+            // 
+            // PoolsizeLabel
+            // 
+            this.PoolsizeLabel.AutoSize = true;
+            this.PoolsizeLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PoolsizeLabel.Location = new System.Drawing.Point(327, 363);
+            this.PoolsizeLabel.Name = "PoolsizeLabel";
+            this.PoolsizeLabel.Size = new System.Drawing.Size(73, 23);
+            this.PoolsizeLabel.TabIndex = 39;
+            this.PoolsizeLabel.Text = "Poolsize";
+            // 
+            // PhysXBox
+            // 
+            this.PhysXBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PhysXBox.FormattingEnabled = true;
+            this.PhysXBox.Items.AddRange(new object[] {
+            "Enabled",
+            "Disabled"});
+            this.PhysXBox.Location = new System.Drawing.Point(456, 312);
+            this.PhysXBox.Name = "PhysXBox";
+            this.PhysXBox.Size = new System.Drawing.Size(152, 34);
+            this.PhysXBox.TabIndex = 38;
+            // 
+            // ShadowDrawDistBox
+            // 
+            this.ShadowDrawDistBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ShadowDrawDistBox.FormattingEnabled = true;
+            this.ShadowDrawDistBox.Items.AddRange(new object[] {
+            "Low (Default)",
+            "Medium",
+            "High",
+            "Very High"});
+            this.ShadowDrawDistBox.Location = new System.Drawing.Point(456, 231);
+            this.ShadowDrawDistBox.Name = "ShadowDrawDistBox";
+            this.ShadowDrawDistBox.Size = new System.Drawing.Size(152, 34);
+            this.ShadowDrawDistBox.TabIndex = 37;
+            // 
+            // ShadowDrawLabel
+            // 
+            this.ShadowDrawLabel.AutoSize = true;
+            this.ShadowDrawLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShadowDrawLabel.Location = new System.Drawing.Point(319, 236);
+            this.ShadowDrawLabel.Name = "ShadowDrawLabel";
+            this.ShadowDrawLabel.Size = new System.Drawing.Size(188, 23);
+            this.ShadowDrawLabel.TabIndex = 36;
+            this.ShadowDrawLabel.Text = "Shadow Draw Distance";
+            // 
+            // MVSSBox
+            // 
+            this.MVSSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MVSSBox.FormattingEnabled = true;
+            this.MVSSBox.Items.AddRange(new object[] {
+            "Low (Default)",
+            "Medium",
+            "High",
+            "Very High"});
+            this.MVSSBox.Location = new System.Drawing.Point(129, 352);
+            this.MVSSBox.Name = "MVSSBox";
+            this.MVSSBox.Size = new System.Drawing.Size(152, 34);
+            this.MVSSBox.TabIndex = 35;
+            // 
+            // LightRayBox
+            // 
+            this.LightRayBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.LightRayBox.FormattingEnabled = true;
+            this.LightRayBox.Items.AddRange(new object[] {
+            "Enabled",
+            "Disabled"});
+            this.LightRayBox.Location = new System.Drawing.Point(456, 271);
+            this.LightRayBox.Name = "LightRayBox";
+            this.LightRayBox.Size = new System.Drawing.Size(152, 34);
+            this.LightRayBox.TabIndex = 34;
+            // 
+            // BloomBox
+            // 
+            this.BloomBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BloomBox.FormattingEnabled = true;
+            this.BloomBox.Items.AddRange(new object[] {
+            "Enabled",
+            "Disabled"});
+            this.BloomBox.Location = new System.Drawing.Point(129, 261);
+            this.BloomBox.Name = "BloomBox";
+            this.BloomBox.Size = new System.Drawing.Size(152, 34);
+            this.BloomBox.TabIndex = 33;
+            // 
+            // LensFlareBox
+            // 
+            this.LensFlareBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.LensFlareBox.FormattingEnabled = true;
+            this.LensFlareBox.Items.AddRange(new object[] {
+            "Enabled",
+            "Disabled"});
+            this.LensFlareBox.Location = new System.Drawing.Point(129, 306);
+            this.LensFlareBox.Name = "LensFlareBox";
+            this.LensFlareBox.Size = new System.Drawing.Size(152, 34);
+            this.LensFlareBox.TabIndex = 32;
+            // 
+            // DistortionBox
+            // 
+            this.DistortionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DistortionBox.FormattingEnabled = true;
+            this.DistortionBox.Items.AddRange(new object[] {
+            "Enabled",
+            "Disabled"});
+            this.DistortionBox.Location = new System.Drawing.Point(129, 225);
+            this.DistortionBox.Name = "DistortionBox";
+            this.DistortionBox.Size = new System.Drawing.Size(152, 34);
+            this.DistortionBox.TabIndex = 31;
+            // 
+            // DynShadowBox
+            // 
+            this.DynShadowBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DynShadowBox.FormattingEnabled = true;
+            this.DynShadowBox.Items.AddRange(new object[] {
+            "Enabled",
+            "Disabled"});
+            this.DynShadowBox.Location = new System.Drawing.Point(456, 188);
+            this.DynShadowBox.Name = "DynShadowBox";
+            this.DynShadowBox.Size = new System.Drawing.Size(152, 34);
+            this.DynShadowBox.TabIndex = 30;
+            // 
+            // DynLightBox
+            // 
+            this.DynLightBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DynLightBox.FormattingEnabled = true;
+            this.DynLightBox.Items.AddRange(new object[] {
+            "Enabled",
+            "Disabled"});
+            this.DynLightBox.Location = new System.Drawing.Point(129, 185);
+            this.DynLightBox.Name = "DynLightBox";
+            this.DynLightBox.Size = new System.Drawing.Size(152, 34);
+            this.DynLightBox.TabIndex = 29;
+            // 
+            // MotionBlurBox
+            // 
+            this.MotionBlurBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MotionBlurBox.FormattingEnabled = true;
+            this.MotionBlurBox.Items.AddRange(new object[] {
+            "Enabled",
+            "Disabled"});
+            this.MotionBlurBox.Location = new System.Drawing.Point(456, 148);
+            this.MotionBlurBox.Name = "MotionBlurBox";
+            this.MotionBlurBox.Size = new System.Drawing.Size(152, 34);
+            this.MotionBlurBox.TabIndex = 28;
+            // 
+            // DOFBox
+            // 
+            this.DOFBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DOFBox.FormattingEnabled = true;
+            this.DOFBox.Items.AddRange(new object[] {
+            "Enabled",
+            "Disabled"});
+            this.DOFBox.Location = new System.Drawing.Point(129, 145);
+            this.DOFBox.Name = "DOFBox";
+            this.DOFBox.Size = new System.Drawing.Size(152, 34);
+            this.DOFBox.TabIndex = 27;
+            // 
+            // ShadowQualityBox
+            // 
+            this.ShadowQualityBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ShadowQualityBox.FormattingEnabled = true;
+            this.ShadowQualityBox.Items.AddRange(new object[] {
+            "Low (Default)",
+            "Medium",
+            "High",
+            "Very High"});
+            this.ShadowQualityBox.Location = new System.Drawing.Point(456, 108);
+            this.ShadowQualityBox.Name = "ShadowQualityBox";
+            this.ShadowQualityBox.Size = new System.Drawing.Size(152, 34);
+            this.ShadowQualityBox.TabIndex = 26;
+            // 
+            // AmbientOcclusionBox
+            // 
+            this.AmbientOcclusionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AmbientOcclusionBox.FormattingEnabled = true;
+            this.AmbientOcclusionBox.Items.AddRange(new object[] {
+            "Enabled",
+            "Disabled"});
+            this.AmbientOcclusionBox.Location = new System.Drawing.Point(129, 64);
+            this.AmbientOcclusionBox.Name = "AmbientOcclusionBox";
+            this.AmbientOcclusionBox.Size = new System.Drawing.Size(152, 34);
+            this.AmbientOcclusionBox.TabIndex = 25;
             // 
             // PhysXLabel
             // 
             this.PhysXLabel.AutoSize = true;
             this.PhysXLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PhysXLabel.Location = new System.Drawing.Point(307, 314);
+            this.PhysXLabel.Location = new System.Drawing.Point(327, 317);
             this.PhysXLabel.Name = "PhysXLabel";
             this.PhysXLabel.Size = new System.Drawing.Size(109, 23);
             this.PhysXLabel.TabIndex = 24;
@@ -150,7 +378,7 @@
             // 
             this.MVSSLabel.AutoSize = true;
             this.MVSSLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MVSSLabel.Location = new System.Drawing.Point(31, 314);
+            this.MVSSLabel.Location = new System.Drawing.Point(-3, 352);
             this.MVSSLabel.Name = "MVSSLabel";
             this.MVSSLabel.Size = new System.Drawing.Size(131, 23);
             this.MVSSLabel.TabIndex = 23;
@@ -160,7 +388,7 @@
             // 
             this.LensFlareLabel.AutoSize = true;
             this.LensFlareLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LensFlareLabel.Location = new System.Drawing.Point(343, 229);
+            this.LensFlareLabel.Location = new System.Drawing.Point(15, 311);
             this.LensFlareLabel.Name = "LensFlareLabel";
             this.LensFlareLabel.Size = new System.Drawing.Size(95, 23);
             this.LensFlareLabel.TabIndex = 21;
@@ -190,7 +418,7 @@
             // 
             this.LightRayLabel.AutoSize = true;
             this.LightRayLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LightRayLabel.Location = new System.Drawing.Point(363, 266);
+            this.LightRayLabel.Location = new System.Drawing.Point(343, 276);
             this.LightRayLabel.Name = "LightRayLabel";
             this.LightRayLabel.Size = new System.Drawing.Size(87, 23);
             this.LightRayLabel.TabIndex = 22;
@@ -236,36 +464,18 @@
             this.DynShadowLabel.TabIndex = 18;
             this.DynShadowLabel.Text = "Dynamic Shadows";
             // 
-            // comboBox1
+            // HbaoBox
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "English",
-            "Deutsch",
-            "Español (México)",
-            "Español (España)",
-            "Français",
-            "Italiano",
-            "やまと",
-            "한국인",
-            "Polskie",
-            "Português",
-            "Русский"});
-            this.comboBox1.Location = new System.Drawing.Point(456, 105);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(152, 34);
-            this.comboBox1.TabIndex = 14;
-            // 
-            // AmbientOcclusionBox
-            // 
-            this.AmbientOcclusionBox.Location = new System.Drawing.Point(131, 64);
-            this.AmbientOcclusionBox.Mask = "000";
-            this.AmbientOcclusionBox.Name = "AmbientOcclusionBox";
-            this.AmbientOcclusionBox.PromptChar = ' ';
-            this.AmbientOcclusionBox.Size = new System.Drawing.Size(152, 33);
-            this.AmbientOcclusionBox.TabIndex = 11;
-            this.AmbientOcclusionBox.ValidatingType = typeof(int);
+            this.HbaoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.HbaoBox.FormattingEnabled = true;
+            this.HbaoBox.Items.AddRange(new object[] {
+            "Subtle",
+            "Medium (Default)",
+            "Intense"});
+            this.HbaoBox.Location = new System.Drawing.Point(129, 105);
+            this.HbaoBox.Name = "HbaoBox";
+            this.HbaoBox.Size = new System.Drawing.Size(152, 34);
+            this.HbaoBox.TabIndex = 14;
             // 
             // AntiAliasingBox
             // 
@@ -297,18 +507,20 @@
             this.AnisoBox.Size = new System.Drawing.Size(152, 34);
             this.AnisoBox.TabIndex = 8;
             // 
-            // comboBox4
+            // TessellationBox
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Low",
-            "Medium",
-            "High"});
-            this.comboBox4.Location = new System.Drawing.Point(456, 68);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(152, 34);
-            this.comboBox4.TabIndex = 10;
+            this.TessellationBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TessellationBox.FormattingEnabled = true;
+            this.TessellationBox.Items.AddRange(new object[] {
+            "Off",
+            "Normal",
+            "High (Default)",
+            "Very High",
+            "Extreme"});
+            this.TessellationBox.Location = new System.Drawing.Point(456, 68);
+            this.TessellationBox.Name = "TessellationBox";
+            this.TessellationBox.Size = new System.Drawing.Size(152, 34);
+            this.TessellationBox.TabIndex = 10;
             // 
             // TessellationLabel
             // 
@@ -375,8 +587,8 @@
             this.Dx11Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Dx11Box.FormattingEnabled = true;
             this.Dx11Box.Items.AddRange(new object[] {
-            "True",
-            "False"});
+            "Enabled",
+            "Disabled"});
             this.Dx11Box.Location = new System.Drawing.Point(328, 149);
             this.Dx11Box.Name = "Dx11Box";
             this.Dx11Box.Size = new System.Drawing.Size(152, 34);
@@ -458,8 +670,8 @@
             this.VsyncBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VsyncBox.FormattingEnabled = true;
             this.VsyncBox.Items.AddRange(new object[] {
-            "True",
-            "False"});
+            "Enabled",
+            "Disabled"});
             this.VsyncBox.Location = new System.Drawing.Point(146, 68);
             this.VsyncBox.Name = "VsyncBox";
             this.VsyncBox.Size = new System.Drawing.Size(152, 34);
@@ -470,8 +682,8 @@
             this.FullscreenBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FullscreenBox.FormattingEnabled = true;
             this.FullscreenBox.Items.AddRange(new object[] {
-            "True",
-            "False"});
+            "Enabled",
+            "Disabled"});
             this.FullscreenBox.Location = new System.Drawing.Point(456, 30);
             this.FullscreenBox.Name = "FullscreenBox";
             this.FullscreenBox.Size = new System.Drawing.Size(152, 34);
@@ -555,7 +767,7 @@
             this.ControlTab.Location = new System.Drawing.Point(4, 38);
             this.ControlTab.Name = "ControlTab";
             this.ControlTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ControlTab.Size = new System.Drawing.Size(655, 581);
+            this.ControlTab.Size = new System.Drawing.Size(649, 618);
             this.ControlTab.TabIndex = 1;
             this.ControlTab.Text = "Controls";
             this.ControlTab.UseVisualStyleBackColor = true;
@@ -564,7 +776,7 @@
             // 
             this.AboutTab.Location = new System.Drawing.Point(4, 38);
             this.AboutTab.Name = "AboutTab";
-            this.AboutTab.Size = new System.Drawing.Size(655, 581);
+            this.AboutTab.Size = new System.Drawing.Size(649, 618);
             this.AboutTab.TabIndex = 2;
             this.AboutTab.Text = "About";
             this.AboutTab.UseVisualStyleBackColor = true;
@@ -614,11 +826,10 @@
         private GroupBox BasicDisplayGroupBox;
         public ComboBox LanguageBox;
         private GroupBox AdvancedDisplayGroupBox;
-        public ComboBox comboBox1;
-        public MaskedTextBox AmbientOcclusionBox;
+        public ComboBox HbaoBox;
         public ComboBox AntiAliasingBox;
         public ComboBox AnisoBox;
-        public ComboBox comboBox4;
+        public ComboBox TessellationBox;
         private Label TessellationLabel;
         private Label AmbientOcclusionLabel;
         private Label HBAOLabel;
@@ -635,5 +846,21 @@
         private Label LightRayLabel;
         private Label MVSSLabel;
         private Label PhysXLabel;
+        public ComboBox AmbientOcclusionBox;
+        public ComboBox ShadowQualityBox;
+        public ComboBox DOFBox;
+        public ComboBox MotionBlurBox;
+        public ComboBox DynLightBox;
+        public ComboBox DynShadowBox;
+        public ComboBox DistortionBox;
+        public ComboBox LensFlareBox;
+        public ComboBox BloomBox;
+        public ComboBox LightRayBox;
+        public ComboBox MVSSBox;
+        public ComboBox ShadowDrawDistBox;
+        private Label ShadowDrawLabel;
+        public ComboBox PhysXBox;
+        private Label PoolsizeLabel;
+        public ComboBox PoolsizeBox;
     }
 }
