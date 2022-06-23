@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NLog;
 using System.Runtime.InteropServices;
-using NLog;
 
 namespace CityLauncher
 {
@@ -19,6 +14,11 @@ namespace CityLauncher
         {
             get { return new List<string>(); }
             private set { ResolutionList = value; }
+        }
+
+        public Resolution()
+        {
+            Nlog = LogManager.GetCurrentClassLogger();
         }
 
         [DllImport("user32.dll")]
@@ -41,9 +41,24 @@ namespace CityLauncher
             }
 
             int MaxLength = TempList.Max(x => x.Length);
-            IOrderedEnumerable<string> orderedList = TempList.OrderBy(x => x.PadLeft(MaxLength, '0'));
-            ResolutionList = orderedList.Distinct().ToList();
+            IOrderedEnumerable<string> OrderedList = TempList.OrderBy(x => x.PadLeft(MaxLength, '0'));
+            ResolutionList = OrderedList.Distinct().ToList();
             Nlog.Debug("getResolutions - found a total of {0} available resolutions.", ResolutionList.Count);
+        }
+
+        public override bool Equals(object? obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override string? ToString()
+        {
+            return base.ToString();
         }
 
         [StructLayout(LayoutKind.Sequential)]
