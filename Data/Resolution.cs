@@ -12,7 +12,7 @@ namespace CityLauncher
         // string list to store resolution values
         public static List<string>? ResolutionList
         {
-            get { return new List<string>(); }
+            get { return ResolutionList; }
             private set { ResolutionList = value; }
         }
 

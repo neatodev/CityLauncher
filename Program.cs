@@ -11,6 +11,8 @@ namespace CityLauncher
 
         private static readonly string CurrentTime = DateTime.Now.ToString("dd-MM-yy__hh-mm-ss");
 
+        public static CityLauncher MainWindow;
+
         /// <summary>
         ///     Replacement Application for the original Batman: Arkham Asylum BmLauncher
         ///     Offers more configuration options, enables compatibility with High-Res Texture Packs
@@ -23,7 +25,9 @@ namespace CityLauncher
         {
             SetupLogger();
             ApplicationConfiguration.Initialize();
-            Application.Run(new CityLauncher());
+            MainWindow = new CityLauncher();
+            new IniReader().InitDisplay();
+            Application.Run(MainWindow);
         }
 
         private static void SetupLogger()

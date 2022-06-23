@@ -40,6 +40,7 @@
             this.FullscreenLabel = new System.Windows.Forms.Label();
             this.ControlTab = new System.Windows.Forms.TabPage();
             this.AboutTab = new System.Windows.Forms.TabPage();
+            this.FullscreenBox = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +61,7 @@
             // 
             // DisplayTab
             // 
+            this.DisplayTab.Controls.Add(this.FullscreenBox);
             this.DisplayTab.Controls.Add(this.ResolutionBox);
             this.DisplayTab.Controls.Add(this.Dx11FeatureLabel);
             this.DisplayTab.Controls.Add(this.LanguageLabel);
@@ -174,12 +176,25 @@
             this.AboutTab.Text = "About";
             this.AboutTab.UseVisualStyleBackColor = true;
             // 
+            // FullscreenBox
+            // 
+            this.FullscreenBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FullscreenBox.FormattingEnabled = true;
+            this.FullscreenBox.Items.AddRange(new object[] {
+            "True",
+            "False"});
+            this.FullscreenBox.Location = new System.Drawing.Point(459, 15);
+            this.FullscreenBox.Name = "FullscreenBox";
+            this.FullscreenBox.Size = new System.Drawing.Size(152, 34);
+            this.FullscreenBox.TabIndex = 8;
+            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(681, 752);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CityLauncher";
@@ -206,5 +221,6 @@
         private Label LanguageLabel;
         private Label Dx11FeatureLabel;
         private ComboBox ResolutionBox;
+        public ComboBox FullscreenBox;
     }
 }
