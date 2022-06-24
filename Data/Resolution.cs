@@ -40,7 +40,7 @@ namespace CityLauncher
             int MaxLength = TempList.Max(x => x.Length);
             IOrderedEnumerable<string> OrderedList = TempList.OrderBy(x => x.PadLeft(MaxLength, '0'));
             ResolutionList = OrderedList.Distinct().ToList();
-            Nlog.Debug("getResolutions - found a total of {0} available resolutions.", ResolutionList.Count);
+            Nlog.Debug("GetResolutions - found a total of {0} available resolutions.", ResolutionList.Count);
         }
 
         public override bool Equals(object? obj)
