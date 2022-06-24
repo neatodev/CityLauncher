@@ -5,14 +5,12 @@ namespace CityLauncher
 {
     internal class IniReader
     {
-        IniData BmEngineData;
-
 
         public IniReader()
         {
             var DisplayIni = new FileIniDataParser();
             DisplayIni.Parser.Configuration.AllowDuplicateKeys = true;
-            BmEngineData = DisplayIni.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
+            IniHandler.BmEngineData = DisplayIni.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
         }
 
         public void InitDisplay()
@@ -24,8 +22,8 @@ namespace CityLauncher
         private void InitDisplayBasic()
         {
             // Resolution
-            var ResX = BmEngineData["SystemSettings"]["ResX"];
-            var ResY = BmEngineData["SystemSettings"]["ResY"];
+            var ResX = IniHandler.BmEngineData["SystemSettings"]["ResX"];
+            var ResY = IniHandler.BmEngineData["SystemSettings"]["ResY"];
             new Resolution();
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
             foreach (string Resolution in Resolution.ResolutionList)
@@ -39,7 +37,7 @@ namespace CityLauncher
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
 
             // Fullscreen
-            if (BmEngineData["SystemSettings"]["Fullscreen"] == "True")
+            if (IniHandler.BmEngineData["SystemSettings"]["Fullscreen"] == "True")
             {
                 Program.MainWindow.FullscreenBox.SelectedIndex = 0;
             }
@@ -49,7 +47,7 @@ namespace CityLauncher
             }
 
             // VSync
-            if (BmEngineData["SystemSettings"]["UseVsync"] == "True")
+            if (IniHandler.BmEngineData["SystemSettings"]["UseVsync"] == "True")
             {
                 Program.MainWindow.VsyncBox.SelectedIndex = 0;
             }
@@ -59,7 +57,7 @@ namespace CityLauncher
             }
 
             // DetailMode
-            switch (BmEngineData["SystemSettings"]["DetailMode"])
+            switch (IniHandler.BmEngineData["SystemSettings"]["DetailMode"])
             {
                 case "0":
                     Program.MainWindow.DetailModeBox.SelectedIndex = 0;
@@ -73,12 +71,12 @@ namespace CityLauncher
             }
 
             // Framerate Cap
-            Int16 Framecap = Int16.Parse(BmEngineData["Engine.Engine"]["MaxSmoothedFrameRate"]);
+            Int16 Framecap = Int16.Parse(IniHandler.BmEngineData["Engine.Engine"]["MaxSmoothedFrameRate"]);
             Framecap -= 2;
             Program.MainWindow.FrameCapTextBox.Text = Framecap.ToString();
 
             // DX11 Features
-            if (BmEngineData["SystemSettings"]["AllowD3D11"] == "True")
+            if (IniHandler.BmEngineData["SystemSettings"]["AllowD3D11"] == "True")
             {
                 Program.MainWindow.Dx11Box.Checked = true;
             }
@@ -88,7 +86,7 @@ namespace CityLauncher
             }
 
             // Language
-            switch (BmEngineData["Engine.Engine"]["Language"])
+            switch (IniHandler.BmEngineData["Engine.Engine"]["Language"])
             {
                 case "Deu":
                     Program.MainWindow.LanguageBox.SelectedIndex = 1;
@@ -130,7 +128,7 @@ namespace CityLauncher
         private void InitDisplayAdvanced()
         {
             // Anti-Aliasing
-            switch (BmEngineData["SystemSettings"]["PostProcessAAType"])
+            switch (IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"])
             {
                 case "1":
                     Program.MainWindow.AntiAliasingBox.SelectedIndex = 1;
@@ -142,14 +140,14 @@ namespace CityLauncher
                     Program.MainWindow.LanguageBox.SelectedIndex = 3;
                     break;
                 default:
-                    if (BmEngineData["SystemSettings"]["MultisampleMode"] == "1xMSAA")
+                    if (IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"] == "1xMSAA")
                     {
                         Program.MainWindow.LanguageBox.SelectedIndex = 0;
                         break;
                     }
                     else
                     {
-                        switch (BmEngineData["SystemSettings"]["MultisampleMode"])
+                        switch (IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"])
                         {
                             case "2xMSAA":
                                 Program.MainWindow.AntiAliasingBox.SelectedIndex = 4;
@@ -166,7 +164,7 @@ namespace CityLauncher
             }
 
             // Anisotropic Filtering
-            switch (BmEngineData["SystemSettings"]["MaxAnisotropy"])
+            switch (IniHandler.BmEngineData["SystemSettings"]["MaxAnisotropy"])
             {
                 case "4":
                     Program.MainWindow.AnisoBox.SelectedIndex = 0;
@@ -180,7 +178,7 @@ namespace CityLauncher
             }
 
             // Ambient Occlusion
-            if (BmEngineData["SystemSettings"]["AmbientOcclusion"] == "True")
+            if (IniHandler.BmEngineData["SystemSettings"]["AmbientOcclusion"] == "True")
             {
                 Program.MainWindow.AmbientOcclusionBox.Checked = true;
             }
@@ -190,7 +188,7 @@ namespace CityLauncher
             }
 
             // Tessellation Quality
-            switch (BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"])
+            switch (IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"])
             {
                 case "64.000000":
                     Program.MainWindow.TessellationBox.SelectedIndex = 1;
@@ -210,7 +208,7 @@ namespace CityLauncher
             }
 
             // HBAO Intensity
-            switch (BmEngineData["SystemSettings"]["HBAOGamma"])
+            switch (IniHandler.BmEngineData["SystemSettings"]["HBAOGamma"])
             {
                 case "3.000000":
                     Program.MainWindow.HbaoBox.SelectedIndex = 1;
@@ -225,7 +223,7 @@ namespace CityLauncher
 
             // Shadow Quality
             // ShadowDepthBias is not read and only modified during the writing process.
-            switch (BmEngineData["SystemSettings"]["MaxShadowResolution"])
+            switch (IniHandler.BmEngineData["SystemSettings"]["MaxShadowResolution"])
             {
                 case "1024":
                     Program.MainWindow.ShadowQualityBox.SelectedIndex = 1;
@@ -242,7 +240,7 @@ namespace CityLauncher
             }
 
             // Depth of Field
-            if (BmEngineData["SystemSettings"]["DepthOfField"] == "True")
+            if (IniHandler.BmEngineData["SystemSettings"]["DepthOfField"] == "True")
             {
                 Program.MainWindow.DOFBox.Checked = true;
             }
@@ -252,7 +250,7 @@ namespace CityLauncher
             }
 
             // Motion Blur
-            if (BmEngineData["SystemSettings"]["MotionBlur"] == "True")
+            if (IniHandler.BmEngineData["SystemSettings"]["MotionBlur"] == "True")
             {
                 Program.MainWindow.MotionBlurBox.Checked = true;
             }
@@ -262,7 +260,7 @@ namespace CityLauncher
             }
 
             // Dynamic Lighting
-            if (BmEngineData["SystemSettings"]["CompositeDynamicLights"] == "True")
+            if (IniHandler.BmEngineData["SystemSettings"]["CompositeDynamicLights"] == "True")
             {
                 Program.MainWindow.DynLightBox.Checked = true;
             }
@@ -272,7 +270,7 @@ namespace CityLauncher
             }
 
             // Dynamic Shadows
-            if (BmEngineData["SystemSettings"]["DynamicShadows"] == "True")
+            if (IniHandler.BmEngineData["SystemSettings"]["DynamicShadows"] == "True")
             {
                 Program.MainWindow.DynShadowBox.Checked = true;
             }
@@ -282,7 +280,7 @@ namespace CityLauncher
             }
 
             // Distortion
-            if (BmEngineData["SystemSettings"]["Distortion"] == "True")
+            if (IniHandler.BmEngineData["SystemSettings"]["Distortion"] == "True")
             {
                 Program.MainWindow.DistortionBox.Checked = true;
             }
@@ -292,7 +290,7 @@ namespace CityLauncher
             }
 
             // Lens Flares
-            if (BmEngineData["SystemSettings"]["LensFlares"] == "True")
+            if (IniHandler.BmEngineData["SystemSettings"]["LensFlares"] == "True")
             {
                 Program.MainWindow.LensFlareBox.Checked = true;
             }
@@ -302,7 +300,7 @@ namespace CityLauncher
             }
 
             // Bloom
-            if (BmEngineData["SystemSettings"]["Bloom"] == "True")
+            if (IniHandler.BmEngineData["SystemSettings"]["Bloom"] == "True")
             {
                 Program.MainWindow.BloomBox.Checked = true;
             }
@@ -312,7 +310,7 @@ namespace CityLauncher
             }
 
             // Light Rays
-            if (BmEngineData["SystemSettings"]["bAllowLightShafts"] == "True")
+            if (IniHandler.BmEngineData["SystemSettings"]["bAllowLightShafts"] == "True")
             {
                 Program.MainWindow.LightRayBox.Checked = true;
             }
@@ -322,7 +320,7 @@ namespace CityLauncher
             }
 
             // MVSS Coverage
-            switch (BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"])
+            switch (IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"])
             {
                 case "0.750000":
                     Program.MainWindow.MVSSBox.SelectedIndex = 1;
@@ -339,7 +337,7 @@ namespace CityLauncher
             }
 
             // Shadow Draw Distance
-            switch (BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"])
+            switch (IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"])
             {
                 case "1.500000":
                     Program.MainWindow.ShadowDrawDistBox.SelectedIndex = 1;
@@ -356,7 +354,7 @@ namespace CityLauncher
             }
 
             // PhysX
-            switch (BmEngineData["Engine.Engine"]["PhysXLevel"])
+            switch (IniHandler.BmEngineData["Engine.Engine"]["PhysXLevel"])
             {
                 case "1":
                     Program.MainWindow.PhysXBox.SelectedIndex = 1;
@@ -370,7 +368,7 @@ namespace CityLauncher
             }
 
             // Poolsize
-            switch (BmEngineData["TextureStreaming"]["PoolSize"])
+            switch (IniHandler.BmEngineData["TextureStreaming"]["PoolSize"])
             {
                 case "1024":
                     Program.MainWindow.PoolsizeBox.SelectedIndex = 1;
