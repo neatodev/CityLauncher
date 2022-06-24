@@ -22,5 +22,10 @@ namespace CityLauncher
                 TessellationBox.Enabled = true;
             }
         }
+
+        private void ApplySettingsButton_Click(object sender, EventArgs e)
+        {
+            new IniWriter().WriteAll();
+        }
     }
 }

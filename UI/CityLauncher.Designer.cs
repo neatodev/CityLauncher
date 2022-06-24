@@ -90,7 +90,7 @@
             this.tabControl1.Controls.Add(this.AboutTab);
             this.tabControl1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tabControl1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tabControl1.Location = new System.Drawing.Point(27, 12);
+            this.tabControl1.Location = new System.Drawing.Point(9, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(653, 533);
@@ -274,7 +274,7 @@
             // 
             this.PoolsizeLabel.AutoSize = true;
             this.PoolsizeLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PoolsizeLabel.Location = new System.Drawing.Point(51, 234);
+            this.PoolsizeLabel.Location = new System.Drawing.Point(51, 231);
             this.PoolsizeLabel.Name = "PoolsizeLabel";
             this.PoolsizeLabel.Size = new System.Drawing.Size(62, 19);
             this.PoolsizeLabel.TabIndex = 39;
@@ -312,7 +312,7 @@
             // 
             this.ShadowDrawLabel.AutoSize = true;
             this.ShadowDrawLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ShadowDrawLabel.Location = new System.Drawing.Point(317, 206);
+            this.ShadowDrawLabel.Location = new System.Drawing.Point(317, 201);
             this.ShadowDrawLabel.Name = "ShadowDrawLabel";
             this.ShadowDrawLabel.Size = new System.Drawing.Size(158, 19);
             this.ShadowDrawLabel.TabIndex = 36;
@@ -352,7 +352,7 @@
             // 
             this.PhysXLabel.AutoSize = true;
             this.PhysXLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PhysXLabel.Location = new System.Drawing.Point(21, 206);
+            this.PhysXLabel.Location = new System.Drawing.Point(21, 201);
             this.PhysXLabel.Name = "PhysXLabel";
             this.PhysXLabel.Size = new System.Drawing.Size(92, 19);
             this.PhysXLabel.TabIndex = 24;
@@ -498,7 +498,7 @@
             this.BasicDisplayGroupBox.Controls.Add(this.FullscreenLabel);
             this.BasicDisplayGroupBox.Location = new System.Drawing.Point(3, 3);
             this.BasicDisplayGroupBox.Name = "BasicDisplayGroupBox";
-            this.BasicDisplayGroupBox.Size = new System.Drawing.Size(639, 194);
+            this.BasicDisplayGroupBox.Size = new System.Drawing.Size(639, 193);
             this.BasicDisplayGroupBox.TabIndex = 13;
             this.BasicDisplayGroupBox.TabStop = false;
             this.BasicDisplayGroupBox.Text = "Basic";
@@ -508,7 +508,7 @@
             this.Dx11Box.AutoSize = true;
             this.Dx11Box.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Dx11Box.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Dx11Box.Location = new System.Drawing.Point(91, 135);
+            this.Dx11Box.Location = new System.Drawing.Point(91, 134);
             this.Dx11Box.Name = "Dx11Box";
             this.Dx11Box.Size = new System.Drawing.Size(180, 27);
             this.Dx11Box.TabIndex = 15;
@@ -533,7 +533,7 @@
             "Polskie",
             "Português",
             "Русский"});
-            this.LanguageBox.Location = new System.Drawing.Point(481, 102);
+            this.LanguageBox.Location = new System.Drawing.Point(481, 101);
             this.LanguageBox.Name = "LanguageBox";
             this.LanguageBox.Size = new System.Drawing.Size(152, 27);
             this.LanguageBox.TabIndex = 14;
@@ -541,12 +541,13 @@
             // FrameCapTextBox
             // 
             this.FrameCapTextBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FrameCapTextBox.Location = new System.Drawing.Point(119, 102);
+            this.FrameCapTextBox.Location = new System.Drawing.Point(240, 101);
             this.FrameCapTextBox.Mask = "000";
             this.FrameCapTextBox.Name = "FrameCapTextBox";
             this.FrameCapTextBox.PromptChar = ' ';
-            this.FrameCapTextBox.Size = new System.Drawing.Size(152, 27);
+            this.FrameCapTextBox.Size = new System.Drawing.Size(31, 27);
             this.FrameCapTextBox.TabIndex = 11;
+            this.FrameCapTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.FrameCapTextBox.ValidatingType = typeof(int);
             // 
             // ResolutionBox
@@ -594,7 +595,7 @@
             "Low",
             "Medium",
             "High"});
-            this.DetailModeBox.Location = new System.Drawing.Point(481, 70);
+            this.DetailModeBox.Location = new System.Drawing.Point(481, 68);
             this.DetailModeBox.Name = "DetailModeBox";
             this.DetailModeBox.Size = new System.Drawing.Size(152, 27);
             this.DetailModeBox.TabIndex = 10;
@@ -603,7 +604,7 @@
             // 
             this.DetailModeLabel.AutoSize = true;
             this.DetailModeLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DetailModeLabel.Location = new System.Drawing.Point(386, 73);
+            this.DetailModeLabel.Location = new System.Drawing.Point(386, 71);
             this.DetailModeLabel.Name = "DetailModeLabel";
             this.DetailModeLabel.Size = new System.Drawing.Size(89, 19);
             this.DetailModeLabel.TabIndex = 4;
@@ -613,7 +614,7 @@
             // 
             this.VsyncLabel.AutoSize = true;
             this.VsyncLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.VsyncLabel.Location = new System.Drawing.Point(22, 73);
+            this.VsyncLabel.Location = new System.Drawing.Point(22, 71);
             this.VsyncLabel.Name = "VsyncLabel";
             this.VsyncLabel.Size = new System.Drawing.Size(91, 19);
             this.VsyncLabel.TabIndex = 3;
@@ -623,7 +624,7 @@
             // 
             this.FrameCapLabel.AutoSize = true;
             this.FrameCapLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FrameCapLabel.Location = new System.Drawing.Point(9, 105);
+            this.FrameCapLabel.Location = new System.Drawing.Point(130, 104);
             this.FrameCapLabel.Name = "FrameCapLabel";
             this.FrameCapLabel.Size = new System.Drawing.Size(104, 19);
             this.FrameCapLabel.TabIndex = 2;
@@ -643,7 +644,7 @@
             // 
             this.LanguageLabel.AutoSize = true;
             this.LanguageLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LanguageLabel.Location = new System.Drawing.Point(403, 105);
+            this.LanguageLabel.Location = new System.Drawing.Point(403, 104);
             this.LanguageLabel.Name = "LanguageLabel";
             this.LanguageLabel.Size = new System.Drawing.Size(72, 19);
             this.LanguageLabel.TabIndex = 5;
@@ -686,12 +687,13 @@
             this.ApplySettingsButton.TabIndex = 1;
             this.ApplySettingsButton.Text = "Apply Settings";
             this.ApplySettingsButton.UseVisualStyleBackColor = true;
+            this.ApplySettingsButton.Click += new System.EventHandler(this.ApplySettingsButton_Click);
             // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(710, 752);
+            this.ClientSize = new System.Drawing.Size(671, 752);
             this.Controls.Add(this.ApplySettingsButton);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
