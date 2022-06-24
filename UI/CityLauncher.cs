@@ -14,7 +14,8 @@ namespace CityLauncher
                 MVSSBox.Enabled = false;
                 HbaoBox.Enabled = false;
                 TessellationBox.Enabled = false;
-            } else
+            }
+            else
             {
                 MVSSBox.Enabled = true;
                 HbaoBox.Enabled = true;

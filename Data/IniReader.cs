@@ -21,7 +21,7 @@ namespace CityLauncher
             InitDisplayAdvanced();
         }
 
-        public void InitDisplayBasic()
+        private void InitDisplayBasic()
         {
             // Resolution
             var ResX = BmEngineData["SystemSettings"]["ResX"];
@@ -127,7 +127,7 @@ namespace CityLauncher
 
         }
 
-        public void InitDisplayAdvanced()
+        private void InitDisplayAdvanced()
         {
             // Anti-Aliasing
             switch (BmEngineData["SystemSettings"]["PostProcessAAType"])

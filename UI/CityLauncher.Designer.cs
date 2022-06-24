@@ -74,6 +74,7 @@
             this.FullscreenLabel = new System.Windows.Forms.Label();
             this.ControlTab = new System.Windows.Forms.TabPage();
             this.AboutTab = new System.Windows.Forms.TabPage();
+            this.ApplySettingsButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -677,11 +678,21 @@
             this.AboutTab.Text = "About";
             this.AboutTab.UseVisualStyleBackColor = true;
             // 
+            // ApplySettingsButton
+            // 
+            this.ApplySettingsButton.Location = new System.Drawing.Point(261, 576);
+            this.ApplySettingsButton.Name = "ApplySettingsButton";
+            this.ApplySettingsButton.Size = new System.Drawing.Size(178, 37);
+            this.ApplySettingsButton.TabIndex = 1;
+            this.ApplySettingsButton.Text = "Apply Settings";
+            this.ApplySettingsButton.UseVisualStyleBackColor = true;
+            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(710, 752);
+            this.Controls.Add(this.ApplySettingsButton);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -748,5 +759,6 @@
         public ComboBox PhysXBox;
         private Label PhysXLabel;
         public CheckBox Dx11Box;
+        private Button ApplySettingsButton;
     }
 }
