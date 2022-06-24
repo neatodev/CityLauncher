@@ -78,11 +78,11 @@ namespace CityLauncher
             // DX11 Features
             if (BmEngineData["SystemSettings"]["AllowD3D11"] == "True")
             {
-                Program.MainWindow.Dx11Box.SelectedIndex = 0;
+                Program.MainWindow.Dx11Box.Checked = true;
             }
             else
             {
-                Program.MainWindow.Dx11Box.SelectedIndex = 1;
+                Program.MainWindow.Dx11Box.Checked = false;
             }
 
             // Language
@@ -180,11 +180,11 @@ namespace CityLauncher
             // Ambient Occlusion
             if (BmEngineData["SystemSettings"]["AmbientOcclusion"] == "True")
             {
-                Program.MainWindow.AmbientOcclusionBox.SelectedIndex = 0;
+                Program.MainWindow.AmbientOcclusionBox.Checked = true;
             }
             else
             {
-                Program.MainWindow.AmbientOcclusionBox.SelectedIndex = 1;
+                Program.MainWindow.AmbientOcclusionBox.Checked = false;
             }
 
             // Tessellation Quality
@@ -242,81 +242,81 @@ namespace CityLauncher
             // Depth of Field
             if (BmEngineData["SystemSettings"]["DepthOfField"] == "True")
             {
-                Program.MainWindow.DOFBox.SelectedIndex = 0;
+                Program.MainWindow.DOFBox.Checked = true;
             }
             else
             {
-                Program.MainWindow.DOFBox.SelectedIndex = 1;
+                Program.MainWindow.DOFBox.Checked = false;
             }
 
             // Motion Blur
             if (BmEngineData["SystemSettings"]["MotionBlur"] == "True")
             {
-                Program.MainWindow.MotionBlurBox.SelectedIndex = 0;
+                Program.MainWindow.MotionBlurBox.Checked = true;
             }
             else
             {
-                Program.MainWindow.MotionBlurBox.SelectedIndex = 1;
+                Program.MainWindow.MotionBlurBox.Checked = false;
             }
 
             // Dynamic Lighting
             if (BmEngineData["SystemSettings"]["CompositeDynamicLights"] == "True")
             {
-                Program.MainWindow.DynLightBox.SelectedIndex = 0;
+                Program.MainWindow.DynLightBox.Checked = true;
             }
             else
             {
-                Program.MainWindow.DynLightBox.SelectedIndex = 1;
+                Program.MainWindow.DynLightBox.Checked = false;
             }
 
             // Dynamic Shadows
             if (BmEngineData["SystemSettings"]["DynamicShadows"] == "True")
             {
-                Program.MainWindow.DynShadowBox.SelectedIndex = 0;
+                Program.MainWindow.DynShadowBox.Checked = true;
             }
             else
             {
-                Program.MainWindow.DynShadowBox.SelectedIndex = 1;
+                Program.MainWindow.DynShadowBox.Checked = false;
             }
 
             // Distortion
             if (BmEngineData["SystemSettings"]["Distortion"] == "True")
             {
-                Program.MainWindow.DistortionBox.SelectedIndex = 0;
+                Program.MainWindow.DistortionBox.Checked = true;
             }
             else
             {
-                Program.MainWindow.DistortionBox.SelectedIndex = 1;
+                Program.MainWindow.DistortionBox.Checked = false;
             }
 
             // Lens Flares
             if (BmEngineData["SystemSettings"]["LensFlares"] == "True")
             {
-                Program.MainWindow.LensFlareBox.SelectedIndex = 0;
+                Program.MainWindow.LensFlareBox.Checked = true;
             }
             else
             {
-                Program.MainWindow.LensFlareBox.SelectedIndex = 1;
+                Program.MainWindow.LensFlareBox.Checked = false;
             }
 
             // Bloom
             if (BmEngineData["SystemSettings"]["Bloom"] == "True")
             {
-                Program.MainWindow.BloomBox.SelectedIndex = 0;
+                Program.MainWindow.BloomBox.Checked = true;
             }
             else
             {
-                Program.MainWindow.BloomBox.SelectedIndex = 1;
+                Program.MainWindow.BloomBox.Checked = false;
             }
 
             // Light Rays
             if (BmEngineData["SystemSettings"]["bAllowLightShafts"] == "True")
             {
-                Program.MainWindow.LightRayBox.SelectedIndex = 0;
+                Program.MainWindow.LightRayBox.Checked = true;
             }
             else
             {
-                Program.MainWindow.LightRayBox.SelectedIndex = 1;
+                Program.MainWindow.LightRayBox.Checked = false;
             }
 
             // MVSS Coverage
