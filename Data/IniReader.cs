@@ -1,5 +1,4 @@
 ﻿using IniParser;
-using IniParser.Model;
 
 namespace CityLauncher
 {
@@ -59,14 +58,14 @@ namespace CityLauncher
             // DetailMode
             switch (IniHandler.BmEngineData["SystemSettings"]["DetailMode"])
             {
-                case "0":
-                    Program.MainWindow.DetailModeBox.SelectedIndex = 0;
-                    break;
                 case "1":
                     Program.MainWindow.DetailModeBox.SelectedIndex = 1;
                     break;
-                default:
+                case "2":
                     Program.MainWindow.DetailModeBox.SelectedIndex = 2;
+                    break;
+                default:
+                    Program.MainWindow.DetailModeBox.SelectedIndex = 0;
                     break;
             }
 
