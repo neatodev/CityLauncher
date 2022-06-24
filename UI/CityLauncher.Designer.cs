@@ -274,7 +274,7 @@
             // 
             this.PoolsizeLabel.AutoSize = true;
             this.PoolsizeLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PoolsizeLabel.Location = new System.Drawing.Point(51, 231);
+            this.PoolsizeLabel.Location = new System.Drawing.Point(51, 234);
             this.PoolsizeLabel.Name = "PoolsizeLabel";
             this.PoolsizeLabel.Size = new System.Drawing.Size(62, 19);
             this.PoolsizeLabel.TabIndex = 39;
@@ -693,6 +693,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(671, 752);
             this.Controls.Add(this.ApplySettingsButton);
             this.Controls.Add(this.tabControl1);
