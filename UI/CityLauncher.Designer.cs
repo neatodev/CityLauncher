@@ -604,11 +604,11 @@
             // 
             this.DetailModeLabel.AutoSize = true;
             this.DetailModeLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DetailModeLabel.Location = new System.Drawing.Point(386, 71);
+            this.DetailModeLabel.Location = new System.Drawing.Point(367, 71);
             this.DetailModeLabel.Name = "DetailModeLabel";
-            this.DetailModeLabel.Size = new System.Drawing.Size(89, 19);
+            this.DetailModeLabel.Size = new System.Drawing.Size(108, 19);
             this.DetailModeLabel.TabIndex = 4;
-            this.DetailModeLabel.Text = "Detail Mode";
+            this.DetailModeLabel.Text = "Texture Quality";
             // 
             // VsyncLabel
             // 
@@ -624,11 +624,11 @@
             // 
             this.FrameCapLabel.AutoSize = true;
             this.FrameCapLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FrameCapLabel.Location = new System.Drawing.Point(130, 104);
+            this.FrameCapLabel.Location = new System.Drawing.Point(123, 104);
             this.FrameCapLabel.Name = "FrameCapLabel";
-            this.FrameCapLabel.Size = new System.Drawing.Size(104, 19);
+            this.FrameCapLabel.Size = new System.Drawing.Size(111, 19);
             this.FrameCapLabel.TabIndex = 2;
-            this.FrameCapLabel.Text = "Framerate Cap";
+            this.FrameCapLabel.Text = "Framerate Limit";
             // 
             // ResolutionLabel
             // 

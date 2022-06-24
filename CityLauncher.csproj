@@ -4,11 +4,13 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
+	  <PublishSingleFile>true</PublishSingleFile>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <PlatformTarget>x64</PlatformTarget>
     <SignAssembly>False</SignAssembly>
-    <PackageLicenseFile>F:\Projects\CityLauncher\Res\license.txt</PackageLicenseFile>
+	  <PublishReadyToRun>true</PublishReadyToRun>
+	  <PackageLicenseFile>Resources.license.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

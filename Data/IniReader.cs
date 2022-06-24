@@ -1,16 +1,7 @@
-﻿using IniParser;
-
-namespace CityLauncher
+﻿namespace CityLauncher
 {
     internal class IniReader
     {
-
-        public IniReader()
-        {
-            var DisplayIni = new FileIniDataParser();
-            DisplayIni.Parser.Configuration.AllowDuplicateKeys = true;
-            IniHandler.BmEngineData = DisplayIni.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
-        }
 
         public void InitDisplay()
         {
@@ -82,6 +73,9 @@ namespace CityLauncher
             else
             {
                 Program.MainWindow.Dx11Box.Checked = false;
+                Program.MainWindow.MVSSBox.Enabled = false;
+                Program.MainWindow.HbaoBox.Enabled = false;
+                Program.MainWindow.TessellationBox.Enabled = false;
             }
 
             // Language
@@ -165,14 +159,14 @@ namespace CityLauncher
             // Anisotropic Filtering
             switch (IniHandler.BmEngineData["SystemSettings"]["MaxAnisotropy"])
             {
-                case "4":
-                    Program.MainWindow.AnisoBox.SelectedIndex = 0;
-                    break;
                 case "8":
                     Program.MainWindow.AnisoBox.SelectedIndex = 1;
                     break;
-                default:
+                case "16":
                     Program.MainWindow.AnisoBox.SelectedIndex = 2;
+                    break;
+                default:
+                    Program.MainWindow.AnisoBox.SelectedIndex = 0;
                     break;
             }
 

@@ -13,6 +13,8 @@ namespace CityLauncher
 
         public static CityLauncher MainWindow;
 
+        public static IniHandler IniHandler;
+
         /// <summary>
         ///     Replacement Application for the original Batman: Arkham Asylum BmLauncher
         ///     Offers more configuration options, enables compatibility with High-Res Texture Packs
@@ -25,6 +27,7 @@ namespace CityLauncher
         {
             SetupLogger();
             ApplicationConfiguration.Initialize();
+            IniHandler = new IniHandler();
             MainWindow = new CityLauncher();
             new IniReader().InitDisplay();
             Application.Run(MainWindow);
