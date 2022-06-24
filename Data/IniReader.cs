@@ -73,7 +73,9 @@ namespace CityLauncher
             }
 
             // Framerate Cap
-            Program.MainWindow.FrameCapTextBox.Text = BmEngineData["Engine.Engine"]["MaxSmoothedFrameRate"];
+            Int16 Framecap = Int16.Parse(BmEngineData["Engine.Engine"]["MaxSmoothedFrameRate"]);
+            Framecap -= 2;
+            Program.MainWindow.FrameCapTextBox.Text = Framecap.ToString();
 
             // DX11 Features
             if (BmEngineData["SystemSettings"]["AllowD3D11"] == "True")
