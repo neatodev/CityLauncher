@@ -59,6 +59,7 @@
             this.MaxShadowLabel = new System.Windows.Forms.Label();
             this.AnisotropyLabel = new System.Windows.Forms.Label();
             this.BasicDisplayGroupBox = new System.Windows.Forms.GroupBox();
+            this.Dx11Box = new System.Windows.Forms.CheckBox();
             this.LanguageBox = new System.Windows.Forms.ComboBox();
             this.FrameCapTextBox = new System.Windows.Forms.MaskedTextBox();
             this.ResolutionBox = new System.Windows.Forms.ComboBox();
@@ -73,7 +74,6 @@
             this.FullscreenLabel = new System.Windows.Forms.Label();
             this.ControlTab = new System.Windows.Forms.TabPage();
             this.AboutTab = new System.Windows.Forms.TabPage();
-            this.Dx11Box = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -502,6 +502,19 @@
             this.BasicDisplayGroupBox.TabStop = false;
             this.BasicDisplayGroupBox.Text = "Basic";
             // 
+            // Dx11Box
+            // 
+            this.Dx11Box.AutoSize = true;
+            this.Dx11Box.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Dx11Box.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Dx11Box.Location = new System.Drawing.Point(91, 135);
+            this.Dx11Box.Name = "Dx11Box";
+            this.Dx11Box.Size = new System.Drawing.Size(180, 27);
+            this.Dx11Box.TabIndex = 15;
+            this.Dx11Box.Text = "DirectX 11 Features";
+            this.Dx11Box.UseVisualStyleBackColor = true;
+            this.Dx11Box.CheckedChanged += new System.EventHandler(this.Dx11Box_CheckedChanged);
+            // 
             // LanguageBox
             // 
             this.LanguageBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -663,18 +676,6 @@
             this.AboutTab.TabIndex = 2;
             this.AboutTab.Text = "About";
             this.AboutTab.UseVisualStyleBackColor = true;
-            // 
-            // Dx11Box
-            // 
-            this.Dx11Box.AutoSize = true;
-            this.Dx11Box.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Dx11Box.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Dx11Box.Location = new System.Drawing.Point(91, 135);
-            this.Dx11Box.Name = "Dx11Box";
-            this.Dx11Box.Size = new System.Drawing.Size(180, 27);
-            this.Dx11Box.TabIndex = 15;
-            this.Dx11Box.Text = "DirectX 11 Features";
-            this.Dx11Box.UseVisualStyleBackColor = true;
             // 
             // CityLauncher
             // 

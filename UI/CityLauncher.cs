@@ -7,9 +7,19 @@ namespace CityLauncher
             InitializeComponent();
         }
 
-        private void Dx11Box_SelectedIndexChanged(object sender, EventArgs e)
+        private void Dx11Box_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (!Dx11Box.Checked)
+            {
+                MVSSBox.Enabled = false;
+                HbaoBox.Enabled = false;
+                TessellationBox.Enabled = false;
+            } else
+            {
+                MVSSBox.Enabled = true;
+                HbaoBox.Enabled = true;
+                TessellationBox.Enabled = true;
+            }
         }
     }
 }
