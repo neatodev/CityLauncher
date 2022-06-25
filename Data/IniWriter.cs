@@ -27,8 +27,6 @@ namespace CityLauncher
             WriteBmEngineAdvanced();
             WriteToTempFile();
             MergeBmEngine();
-            //DataParser.WriteFile(BmEnginePath, IniHandler.BmEngineData);
-            //DataParser.WriteFile(UserEnginePath, IniHandler.UserEngineData);
         }
 
         private void WriteToTempFile()
@@ -51,43 +49,28 @@ namespace CityLauncher
             string[] BmEngineOrig = File.ReadAllLines(BmEnginePath);
             string[] BmEngineNew = File.ReadAllLines(BmEngineTemp);
 
-            var PreviousLine = BmEngineOrig[0];
 
-            for (int i = 0; i < BmEngineNew.Length - 1; i++)
+            for (int i = 0; i < BmEngineOrig.Length - 1; i++)
             {
-                string CurrentLineNew;
-                if (BmEngineNew[i].Contains('='))
+                string PreviousLine = "";
+                if (BmEngineOrig[i].Contains('='))
                 {
-                    CurrentLineNew = BmEngineNew[i].Substring(0, BmEngineNew[i].LastIndexOf("="));
+                    var BmEngineOrigTrimmed = BmEngineOrig[i].Substring(0, BmEngineOrig[i].LastIndexOf("="));
 
-                }
-                else
-                {
-                    CurrentLineNew = BmEngineNew[i];
-                }
-
-                for (int j = 0; j < BmEngineOrig.Length - 1; j++)
-                {
-                    string CurrentLineOrig;
-                    if (BmEngineOrig[j].Contains('='))
+                    for (int j = 0; j < BmEngineNew.Length - 1; j++)
                     {
-                        CurrentLineOrig = BmEngineOrig[j].Substring(0, BmEngineOrig[j].LastIndexOf("="));
+                        if (BmEngineNew[j].Contains(BmEngineOrigTrimmed) && !PreviousLine.Contains(BmEngineOrigTrimmed))
+                        {
+                            BmEngineOrig[i] = BmEngineNew[j];
+                            PreviousLine = BmEngineNew[j];
+                            break;
+                        }
+                        PreviousLine = BmEngineNew[j];
                     }
-                    else
-                    {
-                        CurrentLineOrig = BmEngineOrig[j];
-                    }
-
-                    if (CurrentLineNew == CurrentLineOrig && CurrentLineOrig != PreviousLine)
-                    {
-                        BmEngineOrig[j] = CurrentLineNew;
-
-                    }
-                    PreviousLine = CurrentLineNew;
                 }
             }
 
-            using (StreamWriter BmEngineFile = new StreamWriter(BmEngineTemp))
+            using (StreamWriter BmEngineFile = new StreamWriter(BmEnginePath))
             {
                 foreach (string Line in BmEngineOrig)
                 {
