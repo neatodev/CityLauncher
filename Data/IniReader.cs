@@ -127,15 +127,15 @@
                     Program.MainWindow.AntiAliasingBox.SelectedIndex = 1;
                     break;
                 case "2":
-                    Program.MainWindow.LanguageBox.SelectedIndex = 2;
+                    Program.MainWindow.AntiAliasingBox.SelectedIndex = 2;
                     break;
                 case "3":
-                    Program.MainWindow.LanguageBox.SelectedIndex = 3;
+                    Program.MainWindow.AntiAliasingBox.SelectedIndex = 3;
                     break;
                 default:
                     if (IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"] == "1xMSAA")
                     {
-                        Program.MainWindow.LanguageBox.SelectedIndex = 0;
+                        Program.MainWindow.AntiAliasingBox.SelectedIndex = 0;
                         break;
                     }
                     else
