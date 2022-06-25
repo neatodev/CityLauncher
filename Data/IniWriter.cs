@@ -1,4 +1,5 @@
 ﻿using IniParser;
+using NLog;
 
 namespace CityLauncher
 {
@@ -6,7 +7,12 @@ namespace CityLauncher
     {
         string BmEnginePath;
         string UserEnginePath;
+        string BmEngineTemp;
+        string UserEngineTemp;
         FileIniDataParser DataParser;
+
+        private static Logger Nlog = LogManager.GetCurrentClassLogger();
+
 
         public IniWriter()
         {
@@ -19,8 +25,76 @@ namespace CityLauncher
         {
             WriteBmEngineBasic();
             WriteBmEngineAdvanced();
-            DataParser.WriteFile(BmEnginePath, IniHandler.BmEngineData);
-            DataParser.WriteFile(UserEnginePath, IniHandler.UserEngineData);
+            WriteToTempFile();
+            MergeBmEngine();
+            //DataParser.WriteFile(BmEnginePath, IniHandler.BmEngineData);
+            //DataParser.WriteFile(UserEnginePath, IniHandler.UserEngineData);
+        }
+
+        private void WriteToTempFile()
+        {
+            var TempDir = Path.Combine(Environment.CurrentDirectory, "Temp");
+            BmEngineTemp = Path.Combine(TempDir, "BmEngineTemp.ini");
+            UserEngineTemp = Path.Combine(TempDir, "UserEngineTemp.ini");
+            Directory.CreateDirectory(TempDir);
+            File.Create(BmEngineTemp).Dispose();
+            File.Create(UserEngineTemp).Dispose();
+
+
+            DataParser.WriteFile(BmEngineTemp, IniHandler.BmEngineData);
+            DataParser.WriteFile(UserEngineTemp, IniHandler.UserEngineData);
+
+        }
+
+        private void MergeBmEngine()
+        {
+            string[] BmEngineOrig = File.ReadAllLines(BmEnginePath);
+            string[] BmEngineNew = File.ReadAllLines(BmEngineTemp);
+
+            var PreviousLine = BmEngineOrig[0];
+
+            for (int i = 0; i < BmEngineNew.Length - 1; i++)
+            {
+                string CurrentLineNew;
+                if (BmEngineNew[i].Contains('='))
+                {
+                    CurrentLineNew = BmEngineNew[i].Substring(0, BmEngineNew[i].LastIndexOf("="));
+
+                }
+                else
+                {
+                    CurrentLineNew = BmEngineNew[i];
+                }
+
+                for (int j = 0; j < BmEngineOrig.Length - 1; j++)
+                {
+                    string CurrentLineOrig;
+                    if (BmEngineOrig[j].Contains('='))
+                    {
+                        CurrentLineOrig = BmEngineOrig[j].Substring(0, BmEngineOrig[j].LastIndexOf("="));
+                    }
+                    else
+                    {
+                        CurrentLineOrig = BmEngineOrig[j];
+                    }
+
+                    if (CurrentLineNew == CurrentLineOrig && CurrentLineOrig != PreviousLine)
+                    {
+                        BmEngineOrig[j] = CurrentLineNew;
+
+                    }
+                    PreviousLine = CurrentLineNew;
+                }
+            }
+
+            using (StreamWriter BmEngineFile = new StreamWriter(BmEngineTemp))
+            {
+                foreach (string Line in BmEngineOrig)
+                {
+                    BmEngineFile.WriteLine(Line);
+                }
+                BmEngineFile.Close();
+            }
         }
 
         private void WriteBmEngineBasic()
