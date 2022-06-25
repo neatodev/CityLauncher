@@ -11,6 +11,8 @@ namespace CityLauncher
         string UserEngineTemp;
         FileIniDataParser DataParser;
 
+        string[] ExcludedEntries = { "LightComplexityColors", "ShaderComplexityColors" };
+
         private static Logger Nlog = LogManager.GetCurrentClassLogger();
 
 
@@ -49,23 +51,20 @@ namespace CityLauncher
             string[] BmEngineOrig = File.ReadAllLines(BmEnginePath);
             string[] BmEngineNew = File.ReadAllLines(BmEngineTemp);
 
-
-            for (int i = 0; i < BmEngineOrig.Length - 1; i++)
+            for (int i = 0; i < BmEngineNew.Length - 1; i++)
             {
-                string PreviousLine = "";
-                if (BmEngineOrig[i].Contains('='))
+                if (BmEngineNew[i].Contains('='))
                 {
-                    var BmEngineOrigTrimmed = BmEngineOrig[i].Substring(0, BmEngineOrig[i].LastIndexOf("="));
-
-                    for (int j = 0; j < BmEngineNew.Length - 1; j++)
+                    var LineTrimmed = BmEngineNew[i].Substring(0, BmEngineNew[i].LastIndexOf('='));
+                    for (int j = 0; j < BmEngineOrig.Length; j++)
                     {
-                        if (BmEngineNew[j].Contains(BmEngineOrigTrimmed) && !PreviousLine.Contains(BmEngineOrigTrimmed))
+                        if (BmEngineOrig[j].Contains('=') && BmEngineOrig[j].Substring(0, BmEngineOrig[j].LastIndexOf('=')) == LineTrimmed)
                         {
-                            BmEngineOrig[i] = BmEngineNew[j];
-                            PreviousLine = BmEngineNew[j];
-                            break;
+                            if (LineTrimmed != ExcludedEntries[0] && LineTrimmed != ExcludedEntries[1])
+                            {
+                                BmEngineOrig[j] = BmEngineNew[i];
+                            }
                         }
-                        PreviousLine = BmEngineNew[j];
                     }
                 }
             }
