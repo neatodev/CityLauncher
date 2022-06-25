@@ -286,8 +286,9 @@
             this.PhysXBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PhysXBox.FormattingEnabled = true;
             this.PhysXBox.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Off",
+            "Medium",
+            "High"});
             this.PhysXBox.Location = new System.Drawing.Point(119, 198);
             this.PhysXBox.Name = "PhysXBox";
             this.PhysXBox.Size = new System.Drawing.Size(152, 27);
@@ -681,7 +682,7 @@
             // 
             // ApplySettingsButton
             // 
-            this.ApplySettingsButton.Location = new System.Drawing.Point(261, 576);
+            this.ApplySettingsButton.Location = new System.Drawing.Point(261, 575);
             this.ApplySettingsButton.Name = "ApplySettingsButton";
             this.ApplySettingsButton.Size = new System.Drawing.Size(178, 37);
             this.ApplySettingsButton.TabIndex = 1;

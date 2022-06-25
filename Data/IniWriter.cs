@@ -145,27 +145,27 @@ namespace CityLauncher
             switch (Program.MainWindow.AntiAliasingBox.SelectedIndex)
             {
                 case 1:
-                    IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"] = "1";
+                    IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"] = "0";
                     IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"] = "1xMSAA";
                     break;
                 case 2:
-                    IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"] = "2";
+                    IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"] = "1";
                     IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"] = "1xMSAA";
                     break;
                 case 3:
-                    IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"] = "3";
+                    IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"] = "2";
                     IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"] = "1xMSAA";
                     break;
                 case 4:
-                    IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"] = "1";
+                    IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"] = "3";
                     IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"] = "2xMSAA";
                     break;
                 case 5:
-                    IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"] = "1";
+                    IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"] = "0";
                     IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"] = "4xMSAA";
                     break;
                 case 6:
-                    IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"] = "1";
+                    IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"] = "0";
                     IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"] = "8xMSAA";
                     break;
                 default:

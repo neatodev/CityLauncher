@@ -13,6 +13,7 @@ namespace CityLauncher
         {
             var IniConfigurator = new FileIniDataParser();
             IniConfigurator.Parser.Configuration.AllowDuplicateKeys = true;
+            IniConfigurator.Parser.Configuration.AssigmentSpacer = "";
             BmEngineData = IniConfigurator.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
             UserEngineData = IniConfigurator.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserEngine.ini"));
         }

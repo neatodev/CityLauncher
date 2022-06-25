@@ -11,6 +11,7 @@
     <SignAssembly>False</SignAssembly>
 	  <PublishReadyToRun>true</PublishReadyToRun>
 	  <PackageLicenseFile>Resources.license.txt</PackageLicenseFile>
+	  <StartupObject>CityLauncher.Program</StartupObject>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
