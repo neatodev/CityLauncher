@@ -258,16 +258,16 @@ namespace CityLauncher
             switch (Program.MainWindow.TessellationBox.SelectedIndex)
             {
                 case 1:
-                    IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "64.000000";
+                    IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "2048.000000";
                     break;
                 case 2:
-                    IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "128.000000";
-                    break;
-                case 3:
                     IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "256.000000";
                     break;
+                case 3:
+                    IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "128.000000";
+                    break;
                 case 4:
-                    IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "2048.000000";
+                    IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "64.000000";
                     break;
                 default:
                     IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "0.000000";

@@ -183,16 +183,16 @@
             // Tessellation Quality
             switch (IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"])
             {
-                case "64.000000":
+                case "2048.000000":
                     Program.MainWindow.TessellationBox.SelectedIndex = 1;
                     break;
-                case "128.000000":
+                case "256.000000":
                     Program.MainWindow.TessellationBox.SelectedIndex = 2;
                     break;
-                case "256.000000":
+                case "128.000000":
                     Program.MainWindow.TessellationBox.SelectedIndex = 3;
                     break;
-                case "2048.000000":
+                case "64.000000":
                     Program.MainWindow.TessellationBox.SelectedIndex = 4;
                     break;
                 default:
