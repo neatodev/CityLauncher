@@ -24,8 +24,8 @@
                 Program.MainWindow.SkipIntroButton.Text = "Could not find executable.";
                 return;
             }
-            var Startup = Path.Combine(Directory.GetCurrentDirectory(), "..\\BmGame\\Movies\\Startup.swf");
-            var StartupNV = Path.Combine(Directory.GetCurrentDirectory(), "..\\BmGame\\Movies\\StartupNV.swf");
+            var Startup = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\Startup.swf");
+            var StartupNV = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\StartupNV.swf");
 
             if (File.Exists(Startup) || File.Exists(StartupNV))
             {
@@ -36,8 +36,8 @@
 
         public void RemoveIntroVideoFiles()
         {
-            var Startup = Path.Combine(Directory.GetCurrentDirectory(), "..\\BmGame\\Movies\\Startup.swf");
-            var StartupNV = Path.Combine(Directory.GetCurrentDirectory(), "..\\BmGame\\Movies\\StartupNV.swf");
+            var Startup = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\Startup.swf");
+            var StartupNV = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\StartupNV.swf");
             try
             {
                 File.Delete(Startup);
