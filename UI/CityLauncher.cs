@@ -30,7 +30,7 @@ namespace CityLauncher
 
         private void SkipIntroButton_Click(object sender, EventArgs e)
         {
-            new FileHandler().RemoveIntroVideoFiles();
+            Program.FileHandler.RemoveIntroVideoFiles();
         }
     }
 }

@@ -4,10 +4,10 @@
     {
         public FileHandler()
         {
-
+            CheckIntroVideoFilesDeleted();
         }
 
-        public bool DetectGameExe()
+        private bool DetectGameExe()
         {
             var GameExe = Path.Combine(Directory.GetCurrentDirectory(), "BatmanAC.exe");
             if (File.Exists(GameExe))
@@ -17,8 +17,13 @@
             return false;
         }
 
-        public void CheckIntroVideoFilesDeleted()
+        private void CheckIntroVideoFilesDeleted()
         {
+            if (!DetectGameExe())
+            {
+                Program.MainWindow.SkipIntroButton.Text = "Could not find executable.";
+                return;
+            }
             var Startup = Path.Combine(Directory.GetCurrentDirectory(), "..\\BmGame\\Movies\\Startup.swf");
             var StartupNV = Path.Combine(Directory.GetCurrentDirectory(), "..\\BmGame\\Movies\\StartupNV.swf");
 
@@ -31,8 +36,8 @@
 
         public void RemoveIntroVideoFiles()
         {
-            var Startup = Path.Combine(Directory.GetCurrentDirectory(), "BmGame\\Movies\\Startup.swf");
-            var StartupNV = Path.Combine(Directory.GetCurrentDirectory(), "BmGame\\Movies\\StartupNV.swf");
+            var Startup = Path.Combine(Directory.GetCurrentDirectory(), "..\\BmGame\\Movies\\Startup.swf");
+            var StartupNV = Path.Combine(Directory.GetCurrentDirectory(), "..\\BmGame\\Movies\\StartupNV.swf");
             try
             {
                 File.Delete(Startup);
@@ -42,6 +47,8 @@
             {
                 //TODO Add logger
             }
+            Program.MainWindow.SkipIntroButton.Enabled = false;
+            Program.MainWindow.SkipIntroButton.Text = "Intro Movies disabled!";
         }
     }
 }
