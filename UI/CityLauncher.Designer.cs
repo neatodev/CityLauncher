@@ -75,6 +75,7 @@
             this.ControlTab = new System.Windows.Forms.TabPage();
             this.AboutTab = new System.Windows.Forms.TabPage();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
+            this.SkipIntroButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -682,13 +683,24 @@
             // 
             // ApplySettingsButton
             // 
-            this.ApplySettingsButton.Location = new System.Drawing.Point(261, 575);
+            this.ApplySettingsButton.Location = new System.Drawing.Point(401, 581);
             this.ApplySettingsButton.Name = "ApplySettingsButton";
             this.ApplySettingsButton.Size = new System.Drawing.Size(178, 37);
             this.ApplySettingsButton.TabIndex = 1;
-            this.ApplySettingsButton.Text = "Apply Settings";
+            this.ApplySettingsButton.Text = "Apply Settings\r\n";
             this.ApplySettingsButton.UseVisualStyleBackColor = true;
             this.ApplySettingsButton.Click += new System.EventHandler(this.ApplySettingsButton_Click);
+            // 
+            // SkipIntroButton
+            // 
+            this.SkipIntroButton.Enabled = false;
+            this.SkipIntroButton.Location = new System.Drawing.Point(113, 581);
+            this.SkipIntroButton.Name = "SkipIntroButton";
+            this.SkipIntroButton.Size = new System.Drawing.Size(178, 37);
+            this.SkipIntroButton.TabIndex = 2;
+            this.SkipIntroButton.Text = "Intro Movies disabled!";
+            this.SkipIntroButton.UseVisualStyleBackColor = true;
+            this.SkipIntroButton.Click += new System.EventHandler(this.SkipIntroButton_Click);
             // 
             // CityLauncher
             // 
@@ -696,6 +708,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(671, 752);
+            this.Controls.Add(this.SkipIntroButton);
             this.Controls.Add(this.ApplySettingsButton);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -764,5 +777,6 @@
         private Label PhysXLabel;
         public CheckBox Dx11Box;
         private Button ApplySettingsButton;
+        public Button SkipIntroButton;
     }
 }

@@ -30,6 +30,7 @@ namespace CityLauncher
             IniHandler = new IniHandler();
             MainWindow = new CityLauncher();
             new IniReader().InitDisplay();
+            new FileHandler().CheckIntroVideoFilesDeleted();
             Application.Run(MainWindow);
         }
 

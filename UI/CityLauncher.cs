@@ -27,5 +27,10 @@ namespace CityLauncher
         {
             new IniWriter().WriteAll();
         }
+
+        private void SkipIntroButton_Click(object sender, EventArgs e)
+        {
+            new FileHandler().RemoveIntroVideoFiles();
+        }
     }
 }
