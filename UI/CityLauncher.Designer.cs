@@ -425,6 +425,7 @@
             this.TessellationBox.Items.AddRange(new object[] {
             "Off",
             "Normal",
+            "Balanced",
             "High (Default)",
             "Very High",
             "Extreme"});
