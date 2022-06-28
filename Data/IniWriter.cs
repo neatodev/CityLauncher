@@ -29,6 +29,7 @@ namespace CityLauncher
             WriteBmEngineAdvanced();
             WriteToTempFile();
             MergeBmEngine();
+            Program.FileHandler.RenameIntroVideoFiles();
         }
 
         private void WriteToTempFile()

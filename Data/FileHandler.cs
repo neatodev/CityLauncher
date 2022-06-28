@@ -2,9 +2,17 @@
 {
     internal class FileHandler
     {
+
+        public bool IntroFilesRenamed;
+
+        private string Startup = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\Startup.swf");
+        private string StartupNV = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\StartupNV.swf");
+        private string StartupRenamed = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\Startup.swf.bak");
+        private string StartupNVRenamed = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\StartupNV.swf.bak");
+
         public FileHandler()
         {
-            CheckIntroVideoFilesDeleted();
+            CheckIntroVideoFilesRenamed();
         }
 
         private bool DetectGameExe()
@@ -17,38 +25,48 @@
             return false;
         }
 
-        private void CheckIntroVideoFilesDeleted()
+        private void CheckIntroVideoFilesRenamed()
         {
             if (!DetectGameExe())
             {
-                Program.MainWindow.SkipIntroButton.Text = "Could not find executable.";
+                Program.MainWindow.SkipIntroBox.Enabled = false;
                 return;
             }
-            var Startup = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\Startup.swf");
-            var StartupNV = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\StartupNV.swf");
 
-            if (File.Exists(Startup) || File.Exists(StartupNV))
+            if (File.Exists(Startup) && File.Exists(StartupNV))
             {
-                Program.MainWindow.SkipIntroButton.Enabled = true;
-                Program.MainWindow.SkipIntroButton.Text = "Skip Intro Movies";
+                Program.MainWindow.SkipIntroBox.Enabled = true;
+                Program.MainWindow.SkipIntroBox.Checked = false;
+                IntroFilesRenamed = false;
+            }
+
+            if (File.Exists(StartupRenamed) && File.Exists(StartupNVRenamed))
+            {
+                Program.MainWindow.SkipIntroBox.Enabled = true;
+                Program.MainWindow.SkipIntroBox.Checked = true;
+                IntroFilesRenamed = true;
             }
         }
 
-        public void RemoveIntroVideoFiles()
+        public void RenameIntroVideoFiles()
         {
-            var Startup = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\Startup.swf");
-            var StartupNV = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\StartupNV.swf");
-            try
+            if (!Program.MainWindow.SkipIntroBox.Enabled || !Program.MainWindow.SettingChanged)
             {
-                File.Delete(Startup);
-                File.Delete(StartupNV);
+                return;
             }
-            catch (FileNotFoundException)
+
+            if (!IntroFilesRenamed && Program.MainWindow.SkipIntroBox.Checked)
             {
-                //TODO Add logger
+                File.Move(Startup, StartupRenamed);
+                File.Move(StartupNV, StartupNVRenamed);
+                IntroFilesRenamed = !IntroFilesRenamed;
             }
-            Program.MainWindow.SkipIntroButton.Enabled = false;
-            Program.MainWindow.SkipIntroButton.Text = "Intro Movies disabled!";
+            else if (IntroFilesRenamed && !Program.MainWindow.SkipIntroBox.Checked)
+            {
+                File.Move(StartupRenamed, Startup);
+                File.Move(StartupNVRenamed, StartupNV);
+                IntroFilesRenamed = !IntroFilesRenamed;
+            }
         }
     }
 }

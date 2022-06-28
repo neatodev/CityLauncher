@@ -2,6 +2,7 @@ namespace CityLauncher
 {
     public partial class CityLauncher : Form
     {
+        public bool SettingChanged = false;
         public CityLauncher()
         {
             InitializeComponent();
@@ -28,9 +29,9 @@ namespace CityLauncher
             new IniWriter().WriteAll();
         }
 
-        private void SkipIntroButton_Click(object sender, EventArgs e)
+        private void SkipIntroBox_CheckedChanged(object sender, EventArgs e)
         {
-            Program.FileHandler.RemoveIntroVideoFiles();
+            SettingChanged = true;
         }
     }
 }

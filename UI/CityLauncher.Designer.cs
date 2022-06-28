@@ -59,6 +59,7 @@
             this.MaxShadowLabel = new System.Windows.Forms.Label();
             this.AnisotropyLabel = new System.Windows.Forms.Label();
             this.BasicDisplayGroupBox = new System.Windows.Forms.GroupBox();
+            this.SkipIntroBox = new System.Windows.Forms.CheckBox();
             this.Dx11Box = new System.Windows.Forms.CheckBox();
             this.LanguageBox = new System.Windows.Forms.ComboBox();
             this.FrameCapTextBox = new System.Windows.Forms.MaskedTextBox();
@@ -75,7 +76,6 @@
             this.ControlTab = new System.Windows.Forms.TabPage();
             this.AboutTab = new System.Windows.Forms.TabPage();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
-            this.SkipIntroButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -485,6 +485,7 @@
             // BasicDisplayGroupBox
             // 
             this.BasicDisplayGroupBox.AutoSize = true;
+            this.BasicDisplayGroupBox.Controls.Add(this.SkipIntroBox);
             this.BasicDisplayGroupBox.Controls.Add(this.Dx11Box);
             this.BasicDisplayGroupBox.Controls.Add(this.LanguageBox);
             this.BasicDisplayGroupBox.Controls.Add(this.FrameCapTextBox);
@@ -504,6 +505,20 @@
             this.BasicDisplayGroupBox.TabIndex = 13;
             this.BasicDisplayGroupBox.TabStop = false;
             this.BasicDisplayGroupBox.Text = "Basic";
+            // 
+            // SkipIntroBox
+            // 
+            this.SkipIntroBox.AutoSize = true;
+            this.SkipIntroBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SkipIntroBox.Enabled = false;
+            this.SkipIntroBox.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SkipIntroBox.Location = new System.Drawing.Point(427, 134);
+            this.SkipIntroBox.Name = "SkipIntroBox";
+            this.SkipIntroBox.Size = new System.Drawing.Size(206, 27);
+            this.SkipIntroBox.TabIndex = 16;
+            this.SkipIntroBox.Text = "Disable Startup Movies";
+            this.SkipIntroBox.UseVisualStyleBackColor = true;
+            this.SkipIntroBox.CheckedChanged += new System.EventHandler(this.SkipIntroBox_CheckedChanged);
             // 
             // Dx11Box
             // 
@@ -691,24 +706,12 @@
             this.ApplySettingsButton.UseVisualStyleBackColor = true;
             this.ApplySettingsButton.Click += new System.EventHandler(this.ApplySettingsButton_Click);
             // 
-            // SkipIntroButton
-            // 
-            this.SkipIntroButton.Enabled = false;
-            this.SkipIntroButton.Location = new System.Drawing.Point(113, 581);
-            this.SkipIntroButton.Name = "SkipIntroButton";
-            this.SkipIntroButton.Size = new System.Drawing.Size(178, 37);
-            this.SkipIntroButton.TabIndex = 2;
-            this.SkipIntroButton.Text = "Intro Movies disabled!";
-            this.SkipIntroButton.UseVisualStyleBackColor = true;
-            this.SkipIntroButton.Click += new System.EventHandler(this.SkipIntroButton_Click);
-            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(671, 752);
-            this.Controls.Add(this.SkipIntroButton);
             this.Controls.Add(this.ApplySettingsButton);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -777,6 +780,6 @@
         private Label PhysXLabel;
         public CheckBox Dx11Box;
         private Button ApplySettingsButton;
-        public Button SkipIntroButton;
+        public CheckBox SkipIntroBox;
     }
 }
