@@ -78,6 +78,13 @@ namespace CityLauncher
                 }
                 BmEngineFile.Close();
             }
+            DeleteTempFolder();
+        }
+
+        private void DeleteTempFolder()
+        {
+            File.Delete(BmEngineTemp);
+            Directory.Delete(Path.Combine(Environment.CurrentDirectory, "Temp"));
         }
 
         private void WriteBmEngineBasic()
