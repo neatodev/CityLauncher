@@ -5,10 +5,11 @@ namespace CityLauncher
 {
     internal class IniWriter
     {
-        string BmEnginePath;
-        string UserEnginePath;
-        string BmEngineTemp;
-        string UserEngineTemp;
+        private string BmEnginePath;
+        private string UserEnginePath;
+        private string BmEngineTemp;
+        private string UserEngineTemp;
+        private string UserEngineLangValue;
         FileIniDataParser DataParser;
 
         string[] ExcludedEntries = { "LightComplexityColors", "ShaderComplexityColors" };
@@ -29,6 +30,7 @@ namespace CityLauncher
             WriteBmEngineAdvanced();
             WriteToTempFile();
             MergeBmEngine();
+            WriteToUserEngine();
             Program.FileHandler.RenameIntroVideoFiles();
         }
 
@@ -36,15 +38,11 @@ namespace CityLauncher
         {
             var TempDir = Path.Combine(Environment.CurrentDirectory, "Temp");
             BmEngineTemp = Path.Combine(TempDir, "BmEngineTemp.ini");
-            UserEngineTemp = Path.Combine(TempDir, "UserEngineTemp.ini");
             Directory.CreateDirectory(TempDir);
             File.Create(BmEngineTemp).Dispose();
-            File.Create(UserEngineTemp).Dispose();
 
 
             DataParser.WriteFile(BmEngineTemp, IniHandler.BmEngineData);
-            DataParser.WriteFile(UserEngineTemp, IniHandler.UserEngineData);
-
         }
 
         private void MergeBmEngine()
@@ -79,6 +77,25 @@ namespace CityLauncher
                 BmEngineFile.Close();
             }
             DeleteTempFolder();
+        }
+
+        private void WriteToUserEngine()
+        {
+            string[] UserEngine = File.ReadAllLines(UserEnginePath);
+
+            using (StreamWriter UserEngineFile = new StreamWriter(UserEnginePath))
+            {
+                foreach (string Line in UserEngine)
+                {
+                    if (Line.Contains("Language"))
+                    {
+                        UserEngineFile.WriteLine(UserEngineLangValue);
+                        continue;
+                    }
+                    UserEngineFile.WriteLine(Line);
+                }
+                UserEngineFile.Close();
+            }
         }
 
         private void DeleteTempFolder()
@@ -147,47 +164,47 @@ namespace CityLauncher
             {
                 case 1:
                     IniHandler.BmEngineData["Engine.Engine"]["Language"] = "Deu";
-                    IniHandler.UserEngineData["Engine.Engine"]["Language"] = "Deu";
+                    UserEngineLangValue = "Language=Deu";
                     break;
                 case 2:
                     IniHandler.BmEngineData["Engine.Engine"]["Language"] = "Esm";
-                    IniHandler.UserEngineData["Engine.Engine"]["Language"] = "Esm";
+                    UserEngineLangValue = "Language=Esm";
                     break;
                 case 3:
                     IniHandler.BmEngineData["Engine.Engine"]["Language"] = "Esn";
-                    IniHandler.UserEngineData["Engine.Engine"]["Language"] = "Esn";
+                    UserEngineLangValue = "Language=Esn";
                     break;
                 case 4:
                     IniHandler.BmEngineData["Engine.Engine"]["Language"] = "Fra";
-                    IniHandler.UserEngineData["Engine.Engine"]["Language"] = "Fra";
+                    UserEngineLangValue = "Language=Fra";
                     break;
                 case 5:
                     IniHandler.BmEngineData["Engine.Engine"]["Language"] = "Ita";
-                    IniHandler.UserEngineData["Engine.Engine"]["Language"] = "Ita";
+                    UserEngineLangValue = "Language=Ita";
                     break;
                 case 6:
                     IniHandler.BmEngineData["Engine.Engine"]["Language"] = "Jpn";
-                    IniHandler.UserEngineData["Engine.Engine"]["Language"] = "Jpn";
+                    UserEngineLangValue = "Language=Jpn";
                     break;
                 case 7:
                     IniHandler.BmEngineData["Engine.Engine"]["Language"] = "Kor";
-                    IniHandler.UserEngineData["Engine.Engine"]["Language"] = "Kor";
+                    UserEngineLangValue = "Language=Kor";
                     break;
                 case 8:
                     IniHandler.BmEngineData["Engine.Engine"]["Language"] = "Pol";
-                    IniHandler.UserEngineData["Engine.Engine"]["Language"] = "Pol";
+                    UserEngineLangValue = "Language=Pol";
                     break;
                 case 9:
                     IniHandler.BmEngineData["Engine.Engine"]["Language"] = "Por";
-                    IniHandler.UserEngineData["Engine.Engine"]["Language"] = "Por";
+                    UserEngineLangValue = "Language=Por";
                     break;
                 case 10:
                     IniHandler.BmEngineData["Engine.Engine"]["Language"] = "Rus";
-                    IniHandler.UserEngineData["Engine.Engine"]["Language"] = "Rus";
+                    UserEngineLangValue = "Language=Rus";
                     break;
                 default:
                     IniHandler.BmEngineData["Engine.Engine"]["Language"] = "Int";
-                    IniHandler.UserEngineData["Engine.Engine"]["Language"] = "Int";
+                    UserEngineLangValue = "Language=Int";
                     break;
             }
 
