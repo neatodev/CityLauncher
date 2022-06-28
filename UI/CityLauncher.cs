@@ -33,5 +33,21 @@ namespace CityLauncher
         {
             SettingChanged = true;
         }
+
+        private void ManualModeButton_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "This option removes the 'read-only' flag of the configuration files, allowing for manual edits.\r\n" +
+                "Starting the game through the launcher will re-add the 'read-only' flag, so make any desired edits before that.\r\n\r\n" +
+                "Do you wish to continue?", @"Enable Manual Editing",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                Program.FileHandler.BmEngine.IsReadOnly = false;
+                Program.FileHandler.UserEngine.IsReadOnly = false;
+            }
+        }
     }
 }

@@ -76,6 +76,7 @@
             this.ControlTab = new System.Windows.Forms.TabPage();
             this.AboutTab = new System.Windows.Forms.TabPage();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
+            this.ManualModeButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -706,12 +707,23 @@
             this.ApplySettingsButton.UseVisualStyleBackColor = true;
             this.ApplySettingsButton.Click += new System.EventHandler(this.ApplySettingsButton_Click);
             // 
+            // ManualModeButton
+            // 
+            this.ManualModeButton.Location = new System.Drawing.Point(92, 581);
+            this.ManualModeButton.Name = "ManualModeButton";
+            this.ManualModeButton.Size = new System.Drawing.Size(178, 37);
+            this.ManualModeButton.TabIndex = 2;
+            this.ManualModeButton.Text = "Manual Mode";
+            this.ManualModeButton.UseVisualStyleBackColor = true;
+            this.ManualModeButton.Click += new System.EventHandler(this.ManualModeButton_Click);
+            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(671, 752);
+            this.Controls.Add(this.ManualModeButton);
             this.Controls.Add(this.ApplySettingsButton);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -781,5 +793,6 @@
         public CheckBox Dx11Box;
         private Button ApplySettingsButton;
         public CheckBox SkipIntroBox;
+        private Button ManualModeButton;
     }
 }
