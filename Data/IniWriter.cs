@@ -8,7 +8,6 @@ namespace CityLauncher
         private string BmEnginePath;
         private string UserEnginePath;
         private string BmEngineTemp;
-        private string UserEngineTemp;
         private string UserEngineLangValue;
         FileIniDataParser DataParser;
 
@@ -26,12 +25,16 @@ namespace CityLauncher
 
         public void WriteAll()
         {
+            Program.FileHandler.BmEngine.IsReadOnly = false;
+            Program.FileHandler.UserEngine.IsReadOnly = false;
             WriteBmEngineBasic();
             WriteBmEngineAdvanced();
             WriteToTempFile();
             MergeBmEngine();
             WriteToUserEngine();
             Program.FileHandler.RenameIntroVideoFiles();
+            Program.FileHandler.BmEngine.IsReadOnly = true;
+            Program.FileHandler.UserEngine.IsReadOnly = true;
         }
 
         private void WriteToTempFile()
