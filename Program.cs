@@ -17,6 +17,8 @@ namespace CityLauncher
 
         public static FileHandler FileHandler;
 
+        public static InputHandler InputHandler;
+
         /// <summary>
         ///     Replacement Application for the original Batman: Arkham Asylum BmLauncher
         ///     Offers more configuration options, enables compatibility with High-Res Texture Packs
@@ -28,12 +30,18 @@ namespace CityLauncher
         static void Main()
         {
             SetupLogger();
+            InitializeProgram();
+            Application.Run(MainWindow);
+        }
+
+        private static void InitializeProgram()
+        {
             ApplicationConfiguration.Initialize();
             IniHandler = new IniHandler();
             MainWindow = new CityLauncher();
             FileHandler = new FileHandler();
+            InputHandler = new InputHandler();
             new IniReader().InitDisplay();
-            Application.Run(MainWindow);
         }
 
         private static void SetupLogger()

@@ -77,10 +77,15 @@
             this.AboutTab = new System.Windows.Forms.TabPage();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
             this.ManualModeButton = new System.Windows.Forms.Button();
+            this.ForwardLabel = new System.Windows.Forms.Label();
+            this.BackwardLabel = new System.Windows.Forms.Label();
+            this.RightLabel = new System.Windows.Forms.Label();
+            this.LeftLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
             this.BasicDisplayGroupBox.SuspendLayout();
+            this.ControlTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -681,6 +686,10 @@
             // 
             // ControlTab
             // 
+            this.ControlTab.Controls.Add(this.LeftLabel);
+            this.ControlTab.Controls.Add(this.RightLabel);
+            this.ControlTab.Controls.Add(this.BackwardLabel);
+            this.ControlTab.Controls.Add(this.ForwardLabel);
             this.ControlTab.Location = new System.Drawing.Point(4, 38);
             this.ControlTab.Name = "ControlTab";
             this.ControlTab.Padding = new System.Windows.Forms.Padding(3);
@@ -718,6 +727,46 @@
             this.ManualModeButton.UseVisualStyleBackColor = true;
             this.ManualModeButton.Click += new System.EventHandler(this.ManualModeButton_Click);
             // 
+            // ForwardLabel
+            // 
+            this.ForwardLabel.AutoSize = true;
+            this.ForwardLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ForwardLabel.Location = new System.Drawing.Point(17, 21);
+            this.ForwardLabel.Name = "ForwardLabel";
+            this.ForwardLabel.Size = new System.Drawing.Size(61, 19);
+            this.ForwardLabel.TabIndex = 0;
+            this.ForwardLabel.Text = "Forward";
+            // 
+            // BackwardLabel
+            // 
+            this.BackwardLabel.AutoSize = true;
+            this.BackwardLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BackwardLabel.Location = new System.Drawing.Point(17, 64);
+            this.BackwardLabel.Name = "BackwardLabel";
+            this.BackwardLabel.Size = new System.Drawing.Size(72, 19);
+            this.BackwardLabel.TabIndex = 1;
+            this.BackwardLabel.Text = "Backward";
+            // 
+            // RightLabel
+            // 
+            this.RightLabel.AutoSize = true;
+            this.RightLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RightLabel.Location = new System.Drawing.Point(286, 64);
+            this.RightLabel.Name = "RightLabel";
+            this.RightLabel.Size = new System.Drawing.Size(43, 19);
+            this.RightLabel.TabIndex = 2;
+            this.RightLabel.Text = "Right";
+            // 
+            // LeftLabel
+            // 
+            this.LeftLabel.AutoSize = true;
+            this.LeftLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LeftLabel.Location = new System.Drawing.Point(286, 21);
+            this.LeftLabel.Name = "LeftLabel";
+            this.LeftLabel.Size = new System.Drawing.Size(34, 19);
+            this.LeftLabel.TabIndex = 3;
+            this.LeftLabel.Text = "Left";
+            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -740,6 +789,8 @@
             this.AdvancedDisplayGroupBox.PerformLayout();
             this.BasicDisplayGroupBox.ResumeLayout(false);
             this.BasicDisplayGroupBox.PerformLayout();
+            this.ControlTab.ResumeLayout(false);
+            this.ControlTab.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -795,5 +846,9 @@
         private Button ApplySettingsButton;
         public CheckBox SkipIntroBox;
         private Button ManualModeButton;
+        private Label ForwardLabel;
+        private Label BackwardLabel;
+        private Label LeftLabel;
+        private Label RightLabel;
     }
 }
