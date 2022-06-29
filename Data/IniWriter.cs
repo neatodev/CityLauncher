@@ -5,11 +5,11 @@ namespace CityLauncher
 {
     internal class IniWriter
     {
-        private string BmEnginePath;
-        private string UserEnginePath;
+        private readonly string BmEnginePath;
+        private readonly string UserEnginePath;
         private string BmEngineTemp;
         private string UserEngineLangValue;
-        FileIniDataParser DataParser;
+        readonly FileIniDataParser DataParser;
 
         string[] ExcludedEntries = { "LightComplexityColors", "ShaderComplexityColors" };
 
@@ -43,7 +43,6 @@ namespace CityLauncher
             BmEngineTemp = Path.Combine(TempDir, "BmEngineTemp.ini");
             Directory.CreateDirectory(TempDir);
             File.Create(BmEngineTemp).Dispose();
-
 
             DataParser.WriteFile(BmEngineTemp, IniHandler.BmEngineData);
         }

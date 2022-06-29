@@ -43,7 +43,15 @@ namespace CityLauncher
 
             }
 
-            if (!File.Exists(UserInputPath))
+            if (File.Exists(UserInputPath))
+            {
+                string[] Lines = File.ReadAllLines(UserInputPath);
+                if (Lines.Length < 104)
+                {
+                    File.Delete(UserInputPath);
+                    CreateConfigFile(UserInputPath, Resources.UserInput);
+                }
+            } else if (!File.Exists(UserInputPath))
             {
                 CreateConfigFile(UserInputPath, Resources.UserInput);
             }
