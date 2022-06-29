@@ -37,9 +37,9 @@ namespace CityLauncher
         private static void InitializeProgram()
         {
             ApplicationConfiguration.Initialize();
-            IniHandler = new IniHandler();
             MainWindow = new CityLauncher();
             FileHandler = new FileHandler();
+            IniHandler = new IniHandler();
             InputHandler = new InputHandler();
             new IniReader().InitDisplay();
         }

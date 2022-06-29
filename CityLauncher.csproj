@@ -10,7 +10,6 @@
     <PlatformTarget>x64</PlatformTarget>
     <SignAssembly>False</SignAssembly>
 	  <PublishReadyToRun>true</PublishReadyToRun>
-	  <PackageLicenseFile>Resources.license.txt</PackageLicenseFile>
 	  <StartupObject>CityLauncher.Program</StartupObject>
   </PropertyGroup>
 

@@ -61,20 +61,84 @@ namespace CityLauncher.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Attribution-NonCommercial-ShareAlike 4.0 International
+        ///   Looks up a localized string similar to [URL]
+        ///Protocol=unreal
+        ///Name=Player
+        ///Map=Frontend.umap
+        ///LocalMap=Frontend.umap
+        ///LocalOptions=?Game=BmGame.RGIFrontend
+        ///TransitionMap=Entry
+        ///MapExt=umap
+        ///EXEName=BmGame.exe
+        ///DebugEXEName=DEBUG-BmGame.exe
+        ///SaveExt=usa
+        ///Port=7777
+        ///PeerPort=7778
+        ///GameName=Batman: Arkham City
+        ///GameNameShort=Bm
         ///
-        ///=======================================================================
-        ///
-        ///Creative Commons Corporation (&quot;Creative Commons&quot;) is not a law firm and
-        ///does not provide legal services or legal advice. Distribution of
-        ///Creative Commons public licenses does not create a lawyer-client or
-        ///other relationship. Creative Commons makes its licenses and related
-        ///information available on an &quot;as-is&quot; basis. Creative Commons gives no
-        ///warranties regarding its license [rest of string was truncated]&quot;;.
+        ///[Engine.Engine]
+        ///NetworkDevice=IpDrv.TcpNetDriver
+        ///FallbackNetworkDevice=IpDrv.TcpNetDriver
+        ///ConsoleClassName=Engine.Console
+        ///GameViewportClientClassName=BmGame.RGFxGameViewportClient
+        ///LocalPlayerClassName=Engine.LocalP [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string license {
+        internal static string BmEngine {
             get {
-                return ResourceManager.GetString("license", resourceCulture);
+                return ResourceManager.GetString("BmEngine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Configuration]
+        ///BasedOn=..\BmGame\Config\DefaultEngine.ini
+        ///
+        ///[SystemSettings]
+        ///Fullscreen=True
+        ///UseVsync=True
+        ///AllowD3D10=False
+        ///AllowD3D11=False
+        ///ResX=1600
+        ///ResY=900
+        ///EffectsLevel=3
+        ///MultisampleMode=FXAA-HI
+        ///DynamicLights=True
+        ///LensFlares=True
+        ///bAllowLightShafts=True
+        ///DynamicShadows=True
+        ///MotionBlur=True
+        ///Distortion=True
+        ///Reflections=True
+        ///AmbientOcclusion=True
+        ///DetailMode=2
+        ///MaxShadowResolution=512
+        ///IniVersion=6.9
+        ///
+        ///[Engine.Engine]
+        ///bOnScreenKismetWarnings=FALSE
+        ///bSubtitlesEnabled=FALSE
+        ///PhysXLevel=1
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string UserEngine {
+            get {
+                return ResourceManager.GetString("UserEngine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Configuration]
+        ///BasedOn=..\BmGame\Config\DefaultInput.ini
+        ///
+        ///[Engine.PlayerInput]
+        ///IniVersion=6.9
+        ///.Bindings=(Name=&quot;W&quot;,Command=&quot;MoveForward | DebugMenuUpPressed | OnRelease DebugMenuUpReleased | Axis aRawLHJoyUp Speed=1.0&quot;, Shift=false, Control=false, Alt=false, bIgnoreShift=false, bIgnoreCtrl=false, bIgnoreAlt=false):META:COM_FORWARD,0,-1,-1,&quot;&quot;,false,true,CI_Movement,CI_LeftStick,CI_LeftStickUp,CI_LeftStickUpAndDown
+        ///.Bindings=(Name=&quot;S&quot;,Command=&quot;MoveBackward | DebugMenuDownPressed | OnRelease DebugMenuDow [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string UserInput {
+            get {
+                return ResourceManager.GetString("UserInput", resourceCulture);
             }
         }
     }

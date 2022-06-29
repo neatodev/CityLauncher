@@ -1,4 +1,6 @@
-﻿namespace CityLauncher
+﻿using CityLauncher.Properties;
+
+namespace CityLauncher
 {
     internal class FileHandler
     {
@@ -11,18 +13,48 @@
 
         public string BmEnginePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini");
         public string UserEnginePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserEngine.ini");
+        public string UserInputPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserInput.ini");
 
         public FileInfo BmEngine = new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
         public FileInfo UserEngine = new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserEngine.ini"));
 
         public FileHandler()
         {
+            CheckConfigFilesExist();
             CheckIntroVideoFilesRenamed();
         }
 
-        private static void CheckConfigFilesExist()
+        private void CheckConfigFilesExist()
         {
+            if (!Directory.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config")))
+            {
+                Directory.CreateDirectory(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config"));
+            }
 
+
+            if (!File.Exists(BmEnginePath))
+            {
+                CreateConfigFile(BmEnginePath, Resources.BmEngine);
+            }
+
+            if (!File.Exists(UserEnginePath))
+            {
+                CreateConfigFile(UserEnginePath, Resources.UserEngine);
+
+            }
+
+            if (!File.Exists(UserInputPath))
+            {
+                CreateConfigFile(UserInputPath, Resources.UserInput);
+            }
+        }
+
+        private void CreateConfigFile(string Path, string Resource)
+        {
+            File.Create(Path).Dispose();
+            var FileWriter = new StreamWriter(Path);
+            FileWriter.Write(Resource);
+            FileWriter.Close();
         }
 
         private static bool DetectGameExe()
