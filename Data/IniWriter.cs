@@ -18,8 +18,8 @@ namespace CityLauncher
 
         public IniWriter()
         {
-            BmEnginePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini");
-            UserEnginePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserEngine.ini");
+            BmEnginePath = Program.FileHandler.BmEnginePath;
+            UserEnginePath = Program.FileHandler.BmEnginePath;
             DataParser = new FileIniDataParser();
         }
 

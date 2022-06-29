@@ -47,6 +47,7 @@ namespace CityLauncher
             {
                 Program.FileHandler.BmEngine.IsReadOnly = false;
                 Program.FileHandler.UserEngine.IsReadOnly = false;
+                MessageBox.Show("Manual Editing Enabled", @"Success!");
             }
         }
     }
