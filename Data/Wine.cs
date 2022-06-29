@@ -11,7 +11,7 @@ namespace CityLauncher
         {
             try
             {
-                Nlog.Info("IsWine - Wine detected. Version: {0}", GetWineVersion());
+                Nlog.Info("Wine.Exists() - Wine detected. Version: {0}", GetWineVersion());
                 return true;
             }
             catch (EntryPointNotFoundException e)

@@ -15,7 +15,6 @@
             var ResX = IniHandler.BmEngineData["SystemSettings"]["ResX"];
             var ResY = IniHandler.BmEngineData["SystemSettings"]["ResY"];
             new Resolution();
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
             foreach (string Resolution in Resolution.ResolutionList)
             {
                 Program.MainWindow.ResolutionBox.Items.Add(Resolution);
@@ -24,7 +23,6 @@
                     Program.MainWindow.ResolutionBox.SelectedIndex = Program.MainWindow.ResolutionBox.Items.IndexOf(Resolution);
                 }
             }
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
 
             // Fullscreen
             if (IniHandler.BmEngineData["SystemSettings"]["Fullscreen"] == "True")
@@ -61,7 +59,7 @@
             }
 
             // Framerate Cap
-            Int16 Framecap = Int16.Parse(IniHandler.BmEngineData["Engine.Engine"]["MaxSmoothedFrameRate"]);
+            short Framecap = short.Parse(IniHandler.BmEngineData["Engine.Engine"]["MaxSmoothedFrameRate"]);
             Framecap -= 2;
             Program.MainWindow.FrameCapTextBox.Text = Framecap.ToString();
 
