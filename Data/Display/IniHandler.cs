@@ -6,6 +6,7 @@ namespace CityLauncher
     internal class IniHandler
     {
         public static IniData? BmEngineData { get; set; }
+        public static IniData? BmInputData { get; set; }
 
         public IniHandler()
         {
@@ -13,6 +14,7 @@ namespace CityLauncher
             IniConfigurator.Parser.Configuration.AllowDuplicateKeys = true;
             IniConfigurator.Parser.Configuration.AssigmentSpacer = "";
             BmEngineData = IniConfigurator.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
+            BmInputData = IniConfigurator.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini"));
             RemoveSections();
         }
 

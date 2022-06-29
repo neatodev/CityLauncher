@@ -74,6 +74,28 @@
             this.LanguageLabel = new System.Windows.Forms.Label();
             this.FullscreenLabel = new System.Windows.Forms.Label();
             this.ControlTab = new System.Windows.Forms.TabPage();
+            this.CustomFoV2ValueLabel = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.CustomFoV2Trackbar = new System.Windows.Forms.TrackBar();
+            this.CustomFoV2Button = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.CustomCommandButton = new System.Windows.Forms.Button();
+            this.CustomCommandLabel = new System.Windows.Forms.Label();
+            this.CustomFoV1ValueLabel = new System.Windows.Forms.Label();
+            this.MouseSensitivityValueLabel = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.MouseSensitivityLabel = new System.Windows.Forms.Label();
+            this.CustomFoV1Trackbar = new System.Windows.Forms.TrackBar();
+            this.CustomFoV1Button = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.MouseSensitivityTrackbar = new System.Windows.Forms.TrackBar();
+            this.MouseSmoothingBox = new System.Windows.Forms.CheckBox();
+            this.SpeedRunButton = new System.Windows.Forms.Button();
+            this.SpeedRunLabel = new System.Windows.Forms.Label();
+            this.CentreCameraButton = new System.Windows.Forms.Button();
+            this.CentreCameraLabel = new System.Windows.Forms.Label();
+            this.ResetFoVButton = new System.Windows.Forms.Button();
+            this.ResetFoVLabel = new System.Windows.Forms.Label();
             this.ToggleHudButton = new System.Windows.Forms.Button();
             this.ToggleHudLabel = new System.Windows.Forms.Label();
             this.OpenConsoleButton = new System.Windows.Forms.Button();
@@ -155,15 +177,14 @@
             this.AboutTab = new System.Windows.Forms.TabPage();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
             this.ManualModeButton = new System.Windows.Forms.Button();
-            this.ResetFoVLabel = new System.Windows.Forms.Label();
-            this.ResetFoVButton = new System.Windows.Forms.Button();
-            this.CentreCameraLabel = new System.Windows.Forms.Label();
-            this.CentreCameraButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
             this.BasicDisplayGroupBox.SuspendLayout();
             this.ControlTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -178,7 +199,7 @@
             this.tabControl1.Location = new System.Drawing.Point(9, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(653, 995);
+            this.tabControl1.Size = new System.Drawing.Size(653, 533);
             this.tabControl1.TabIndex = 0;
             // 
             // DisplayTab
@@ -188,7 +209,7 @@
             this.DisplayTab.Location = new System.Drawing.Point(4, 38);
             this.DisplayTab.Name = "DisplayTab";
             this.DisplayTab.Padding = new System.Windows.Forms.Padding(3);
-            this.DisplayTab.Size = new System.Drawing.Size(645, 953);
+            this.DisplayTab.Size = new System.Drawing.Size(645, 491);
             this.DisplayTab.TabIndex = 0;
             this.DisplayTab.Text = "Display";
             this.DisplayTab.UseVisualStyleBackColor = true;
@@ -765,6 +786,24 @@
             // ControlTab
             // 
             this.ControlTab.AutoScroll = true;
+            this.ControlTab.Controls.Add(this.CustomFoV2ValueLabel);
+            this.ControlTab.Controls.Add(this.label10);
+            this.ControlTab.Controls.Add(this.CustomFoV2Trackbar);
+            this.ControlTab.Controls.Add(this.CustomFoV2Button);
+            this.ControlTab.Controls.Add(this.label11);
+            this.ControlTab.Controls.Add(this.CustomCommandButton);
+            this.ControlTab.Controls.Add(this.CustomCommandLabel);
+            this.ControlTab.Controls.Add(this.CustomFoV1ValueLabel);
+            this.ControlTab.Controls.Add(this.MouseSensitivityValueLabel);
+            this.ControlTab.Controls.Add(this.label7);
+            this.ControlTab.Controls.Add(this.MouseSensitivityLabel);
+            this.ControlTab.Controls.Add(this.CustomFoV1Trackbar);
+            this.ControlTab.Controls.Add(this.CustomFoV1Button);
+            this.ControlTab.Controls.Add(this.label6);
+            this.ControlTab.Controls.Add(this.MouseSensitivityTrackbar);
+            this.ControlTab.Controls.Add(this.MouseSmoothingBox);
+            this.ControlTab.Controls.Add(this.SpeedRunButton);
+            this.ControlTab.Controls.Add(this.SpeedRunLabel);
             this.ControlTab.Controls.Add(this.CentreCameraButton);
             this.ControlTab.Controls.Add(this.CentreCameraLabel);
             this.ControlTab.Controls.Add(this.ResetFoVButton);
@@ -850,10 +889,241 @@
             this.ControlTab.Location = new System.Drawing.Point(4, 38);
             this.ControlTab.Name = "ControlTab";
             this.ControlTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ControlTab.Size = new System.Drawing.Size(645, 953);
+            this.ControlTab.Size = new System.Drawing.Size(645, 491);
             this.ControlTab.TabIndex = 1;
             this.ControlTab.Text = "Controls";
             this.ControlTab.UseVisualStyleBackColor = true;
+            // 
+            // CustomFoV2ValueLabel
+            // 
+            this.CustomFoV2ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CustomFoV2ValueLabel.AutoSize = true;
+            this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(585, 762);
+            this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
+            this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
+            this.CustomFoV2ValueLabel.TabIndex = 136;
+            this.CustomFoV2ValueLabel.Text = "00";
+            this.CustomFoV2ValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(402, 762);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(142, 19);
+            this.label10.TabIndex = 135;
+            this.label10.Text = "Custom FoV 2 Value:";
+            // 
+            // CustomFoV2Trackbar
+            // 
+            this.CustomFoV2Trackbar.Location = new System.Drawing.Point(398, 777);
+            this.CustomFoV2Trackbar.Maximum = 150;
+            this.CustomFoV2Trackbar.Minimum = 75;
+            this.CustomFoV2Trackbar.Name = "CustomFoV2Trackbar";
+            this.CustomFoV2Trackbar.Size = new System.Drawing.Size(236, 45);
+            this.CustomFoV2Trackbar.TabIndex = 134;
+            this.CustomFoV2Trackbar.Value = 75;
+            this.CustomFoV2Trackbar.Scroll += new System.EventHandler(this.CustomFoV2Trackbar_Scroll);
+            // 
+            // CustomFoV2Button
+            // 
+            this.CustomFoV2Button.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomFoV2Button.Location = new System.Drawing.Point(287, 777);
+            this.CustomFoV2Button.Name = "CustomFoV2Button";
+            this.CustomFoV2Button.Size = new System.Drawing.Size(83, 35);
+            this.CustomFoV2Button.TabIndex = 133;
+            this.CustomFoV2Button.Text = "button1";
+            this.CustomFoV2Button.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(195, 785);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(98, 19);
+            this.label11.TabIndex = 132;
+            this.label11.Text = "Custom FoV 2";
+            // 
+            // CustomCommandButton
+            // 
+            this.CustomCommandButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomCommandButton.Location = new System.Drawing.Point(119, 728);
+            this.CustomCommandButton.Name = "CustomCommandButton";
+            this.CustomCommandButton.Size = new System.Drawing.Size(83, 35);
+            this.CustomCommandButton.TabIndex = 131;
+            this.CustomCommandButton.Text = "button1";
+            this.CustomCommandButton.UseVisualStyleBackColor = true;
+            // 
+            // CustomCommandLabel
+            // 
+            this.CustomCommandLabel.AutoSize = true;
+            this.CustomCommandLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomCommandLabel.Location = new System.Drawing.Point(-1, 736);
+            this.CustomCommandLabel.Name = "CustomCommandLabel";
+            this.CustomCommandLabel.Size = new System.Drawing.Size(127, 19);
+            this.CustomCommandLabel.TabIndex = 130;
+            this.CustomCommandLabel.Text = "Custom Command";
+            // 
+            // CustomFoV1ValueLabel
+            // 
+            this.CustomFoV1ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CustomFoV1ValueLabel.AutoSize = true;
+            this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(585, 713);
+            this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
+            this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
+            this.CustomFoV1ValueLabel.TabIndex = 129;
+            this.CustomFoV1ValueLabel.Text = "00";
+            this.CustomFoV1ValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // MouseSensitivityValueLabel
+            // 
+            this.MouseSensitivityValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MouseSensitivityValueLabel.AutoSize = true;
+            this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(585, 644);
+            this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
+            this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
+            this.MouseSensitivityValueLabel.TabIndex = 128;
+            this.MouseSensitivityValueLabel.Text = "00";
+            this.MouseSensitivityValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(402, 713);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(142, 19);
+            this.label7.TabIndex = 127;
+            this.label7.Text = "Custom FoV 1 Value:";
+            // 
+            // MouseSensitivityLabel
+            // 
+            this.MouseSensitivityLabel.AutoSize = true;
+            this.MouseSensitivityLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MouseSensitivityLabel.Location = new System.Drawing.Point(402, 644);
+            this.MouseSensitivityLabel.Name = "MouseSensitivityLabel";
+            this.MouseSensitivityLabel.Size = new System.Drawing.Size(127, 19);
+            this.MouseSensitivityLabel.TabIndex = 126;
+            this.MouseSensitivityLabel.Text = "Mouse Sensitivity:";
+            // 
+            // CustomFoV1Trackbar
+            // 
+            this.CustomFoV1Trackbar.Location = new System.Drawing.Point(398, 728);
+            this.CustomFoV1Trackbar.Maximum = 150;
+            this.CustomFoV1Trackbar.Minimum = 75;
+            this.CustomFoV1Trackbar.Name = "CustomFoV1Trackbar";
+            this.CustomFoV1Trackbar.Size = new System.Drawing.Size(236, 45);
+            this.CustomFoV1Trackbar.TabIndex = 125;
+            this.CustomFoV1Trackbar.Value = 75;
+            this.CustomFoV1Trackbar.Scroll += new System.EventHandler(this.CustomFoVTrackbar_Scroll);
+            // 
+            // CustomFoV1Button
+            // 
+            this.CustomFoV1Button.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomFoV1Button.Location = new System.Drawing.Point(287, 728);
+            this.CustomFoV1Button.Name = "CustomFoV1Button";
+            this.CustomFoV1Button.Size = new System.Drawing.Size(83, 35);
+            this.CustomFoV1Button.TabIndex = 124;
+            this.CustomFoV1Button.Text = "button1";
+            this.CustomFoV1Button.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(195, 736);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 19);
+            this.label6.TabIndex = 123;
+            this.label6.Text = "Custom FoV 1";
+            // 
+            // MouseSensitivityTrackbar
+            // 
+            this.MouseSensitivityTrackbar.Location = new System.Drawing.Point(398, 661);
+            this.MouseSensitivityTrackbar.Maximum = 100;
+            this.MouseSensitivityTrackbar.Minimum = 1;
+            this.MouseSensitivityTrackbar.Name = "MouseSensitivityTrackbar";
+            this.MouseSensitivityTrackbar.Size = new System.Drawing.Size(236, 45);
+            this.MouseSensitivityTrackbar.TabIndex = 122;
+            this.MouseSensitivityTrackbar.Value = 1;
+            this.MouseSensitivityTrackbar.Scroll += new System.EventHandler(this.MouseSensitivityTrackbar_Scroll);
+            // 
+            // MouseSmoothingBox
+            // 
+            this.MouseSmoothingBox.AutoSize = true;
+            this.MouseSmoothingBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.MouseSmoothingBox.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MouseSmoothingBox.Location = new System.Drawing.Point(459, 614);
+            this.MouseSmoothingBox.Name = "MouseSmoothingBox";
+            this.MouseSmoothingBox.Size = new System.Drawing.Size(169, 27);
+            this.MouseSmoothingBox.TabIndex = 121;
+            this.MouseSmoothingBox.Text = "Mouse Smoothing";
+            this.MouseSmoothingBox.UseVisualStyleBackColor = true;
+            // 
+            // SpeedRunButton
+            // 
+            this.SpeedRunButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SpeedRunButton.Location = new System.Drawing.Point(91, 679);
+            this.SpeedRunButton.Name = "SpeedRunButton";
+            this.SpeedRunButton.Size = new System.Drawing.Size(83, 35);
+            this.SpeedRunButton.TabIndex = 120;
+            this.SpeedRunButton.Text = "SpeedRun";
+            this.SpeedRunButton.UseVisualStyleBackColor = true;
+            // 
+            // SpeedRunLabel
+            // 
+            this.SpeedRunLabel.AutoSize = true;
+            this.SpeedRunLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SpeedRunLabel.Location = new System.Drawing.Point(23, 687);
+            this.SpeedRunLabel.Name = "SpeedRunLabel";
+            this.SpeedRunLabel.Size = new System.Drawing.Size(69, 19);
+            this.SpeedRunLabel.TabIndex = 119;
+            this.SpeedRunLabel.Text = "Speedrun";
+            // 
+            // CentreCameraButton
+            // 
+            this.CentreCameraButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CentreCameraButton.Location = new System.Drawing.Point(287, 630);
+            this.CentreCameraButton.Name = "CentreCameraButton";
+            this.CentreCameraButton.Size = new System.Drawing.Size(83, 35);
+            this.CentreCameraButton.TabIndex = 118;
+            this.CentreCameraButton.Text = "button1";
+            this.CentreCameraButton.UseVisualStyleBackColor = true;
+            // 
+            // CentreCameraLabel
+            // 
+            this.CentreCameraLabel.AutoSize = true;
+            this.CentreCameraLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CentreCameraLabel.Location = new System.Drawing.Point(180, 638);
+            this.CentreCameraLabel.Name = "CentreCameraLabel";
+            this.CentreCameraLabel.Size = new System.Drawing.Size(106, 19);
+            this.CentreCameraLabel.TabIndex = 117;
+            this.CentreCameraLabel.Text = "Centre Camera";
+            // 
+            // ResetFoVButton
+            // 
+            this.ResetFoVButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetFoVButton.Location = new System.Drawing.Point(287, 679);
+            this.ResetFoVButton.Name = "ResetFoVButton";
+            this.ResetFoVButton.Size = new System.Drawing.Size(83, 35);
+            this.ResetFoVButton.TabIndex = 116;
+            this.ResetFoVButton.Text = "button1";
+            this.ResetFoVButton.UseVisualStyleBackColor = true;
+            // 
+            // ResetFoVLabel
+            // 
+            this.ResetFoVLabel.AutoSize = true;
+            this.ResetFoVLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetFoVLabel.Location = new System.Drawing.Point(209, 687);
+            this.ResetFoVLabel.Name = "ResetFoVLabel";
+            this.ResetFoVLabel.Size = new System.Drawing.Size(74, 19);
+            this.ResetFoVLabel.TabIndex = 115;
+            this.ResetFoVLabel.Text = "Reset FoV";
             // 
             // ToggleHudButton
             // 
@@ -878,7 +1148,7 @@
             // OpenConsoleButton
             // 
             this.OpenConsoleButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OpenConsoleButton.Location = new System.Drawing.Point(290, 575);
+            this.OpenConsoleButton.Location = new System.Drawing.Point(287, 575);
             this.OpenConsoleButton.Name = "OpenConsoleButton";
             this.OpenConsoleButton.Size = new System.Drawing.Size(86, 35);
             this.OpenConsoleButton.TabIndex = 112;
@@ -889,7 +1159,7 @@
             // 
             this.OpenConsoleLabel.AutoSize = true;
             this.OpenConsoleLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OpenConsoleLabel.Location = new System.Drawing.Point(193, 583);
+            this.OpenConsoleLabel.Location = new System.Drawing.Point(186, 583);
             this.OpenConsoleLabel.Name = "OpenConsoleLabel";
             this.OpenConsoleLabel.Size = new System.Drawing.Size(100, 19);
             this.OpenConsoleLabel.TabIndex = 111;
@@ -898,7 +1168,7 @@
             // CWDisarmFixButton1
             // 
             this.CWDisarmFixButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CWDisarmFixButton1.Location = new System.Drawing.Point(93, 564);
+            this.CWDisarmFixButton1.Location = new System.Drawing.Point(91, 564);
             this.CWDisarmFixButton1.Name = "CWDisarmFixButton1";
             this.CWDisarmFixButton1.Size = new System.Drawing.Size(85, 57);
             this.CWDisarmFixButton1.TabIndex = 109;
@@ -1598,7 +1868,7 @@
             this.RGULabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RGULabel.AutoSize = true;
             this.RGULabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RGULabel.Location = new System.Drawing.Point(45, 89);
+            this.RGULabel.Location = new System.Drawing.Point(27, 89);
             this.RGULabel.Name = "RGULabel";
             this.RGULabel.Size = new System.Drawing.Size(43, 57);
             this.RGULabel.TabIndex = 4;
@@ -1649,14 +1919,14 @@
             // 
             this.AboutTab.Location = new System.Drawing.Point(4, 38);
             this.AboutTab.Name = "AboutTab";
-            this.AboutTab.Size = new System.Drawing.Size(645, 953);
+            this.AboutTab.Size = new System.Drawing.Size(645, 491);
             this.AboutTab.TabIndex = 2;
             this.AboutTab.Text = "About";
             this.AboutTab.UseVisualStyleBackColor = true;
             // 
             // ApplySettingsButton
             // 
-            this.ApplySettingsButton.Location = new System.Drawing.Point(430, 1009);
+            this.ApplySettingsButton.Location = new System.Drawing.Point(333, 580);
             this.ApplySettingsButton.Name = "ApplySettingsButton";
             this.ApplySettingsButton.Size = new System.Drawing.Size(178, 37);
             this.ApplySettingsButton.TabIndex = 1;
@@ -1666,7 +1936,7 @@
             // 
             // ManualModeButton
             // 
-            this.ManualModeButton.Location = new System.Drawing.Point(232, 1009);
+            this.ManualModeButton.Location = new System.Drawing.Point(139, 580);
             this.ManualModeButton.Name = "ManualModeButton";
             this.ManualModeButton.Size = new System.Drawing.Size(178, 37);
             this.ManualModeButton.TabIndex = 2;
@@ -1674,52 +1944,12 @@
             this.ManualModeButton.UseVisualStyleBackColor = true;
             this.ManualModeButton.Click += new System.EventHandler(this.ManualModeButton_Click);
             // 
-            // ResetFoVLabel
-            // 
-            this.ResetFoVLabel.AutoSize = true;
-            this.ResetFoVLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResetFoVLabel.Location = new System.Drawing.Point(207, 630);
-            this.ResetFoVLabel.Name = "ResetFoVLabel";
-            this.ResetFoVLabel.Size = new System.Drawing.Size(74, 19);
-            this.ResetFoVLabel.TabIndex = 115;
-            this.ResetFoVLabel.Text = "Reset FoV";
-            // 
-            // ResetFoVButton
-            // 
-            this.ResetFoVButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResetFoVButton.Location = new System.Drawing.Point(291, 622);
-            this.ResetFoVButton.Name = "ResetFoVButton";
-            this.ResetFoVButton.Size = new System.Drawing.Size(83, 35);
-            this.ResetFoVButton.TabIndex = 116;
-            this.ResetFoVButton.Text = "button1";
-            this.ResetFoVButton.UseVisualStyleBackColor = true;
-            // 
-            // CentreCameraLabel
-            // 
-            this.CentreCameraLabel.AutoSize = true;
-            this.CentreCameraLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CentreCameraLabel.Location = new System.Drawing.Point(175, 679);
-            this.CentreCameraLabel.Name = "CentreCameraLabel";
-            this.CentreCameraLabel.Size = new System.Drawing.Size(106, 19);
-            this.CentreCameraLabel.TabIndex = 117;
-            this.CentreCameraLabel.Text = "Centre Camera";
-            // 
-            // CentreCameraButton
-            // 
-            this.CentreCameraButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CentreCameraButton.Location = new System.Drawing.Point(290, 671);
-            this.CentreCameraButton.Name = "CentreCameraButton";
-            this.CentreCameraButton.Size = new System.Drawing.Size(83, 35);
-            this.CentreCameraButton.TabIndex = 118;
-            this.CentreCameraButton.Text = "button1";
-            this.CentreCameraButton.UseVisualStyleBackColor = true;
-            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(671, 1048);
+            this.ClientSize = new System.Drawing.Size(671, 752);
             this.Controls.Add(this.ManualModeButton);
             this.Controls.Add(this.ApplySettingsButton);
             this.Controls.Add(this.tabControl1);
@@ -1738,6 +1968,9 @@
             this.BasicDisplayGroupBox.PerformLayout();
             this.ControlTab.ResumeLayout(false);
             this.ControlTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1805,75 +2038,93 @@
         private Label DetectiveModeLabel;
         private Label UseGadgetStrikeLabel;
         private Label ACTLabel;
-        private Button FwButton1;
-        private Button BwButton1;
-        private Button RightButton1;
-        private Button LeftButton1;
-        private Button RGUButton1;
-        private Button CrouchButton1;
-        private Button ZoomButton1;
-        private Button GrappleButton1;
-        private Button ToggleCrouchButton1;
-        private Button DetectiveModeButton1;
-        private Button UseGadgetStrikeButton1;
-        private Button ACTButton1;
         private Label GadgetSecLabel;
-        private Button GadgetSecButton1;
         private Label PrevGadgetLabel;
-        private Button PrevGadgetButton1;
         private Label NextGadgetLabel;
-        private Button NextGadgetButton1;
         private Label SCTLabel;
-        private Button SCTButton1;
         private Label SCBSLabel;
-        private Button SCBSButton1;
         private Label MultiGroundTDLabel;
-        private Button MultiGroundTDButton1;
         private Label DisarmDestroyLabel;
-        private Button DisarmDestroyButton1;
-        private Button Gadget1Button1;
         private Label Gadget1Label;
-        private Button Gadget5Button1;
         private Label Gadget5Label;
-        private Button Gadget4Button1;
         private Label Gadget4Label;
-        private Button Gadget3Button1;
         private Label Gadget3Label;
-        private Button Gadget2Button1;
         private Label Gadget2Label;
-        private Button Gadget10Button1;
         private Label Gadget10Label;
-        private Button Gadget9Button1;
         private Label Gadget9Label;
-        private Button Gadget8Button1;
         private Label Gadget8Label;
-        private Button Gadget7Button1;
         private Label Gadget7Label;
-        private Button Gadget6Button1;
         private Label Gadget6Label;
-        private Button Gadget12Button1;
         private Label Gadget12Label;
-        private Button Gadget11Button1;
         private Label Gadget11Label;
-        private Button QFireGadget5Button1;
         private Label label1;
-        private Button QFireGadget4Button1;
         private Label label2;
-        private Button QFireGadget3Button1;
         private Label label3;
-        private Button QFireGadget2Button1;
         private Label label4;
-        private Button QFireGadget1Button1;
         private Label label5;
         private Label CWDisarmFixLabel;
-        private Button CWDisarmFixButton1;
         private Label OpenConsoleLabel;
-        private Button OpenConsoleButton;
         private Label ToggleHudLabel;
-        private Button ToggleHudButton;
-        private Button ResetFoVButton;
         private Label ResetFoVLabel;
         private Label CentreCameraLabel;
-        private Button CentreCameraButton;
+        public Button FwButton1;
+        public Button BwButton1;
+        public Button RightButton1;
+        public Button LeftButton1;
+        public Button RGUButton1;
+        public Button CrouchButton1;
+        public Button ZoomButton1;
+        public Button GrappleButton1;
+        public Button ToggleCrouchButton1;
+        public Button DetectiveModeButton1;
+        public Button UseGadgetStrikeButton1;
+        public Button ACTButton1;
+        public Button GadgetSecButton1;
+        public Button PrevGadgetButton1;
+        public Button NextGadgetButton1;
+        public Button SCTButton1;
+        public Button SCBSButton1;
+        public Button MultiGroundTDButton1;
+        public Button DisarmDestroyButton1;
+        public Button Gadget1Button1;
+        public Button Gadget5Button1;
+        public Button Gadget4Button1;
+        public Button Gadget3Button1;
+        public Button Gadget2Button1;
+        public Button Gadget10Button1;
+        public Button Gadget9Button1;
+        public Button Gadget8Button1;
+        public Button Gadget7Button1;
+        public Button Gadget6Button1;
+        public Button Gadget12Button1;
+        public Button Gadget11Button1;
+        public Button QFireGadget5Button1;
+        public Button QFireGadget4Button1;
+        public Button QFireGadget3Button1;
+        public Button QFireGadget2Button1;
+        public Button QFireGadget1Button1;
+        public Button CWDisarmFixButton1;
+        public Button OpenConsoleButton;
+        public Button ToggleHudButton;
+        public Button ResetFoVButton;
+        public Button CentreCameraButton;
+        private Label SpeedRunLabel;
+        public Button SpeedRunButton;
+        public CheckBox MouseSmoothingBox;
+        public Button CustomFoV1Button;
+        private Label label6;
+        private Label MouseSensitivityLabel;
+        private Label label7;
+        public Button CustomCommandButton;
+        private Label CustomCommandLabel;
+        public TrackBar CustomFoV1Trackbar;
+        public Label CustomFoV1ValueLabel;
+        public Label CustomFoV2ValueLabel;
+        private Label label10;
+        public TrackBar CustomFoV2Trackbar;
+        public Button CustomFoV2Button;
+        private Label label11;
+        public TrackBar MouseSensitivityTrackbar;
+        public Label MouseSensitivityValueLabel;
     }
 }

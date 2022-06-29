@@ -42,6 +42,7 @@ namespace CityLauncher
             IniHandler = new IniHandler();
             InputHandler = new InputHandler();
             new IniReader().InitDisplay();
+            new InputReader().InitControls();
         }
 
         private static void SetupLogger()

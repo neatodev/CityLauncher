@@ -13,10 +13,12 @@ namespace CityLauncher
 
         public string BmEnginePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini");
         public string UserEnginePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserEngine.ini");
+        public string BmInputPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini");
         public string UserInputPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserInput.ini");
 
         public FileInfo BmEngine = new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
         public FileInfo UserEngine = new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserEngine.ini"));
+        public FileInfo BmInput = new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini"));
 
         public FileHandler()
         {
@@ -46,12 +48,13 @@ namespace CityLauncher
             if (File.Exists(UserInputPath))
             {
                 string[] Lines = File.ReadAllLines(UserInputPath);
-                if (Lines.Length < 104)
+                if (Lines.Length < 105)
                 {
                     File.Delete(UserInputPath);
                     CreateConfigFile(UserInputPath, Resources.UserInput);
                 }
-            } else if (!File.Exists(UserInputPath))
+            }
+            else if (!File.Exists(UserInputPath))
             {
                 CreateConfigFile(UserInputPath, Resources.UserInput);
             }

@@ -2,7 +2,7 @@
 {
     internal class InputHandler
     {
-        private string UserInputFile;
+        public string UserInputFile;
 
         public InputHandler()
         {

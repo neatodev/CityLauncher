@@ -47,8 +47,26 @@ namespace CityLauncher
             {
                 Program.FileHandler.BmEngine.IsReadOnly = false;
                 Program.FileHandler.UserEngine.IsReadOnly = false;
+                Program.FileHandler.BmInput.IsReadOnly = false;
                 MessageBox.Show("Manual Editing Enabled", @"Success!");
             }
+        }
+
+        private void CustomFoVTrackbar_Scroll(object sender, EventArgs e)
+        {
+            CustomFoV1ValueLabel.Text = CustomFoV1Trackbar.Value.ToString();
+        }
+
+        private void CustomFoV2Trackbar_Scroll(object sender, EventArgs e)
+        {
+            CustomFoV2ValueLabel.Text = CustomFoV2Trackbar.Value.ToString();
+
+        }
+
+        private void MouseSensitivityTrackbar_Scroll(object sender, EventArgs e)
+        {
+            MouseSensitivityValueLabel.Text = MouseSensitivityTrackbar.Value.ToString();
+
         }
     }
 }

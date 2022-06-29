@@ -27,6 +27,7 @@ namespace CityLauncher
         {
             Program.FileHandler.BmEngine.IsReadOnly = false;
             Program.FileHandler.UserEngine.IsReadOnly = false;
+            Program.FileHandler.BmInput.IsReadOnly = false;
             WriteBmEngineBasic();
             WriteBmEngineAdvanced();
             WriteToTempFile();
@@ -35,6 +36,7 @@ namespace CityLauncher
             Program.FileHandler.RenameIntroVideoFiles();
             Program.FileHandler.BmEngine.IsReadOnly = true;
             Program.FileHandler.UserEngine.IsReadOnly = true;
+            Program.FileHandler.BmInput.IsReadOnly = true;
         }
 
         private void WriteToTempFile()
