@@ -52,7 +52,12 @@ namespace CityLauncher
             }
         }
 
-        private void CustomFoVTrackbar_Scroll(object sender, EventArgs e)
+        private void MouseSensitivityTrackbar_Scroll(object sender, EventArgs e)
+        {
+            MouseSensitivityValueLabel.Text = MouseSensitivityTrackbar.Value.ToString();
+        }
+
+        private void CustomFoV1Trackbar_Scroll(object sender, EventArgs e)
         {
             CustomFoV1ValueLabel.Text = CustomFoV1Trackbar.Value.ToString();
         }
@@ -60,13 +65,6 @@ namespace CityLauncher
         private void CustomFoV2Trackbar_Scroll(object sender, EventArgs e)
         {
             CustomFoV2ValueLabel.Text = CustomFoV2Trackbar.Value.ToString();
-
-        }
-
-        private void MouseSensitivityTrackbar_Scroll(object sender, EventArgs e)
-        {
-            MouseSensitivityValueLabel.Text = MouseSensitivityTrackbar.Value.ToString();
-
         }
     }
 }

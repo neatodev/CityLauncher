@@ -118,7 +118,8 @@
             if (UserInputLines[1].Equals("true"))
             {
                 Program.MainWindow.MouseSmoothingBox.Checked = true;
-            } else
+            }
+            else
             {
                 Program.MainWindow.MouseSmoothingBox.Checked = false;
 
@@ -139,18 +140,30 @@
 
             if (Line.Contains("Shift=true") && !Line.Contains("bIgnoreShift=true"))
             {
-                return "Shift + " + NewLine.Substring(0, NewLine.IndexOf("\""));
+                return "Shift + " + ConvertLine(NewLine.Substring(0, NewLine.IndexOf("\"")));
             }
             if (Line.Contains("Control=true"))
             {
-                return "CTRL + " + NewLine.Substring(0, NewLine.IndexOf("\""));
+                return "CTRL + " + ConvertLine(NewLine.Substring(0, NewLine.IndexOf("\"")));
 
             }
             if (Line.Contains("Alt=true"))
             {
-                return "ALT + " + NewLine.Substring(0, NewLine.IndexOf("\""));
+                return "ALT + " + ConvertLine(NewLine.Substring(0, NewLine.IndexOf("\"")));
             }
-            return NewLine.Substring(0, NewLine.IndexOf("\""));
+            return ConvertLine(NewLine.Substring(0, NewLine.IndexOf("\"")));
+        }
+
+        private string ConvertLine(string Input)
+        {
+            for (int i = 0; i < Program.InputHandler.LinesConfigStyle.Length; i++)
+            {
+                if (Input == Program.InputHandler.LinesConfigStyle[i])
+                {
+                    return Program.InputHandler.LinesHumanReadable[i];
+                }
+            }
+            return Input;
         }
     }
 }
