@@ -46,8 +46,8 @@ namespace CityLauncher
 
         private static void SetupLogger()
         {
-            LoggingConfiguration config = new LoggingConfiguration();
-            ConsoleTarget Logconsole = new ConsoleTarget("logconsole");
+            LoggingConfiguration config = new();
+            ConsoleTarget Logconsole = new("logconsole");
             if (!Directory.Exists("logs"))
             {
                 Directory.CreateDirectory("logs");
@@ -57,7 +57,7 @@ namespace CityLauncher
             {
                 FileName = Directory.GetCurrentDirectory() + "\\logs\\citylauncher_report__" + CurrentTime + ".log"
             };
-            DirectoryInfo LogDirectory = new DirectoryInfo(Directory.GetCurrentDirectory() + "\\logs");
+            DirectoryInfo LogDirectory = new(Directory.GetCurrentDirectory() + "\\logs");
             DateTime OldestAllowedArchive = DateTime.Now - new TimeSpan(3, 0, 0, 0);
             foreach (FileInfo file in LogDirectory.GetFiles())
             {
