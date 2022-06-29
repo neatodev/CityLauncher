@@ -1010,7 +1010,7 @@
             // Gadget12Button1
             // 
             this.Gadget12Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget12Button1.Location = new System.Drawing.Point(306, 546);
+            this.Gadget12Button1.Location = new System.Drawing.Point(307, 546);
             this.Gadget12Button1.Name = "Gadget12Button1";
             this.Gadget12Button1.Size = new System.Drawing.Size(96, 35);
             this.Gadget12Button1.TabIndex = 91;
@@ -1021,7 +1021,7 @@
             // 
             this.Gadget12Label.AutoSize = true;
             this.Gadget12Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget12Label.Location = new System.Drawing.Point(224, 554);
+            this.Gadget12Label.Location = new System.Drawing.Point(225, 554);
             this.Gadget12Label.Name = "Gadget12Label";
             this.Gadget12Label.Size = new System.Drawing.Size(76, 19);
             this.Gadget12Label.TabIndex = 90;
