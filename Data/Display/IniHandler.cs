@@ -6,8 +6,6 @@ namespace CityLauncher
     internal class IniHandler
     {
         public static IniData? BmEngineData { get; set; }
-        public static IniData? UserEngineData { get; set; }
-
 
         public IniHandler()
         {
@@ -15,11 +13,10 @@ namespace CityLauncher
             IniConfigurator.Parser.Configuration.AllowDuplicateKeys = true;
             IniConfigurator.Parser.Configuration.AssigmentSpacer = "";
             BmEngineData = IniConfigurator.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
-            UserEngineData = IniConfigurator.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserEngine.ini"));
             RemoveSections();
         }
 
-        private void RemoveSections()
+        private static void RemoveSections()
         {
             BmEngineData.Sections.RemoveSection("URL");
             BmEngineData.Sections.RemoveSection("Engine.StreamingMovies");
