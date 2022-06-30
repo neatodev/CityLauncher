@@ -180,6 +180,7 @@
             this.ApplySettingsButton = new System.Windows.Forms.Button();
             this.ManualModeButton = new System.Windows.Forms.Button();
             this.ResetControlButton = new System.Windows.Forms.Button();
+            this.ResetDisplayButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -2026,12 +2027,23 @@
             this.ResetControlButton.UseVisualStyleBackColor = true;
             this.ResetControlButton.Click += new System.EventHandler(this.ResetControlButton_Click);
             // 
+            // ResetDisplayButton
+            // 
+            this.ResetDisplayButton.Location = new System.Drawing.Point(190, 619);
+            this.ResetDisplayButton.Name = "ResetDisplayButton";
+            this.ResetDisplayButton.Size = new System.Drawing.Size(178, 37);
+            this.ResetDisplayButton.TabIndex = 4;
+            this.ResetDisplayButton.Text = "Reset Display";
+            this.ResetDisplayButton.UseVisualStyleBackColor = true;
+            this.ResetDisplayButton.Click += new System.EventHandler(this.ResetDisplayButton_Click);
+            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(716, 752);
+            this.Controls.Add(this.ResetDisplayButton);
             this.Controls.Add(this.ResetControlButton);
             this.Controls.Add(this.ManualModeButton);
             this.Controls.Add(this.ApplySettingsButton);
@@ -2214,5 +2226,6 @@
         private Label CWDisarmFixLabel;
         private Label label9;
         private Button ResetControlButton;
+        private Button ResetDisplayButton;
     }
 }

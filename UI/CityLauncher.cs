@@ -299,5 +299,10 @@ namespace CityLauncher
         {
             Program.InputHandler.ResetControls();
         }
+
+        private void ResetDisplayButton_Click(object sender, EventArgs e)
+        {
+            Program.IniHandler.ResetDisplay();
+        }
     }
 }

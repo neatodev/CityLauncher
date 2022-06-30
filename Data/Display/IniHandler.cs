@@ -1,4 +1,5 @@
-﻿using IniParser;
+﻿using CityLauncher.Properties;
+using IniParser;
 using IniParser.Model;
 
 namespace CityLauncher
@@ -91,6 +92,14 @@ namespace CityLauncher
             BmEngineData.Sections.RemoveSection("OnlineSubsystemSteamworks.OnlineSubsystemSteamworks");
             BmEngineData.Sections.RemoveSection("IniVersion");
             BmEngineData.Sections.RemoveSection("AppCompat");
+        }
+
+        public void ResetDisplay()
+        {
+            Program.FileHandler.BmEngine.IsReadOnly = false;
+            File.Delete(Program.FileHandler.BmEnginePath);
+            Program.FileHandler.CreateConfigFile(Program.FileHandler.BmEnginePath, Resources.BmEngine);
+            new IniReader().InitDisplay();
         }
 
     }
