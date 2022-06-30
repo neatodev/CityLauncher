@@ -60,7 +60,7 @@ namespace CityLauncher
             }
         }
 
-        private void CreateConfigFile(string Path, string Resource)
+        public void CreateConfigFile(string Path, string Resource)
         {
             File.Create(Path).Dispose();
             var FileWriter = new StreamWriter(Path);

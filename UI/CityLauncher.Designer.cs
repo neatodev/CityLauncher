@@ -150,6 +150,9 @@
             this.BackwardLabel = new System.Windows.Forms.Label();
             this.ForwardLabel = new System.Windows.Forms.Label();
             this.MiscTab = new System.Windows.Forms.TabPage();
+            this.MouseSensitivityValueLabel = new System.Windows.Forms.Label();
+            this.MouseSensitivityLabel = new System.Windows.Forms.Label();
+            this.MouseSensitivityTrackbar = new System.Windows.Forms.TrackBar();
             this.CustomFoV2ValueLabel = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.CustomFoV2Trackbar = new System.Windows.Forms.TrackBar();
@@ -158,12 +161,9 @@
             this.CustomCommandButton = new System.Windows.Forms.Button();
             this.CustomCommandLabel = new System.Windows.Forms.Label();
             this.CustomFoV1ValueLabel = new System.Windows.Forms.Label();
-            this.MouseSensitivityValueLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.MouseSensitivityLabel = new System.Windows.Forms.Label();
             this.CustomFoV1Button = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.MouseSensitivityTrackbar = new System.Windows.Forms.TrackBar();
             this.MouseSmoothingBox = new System.Windows.Forms.CheckBox();
             this.SpeedRunButton = new System.Windows.Forms.Button();
             this.SpeedRunLabel = new System.Windows.Forms.Label();
@@ -179,14 +179,15 @@
             this.AboutTab = new System.Windows.Forms.TabPage();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
             this.ManualModeButton = new System.Windows.Forms.Button();
+            this.ResetControlButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
             this.BasicDisplayGroupBox.SuspendLayout();
             this.ControlTab.SuspendLayout();
             this.MiscTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -884,6 +885,7 @@
             this.CWDisarmFixButton1.TabIndex = 140;
             this.CWDisarmFixButton1.Text = "button1";
             this.CWDisarmFixButton1.UseVisualStyleBackColor = true;
+            this.CWDisarmFixButton1.Click += new System.EventHandler(this.CWDisarmFixButton1_Click);
             // 
             // CWDisarmFixLabel
             // 
@@ -916,6 +918,7 @@
             this.QFireGadget5Button1.TabIndex = 106;
             this.QFireGadget5Button1.Text = "button1";
             this.QFireGadget5Button1.UseVisualStyleBackColor = true;
+            this.QFireGadget5Button1.Click += new System.EventHandler(this.QFireGadget5Button1_Click);
             // 
             // label1
             // 
@@ -936,6 +939,7 @@
             this.QFireGadget4Button1.TabIndex = 103;
             this.QFireGadget4Button1.Text = "button1";
             this.QFireGadget4Button1.UseVisualStyleBackColor = true;
+            this.QFireGadget4Button1.Click += new System.EventHandler(this.QFireGadget4Button1_Click);
             // 
             // label2
             // 
@@ -956,6 +960,7 @@
             this.QFireGadget3Button1.TabIndex = 100;
             this.QFireGadget3Button1.Text = "button1";
             this.QFireGadget3Button1.UseVisualStyleBackColor = true;
+            this.QFireGadget3Button1.Click += new System.EventHandler(this.QFireGadget3Button1_Click);
             // 
             // label3
             // 
@@ -976,6 +981,7 @@
             this.QFireGadget2Button1.TabIndex = 97;
             this.QFireGadget2Button1.Text = "button1";
             this.QFireGadget2Button1.UseVisualStyleBackColor = true;
+            this.QFireGadget2Button1.Click += new System.EventHandler(this.QFireGadget2Button1_Click);
             // 
             // label4
             // 
@@ -996,6 +1002,7 @@
             this.QFireGadget1Button1.TabIndex = 94;
             this.QFireGadget1Button1.Text = "button1";
             this.QFireGadget1Button1.UseVisualStyleBackColor = true;
+            this.QFireGadget1Button1.Click += new System.EventHandler(this.QFireGadget1Button1_Click);
             // 
             // label5
             // 
@@ -1016,6 +1023,7 @@
             this.Gadget12Button1.TabIndex = 91;
             this.Gadget12Button1.Text = "button1";
             this.Gadget12Button1.UseVisualStyleBackColor = true;
+            this.Gadget12Button1.Click += new System.EventHandler(this.Gadget12Button1_Click);
             // 
             // Gadget12Label
             // 
@@ -1036,6 +1044,7 @@
             this.Gadget11Button1.TabIndex = 88;
             this.Gadget11Button1.Text = "button1";
             this.Gadget11Button1.UseVisualStyleBackColor = true;
+            this.Gadget11Button1.Click += new System.EventHandler(this.Gadget11Button1_Click);
             // 
             // Gadget11Label
             // 
@@ -1056,6 +1065,7 @@
             this.Gadget10Button1.TabIndex = 85;
             this.Gadget10Button1.Text = "button1";
             this.Gadget10Button1.UseVisualStyleBackColor = true;
+            this.Gadget10Button1.Click += new System.EventHandler(this.Gadget10Button1_Click);
             // 
             // label9
             // 
@@ -1086,6 +1096,7 @@
             this.Gadget9Button1.TabIndex = 82;
             this.Gadget9Button1.Text = "button1";
             this.Gadget9Button1.UseVisualStyleBackColor = true;
+            this.Gadget9Button1.Click += new System.EventHandler(this.Gadget9Button1_Click);
             // 
             // Gadget9Label
             // 
@@ -1106,6 +1117,7 @@
             this.Gadget8Button1.TabIndex = 79;
             this.Gadget8Button1.Text = "button1";
             this.Gadget8Button1.UseVisualStyleBackColor = true;
+            this.Gadget8Button1.Click += new System.EventHandler(this.Gadget8Button1_Click);
             // 
             // Gadget8Label
             // 
@@ -1126,6 +1138,7 @@
             this.Gadget7Button1.TabIndex = 76;
             this.Gadget7Button1.Text = "button1";
             this.Gadget7Button1.UseVisualStyleBackColor = true;
+            this.Gadget7Button1.Click += new System.EventHandler(this.Gadget7Button1_Click);
             // 
             // Gadget7Label
             // 
@@ -1146,6 +1159,7 @@
             this.Gadget6Button1.TabIndex = 73;
             this.Gadget6Button1.Text = "button1";
             this.Gadget6Button1.UseVisualStyleBackColor = true;
+            this.Gadget6Button1.Click += new System.EventHandler(this.Gadget6Button1_Click);
             // 
             // Gadget6Label
             // 
@@ -1166,6 +1180,7 @@
             this.Gadget5Button1.TabIndex = 70;
             this.Gadget5Button1.Text = "button1";
             this.Gadget5Button1.UseVisualStyleBackColor = true;
+            this.Gadget5Button1.Click += new System.EventHandler(this.Gadget5Button1_Click);
             // 
             // Gadget5Label
             // 
@@ -1186,6 +1201,7 @@
             this.Gadget4Button1.TabIndex = 67;
             this.Gadget4Button1.Text = "button1";
             this.Gadget4Button1.UseVisualStyleBackColor = true;
+            this.Gadget4Button1.Click += new System.EventHandler(this.Gadget4Button1_Click);
             // 
             // Gadget4Label
             // 
@@ -1206,6 +1222,7 @@
             this.Gadget3Button1.TabIndex = 64;
             this.Gadget3Button1.Text = "button1";
             this.Gadget3Button1.UseVisualStyleBackColor = true;
+            this.Gadget3Button1.Click += new System.EventHandler(this.Gadget3Button1_Click);
             // 
             // Gadget3Label
             // 
@@ -1226,6 +1243,7 @@
             this.Gadget2Button1.TabIndex = 61;
             this.Gadget2Button1.Text = "button1";
             this.Gadget2Button1.UseVisualStyleBackColor = true;
+            this.Gadget2Button1.Click += new System.EventHandler(this.Gadget2Button1_Click);
             // 
             // Gadget2Label
             // 
@@ -1246,6 +1264,7 @@
             this.Gadget1Button1.TabIndex = 58;
             this.Gadget1Button1.Text = "button1";
             this.Gadget1Button1.UseVisualStyleBackColor = true;
+            this.Gadget1Button1.Click += new System.EventHandler(this.Gadget1Button1_Click);
             // 
             // Gadget1Label
             // 
@@ -1266,6 +1285,7 @@
             this.DisarmDestroyButton1.TabIndex = 55;
             this.DisarmDestroyButton1.Text = "button1";
             this.DisarmDestroyButton1.UseVisualStyleBackColor = true;
+            this.DisarmDestroyButton1.Click += new System.EventHandler(this.DisarmDestroyButton1_Click);
             // 
             // DisarmDestroyLabel
             // 
@@ -1287,6 +1307,7 @@
             this.MultiGroundTDButton1.TabIndex = 52;
             this.MultiGroundTDButton1.Text = "button1";
             this.MultiGroundTDButton1.UseVisualStyleBackColor = true;
+            this.MultiGroundTDButton1.Click += new System.EventHandler(this.MultiGroundTDButton1_Click);
             // 
             // MultiGroundTDLabel
             // 
@@ -1308,6 +1329,7 @@
             this.SCBSButton1.TabIndex = 49;
             this.SCBSButton1.Text = "button1";
             this.SCBSButton1.UseVisualStyleBackColor = true;
+            this.SCBSButton1.Click += new System.EventHandler(this.SCBSButton1_Click);
             // 
             // SCBSLabel
             // 
@@ -1329,6 +1351,7 @@
             this.SCTButton1.TabIndex = 46;
             this.SCTButton1.Text = "button1";
             this.SCTButton1.UseVisualStyleBackColor = true;
+            this.SCTButton1.Click += new System.EventHandler(this.SCTButton1_Click);
             // 
             // SCTLabel
             // 
@@ -1350,6 +1373,7 @@
             this.NextGadgetButton1.TabIndex = 44;
             this.NextGadgetButton1.Text = "button1";
             this.NextGadgetButton1.UseVisualStyleBackColor = true;
+            this.NextGadgetButton1.Click += new System.EventHandler(this.NextGadgetButton1_Click);
             // 
             // NextGadgetLabel
             // 
@@ -1370,6 +1394,7 @@
             this.PrevGadgetButton1.TabIndex = 41;
             this.PrevGadgetButton1.Text = "button1";
             this.PrevGadgetButton1.UseVisualStyleBackColor = true;
+            this.PrevGadgetButton1.Click += new System.EventHandler(this.PrevGadgetButton1_Click);
             // 
             // PrevGadgetLabel
             // 
@@ -1390,6 +1415,7 @@
             this.GadgetSecButton1.TabIndex = 38;
             this.GadgetSecButton1.Text = "button1";
             this.GadgetSecButton1.UseVisualStyleBackColor = true;
+            this.GadgetSecButton1.Click += new System.EventHandler(this.GadgetSecButton1_Click);
             // 
             // GadgetSecLabel
             // 
@@ -1411,6 +1437,7 @@
             this.ACTButton1.TabIndex = 34;
             this.ACTButton1.Text = "button1";
             this.ACTButton1.UseVisualStyleBackColor = true;
+            this.ACTButton1.Click += new System.EventHandler(this.ACTButton1_Click);
             // 
             // UseGadgetStrikeButton1
             // 
@@ -1421,6 +1448,7 @@
             this.UseGadgetStrikeButton1.TabIndex = 32;
             this.UseGadgetStrikeButton1.Text = "button1";
             this.UseGadgetStrikeButton1.UseVisualStyleBackColor = true;
+            this.UseGadgetStrikeButton1.Click += new System.EventHandler(this.UseGadgetStrikeButton1_Click);
             // 
             // DetectiveModeButton1
             // 
@@ -1431,6 +1459,7 @@
             this.DetectiveModeButton1.TabIndex = 30;
             this.DetectiveModeButton1.Text = "button1";
             this.DetectiveModeButton1.UseVisualStyleBackColor = true;
+            this.DetectiveModeButton1.Click += new System.EventHandler(this.DetectiveModeButton1_Click);
             // 
             // ToggleCrouchButton1
             // 
@@ -1441,6 +1470,7 @@
             this.ToggleCrouchButton1.TabIndex = 28;
             this.ToggleCrouchButton1.Text = "button1";
             this.ToggleCrouchButton1.UseVisualStyleBackColor = true;
+            this.ToggleCrouchButton1.Click += new System.EventHandler(this.ToggleCrouchButton1_Click);
             // 
             // GrappleButton1
             // 
@@ -1451,6 +1481,7 @@
             this.GrappleButton1.TabIndex = 26;
             this.GrappleButton1.Text = "button1";
             this.GrappleButton1.UseVisualStyleBackColor = true;
+            this.GrappleButton1.Click += new System.EventHandler(this.GrappleButton1_Click);
             // 
             // ZoomButton1
             // 
@@ -1461,6 +1492,7 @@
             this.ZoomButton1.TabIndex = 24;
             this.ZoomButton1.Text = "button1";
             this.ZoomButton1.UseVisualStyleBackColor = true;
+            this.ZoomButton1.Click += new System.EventHandler(this.ZoomButton1_Click);
             // 
             // CrouchButton1
             // 
@@ -1471,6 +1503,7 @@
             this.CrouchButton1.TabIndex = 22;
             this.CrouchButton1.Text = "button1";
             this.CrouchButton1.UseVisualStyleBackColor = true;
+            this.CrouchButton1.Click += new System.EventHandler(this.CrouchButton1_Click);
             // 
             // RGUButton1
             // 
@@ -1481,6 +1514,7 @@
             this.RGUButton1.TabIndex = 20;
             this.RGUButton1.Text = "button1";
             this.RGUButton1.UseVisualStyleBackColor = true;
+            this.RGUButton1.Click += new System.EventHandler(this.RGUButton1_Click);
             // 
             // RightButton1
             // 
@@ -1491,6 +1525,7 @@
             this.RightButton1.TabIndex = 18;
             this.RightButton1.Text = "button1";
             this.RightButton1.UseVisualStyleBackColor = true;
+            this.RightButton1.Click += new System.EventHandler(this.RightButton1_Click);
             // 
             // LeftButton1
             // 
@@ -1501,6 +1536,7 @@
             this.LeftButton1.TabIndex = 16;
             this.LeftButton1.Text = "button1";
             this.LeftButton1.UseVisualStyleBackColor = true;
+            this.LeftButton1.Click += new System.EventHandler(this.LeftButton1_Click);
             // 
             // BwButton1
             // 
@@ -1511,6 +1547,7 @@
             this.BwButton1.TabIndex = 14;
             this.BwButton1.Text = "button3";
             this.BwButton1.UseVisualStyleBackColor = true;
+            this.BwButton1.Click += new System.EventHandler(this.BwButton1_Click);
             // 
             // FwButton1
             // 
@@ -1637,6 +1674,9 @@
             // 
             // MiscTab
             // 
+            this.MiscTab.Controls.Add(this.MouseSensitivityValueLabel);
+            this.MiscTab.Controls.Add(this.MouseSensitivityLabel);
+            this.MiscTab.Controls.Add(this.MouseSensitivityTrackbar);
             this.MiscTab.Controls.Add(this.CustomFoV2ValueLabel);
             this.MiscTab.Controls.Add(this.label10);
             this.MiscTab.Controls.Add(this.CustomFoV2Trackbar);
@@ -1645,12 +1685,9 @@
             this.MiscTab.Controls.Add(this.CustomCommandButton);
             this.MiscTab.Controls.Add(this.CustomCommandLabel);
             this.MiscTab.Controls.Add(this.CustomFoV1ValueLabel);
-            this.MiscTab.Controls.Add(this.MouseSensitivityValueLabel);
             this.MiscTab.Controls.Add(this.label7);
-            this.MiscTab.Controls.Add(this.MouseSensitivityLabel);
             this.MiscTab.Controls.Add(this.CustomFoV1Button);
             this.MiscTab.Controls.Add(this.label6);
-            this.MiscTab.Controls.Add(this.MouseSensitivityTrackbar);
             this.MiscTab.Controls.Add(this.MouseSmoothingBox);
             this.MiscTab.Controls.Add(this.SpeedRunButton);
             this.MiscTab.Controls.Add(this.SpeedRunLabel);
@@ -1671,12 +1708,45 @@
             this.MiscTab.Text = "Misc";
             this.MiscTab.UseVisualStyleBackColor = true;
             // 
+            // MouseSensitivityValueLabel
+            // 
+            this.MouseSensitivityValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MouseSensitivityValueLabel.AutoSize = true;
+            this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(557, 207);
+            this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
+            this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
+            this.MouseSensitivityValueLabel.TabIndex = 155;
+            this.MouseSensitivityValueLabel.Text = "00";
+            this.MouseSensitivityValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // MouseSensitivityLabel
+            // 
+            this.MouseSensitivityLabel.AutoSize = true;
+            this.MouseSensitivityLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MouseSensitivityLabel.Location = new System.Drawing.Point(218, 207);
+            this.MouseSensitivityLabel.Name = "MouseSensitivityLabel";
+            this.MouseSensitivityLabel.Size = new System.Drawing.Size(127, 19);
+            this.MouseSensitivityLabel.TabIndex = 153;
+            this.MouseSensitivityLabel.Text = "Mouse Sensitivity:";
+            // 
+            // MouseSensitivityTrackbar
+            // 
+            this.MouseSensitivityTrackbar.Location = new System.Drawing.Point(214, 224);
+            this.MouseSensitivityTrackbar.Maximum = 100;
+            this.MouseSensitivityTrackbar.Minimum = 1;
+            this.MouseSensitivityTrackbar.Name = "MouseSensitivityTrackbar";
+            this.MouseSensitivityTrackbar.Size = new System.Drawing.Size(375, 45);
+            this.MouseSensitivityTrackbar.TabIndex = 150;
+            this.MouseSensitivityTrackbar.Value = 1;
+            this.MouseSensitivityTrackbar.Scroll += new System.EventHandler(this.MouseSensitivityTrackbar_Scroll);
+            // 
             // CustomFoV2ValueLabel
             // 
             this.CustomFoV2ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(606, 222);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(557, 164);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -1687,7 +1757,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(410, 222);
+            this.label10.Location = new System.Drawing.Point(218, 164);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(142, 19);
             this.label10.TabIndex = 162;
@@ -1695,30 +1765,31 @@
             // 
             // CustomFoV2Trackbar
             // 
-            this.CustomFoV2Trackbar.Location = new System.Drawing.Point(406, 237);
+            this.CustomFoV2Trackbar.Location = new System.Drawing.Point(214, 179);
             this.CustomFoV2Trackbar.Maximum = 150;
             this.CustomFoV2Trackbar.Minimum = 75;
             this.CustomFoV2Trackbar.Name = "CustomFoV2Trackbar";
-            this.CustomFoV2Trackbar.Size = new System.Drawing.Size(236, 45);
+            this.CustomFoV2Trackbar.Size = new System.Drawing.Size(375, 45);
             this.CustomFoV2Trackbar.TabIndex = 161;
             this.CustomFoV2Trackbar.Value = 75;
             this.CustomFoV2Trackbar.Scroll += new System.EventHandler(this.CustomFoV2Trackbar_Scroll);
             // 
             // CustomFoV2Button
             // 
-            this.CustomFoV2Button.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2Button.Location = new System.Drawing.Point(295, 237);
+            this.CustomFoV2Button.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomFoV2Button.Location = new System.Drawing.Point(121, 170);
             this.CustomFoV2Button.Name = "CustomFoV2Button";
             this.CustomFoV2Button.Size = new System.Drawing.Size(83, 35);
             this.CustomFoV2Button.TabIndex = 160;
             this.CustomFoV2Button.Text = "button1";
             this.CustomFoV2Button.UseVisualStyleBackColor = true;
+            this.CustomFoV2Button.Click += new System.EventHandler(this.CustomFoV2Button_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(203, 245);
+            this.label11.Location = new System.Drawing.Point(17, 178);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(98, 19);
             this.label11.TabIndex = 159;
@@ -1726,19 +1797,20 @@
             // 
             // CustomCommandButton
             // 
-            this.CustomCommandButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomCommandButton.Location = new System.Drawing.Point(127, 188);
+            this.CustomCommandButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomCommandButton.Location = new System.Drawing.Point(351, 6);
             this.CustomCommandButton.Name = "CustomCommandButton";
             this.CustomCommandButton.Size = new System.Drawing.Size(83, 35);
             this.CustomCommandButton.TabIndex = 158;
             this.CustomCommandButton.Text = "button1";
             this.CustomCommandButton.UseVisualStyleBackColor = true;
+            this.CustomCommandButton.Click += new System.EventHandler(this.CustomCommandButton_Click);
             // 
             // CustomCommandLabel
             // 
             this.CustomCommandLabel.AutoSize = true;
             this.CustomCommandLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomCommandLabel.Location = new System.Drawing.Point(7, 196);
+            this.CustomCommandLabel.Location = new System.Drawing.Point(218, 14);
             this.CustomCommandLabel.Name = "CustomCommandLabel";
             this.CustomCommandLabel.Size = new System.Drawing.Size(127, 19);
             this.CustomCommandLabel.TabIndex = 157;
@@ -1749,82 +1821,50 @@
             this.CustomFoV1ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV1ValueLabel.AutoSize = true;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(606, 173);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(557, 122);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV1ValueLabel.TabIndex = 156;
             this.CustomFoV1ValueLabel.Text = "00";
             this.CustomFoV1ValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // MouseSensitivityValueLabel
-            // 
-            this.MouseSensitivityValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MouseSensitivityValueLabel.AutoSize = true;
-            this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(606, 104);
-            this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
-            this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
-            this.MouseSensitivityValueLabel.TabIndex = 155;
-            this.MouseSensitivityValueLabel.Text = "00";
-            this.MouseSensitivityValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(410, 173);
+            this.label7.Location = new System.Drawing.Point(218, 122);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(142, 19);
             this.label7.TabIndex = 154;
             this.label7.Text = "Custom FoV 1 Value:";
             // 
-            // MouseSensitivityLabel
-            // 
-            this.MouseSensitivityLabel.AutoSize = true;
-            this.MouseSensitivityLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityLabel.Location = new System.Drawing.Point(410, 104);
-            this.MouseSensitivityLabel.Name = "MouseSensitivityLabel";
-            this.MouseSensitivityLabel.Size = new System.Drawing.Size(127, 19);
-            this.MouseSensitivityLabel.TabIndex = 153;
-            this.MouseSensitivityLabel.Text = "Mouse Sensitivity:";
-            // 
             // CustomFoV1Button
             // 
-            this.CustomFoV1Button.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1Button.Location = new System.Drawing.Point(295, 188);
+            this.CustomFoV1Button.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomFoV1Button.Location = new System.Drawing.Point(121, 129);
             this.CustomFoV1Button.Name = "CustomFoV1Button";
             this.CustomFoV1Button.Size = new System.Drawing.Size(83, 35);
             this.CustomFoV1Button.TabIndex = 152;
             this.CustomFoV1Button.Text = "button1";
             this.CustomFoV1Button.UseVisualStyleBackColor = true;
+            this.CustomFoV1Button.Click += new System.EventHandler(this.CustomFoV1Button_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(203, 196);
+            this.label6.Location = new System.Drawing.Point(17, 137);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(98, 19);
             this.label6.TabIndex = 151;
             this.label6.Text = "Custom FoV 1";
-            // 
-            // MouseSensitivityTrackbar
-            // 
-            this.MouseSensitivityTrackbar.Location = new System.Drawing.Point(406, 121);
-            this.MouseSensitivityTrackbar.Maximum = 100;
-            this.MouseSensitivityTrackbar.Minimum = 1;
-            this.MouseSensitivityTrackbar.Name = "MouseSensitivityTrackbar";
-            this.MouseSensitivityTrackbar.Size = new System.Drawing.Size(236, 45);
-            this.MouseSensitivityTrackbar.TabIndex = 150;
-            this.MouseSensitivityTrackbar.Value = 1;
-            this.MouseSensitivityTrackbar.Scroll += new System.EventHandler(this.MouseSensitivityTrackbar_Scroll);
             // 
             // MouseSmoothingBox
             // 
             this.MouseSmoothingBox.AutoSize = true;
             this.MouseSmoothingBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.MouseSmoothingBox.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSmoothingBox.Location = new System.Drawing.Point(467, 74);
+            this.MouseSmoothingBox.Location = new System.Drawing.Point(35, 219);
             this.MouseSmoothingBox.Name = "MouseSmoothingBox";
             this.MouseSmoothingBox.Size = new System.Drawing.Size(169, 27);
             this.MouseSmoothingBox.TabIndex = 149;
@@ -1833,19 +1873,20 @@
             // 
             // SpeedRunButton
             // 
-            this.SpeedRunButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SpeedRunButton.Location = new System.Drawing.Point(99, 139);
+            this.SpeedRunButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SpeedRunButton.Location = new System.Drawing.Point(121, 47);
             this.SpeedRunButton.Name = "SpeedRunButton";
             this.SpeedRunButton.Size = new System.Drawing.Size(83, 35);
             this.SpeedRunButton.TabIndex = 148;
             this.SpeedRunButton.Text = "SpeedRun";
             this.SpeedRunButton.UseVisualStyleBackColor = true;
+            this.SpeedRunButton.Click += new System.EventHandler(this.SpeedRunButton_Click);
             // 
             // SpeedRunLabel
             // 
             this.SpeedRunLabel.AutoSize = true;
             this.SpeedRunLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SpeedRunLabel.Location = new System.Drawing.Point(31, 147);
+            this.SpeedRunLabel.Location = new System.Drawing.Point(46, 55);
             this.SpeedRunLabel.Name = "SpeedRunLabel";
             this.SpeedRunLabel.Size = new System.Drawing.Size(69, 19);
             this.SpeedRunLabel.TabIndex = 147;
@@ -1853,19 +1894,20 @@
             // 
             // CentreCameraButton
             // 
-            this.CentreCameraButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CentreCameraButton.Location = new System.Drawing.Point(295, 90);
+            this.CentreCameraButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CentreCameraButton.Location = new System.Drawing.Point(121, 88);
             this.CentreCameraButton.Name = "CentreCameraButton";
             this.CentreCameraButton.Size = new System.Drawing.Size(83, 35);
             this.CentreCameraButton.TabIndex = 146;
             this.CentreCameraButton.Text = "button1";
             this.CentreCameraButton.UseVisualStyleBackColor = true;
+            this.CentreCameraButton.Click += new System.EventHandler(this.CentreCameraButton_Click);
             // 
             // CentreCameraLabel
             // 
             this.CentreCameraLabel.AutoSize = true;
             this.CentreCameraLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CentreCameraLabel.Location = new System.Drawing.Point(188, 98);
+            this.CentreCameraLabel.Location = new System.Drawing.Point(9, 96);
             this.CentreCameraLabel.Name = "CentreCameraLabel";
             this.CentreCameraLabel.Size = new System.Drawing.Size(106, 19);
             this.CentreCameraLabel.TabIndex = 145;
@@ -1873,19 +1915,20 @@
             // 
             // ResetFoVButton
             // 
-            this.ResetFoVButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResetFoVButton.Location = new System.Drawing.Point(295, 139);
+            this.ResetFoVButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetFoVButton.Location = new System.Drawing.Point(351, 47);
             this.ResetFoVButton.Name = "ResetFoVButton";
             this.ResetFoVButton.Size = new System.Drawing.Size(83, 35);
             this.ResetFoVButton.TabIndex = 144;
             this.ResetFoVButton.Text = "button1";
             this.ResetFoVButton.UseVisualStyleBackColor = true;
+            this.ResetFoVButton.Click += new System.EventHandler(this.ResetFoVButton_Click);
             // 
             // ResetFoVLabel
             // 
             this.ResetFoVLabel.AutoSize = true;
             this.ResetFoVLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResetFoVLabel.Location = new System.Drawing.Point(217, 147);
+            this.ResetFoVLabel.Location = new System.Drawing.Point(271, 55);
             this.ResetFoVLabel.Name = "ResetFoVLabel";
             this.ResetFoVLabel.Size = new System.Drawing.Size(74, 19);
             this.ResetFoVLabel.TabIndex = 143;
@@ -1893,19 +1936,20 @@
             // 
             // ToggleHudButton
             // 
-            this.ToggleHudButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ToggleHudButton.Location = new System.Drawing.Point(101, 90);
+            this.ToggleHudButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ToggleHudButton.Location = new System.Drawing.Point(121, 6);
             this.ToggleHudButton.Name = "ToggleHudButton";
             this.ToggleHudButton.Size = new System.Drawing.Size(83, 35);
             this.ToggleHudButton.TabIndex = 142;
             this.ToggleHudButton.Text = "button1";
             this.ToggleHudButton.UseVisualStyleBackColor = true;
+            this.ToggleHudButton.Click += new System.EventHandler(this.ToggleHudButton_Click);
             // 
             // ToggleHudLabel
             // 
             this.ToggleHudLabel.AutoSize = true;
             this.ToggleHudLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ToggleHudLabel.Location = new System.Drawing.Point(14, 98);
+            this.ToggleHudLabel.Location = new System.Drawing.Point(29, 14);
             this.ToggleHudLabel.Name = "ToggleHudLabel";
             this.ToggleHudLabel.Size = new System.Drawing.Size(86, 19);
             this.ToggleHudLabel.TabIndex = 141;
@@ -1913,19 +1957,20 @@
             // 
             // OpenConsoleButton
             // 
-            this.OpenConsoleButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OpenConsoleButton.Location = new System.Drawing.Point(295, 35);
+            this.OpenConsoleButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OpenConsoleButton.Location = new System.Drawing.Point(595, 6);
             this.OpenConsoleButton.Name = "OpenConsoleButton";
-            this.OpenConsoleButton.Size = new System.Drawing.Size(86, 35);
+            this.OpenConsoleButton.Size = new System.Drawing.Size(83, 35);
             this.OpenConsoleButton.TabIndex = 140;
             this.OpenConsoleButton.Text = "button1";
             this.OpenConsoleButton.UseVisualStyleBackColor = true;
+            this.OpenConsoleButton.Click += new System.EventHandler(this.OpenConsoleButton_Click);
             // 
             // OpenConsoleLabel
             // 
             this.OpenConsoleLabel.AutoSize = true;
             this.OpenConsoleLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OpenConsoleLabel.Location = new System.Drawing.Point(194, 43);
+            this.OpenConsoleLabel.Location = new System.Drawing.Point(489, 14);
             this.OpenConsoleLabel.Name = "OpenConsoleLabel";
             this.OpenConsoleLabel.Size = new System.Drawing.Size(100, 19);
             this.OpenConsoleLabel.TabIndex = 139;
@@ -1933,11 +1978,11 @@
             // 
             // CustomFoV1Trackbar
             // 
-            this.CustomFoV1Trackbar.Location = new System.Drawing.Point(406, 188);
+            this.CustomFoV1Trackbar.Location = new System.Drawing.Point(214, 137);
             this.CustomFoV1Trackbar.Maximum = 150;
             this.CustomFoV1Trackbar.Minimum = 75;
             this.CustomFoV1Trackbar.Name = "CustomFoV1Trackbar";
-            this.CustomFoV1Trackbar.Size = new System.Drawing.Size(236, 45);
+            this.CustomFoV1Trackbar.Size = new System.Drawing.Size(375, 45);
             this.CustomFoV1Trackbar.TabIndex = 164;
             this.CustomFoV1Trackbar.Value = 75;
             this.CustomFoV1Trackbar.Scroll += new System.EventHandler(this.CustomFoV1Trackbar_Scroll);
@@ -1971,12 +2016,23 @@
             this.ManualModeButton.UseVisualStyleBackColor = true;
             this.ManualModeButton.Click += new System.EventHandler(this.ManualModeButton_Click);
             // 
+            // ResetControlButton
+            // 
+            this.ResetControlButton.Location = new System.Drawing.Point(447, 619);
+            this.ResetControlButton.Name = "ResetControlButton";
+            this.ResetControlButton.Size = new System.Drawing.Size(178, 37);
+            this.ResetControlButton.TabIndex = 3;
+            this.ResetControlButton.Text = "Reset Controls";
+            this.ResetControlButton.UseVisualStyleBackColor = true;
+            this.ResetControlButton.Click += new System.EventHandler(this.ResetControlButton_Click);
+            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(716, 752);
+            this.Controls.Add(this.ResetControlButton);
             this.Controls.Add(this.ManualModeButton);
             this.Controls.Add(this.ApplySettingsButton);
             this.Controls.Add(this.tabControl1);
@@ -1997,8 +2053,8 @@
             this.ControlTab.PerformLayout();
             this.MiscTab.ResumeLayout(false);
             this.MiscTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).EndInit();
             this.ResumeLayout(false);
 
@@ -2157,5 +2213,6 @@
         public Button CWDisarmFixButton1;
         private Label CWDisarmFixLabel;
         private Label label9;
+        private Button ResetControlButton;
     }
 }

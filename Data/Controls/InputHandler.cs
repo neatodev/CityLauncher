@@ -1,4 +1,6 @@
-﻿namespace CityLauncher
+﻿using CityLauncher.Properties;
+
+namespace CityLauncher
 {
     internal class InputHandler
     {
@@ -70,6 +72,13 @@
                 }
             }
             return false;
+        }
+
+        public void ResetControls()
+        {
+            File.Delete(UserInputFile);
+            Program.FileHandler.CreateConfigFile(UserInputFile, Resources.UserInput);
+            new InputReader().InitControls();
         }
     }
 }
