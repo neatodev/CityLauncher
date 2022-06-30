@@ -27,6 +27,7 @@ namespace CityLauncher
         private void ApplySettingsButton_Click(object sender, EventArgs e)
         {
             new IniWriter().WriteAll();
+            new InputWriter().WriteControls();
         }
 
         private void SkipIntroBox_CheckedChanged(object sender, EventArgs e)

@@ -8,7 +8,7 @@
 
         public string[] LinesHumanReadable;
 
-        private string[] BannedKeys = { "OEM8", "OEM6", "OEM5", "LWIN", "RWIN", "OEM7", "SCROLL", "OEM1", "OEMTILDE", "OEM7", "NUMLOCK", "Backslash", "MULTIPLY",
+        private string[] BannedKeys = { "OEM8", "OEM6", "OEM5", "LWIN", "RWIN", "OEM7", "SCROLL", "OEM1", "OEMTILDE", "OEM7", "NUMLOCK", "MULTIPLY",
                                         "DIVIDE", "SUBTRACT", "ADD", "DECIMAL", "PAUSE", "NUMPAD0", "NUMPAD1", "NUMPAD2", "NUMPAD3", "NUMPAD4", "NUMPAD5",
                                         "NUMPAD6", "NUMPAD7", "NUMPAD8", "NUMPAD9", "CLEAR" };
 
@@ -33,7 +33,7 @@
 
         private string[] FillHumanReadable()
         {
-            string[] style = { "Left Mouse", "Right Mouse","Mousewheel Up", "Mousewheel Down", "Ctrl", "Middle Mouse", "Mouse Thumb 1", "Mouse Thumb 2","Space", "Caps", "Backslash", "Right Alt", "_", "=",
+            string[] style = { "Left Mouse", "Right Mouse","Mousewheel Up", "Mousewheel Down", "Ctrl", "Middle Mouse", "Mouse Thumb 1", "Mouse Thumb 2","Space", "Caps", "\\", "Right Alt", "_", "=",
                                 "[", "]", ";", ",", ".", "/","Page Up","Page Down","Num /","Num *",
                                 "Num 0","Num 1","Num 2","Num 3","Num 4","Num 5","Num 6","Num 7","Num 8","Num 9",
                                 "Num +", "Num .", "0", "1" ,"2", "3", "4", "5", "6", "7", "8", "9"};
