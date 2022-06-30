@@ -43,6 +43,8 @@ namespace CityLauncher
             InputHandler = new InputHandler();
             new IniReader().InitDisplay();
             new InputReader().InitControls();
+            Button bt = new Button();
+            new InputForm(bt).ShowDialog();
         }
 
         private static void SetupLogger()
