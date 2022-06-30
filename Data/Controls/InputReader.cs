@@ -160,7 +160,7 @@
             Program.MainWindow.MouseSensitivityTrackbar.Value = Int16.Parse(BmInputLines[0].Substring(0, BmInputLines[0].LastIndexOf(".")));
             Program.MainWindow.MouseSensitivityValueLabel.Text = BmInputLines[0].Substring(0, BmInputLines[0].LastIndexOf("."));
             // Mouse Smoothing
-            if (UserInputLines[1].Equals("true"))
+            if (BmInputLines[1].Equals("true"))
             {
                 Program.MainWindow.MouseSmoothingBox.Checked = true;
             }

@@ -49,7 +49,7 @@ namespace CityLauncher
                 return Input;
             }
 
-            TimeSpan Time = new TimeSpan(0, 0, 0, 0, 3);
+            TimeSpan Time = new(0, 0, 0, 0, 3);
 
             switch (Modifier)
             {
