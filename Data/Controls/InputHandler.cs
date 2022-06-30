@@ -8,6 +8,11 @@
 
         public string[] LinesHumanReadable;
 
+        private string[] BannedKeys = { "OEM8", "OEM6", "OEM5", "LWIN", "RWIN", "OEM7", "SCROLL", "OEM1", "OEMTILDE", "OEM7", "NUMLOCK", "Backslash", "MULTIPLY", 
+                                        "DIVIDE", "SUBTRACT", "ADD", "DECIMAL", "PAUSE", "MENU", "NUMPAD0", "NUMPAD1", "NUMPAD2", "NUMPAD3", "NUMPAD4", "NUMPAD5", 
+                                        "NUMPAD6", "NUMPAD7", "NUMPAD8", "NUMPAD9", "CLEAR" };
+
+
         public List<Button> ButtonList = new();
 
         public InputHandler()
@@ -45,6 +50,18 @@
                     break;
                 }
             }
+        }
+
+        public bool KeyIsBanned(KeyEventArgs e)
+        {
+            foreach (string Banned in BannedKeys)
+            {
+                if (e.KeyCode.ToString().ToLower() == Banned.ToLower())
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

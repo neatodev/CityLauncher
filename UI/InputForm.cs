@@ -5,8 +5,8 @@
         private string ModifierString = "";
         private string KeyString = "";
 
-        private string[] ToSanitize = { "OemBackslash", "Oemcomma", "OemPeriod", "OemQuestion", "OemOpenBrackets", "D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D9", "D0", "OemMinus", "Oemplus", "PageUp" };
-        private string[] Sanitized = { "\\", ",", ".", "/", "[", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "Page Up" };
+        private string[] ToSanitize = { "OemBackslash", "Oemcomma", "OemPeriod", "OemQuestion", "OemOpenBrackets", "D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D9", "D0", "OemMinus", "Oemplus", "PageUp", "EQUALS" };
+        private string[] Sanitized = { "\\", ",", ".", "/", "[", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "Page Up", "=" };
 
         private Button Input;
 
@@ -62,6 +62,10 @@
 
         private void InputForm_KeyDown(object? sender, KeyEventArgs e)
         {
+            if (Program.InputHandler.KeyIsBanned(e))
+            {
+                return;
+            }
 
             if (e.KeyCode == Keys.Shift || e.KeyCode == Keys.ShiftKey)
             {
@@ -97,6 +101,11 @@
                         this.Close();
                     }
                     break;
+                case Keys.Back:
+                    Program.InputHandler.SetButton(Input, "Unbound");
+                    this.Close();
+                    break;
+
             }
         }
 
