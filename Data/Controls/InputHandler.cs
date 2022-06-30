@@ -8,6 +8,8 @@
 
         public string[] LinesHumanReadable;
 
+        public List<Button> ButtonList = new();
+
         public InputHandler()
         {
             UserInputFile = Program.FileHandler.UserInputPath;
@@ -31,6 +33,18 @@
                                 "Num 0","Num 1","Num 2","Num 3","Num 4","Num 5","Num 6","Num 7","Num 8","Num 9",
                                 "Num +", "Num .", "0", "1" ,"2", "3", "4", "5", "6", "7", "8", "9"};
             return style;
+        }
+
+        public void SetButton(Button Bt, string Text)
+        {
+            foreach (Button KeyButton in ButtonList)
+            {
+                if (Bt.Name == KeyButton.Name)
+                {
+                    KeyButton.Text = Text;
+                    break;
+                }
+            }
         }
     }
 }

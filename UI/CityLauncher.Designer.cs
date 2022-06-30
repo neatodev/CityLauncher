@@ -1521,6 +1521,7 @@
             this.FwButton1.TabIndex = 12;
             this.FwButton1.Text = "button1";
             this.FwButton1.UseVisualStyleBackColor = true;
+            this.FwButton1.Click += new System.EventHandler(this.FwButton1_Click);
             // 
             // ACTLabel
             // 

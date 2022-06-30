@@ -66,5 +66,10 @@ namespace CityLauncher
         {
             CustomFoV2ValueLabel.Text = CustomFoV2Trackbar.Value.ToString();
         }
+
+        private void FwButton1_Click(object sender, EventArgs e)
+        {
+            new InputForm(FwButton1).ShowDialog();
+        }
     }
 }
