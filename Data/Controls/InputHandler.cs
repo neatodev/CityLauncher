@@ -9,7 +9,7 @@
         public string[] LinesHumanReadable;
 
         private string[] BannedKeys = { "OEM8", "OEM6", "OEM5", "LWIN", "RWIN", "OEM7", "SCROLL", "OEM1", "OEMTILDE", "OEM7", "NUMLOCK", "Backslash", "MULTIPLY",
-                                        "DIVIDE", "SUBTRACT", "ADD", "DECIMAL", "PAUSE", "MENU", "NUMPAD0", "NUMPAD1", "NUMPAD2", "NUMPAD3", "NUMPAD4", "NUMPAD5",
+                                        "DIVIDE", "SUBTRACT", "ADD", "DECIMAL", "PAUSE", "NUMPAD0", "NUMPAD1", "NUMPAD2", "NUMPAD3", "NUMPAD4", "NUMPAD5",
                                         "NUMPAD6", "NUMPAD7", "NUMPAD8", "NUMPAD9", "CLEAR" };
 
 
