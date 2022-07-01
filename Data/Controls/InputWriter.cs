@@ -132,7 +132,6 @@ namespace CityLauncher
             }
             ConfigLine = ConfigLine.Remove(17, Count).Insert(17, Text);
             ConfigLine = SetModifier(ConfigLine, Modifier);
-            MessageBox.Show(ConfigLine);
             return ConfigLine;
         }
 
