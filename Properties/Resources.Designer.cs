@@ -91,6 +91,27 @@ namespace CityLauncher.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to [Engine.PlayerInput]
+        ///MoveForwardSpeed=1200
+        ///MoveStrafeSpeed=1200
+        ///LookRightScale=375
+        ///LookUpScale=-300
+        ///MouseSensitivity=30.0
+        ///DoubleClickTime=0.250000
+        ///bEnableMouseSmoothing=true
+        ///Bindings=(Name=&quot;Fire&quot;,Command=&quot;Button bFire | StartFire | OnRelease StopFire&quot;)
+        ///Bindings=(Name=&quot;AltFire&quot;,Command=&quot;StartAltFire | OnRelease StopAltFire&quot;)
+        ///Bindings=(Name=&quot;MoveForward&quot;,Command=&quot;Axis aBaseY Speed=1.0&quot;)
+        ///Bindings=(Name=&quot;MoveBackward&quot;,Command=&quot;Axis aBaseY Speed=-1.0&quot;)
+        ///Bindings=(Name=&quot;TurnLeft&quot;,Command=&quot;Axis aBaseX S [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string BmInput {
+            get {
+                return ResourceManager.GetString("BmInput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to [Configuration]
         ///BasedOn=..\BmGame\Config\DefaultEngine.ini
         ///

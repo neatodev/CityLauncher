@@ -142,14 +142,16 @@
             Program.MainWindow.CustomFoV1Button.Text = TrimLine(UserInputLines[100]);
             Program.InputHandler.ButtonList.Add(Program.MainWindow.CustomFoV1Button);
             // Custom FoV 1 Slider
-            var TrackbarValue = UserInputLines[100].Substring(39);
+            var TrackbarValue = UserInputLines[100].Substring(UserInputLines[100].IndexOf(","));
+            TrackbarValue = TrackbarValue.Substring(TrackbarValue.IndexOf("\"") + 5);
             Program.MainWindow.CustomFoV1Trackbar.Value = Int16.Parse(TrackbarValue.Substring(0, TrackbarValue.IndexOf("\"")));
             Program.MainWindow.CustomFoV1ValueLabel.Text = Program.MainWindow.CustomFoV1Trackbar.Value.ToString();
             // Custom FoV 2
             Program.MainWindow.CustomFoV2Button.Text = TrimLine(UserInputLines[101]);
             Program.InputHandler.ButtonList.Add(Program.MainWindow.CustomFoV2Button);
             // Custom FoV 2 Slider
-            TrackbarValue = UserInputLines[101].Substring(39);
+            TrackbarValue = UserInputLines[101].Substring(UserInputLines[101].IndexOf(","));
+            TrackbarValue = TrackbarValue.Substring(TrackbarValue.IndexOf("\"") + 5);
             Program.MainWindow.CustomFoV2Trackbar.Value = Int16.Parse(TrackbarValue.Substring(0, TrackbarValue.IndexOf("\"")));
             Program.MainWindow.CustomFoV2ValueLabel.Text = Program.MainWindow.CustomFoV2Trackbar.Value.ToString();
             // Custom Command

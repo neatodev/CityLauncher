@@ -14,6 +14,12 @@ namespace CityLauncher
             BmInputLines[1] = IniHandler.BmInputData["Engine.PlayerInput"]["bEnableMouseSmoothing"];
         }
 
+        public void WriteAll()
+        {
+            WriteControls();
+            WriteBmInput();
+        }
+
         public void WriteControls()
         {
             // Forward
@@ -99,19 +105,55 @@ namespace CityLauncher
             // Reset FoV
             UserInputLines[99] = ConvertToConfigStyle(Program.MainWindow.ResetFoVButton.Text, 99);
             // Custom FoV 1
-            var TrackbarValue = UserInputLines[100].Substring(39);
-            TrackbarValue = TrackbarValue.Substring(0, TrackbarValue.IndexOf("\""));
             UserInputLines[100] = ConvertToConfigStyle(Program.MainWindow.CustomFoV1Button.Text, 100);
             UserInputLines[100] = UpdateFoVValue(UserInputLines[100], Program.MainWindow.CustomFoV1Trackbar.Value);
             // Custom FoV 2
-            TrackbarValue = UserInputLines[101].Substring(39);
-            TrackbarValue = TrackbarValue.Substring(0, TrackbarValue.IndexOf("\""));
             UserInputLines[101] = ConvertToConfigStyle(Program.MainWindow.CustomFoV2Button.Text, 101);
             UserInputLines[101] = UpdateFoVValue(UserInputLines[101], Program.MainWindow.CustomFoV2Trackbar.Value);
             // Custom Command
             UserInputLines[102] = ConvertToConfigStyle(Program.MainWindow.ResetFoVButton.Text, 102);
-            // Custom Command
+            // Centre Camera
             UserInputLines[103] = ConvertToConfigStyle(Program.MainWindow.ResetFoVButton.Text, 103);
+
+            using (StreamWriter UserInputFile = new StreamWriter(Program.FileHandler.UserInputPath))
+            {
+                foreach (string Line in UserInputLines)
+                {
+                    UserInputFile.WriteLine(Line);
+                }
+                UserInputFile.Close();
+            }
+        }
+
+        private void WriteBmInput()
+        {
+            // Mouse Sensitivity
+            BmInputLines[0] = Program.MainWindow.MouseSensitivityValueLabel.Text + ".0";
+
+            // Mouse Smoothing
+            if (Program.MainWindow.MouseSmoothingBox.Checked)
+            {
+                BmInputLines[1] = "true";
+            }
+            else
+            {
+                BmInputLines[1] = "false";
+            }
+
+            string[] BmInputFileLines = File.ReadAllLines(Program.FileHandler.BmInputPath);
+
+            BmInputFileLines[5] = "MouseSensitivity=" + BmInputLines[0];
+            BmInputFileLines[7] = "bEnableMouseSmoothing=" + BmInputLines[1];
+            Program.FileHandler.BmInput.IsReadOnly = false;
+            using (StreamWriter BmInputFile = new StreamWriter(Program.FileHandler.BmInputPath))
+            {
+                foreach (string Line in BmInputFileLines)
+                {
+                    BmInputFile.WriteLine(Line);
+                }
+                BmInputFile.Close();
+            }
+            Program.FileHandler.BmInput.IsReadOnly = true;
         }
 
         private string ConvertToConfigStyle(string Text, int i)
@@ -123,8 +165,8 @@ namespace CityLauncher
             string Modifier = "None";
             try
             {
-                Text = ConvertLine(Text.Substring(Text.IndexOf('+') + 1));
                 Modifier = Text.Substring(0, Text.IndexOf('+'));
+                Text = ConvertLine(Text.Substring(Text.IndexOf('+') + 1));
             }
             catch (ArgumentOutOfRangeException)
             {
@@ -173,7 +215,8 @@ namespace CityLauncher
 
         private string UpdateFoVValue(string ConfigLine, int FoVValue)
         {
-            var FoVSection = ConfigLine.Substring(35);
+            var FoVSection = ConfigLine.Substring(ConfigLine.IndexOf(","));
+            FoVSection = FoVSection.Substring(FoVSection.IndexOf("\"") + 1);
             FoVSection = FoVSection.Substring(0, FoVSection.IndexOf("\""));
             var UpdatedValue = "fov " + FoVValue;
 
