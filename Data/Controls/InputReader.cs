@@ -193,12 +193,12 @@
             }
             if (Line.Contains("Control=true"))
             {
-                return "CTRL + " + ConvertLine(NewLine.Substring(0, NewLine.IndexOf("\"")));
+                return "Ctrl + " + ConvertLine(NewLine.Substring(0, NewLine.IndexOf("\"")));
 
             }
             if (Line.Contains("Alt=true"))
             {
-                return "ALT + " + ConvertLine(NewLine.Substring(0, NewLine.IndexOf("\"")));
+                return "Alt + " + ConvertLine(NewLine.Substring(0, NewLine.IndexOf("\"")));
             }
             return ConvertLine(NewLine.Substring(0, NewLine.IndexOf("\"")));
         }
