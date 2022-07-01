@@ -142,19 +142,21 @@
             Program.MainWindow.CustomFoV1Button.Text = TrimLine(UserInputLines[100]);
             Program.InputHandler.ButtonList.Add(Program.MainWindow.CustomFoV1Button);
             // Custom FoV 1 Slider
-            Program.MainWindow.CustomFoV1Trackbar.Value = Int16.Parse(TrimLine(UserInputLines[100].Substring(39)));
+            var TrackbarValue = UserInputLines[100].Substring(39);
+            Program.MainWindow.CustomFoV1Trackbar.Value = Int16.Parse(TrackbarValue.Substring(0, TrackbarValue.IndexOf("\"")));
             Program.MainWindow.CustomFoV1ValueLabel.Text = Program.MainWindow.CustomFoV1Trackbar.Value.ToString();
             // Custom FoV 2
             Program.MainWindow.CustomFoV2Button.Text = TrimLine(UserInputLines[101]);
             Program.InputHandler.ButtonList.Add(Program.MainWindow.CustomFoV2Button);
             // Custom FoV 2 Slider
-            Program.MainWindow.CustomFoV2Trackbar.Value = Int16.Parse(TrimLine(UserInputLines[101].Substring(39)));
+            TrackbarValue = UserInputLines[101].Substring(39);
+            Program.MainWindow.CustomFoV2Trackbar.Value = Int16.Parse(TrackbarValue.Substring(0, TrackbarValue.IndexOf("\"")));
             Program.MainWindow.CustomFoV2ValueLabel.Text = Program.MainWindow.CustomFoV2Trackbar.Value.ToString();
             // Custom Command
-            Program.MainWindow.CustomCommandButton.Text = TrimLine(UserInputLines[101]);
+            Program.MainWindow.CustomCommandButton.Text = TrimLine(UserInputLines[102]);
             Program.InputHandler.ButtonList.Add(Program.MainWindow.CustomCommandButton);
             // Centre Camera
-            Program.MainWindow.CentreCameraButton.Text = TrimLine(UserInputLines[102]);
+            Program.MainWindow.CentreCameraButton.Text = TrimLine(UserInputLines[103]);
             Program.InputHandler.ButtonList.Add(Program.MainWindow.CentreCameraButton);
             // Mouse Sensitivity
             Program.MainWindow.MouseSensitivityTrackbar.Value = Int16.Parse(BmInputLines[0].Substring(0, BmInputLines[0].LastIndexOf(".")));
