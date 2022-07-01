@@ -15,7 +15,6 @@ namespace CityLauncher
         public Resolution()
         {
             Nlog = LogManager.GetCurrentClassLogger();
-            GetResolutions();
         }
 
         [DllImport("user32.dll")]
@@ -26,7 +25,7 @@ namespace CityLauncher
         ///     Getter for user resolutions.
         ///     Called by Program upon application start.
         /// </summary>
-        private void GetResolutions()
+        public void GetResolutions()
         {
             List<string> TempList = new List<string>();
             DEVMODE vDevMode = new DEVMODE();

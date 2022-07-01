@@ -14,7 +14,7 @@
             // Resolution
             var ResX = IniHandler.BmEngineData["SystemSettings"]["ResX"];
             var ResY = IniHandler.BmEngineData["SystemSettings"]["ResY"];
-            new Resolution();
+            new Resolution().GetResolutions();
             foreach (string Resolution in Resolution.ResolutionList)
             {
                 Program.MainWindow.ResolutionBox.Items.Add(Resolution);

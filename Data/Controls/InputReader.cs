@@ -2,8 +2,8 @@
 {
     internal class InputReader
     {
-        private string[] UserInputLines;
-        private string[] BmInputLines = { "", "" };
+        private readonly string[] UserInputLines;
+        private readonly string[] BmInputLines = { "", "" };
 
         public InputReader()
         {
@@ -171,7 +171,6 @@
             else
             {
                 Program.MainWindow.MouseSmoothingBox.Checked = false;
-
             }
         }
 
@@ -194,7 +193,6 @@
             if (Line.Contains("Control=true"))
             {
                 return "Ctrl + " + ConvertLine(NewLine.Substring(0, NewLine.IndexOf("\"")));
-
             }
             if (Line.Contains("Alt=true"))
             {
