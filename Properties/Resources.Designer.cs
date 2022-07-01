@@ -61,6 +61,62 @@ namespace CityLauncher.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to [BmGame.R3rdPersonCamera]
+        ///EnableCameraAssist=True
+        ///
+        ///[IniVersion]
+        ///0=1648928426.000000
+        ///
+        ///.
+        /// </summary>
+        internal static string BmCamera {
+            get {
+                return ResourceManager.GetString("BmCamera", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [AppCompat]
+        ///CPUScore1=1000
+        ///CPUScore2=720
+        ///CPUScore3=630
+        ///CPUScore4=500
+        ///CPUScore5=275
+        ///CPUSpeed1=1.8
+        ///CPUSpeed2=2.4
+        ///CPUSpeed3=3.0
+        ///CPUSpeed4=3.5
+        ///CPUSpeed5=4.0
+        ///CPUMultiCoreMult=1.75
+        ///CPUHyperThreadMult=1.15
+        ///CPUMemory1=0.5
+        ///CPUMemory2=1.0
+        ///CPUMemory3=1.0
+        ///CPUMemory4=2.0
+        ///CPUMemory5=3.0
+        ///GPUmemory1=128
+        ///GPUmemory2=128
+        ///GPUmemory3=256
+        ///GPUmemory4=512
+        ///GPUmemory5=768
+        ///GPUShader1=2
+        ///GPUShader2=2
+        ///GPUShader3=2
+        ///GPUShader4=3
+        ///GPUShader5=3
+        ///
+        ///[AppCompatGPU-0x10DE]
+        ///VendorName=NVIDIA
+        ///VendorMobileTag=Go
+        ///0x014F [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string BmCompat {
+            get {
+                return ResourceManager.GetString("BmCompat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to [URL]
         ///Protocol=unreal
         ///Name=Player
@@ -91,6 +147,42 @@ namespace CityLauncher.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to [Engine.GameInfo]
+        ///DefaultGame=BmGame.RGameInfo
+        ///DefaultServerGame=BmGame.RGameInfo
+        ///bAdminCanPause=false
+        ///MaxPlayers=2
+        ///GameDifficulty=+1.0
+        ///bChangeLevels=True
+        ///MaxSpectators=0
+        ///MaxIdleTime=+0.0
+        ///MaxTimeMargin=+0.0
+        ///TimeMarginSlack=+1.35
+        ///MinTimeMargin=-1.0
+        ///TotalNetBandwidth=32000
+        ///MaxDynamicBandwidth=7000
+        ///MinDynamicBandwidth=4000
+        ///
+        ///[Engine.AccessControl]
+        ///IPPolicies=ACCEPT;*
+        ///
+        ///[DefaultPlayer]
+        ///Name=Player
+        ///Team=255
+        ///
+        ///[Engine.HUD]
+        ///bMessageBeep=true
+        ///HudCanvasScale=0.95
+        ///ConsoleMessageCount=4
+        ///Console [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string BmGame {
+            get {
+                return ResourceManager.GetString("BmGame", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to [Engine.PlayerInput]
         ///MoveForwardSpeed=1200
         ///MoveStrafeSpeed=1200
@@ -108,6 +200,67 @@ namespace CityLauncher.Properties {
         internal static string BmInput {
             get {
                 return ResourceManager.GetString("BmInput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [DevOptions.DebugOptions]
+        ///bAllowAdvancedOptions=True
+        ///LightmapResolutionFactorScale=32.0
+        ///
+        ///[DevOptions.StaticLighting]
+        ///bAllowMultiThreadedStaticLighting=True
+        ///ViewSingleBounceNumber=-1
+        ///bUseConservativeTexelRasterization=True
+        ///bAccountForTexelSize=True
+        ///bUseMaxWeight=True
+        ///MaxTriangleLightingSamples=8
+        ///MaxTriangleIrradiancePhotonCacheSamples=4
+        ///bAllowLightmapCompression=True
+        ///bAllowEagerLightmapEncode=False
+        ///bUseBilinearFilterLightmaps=True
+        ///bRepackLightAndShadowMapTextures=False
+        ///bAllow64bitProcess=True [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string BmLightmass {
+            get {
+                return ResourceManager.GetString("BmLightmass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Engine.UIInteraction]
+        ///UIJoystickDeadZone=0.9
+        ///UIAxisMultiplier=1.0
+        ///AxisRepeatDelay=0.2
+        ///MouseButtonRepeatDelay=0.15
+        ///DoubleClickTriggerSeconds=0.5
+        ///DoubleClickPixelTolerance=1
+        ///ConfiguredAxisEmulationDefinitions=(AxisInputKey=MouseX,AdjacentAxisInputKey=MouseY,bEmulateButtonPress=False)
+        ///ConfiguredAxisEmulationDefinitions=(AxisInputKey=MouseY,AdjacentAxisInputKey=MouseX,bEmulateButtonPress=False)
+        ///ConfiguredAxisEmulationDefinitions=(AxisInputKey=XboxTypeS_LeftX,AdjacentAxisInputKey=XboxTypeS_LeftY,bEmula [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string BmUI {
+            get {
+                return ResourceManager.GetString("BmUI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to set R3rdPersonCamera WalkCamConfig (StateFreeCameraSitOffsetMin=(X=0.000000,Y=0.000000,Z=0.000000),StateFreeCameraSitOffsetMax=(X=0.000000,Y=0.000000,Z=0.000000),StateFreeCameraPullOffset=(X=0.000000,Y=0.000000,Z=0.000000),CameraPivotOffset=(X=0.000000,Y=0.000000,Z=65.000000),ZoomedOffset=(X=0.000000,Y=0.000000,Z=80.000000),maxPitch=14500.000000,MinPitch=-13000.000000,MinFreeCameraDistance=300.000000,MaxFreeCameraDistance=300.000000,ShortCamSpringConst=250.000000,LongCamSpringConst=250.000000,DefaultCameraP [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string centre_camera {
+            get {
+                return ResourceManager.GetString("centre_camera", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //Type custom commands here and execute them with the keybind you set using the advanced launcher. .
+        /// </summary>
+        internal static string custom_commands {
+            get {
+                return ResourceManager.GetString("custom_commands", resourceCulture);
             }
         }
         
@@ -145,6 +298,30 @@ namespace CityLauncher.Properties {
         internal static string UserEngine {
             get {
                 return ResourceManager.GetString("UserEngine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Configuration]
+        ///BasedOn=..\BmGame\Config\DefaultGame.ini
+        ///
+        ///[BmGame.RPlayerController]
+        ///!CI_KeyboardMap=&quot;&quot;
+        ///.CI_KeyboardMap=&quot;&quot;		;CI_None
+        ///.CI_KeyboardMap=&quot;_Start&quot;		;CI_UI_Start
+        ///.CI_KeyboardMap=&quot;_Select&quot;		;CI_UI_Select
+        ///.CI_KeyboardMap=&quot;Enter&quot;		;CI_UI_A
+        ///.CI_KeyboardMap=&quot;Escape&quot;		;CI_UI_B
+        ///.CI_KeyboardMap=&quot;RightControl&quot;		;CI_UI_X
+        ///.CI_KeyboardMap=&quot;Backspace&quot;		;CI_UI_Y
+        ///.CI_KeyboardMap=&quot;_ShoulderL&quot;		;CI_UI_L1
+        ///.CI_KeyboardMap=&quot;_TriggerL&quot;		;CI_UI_L2
+        ///.CI_KeyboardMap=&quot;_A&quot;		;CI_UI_L3
+        ///.CI_KeyboardMap=&quot;_Shoulde [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string UserGame {
+            get {
+                return ResourceManager.GetString("UserGame", resourceCulture);
             }
         }
         
