@@ -262,7 +262,7 @@ namespace CityLauncher
         {
             for (int i = 0; i < Program.InputHandler.LinesHumanReadable.Length; i++)
             {
-                if (Input == Program.InputHandler.LinesHumanReadable[i])
+                if (Input == Program.InputHandler.LinesHumanReadable[i].Replace(" ", ""))
                 {
                     return Program.InputHandler.LinesConfigStyle[i];
                 }
