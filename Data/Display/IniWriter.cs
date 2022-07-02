@@ -10,8 +10,7 @@ namespace CityLauncher
         private string BmEngineTemp;
         private string UserEngineLangValue;
         readonly FileIniDataParser DataParser;
-
-        string[] ExcludedEntries = { "LightComplexityColors", "ShaderComplexityColors" };
+        readonly string[] ExcludedEntries = { "LightComplexityColors", "ShaderComplexityColors" };
 
         private static Logger Nlog = LogManager.GetCurrentClassLogger();
 
@@ -151,7 +150,7 @@ namespace CityLauncher
             }
 
             // Framerate Cap
-            Int16 Framecap = Int16.Parse(Program.MainWindow.FrameCapTextBox.Text.Trim());
+            short Framecap = short.Parse(Program.MainWindow.FrameCapTextBox.Text.Trim());
             if (Framecap <= 24)
             {
                 Program.MainWindow.FrameCapTextBox.Text = "62";
