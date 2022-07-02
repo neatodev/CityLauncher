@@ -140,16 +140,43 @@ namespace CityLauncher
                 BmInputLines[1] = "false";
             }
 
-            string[] BmInputFileLines = File.ReadAllLines(Program.FileHandler.BmInputPath);
+            List<string> BmInputFileLines = new List<string>();
+            foreach (string Line in File.ReadAllLines(Program.FileHandler.BmInputPath))
+            {
+                BmInputFileLines.Add(Line);
+            }
 
             BmInputFileLines[5] = "MouseSensitivity=" + BmInputLines[0];
             BmInputFileLines[7] = "bEnableMouseSmoothing=" + BmInputLines[1];
             Program.FileHandler.BmInput.IsReadOnly = false;
             using (StreamWriter BmInputFile = new StreamWriter(Program.FileHandler.BmInputPath))
             {
-                foreach (string Line in BmInputFileLines)
+                for (int i = 0; i < BmInputFileLines.Count; i++)
                 {
-                    BmInputFile.WriteLine(Line);
+                    if (i == 224)
+                    {
+                        for (int j = 5; j < UserInputLines.Length; j++)
+                        {
+                            try
+                            {
+                                if (!UserInputLines[j].Contains(";"))
+                                {
+                                    BmInputFile.WriteLine(UserInputLines[j].Substring(1));
+                                }
+                                else
+                                {
+                                    BmInputFile.WriteLine(UserInputLines[j]);
+                                }
+                            }
+                            catch (ArgumentOutOfRangeException)
+                            {
+                                BmInputFile.WriteLine(UserInputLines[j]);
+                            }
+                            BmInputFileLines.Insert(i + j - 5, UserInputLines[j]);
+                        }
+                        i = BmInputFileLines.IndexOf("[Engine.DebugCameraInput]") - 2;
+                    }
+                    BmInputFile.WriteLine(BmInputFileLines[i]);
                 }
                 BmInputFile.Close();
             }

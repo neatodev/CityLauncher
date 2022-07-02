@@ -101,6 +101,5 @@ namespace CityLauncher
             Program.FileHandler.CreateConfigFile(Program.FileHandler.BmEnginePath, Resources.BmEngine);
             new IniReader().InitDisplay();
         }
-
     }
 }
