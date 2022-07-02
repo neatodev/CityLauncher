@@ -89,16 +89,16 @@ namespace CityLauncher
             UserInputLines[84] = ConvertToConfigStyle(Program.MainWindow.QFireGadget1Button1.Text, 42);
             // Quickfire Gadget 2
             UserInputLines[43] = ConvertToConfigStyle(Program.MainWindow.QFireGadget2Button1.Text, 43);
-            UserInputLines[85] = ConvertToConfigStyle(Program.MainWindow.QFireGadget1Button1.Text, 42);
+            UserInputLines[85] = ConvertToConfigStyle(Program.MainWindow.QFireGadget1Button1.Text, 43);
             // Quickfire Gadget 3
             UserInputLines[44] = ConvertToConfigStyle(Program.MainWindow.QFireGadget3Button1.Text, 44);
-            UserInputLines[86] = ConvertToConfigStyle(Program.MainWindow.QFireGadget1Button1.Text, 42);
+            UserInputLines[86] = ConvertToConfigStyle(Program.MainWindow.QFireGadget1Button1.Text, 44);
             // Quickfire Gadget 4
             UserInputLines[45] = ConvertToConfigStyle(Program.MainWindow.QFireGadget4Button1.Text, 45);
-            UserInputLines[87] = ConvertToConfigStyle(Program.MainWindow.QFireGadget1Button1.Text, 42);
+            UserInputLines[87] = ConvertToConfigStyle(Program.MainWindow.QFireGadget1Button1.Text, 45);
             // Quickfire Gadget 5
             UserInputLines[46] = ConvertToConfigStyle(Program.MainWindow.QFireGadget5Button1.Text, 46);
-            UserInputLines[81] = ConvertToConfigStyle(Program.MainWindow.QFireGadget1Button1.Text, 42);
+            UserInputLines[81] = ConvertToConfigStyle(Program.MainWindow.QFireGadget1Button1.Text, 46);
             // Catwoman Disarm Fix
             UserInputLines[91] = ConvertToConfigStyle(Program.MainWindow.CWDisarmFixButton1.Text, 91);
             // Speedrun Setting
