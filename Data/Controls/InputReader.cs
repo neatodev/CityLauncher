@@ -123,6 +123,9 @@
             // Quickfire Gadget 5
             Program.MainWindow.QFireGadget5Button1.Text = TrimLine(UserInputLines[46]);
             Program.InputHandler.ButtonList.Add(Program.MainWindow.QFireGadget5Button1);
+            // Cape Stun
+            Program.MainWindow.CapeStunButton.Text = TrimLine(UserInputLines[65]);
+            Program.InputHandler.ButtonList.Add(Program.MainWindow.CapeStunButton);
             // Catwoman Disarm Fix
             Program.MainWindow.CWDisarmFixButton1.Text = TrimLine(UserInputLines[91]);
             Program.InputHandler.ButtonList.Add(Program.MainWindow.CWDisarmFixButton1);

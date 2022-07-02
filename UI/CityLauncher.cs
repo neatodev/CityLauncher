@@ -304,5 +304,10 @@ namespace CityLauncher
         {
             Program.IniHandler.ResetDisplay();
         }
+
+        private void CapeStunButton_Click(object sender, EventArgs e)
+        {
+            new InputForm(CapeStunButton).ShowDialog();
+        }
     }
 }

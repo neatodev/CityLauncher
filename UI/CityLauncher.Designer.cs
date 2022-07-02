@@ -74,6 +74,8 @@
             this.LanguageLabel = new System.Windows.Forms.Label();
             this.FullscreenLabel = new System.Windows.Forms.Label();
             this.ControlTab = new System.Windows.Forms.TabPage();
+            this.CapeStunButton = new System.Windows.Forms.Button();
+            this.CapeStunLabel = new System.Windows.Forms.Label();
             this.CWDisarmFixButton1 = new System.Windows.Forms.Button();
             this.CWDisarmFixLabel = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -180,8 +182,6 @@
             this.ManualModeButton = new System.Windows.Forms.Button();
             this.ResetControlButton = new System.Windows.Forms.Button();
             this.ResetDisplayButton = new System.Windows.Forms.Button();
-            this.CapeStunButton = new System.Windows.Forms.Button();
-            this.CapeStunLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -878,6 +878,27 @@
             this.ControlTab.TabIndex = 1;
             this.ControlTab.Text = "Controls";
             this.ControlTab.UseVisualStyleBackColor = true;
+            // 
+            // CapeStunButton
+            // 
+            this.CapeStunButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CapeStunButton.Location = new System.Drawing.Point(307, 315);
+            this.CapeStunButton.Name = "CapeStunButton";
+            this.CapeStunButton.Size = new System.Drawing.Size(96, 35);
+            this.CapeStunButton.TabIndex = 142;
+            this.CapeStunButton.Text = "button1";
+            this.CapeStunButton.UseVisualStyleBackColor = true;
+            this.CapeStunButton.Click += new System.EventHandler(this.CapeStunButton_Click);
+            // 
+            // CapeStunLabel
+            // 
+            this.CapeStunLabel.AutoSize = true;
+            this.CapeStunLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CapeStunLabel.Location = new System.Drawing.Point(227, 322);
+            this.CapeStunLabel.Name = "CapeStunLabel";
+            this.CapeStunLabel.Size = new System.Drawing.Size(74, 19);
+            this.CapeStunLabel.TabIndex = 141;
+            this.CapeStunLabel.Text = "Cape Stun";
             // 
             // CWDisarmFixButton1
             // 
@@ -2028,26 +2049,6 @@
             this.ResetDisplayButton.Text = "Reset Display";
             this.ResetDisplayButton.UseVisualStyleBackColor = true;
             this.ResetDisplayButton.Click += new System.EventHandler(this.ResetDisplayButton_Click);
-            // 
-            // CapeStunButton
-            // 
-            this.CapeStunButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CapeStunButton.Location = new System.Drawing.Point(307, 315);
-            this.CapeStunButton.Name = "CapeStunButton";
-            this.CapeStunButton.Size = new System.Drawing.Size(96, 35);
-            this.CapeStunButton.TabIndex = 142;
-            this.CapeStunButton.Text = "button1";
-            this.CapeStunButton.UseVisualStyleBackColor = true;
-            // 
-            // CapeStunLabel
-            // 
-            this.CapeStunLabel.AutoSize = true;
-            this.CapeStunLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CapeStunLabel.Location = new System.Drawing.Point(227, 322);
-            this.CapeStunLabel.Name = "CapeStunLabel";
-            this.CapeStunLabel.Size = new System.Drawing.Size(74, 19);
-            this.CapeStunLabel.TabIndex = 141;
-            this.CapeStunLabel.Text = "Cape Stun";
             // 
             // CityLauncher
             // 
