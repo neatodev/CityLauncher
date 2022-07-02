@@ -18,7 +18,7 @@ namespace CityLauncher
         public IniWriter()
         {
             BmEnginePath = Program.FileHandler.BmEnginePath;
-            UserEnginePath = Program.FileHandler.BmEnginePath;
+            UserEnginePath = Program.FileHandler.UserEnginePath;
             DataParser = new FileIniDataParser();
         }
 
