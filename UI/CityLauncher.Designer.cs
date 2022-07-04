@@ -1423,7 +1423,7 @@
             // GadgetSecButton1
             // 
             this.GadgetSecButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GadgetSecButton1.Location = new System.Drawing.Point(96, 6);
+            this.GadgetSecButton1.Location = new System.Drawing.Point(546, 6);
             this.GadgetSecButton1.Name = "GadgetSecButton1";
             this.GadgetSecButton1.Size = new System.Drawing.Size(96, 37);
             this.GadgetSecButton1.TabIndex = 38;
@@ -1544,7 +1544,7 @@
             // LeftButton1
             // 
             this.LeftButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LeftButton1.Location = new System.Drawing.Point(546, 6);
+            this.LeftButton1.Location = new System.Drawing.Point(307, 6);
             this.LeftButton1.Name = "LeftButton1";
             this.LeftButton1.Size = new System.Drawing.Size(96, 35);
             this.LeftButton1.TabIndex = 16;
@@ -1566,7 +1566,7 @@
             // FwButton1
             // 
             this.FwButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FwButton1.Location = new System.Drawing.Point(307, 6);
+            this.FwButton1.Location = new System.Drawing.Point(96, 6);
             this.FwButton1.Name = "FwButton1";
             this.FwButton1.Size = new System.Drawing.Size(96, 35);
             this.FwButton1.TabIndex = 12;
