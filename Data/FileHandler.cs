@@ -73,7 +73,7 @@ namespace CityLauncher
             if (File.Exists(UserInputPath))
             {
                 string[] Lines = File.ReadAllLines(UserInputPath);
-                if (Lines.Length < 105)
+                if (Lines.Length < 106)
                 {
                     File.Delete(UserInputPath);
                     CreateConfigFile(UserInputPath, Resources.UserInput);
