@@ -5,8 +5,8 @@
         private string ModifierString = "";
         private string KeyString = "";
 
-        private string[] ToSanitize = { "OemBackslash", "Oemcomma", "OemPeriod", "OemQuestion", "OemOpenBrackets", "D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D9", "D0", "OemMinus", "Oemplus", "PageUp", "Equals" };
-        private string[] Sanitized = { "\\", ",", ".", "/", "[", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "Page Up", "=" };
+        private string[] ToSanitize = { "OemBackslash", "Oemcomma", "OemPeriod", "OemQuestion", "OemOpenBrackets", "Capital", "D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D9", "D0", "OemMinus", "Oemplus", "PageUp", "Equals" };
+        private string[] Sanitized = { "\\", ",", ".", "/", "[", "Caps", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "Page Up", "=" };
 
         private Button Input;
 
