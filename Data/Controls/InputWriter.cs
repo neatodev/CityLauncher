@@ -181,7 +181,7 @@ namespace CityLauncher
                             }
                             BmInputFileLines.Insert(i + j - 5, UserInputLines[j]);
                         }
-                        i = BmInputFileLines.IndexOf("[Engine.DebugCameraInput]") - 2;
+                        i = BmInputFileLines.IndexOf("[Engine.DebugCameraInput]") - 1;
                     }
                     BmInputFile.WriteLine(BmInputFileLines[i]);
                 }
