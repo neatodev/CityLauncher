@@ -118,9 +118,9 @@ namespace CityLauncher
             UserInputLines[101] = ConvertToConfigStyle(Program.MainWindow.CustomFoV2Button.Text, 101);
             UserInputLines[101] = UpdateFoVValue(UserInputLines[101], Program.MainWindow.CustomFoV2Trackbar.Value);
             // Custom Command
-            UserInputLines[102] = ConvertToConfigStyle(Program.MainWindow.ResetFoVButton.Text, 102);
+            UserInputLines[102] = ConvertToConfigStyle(Program.MainWindow.CustomCommandButton.Text, 102);
             // Centre Camera
-            UserInputLines[103] = ConvertToConfigStyle(Program.MainWindow.ResetFoVButton.Text, 103);
+            UserInputLines[103] = ConvertToConfigStyle(Program.MainWindow.CentreCameraButton.Text, 103);
 
             using (StreamWriter UserInputFile = new StreamWriter(Program.FileHandler.UserInputPath))
             {
