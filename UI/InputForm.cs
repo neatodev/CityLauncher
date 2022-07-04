@@ -67,17 +67,17 @@
                 return;
             }
 
-            if (e.KeyCode == Keys.Shift || e.KeyCode == Keys.ShiftKey)
+            if (e.KeyCode == Keys.Shift || e.KeyCode == Keys.ShiftKey || e.KeyCode == Keys.LShiftKey)
             {
                 ModifierString = "Shift + ";
                 KeybindValueLabel.Text = ModifierString + KeyString;
             }
-            else if (e.KeyCode == Keys.Control || e.KeyCode == Keys.ControlKey)
+            else if (e.KeyCode == Keys.Control || e.KeyCode == Keys.ControlKey || e.KeyCode == Keys.LControlKey)
             {
                 ModifierString = "Ctrl + ";
                 KeybindValueLabel.Text = ModifierString + KeyString;
             }
-            else if (e.KeyCode == Keys.Alt || e.KeyCode == Keys.Menu)
+            else if (e.KeyCode == Keys.Alt || e.KeyCode == Keys.Menu || e.KeyCode == Keys.LMenu)
             {
                 ModifierString = "Alt + ";
                 KeybindValueLabel.Text = ModifierString + KeyString;
