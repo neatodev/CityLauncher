@@ -121,6 +121,8 @@ namespace CityLauncher
             UserInputLines[102] = ConvertToConfigStyle(Program.MainWindow.CustomCommandButton.Text, 102);
             // Centre Camera
             UserInputLines[103] = ConvertToConfigStyle(Program.MainWindow.CentreCameraButton.Text, 103);
+            // View Map
+            UserInputLines[104] = ConvertToConfigStyle(Program.MainWindow.MapButton.Text, 104);
 
             using (StreamWriter UserInputFile = new StreamWriter(Program.FileHandler.UserInputPath))
             {

@@ -309,5 +309,10 @@ namespace CityLauncher
         {
             new InputForm(CapeStunButton).ShowDialog();
         }
+
+        private void MapButton_Click(object sender, EventArgs e)
+        {
+            new InputForm(MapButton).ShowDialog();
+        }
     }
 }

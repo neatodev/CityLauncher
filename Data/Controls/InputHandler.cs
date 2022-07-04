@@ -74,7 +74,8 @@ namespace CityLauncher
                 "Seven",
                 "Eight",
                 "Nine",
-                "Underscore"
+                "Underscore",
+                "TAB"
             };
             return style;
         }
@@ -129,7 +130,8 @@ namespace CityLauncher
                 "7",
                 "8",
                 "9",
-                "-"
+                "-",
+                "Tab"
             };
             return style;
         }
