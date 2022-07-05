@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CityLauncher));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DisplayTab = new System.Windows.Forms.TabPage();
@@ -185,6 +186,7 @@
             this.ResetDisplayButton = new System.Windows.Forms.Button();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
             this.ManualModeButton = new System.Windows.Forms.Button();
+            this.BasicToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -2078,6 +2080,12 @@
             this.ManualModeButton.UseVisualStyleBackColor = true;
             this.ManualModeButton.Click += new System.EventHandler(this.ManualModeButton_Click);
             // 
+            // BasicToolTip
+            // 
+            this.BasicToolTip.AutoPopDelay = 5000000;
+            this.BasicToolTip.InitialDelay = 50;
+            this.BasicToolTip.ReshowDelay = 20;
+            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -2271,5 +2279,6 @@
         private Label CapeStunLabel;
         public Button MapButton;
         private Label MapLabel;
+        private ToolTip BasicToolTip;
     }
 }
