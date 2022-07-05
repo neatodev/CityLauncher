@@ -273,6 +273,8 @@
             this.LensFlareBox.Size = new System.Drawing.Size(101, 23);
             this.LensFlareBox.TabIndex = 49;
             this.LensFlareBox.Text = "Lens Flares";
+            this.BasicToolTip.SetToolTip(this.LensFlareBox, "Simulates perspective-based flares when looking at bright lights. \r\n- Requires De" +
+        "pth of Field to be enabled.");
             this.LensFlareBox.UseVisualStyleBackColor = true;
             // 
             // LightRayBox
@@ -285,6 +287,7 @@
             this.LightRayBox.Size = new System.Drawing.Size(95, 23);
             this.LightRayBox.TabIndex = 48;
             this.LightRayBox.Text = "Light Rays";
+            this.BasicToolTip.SetToolTip(this.LightRayBox, "Simulates light traversal in the atmosphere.");
             this.LightRayBox.UseVisualStyleBackColor = true;
             // 
             // BloomBox
@@ -297,6 +300,8 @@
             this.BloomBox.Size = new System.Drawing.Size(69, 23);
             this.BloomBox.TabIndex = 47;
             this.BloomBox.Text = "Bloom";
+            this.BasicToolTip.SetToolTip(this.BloomBox, "Enunciates lighting by adding a glow to bright areas. \r\n- Requires Depth of Field" +
+        " to be enabled.");
             this.BloomBox.UseVisualStyleBackColor = true;
             // 
             // DistortionBox
@@ -309,6 +314,7 @@
             this.DistortionBox.Size = new System.Drawing.Size(92, 23);
             this.DistortionBox.TabIndex = 46;
             this.DistortionBox.Text = "Distortion";
+            this.BasicToolTip.SetToolTip(this.DistortionBox, "Dynamically distorts areas of the screen to enhance certain actions.");
             this.DistortionBox.UseVisualStyleBackColor = true;
             // 
             // DynShadowBox
@@ -321,6 +327,7 @@
             this.DynShadowBox.Size = new System.Drawing.Size(145, 23);
             this.DynShadowBox.TabIndex = 45;
             this.DynShadowBox.Text = "Dynamic Shadows";
+            this.BasicToolTip.SetToolTip(this.DynShadowBox, "Enables real-time shadows.");
             this.DynShadowBox.UseVisualStyleBackColor = true;
             // 
             // DynLightBox
@@ -333,6 +340,7 @@
             this.DynLightBox.Size = new System.Drawing.Size(140, 23);
             this.DynLightBox.TabIndex = 44;
             this.DynLightBox.Text = "Dynamic Lighting";
+            this.BasicToolTip.SetToolTip(this.DynLightBox, "Improves game lighting.");
             this.DynLightBox.UseVisualStyleBackColor = true;
             // 
             // MotionBlurBox
@@ -345,6 +353,7 @@
             this.MotionBlurBox.Size = new System.Drawing.Size(104, 23);
             this.MotionBlurBox.TabIndex = 43;
             this.MotionBlurBox.Text = "Motion Blur";
+            this.BasicToolTip.SetToolTip(this.MotionBlurBox, "Emphasizes movement using blur to connect motion between frames.");
             this.MotionBlurBox.UseVisualStyleBackColor = true;
             // 
             // DOFBox
@@ -357,6 +366,9 @@
             this.DOFBox.Size = new System.Drawing.Size(119, 23);
             this.DOFBox.TabIndex = 42;
             this.DOFBox.Text = "Depth of Field";
+            this.BasicToolTip.SetToolTip(this.DOFBox, "Adds selective focus to improve depth perception. Will obscure view distance with" +
+        " a blur pass. This effect is tied with colour grading filters and certain post-p" +
+        "rocessing effects.");
             this.DOFBox.UseVisualStyleBackColor = true;
             // 
             // AmbientOcclusionBox
@@ -369,6 +381,8 @@
             this.AmbientOcclusionBox.Size = new System.Drawing.Size(150, 23);
             this.AmbientOcclusionBox.TabIndex = 41;
             this.AmbientOcclusionBox.Text = "Ambient Occlusion";
+            this.BasicToolTip.SetToolTip(this.AmbientOcclusionBox, "Improves ambient lighting. HBAO is used instead of SSAO if DirectX 11 is enabled." +
+        " ");
             this.AmbientOcclusionBox.UseVisualStyleBackColor = true;
             // 
             // PoolsizeBox
@@ -387,6 +401,7 @@
             this.PoolsizeBox.Name = "PoolsizeBox";
             this.PoolsizeBox.Size = new System.Drawing.Size(152, 27);
             this.PoolsizeBox.TabIndex = 40;
+            this.BasicToolTip.SetToolTip(this.PoolsizeBox, resources.GetString("PoolsizeBox.ToolTip"));
             // 
             // PoolsizeLabel
             // 
@@ -397,6 +412,7 @@
             this.PoolsizeLabel.Size = new System.Drawing.Size(62, 19);
             this.PoolsizeLabel.TabIndex = 39;
             this.PoolsizeLabel.Text = "Poolsize";
+            this.BasicToolTip.SetToolTip(this.PoolsizeLabel, resources.GetString("PoolsizeLabel.ToolTip"));
             // 
             // PhysXBox
             // 
@@ -411,6 +427,7 @@
             this.PhysXBox.Name = "PhysXBox";
             this.PhysXBox.Size = new System.Drawing.Size(152, 27);
             this.PhysXBox.TabIndex = 38;
+            this.BasicToolTip.SetToolTip(this.PhysXBox, "Demanding Feature. Adds breakable fences, cloth physics, smoke simulations etc.");
             // 
             // ShadowDrawDistBox
             // 
@@ -426,6 +443,8 @@
             this.ShadowDrawDistBox.Name = "ShadowDrawDistBox";
             this.ShadowDrawDistBox.Size = new System.Drawing.Size(152, 27);
             this.ShadowDrawDistBox.TabIndex = 37;
+            this.BasicToolTip.SetToolTip(this.ShadowDrawDistBox, "Increases shadow draw distance. Directx 11 is recommended before pushing this set" +
+        "ting.");
             // 
             // ShadowDrawLabel
             // 
@@ -436,6 +455,8 @@
             this.ShadowDrawLabel.Size = new System.Drawing.Size(158, 19);
             this.ShadowDrawLabel.TabIndex = 36;
             this.ShadowDrawLabel.Text = "Shadow Draw Distance";
+            this.BasicToolTip.SetToolTip(this.ShadowDrawLabel, "Increases shadow draw distance. Directx 11 is recommended before pushing this set" +
+        "ting.");
             // 
             // MVSSBox
             // 
@@ -451,6 +472,8 @@
             this.MVSSBox.Name = "MVSSBox";
             this.MVSSBox.Size = new System.Drawing.Size(152, 27);
             this.MVSSBox.TabIndex = 35;
+            this.BasicToolTip.SetToolTip(this.MVSSBox, "Increases self-shadowing amount. Recommended to increase shadow quality before pu" +
+        "shing this setting.\r\n- Lower this setting if experiencing visual artifacts.");
             // 
             // ShadowQualityBox
             // 
@@ -466,6 +489,8 @@
             this.ShadowQualityBox.Name = "ShadowQualityBox";
             this.ShadowQualityBox.Size = new System.Drawing.Size(152, 27);
             this.ShadowQualityBox.TabIndex = 26;
+            this.BasicToolTip.SetToolTip(this.ShadowQualityBox, "Increases the quality of shadow rendering by increasing the shadowmap resolution." +
+        "");
             // 
             // PhysXLabel
             // 
@@ -476,6 +501,7 @@
             this.PhysXLabel.Size = new System.Drawing.Size(92, 19);
             this.PhysXLabel.TabIndex = 24;
             this.PhysXLabel.Text = "Nvidia PhysX";
+            this.BasicToolTip.SetToolTip(this.PhysXLabel, "Demanding Feature. Adds breakable fences, cloth physics, smoke simulations etc.");
             // 
             // MVSSLabel
             // 
@@ -486,6 +512,8 @@
             this.MVSSLabel.Size = new System.Drawing.Size(110, 19);
             this.MVSSLabel.TabIndex = 23;
             this.MVSSLabel.Text = "MVSS Coverage";
+            this.BasicToolTip.SetToolTip(this.MVSSLabel, "Increases self-shadowing amount. Recommended to increase shadow quality before pu" +
+        "shing this setting.\r\n- Lower this setting if experiencing visual artifacts.");
             // 
             // HbaoBox
             // 
@@ -500,6 +528,8 @@
             this.HbaoBox.Name = "HbaoBox";
             this.HbaoBox.Size = new System.Drawing.Size(152, 27);
             this.HbaoBox.TabIndex = 14;
+            this.BasicToolTip.SetToolTip(this.HbaoBox, "Adjusts ambient occlusion intensity. Higher values will increase ambient occlusio" +
+        "n darkness.");
             // 
             // AntiAliasingBox
             // 
@@ -518,6 +548,8 @@
             this.AntiAliasingBox.Name = "AntiAliasingBox";
             this.AntiAliasingBox.Size = new System.Drawing.Size(152, 27);
             this.AntiAliasingBox.TabIndex = 9;
+            this.BasicToolTip.SetToolTip(this.AntiAliasingBox, "Cleans up edge aliasing. MSAA may induce stutter. Reshade SMAA suggested for shar" +
+        "p and stable AA (see \'About\' section).");
             // 
             // AnisoBox
             // 
@@ -532,6 +564,7 @@
             this.AnisoBox.Name = "AnisoBox";
             this.AnisoBox.Size = new System.Drawing.Size(152, 27);
             this.AnisoBox.TabIndex = 8;
+            this.BasicToolTip.SetToolTip(this.AnisoBox, "Improve texture clarity across oblique surfaces.");
             // 
             // TessellationBox
             // 
@@ -549,6 +582,8 @@
             this.TessellationBox.Name = "TessellationBox";
             this.TessellationBox.Size = new System.Drawing.Size(152, 27);
             this.TessellationBox.TabIndex = 10;
+            this.BasicToolTip.SetToolTip(this.TessellationBox, "Increases mesh detail on certain objects when viewed up close (ice, vines, trees," +
+        " etc). Very demanding setting. \r\n\'Off\' will disable Tessellation.");
             // 
             // TessellationLabel
             // 
@@ -559,6 +594,8 @@
             this.TessellationLabel.Size = new System.Drawing.Size(138, 19);
             this.TessellationLabel.TabIndex = 4;
             this.TessellationLabel.Text = "Tessellation Quality";
+            this.BasicToolTip.SetToolTip(this.TessellationLabel, "Increases mesh detail on certain objects when viewed up close (ice, vines, trees," +
+        " etc). Very demanding setting. \r\n\'Off\' will disable Tessellation.");
             // 
             // HBAOLabel
             // 
@@ -569,6 +606,8 @@
             this.HBAOLabel.Size = new System.Drawing.Size(108, 19);
             this.HBAOLabel.TabIndex = 2;
             this.HBAOLabel.Text = "HBAO Intensity";
+            this.BasicToolTip.SetToolTip(this.HBAOLabel, "Adjusts ambient occlusion intensity. Higher values will increase ambient occlusio" +
+        "n darkness.");
             // 
             // AntiAliasingLabel
             // 
@@ -579,6 +618,8 @@
             this.AntiAliasingLabel.Size = new System.Drawing.Size(92, 19);
             this.AntiAliasingLabel.TabIndex = 1;
             this.AntiAliasingLabel.Text = "Anti-Aliasing";
+            this.BasicToolTip.SetToolTip(this.AntiAliasingLabel, "Cleans up edge aliasing. MSAA may induce stutter. Reshade SMAA suggested for shar" +
+        "p and stable AA (see \'About\' section).");
             // 
             // MaxShadowLabel
             // 
@@ -589,6 +630,8 @@
             this.MaxShadowLabel.Size = new System.Drawing.Size(110, 19);
             this.MaxShadowLabel.TabIndex = 5;
             this.MaxShadowLabel.Text = "Shadow Quality";
+            this.BasicToolTip.SetToolTip(this.MaxShadowLabel, "Increases the quality of shadow rendering by increasing the shadowmap resolution." +
+        "");
             // 
             // AnisotropyLabel
             // 
@@ -599,6 +642,7 @@
             this.AnisotropyLabel.Size = new System.Drawing.Size(139, 19);
             this.AnisotropyLabel.TabIndex = 0;
             this.AnisotropyLabel.Text = "Anisotropic Filtering";
+            this.BasicToolTip.SetToolTip(this.AnisotropyLabel, "Improve texture clarity across oblique surfaces.");
             // 
             // BasicDisplayGroupBox
             // 
@@ -635,6 +679,7 @@
             this.SkipIntroBox.Size = new System.Drawing.Size(206, 27);
             this.SkipIntroBox.TabIndex = 16;
             this.SkipIntroBox.Text = "Disable Startup Movies";
+            this.BasicToolTip.SetToolTip(this.SkipIntroBox, "Skips intro logos.");
             this.SkipIntroBox.UseVisualStyleBackColor = true;
             this.SkipIntroBox.CheckedChanged += new System.EventHandler(this.SkipIntroBox_CheckedChanged);
             // 
@@ -648,6 +693,8 @@
             this.Dx11Box.Size = new System.Drawing.Size(180, 27);
             this.Dx11Box.TabIndex = 15;
             this.Dx11Box.Text = "DirectX 11 Features";
+            this.BasicToolTip.SetToolTip(this.Dx11Box, "Enables HBAO, Multi-View Soft Shadows and Tessellation. \r\n\r\n- This option will ru" +
+        "n the game in DirectX 11. Disable for DirectX 9 API.");
             this.Dx11Box.UseVisualStyleBackColor = true;
             this.Dx11Box.CheckedChanged += new System.EventHandler(this.Dx11Box_CheckedChanged);
             // 
@@ -672,6 +719,7 @@
             this.LanguageBox.Name = "LanguageBox";
             this.LanguageBox.Size = new System.Drawing.Size(152, 27);
             this.LanguageBox.TabIndex = 14;
+            this.BasicToolTip.SetToolTip(this.LanguageBox, "Sets the voice and text language of the game.");
             // 
             // FrameCapTextBox
             // 
@@ -683,6 +731,9 @@
             this.FrameCapTextBox.Size = new System.Drawing.Size(31, 27);
             this.FrameCapTextBox.TabIndex = 11;
             this.FrameCapTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BasicToolTip.SetToolTip(this.FrameCapTextBox, "Limits amount of rendered frames per second. The value should be the refresh rate" +
+        " of the panel or higher.\r\n- Entering values lower than 25 will reset the setting" +
+        " to the default value (60).");
             this.FrameCapTextBox.ValidatingType = typeof(int);
             // 
             // ResolutionBox
@@ -694,6 +745,7 @@
             this.ResolutionBox.Name = "ResolutionBox";
             this.ResolutionBox.Size = new System.Drawing.Size(152, 27);
             this.ResolutionBox.TabIndex = 7;
+            this.BasicToolTip.SetToolTip(this.ResolutionBox, "Select rendering resolution. ");
             // 
             // VsyncBox
             // 
@@ -707,6 +759,7 @@
             this.VsyncBox.Name = "VsyncBox";
             this.VsyncBox.Size = new System.Drawing.Size(152, 27);
             this.VsyncBox.TabIndex = 9;
+            this.BasicToolTip.SetToolTip(this.VsyncBox, "Enable to eliminate screen tearing.");
             // 
             // FullscreenBox
             // 
@@ -720,6 +773,7 @@
             this.FullscreenBox.Name = "FullscreenBox";
             this.FullscreenBox.Size = new System.Drawing.Size(152, 27);
             this.FullscreenBox.TabIndex = 8;
+            this.BasicToolTip.SetToolTip(this.FullscreenBox, "Press \'scroll lock\' in-game to switch between fullscreen and windowed mode. ");
             // 
             // DetailModeBox
             // 
@@ -734,6 +788,8 @@
             this.DetailModeBox.Name = "DetailModeBox";
             this.DetailModeBox.Size = new System.Drawing.Size(152, 27);
             this.DetailModeBox.TabIndex = 10;
+            this.BasicToolTip.SetToolTip(this.DetailModeBox, "Replaces the Detail Level option from the original launcher and covers every valu" +
+        "e.\r\n- Highest setting is required for the HD Texture Pack. ");
             // 
             // DetailModeLabel
             // 
@@ -744,6 +800,8 @@
             this.DetailModeLabel.Size = new System.Drawing.Size(108, 19);
             this.DetailModeLabel.TabIndex = 4;
             this.DetailModeLabel.Text = "Texture Quality";
+            this.BasicToolTip.SetToolTip(this.DetailModeLabel, "Replaces the Detail Level option from the original launcher and covers every valu" +
+        "e.\r\n- Highest setting is required for the HD Texture Pack. ");
             // 
             // VsyncLabel
             // 
@@ -754,6 +812,7 @@
             this.VsyncLabel.Size = new System.Drawing.Size(91, 19);
             this.VsyncLabel.TabIndex = 3;
             this.VsyncLabel.Text = "Vertical Sync";
+            this.BasicToolTip.SetToolTip(this.VsyncLabel, "Enable to eliminate screen tearing.");
             // 
             // FrameCapLabel
             // 
@@ -764,6 +823,9 @@
             this.FrameCapLabel.Size = new System.Drawing.Size(111, 19);
             this.FrameCapLabel.TabIndex = 2;
             this.FrameCapLabel.Text = "Framerate Limit";
+            this.BasicToolTip.SetToolTip(this.FrameCapLabel, "Limits amount of rendered frames per second. The value should be the refresh rate" +
+        " of the panel or higher.\r\n- Entering values lower than 25 will reset the setting" +
+        " to the default value (60).");
             // 
             // ResolutionLabel
             // 
@@ -774,6 +836,7 @@
             this.ResolutionLabel.Size = new System.Drawing.Size(78, 19);
             this.ResolutionLabel.TabIndex = 1;
             this.ResolutionLabel.Text = "Resolution";
+            this.BasicToolTip.SetToolTip(this.ResolutionLabel, "Select rendering resolution. ");
             // 
             // LanguageLabel
             // 
@@ -784,6 +847,7 @@
             this.LanguageLabel.Size = new System.Drawing.Size(72, 19);
             this.LanguageLabel.TabIndex = 5;
             this.LanguageLabel.Text = "Language";
+            this.BasicToolTip.SetToolTip(this.LanguageLabel, "Sets the voice and text language of the game.");
             // 
             // FullscreenLabel
             // 
@@ -794,6 +858,7 @@
             this.FullscreenLabel.Size = new System.Drawing.Size(75, 19);
             this.FullscreenLabel.TabIndex = 0;
             this.FullscreenLabel.Text = "Fullscreen";
+            this.BasicToolTip.SetToolTip(this.FullscreenLabel, "Press \'scroll lock\' in-game to switch between fullscreen and windowed mode. ");
             // 
             // ControlTab
             // 
@@ -927,6 +992,7 @@
             this.ResetControlButton.Size = new System.Drawing.Size(220, 53);
             this.ResetControlButton.TabIndex = 3;
             this.ResetControlButton.Text = "Reset Controls";
+            this.BasicToolTip.SetToolTip(this.ResetControlButton, "Reverts keyboard mapping to vanilla setting. Will affect miscellaneous keys.");
             this.ResetControlButton.UseVisualStyleBackColor = true;
             this.ResetControlButton.Click += new System.EventHandler(this.ResetControlButton_Click);
             // 
@@ -1783,6 +1849,8 @@
             this.MouseSensitivityLabel.Size = new System.Drawing.Size(127, 19);
             this.MouseSensitivityLabel.TabIndex = 153;
             this.MouseSensitivityLabel.Text = "Mouse Sensitivity:";
+            this.BasicToolTip.SetToolTip(this.MouseSensitivityLabel, "Higher values will increase in-game mouse sensitivity. \'30\' is the vanilla value." +
+        "");
             // 
             // MouseSensitivityTrackbar
             // 
@@ -1792,6 +1860,8 @@
             this.MouseSensitivityTrackbar.Name = "MouseSensitivityTrackbar";
             this.MouseSensitivityTrackbar.Size = new System.Drawing.Size(375, 45);
             this.MouseSensitivityTrackbar.TabIndex = 150;
+            this.BasicToolTip.SetToolTip(this.MouseSensitivityTrackbar, "Higher values will increase in-game mouse sensitivity. \'30\' is the vanilla value." +
+        "");
             this.MouseSensitivityTrackbar.Value = 1;
             this.MouseSensitivityTrackbar.Scroll += new System.EventHandler(this.MouseSensitivityTrackbar_Scroll);
             // 
@@ -1836,6 +1906,7 @@
             this.CustomFoV2Button.Size = new System.Drawing.Size(83, 35);
             this.CustomFoV2Button.TabIndex = 160;
             this.CustomFoV2Button.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.CustomFoV2Button, "Choose custom field of view values using the slider.\r\n");
             this.CustomFoV2Button.UseVisualStyleBackColor = true;
             this.CustomFoV2Button.Click += new System.EventHandler(this.CustomFoV2Button_Click);
             // 
@@ -1848,6 +1919,7 @@
             this.label11.Size = new System.Drawing.Size(98, 19);
             this.label11.TabIndex = 159;
             this.label11.Text = "Custom FoV 2";
+            this.BasicToolTip.SetToolTip(this.label11, "Choose custom field of view values using the slider.\r\n");
             // 
             // CustomCommandButton
             // 
@@ -1857,6 +1929,8 @@
             this.CustomCommandButton.Size = new System.Drawing.Size(83, 35);
             this.CustomCommandButton.TabIndex = 158;
             this.CustomCommandButton.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.CustomCommandButton, "Execute pre-written commands by editing the \'custom_commands\' file.\r\n- The file i" +
+        "s located in \'Batman Arkham City GOTY/Binaries/Win32/Custom\'.");
             this.CustomCommandButton.UseVisualStyleBackColor = true;
             this.CustomCommandButton.Click += new System.EventHandler(this.CustomCommandButton_Click);
             // 
@@ -1869,6 +1943,8 @@
             this.CustomCommandLabel.Size = new System.Drawing.Size(127, 19);
             this.CustomCommandLabel.TabIndex = 157;
             this.CustomCommandLabel.Text = "Custom Command";
+            this.BasicToolTip.SetToolTip(this.CustomCommandLabel, "Execute pre-written commands by editing the \'custom_commands\' file.\r\n- The file i" +
+        "s located in \'Batman Arkham City GOTY/Binaries/Win32/Custom\'.");
             // 
             // CustomFoV1ValueLabel
             // 
@@ -1900,6 +1976,7 @@
             this.CustomFoV1Button.Size = new System.Drawing.Size(83, 35);
             this.CustomFoV1Button.TabIndex = 152;
             this.CustomFoV1Button.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.CustomFoV1Button, "Choose custom field of view values using the slider.\r\n");
             this.CustomFoV1Button.UseVisualStyleBackColor = true;
             this.CustomFoV1Button.Click += new System.EventHandler(this.CustomFoV1Button_Click);
             // 
@@ -1912,6 +1989,7 @@
             this.label6.Size = new System.Drawing.Size(98, 19);
             this.label6.TabIndex = 151;
             this.label6.Text = "Custom FoV 1";
+            this.BasicToolTip.SetToolTip(this.label6, "Choose custom field of view values using the slider.\r\n");
             // 
             // MouseSmoothingBox
             // 
@@ -1933,6 +2011,7 @@
             this.SpeedRunButton.Size = new System.Drawing.Size(83, 35);
             this.SpeedRunButton.TabIndex = 148;
             this.SpeedRunButton.Text = "SpeedRun";
+            this.BasicToolTip.SetToolTip(this.SpeedRunButton, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.");
             this.SpeedRunButton.UseVisualStyleBackColor = true;
             this.SpeedRunButton.Click += new System.EventHandler(this.SpeedRunButton_Click);
             // 
@@ -1945,6 +2024,7 @@
             this.SpeedRunLabel.Size = new System.Drawing.Size(69, 19);
             this.SpeedRunLabel.TabIndex = 147;
             this.SpeedRunLabel.Text = "Speedrun";
+            this.BasicToolTip.SetToolTip(this.SpeedRunLabel, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.");
             // 
             // CentreCameraButton
             // 
@@ -1954,6 +2034,9 @@
             this.CentreCameraButton.Size = new System.Drawing.Size(83, 35);
             this.CentreCameraButton.TabIndex = 146;
             this.CentreCameraButton.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.CentreCameraButton, "Camera will centre on player character. Requires running while pressing hotkey to" +
+        " trigger. \r\n- Advanced users can repurpose \'centre_camera\' file as a second Cust" +
+        "om Command function.");
             this.CentreCameraButton.UseVisualStyleBackColor = true;
             this.CentreCameraButton.Click += new System.EventHandler(this.CentreCameraButton_Click);
             // 
@@ -1966,6 +2049,9 @@
             this.CentreCameraLabel.Size = new System.Drawing.Size(106, 19);
             this.CentreCameraLabel.TabIndex = 145;
             this.CentreCameraLabel.Text = "Centre Camera";
+            this.BasicToolTip.SetToolTip(this.CentreCameraLabel, "Camera will centre on player character. Requires running while pressing hotkey to" +
+        " trigger. \r\n- Advanced users can repurpose \'centre_camera\' file as a second Cust" +
+        "om Command function.");
             // 
             // ResetFoVButton
             // 
@@ -1975,6 +2061,8 @@
             this.ResetFoVButton.Size = new System.Drawing.Size(83, 35);
             this.ResetFoVButton.TabIndex = 144;
             this.ResetFoVButton.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.ResetFoVButton, "Reverts field of view to original value. Needed for certain actions, including th" +
+        "e zoom function.");
             this.ResetFoVButton.UseVisualStyleBackColor = true;
             this.ResetFoVButton.Click += new System.EventHandler(this.ResetFoVButton_Click);
             // 
@@ -1987,6 +2075,8 @@
             this.ResetFoVLabel.Size = new System.Drawing.Size(74, 19);
             this.ResetFoVLabel.TabIndex = 143;
             this.ResetFoVLabel.Text = "Reset FoV";
+            this.BasicToolTip.SetToolTip(this.ResetFoVLabel, "Reverts field of view to original value. Needed for certain actions, including th" +
+        "e zoom function.");
             // 
             // ToggleHudButton
             // 
@@ -1996,6 +2086,8 @@
             this.ToggleHudButton.Size = new System.Drawing.Size(83, 35);
             this.ToggleHudButton.TabIndex = 142;
             this.ToggleHudButton.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.ToggleHudButton, "Toggles UI elements. Re-enable HUD during forensic sections of the game to progre" +
+        "ss.");
             this.ToggleHudButton.UseVisualStyleBackColor = true;
             this.ToggleHudButton.Click += new System.EventHandler(this.ToggleHudButton_Click);
             // 
@@ -2008,6 +2100,8 @@
             this.ToggleHudLabel.Size = new System.Drawing.Size(86, 19);
             this.ToggleHudLabel.TabIndex = 141;
             this.ToggleHudLabel.Text = "Toggle HUD";
+            this.BasicToolTip.SetToolTip(this.ToggleHudLabel, "Toggles UI elements. Re-enable HUD during forensic sections of the game to progre" +
+        "ss.");
             // 
             // OpenConsoleButton
             // 
@@ -2017,6 +2111,7 @@
             this.OpenConsoleButton.Size = new System.Drawing.Size(83, 35);
             this.OpenConsoleButton.TabIndex = 140;
             this.OpenConsoleButton.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.OpenConsoleButton, "Access console commands for cheats and debugging.");
             this.OpenConsoleButton.UseVisualStyleBackColor = true;
             this.OpenConsoleButton.Click += new System.EventHandler(this.OpenConsoleButton_Click);
             // 
@@ -2029,6 +2124,7 @@
             this.OpenConsoleLabel.Size = new System.Drawing.Size(100, 19);
             this.OpenConsoleLabel.TabIndex = 139;
             this.OpenConsoleLabel.Text = "Open Console";
+            this.BasicToolTip.SetToolTip(this.OpenConsoleLabel, "Access console commands for cheats and debugging.");
             // 
             // CustomFoV1Trackbar
             // 
@@ -2057,6 +2153,7 @@
             this.ResetDisplayButton.Size = new System.Drawing.Size(152, 36);
             this.ResetDisplayButton.TabIndex = 4;
             this.ResetDisplayButton.Text = "Reset Display";
+            this.BasicToolTip.SetToolTip(this.ResetDisplayButton, "Resets display settings to their defaults. ");
             this.ResetDisplayButton.UseVisualStyleBackColor = true;
             this.ResetDisplayButton.Click += new System.EventHandler(this.ResetDisplayButton_Click);
             // 
@@ -2067,6 +2164,7 @@
             this.ApplySettingsButton.Size = new System.Drawing.Size(178, 37);
             this.ApplySettingsButton.TabIndex = 1;
             this.ApplySettingsButton.Text = "Apply Settings\r\n";
+            this.BasicToolTip.SetToolTip(this.ApplySettingsButton, "Applies all settings.");
             this.ApplySettingsButton.UseVisualStyleBackColor = true;
             this.ApplySettingsButton.Click += new System.EventHandler(this.ApplySettingsButton_Click);
             // 
@@ -2077,6 +2175,8 @@
             this.ManualModeButton.Size = new System.Drawing.Size(178, 37);
             this.ManualModeButton.TabIndex = 2;
             this.ManualModeButton.Text = "Manual Mode";
+            this.BasicToolTip.SetToolTip(this.ManualModeButton, "This disables the read-only flag of the configuration files to allow for manual e" +
+        "diting.");
             this.ManualModeButton.UseVisualStyleBackColor = true;
             this.ManualModeButton.Click += new System.EventHandler(this.ManualModeButton_Click);
             // 
