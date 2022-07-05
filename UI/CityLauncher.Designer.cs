@@ -183,6 +183,7 @@
             this.OpenConsoleLabel = new System.Windows.Forms.Label();
             this.CustomFoV1Trackbar = new System.Windows.Forms.TrackBar();
             this.AboutTab = new System.Windows.Forms.TabPage();
+            this.TempLabel = new System.Windows.Forms.LinkLabel();
             this.ResetDisplayButton = new System.Windows.Forms.Button();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
             this.ManualModeButton = new System.Windows.Forms.Button();
@@ -197,6 +198,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).BeginInit();
+            this.AboutTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -2140,12 +2142,26 @@
             // 
             // AboutTab
             // 
+            this.AboutTab.Controls.Add(this.TempLabel);
             this.AboutTab.Location = new System.Drawing.Point(4, 38);
             this.AboutTab.Name = "AboutTab";
             this.AboutTab.Size = new System.Drawing.Size(684, 491);
             this.AboutTab.TabIndex = 2;
             this.AboutTab.Text = "About";
             this.AboutTab.UseVisualStyleBackColor = true;
+            // 
+            // TempLabel
+            // 
+            this.TempLabel.AutoSize = true;
+            this.TempLabel.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TempLabel.Location = new System.Drawing.Point(32, 167);
+            this.TempLabel.Name = "TempLabel";
+            this.TempLabel.Size = new System.Drawing.Size(616, 118);
+            this.TempLabel.TabIndex = 0;
+            this.TempLabel.TabStop = true;
+            this.TempLabel.Text = "Written by GPUnity and Neato\r\nDeveloped by Neato";
+            this.TempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TempLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.TempLabel_LinkClicked);
             // 
             // ResetDisplayButton
             // 
@@ -2229,6 +2245,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).EndInit();
+            this.AboutTab.ResumeLayout(false);
+            this.AboutTab.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2393,5 +2411,6 @@
         private Label MapLabel;
         private ToolTip BasicToolTip;
         private Button StartGameButton;
+        private LinkLabel TempLabel;
     }
 }

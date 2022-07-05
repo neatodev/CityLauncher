@@ -335,5 +335,10 @@ namespace CityLauncher
 
             }
         }
+
+        private void TempLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo { FileName = @"https://github.com/neatodev/CityLauncher", UseShellExecute = true });
+        }
     }
 }

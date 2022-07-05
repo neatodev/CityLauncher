@@ -8,10 +8,10 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <PlatformTarget>x64</PlatformTarget>
-    <SignAssembly>False</SignAssembly>
+	  <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+	  <SignAssembly>False</SignAssembly>
 	  <PublishReadyToRun>true</PublishReadyToRun>
 	  <StartupObject>CityLauncher.Program</StartupObject>
-	  <ApplicationIcon>Resources\Placeholder_Icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -53,5 +53,15 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+
+	<PropertyGroup>
+		<Authors>Mario Schweidler (neatodev)</Authors>
+		<FileVersion>0.1</FileVersion>
+		<AssemblyVersion>0.1</AssemblyVersion>
+		<Copyright>Mario Schweidler (neatodev)</Copyright>
+		<WebPage>https://github.com/neatodev/CityLauncher</WebPage>
+		<AssemblyTitle>Batman: Arkham City - Advanced Launcher</AssemblyTitle>
+		<ApplicationIcon>Resources\Placeholder_Icon.ico</ApplicationIcon>
+	</PropertyGroup>
 
 </Project>
