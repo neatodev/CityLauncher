@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CityLauncher));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DisplayTab = new System.Windows.Forms.TabPage();
             this.AdvancedDisplayGroupBox = new System.Windows.Forms.GroupBox();
-            this.ResetDisplayButton = new System.Windows.Forms.Button();
             this.LensFlareBox = new System.Windows.Forms.CheckBox();
             this.LightRayBox = new System.Windows.Forms.CheckBox();
             this.BloomBox = new System.Windows.Forms.CheckBox();
@@ -182,6 +182,7 @@
             this.OpenConsoleLabel = new System.Windows.Forms.Label();
             this.CustomFoV1Trackbar = new System.Windows.Forms.TrackBar();
             this.AboutTab = new System.Windows.Forms.TabPage();
+            this.ResetDisplayButton = new System.Windows.Forms.Button();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
             this.ManualModeButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
@@ -259,16 +260,6 @@
             this.AdvancedDisplayGroupBox.TabIndex = 15;
             this.AdvancedDisplayGroupBox.TabStop = false;
             this.AdvancedDisplayGroupBox.Text = "Advanced";
-            // 
-            // ResetDisplayButton
-            // 
-            this.ResetDisplayButton.Location = new System.Drawing.Point(504, 594);
-            this.ResetDisplayButton.Name = "ResetDisplayButton";
-            this.ResetDisplayButton.Size = new System.Drawing.Size(152, 36);
-            this.ResetDisplayButton.TabIndex = 4;
-            this.ResetDisplayButton.Text = "Reset Display";
-            this.ResetDisplayButton.UseVisualStyleBackColor = true;
-            this.ResetDisplayButton.Click += new System.EventHandler(this.ResetDisplayButton_Click);
             // 
             // LensFlareBox
             // 
@@ -2057,6 +2048,16 @@
             this.AboutTab.Text = "About";
             this.AboutTab.UseVisualStyleBackColor = true;
             // 
+            // ResetDisplayButton
+            // 
+            this.ResetDisplayButton.Location = new System.Drawing.Point(504, 594);
+            this.ResetDisplayButton.Name = "ResetDisplayButton";
+            this.ResetDisplayButton.Size = new System.Drawing.Size(152, 36);
+            this.ResetDisplayButton.TabIndex = 4;
+            this.ResetDisplayButton.Text = "Reset Display";
+            this.ResetDisplayButton.UseVisualStyleBackColor = true;
+            this.ResetDisplayButton.Click += new System.EventHandler(this.ResetDisplayButton_Click);
+            // 
             // ApplySettingsButton
             // 
             this.ApplySettingsButton.Location = new System.Drawing.Point(331, 688);
@@ -2088,6 +2089,7 @@
             this.Controls.Add(this.ApplySettingsButton);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CityLauncher";
