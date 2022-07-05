@@ -107,6 +107,7 @@ namespace CityLauncher
             UserInputLines[94] = ConvertToConfigStyle(Program.MainWindow.SpeedRunButton.Text, 94);
             // Open Console
             UserInputLines[97] = ConvertToConfigStyle(Program.MainWindow.OpenConsoleButton.Text, 97);
+            UserInputLines[97] = SetTypeKey(UserInputLines[97]);
             // Toggle HUD
             UserInputLines[98] = ConvertToConfigStyle(Program.MainWindow.ToggleHudButton.Text, 98);
             // Reset FoV
@@ -247,6 +248,21 @@ namespace CityLauncher
             }
 
             return Input;
+        }
+
+        private string SetTypeKey(string ConsoleLine)
+        {
+            var TrimmedLine = ConsoleLine.Substring(ConsoleLine.IndexOf(","));
+            TrimmedLine = TrimmedLine.Substring(TrimmedLine.IndexOf("\"") + 1);
+            TrimmedLine = TrimmedLine.Substring(0, TrimmedLine.IndexOf("\""));
+            var TypeKeyValue = ConsoleLine.Substring(17);
+            TypeKeyValue = TypeKeyValue.Substring(0, TypeKeyValue.IndexOf("\""));
+            var NewTypeKey = "set console TypeKey" + TrimmedLine.Substring(19, 1) + TypeKeyValue;
+
+            TimeSpan Time = new(0, 0, 0, 0, 3);
+
+            ConsoleLine = Regex.Replace(ConsoleLine, TrimmedLine, NewTypeKey, RegexOptions.Compiled, Time);
+            return ConsoleLine;
         }
 
         private string UpdateFoVValue(string ConfigLine, int FoVValue)
