@@ -11,12 +11,22 @@ namespace CityLauncher
 
         public IniHandler()
         {
+            //var IniConfigurator = new FileIniDataParser();
+            //IniConfigurator.Parser.Configuration.AllowDuplicateKeys = true;
+            //IniConfigurator.Parser.Configuration.AssigmentSpacer = "";
+            BmEngineData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
+            //BmEngineData = IniConfigurator.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
+            //BmInputData = IniConfigurator.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini"));
+            BmInputData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini"));
+            RemoveSections();
+        }
+
+        private IniData SetIniData(string Path)
+        {
             var IniConfigurator = new FileIniDataParser();
             IniConfigurator.Parser.Configuration.AllowDuplicateKeys = true;
             IniConfigurator.Parser.Configuration.AssigmentSpacer = "";
-            BmEngineData = IniConfigurator.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
-            BmInputData = IniConfigurator.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini"));
-            RemoveSections();
+            return IniConfigurator.ReadFile(Path);
         }
 
         private static void RemoveSections()
@@ -99,6 +109,7 @@ namespace CityLauncher
             Program.FileHandler.BmEngine.IsReadOnly = false;
             File.Delete(Program.FileHandler.BmEnginePath);
             Program.FileHandler.CreateConfigFile(Program.FileHandler.BmEnginePath, Resources.BmEngine);
+            BmEngineData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
             new IniReader().InitDisplay();
         }
     }
