@@ -11,11 +11,16 @@
     <SignAssembly>False</SignAssembly>
 	  <PublishReadyToRun>true</PublishReadyToRun>
 	  <StartupObject>CityLauncher.Program</StartupObject>
+	  <ApplicationIcon>Resources\Placeholder_Icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <Optimize>True</Optimize>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Placeholder_Icon.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ini-parser-netstandard" Version="2.5.2" />
