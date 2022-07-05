@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace CityLauncher
 {
     public partial class CityLauncher : Form
@@ -313,6 +315,25 @@ namespace CityLauncher
         private void MapButton_Click(object sender, EventArgs e)
         {
             new InputForm(MapButton).ShowDialog();
+        }
+
+        private void StartGameButton_Click(object sender, EventArgs e)
+        {
+            using (Process LaunchGame = new Process())
+            {
+                if (FileHandler.DetectGameExe())
+                {
+                    LaunchGame.StartInfo.FileName = "BatmanAC.exe";
+                    LaunchGame.StartInfo.CreateNoWindow = true;
+                    LaunchGame.Start();
+                    Application.Exit();
+                }
+                else
+                {
+                    MessageBox.Show("Could not find 'BatmanAC.exe'. Is the Launcher in the correct folder?", "Error!", MessageBoxButtons.OK);
+                }
+
+            }
         }
     }
 }

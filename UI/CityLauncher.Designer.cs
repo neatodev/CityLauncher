@@ -187,6 +187,7 @@
             this.ApplySettingsButton = new System.Windows.Forms.Button();
             this.ManualModeButton = new System.Windows.Forms.Button();
             this.BasicToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.StartGameButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -2148,7 +2149,7 @@
             // 
             // ResetDisplayButton
             // 
-            this.ResetDisplayButton.Location = new System.Drawing.Point(504, 594);
+            this.ResetDisplayButton.Location = new System.Drawing.Point(437, 551);
             this.ResetDisplayButton.Name = "ResetDisplayButton";
             this.ResetDisplayButton.Size = new System.Drawing.Size(152, 36);
             this.ResetDisplayButton.TabIndex = 4;
@@ -2159,7 +2160,7 @@
             // 
             // ApplySettingsButton
             // 
-            this.ApplySettingsButton.Location = new System.Drawing.Point(331, 688);
+            this.ApplySettingsButton.Location = new System.Drawing.Point(253, 551);
             this.ApplySettingsButton.Name = "ApplySettingsButton";
             this.ApplySettingsButton.Size = new System.Drawing.Size(178, 37);
             this.ApplySettingsButton.TabIndex = 1;
@@ -2170,7 +2171,7 @@
             // 
             // ManualModeButton
             // 
-            this.ManualModeButton.Location = new System.Drawing.Point(137, 688);
+            this.ManualModeButton.Location = new System.Drawing.Point(69, 551);
             this.ManualModeButton.Name = "ManualModeButton";
             this.ManualModeButton.Size = new System.Drawing.Size(178, 37);
             this.ManualModeButton.TabIndex = 2;
@@ -2186,12 +2187,23 @@
             this.BasicToolTip.InitialDelay = 50;
             this.BasicToolTip.ReshowDelay = 20;
             // 
+            // StartGameButton
+            // 
+            this.StartGameButton.Location = new System.Drawing.Point(274, 619);
+            this.StartGameButton.Name = "StartGameButton";
+            this.StartGameButton.Size = new System.Drawing.Size(140, 48);
+            this.StartGameButton.TabIndex = 5;
+            this.StartGameButton.Text = "Start Game";
+            this.StartGameButton.UseVisualStyleBackColor = true;
+            this.StartGameButton.Click += new System.EventHandler(this.StartGameButton_Click);
+            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(716, 752);
+            this.Controls.Add(this.StartGameButton);
             this.Controls.Add(this.ResetDisplayButton);
             this.Controls.Add(this.ManualModeButton);
             this.Controls.Add(this.ApplySettingsButton);
@@ -2380,5 +2392,6 @@
         public Button MapButton;
         private Label MapLabel;
         private ToolTip BasicToolTip;
+        private Button StartGameButton;
     }
 }

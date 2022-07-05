@@ -123,7 +123,7 @@ namespace CityLauncher
             FileWriter.Close();
         }
 
-        private static bool DetectGameExe()
+        public static bool DetectGameExe()
         {
             var GameExe = Path.Combine(Directory.GetCurrentDirectory(), "BatmanAC.exe");
             if (File.Exists(GameExe))
