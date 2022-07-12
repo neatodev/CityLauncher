@@ -21,7 +21,7 @@ namespace CityLauncher
         public static InputHandler InputHandler;
 
         /// <summary>
-        ///     Replacement Application for the original Batman: Arkham Asylum BmLauncher
+        ///     Replacement Application for the original Batman: Arkham City BmLauncher
         ///     Offers more configuration options, enables compatibility with High-Res Texture Packs
         ///     and automatically takes care of the ReadOnly properties of each file, removing
         ///     any requirement to manually edit .ini files. Guarantees a much more comfortable user experience.
