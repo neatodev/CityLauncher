@@ -265,6 +265,26 @@ namespace CityLauncher.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] GlobalShaderCache_PC_D3D_SM3 {
+            get {
+                object obj = ResourceManager.GetObject("GlobalShaderCache-PC-D3D-SM3", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] GlobalShaderCache_PC_D3D_SM5 {
+            get {
+                object obj = ResourceManager.GetObject("GlobalShaderCache-PC-D3D-SM5", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon Placeholder_Icon {

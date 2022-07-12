@@ -27,6 +27,35 @@ namespace CityLauncher
             CheckConfigFilesExist();
             CheckCustomFilesExist();
             CheckIntroVideoFilesRenamed();
+            CheckLightingFix();
+        }
+
+        private void CheckLightingFix()
+        {
+            if (DetectGameExe())
+            {
+                try
+                {
+                    FileInfo SM5File = new(Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\CookedPCConsole\\GlobalShaderCache-PC-D3D-SM5.bin"));
+                    if (SM5File.Length != Resources.GlobalShaderCache_PC_D3D_SM5.Length)
+                    {
+                        ReplaceLightingFile();
+                    }
+
+                }
+                catch (FileNotFoundException)
+                {
+                    return;
+                }
+            }
+        }
+
+        private static void ReplaceLightingFile()
+        {
+            File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\CookedPCConsole\\GlobalShaderCache-PC-D3D-SM3.bin"));
+            File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\CookedPCConsole\\GlobalShaderCache-PC-D3D-SM5.bin"));
+            File.WriteAllBytes(Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\CookedPCConsole\\GlobalShaderCache-PC-D3D-SM3.bin"), Resources.GlobalShaderCache_PC_D3D_SM3);
+            File.WriteAllBytes(Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\CookedPCConsole\\GlobalShaderCache-PC-D3D-SM5.bin"), Resources.GlobalShaderCache_PC_D3D_SM5);
         }
 
         private void CheckCustomFilesExist()
