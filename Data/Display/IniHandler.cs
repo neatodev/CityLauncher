@@ -110,6 +110,7 @@ namespace CityLauncher
             File.Delete(Program.FileHandler.BmEnginePath);
             Program.FileHandler.CreateConfigFile(Program.FileHandler.BmEnginePath, Resources.BmEngine);
             BmEngineData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
+            RemoveSections();
             new IniReader().InitDisplay();
         }
     }
