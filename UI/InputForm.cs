@@ -95,7 +95,7 @@
                     this.Close();
                     break;
                 case Keys.Enter:
-                    if (KeybindValueLabel.Text.Length > 0)
+                    if (KeyString.Length > 0)
                     {
                         Program.InputHandler.SetButton(Input, KeybindValueLabel.Text);
                         this.Close();
@@ -105,7 +105,6 @@
                     Program.InputHandler.SetButton(Input, "Unbound");
                     this.Close();
                     break;
-
             }
         }
 
