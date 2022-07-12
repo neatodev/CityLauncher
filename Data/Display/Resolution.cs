@@ -6,16 +6,11 @@ namespace CityLauncher
     internal class Resolution
     {
 
-        private static Logger Nlog = LogManager.GetCurrentClassLogger();
+        private static readonly Logger Nlog = LogManager.GetCurrentClassLogger();
 
 
         // string list to store resolution values
         public static List<string>? ResolutionList = new List<string>();
-
-        public Resolution()
-        {
-            Nlog = LogManager.GetCurrentClassLogger();
-        }
 
         [DllImport("user32.dll")]
         public static extern bool EnumDisplaySettings(

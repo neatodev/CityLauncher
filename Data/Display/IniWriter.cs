@@ -20,6 +20,7 @@ namespace CityLauncher
             BmEnginePath = Program.FileHandler.BmEnginePath;
             UserEnginePath = Program.FileHandler.UserEnginePath;
             DataParser = new FileIniDataParser();
+            Nlog.Info("Constructor - Sucessfully initialized IniWriter.");
         }
 
         public void WriteAll()
@@ -36,6 +37,7 @@ namespace CityLauncher
             Program.FileHandler.BmEngine.IsReadOnly = true;
             Program.FileHandler.UserEngine.IsReadOnly = true;
             Program.FileHandler.BmInput.IsReadOnly = true;
+            Nlog.Info("WriteAll - Sucessfully wrote settings to 'BmEngine.ini' and 'UserEngine.ini'.");
         }
 
         private void WriteToTempFile()
@@ -114,6 +116,7 @@ namespace CityLauncher
             var ResY = Program.MainWindow.ResolutionBox.SelectedItem.ToString().Substring(Program.MainWindow.ResolutionBox.SelectedItem.ToString().LastIndexOf("x") + 1);
             IniHandler.BmEngineData["SystemSettings"]["ResX"] = ResX;
             IniHandler.BmEngineData["SystemSettings"]["ResY"] = ResY;
+            Nlog.Info("WriteBmEngineBasic - Set Resolution to {0}x{1}", ResX, ResY);
 
             // Fullscreen
             if (Program.MainWindow.FullscreenBox.SelectedIndex == 0)
@@ -124,6 +127,7 @@ namespace CityLauncher
             {
                 IniHandler.BmEngineData["SystemSettings"]["Fullscreen"] = "False";
             }
+            Nlog.Info("WriteBmEngineBasic - Set Fullscreen to {0}", IniHandler.BmEngineData["SystemSettings"]["Fullscreen"]);
 
             // VSync
             if (Program.MainWindow.VsyncBox.SelectedIndex == 0)
@@ -134,6 +138,7 @@ namespace CityLauncher
             {
                 IniHandler.BmEngineData["SystemSettings"]["UseVsync"] = "False";
             }
+            Nlog.Info("WriteBmEngineBasic - Set VSync to {0}", IniHandler.BmEngineData["SystemSettings"]["UseVsync"]);
 
             // Detail Mode
             switch (Program.MainWindow.DetailModeBox.SelectedIndex)
@@ -148,6 +153,7 @@ namespace CityLauncher
                     IniHandler.BmEngineData["SystemSettings"]["DetailMode"] = "0";
                     break;
             }
+            Nlog.Info("WriteBmEngineBasic - Set Detail Mode to {0}", IniHandler.BmEngineData["SystemSettings"]["DetailMode"]);
 
             // Framerate Cap
             short Framecap = short.Parse(Program.MainWindow.FrameCapTextBox.Text.Trim());
@@ -161,6 +167,7 @@ namespace CityLauncher
                 Framecap += 2;
                 IniHandler.BmEngineData["Engine.Engine"]["MaxSmoothedFrameRate"] = Framecap.ToString();
             }
+            Nlog.Info("WriteBmEngineBasic - Set Framerate Limit to {0}", (Framecap - 2).ToString());
 
             // Language
             switch (Program.MainWindow.LanguageBox.SelectedIndex)
@@ -210,6 +217,7 @@ namespace CityLauncher
                     UserEngineLangValue = "Language=Int";
                     break;
             }
+            Nlog.Info("WriteBmEngineBasic - Set Language to {0}", UserEngineLangValue);
 
             // DX11 Features
             if (Program.MainWindow.Dx11Box.Checked)
@@ -220,6 +228,8 @@ namespace CityLauncher
             {
                 IniHandler.BmEngineData["SystemSettings"]["AllowD3D11"] = "False";
             }
+            Nlog.Info("WriteBmEngineBasic - Set DX11 Features to {0}", IniHandler.BmEngineData["SystemSettings"]["AllowD3D11"]);
+
 
         }
 
@@ -257,6 +267,7 @@ namespace CityLauncher
                     IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"] = "1xMSAA";
                     break;
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set FXAA to {0} and MSAA to {1}", IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"], IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"]);
 
             // Anisotropic Filtering
             switch (Program.MainWindow.AnisoBox.SelectedIndex)
@@ -271,6 +282,7 @@ namespace CityLauncher
                     IniHandler.BmEngineData["SystemSettings"]["MaxAnisotropy"] = "4";
                     break;
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Anisotropic Filtering to {0}", IniHandler.BmEngineData["SystemSettings"]["MaxAnisotropy"]);
 
             // Ambient Occlusion
             if (Program.MainWindow.AmbientOcclusionBox.Checked)
@@ -281,6 +293,7 @@ namespace CityLauncher
             {
                 IniHandler.BmEngineData["SystemSettings"]["AmbientOcclusion"] = "False";
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Ambient Occlusion to {0}", IniHandler.BmEngineData["SystemSettings"]["AmbientOcclusion"]);
 
             // Tessellation Quality
             switch (Program.MainWindow.TessellationBox.SelectedIndex)
@@ -304,8 +317,9 @@ namespace CityLauncher
                     IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "0.000000";
                     break;
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Tessellation Quality to {0}", IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"]);
 
-            // Ambient Occlusion
+            // HBAO Intensity
             switch (Program.MainWindow.HbaoBox.SelectedIndex)
             {
                 case 1:
@@ -318,6 +332,7 @@ namespace CityLauncher
                     IniHandler.BmEngineData["SystemSettings"]["HBAOGamma"] = "1.750000";
                     break;
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set HBAO Intensity to {0}", IniHandler.BmEngineData["SystemSettings"]["HBAOGamma"]);
 
             // Shadow Quality
             switch (Program.MainWindow.ShadowQualityBox.SelectedIndex)
@@ -339,6 +354,7 @@ namespace CityLauncher
                     IniHandler.BmEngineData["SystemSettings"]["ShadowDepthBias"] = "0.012000";
                     break;
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Shadow Quality to {0} and Shadow Depth Bias to {1}", IniHandler.BmEngineData["SystemSettings"]["MaxShadowResolution"], IniHandler.BmEngineData["SystemSettings"]["ShadowDepthBias"]);
 
             // Depth of Field
             if (Program.MainWindow.DOFBox.Checked)
@@ -349,6 +365,7 @@ namespace CityLauncher
             {
                 IniHandler.BmEngineData["SystemSettings"]["DepthOfField"] = "False";
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Depth of Field to {0}", IniHandler.BmEngineData["SystemSettings"]["DepthOfField"]);
 
             // Motion Blur
             if (Program.MainWindow.MotionBlurBox.Checked)
@@ -359,6 +376,7 @@ namespace CityLauncher
             {
                 IniHandler.BmEngineData["SystemSettings"]["MotionBlur"] = "False";
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Motion Blur to {0}", IniHandler.BmEngineData["SystemSettings"]["MotionBlur"]);
 
             // Dynamic Lighting
             if (Program.MainWindow.DynLightBox.Checked)
@@ -369,6 +387,7 @@ namespace CityLauncher
             {
                 IniHandler.BmEngineData["SystemSettings"]["CompositeDynamicLights"] = "False";
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Dynamic Lighting to {0}", IniHandler.BmEngineData["SystemSettings"]["CompositeDynamicLights"]);
 
             // Dynamic Shadows
             if (Program.MainWindow.DynShadowBox.Checked)
@@ -379,6 +398,7 @@ namespace CityLauncher
             {
                 IniHandler.BmEngineData["SystemSettings"]["DynamicShadows"] = "False";
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Dynamic Shadows to {0}", IniHandler.BmEngineData["SystemSettings"]["DynamicShadows"]);
 
             // Distortion
             if (Program.MainWindow.DistortionBox.Checked)
@@ -389,6 +409,7 @@ namespace CityLauncher
             {
                 IniHandler.BmEngineData["SystemSettings"]["Distortion"] = "False";
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Distortion to {0}", IniHandler.BmEngineData["SystemSettings"]["Distortion"]);
 
             // Lens Flares
             if (Program.MainWindow.LensFlareBox.Checked)
@@ -399,6 +420,7 @@ namespace CityLauncher
             {
                 IniHandler.BmEngineData["SystemSettings"]["LensFlares"] = "False";
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Lens Flares to {0}", IniHandler.BmEngineData["SystemSettings"]["LensFlares"]);
 
             // Bloom
             if (Program.MainWindow.BloomBox.Checked)
@@ -409,6 +431,7 @@ namespace CityLauncher
             {
                 IniHandler.BmEngineData["SystemSettings"]["Bloom"] = "False";
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Bloom to {0}", IniHandler.BmEngineData["SystemSettings"]["Bloom"]);
 
             // Light Rays
             if (Program.MainWindow.LightRayBox.Checked)
@@ -419,6 +442,7 @@ namespace CityLauncher
             {
                 IniHandler.BmEngineData["SystemSettings"]["bAllowLightShafts"] = "False";
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Light Rays to {0}", IniHandler.BmEngineData["SystemSettings"]["bAllowLightShafts"]);
 
             // MVSS Coverage
             switch (Program.MainWindow.MVSSBox.SelectedIndex)
@@ -436,6 +460,7 @@ namespace CityLauncher
                     IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"] = "1.000000";
                     break;
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set MVSS Coverage to {0}", IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"]);
 
             // Shadow Draw Distance
             switch (Program.MainWindow.ShadowDrawDistBox.SelectedIndex)
@@ -453,6 +478,7 @@ namespace CityLauncher
                     IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"] = "1.000000";
                     break;
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Shadow Draw Distance to {0}", IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"]);
 
             // PhysX
             switch (Program.MainWindow.PhysXBox.SelectedIndex)
@@ -467,6 +493,7 @@ namespace CityLauncher
                     IniHandler.BmEngineData["Engine.Engine"]["PhysXLevel"] = "0";
                     break;
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set PhysX to {0}", IniHandler.BmEngineData["Engine.Engine"]["PhysXLevel"]);
 
             // Poolsize
             switch (Program.MainWindow.PoolsizeBox.SelectedIndex)
@@ -490,6 +517,7 @@ namespace CityLauncher
                     IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "512";
                     break;
             }
+            Nlog.Info("WriteBmEngineAdvanced - Set Poolsize to {0}", IniHandler.BmEngineData["TextureStreaming"]["PoolSize"]);
         }
     }
 }

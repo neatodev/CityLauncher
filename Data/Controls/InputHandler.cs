@@ -1,4 +1,5 @@
 ﻿using CityLauncher.Properties;
+using NLog;
 
 namespace CityLauncher
 {
@@ -17,11 +18,14 @@ namespace CityLauncher
 
         public List<Button> ButtonList = new();
 
+        private static Logger Nlog = LogManager.GetCurrentClassLogger();
+
         public InputHandler()
         {
             UserInputFile = Program.FileHandler.UserInputPath;
             LinesConfigStyle = FillConfigStyle();
             LinesHumanReadable = FillHumanReadable();
+            Nlog.Info("Constructor - Sucessfully initialized InputHandler.");
         }
 
         private string[] FillConfigStyle()

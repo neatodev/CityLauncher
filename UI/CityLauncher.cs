@@ -1,10 +1,15 @@
+using NLog;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace CityLauncher
 {
     public partial class CityLauncher : Form
     {
         public bool SettingChanged = false;
+
+        private static readonly Logger Nlog = LogManager.GetCurrentClassLogger();
+
         public CityLauncher()
         {
             InitializeComponent();
@@ -326,6 +331,7 @@ namespace CityLauncher
                     LaunchGame.StartInfo.FileName = "BatmanAC.exe";
                     LaunchGame.StartInfo.CreateNoWindow = true;
                     LaunchGame.Start();
+                    Nlog.Info("StartGameButton_Click - Launching the game. Concluding logs at {0} on {1}.", DateTime.Now.ToString("HH:mm:ss"), DateTime.Now.ToString("D", new CultureInfo("en-GB")));
                     Application.Exit();
                 }
                 else

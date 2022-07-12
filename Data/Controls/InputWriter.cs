@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using NLog;
+using System.Text.RegularExpressions;
 
 namespace CityLauncher
 {
@@ -7,17 +8,21 @@ namespace CityLauncher
         private string[] UserInputLines;
         private string[] BmInputLines = { "", "" };
 
+        private static Logger Nlog = LogManager.GetCurrentClassLogger();
+
         public InputWriter()
         {
             UserInputLines = File.ReadAllLines(Program.FileHandler.UserInputPath);
             BmInputLines[0] = IniHandler.BmInputData["Engine.PlayerInput"]["MouseSensitivity"];
             BmInputLines[1] = IniHandler.BmInputData["Engine.PlayerInput"]["bEnableMouseSmoothing"];
+            Nlog.Info("Constructor - Sucessfully initialized InputWriter.");
         }
 
         public void WriteAll()
         {
             WriteControls();
             WriteBmInput();
+            Nlog.Info("WriteAll - Sucessfully wrote settings to 'BmInput.ini' and 'UserInput.ini'.");
         }
 
         public void WriteControls()
@@ -195,6 +200,7 @@ namespace CityLauncher
 
         private string ConvertToConfigStyle(string Text, int i)
         {
+            Nlog.Info("ConvertToConfigStyle - Binding {0} to UserInput on line {1}.", Text, (i + 1).ToString());
             Text = Text.Replace(" ", "");
             string ConfigLine = UserInputLines[i];
             string ConfigLineTrimmed = ConfigLine.Substring(17);

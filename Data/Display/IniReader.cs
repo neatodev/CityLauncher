@@ -1,12 +1,17 @@
-﻿namespace CityLauncher
+﻿using NLog;
+
+namespace CityLauncher
 {
     internal class IniReader
     {
+
+        private static Logger Nlog = LogManager.GetCurrentClassLogger();
 
         public void InitDisplay()
         {
             InitDisplayBasic();
             InitDisplayAdvanced();
+            Nlog.Info("InitDisplay - Sucessfully initialized display settings.");
         }
 
         private void InitDisplayBasic()

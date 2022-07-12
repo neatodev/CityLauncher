@@ -1,6 +1,7 @@
 ﻿using CityLauncher.Properties;
 using IniParser;
 using IniParser.Model;
+using NLog;
 
 namespace CityLauncher
 {
@@ -9,16 +10,14 @@ namespace CityLauncher
         public static IniData? BmEngineData { get; set; }
         public static IniData? BmInputData { get; set; }
 
+        private static Logger Nlog = LogManager.GetCurrentClassLogger();
+
         public IniHandler()
         {
-            //var IniConfigurator = new FileIniDataParser();
-            //IniConfigurator.Parser.Configuration.AllowDuplicateKeys = true;
-            //IniConfigurator.Parser.Configuration.AssigmentSpacer = "";
             BmEngineData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
-            //BmEngineData = IniConfigurator.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
-            //BmInputData = IniConfigurator.ReadFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini"));
             BmInputData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini"));
             RemoveSections();
+            Nlog.Info("Constructor - Sucessfully initialized IniHandler.");
         }
 
         private IniData SetIniData(string Path)

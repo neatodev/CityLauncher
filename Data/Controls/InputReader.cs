@@ -1,16 +1,20 @@
-﻿namespace CityLauncher
+﻿using NLog;
+
+namespace CityLauncher
 {
     internal class InputReader
     {
         private readonly string[] UserInputLines;
         private readonly string[] BmInputLines = { "", "" };
 
+        private static Logger Nlog = LogManager.GetCurrentClassLogger();
+
         public InputReader()
         {
             UserInputLines = File.ReadAllLines(Program.FileHandler.UserInputPath);
             BmInputLines[0] = IniHandler.BmInputData["Engine.PlayerInput"]["MouseSensitivity"];
             BmInputLines[1] = IniHandler.BmInputData["Engine.PlayerInput"]["bEnableMouseSmoothing"];
-
+            Nlog.Info("Constructor - Sucessfully initialized InputReader.");
         }
 
         public void InitControls()

@@ -1,6 +1,7 @@
 using NLog;
 using NLog.Config;
 using NLog.Targets;
+using System.Globalization;
 
 namespace CityLauncher
 {
@@ -9,7 +10,7 @@ namespace CityLauncher
 
         private static readonly Logger Nlog = LogManager.GetCurrentClassLogger();
 
-        private static readonly string CurrentTime = DateTime.Now.ToString("dd-MM-yy__hh-mm-ss");
+        public static readonly string CurrentTime = DateTime.Now.ToString("dd-MM-yy__hh-mm-ss");
 
         public static CityLauncher MainWindow;
 
@@ -36,6 +37,7 @@ namespace CityLauncher
 
         private static void InitializeProgram()
         {
+            Nlog.Info("InitializeProgram - Starting logs at {0} on {1}.", DateTime.Now.ToString("HH:mm:ss"), DateTime.Now.ToString("D", new CultureInfo("en-GB")));
             ApplicationConfiguration.Initialize();
             MainWindow = new CityLauncher();
             FileHandler = new FileHandler();
@@ -49,13 +51,13 @@ namespace CityLauncher
         private static void SetupLogger()
         {
             LoggingConfiguration config = new();
-            ConsoleTarget Logconsole = new("logconsole");
+            ConsoleTarget logconsole = new("logconsole");
             if (!Directory.Exists("logs"))
             {
                 Directory.CreateDirectory("logs");
             }
 
-            FileTarget Logfile = new FileTarget("logfile")
+            FileTarget logfile = new FileTarget("logfile")
             {
                 FileName = Directory.GetCurrentDirectory() + "\\logs\\citylauncher_report__" + CurrentTime + ".log"
             };
@@ -69,8 +71,8 @@ namespace CityLauncher
                 }
             }
 
-            config.AddRule(LogLevel.Debug, LogLevel.Warn, Logconsole);
-            config.AddRule(LogLevel.Debug, LogLevel.Warn, Logfile);
+            config.AddRule(LogLevel.Debug, LogLevel.Warn, logconsole);
+            config.AddRule(LogLevel.Debug, LogLevel.Warn, logfile);
             LogManager.Configuration = config;
         }
     }
