@@ -22,12 +22,14 @@ namespace CityLauncher
                 MVSSBox.Enabled = false;
                 HbaoBox.Enabled = false;
                 TessellationBox.Enabled = false;
+                ShadowSoftnessBox.Enabled = false;
             }
             else
             {
                 MVSSBox.Enabled = true;
                 HbaoBox.Enabled = true;
                 TessellationBox.Enabled = true;
+                ShadowSoftnessBox.Enabled = true;
             }
         }
 

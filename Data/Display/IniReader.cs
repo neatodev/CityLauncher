@@ -79,6 +79,7 @@ namespace CityLauncher
                 Program.MainWindow.MVSSBox.Enabled = false;
                 Program.MainWindow.HbaoBox.Enabled = false;
                 Program.MainWindow.TessellationBox.Enabled = false;
+                Program.MainWindow.ShadowSoftnessBox.Enabled = false;
             }
 
             // Language
