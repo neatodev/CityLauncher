@@ -263,7 +263,7 @@ namespace CityLauncher
             TrimmedLine = TrimmedLine.Substring(0, TrimmedLine.IndexOf("\""));
             var TypeKeyValue = ConsoleLine.Substring(17);
             TypeKeyValue = TypeKeyValue.Substring(0, TypeKeyValue.IndexOf("\""));
-            var NewTypeKey = "set console TypeKey" + TrimmedLine.Substring(19, 1) + TypeKeyValue;
+            var NewTypeKey = "set console TypeKey " + TypeKeyValue;
 
             TimeSpan Time = new(0, 0, 0, 0, 3);
 
