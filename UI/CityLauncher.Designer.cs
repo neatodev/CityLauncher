@@ -33,6 +33,9 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DisplayTab = new System.Windows.Forms.TabPage();
             this.AdvancedDisplayGroupBox = new System.Windows.Forms.GroupBox();
+            this.ShadowSoftnessLabel = new System.Windows.Forms.Label();
+            this.ShadowSoftnessBox = new System.Windows.Forms.ComboBox();
+            this.ReflectionBox = new System.Windows.Forms.CheckBox();
             this.LensFlareBox = new System.Windows.Forms.CheckBox();
             this.LightRayBox = new System.Windows.Forms.CheckBox();
             this.BloomBox = new System.Windows.Forms.CheckBox();
@@ -189,7 +192,6 @@
             this.ManualModeButton = new System.Windows.Forms.Button();
             this.BasicToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.StartGameButton = new System.Windows.Forms.Button();
-            this.ReflectionBox = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -233,6 +235,8 @@
             // AdvancedDisplayGroupBox
             // 
             this.AdvancedDisplayGroupBox.AutoSize = true;
+            this.AdvancedDisplayGroupBox.Controls.Add(this.ShadowSoftnessLabel);
+            this.AdvancedDisplayGroupBox.Controls.Add(this.ShadowSoftnessBox);
             this.AdvancedDisplayGroupBox.Controls.Add(this.ReflectionBox);
             this.AdvancedDisplayGroupBox.Controls.Add(this.LensFlareBox);
             this.AdvancedDisplayGroupBox.Controls.Add(this.LightRayBox);
@@ -267,6 +271,47 @@
             this.AdvancedDisplayGroupBox.TabIndex = 15;
             this.AdvancedDisplayGroupBox.TabStop = false;
             this.AdvancedDisplayGroupBox.Text = "Advanced";
+            // 
+            // ShadowSoftnessLabel
+            // 
+            this.ShadowSoftnessLabel.AutoSize = true;
+            this.ShadowSoftnessLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShadowSoftnessLabel.Location = new System.Drawing.Point(393, 234);
+            this.ShadowSoftnessLabel.Name = "ShadowSoftnessLabel";
+            this.ShadowSoftnessLabel.Size = new System.Drawing.Size(118, 19);
+            this.ShadowSoftnessLabel.TabIndex = 52;
+            this.ShadowSoftnessLabel.Text = "Shadow Softness";
+            this.BasicToolTip.SetToolTip(this.ShadowSoftnessLabel, "Adjust MVSS softness amount.\r\n- Effect only applies to player character. \r\n");
+            // 
+            // ShadowSoftnessBox
+            // 
+            this.ShadowSoftnessBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ShadowSoftnessBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShadowSoftnessBox.FormattingEnabled = true;
+            this.ShadowSoftnessBox.Items.AddRange(new object[] {
+            "Very Sharp",
+            "Sharp",
+            "Balanced",
+            "Soft (Default)",
+            "Very Soft"});
+            this.ShadowSoftnessBox.Location = new System.Drawing.Point(517, 231);
+            this.ShadowSoftnessBox.Name = "ShadowSoftnessBox";
+            this.ShadowSoftnessBox.Size = new System.Drawing.Size(152, 27);
+            this.ShadowSoftnessBox.TabIndex = 51;
+            this.BasicToolTip.SetToolTip(this.ShadowSoftnessBox, "Adjust MVSS softness amount.\r\n- Effect only applies to player character. ");
+            // 
+            // ReflectionBox
+            // 
+            this.ReflectionBox.AutoSize = true;
+            this.ReflectionBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ReflectionBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ReflectionBox.Location = new System.Drawing.Point(539, 32);
+            this.ReflectionBox.Name = "ReflectionBox";
+            this.ReflectionBox.Size = new System.Drawing.Size(100, 23);
+            this.ReflectionBox.TabIndex = 50;
+            this.ReflectionBox.Text = "Reflections";
+            this.BasicToolTip.SetToolTip(this.ReflectionBox, "Environment will reflect light sources.");
+            this.ReflectionBox.UseVisualStyleBackColor = true;
             // 
             // LensFlareBox
             // 
@@ -2215,19 +2260,6 @@
             this.StartGameButton.UseVisualStyleBackColor = true;
             this.StartGameButton.Click += new System.EventHandler(this.StartGameButton_Click);
             // 
-            // ReflectionBox
-            // 
-            this.ReflectionBox.AutoSize = true;
-            this.ReflectionBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ReflectionBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ReflectionBox.Location = new System.Drawing.Point(539, 32);
-            this.ReflectionBox.Name = "ReflectionBox";
-            this.ReflectionBox.Size = new System.Drawing.Size(100, 23);
-            this.ReflectionBox.TabIndex = 50;
-            this.ReflectionBox.Text = "Reflections";
-            this.BasicToolTip.SetToolTip(this.ReflectionBox, "Environment will reflect light sources.");
-            this.ReflectionBox.UseVisualStyleBackColor = true;
-            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -2428,5 +2460,7 @@
         private Button StartGameButton;
         private LinkLabel TempLabel;
         public CheckBox ReflectionBox;
+        private Label ShadowSoftnessLabel;
+        public ComboBox ShadowSoftnessBox;
     }
 }

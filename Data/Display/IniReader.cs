@@ -318,6 +318,26 @@ namespace CityLauncher
                 Program.MainWindow.LightRayBox.Checked = false;
             }
 
+            // Shadow Softness
+            switch (IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"])
+            {
+                case "2.000000":
+                    Program.MainWindow.ShadowSoftnessBox.SelectedIndex = 0;
+                    break;
+                case "4.000000":
+                    Program.MainWindow.ShadowSoftnessBox.SelectedIndex = 1;
+                    break;
+                case "8.000000":
+                    Program.MainWindow.ShadowSoftnessBox.SelectedIndex = 2;
+                    break;
+                case "32.000000":
+                    Program.MainWindow.ShadowSoftnessBox.SelectedIndex = 4;
+                    break;
+                default:
+                    Program.MainWindow.ShadowSoftnessBox.SelectedIndex = 3;
+                    break;
+            }
+
             // MVSS Coverage
             switch (IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"])
             {

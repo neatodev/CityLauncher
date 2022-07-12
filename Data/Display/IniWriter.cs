@@ -444,6 +444,27 @@ namespace CityLauncher
             }
             Nlog.Info("WriteBmEngineAdvanced - Set Light Rays to {0}", IniHandler.BmEngineData["SystemSettings"]["bAllowLightShafts"]);
 
+            // Shadow Softness
+            switch (Program.MainWindow.ShadowSoftnessBox.SelectedIndex)
+            {
+                case 0:
+                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"] = "2.000000";
+                    break;
+                case 1:
+                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"] = "4.000000";
+                    break;
+                case 2:
+                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"] = "8.000000";
+                    break;
+                case 4:
+                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"] = "32.000000";
+                    break;
+                default:
+                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"] = "16.000000";
+                    break;
+            }
+            Nlog.Info("WriteBmEngineAdvanced - Set Shadow Softness to {0}", IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"]);
+
             // MVSS Coverage
             switch (Program.MainWindow.MVSSBox.SelectedIndex)
             {
