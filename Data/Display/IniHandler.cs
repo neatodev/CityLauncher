@@ -111,6 +111,7 @@ namespace CityLauncher
             BmEngineData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
             RemoveSections();
             new IniReader().InitDisplay();
+            Nlog.Info("ResetDisplay - Sucessfully reset display settings.");
         }
     }
 }

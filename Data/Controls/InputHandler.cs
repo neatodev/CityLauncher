@@ -177,6 +177,7 @@ namespace CityLauncher
             File.Delete(UserInputFile);
             Program.FileHandler.CreateConfigFile(UserInputFile, Resources.UserInput);
             new InputReader().InitControls();
+            Nlog.Info("ResetControls - Sucessfully reset control scheme.");
         }
     }
 }
