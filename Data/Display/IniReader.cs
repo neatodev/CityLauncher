@@ -388,6 +388,17 @@ namespace CityLauncher
                     Program.MainWindow.PoolsizeBox.SelectedIndex = 0;
                     break;
             }
+
+            // Reflections
+            if (IniHandler.BmEngineData["SystemSettings"]["Reflections"] == "True")
+            {
+                Program.MainWindow.ReflectionBox.Checked = true;
+            }
+            else
+            {
+                Program.MainWindow.ReflectionBox.Checked = false;
+            }
+
         }
 
     }

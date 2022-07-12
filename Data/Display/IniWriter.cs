@@ -518,6 +518,17 @@ namespace CityLauncher
                     break;
             }
             Nlog.Info("WriteBmEngineAdvanced - Set Poolsize to {0}", IniHandler.BmEngineData["TextureStreaming"]["PoolSize"]);
+
+            // Reflections
+            if (Program.MainWindow.ReflectionBox.Checked)
+            {
+                IniHandler.BmEngineData["SystemSettings"]["Reflections"] = "True";
+            }
+            else
+            {
+                IniHandler.BmEngineData["SystemSettings"]["Reflections"] = "False";
+            }
+            Nlog.Info("WriteBmEngineAdvanced - Set Reflections to {0}", IniHandler.BmEngineData["SystemSettings"]["Reflections"]);
         }
     }
 }

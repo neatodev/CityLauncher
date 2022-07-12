@@ -189,6 +189,7 @@
             this.ManualModeButton = new System.Windows.Forms.Button();
             this.BasicToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.StartGameButton = new System.Windows.Forms.Button();
+            this.ReflectionBox = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -232,6 +233,7 @@
             // AdvancedDisplayGroupBox
             // 
             this.AdvancedDisplayGroupBox.AutoSize = true;
+            this.AdvancedDisplayGroupBox.Controls.Add(this.ReflectionBox);
             this.AdvancedDisplayGroupBox.Controls.Add(this.LensFlareBox);
             this.AdvancedDisplayGroupBox.Controls.Add(this.LightRayBox);
             this.AdvancedDisplayGroupBox.Controls.Add(this.BloomBox);
@@ -298,7 +300,7 @@
             this.BloomBox.AutoSize = true;
             this.BloomBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BloomBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BloomBox.Location = new System.Drawing.Point(539, 32);
+            this.BloomBox.Location = new System.Drawing.Point(570, 61);
             this.BloomBox.Name = "BloomBox";
             this.BloomBox.Size = new System.Drawing.Size(69, 23);
             this.BloomBox.TabIndex = 47;
@@ -2213,6 +2215,19 @@
             this.StartGameButton.UseVisualStyleBackColor = true;
             this.StartGameButton.Click += new System.EventHandler(this.StartGameButton_Click);
             // 
+            // ReflectionBox
+            // 
+            this.ReflectionBox.AutoSize = true;
+            this.ReflectionBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ReflectionBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ReflectionBox.Location = new System.Drawing.Point(539, 32);
+            this.ReflectionBox.Name = "ReflectionBox";
+            this.ReflectionBox.Size = new System.Drawing.Size(100, 23);
+            this.ReflectionBox.TabIndex = 50;
+            this.ReflectionBox.Text = "Reflections";
+            this.BasicToolTip.SetToolTip(this.ReflectionBox, "Environment will reflect light sources.");
+            this.ReflectionBox.UseVisualStyleBackColor = true;
+            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -2412,5 +2427,6 @@
         private ToolTip BasicToolTip;
         private Button StartGameButton;
         private LinkLabel TempLabel;
+        public CheckBox ReflectionBox;
     }
 }
