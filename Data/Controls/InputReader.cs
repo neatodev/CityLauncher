@@ -14,6 +14,8 @@ namespace CityLauncher
             UserInputLines = File.ReadAllLines(Program.FileHandler.UserInputPath);
             BmInputLines[0] = IniHandler.BmInputData["Engine.PlayerInput"]["MouseSensitivity"];
             BmInputLines[1] = IniHandler.BmInputData["Engine.PlayerInput"]["bEnableMouseSmoothing"];
+            Program.MainWindow.ControlSettingChanged = false;
+            Program.MainWindow.ApplySettingsButton.Enabled = false;
             Nlog.Info("Constructor - Sucessfully initialized InputReader.");
         }
 

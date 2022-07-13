@@ -7,6 +7,7 @@ namespace CityLauncher
     public partial class CityLauncher : Form
     {
         private bool DisplaySetting = false;
+        private bool ControlSetting = false;
         public bool DisplaySettingChanged
         {
             get
@@ -16,6 +17,18 @@ namespace CityLauncher
             set
             {
                 DisplaySetting = value;
+                ApplySettingsButton.Enabled = true;
+            }
+        }
+        public bool ControlSettingChanged
+        {
+            get
+            {
+                return ControlSetting;
+            }
+            set
+            {
+                ControlSetting = value;
                 ApplySettingsButton.Enabled = true;
             }
         }
@@ -48,8 +61,14 @@ namespace CityLauncher
 
         private void ApplySettingsButton_Click(object sender, EventArgs e)
         {
-            new IniWriter().WriteAll();
-            new InputWriter().WriteAll();
+            if (DisplaySettingChanged)
+            {
+                new IniWriter().WriteAll();
+            }
+            if (ControlSettingChanged)
+            {
+                new InputWriter().WriteAll();
+            }
         }
 
         private void SkipIntroBox_CheckedChanged(object sender, EventArgs e)

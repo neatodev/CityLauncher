@@ -1,4 +1,6 @@
-﻿namespace CityLauncher
+﻿using NLog;
+
+namespace CityLauncher
 {
     public partial class InputForm : Form
     {
@@ -10,6 +12,8 @@
 
         private Button Input;
 
+        private static Logger Nlog = LogManager.GetCurrentClassLogger();
+
         public InputForm(Button InputButton)
         {
             InitializeComponent();
@@ -17,6 +21,8 @@
             this.KeyDown += InputForm_KeyDown;
             this.MouseClick += InputForm_MouseClick;
             this.MouseWheel += InputForm_MouseWheel;
+            Program.MainWindow.ControlSettingChanged = true;
+            Nlog.Info("Constructor - Created a new instance of InputForm for '{0}'.", InputButton.Name);
         }
 
         private void InputForm_MouseWheel(object? sender, MouseEventArgs e)
