@@ -81,7 +81,7 @@ namespace CityLauncher
             DialogResult result = MessageBox.Show(
                 "This option removes the 'read-only' flag of the configuration files, allowing for manual edits.\r\n" +
                 "Starting the game through the launcher will re-add the 'read-only' flag, so make any desired edits before that.\r\n\r\n" +
-                "Do you wish to continue?", @"Enable Manual Editing",
+                "Clicking 'Yes' will remove the flag, close the application and open your config directory.", @"Enable Manual Editing",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
 
@@ -90,14 +90,15 @@ namespace CityLauncher
                 Program.FileHandler.BmEngine.IsReadOnly = false;
                 Program.FileHandler.UserEngine.IsReadOnly = false;
                 Program.FileHandler.BmInput.IsReadOnly = false;
-                MessageBox.Show("Manual Editing Enabled", @"Success!");
+                Process.Start("explorer.exe", Program.FileHandler.ConfigDirectoryPath);
+                Application.Exit();
             }
         }
 
         private void MouseSensitivityTrackbar_Scroll(object sender, EventArgs e)
         {
             MouseSensitivityValueLabel.Text = MouseSensitivityTrackbar.Value.ToString();
-            //DisplaySettingChanged = true;
+            DisplaySettingChanged = true;
         }
 
         private void CustomFoV1Trackbar_Scroll(object sender, EventArgs e)
