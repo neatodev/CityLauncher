@@ -211,7 +211,7 @@ namespace CityLauncher
 
         public void RenameIntroVideoFiles()
         {
-            if (!Program.MainWindow.SkipIntroBox.Enabled || !Program.MainWindow.SettingChanged)
+            if (!Program.MainWindow.SkipIntroBox.Enabled || !Program.MainWindow.DisplaySettingChanged)
             {
                 return;
             }

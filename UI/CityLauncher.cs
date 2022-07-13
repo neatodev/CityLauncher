@@ -6,7 +6,19 @@ namespace CityLauncher
 {
     public partial class CityLauncher : Form
     {
-        public bool SettingChanged = false;
+        private bool DisplaySetting = false;
+        public bool DisplaySettingChanged
+        {
+            get
+            {
+                return DisplaySetting;
+            }
+            set
+            {
+                DisplaySetting = value;
+                ApplySettingsButton.Enabled = true;
+            }
+        }
 
         private static readonly Logger Nlog = LogManager.GetCurrentClassLogger();
 
@@ -31,6 +43,7 @@ namespace CityLauncher
                 TessellationBox.Enabled = true;
                 ShadowSoftnessBox.Enabled = true;
             }
+            DisplaySettingChanged = true;
         }
 
         private void ApplySettingsButton_Click(object sender, EventArgs e)
@@ -41,7 +54,7 @@ namespace CityLauncher
 
         private void SkipIntroBox_CheckedChanged(object sender, EventArgs e)
         {
-            SettingChanged = true;
+            DisplaySettingChanged = true;
         }
 
         private void ManualModeButton_Click(object sender, EventArgs e)
@@ -65,16 +78,19 @@ namespace CityLauncher
         private void MouseSensitivityTrackbar_Scroll(object sender, EventArgs e)
         {
             MouseSensitivityValueLabel.Text = MouseSensitivityTrackbar.Value.ToString();
+            //DisplaySettingChanged = true;
         }
 
         private void CustomFoV1Trackbar_Scroll(object sender, EventArgs e)
         {
             CustomFoV1ValueLabel.Text = CustomFoV1Trackbar.Value.ToString();
+            DisplaySettingChanged = true;
         }
 
         private void CustomFoV2Trackbar_Scroll(object sender, EventArgs e)
         {
             CustomFoV2ValueLabel.Text = CustomFoV2Trackbar.Value.ToString();
+            DisplaySettingChanged = true;
         }
 
         private void FwButton1_Click(object sender, EventArgs e)
@@ -347,6 +363,136 @@ namespace CityLauncher
         private void TempLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start(new ProcessStartInfo { FileName = @"https://github.com/neatodev/CityLauncher", UseShellExecute = true });
+        }
+
+        private void ResolutionBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void VsyncBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void FullscreenBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void DetailModeBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void LanguageBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void FrameCapTextBox_MaskChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void AmbientOcclusionBox_CheckedChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void MotionBlurBox_CheckedChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void DynShadowBox_CheckedChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void DistortionBox_CheckedChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void ReflectionBox_CheckedChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void DOFBox_CheckedChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void LightRayBox_CheckedChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void DynLightBox_CheckedChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void LensFlareBox_CheckedChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void BloomBox_CheckedChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void AntiAliasingBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void MVSSBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void HbaoBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void PhysXBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void PoolsizeBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void AnisoBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void TessellationBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void ShadowQualityBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void ShadowDrawDistBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
+
+        private void ShadowSoftnessBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
         }
     }
 }

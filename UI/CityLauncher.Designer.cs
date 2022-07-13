@@ -299,6 +299,7 @@
             this.ShadowSoftnessBox.Size = new System.Drawing.Size(152, 27);
             this.ShadowSoftnessBox.TabIndex = 51;
             this.BasicToolTip.SetToolTip(this.ShadowSoftnessBox, "Adjust MVSS softness amount.\r\n- Effect only applies to player character. ");
+            this.ShadowSoftnessBox.SelectedIndexChanged += new System.EventHandler(this.ShadowSoftnessBox_SelectedIndexChanged);
             // 
             // ReflectionBox
             // 
@@ -312,6 +313,7 @@
             this.ReflectionBox.Text = "Reflections";
             this.BasicToolTip.SetToolTip(this.ReflectionBox, "Environment will reflect light sources.");
             this.ReflectionBox.UseVisualStyleBackColor = true;
+            this.ReflectionBox.CheckedChanged += new System.EventHandler(this.ReflectionBox_CheckedChanged);
             // 
             // LensFlareBox
             // 
@@ -326,6 +328,7 @@
             this.BasicToolTip.SetToolTip(this.LensFlareBox, "Simulates perspective-based flares when looking at bright lights. \r\n- Requires De" +
         "pth of Field to be enabled.");
             this.LensFlareBox.UseVisualStyleBackColor = true;
+            this.LensFlareBox.CheckedChanged += new System.EventHandler(this.LensFlareBox_CheckedChanged);
             // 
             // LightRayBox
             // 
@@ -339,6 +342,7 @@
             this.LightRayBox.Text = "Light Rays";
             this.BasicToolTip.SetToolTip(this.LightRayBox, "Simulates light traversal in the atmosphere.");
             this.LightRayBox.UseVisualStyleBackColor = true;
+            this.LightRayBox.CheckedChanged += new System.EventHandler(this.LightRayBox_CheckedChanged);
             // 
             // BloomBox
             // 
@@ -353,6 +357,7 @@
             this.BasicToolTip.SetToolTip(this.BloomBox, "Enunciates lighting by adding a glow to bright areas. \r\n- Requires Depth of Field" +
         " to be enabled.");
             this.BloomBox.UseVisualStyleBackColor = true;
+            this.BloomBox.CheckedChanged += new System.EventHandler(this.BloomBox_CheckedChanged);
             // 
             // DistortionBox
             // 
@@ -366,6 +371,7 @@
             this.DistortionBox.Text = "Distortion";
             this.BasicToolTip.SetToolTip(this.DistortionBox, "Dynamically distorts areas of the screen to enhance certain actions.");
             this.DistortionBox.UseVisualStyleBackColor = true;
+            this.DistortionBox.CheckedChanged += new System.EventHandler(this.DistortionBox_CheckedChanged);
             // 
             // DynShadowBox
             // 
@@ -379,6 +385,7 @@
             this.DynShadowBox.Text = "Dynamic Shadows";
             this.BasicToolTip.SetToolTip(this.DynShadowBox, "Enables real-time shadows.");
             this.DynShadowBox.UseVisualStyleBackColor = true;
+            this.DynShadowBox.CheckedChanged += new System.EventHandler(this.DynShadowBox_CheckedChanged);
             // 
             // DynLightBox
             // 
@@ -392,6 +399,7 @@
             this.DynLightBox.Text = "Dynamic Lighting";
             this.BasicToolTip.SetToolTip(this.DynLightBox, "Improves game lighting.");
             this.DynLightBox.UseVisualStyleBackColor = true;
+            this.DynLightBox.CheckedChanged += new System.EventHandler(this.DynLightBox_CheckedChanged);
             // 
             // MotionBlurBox
             // 
@@ -405,6 +413,7 @@
             this.MotionBlurBox.Text = "Motion Blur";
             this.BasicToolTip.SetToolTip(this.MotionBlurBox, "Emphasizes movement using blur to connect motion between frames.");
             this.MotionBlurBox.UseVisualStyleBackColor = true;
+            this.MotionBlurBox.CheckedChanged += new System.EventHandler(this.MotionBlurBox_CheckedChanged);
             // 
             // DOFBox
             // 
@@ -420,6 +429,7 @@
         " a blur pass. This effect is tied with colour grading filters and certain post-p" +
         "rocessing effects.");
             this.DOFBox.UseVisualStyleBackColor = true;
+            this.DOFBox.CheckedChanged += new System.EventHandler(this.DOFBox_CheckedChanged);
             // 
             // AmbientOcclusionBox
             // 
@@ -434,6 +444,7 @@
             this.BasicToolTip.SetToolTip(this.AmbientOcclusionBox, "Improves ambient lighting. HBAO is used instead of SSAO if DirectX 11 is enabled." +
         " ");
             this.AmbientOcclusionBox.UseVisualStyleBackColor = true;
+            this.AmbientOcclusionBox.CheckedChanged += new System.EventHandler(this.AmbientOcclusionBox_CheckedChanged);
             // 
             // PoolsizeBox
             // 
@@ -452,6 +463,7 @@
             this.PoolsizeBox.Size = new System.Drawing.Size(152, 27);
             this.PoolsizeBox.TabIndex = 40;
             this.BasicToolTip.SetToolTip(this.PoolsizeBox, resources.GetString("PoolsizeBox.ToolTip"));
+            this.PoolsizeBox.SelectedIndexChanged += new System.EventHandler(this.PoolsizeBox_SelectedIndexChanged);
             // 
             // PoolsizeLabel
             // 
@@ -478,6 +490,7 @@
             this.PhysXBox.Size = new System.Drawing.Size(152, 27);
             this.PhysXBox.TabIndex = 38;
             this.BasicToolTip.SetToolTip(this.PhysXBox, "Demanding Feature. Adds breakable fences, cloth physics, smoke simulations etc.");
+            this.PhysXBox.SelectedIndexChanged += new System.EventHandler(this.PhysXBox_SelectedIndexChanged);
             // 
             // ShadowDrawDistBox
             // 
@@ -495,6 +508,7 @@
             this.ShadowDrawDistBox.TabIndex = 37;
             this.BasicToolTip.SetToolTip(this.ShadowDrawDistBox, "Increases shadow draw distance. Directx 11 is recommended before pushing this set" +
         "ting.");
+            this.ShadowDrawDistBox.SelectedIndexChanged += new System.EventHandler(this.ShadowDrawDistBox_SelectedIndexChanged);
             // 
             // ShadowDrawLabel
             // 
@@ -524,6 +538,7 @@
             this.MVSSBox.TabIndex = 35;
             this.BasicToolTip.SetToolTip(this.MVSSBox, "Increases self-shadowing amount. Recommended to increase shadow quality before pu" +
         "shing this setting.\r\n- Lower this setting if experiencing visual artifacts.");
+            this.MVSSBox.SelectedIndexChanged += new System.EventHandler(this.MVSSBox_SelectedIndexChanged);
             // 
             // ShadowQualityBox
             // 
@@ -541,6 +556,7 @@
             this.ShadowQualityBox.TabIndex = 26;
             this.BasicToolTip.SetToolTip(this.ShadowQualityBox, "Increases the quality of shadow rendering by increasing the shadowmap resolution." +
         "");
+            this.ShadowQualityBox.SelectedIndexChanged += new System.EventHandler(this.ShadowQualityBox_SelectedIndexChanged);
             // 
             // PhysXLabel
             // 
@@ -580,6 +596,7 @@
             this.HbaoBox.TabIndex = 14;
             this.BasicToolTip.SetToolTip(this.HbaoBox, "Adjusts ambient occlusion intensity. Higher values will increase ambient occlusio" +
         "n darkness.");
+            this.HbaoBox.SelectedIndexChanged += new System.EventHandler(this.HbaoBox_SelectedIndexChanged);
             // 
             // AntiAliasingBox
             // 
@@ -600,6 +617,7 @@
             this.AntiAliasingBox.TabIndex = 9;
             this.BasicToolTip.SetToolTip(this.AntiAliasingBox, "Cleans up edge aliasing. MSAA may induce stutter. Reshade SMAA suggested for shar" +
         "p and stable AA (see \'About\' section).");
+            this.AntiAliasingBox.SelectedIndexChanged += new System.EventHandler(this.AntiAliasingBox_SelectedIndexChanged);
             // 
             // AnisoBox
             // 
@@ -615,6 +633,7 @@
             this.AnisoBox.Size = new System.Drawing.Size(152, 27);
             this.AnisoBox.TabIndex = 8;
             this.BasicToolTip.SetToolTip(this.AnisoBox, "Improve texture clarity across oblique surfaces.");
+            this.AnisoBox.SelectedIndexChanged += new System.EventHandler(this.AnisoBox_SelectedIndexChanged);
             // 
             // TessellationBox
             // 
@@ -634,6 +653,7 @@
             this.TessellationBox.TabIndex = 10;
             this.BasicToolTip.SetToolTip(this.TessellationBox, "Increases mesh detail on certain objects when viewed up close (ice, vines, trees," +
         " etc). Very demanding setting. \r\n\'Off\' will disable Tessellation.");
+            this.TessellationBox.SelectedIndexChanged += new System.EventHandler(this.TessellationBox_SelectedIndexChanged);
             // 
             // TessellationLabel
             // 
@@ -770,6 +790,7 @@
             this.LanguageBox.Size = new System.Drawing.Size(152, 27);
             this.LanguageBox.TabIndex = 14;
             this.BasicToolTip.SetToolTip(this.LanguageBox, "Sets the voice and text language of the game.");
+            this.LanguageBox.SelectedIndexChanged += new System.EventHandler(this.LanguageBox_SelectedIndexChanged);
             // 
             // FrameCapTextBox
             // 
@@ -785,6 +806,7 @@
         " of the panel or higher.\r\n- Entering values lower than 25 will reset the setting" +
         " to the default value (60).");
             this.FrameCapTextBox.ValidatingType = typeof(int);
+            this.FrameCapTextBox.MaskChanged += new System.EventHandler(this.FrameCapTextBox_MaskChanged);
             // 
             // ResolutionBox
             // 
@@ -796,6 +818,7 @@
             this.ResolutionBox.Size = new System.Drawing.Size(152, 27);
             this.ResolutionBox.TabIndex = 7;
             this.BasicToolTip.SetToolTip(this.ResolutionBox, "Select rendering resolution. ");
+            this.ResolutionBox.SelectedIndexChanged += new System.EventHandler(this.ResolutionBox_SelectedIndexChanged);
             // 
             // VsyncBox
             // 
@@ -810,6 +833,7 @@
             this.VsyncBox.Size = new System.Drawing.Size(152, 27);
             this.VsyncBox.TabIndex = 9;
             this.BasicToolTip.SetToolTip(this.VsyncBox, "Enable to eliminate screen tearing.");
+            this.VsyncBox.SelectedIndexChanged += new System.EventHandler(this.VsyncBox_SelectedIndexChanged);
             // 
             // FullscreenBox
             // 
@@ -824,6 +848,7 @@
             this.FullscreenBox.Size = new System.Drawing.Size(152, 27);
             this.FullscreenBox.TabIndex = 8;
             this.BasicToolTip.SetToolTip(this.FullscreenBox, "Press \'scroll lock\' in-game to switch between fullscreen and windowed mode. ");
+            this.FullscreenBox.SelectedIndexChanged += new System.EventHandler(this.FullscreenBox_SelectedIndexChanged);
             // 
             // DetailModeBox
             // 
@@ -840,6 +865,7 @@
             this.DetailModeBox.TabIndex = 10;
             this.BasicToolTip.SetToolTip(this.DetailModeBox, "Replaces the Detail Level option from the original launcher and covers every valu" +
         "e.\r\n- Highest setting is required for the HD Texture Pack. ");
+            this.DetailModeBox.SelectedIndexChanged += new System.EventHandler(this.DetailModeBox_SelectedIndexChanged);
             // 
             // DetailModeLabel
             // 
@@ -2223,6 +2249,7 @@
             // 
             // ApplySettingsButton
             // 
+            this.ApplySettingsButton.Enabled = false;
             this.ApplySettingsButton.Location = new System.Drawing.Point(253, 551);
             this.ApplySettingsButton.Name = "ApplySettingsButton";
             this.ApplySettingsButton.Size = new System.Drawing.Size(178, 37);
@@ -2346,7 +2373,6 @@
         public ComboBox PhysXBox;
         private Label PhysXLabel;
         public CheckBox Dx11Box;
-        private Button ApplySettingsButton;
         public CheckBox SkipIntroBox;
         private Button ManualModeButton;
         private Label ForwardLabel;
@@ -2462,5 +2488,6 @@
         public CheckBox ReflectionBox;
         private Label ShadowSoftnessLabel;
         public ComboBox ShadowSoftnessBox;
+        public Button ApplySettingsButton;
     }
 }

@@ -11,6 +11,8 @@ namespace CityLauncher
         {
             InitDisplayBasic();
             InitDisplayAdvanced();
+            Program.MainWindow.DisplaySettingChanged = false;
+            Program.MainWindow.ApplySettingsButton.Enabled = false;
             Nlog.Info("InitDisplay - Sucessfully initialized display settings.");
         }
 
