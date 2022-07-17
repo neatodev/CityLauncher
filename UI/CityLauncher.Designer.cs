@@ -32,6 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CityLauncher));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DisplayTab = new System.Windows.Forms.TabPage();
+            this.DarkKnightPresetButton = new System.Windows.Forms.Button();
+            this.OptimizedPresetButton = new System.Windows.Forms.Button();
+            this.VanillaPresetButton = new System.Windows.Forms.Button();
             this.AdvancedDisplayGroupBox = new System.Windows.Forms.GroupBox();
             this.ShadowSoftnessLabel = new System.Windows.Forms.Label();
             this.ShadowSoftnessBox = new System.Windows.Forms.ComboBox();
@@ -191,10 +194,10 @@
             this.ApplySettingsButton = new System.Windows.Forms.Button();
             this.ManualModeButton = new System.Windows.Forms.Button();
             this.BasicToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.TextureFixButton = new System.Windows.Forms.Button();
             this.StartGameButton = new System.Windows.Forms.Button();
             this.GPULabel = new System.Windows.Forms.Label();
             this.CPULabel = new System.Windows.Forms.Label();
-            this.TextureFixButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -220,21 +223,60 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(692, 533);
+            this.tabControl1.Size = new System.Drawing.Size(717, 533);
             this.tabControl1.TabIndex = 0;
             // 
             // DisplayTab
             // 
             this.DisplayTab.AutoScroll = true;
+            this.DisplayTab.Controls.Add(this.DarkKnightPresetButton);
+            this.DisplayTab.Controls.Add(this.OptimizedPresetButton);
+            this.DisplayTab.Controls.Add(this.VanillaPresetButton);
             this.DisplayTab.Controls.Add(this.AdvancedDisplayGroupBox);
             this.DisplayTab.Controls.Add(this.BasicDisplayGroupBox);
             this.DisplayTab.Location = new System.Drawing.Point(4, 38);
             this.DisplayTab.Name = "DisplayTab";
             this.DisplayTab.Padding = new System.Windows.Forms.Padding(3);
-            this.DisplayTab.Size = new System.Drawing.Size(684, 491);
+            this.DisplayTab.Size = new System.Drawing.Size(709, 491);
             this.DisplayTab.TabIndex = 0;
             this.DisplayTab.Text = "Display";
             this.DisplayTab.UseVisualStyleBackColor = true;
+            // 
+            // DarkKnightPresetButton
+            // 
+            this.DarkKnightPresetButton.Location = new System.Drawing.Point(336, 221);
+            this.DarkKnightPresetButton.Name = "DarkKnightPresetButton";
+            this.DarkKnightPresetButton.Size = new System.Drawing.Size(178, 37);
+            this.DarkKnightPresetButton.TabIndex = 17;
+            this.DarkKnightPresetButton.Text = "Dark Knight Preset";
+            this.BasicToolTip.SetToolTip(this.DarkKnightPresetButton, "This disables the read-only flag of the configuration files to allow for manual e" +
+        "diting.");
+            this.DarkKnightPresetButton.UseVisualStyleBackColor = true;
+            this.DarkKnightPresetButton.Click += new System.EventHandler(this.DarkKnightPresetButton_Click);
+            // 
+            // OptimizedPresetButton
+            // 
+            this.OptimizedPresetButton.Location = new System.Drawing.Point(163, 221);
+            this.OptimizedPresetButton.Name = "OptimizedPresetButton";
+            this.OptimizedPresetButton.Size = new System.Drawing.Size(167, 37);
+            this.OptimizedPresetButton.TabIndex = 16;
+            this.OptimizedPresetButton.Text = "Optimized Preset";
+            this.BasicToolTip.SetToolTip(this.OptimizedPresetButton, "This disables the read-only flag of the configuration files to allow for manual e" +
+        "diting.");
+            this.OptimizedPresetButton.UseVisualStyleBackColor = true;
+            this.OptimizedPresetButton.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // VanillaPresetButton
+            // 
+            this.VanillaPresetButton.Location = new System.Drawing.Point(18, 221);
+            this.VanillaPresetButton.Name = "VanillaPresetButton";
+            this.VanillaPresetButton.Size = new System.Drawing.Size(139, 37);
+            this.VanillaPresetButton.TabIndex = 10;
+            this.VanillaPresetButton.Text = "Vanilla Preset";
+            this.BasicToolTip.SetToolTip(this.VanillaPresetButton, "This disables the read-only flag of the configuration files to allow for manual e" +
+        "diting.");
+            this.VanillaPresetButton.UseVisualStyleBackColor = true;
+            this.VanillaPresetButton.Click += new System.EventHandler(this.VanillaPresetButton_Click);
             // 
             // AdvancedDisplayGroupBox
             // 
@@ -269,7 +311,7 @@
             this.AdvancedDisplayGroupBox.Controls.Add(this.AntiAliasingLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.MaxShadowLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.AnisotropyLabel);
-            this.AdvancedDisplayGroupBox.Location = new System.Drawing.Point(3, 198);
+            this.AdvancedDisplayGroupBox.Location = new System.Drawing.Point(3, 273);
             this.AdvancedDisplayGroupBox.Name = "AdvancedDisplayGroupBox";
             this.AdvancedDisplayGroupBox.Size = new System.Drawing.Size(675, 290);
             this.AdvancedDisplayGroupBox.TabIndex = 15;
@@ -1027,7 +1069,7 @@
             this.ControlTab.Location = new System.Drawing.Point(4, 38);
             this.ControlTab.Name = "ControlTab";
             this.ControlTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ControlTab.Size = new System.Drawing.Size(684, 491);
+            this.ControlTab.Size = new System.Drawing.Size(709, 491);
             this.ControlTab.TabIndex = 1;
             this.ControlTab.Text = "Controls";
             this.ControlTab.UseVisualStyleBackColor = true;
@@ -1903,7 +1945,7 @@
             this.MiscTab.Location = new System.Drawing.Point(4, 38);
             this.MiscTab.Name = "MiscTab";
             this.MiscTab.Padding = new System.Windows.Forms.Padding(3);
-            this.MiscTab.Size = new System.Drawing.Size(684, 491);
+            this.MiscTab.Size = new System.Drawing.Size(709, 491);
             this.MiscTab.TabIndex = 3;
             this.MiscTab.Text = "Misc";
             this.MiscTab.UseVisualStyleBackColor = true;
@@ -2222,7 +2264,7 @@
             this.AboutTab.Controls.Add(this.TempLabel);
             this.AboutTab.Location = new System.Drawing.Point(4, 38);
             this.AboutTab.Name = "AboutTab";
-            this.AboutTab.Size = new System.Drawing.Size(684, 491);
+            this.AboutTab.Size = new System.Drawing.Size(709, 491);
             this.AboutTab.TabIndex = 2;
             this.AboutTab.Text = "About";
             this.AboutTab.UseVisualStyleBackColor = true;
@@ -2281,6 +2323,16 @@
             this.BasicToolTip.InitialDelay = 50;
             this.BasicToolTip.ReshowDelay = 20;
             // 
+            // TextureFixButton
+            // 
+            this.TextureFixButton.Location = new System.Drawing.Point(437, 625);
+            this.TextureFixButton.Name = "TextureFixButton";
+            this.TextureFixButton.Size = new System.Drawing.Size(152, 36);
+            this.TextureFixButton.TabIndex = 9;
+            this.TextureFixButton.Text = "Jef";
+            this.BasicToolTip.SetToolTip(this.TextureFixButton, "Resets display settings to their defaults. ");
+            this.TextureFixButton.UseVisualStyleBackColor = true;
+            // 
             // StartGameButton
             // 
             this.StartGameButton.Location = new System.Drawing.Point(274, 619);
@@ -2309,22 +2361,12 @@
             this.CPULabel.TabIndex = 8;
             this.CPULabel.Text = "CPU:";
             // 
-            // TextureFixButton
-            // 
-            this.TextureFixButton.Location = new System.Drawing.Point(437, 625);
-            this.TextureFixButton.Name = "TextureFixButton";
-            this.TextureFixButton.Size = new System.Drawing.Size(152, 36);
-            this.TextureFixButton.TabIndex = 9;
-            this.TextureFixButton.Text = "Jef";
-            this.BasicToolTip.SetToolTip(this.TextureFixButton, "Resets display settings to their defaults. ");
-            this.TextureFixButton.UseVisualStyleBackColor = true;
-            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(716, 752);
+            this.ClientSize = new System.Drawing.Size(741, 752);
             this.Controls.Add(this.TextureFixButton);
             this.Controls.Add(this.CPULabel);
             this.Controls.Add(this.GPULabel);
@@ -2528,5 +2570,8 @@
         public Label GPULabel;
         public Label CPULabel;
         private Button TextureFixButton;
+        private Button DarkKnightPresetButton;
+        private Button OptimizedPresetButton;
+        private Button VanillaPresetButton;
     }
 }

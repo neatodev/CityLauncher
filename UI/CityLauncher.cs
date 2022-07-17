@@ -514,5 +514,20 @@ namespace CityLauncher
         {
             DisplaySettingChanged = true;
         }
+
+        private void VanillaPresetButton_Click(object sender, EventArgs e)
+        {
+            PresetHandler.SetVanilla();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PresetHandler.SetOptimized();
+        }
+
+        private void DarkKnightPresetButton_Click(object sender, EventArgs e)
+        {
+            PresetHandler.SetDarkKnight();
+        }
     }
 }
