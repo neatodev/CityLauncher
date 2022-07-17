@@ -300,21 +300,27 @@ namespace CityLauncher
             {
                 case 1:
                     IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "2048.000000";
+                    IniHandler.BmEngineData["SystemSettings"]["WorldDisplacementMultiplier"] = "1.000000";
                     break;
                 case 2:
                     IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "512.000000";
+                    IniHandler.BmEngineData["SystemSettings"]["WorldDisplacementMultiplier"] = "1.000000";
                     break;
                 case 3:
                     IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "256.000000";
+                    IniHandler.BmEngineData["SystemSettings"]["WorldDisplacementMultiplier"] = "1.000000";
                     break;
                 case 4:
                     IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "128.000000";
+                    IniHandler.BmEngineData["SystemSettings"]["WorldDisplacementMultiplier"] = "1.100000";
                     break;
                 case 5:
                     IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "64.000000";
+                    IniHandler.BmEngineData["SystemSettings"]["WorldDisplacementMultiplier"] = "1.200000";
                     break;
                 default:
                     IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] = "0.000000";
+                    IniHandler.BmEngineData["SystemSettings"]["WorldDisplacementMultiplier"] = "1.000000";
                     break;
             }
             Nlog.Info("WriteBmEngineAdvanced - Set Tessellation Quality to {0}", IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"]);

@@ -194,6 +194,7 @@
             this.StartGameButton = new System.Windows.Forms.Button();
             this.GPULabel = new System.Windows.Forms.Label();
             this.CPULabel = new System.Windows.Forms.Label();
+            this.TextureFixButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -224,6 +225,7 @@
             // 
             // DisplayTab
             // 
+            this.DisplayTab.AutoScroll = true;
             this.DisplayTab.Controls.Add(this.AdvancedDisplayGroupBox);
             this.DisplayTab.Controls.Add(this.BasicDisplayGroupBox);
             this.DisplayTab.Location = new System.Drawing.Point(4, 38);
@@ -627,7 +629,7 @@
             this.AnisoBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AnisoBox.FormattingEnabled = true;
             this.AnisoBox.Items.AddRange(new object[] {
-            "4x",
+            "4x (Default)",
             "8x",
             "16x"});
             this.AnisoBox.Location = new System.Drawing.Point(517, 99);
@@ -2292,7 +2294,7 @@
             // GPULabel
             // 
             this.GPULabel.AutoSize = true;
-            this.GPULabel.Location = new System.Drawing.Point(455, 636);
+            this.GPULabel.Location = new System.Drawing.Point(455, 700);
             this.GPULabel.Name = "GPULabel";
             this.GPULabel.Size = new System.Drawing.Size(33, 15);
             this.GPULabel.TabIndex = 6;
@@ -2301,11 +2303,21 @@
             // CPULabel
             // 
             this.CPULabel.AutoSize = true;
-            this.CPULabel.Location = new System.Drawing.Point(455, 608);
+            this.CPULabel.Location = new System.Drawing.Point(99, 700);
             this.CPULabel.Name = "CPULabel";
             this.CPULabel.Size = new System.Drawing.Size(33, 15);
             this.CPULabel.TabIndex = 8;
             this.CPULabel.Text = "CPU:";
+            // 
+            // TextureFixButton
+            // 
+            this.TextureFixButton.Location = new System.Drawing.Point(437, 625);
+            this.TextureFixButton.Name = "TextureFixButton";
+            this.TextureFixButton.Size = new System.Drawing.Size(152, 36);
+            this.TextureFixButton.TabIndex = 9;
+            this.TextureFixButton.Text = "Jef";
+            this.BasicToolTip.SetToolTip(this.TextureFixButton, "Resets display settings to their defaults. ");
+            this.TextureFixButton.UseVisualStyleBackColor = true;
             // 
             // CityLauncher
             // 
@@ -2313,6 +2325,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(716, 752);
+            this.Controls.Add(this.TextureFixButton);
             this.Controls.Add(this.CPULabel);
             this.Controls.Add(this.GPULabel);
             this.Controls.Add(this.StartGameButton);
@@ -2514,5 +2527,6 @@
         public Button ApplySettingsButton;
         public Label GPULabel;
         public Label CPULabel;
+        private Button TextureFixButton;
     }
 }
