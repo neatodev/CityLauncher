@@ -192,6 +192,8 @@
             this.ManualModeButton = new System.Windows.Forms.Button();
             this.BasicToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.StartGameButton = new System.Windows.Forms.Button();
+            this.GPULabel = new System.Windows.Forms.Label();
+            this.CPULabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
@@ -2287,12 +2289,32 @@
             this.StartGameButton.UseVisualStyleBackColor = true;
             this.StartGameButton.Click += new System.EventHandler(this.StartGameButton_Click);
             // 
+            // GPULabel
+            // 
+            this.GPULabel.AutoSize = true;
+            this.GPULabel.Location = new System.Drawing.Point(455, 636);
+            this.GPULabel.Name = "GPULabel";
+            this.GPULabel.Size = new System.Drawing.Size(33, 15);
+            this.GPULabel.TabIndex = 6;
+            this.GPULabel.Text = "GPU:";
+            // 
+            // CPULabel
+            // 
+            this.CPULabel.AutoSize = true;
+            this.CPULabel.Location = new System.Drawing.Point(455, 608);
+            this.CPULabel.Name = "CPULabel";
+            this.CPULabel.Size = new System.Drawing.Size(33, 15);
+            this.CPULabel.TabIndex = 8;
+            this.CPULabel.Text = "CPU:";
+            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(716, 752);
+            this.Controls.Add(this.CPULabel);
+            this.Controls.Add(this.GPULabel);
             this.Controls.Add(this.StartGameButton);
             this.Controls.Add(this.ResetDisplayButton);
             this.Controls.Add(this.ManualModeButton);
@@ -2322,6 +2344,7 @@
             this.AboutTab.ResumeLayout(false);
             this.AboutTab.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -2489,5 +2512,7 @@
         private Label ShadowSoftnessLabel;
         public ComboBox ShadowSoftnessBox;
         public Button ApplySettingsButton;
+        public Label GPULabel;
+        public Label CPULabel;
     }
 }

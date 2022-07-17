@@ -20,6 +20,8 @@ namespace CityLauncher
 
         public static InputHandler InputHandler;
 
+        private static SystemHandler SystemHandler;
+
         /// <summary>
         ///     Replacement Application for the original Batman: Arkham City BmLauncher
         ///     Offers more configuration options, enables compatibility with High-Res Texture Packs
@@ -43,6 +45,9 @@ namespace CityLauncher
             FileHandler = new FileHandler();
             IniHandler = new IniHandler();
             InputHandler = new InputHandler();
+            SystemHandler = new SystemHandler();
+            MainWindow.GPULabel.Text = SystemHandler.GPUData;
+            MainWindow.CPULabel.Text = SystemHandler.CPUData;
             new IniReader().InitDisplay();
             new InputReader().InitControls();
 
