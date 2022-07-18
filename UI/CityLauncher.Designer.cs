@@ -164,7 +164,10 @@
             this.ForwardLabel = new System.Windows.Forms.Label();
             this.MiscTab = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.ShadowsTrackbar = new System.Windows.Forms.TrackBar();
+            this.MidtonesTrackbar = new System.Windows.Forms.TrackBar();
+            this.HighlightsTrackbar = new System.Windows.Forms.TrackBar();
+            this.SaturationTrackbar = new System.Windows.Forms.TrackBar();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -213,7 +216,10 @@
             this.ControlTab.SuspendLayout();
             this.MiscTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShadowsTrackbar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MidtonesTrackbar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HighlightsTrackbar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SaturationTrackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).BeginInit();
@@ -1931,6 +1937,7 @@
             // 
             // MiscTab
             // 
+            this.MiscTab.AutoScroll = true;
             this.MiscTab.Controls.Add(this.groupBox1);
             this.MiscTab.Controls.Add(this.MouseSensitivityValueLabel);
             this.MiscTab.Controls.Add(this.MouseSensitivityLabel);
@@ -1969,32 +1976,62 @@
             // groupBox1
             // 
             this.groupBox1.AutoSize = true;
-            this.groupBox1.Controls.Add(this.trackBar1);
+            this.groupBox1.Controls.Add(this.ShadowsTrackbar);
+            this.groupBox1.Controls.Add(this.MidtonesTrackbar);
+            this.groupBox1.Controls.Add(this.HighlightsTrackbar);
+            this.groupBox1.Controls.Add(this.SaturationTrackbar);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Location = new System.Drawing.Point(6, 275);
+            this.groupBox1.Location = new System.Drawing.Point(9, 259);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(697, 210);
+            this.groupBox1.Size = new System.Drawing.Size(678, 210);
             this.groupBox1.TabIndex = 165;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Advanced Color Settings";
             // 
-            // trackBar1
+            // ShadowsTrackbar
             // 
-            this.trackBar1.Location = new System.Drawing.Point(137, 40);
-            this.trackBar1.Maximum = 125;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(489, 45);
-            this.trackBar1.TabIndex = 166;
-            this.trackBar1.Value = 1;
+            this.ShadowsTrackbar.Location = new System.Drawing.Point(140, 133);
+            this.ShadowsTrackbar.Maximum = 125;
+            this.ShadowsTrackbar.Name = "ShadowsTrackbar";
+            this.ShadowsTrackbar.Size = new System.Drawing.Size(532, 45);
+            this.ShadowsTrackbar.TabIndex = 172;
+            this.ShadowsTrackbar.Value = 1;
+            // 
+            // MidtonesTrackbar
+            // 
+            this.MidtonesTrackbar.Location = new System.Drawing.Point(140, 98);
+            this.MidtonesTrackbar.Maximum = 125;
+            this.MidtonesTrackbar.Name = "MidtonesTrackbar";
+            this.MidtonesTrackbar.Size = new System.Drawing.Size(532, 45);
+            this.MidtonesTrackbar.TabIndex = 171;
+            this.MidtonesTrackbar.Value = 1;
+            // 
+            // HighlightsTrackbar
+            // 
+            this.HighlightsTrackbar.Location = new System.Drawing.Point(140, 64);
+            this.HighlightsTrackbar.Maximum = 125;
+            this.HighlightsTrackbar.Name = "HighlightsTrackbar";
+            this.HighlightsTrackbar.Size = new System.Drawing.Size(532, 45);
+            this.HighlightsTrackbar.TabIndex = 170;
+            this.HighlightsTrackbar.Value = 1;
+            // 
+            // SaturationTrackbar
+            // 
+            this.SaturationTrackbar.Location = new System.Drawing.Point(140, 32);
+            this.SaturationTrackbar.Maximum = 125;
+            this.SaturationTrackbar.Name = "SaturationTrackbar";
+            this.SaturationTrackbar.Size = new System.Drawing.Size(532, 45);
+            this.SaturationTrackbar.TabIndex = 166;
+            this.SaturationTrackbar.Value = 1;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(51, 152);
+            this.label14.Location = new System.Drawing.Point(51, 133);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(80, 23);
             this.label14.TabIndex = 169;
@@ -2004,7 +2041,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(48, 108);
+            this.label13.Location = new System.Drawing.Point(51, 98);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(83, 23);
             this.label13.TabIndex = 168;
@@ -2014,7 +2051,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(45, 74);
+            this.label12.Location = new System.Drawing.Point(48, 64);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(86, 23);
             this.label12.TabIndex = 167;
@@ -2024,7 +2061,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(40, 40);
+            this.label9.Location = new System.Drawing.Point(43, 32);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(91, 23);
             this.label9.TabIndex = 166;
@@ -2035,7 +2072,7 @@
             this.MouseSensitivityValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(667, 207);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(667, 191);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2060,7 +2097,7 @@
             this.MouseSensitivityTrackbar.Maximum = 100;
             this.MouseSensitivityTrackbar.Minimum = 1;
             this.MouseSensitivityTrackbar.Name = "MouseSensitivityTrackbar";
-            this.MouseSensitivityTrackbar.Size = new System.Drawing.Size(489, 45);
+            this.MouseSensitivityTrackbar.Size = new System.Drawing.Size(472, 45);
             this.MouseSensitivityTrackbar.TabIndex = 150;
             this.BasicToolTip.SetToolTip(this.MouseSensitivityTrackbar, "Higher values will increase in-game mouse sensitivity. \'30\' is the vanilla value." +
         "");
@@ -2072,7 +2109,7 @@
             this.CustomFoV2ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(667, 164);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(667, 148);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2095,7 +2132,7 @@
             this.CustomFoV2Trackbar.Maximum = 150;
             this.CustomFoV2Trackbar.Minimum = 75;
             this.CustomFoV2Trackbar.Name = "CustomFoV2Trackbar";
-            this.CustomFoV2Trackbar.Size = new System.Drawing.Size(489, 45);
+            this.CustomFoV2Trackbar.Size = new System.Drawing.Size(472, 45);
             this.CustomFoV2Trackbar.TabIndex = 161;
             this.CustomFoV2Trackbar.Value = 75;
             this.CustomFoV2Trackbar.Scroll += new System.EventHandler(this.CustomFoV2Trackbar_Scroll);
@@ -2153,7 +2190,7 @@
             this.CustomFoV1ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV1ValueLabel.AutoSize = true;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(667, 122);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(667, 106);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV1ValueLabel.TabIndex = 156;
@@ -2334,7 +2371,7 @@
             this.CustomFoV1Trackbar.Maximum = 150;
             this.CustomFoV1Trackbar.Minimum = 75;
             this.CustomFoV1Trackbar.Name = "CustomFoV1Trackbar";
-            this.CustomFoV1Trackbar.Size = new System.Drawing.Size(489, 45);
+            this.CustomFoV1Trackbar.Size = new System.Drawing.Size(472, 45);
             this.CustomFoV1Trackbar.TabIndex = 164;
             this.CustomFoV1Trackbar.Value = 75;
             this.CustomFoV1Trackbar.Scroll += new System.EventHandler(this.CustomFoV1Trackbar_Scroll);
@@ -2476,7 +2513,10 @@
             this.MiscTab.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShadowsTrackbar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MidtonesTrackbar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HighlightsTrackbar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SaturationTrackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).EndInit();
@@ -2663,6 +2703,9 @@
         private Label label13;
         private Label label12;
         private Label label9;
-        public TrackBar trackBar1;
+        public TrackBar SaturationTrackbar;
+        public TrackBar HighlightsTrackbar;
+        public TrackBar MidtonesTrackbar;
+        public TrackBar ShadowsTrackbar;
     }
 }

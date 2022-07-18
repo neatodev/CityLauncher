@@ -11,6 +11,7 @@ namespace CityLauncher
         {
             InitDisplayBasic();
             InitDisplayAdvanced();
+            InitColors();
             Program.MainWindow.DisplaySettingChanged = false;
             Program.MainWindow.ApplySettingsButton.Enabled = false;
             Nlog.Info("InitDisplay - Sucessfully initialized display settings.");
@@ -421,8 +422,21 @@ namespace CityLauncher
             {
                 Program.MainWindow.ReflectionBox.Checked = false;
             }
+        }
+        private void InitColors()
+        {
+            // Saturation
+            Program.MainWindow.SaturationTrackbar.Value = Program.IniHandler.ColorIniToLauncher(IniHandler.BmEngineData["Engine.Player"]["PP_DesaturationMultiplier"]);
+
+            // Highlights
+            Program.MainWindow.HighlightsTrackbar.Value = Program.IniHandler.ColorIniToLauncher(IniHandler.BmEngineData["Engine.Player"]["PP_HighlightsMultiplier"]);
+
+            // Midtones
+            Program.MainWindow.MidtonesTrackbar.Value = Program.IniHandler.ColorIniToLauncher(IniHandler.BmEngineData["Engine.Player"]["PP_MidTonesMultiplier"]);
+
+            // Shadows
+            Program.MainWindow.ShadowsTrackbar.Value = Program.IniHandler.ColorIniToLauncher(IniHandler.BmEngineData["Engine.Player"]["PP_ShadowsMultiplier"]);
 
         }
-
     }
 }

@@ -54,6 +54,9 @@ dotnet_diagnostic.S1185.severity = none
 # S101: Types should be named in PascalCase
 dotnet_diagnostic.S101.severity = none
 
+# IDE0004: Remove Unnecessary Cast
+dotnet_diagnostic.IDE0004.severity = none
+
 [*.{cs,vb}]
 #### Naming styles ####
 

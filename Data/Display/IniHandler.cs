@@ -102,6 +102,18 @@ namespace CityLauncher
             BmEngineData.Sections.RemoveSection("AppCompat");
         }
 
+        public int ColorIniToLauncher(string input)
+        {
+            double inp = double.Parse(input);
+
+            return (int)((inp / 0.04) - 125) * (-1);
+        }
+
+        public string ColorLauncherToIni(int input)
+        {
+            return ((double)(125 - input) * 0.04).ToString();
+        }
+
         public void ResetDisplay()
         {
             Program.FileHandler.BmEngine.IsReadOnly = false;
