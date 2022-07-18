@@ -32,9 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CityLauncher));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DisplayTab = new System.Windows.Forms.TabPage();
+            this.PresetBox = new System.Windows.Forms.GroupBox();
             this.DarkKnightPresetButton = new System.Windows.Forms.Button();
-            this.OptimizedPresetButton = new System.Windows.Forms.Button();
             this.VanillaPresetButton = new System.Windows.Forms.Button();
+            this.OptimizedPresetButton = new System.Windows.Forms.Button();
             this.AdvancedDisplayGroupBox = new System.Windows.Forms.GroupBox();
             this.ShadowSoftnessLabel = new System.Windows.Forms.Label();
             this.ShadowSoftnessBox = new System.Windows.Forms.ComboBox();
@@ -200,6 +201,7 @@
             this.CPULabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
+            this.PresetBox.SuspendLayout();
             this.AdvancedDisplayGroupBox.SuspendLayout();
             this.BasicDisplayGroupBox.SuspendLayout();
             this.ControlTab.SuspendLayout();
@@ -229,9 +231,7 @@
             // DisplayTab
             // 
             this.DisplayTab.AutoScroll = true;
-            this.DisplayTab.Controls.Add(this.DarkKnightPresetButton);
-            this.DisplayTab.Controls.Add(this.OptimizedPresetButton);
-            this.DisplayTab.Controls.Add(this.VanillaPresetButton);
+            this.DisplayTab.Controls.Add(this.PresetBox);
             this.DisplayTab.Controls.Add(this.AdvancedDisplayGroupBox);
             this.DisplayTab.Controls.Add(this.BasicDisplayGroupBox);
             this.DisplayTab.Location = new System.Drawing.Point(4, 38);
@@ -242,41 +242,54 @@
             this.DisplayTab.Text = "Display";
             this.DisplayTab.UseVisualStyleBackColor = true;
             // 
+            // PresetBox
+            // 
+            this.PresetBox.AutoSize = true;
+            this.PresetBox.Controls.Add(this.DarkKnightPresetButton);
+            this.PresetBox.Controls.Add(this.VanillaPresetButton);
+            this.PresetBox.Controls.Add(this.OptimizedPresetButton);
+            this.PresetBox.Location = new System.Drawing.Point(3, 202);
+            this.PresetBox.Name = "PresetBox";
+            this.PresetBox.Size = new System.Drawing.Size(683, 101);
+            this.PresetBox.TabIndex = 17;
+            this.PresetBox.TabStop = false;
+            this.PresetBox.Text = "Graphics Presets";
+            // 
             // DarkKnightPresetButton
             // 
-            this.DarkKnightPresetButton.Location = new System.Drawing.Point(336, 221);
+            this.DarkKnightPresetButton.Location = new System.Drawing.Point(463, 32);
             this.DarkKnightPresetButton.Name = "DarkKnightPresetButton";
-            this.DarkKnightPresetButton.Size = new System.Drawing.Size(178, 37);
+            this.DarkKnightPresetButton.Size = new System.Drawing.Size(214, 37);
             this.DarkKnightPresetButton.TabIndex = 17;
-            this.DarkKnightPresetButton.Text = "Dark Knight Preset";
+            this.DarkKnightPresetButton.Text = "Dark Knight";
             this.BasicToolTip.SetToolTip(this.DarkKnightPresetButton, "This disables the read-only flag of the configuration files to allow for manual e" +
         "diting.");
             this.DarkKnightPresetButton.UseVisualStyleBackColor = true;
             this.DarkKnightPresetButton.Click += new System.EventHandler(this.DarkKnightPresetButton_Click);
             // 
-            // OptimizedPresetButton
-            // 
-            this.OptimizedPresetButton.Location = new System.Drawing.Point(163, 221);
-            this.OptimizedPresetButton.Name = "OptimizedPresetButton";
-            this.OptimizedPresetButton.Size = new System.Drawing.Size(167, 37);
-            this.OptimizedPresetButton.TabIndex = 16;
-            this.OptimizedPresetButton.Text = "Optimized Preset";
-            this.BasicToolTip.SetToolTip(this.OptimizedPresetButton, "This disables the read-only flag of the configuration files to allow for manual e" +
-        "diting.");
-            this.OptimizedPresetButton.UseVisualStyleBackColor = true;
-            this.OptimizedPresetButton.Click += new System.EventHandler(this.button2_Click);
-            // 
             // VanillaPresetButton
             // 
-            this.VanillaPresetButton.Location = new System.Drawing.Point(18, 221);
+            this.VanillaPresetButton.Location = new System.Drawing.Point(6, 32);
             this.VanillaPresetButton.Name = "VanillaPresetButton";
-            this.VanillaPresetButton.Size = new System.Drawing.Size(139, 37);
+            this.VanillaPresetButton.Size = new System.Drawing.Size(217, 37);
             this.VanillaPresetButton.TabIndex = 10;
-            this.VanillaPresetButton.Text = "Vanilla Preset";
+            this.VanillaPresetButton.Text = "Vanilla";
             this.BasicToolTip.SetToolTip(this.VanillaPresetButton, "This disables the read-only flag of the configuration files to allow for manual e" +
         "diting.");
             this.VanillaPresetButton.UseVisualStyleBackColor = true;
             this.VanillaPresetButton.Click += new System.EventHandler(this.VanillaPresetButton_Click);
+            // 
+            // OptimizedPresetButton
+            // 
+            this.OptimizedPresetButton.Location = new System.Drawing.Point(236, 32);
+            this.OptimizedPresetButton.Name = "OptimizedPresetButton";
+            this.OptimizedPresetButton.Size = new System.Drawing.Size(214, 37);
+            this.OptimizedPresetButton.TabIndex = 16;
+            this.OptimizedPresetButton.Text = "Optimized";
+            this.BasicToolTip.SetToolTip(this.OptimizedPresetButton, "This disables the read-only flag of the configuration files to allow for manual e" +
+        "diting.");
+            this.OptimizedPresetButton.UseVisualStyleBackColor = true;
+            this.OptimizedPresetButton.Click += new System.EventHandler(this.button2_Click);
             // 
             // AdvancedDisplayGroupBox
             // 
@@ -311,9 +324,9 @@
             this.AdvancedDisplayGroupBox.Controls.Add(this.AntiAliasingLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.MaxShadowLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.AnisotropyLabel);
-            this.AdvancedDisplayGroupBox.Location = new System.Drawing.Point(3, 273);
+            this.AdvancedDisplayGroupBox.Location = new System.Drawing.Point(3, 309);
             this.AdvancedDisplayGroupBox.Name = "AdvancedDisplayGroupBox";
-            this.AdvancedDisplayGroupBox.Size = new System.Drawing.Size(675, 290);
+            this.AdvancedDisplayGroupBox.Size = new System.Drawing.Size(683, 290);
             this.AdvancedDisplayGroupBox.TabIndex = 15;
             this.AdvancedDisplayGroupBox.TabStop = false;
             this.AdvancedDisplayGroupBox.Text = "Advanced";
@@ -779,7 +792,7 @@
             this.BasicDisplayGroupBox.Controls.Add(this.FullscreenLabel);
             this.BasicDisplayGroupBox.Location = new System.Drawing.Point(3, 3);
             this.BasicDisplayGroupBox.Name = "BasicDisplayGroupBox";
-            this.BasicDisplayGroupBox.Size = new System.Drawing.Size(675, 193);
+            this.BasicDisplayGroupBox.Size = new System.Drawing.Size(683, 193);
             this.BasicDisplayGroupBox.TabIndex = 13;
             this.BasicDisplayGroupBox.TabStop = false;
             this.BasicDisplayGroupBox.Text = "Basic";
@@ -1111,7 +1124,7 @@
             this.ResetControlButton.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ResetControlButton.Location = new System.Drawing.Point(422, 587);
             this.ResetControlButton.Name = "ResetControlButton";
-            this.ResetControlButton.Size = new System.Drawing.Size(220, 53);
+            this.ResetControlButton.Size = new System.Drawing.Size(220, 62);
             this.ResetControlButton.TabIndex = 3;
             this.ResetControlButton.Text = "Reset Controls";
             this.BasicToolTip.SetToolTip(this.ResetControlButton, "Reverts keyboard mapping to vanilla setting. Will affect miscellaneous keys.");
@@ -2385,6 +2398,7 @@
             this.tabControl1.ResumeLayout(false);
             this.DisplayTab.ResumeLayout(false);
             this.DisplayTab.PerformLayout();
+            this.PresetBox.ResumeLayout(false);
             this.AdvancedDisplayGroupBox.ResumeLayout(false);
             this.AdvancedDisplayGroupBox.PerformLayout();
             this.BasicDisplayGroupBox.ResumeLayout(false);
@@ -2573,5 +2587,6 @@
         private Button DarkKnightPresetButton;
         private Button OptimizedPresetButton;
         private Button VanillaPresetButton;
+        private GroupBox PresetBox;
     }
 }
