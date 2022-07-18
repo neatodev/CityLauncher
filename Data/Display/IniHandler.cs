@@ -41,7 +41,6 @@ namespace CityLauncher
             BmEngineData.Sections.RemoveSection("Core.System");
             BmEngineData.Sections.RemoveSection("Engine.Client");
             BmEngineData.Sections.RemoveSection("WinDrv.WindowsClient");
-            BmEngineData.Sections.RemoveSection("Engine.Player");
             BmEngineData.Sections.RemoveSection("IpDrv.TcpNetDriver");
             BmEngineData.Sections.RemoveSection("IpServer.UdpServerQuery");
             BmEngineData.Sections.RemoveSection("IpDrv.UdpBeacon");
