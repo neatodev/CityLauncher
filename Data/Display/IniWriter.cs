@@ -30,6 +30,7 @@ namespace CityLauncher
             Program.FileHandler.BmInput.IsReadOnly = false;
             WriteBmEngineBasic();
             WriteBmEngineAdvanced();
+            WriteColors();
             WriteToTempFile();
             MergeBmEngine();
             WriteToUserEngine();
@@ -556,6 +557,21 @@ namespace CityLauncher
                 IniHandler.BmEngineData["SystemSettings"]["Reflections"] = "False";
             }
             Nlog.Info("WriteBmEngineAdvanced - Set Reflections to {0}", IniHandler.BmEngineData["SystemSettings"]["Reflections"]);
+        }
+
+        private void WriteColors()
+        {
+            // Saturation
+            IniHandler.BmEngineData["Engine.Player"]["PP_DesaturationMultiplier"] = Program.IniHandler.ColorLauncherToIni(Program.MainWindow.SaturationTrackbar.Value);
+
+            // Highlights
+            IniHandler.BmEngineData["Engine.Player"]["PP_HighlightsMultiplier"] = Program.IniHandler.ColorLauncherToIni(Program.MainWindow.HighlightsTrackbar.Value);
+
+            // Midtones
+            IniHandler.BmEngineData["Engine.Player"]["PP_MidTonesMultiplier"] = Program.IniHandler.ColorLauncherToIni(Program.MainWindow.MidtonesTrackbar.Value);
+
+            // Shadows
+            IniHandler.BmEngineData["Engine.Player"]["PP_ShadowsMultiplier"] = Program.IniHandler.ColorLauncherToIni(Program.MainWindow.ShadowsTrackbar.Value);
         }
     }
 }

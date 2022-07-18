@@ -111,7 +111,12 @@ namespace CityLauncher
 
         public string ColorLauncherToIni(int input)
         {
-            return ((double)(125 - input) * 0.04).ToString();
+            string Affix = "";
+            if ((double)(125 - input) * 0.04 % 1 == 0)
+            {
+                Affix = ".00";
+            }
+            return ((double)(125 - input) * 0.04).ToString() + Affix;
         }
 
         public void ResetDisplay()
