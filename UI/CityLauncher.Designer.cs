@@ -262,7 +262,7 @@
             this.PresetBox.Controls.Add(this.DarkKnightPresetButton);
             this.PresetBox.Controls.Add(this.VanillaPresetButton);
             this.PresetBox.Controls.Add(this.OptimizedPresetButton);
-            this.PresetBox.Location = new System.Drawing.Point(3, 202);
+            this.PresetBox.Location = new System.Drawing.Point(3, 232);
             this.PresetBox.Name = "PresetBox";
             this.PresetBox.Size = new System.Drawing.Size(683, 101);
             this.PresetBox.TabIndex = 17;
@@ -332,7 +332,7 @@
             this.AdvancedDisplayGroupBox.Controls.Add(this.AntiAliasingLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.MaxShadowLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.AnisotropyLabel);
-            this.AdvancedDisplayGroupBox.Location = new System.Drawing.Point(3, 309);
+            this.AdvancedDisplayGroupBox.Location = new System.Drawing.Point(3, 339);
             this.AdvancedDisplayGroupBox.Name = "AdvancedDisplayGroupBox";
             this.AdvancedDisplayGroupBox.Size = new System.Drawing.Size(683, 290);
             this.AdvancedDisplayGroupBox.TabIndex = 15;
@@ -788,6 +788,7 @@
             this.BasicDisplayGroupBox.Controls.Add(this.Dx11Box);
             this.BasicDisplayGroupBox.Controls.Add(this.LanguageBox);
             this.BasicDisplayGroupBox.Controls.Add(this.FrameCapTextBox);
+            this.BasicDisplayGroupBox.Controls.Add(this.ResetDisplayButton);
             this.BasicDisplayGroupBox.Controls.Add(this.ResolutionBox);
             this.BasicDisplayGroupBox.Controls.Add(this.VsyncBox);
             this.BasicDisplayGroupBox.Controls.Add(this.FullscreenBox);
@@ -800,7 +801,7 @@
             this.BasicDisplayGroupBox.Controls.Add(this.FullscreenLabel);
             this.BasicDisplayGroupBox.Location = new System.Drawing.Point(3, 3);
             this.BasicDisplayGroupBox.Name = "BasicDisplayGroupBox";
-            this.BasicDisplayGroupBox.Size = new System.Drawing.Size(683, 193);
+            this.BasicDisplayGroupBox.Size = new System.Drawing.Size(683, 225);
             this.BasicDisplayGroupBox.TabIndex = 13;
             this.BasicDisplayGroupBox.TabStop = false;
             this.BasicDisplayGroupBox.Text = "Basic";
@@ -811,7 +812,7 @@
             this.SkipIntroBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SkipIntroBox.Enabled = false;
             this.SkipIntroBox.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SkipIntroBox.Location = new System.Drawing.Point(463, 134);
+            this.SkipIntroBox.Location = new System.Drawing.Point(65, 166);
             this.SkipIntroBox.Name = "SkipIntroBox";
             this.SkipIntroBox.Size = new System.Drawing.Size(206, 27);
             this.SkipIntroBox.TabIndex = 16;
@@ -2401,9 +2402,9 @@
             // 
             // ResetDisplayButton
             // 
-            this.ResetDisplayButton.Location = new System.Drawing.Point(437, 551);
+            this.ResetDisplayButton.Location = new System.Drawing.Point(517, 134);
             this.ResetDisplayButton.Name = "ResetDisplayButton";
-            this.ResetDisplayButton.Size = new System.Drawing.Size(152, 36);
+            this.ResetDisplayButton.Size = new System.Drawing.Size(152, 59);
             this.ResetDisplayButton.TabIndex = 4;
             this.ResetDisplayButton.Text = "Reset Display";
             this.BasicToolTip.SetToolTip(this.ResetDisplayButton, "Resets display settings to their defaults. ");
@@ -2488,7 +2489,6 @@
             this.Controls.Add(this.CPULabel);
             this.Controls.Add(this.GPULabel);
             this.Controls.Add(this.StartGameButton);
-            this.Controls.Add(this.ResetDisplayButton);
             this.Controls.Add(this.ManualModeButton);
             this.Controls.Add(this.ApplySettingsButton);
             this.Controls.Add(this.tabControl1);
