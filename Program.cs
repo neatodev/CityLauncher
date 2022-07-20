@@ -22,8 +22,6 @@ namespace CityLauncher
 
         public static InputHandler InputHandler;
 
-        private static SystemHandler SystemHandler;
-
         [DllImport("user32.dll")]
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool SetForegroundWindow(IntPtr hWnd);
@@ -70,7 +68,7 @@ namespace CityLauncher
             FileHandler = new FileHandler();
             IniHandler = new IniHandler();
             InputHandler = new InputHandler();
-            SystemHandler = new SystemHandler();
+            var SystemHandler = new SystemHandler();
             MainWindow.GPULabel.Text = SystemHandler.GPUData;
             MainWindow.CPULabel.Text = SystemHandler.CPUData;
             new IniReader().InitDisplay();
