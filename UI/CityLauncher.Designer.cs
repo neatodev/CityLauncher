@@ -164,7 +164,9 @@
             this.BackwardLabel = new System.Windows.Forms.Label();
             this.ForwardLabel = new System.Windows.Forms.Label();
             this.MiscTab = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.AdvancedColorBox = new System.Windows.Forms.GroupBox();
+            this.LowContrastColorButton = new System.Windows.Forms.Button();
+            this.HighContrastColorButton = new System.Windows.Forms.Button();
             this.ShadowsValueLabel = new System.Windows.Forms.Label();
             this.MidtonesValueLabel = new System.Windows.Forms.Label();
             this.HighlightsValueLabel = new System.Windows.Forms.Label();
@@ -223,7 +225,7 @@
             this.BasicDisplayGroupBox.SuspendLayout();
             this.ControlTab.SuspendLayout();
             this.MiscTab.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.AdvancedColorBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShadowsTrackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MidtonesTrackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HighlightsTrackbar)).BeginInit();
@@ -1958,7 +1960,7 @@
             // MiscTab
             // 
             this.MiscTab.AutoScroll = true;
-            this.MiscTab.Controls.Add(this.groupBox1);
+            this.MiscTab.Controls.Add(this.AdvancedColorBox);
             this.MiscTab.Controls.Add(this.MouseSensitivityValueLabel);
             this.MiscTab.Controls.Add(this.MouseSensitivityLabel);
             this.MiscTab.Controls.Add(this.MouseSensitivityTrackbar);
@@ -1993,31 +1995,56 @@
             this.MiscTab.Text = "Misc";
             this.MiscTab.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // AdvancedColorBox
             // 
-            this.groupBox1.AutoSize = true;
-            this.groupBox1.Controls.Add(this.ShadowsValueLabel);
-            this.groupBox1.Controls.Add(this.MidtonesValueLabel);
-            this.groupBox1.Controls.Add(this.HighlightsValueLabel);
-            this.groupBox1.Controls.Add(this.SaturationValueLabel);
-            this.groupBox1.Controls.Add(this.MutedColorButton);
-            this.groupBox1.Controls.Add(this.VividColorButton);
-            this.groupBox1.Controls.Add(this.NoirColorButton);
-            this.groupBox1.Controls.Add(this.DefaultColorButton);
-            this.groupBox1.Controls.Add(this.ShadowsTrackbar);
-            this.groupBox1.Controls.Add(this.MidtonesTrackbar);
-            this.groupBox1.Controls.Add(this.HighlightsTrackbar);
-            this.groupBox1.Controls.Add(this.SaturationTrackbar);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Location = new System.Drawing.Point(9, 259);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(681, 324);
-            this.groupBox1.TabIndex = 165;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Advanced Color Settings";
+            this.AdvancedColorBox.AutoSize = true;
+            this.AdvancedColorBox.Controls.Add(this.LowContrastColorButton);
+            this.AdvancedColorBox.Controls.Add(this.HighContrastColorButton);
+            this.AdvancedColorBox.Controls.Add(this.ShadowsValueLabel);
+            this.AdvancedColorBox.Controls.Add(this.MidtonesValueLabel);
+            this.AdvancedColorBox.Controls.Add(this.HighlightsValueLabel);
+            this.AdvancedColorBox.Controls.Add(this.SaturationValueLabel);
+            this.AdvancedColorBox.Controls.Add(this.MutedColorButton);
+            this.AdvancedColorBox.Controls.Add(this.VividColorButton);
+            this.AdvancedColorBox.Controls.Add(this.NoirColorButton);
+            this.AdvancedColorBox.Controls.Add(this.DefaultColorButton);
+            this.AdvancedColorBox.Controls.Add(this.ShadowsTrackbar);
+            this.AdvancedColorBox.Controls.Add(this.MidtonesTrackbar);
+            this.AdvancedColorBox.Controls.Add(this.HighlightsTrackbar);
+            this.AdvancedColorBox.Controls.Add(this.SaturationTrackbar);
+            this.AdvancedColorBox.Controls.Add(this.label14);
+            this.AdvancedColorBox.Controls.Add(this.label13);
+            this.AdvancedColorBox.Controls.Add(this.label12);
+            this.AdvancedColorBox.Controls.Add(this.label9);
+            this.AdvancedColorBox.Enabled = false;
+            this.AdvancedColorBox.Location = new System.Drawing.Point(9, 259);
+            this.AdvancedColorBox.Name = "AdvancedColorBox";
+            this.AdvancedColorBox.Size = new System.Drawing.Size(681, 324);
+            this.AdvancedColorBox.TabIndex = 165;
+            this.AdvancedColorBox.TabStop = false;
+            this.AdvancedColorBox.Text = "Advanced Color Settings";
+            // 
+            // LowContrastColorButton
+            // 
+            this.LowContrastColorButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LowContrastColorButton.Location = new System.Drawing.Point(572, 32);
+            this.LowContrastColorButton.Name = "LowContrastColorButton";
+            this.LowContrastColorButton.Size = new System.Drawing.Size(103, 37);
+            this.LowContrastColorButton.TabIndex = 180;
+            this.LowContrastColorButton.Text = "Low\r\nContrast";
+            this.LowContrastColorButton.UseVisualStyleBackColor = true;
+            this.LowContrastColorButton.Click += new System.EventHandler(this.LowContrastColorButton_Click);
+            // 
+            // HighContrastColorButton
+            // 
+            this.HighContrastColorButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HighContrastColorButton.Location = new System.Drawing.Point(464, 32);
+            this.HighContrastColorButton.Name = "HighContrastColorButton";
+            this.HighContrastColorButton.Size = new System.Drawing.Size(102, 37);
+            this.HighContrastColorButton.TabIndex = 179;
+            this.HighContrastColorButton.Text = "High\r\nContrast";
+            this.HighContrastColorButton.UseVisualStyleBackColor = true;
+            this.HighContrastColorButton.Click += new System.EventHandler(this.HighContrastColorButton_Click);
             // 
             // ShadowsValueLabel
             // 
@@ -2069,39 +2096,43 @@
             // 
             // MutedColorButton
             // 
-            this.MutedColorButton.Location = new System.Drawing.Point(531, 32);
+            this.MutedColorButton.Location = new System.Drawing.Point(356, 32);
             this.MutedColorButton.Name = "MutedColorButton";
-            this.MutedColorButton.Size = new System.Drawing.Size(138, 37);
+            this.MutedColorButton.Size = new System.Drawing.Size(102, 37);
             this.MutedColorButton.TabIndex = 176;
             this.MutedColorButton.Text = "Muted";
             this.MutedColorButton.UseVisualStyleBackColor = true;
+            this.MutedColorButton.Click += new System.EventHandler(this.MutedColorButton_Click);
             // 
             // VividColorButton
             // 
-            this.VividColorButton.Location = new System.Drawing.Point(387, 32);
+            this.VividColorButton.Location = new System.Drawing.Point(248, 32);
             this.VividColorButton.Name = "VividColorButton";
-            this.VividColorButton.Size = new System.Drawing.Size(138, 37);
+            this.VividColorButton.Size = new System.Drawing.Size(102, 37);
             this.VividColorButton.TabIndex = 175;
             this.VividColorButton.Text = "Vivid";
             this.VividColorButton.UseVisualStyleBackColor = true;
+            this.VividColorButton.Click += new System.EventHandler(this.VividColorButton_Click);
             // 
             // NoirColorButton
             // 
-            this.NoirColorButton.Location = new System.Drawing.Point(243, 32);
+            this.NoirColorButton.Location = new System.Drawing.Point(140, 32);
             this.NoirColorButton.Name = "NoirColorButton";
-            this.NoirColorButton.Size = new System.Drawing.Size(138, 37);
+            this.NoirColorButton.Size = new System.Drawing.Size(102, 37);
             this.NoirColorButton.TabIndex = 174;
             this.NoirColorButton.Text = "Noir";
             this.NoirColorButton.UseVisualStyleBackColor = true;
+            this.NoirColorButton.Click += new System.EventHandler(this.NoirColorButton_Click);
             // 
             // DefaultColorButton
             // 
             this.DefaultColorButton.Location = new System.Drawing.Point(6, 32);
             this.DefaultColorButton.Name = "DefaultColorButton";
-            this.DefaultColorButton.Size = new System.Drawing.Size(231, 37);
+            this.DefaultColorButton.Size = new System.Drawing.Size(128, 37);
             this.DefaultColorButton.TabIndex = 173;
             this.DefaultColorButton.Text = "Default";
             this.DefaultColorButton.UseVisualStyleBackColor = true;
+            this.DefaultColorButton.Click += new System.EventHandler(this.DefaultColorButton_Click);
             // 
             // ShadowsTrackbar
             // 
@@ -2188,7 +2219,7 @@
             this.MouseSensitivityValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(623, 208);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(559, 208);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2225,7 +2256,7 @@
             this.CustomFoV2ValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(623, 164);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(559, 164);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2306,7 +2337,7 @@
             this.CustomFoV1ValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.CustomFoV1ValueLabel.AutoSize = true;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(623, 123);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(559, 123);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV1ValueLabel.TabIndex = 156;
@@ -2615,8 +2646,8 @@
             this.ControlTab.PerformLayout();
             this.MiscTab.ResumeLayout(false);
             this.MiscTab.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.AdvancedColorBox.ResumeLayout(false);
+            this.AdvancedColorBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShadowsTrackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MidtonesTrackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HighlightsTrackbar)).EndInit();
@@ -2802,7 +2833,6 @@
         private Button OptimizedPresetButton;
         private Button VanillaPresetButton;
         private GroupBox PresetBox;
-        private GroupBox groupBox1;
         private Label label14;
         private Label label13;
         private Label label12;
@@ -2819,5 +2849,8 @@
         public Label HighlightsValueLabel;
         public Label MidtonesValueLabel;
         public Label ShadowsValueLabel;
+        public GroupBox AdvancedColorBox;
+        private Button HighContrastColorButton;
+        private Button LowContrastColorButton;
     }
 }

@@ -246,6 +246,7 @@ namespace CityLauncher
             if (IniHandler.BmEngineData["SystemSettings"]["DepthOfField"] == "True")
             {
                 Program.MainWindow.DOFBox.Checked = true;
+                Program.MainWindow.AdvancedColorBox.Enabled = true;
             }
             else
             {

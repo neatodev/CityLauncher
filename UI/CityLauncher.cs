@@ -443,6 +443,14 @@ namespace CityLauncher
         private void DOFBox_CheckedChanged(object sender, EventArgs e)
         {
             DisplaySettingChanged = true;
+            if (DOFBox.Checked)
+            {
+                AdvancedColorBox.Enabled = true;
+            }
+            else
+            {
+                AdvancedColorBox.Enabled = false;
+            }
         }
 
         private void LightRayBox_CheckedChanged(object sender, EventArgs e)
@@ -518,16 +526,19 @@ namespace CityLauncher
         private void VanillaPresetButton_Click(object sender, EventArgs e)
         {
             PresetHandler.SetVanilla();
+            DisplaySettingChanged = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             PresetHandler.SetOptimized();
+            DisplaySettingChanged = true;
         }
 
         private void DarkKnightPresetButton_Click(object sender, EventArgs e)
         {
             PresetHandler.SetDarkKnight();
+            DisplaySettingChanged = true;
         }
 
         private void SaturationTrackbar_Scroll(object sender, EventArgs e)
@@ -551,6 +562,42 @@ namespace CityLauncher
         private void ShadowsTrackbar_Scroll(object sender, EventArgs e)
         {
             ShadowsValueLabel.Text = ShadowsTrackbar.Value.ToString() + "%";
+            DisplaySettingChanged = true;
+        }
+
+        private void DefaultColorButton_Click(object sender, EventArgs e)
+        {
+            PresetHandler.SetColorDefault();
+            DisplaySettingChanged = true;
+        }
+
+        private void NoirColorButton_Click(object sender, EventArgs e)
+        {
+            PresetHandler.SetColorNoir();
+            DisplaySettingChanged = true;
+        }
+
+        private void VividColorButton_Click(object sender, EventArgs e)
+        {
+            PresetHandler.SetColorVivid();
+            DisplaySettingChanged = true;
+        }
+
+        private void MutedColorButton_Click(object sender, EventArgs e)
+        {
+            PresetHandler.SetColorMuted();
+            DisplaySettingChanged = true;
+        }
+
+        private void HighContrastColorButton_Click(object sender, EventArgs e)
+        {
+            PresetHandler.SetColorHighContrast();
+            DisplaySettingChanged = true;
+        }
+
+        private void LowContrastColorButton_Click(object sender, EventArgs e)
+        {
+            PresetHandler.SetColorLowContrast();
             DisplaySettingChanged = true;
         }
     }

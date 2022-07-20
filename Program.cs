@@ -60,7 +60,6 @@ namespace CityLauncher
                     }
                 }
             }
-
         }
 
         private static void InitializeProgram()
@@ -76,7 +75,6 @@ namespace CityLauncher
             MainWindow.CPULabel.Text = SystemHandler.CPUData;
             new IniReader().InitDisplay();
             new InputReader().InitControls();
-
         }
 
         private static void SetupLogger()
