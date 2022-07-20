@@ -55,6 +55,7 @@ namespace CityLauncher
                         if (P.Id != Current.Id)
                         {
                             SetForegroundWindow(P.MainWindowHandle);
+                            break;
                         }
                     }
                 }
