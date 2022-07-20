@@ -529,5 +529,29 @@ namespace CityLauncher
         {
             PresetHandler.SetDarkKnight();
         }
+
+        private void SaturationTrackbar_Scroll(object sender, EventArgs e)
+        {
+            SaturationValueLabel.Text = SaturationTrackbar.Value.ToString() + "%";
+            DisplaySettingChanged = true;
+        }
+
+        private void HighlightsTrackbar_Scroll(object sender, EventArgs e)
+        {
+            HighlightsValueLabel.Text = HighlightsTrackbar.Value.ToString() + "%";
+            DisplaySettingChanged = true;
+        }
+
+        private void MidtonesTrackbar_Scroll(object sender, EventArgs e)
+        {
+            MidtonesValueLabel.Text = MidtonesTrackbar.Value.ToString() + "%";
+            DisplaySettingChanged = true;
+        }
+
+        private void ShadowsTrackbar_Scroll(object sender, EventArgs e)
+        {
+            ShadowsValueLabel.Text = ShadowsTrackbar.Value.ToString() + "%";
+            DisplaySettingChanged = true;
+        }
     }
 }

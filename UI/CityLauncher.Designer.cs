@@ -72,6 +72,7 @@
             this.Dx11Box = new System.Windows.Forms.CheckBox();
             this.LanguageBox = new System.Windows.Forms.ComboBox();
             this.FrameCapTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.ResetDisplayButton = new System.Windows.Forms.Button();
             this.ResolutionBox = new System.Windows.Forms.ComboBox();
             this.VsyncBox = new System.Windows.Forms.ComboBox();
             this.FullscreenBox = new System.Windows.Forms.ComboBox();
@@ -164,6 +165,14 @@
             this.ForwardLabel = new System.Windows.Forms.Label();
             this.MiscTab = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ShadowsValueLabel = new System.Windows.Forms.Label();
+            this.MidtonesValueLabel = new System.Windows.Forms.Label();
+            this.HighlightsValueLabel = new System.Windows.Forms.Label();
+            this.SaturationValueLabel = new System.Windows.Forms.Label();
+            this.MutedColorButton = new System.Windows.Forms.Button();
+            this.VividColorButton = new System.Windows.Forms.Button();
+            this.NoirColorButton = new System.Windows.Forms.Button();
+            this.DefaultColorButton = new System.Windows.Forms.Button();
             this.ShadowsTrackbar = new System.Windows.Forms.TrackBar();
             this.MidtonesTrackbar = new System.Windows.Forms.TrackBar();
             this.HighlightsTrackbar = new System.Windows.Forms.TrackBar();
@@ -200,7 +209,6 @@
             this.CustomFoV1Trackbar = new System.Windows.Forms.TrackBar();
             this.AboutTab = new System.Windows.Forms.TabPage();
             this.TempLabel = new System.Windows.Forms.LinkLabel();
-            this.ResetDisplayButton = new System.Windows.Forms.Button();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
             this.ManualModeButton = new System.Windows.Forms.Button();
             this.BasicToolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -875,6 +883,17 @@
         " to the default value (60).");
             this.FrameCapTextBox.ValidatingType = typeof(int);
             this.FrameCapTextBox.MaskChanged += new System.EventHandler(this.FrameCapTextBox_MaskChanged);
+            // 
+            // ResetDisplayButton
+            // 
+            this.ResetDisplayButton.Location = new System.Drawing.Point(517, 134);
+            this.ResetDisplayButton.Name = "ResetDisplayButton";
+            this.ResetDisplayButton.Size = new System.Drawing.Size(152, 59);
+            this.ResetDisplayButton.TabIndex = 4;
+            this.ResetDisplayButton.Text = "Reset Display";
+            this.BasicToolTip.SetToolTip(this.ResetDisplayButton, "Resets display settings to their defaults. ");
+            this.ResetDisplayButton.UseVisualStyleBackColor = true;
+            this.ResetDisplayButton.Click += new System.EventHandler(this.ResetDisplayButton_Click);
             // 
             // ResolutionBox
             // 
@@ -1977,6 +1996,14 @@
             // groupBox1
             // 
             this.groupBox1.AutoSize = true;
+            this.groupBox1.Controls.Add(this.ShadowsValueLabel);
+            this.groupBox1.Controls.Add(this.MidtonesValueLabel);
+            this.groupBox1.Controls.Add(this.HighlightsValueLabel);
+            this.groupBox1.Controls.Add(this.SaturationValueLabel);
+            this.groupBox1.Controls.Add(this.MutedColorButton);
+            this.groupBox1.Controls.Add(this.VividColorButton);
+            this.groupBox1.Controls.Add(this.NoirColorButton);
+            this.groupBox1.Controls.Add(this.DefaultColorButton);
             this.groupBox1.Controls.Add(this.ShadowsTrackbar);
             this.groupBox1.Controls.Add(this.MidtonesTrackbar);
             this.groupBox1.Controls.Add(this.HighlightsTrackbar);
@@ -1987,52 +2014,140 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Location = new System.Drawing.Point(9, 259);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(678, 210);
+            this.groupBox1.Size = new System.Drawing.Size(681, 324);
             this.groupBox1.TabIndex = 165;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Advanced Color Settings";
             // 
+            // ShadowsValueLabel
+            // 
+            this.ShadowsValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ShadowsValueLabel.AutoSize = true;
+            this.ShadowsValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShadowsValueLabel.Location = new System.Drawing.Point(630, 228);
+            this.ShadowsValueLabel.Name = "ShadowsValueLabel";
+            this.ShadowsValueLabel.Size = new System.Drawing.Size(25, 19);
+            this.ShadowsValueLabel.TabIndex = 178;
+            this.ShadowsValueLabel.Text = "00";
+            this.ShadowsValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // MidtonesValueLabel
+            // 
+            this.MidtonesValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.MidtonesValueLabel.AutoSize = true;
+            this.MidtonesValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MidtonesValueLabel.Location = new System.Drawing.Point(630, 177);
+            this.MidtonesValueLabel.Name = "MidtonesValueLabel";
+            this.MidtonesValueLabel.Size = new System.Drawing.Size(25, 19);
+            this.MidtonesValueLabel.TabIndex = 167;
+            this.MidtonesValueLabel.Text = "00";
+            this.MidtonesValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // HighlightsValueLabel
+            // 
+            this.HighlightsValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.HighlightsValueLabel.AutoSize = true;
+            this.HighlightsValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HighlightsValueLabel.Location = new System.Drawing.Point(630, 126);
+            this.HighlightsValueLabel.Name = "HighlightsValueLabel";
+            this.HighlightsValueLabel.Size = new System.Drawing.Size(25, 19);
+            this.HighlightsValueLabel.TabIndex = 177;
+            this.HighlightsValueLabel.Text = "00";
+            this.HighlightsValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // SaturationValueLabel
+            // 
+            this.SaturationValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.SaturationValueLabel.AutoSize = true;
+            this.SaturationValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SaturationValueLabel.Location = new System.Drawing.Point(630, 75);
+            this.SaturationValueLabel.Name = "SaturationValueLabel";
+            this.SaturationValueLabel.Size = new System.Drawing.Size(25, 19);
+            this.SaturationValueLabel.TabIndex = 166;
+            this.SaturationValueLabel.Text = "00";
+            this.SaturationValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // MutedColorButton
+            // 
+            this.MutedColorButton.Location = new System.Drawing.Point(531, 32);
+            this.MutedColorButton.Name = "MutedColorButton";
+            this.MutedColorButton.Size = new System.Drawing.Size(138, 37);
+            this.MutedColorButton.TabIndex = 176;
+            this.MutedColorButton.Text = "Muted";
+            this.MutedColorButton.UseVisualStyleBackColor = true;
+            // 
+            // VividColorButton
+            // 
+            this.VividColorButton.Location = new System.Drawing.Point(387, 32);
+            this.VividColorButton.Name = "VividColorButton";
+            this.VividColorButton.Size = new System.Drawing.Size(138, 37);
+            this.VividColorButton.TabIndex = 175;
+            this.VividColorButton.Text = "Vivid";
+            this.VividColorButton.UseVisualStyleBackColor = true;
+            // 
+            // NoirColorButton
+            // 
+            this.NoirColorButton.Location = new System.Drawing.Point(243, 32);
+            this.NoirColorButton.Name = "NoirColorButton";
+            this.NoirColorButton.Size = new System.Drawing.Size(138, 37);
+            this.NoirColorButton.TabIndex = 174;
+            this.NoirColorButton.Text = "Noir";
+            this.NoirColorButton.UseVisualStyleBackColor = true;
+            // 
+            // DefaultColorButton
+            // 
+            this.DefaultColorButton.Location = new System.Drawing.Point(6, 32);
+            this.DefaultColorButton.Name = "DefaultColorButton";
+            this.DefaultColorButton.Size = new System.Drawing.Size(231, 37);
+            this.DefaultColorButton.TabIndex = 173;
+            this.DefaultColorButton.Text = "Default";
+            this.DefaultColorButton.UseVisualStyleBackColor = true;
+            // 
             // ShadowsTrackbar
             // 
-            this.ShadowsTrackbar.Location = new System.Drawing.Point(140, 133);
+            this.ShadowsTrackbar.Location = new System.Drawing.Point(120, 247);
             this.ShadowsTrackbar.Maximum = 125;
             this.ShadowsTrackbar.Name = "ShadowsTrackbar";
-            this.ShadowsTrackbar.Size = new System.Drawing.Size(532, 45);
+            this.ShadowsTrackbar.Size = new System.Drawing.Size(552, 45);
             this.ShadowsTrackbar.TabIndex = 172;
             this.ShadowsTrackbar.Value = 1;
+            this.ShadowsTrackbar.Scroll += new System.EventHandler(this.ShadowsTrackbar_Scroll);
             // 
             // MidtonesTrackbar
             // 
-            this.MidtonesTrackbar.Location = new System.Drawing.Point(140, 98);
+            this.MidtonesTrackbar.Location = new System.Drawing.Point(120, 196);
             this.MidtonesTrackbar.Maximum = 125;
             this.MidtonesTrackbar.Name = "MidtonesTrackbar";
-            this.MidtonesTrackbar.Size = new System.Drawing.Size(532, 45);
+            this.MidtonesTrackbar.Size = new System.Drawing.Size(552, 45);
             this.MidtonesTrackbar.TabIndex = 171;
             this.MidtonesTrackbar.Value = 1;
+            this.MidtonesTrackbar.Scroll += new System.EventHandler(this.MidtonesTrackbar_Scroll);
             // 
             // HighlightsTrackbar
             // 
-            this.HighlightsTrackbar.Location = new System.Drawing.Point(140, 64);
+            this.HighlightsTrackbar.Location = new System.Drawing.Point(120, 145);
             this.HighlightsTrackbar.Maximum = 125;
             this.HighlightsTrackbar.Name = "HighlightsTrackbar";
-            this.HighlightsTrackbar.Size = new System.Drawing.Size(532, 45);
+            this.HighlightsTrackbar.Size = new System.Drawing.Size(552, 45);
             this.HighlightsTrackbar.TabIndex = 170;
             this.HighlightsTrackbar.Value = 1;
+            this.HighlightsTrackbar.Scroll += new System.EventHandler(this.HighlightsTrackbar_Scroll);
             // 
             // SaturationTrackbar
             // 
-            this.SaturationTrackbar.Location = new System.Drawing.Point(140, 32);
+            this.SaturationTrackbar.Location = new System.Drawing.Point(120, 94);
             this.SaturationTrackbar.Maximum = 125;
             this.SaturationTrackbar.Name = "SaturationTrackbar";
-            this.SaturationTrackbar.Size = new System.Drawing.Size(532, 45);
+            this.SaturationTrackbar.Size = new System.Drawing.Size(552, 45);
             this.SaturationTrackbar.TabIndex = 166;
             this.SaturationTrackbar.Value = 1;
+            this.SaturationTrackbar.Scroll += new System.EventHandler(this.SaturationTrackbar_Scroll);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(51, 133);
+            this.label14.Location = new System.Drawing.Point(34, 247);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(80, 23);
             this.label14.TabIndex = 169;
@@ -2042,7 +2157,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(51, 98);
+            this.label13.Location = new System.Drawing.Point(31, 196);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(83, 23);
             this.label13.TabIndex = 168;
@@ -2052,7 +2167,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(48, 64);
+            this.label12.Location = new System.Drawing.Point(28, 145);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(86, 23);
             this.label12.TabIndex = 167;
@@ -2062,7 +2177,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(43, 32);
+            this.label9.Location = new System.Drawing.Point(23, 94);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(91, 23);
             this.label9.TabIndex = 166;
@@ -2070,10 +2185,10 @@
             // 
             // MouseSensitivityValueLabel
             // 
-            this.MouseSensitivityValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MouseSensitivityValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(667, 191);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(623, 208);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2098,7 +2213,7 @@
             this.MouseSensitivityTrackbar.Maximum = 100;
             this.MouseSensitivityTrackbar.Minimum = 1;
             this.MouseSensitivityTrackbar.Name = "MouseSensitivityTrackbar";
-            this.MouseSensitivityTrackbar.Size = new System.Drawing.Size(472, 45);
+            this.MouseSensitivityTrackbar.Size = new System.Drawing.Size(467, 45);
             this.MouseSensitivityTrackbar.TabIndex = 150;
             this.BasicToolTip.SetToolTip(this.MouseSensitivityTrackbar, "Higher values will increase in-game mouse sensitivity. \'30\' is the vanilla value." +
         "");
@@ -2107,10 +2222,10 @@
             // 
             // CustomFoV2ValueLabel
             // 
-            this.CustomFoV2ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CustomFoV2ValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(667, 148);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(623, 164);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2133,7 +2248,7 @@
             this.CustomFoV2Trackbar.Maximum = 150;
             this.CustomFoV2Trackbar.Minimum = 75;
             this.CustomFoV2Trackbar.Name = "CustomFoV2Trackbar";
-            this.CustomFoV2Trackbar.Size = new System.Drawing.Size(472, 45);
+            this.CustomFoV2Trackbar.Size = new System.Drawing.Size(467, 45);
             this.CustomFoV2Trackbar.TabIndex = 161;
             this.CustomFoV2Trackbar.Value = 75;
             this.CustomFoV2Trackbar.Scroll += new System.EventHandler(this.CustomFoV2Trackbar_Scroll);
@@ -2188,10 +2303,10 @@
             // 
             // CustomFoV1ValueLabel
             // 
-            this.CustomFoV1ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CustomFoV1ValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.CustomFoV1ValueLabel.AutoSize = true;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(667, 106);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(623, 123);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV1ValueLabel.TabIndex = 156;
@@ -2372,7 +2487,7 @@
             this.CustomFoV1Trackbar.Maximum = 150;
             this.CustomFoV1Trackbar.Minimum = 75;
             this.CustomFoV1Trackbar.Name = "CustomFoV1Trackbar";
-            this.CustomFoV1Trackbar.Size = new System.Drawing.Size(472, 45);
+            this.CustomFoV1Trackbar.Size = new System.Drawing.Size(467, 45);
             this.CustomFoV1Trackbar.TabIndex = 164;
             this.CustomFoV1Trackbar.Value = 75;
             this.CustomFoV1Trackbar.Scroll += new System.EventHandler(this.CustomFoV1Trackbar_Scroll);
@@ -2399,17 +2514,6 @@
             this.TempLabel.Text = "Written by GPUnity and Neato\r\nDeveloped by Neato";
             this.TempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TempLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.TempLabel_LinkClicked);
-            // 
-            // ResetDisplayButton
-            // 
-            this.ResetDisplayButton.Location = new System.Drawing.Point(517, 134);
-            this.ResetDisplayButton.Name = "ResetDisplayButton";
-            this.ResetDisplayButton.Size = new System.Drawing.Size(152, 59);
-            this.ResetDisplayButton.TabIndex = 4;
-            this.ResetDisplayButton.Text = "Reset Display";
-            this.BasicToolTip.SetToolTip(this.ResetDisplayButton, "Resets display settings to their defaults. ");
-            this.ResetDisplayButton.UseVisualStyleBackColor = true;
-            this.ResetDisplayButton.Click += new System.EventHandler(this.ResetDisplayButton_Click);
             // 
             // ApplySettingsButton
             // 
@@ -2707,5 +2811,13 @@
         public TrackBar HighlightsTrackbar;
         public TrackBar MidtonesTrackbar;
         public TrackBar ShadowsTrackbar;
+        private Button DefaultColorButton;
+        private Button NoirColorButton;
+        private Button VividColorButton;
+        private Button MutedColorButton;
+        public Label SaturationValueLabel;
+        public Label HighlightsValueLabel;
+        public Label MidtonesValueLabel;
+        public Label ShadowsValueLabel;
     }
 }
