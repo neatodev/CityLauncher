@@ -15,6 +15,7 @@
             Program.MainWindow.LightRayBox.Checked = true;
             Program.MainWindow.LensFlareBox.Checked = true;
             Program.MainWindow.BloomBox.Checked = true;
+            Program.MainWindow.HbaoBox.SelectedIndex = 1;
             Program.MainWindow.AntiAliasingBox.SelectedIndex = 3;
             Program.MainWindow.MVSSBox.SelectedIndex = 0;
             Program.MainWindow.PhysXBox.SelectedIndex = 2;
@@ -39,6 +40,7 @@
             Program.MainWindow.LightRayBox.Checked = true;
             Program.MainWindow.LensFlareBox.Checked = true;
             Program.MainWindow.BloomBox.Checked = true;
+            Program.MainWindow.HbaoBox.SelectedIndex = 0;
             Program.MainWindow.AntiAliasingBox.SelectedIndex = 3;
             Program.MainWindow.MVSSBox.SelectedIndex = 2;
             Program.MainWindow.PhysXBox.SelectedIndex = 1;
@@ -63,13 +65,14 @@
             Program.MainWindow.LightRayBox.Checked = true;
             Program.MainWindow.LensFlareBox.Checked = true;
             Program.MainWindow.BloomBox.Checked = true;
+            Program.MainWindow.HbaoBox.SelectedIndex = 1;
             Program.MainWindow.AntiAliasingBox.SelectedIndex = 4;
             Program.MainWindow.MVSSBox.SelectedIndex = 3;
             Program.MainWindow.PhysXBox.SelectedIndex = 2;
             Program.MainWindow.PoolsizeBox.SelectedIndex = 4;
             Program.MainWindow.AnisoBox.SelectedIndex = 2;
             Program.MainWindow.TessellationBox.SelectedIndex = 4;
-            Program.MainWindow.ShadowQualityBox.SelectedIndex = 3;
+            Program.MainWindow.ShadowQualityBox.SelectedIndex = 2;
             Program.MainWindow.ShadowDrawDistBox.SelectedIndex = 3;
             Program.MainWindow.ShadowSoftnessBox.SelectedIndex = 3;
         }
