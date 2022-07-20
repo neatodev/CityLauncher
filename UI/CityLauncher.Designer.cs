@@ -2220,7 +2220,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(622, 207);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(639, 207);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2258,7 +2258,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(622, 163);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(639, 164);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2340,7 +2340,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV1ValueLabel.AutoSize = true;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(622, 122);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(639, 122);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV1ValueLabel.TabIndex = 156;

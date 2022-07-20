@@ -251,6 +251,7 @@ namespace CityLauncher
             else
             {
                 Program.MainWindow.DOFBox.Checked = false;
+                Program.MainWindow.AdvancedColorBox.Text = "Advanced Color Settings ('Depth of Field' must be enabled to edit.)";
             }
 
             // Motion Blur

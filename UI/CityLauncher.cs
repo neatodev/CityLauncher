@@ -446,10 +446,12 @@ namespace CityLauncher
             if (DOFBox.Checked)
             {
                 AdvancedColorBox.Enabled = true;
+                Program.MainWindow.AdvancedColorBox.Text = "Advanced Color Settings";
             }
             else
             {
                 AdvancedColorBox.Enabled = false;
+                Program.MainWindow.AdvancedColorBox.Text = "Advanced Color Settings ('Depth of Field' must be enabled to edit.)";
             }
         }
 
