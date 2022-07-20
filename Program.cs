@@ -1,7 +1,9 @@
 using NLog;
 using NLog.Config;
 using NLog.Targets;
+using System.Diagnostics;
 using System.Globalization;
+using System.Runtime.InteropServices;
 
 namespace CityLauncher
 {
@@ -22,6 +24,10 @@ namespace CityLauncher
 
         private static SystemHandler SystemHandler;
 
+        [DllImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        static extern bool SetForegroundWindow(IntPtr hWnd);
+
         /// <summary>
         ///     Replacement Application for the original Batman: Arkham City BmLauncher
         ///     Offers more configuration options, enables compatibility with High-Res Texture Packs
@@ -32,9 +38,28 @@ namespace CityLauncher
         [STAThread]
         static void Main()
         {
-            SetupLogger();
-            InitializeProgram();
-            Application.Run(MainWindow);
+            bool IsNewWindow = true;
+            using (Mutex mtx = new Mutex(true, "{BD4C408D-EF15-4C98-B792-C30D089E19D1}", out IsNewWindow))
+            {
+                if (IsNewWindow)
+                {
+                    SetupLogger();
+                    InitializeProgram();
+                    Application.Run(MainWindow);
+                }
+                else
+                {
+                    Process Current = Process.GetCurrentProcess();
+                    foreach (Process P in Process.GetProcessesByName(Current.ProcessName))
+                    {
+                        if (P.Id != Current.Id)
+                        {
+                            SetForegroundWindow(P.MainWindowHandle);
+                        }
+                    }
+                }
+            }
+
         }
 
         private static void InitializeProgram()

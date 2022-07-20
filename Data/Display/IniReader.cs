@@ -436,7 +436,6 @@ namespace CityLauncher
 
             // Shadows
             Program.MainWindow.ShadowsTrackbar.Value = Program.IniHandler.ColorIniToLauncher(IniHandler.BmEngineData["Engine.Player"]["PP_ShadowsMultiplier"]);
-
         }
     }
 }
