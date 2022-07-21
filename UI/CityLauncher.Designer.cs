@@ -2031,19 +2031,19 @@
             // 
             // LowContrastColorButton
             // 
-            this.LowContrastColorButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LowContrastColorButton.Location = new System.Drawing.Point(572, 32);
+            this.LowContrastColorButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LowContrastColorButton.Location = new System.Drawing.Point(356, 32);
             this.LowContrastColorButton.Name = "LowContrastColorButton";
-            this.LowContrastColorButton.Size = new System.Drawing.Size(103, 37);
+            this.LowContrastColorButton.Size = new System.Drawing.Size(102, 37);
             this.LowContrastColorButton.TabIndex = 180;
-            this.LowContrastColorButton.Text = "Low\r\nContrast";
+            this.LowContrastColorButton.Text = "Log Profile 1";
             this.LowContrastColorButton.UseVisualStyleBackColor = true;
             this.LowContrastColorButton.Click += new System.EventHandler(this.LowContrastColorButton_Click);
             // 
             // HighContrastColorButton
             // 
             this.HighContrastColorButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.HighContrastColorButton.Location = new System.Drawing.Point(464, 32);
+            this.HighContrastColorButton.Location = new System.Drawing.Point(572, 32);
             this.HighContrastColorButton.Name = "HighContrastColorButton";
             this.HighContrastColorButton.Size = new System.Drawing.Size(102, 37);
             this.HighContrastColorButton.TabIndex = 179;
@@ -2102,7 +2102,7 @@
             // 
             // MutedColorButton
             // 
-            this.MutedColorButton.Location = new System.Drawing.Point(356, 32);
+            this.MutedColorButton.Location = new System.Drawing.Point(248, 32);
             this.MutedColorButton.Name = "MutedColorButton";
             this.MutedColorButton.Size = new System.Drawing.Size(102, 37);
             this.MutedColorButton.TabIndex = 176;
@@ -2113,21 +2113,23 @@
             // 
             // VividColorButton
             // 
-            this.VividColorButton.Location = new System.Drawing.Point(248, 32);
+            this.VividColorButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.VividColorButton.Location = new System.Drawing.Point(464, 32);
             this.VividColorButton.Name = "VividColorButton";
             this.VividColorButton.Size = new System.Drawing.Size(102, 37);
             this.VividColorButton.TabIndex = 175;
-            this.VividColorButton.Text = "Vivid";
+            this.VividColorButton.Text = "Log Profile 2";
             this.VividColorButton.UseVisualStyleBackColor = true;
             this.VividColorButton.Click += new System.EventHandler(this.VividColorButton_Click);
             // 
             // NoirColorButton
             // 
+            this.NoirColorButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NoirColorButton.Location = new System.Drawing.Point(140, 32);
             this.NoirColorButton.Name = "NoirColorButton";
             this.NoirColorButton.Size = new System.Drawing.Size(102, 37);
             this.NoirColorButton.TabIndex = 174;
-            this.NoirColorButton.Text = "Noir";
+            this.NoirColorButton.Text = "Monochrome";
             this.BasicToolTip.SetToolTip(this.NoirColorButton, "Black and White.");
             this.NoirColorButton.UseVisualStyleBackColor = true;
             this.NoirColorButton.Click += new System.EventHandler(this.NoirColorButton_Click);
@@ -2229,7 +2231,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(622, 207);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(605, 207);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2267,7 +2269,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(622, 164);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(605, 164);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2349,7 +2351,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV1ValueLabel.AutoSize = true;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(622, 122);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(605, 122);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV1ValueLabel.TabIndex = 156;
