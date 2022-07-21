@@ -602,5 +602,10 @@ namespace CityLauncher
             PresetHandler.SetColorLowContrast();
             DisplaySettingChanged = true;
         }
+
+        private void DebugMenuButton_Click(object sender, EventArgs e)
+        {
+            new InputForm(DebugMenuButton).ShowDialog();
+        }
     }
 }

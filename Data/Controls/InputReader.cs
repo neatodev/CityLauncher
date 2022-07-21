@@ -172,6 +172,9 @@ namespace CityLauncher
             // View Map
             Program.MainWindow.MapButton.Text = TrimLine(UserInputLines[104]);
             Program.InputHandler.ButtonList.Add(Program.MainWindow.MapButton);
+            // Debug Menu
+            Program.MainWindow.DebugMenuButton.Text = TrimLine(UserInputLines[105]);
+            Program.InputHandler.ButtonList.Add(Program.MainWindow.DebugMenuButton);
             // Mouse Sensitivity
             Program.MainWindow.MouseSensitivityTrackbar.Value = Int16.Parse(BmInputLines[0].Substring(0, BmInputLines[0].LastIndexOf(".")));
             Program.MainWindow.MouseSensitivityValueLabel.Text = BmInputLines[0].Substring(0, BmInputLines[0].LastIndexOf("."));

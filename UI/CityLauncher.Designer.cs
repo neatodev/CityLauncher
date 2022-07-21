@@ -218,6 +218,8 @@
             this.StartGameButton = new System.Windows.Forms.Button();
             this.GPULabel = new System.Windows.Forms.Label();
             this.CPULabel = new System.Windows.Forms.Label();
+            this.DebugMenuLabel = new System.Windows.Forms.Label();
+            this.DebugMenuButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.PresetBox.SuspendLayout();
@@ -1965,6 +1967,8 @@
             // MiscTab
             // 
             this.MiscTab.AutoScroll = true;
+            this.MiscTab.Controls.Add(this.DebugMenuButton);
+            this.MiscTab.Controls.Add(this.DebugMenuLabel);
             this.MiscTab.Controls.Add(this.AdvancedColorBox);
             this.MiscTab.Controls.Add(this.MouseSensitivityValueLabel);
             this.MiscTab.Controls.Add(this.MouseSensitivityLabel);
@@ -2235,7 +2239,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(605, 207);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(588, 207);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2273,7 +2277,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(605, 164);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(588, 164);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2355,7 +2359,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV1ValueLabel.AutoSize = true;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(605, 122);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(588, 122);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV1ValueLabel.TabIndex = 156;
@@ -2632,6 +2636,29 @@
             this.CPULabel.TabIndex = 8;
             this.CPULabel.Text = "CPU:";
             // 
+            // DebugMenuLabel
+            // 
+            this.DebugMenuLabel.AutoSize = true;
+            this.DebugMenuLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DebugMenuLabel.Location = new System.Drawing.Point(497, 55);
+            this.DebugMenuLabel.Name = "DebugMenuLabel";
+            this.DebugMenuLabel.Size = new System.Drawing.Size(92, 19);
+            this.DebugMenuLabel.TabIndex = 166;
+            this.DebugMenuLabel.Text = "Debug Menu";
+            this.BasicToolTip.SetToolTip(this.DebugMenuLabel, "Access console commands for cheats and debugging.");
+            // 
+            // DebugMenuButton
+            // 
+            this.DebugMenuButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DebugMenuButton.Location = new System.Drawing.Point(595, 48);
+            this.DebugMenuButton.Name = "DebugMenuButton";
+            this.DebugMenuButton.Size = new System.Drawing.Size(83, 35);
+            this.DebugMenuButton.TabIndex = 167;
+            this.DebugMenuButton.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.DebugMenuButton, "Access console commands for cheats and debugging.");
+            this.DebugMenuButton.UseVisualStyleBackColor = true;
+            this.DebugMenuButton.Click += new System.EventHandler(this.DebugMenuButton_Click);
+            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -2870,5 +2897,7 @@
         public GroupBox AdvancedColorBox;
         private Button HighContrastColorButton;
         private Button LowContrastColorButton;
+        private Label DebugMenuLabel;
+        public Button DebugMenuButton;
     }
 }
