@@ -285,7 +285,8 @@
             this.DarkKnightPresetButton.Name = "DarkKnightPresetButton";
             this.DarkKnightPresetButton.Size = new System.Drawing.Size(214, 37);
             this.DarkKnightPresetButton.TabIndex = 17;
-            this.DarkKnightPresetButton.Text = "Dark Knight";
+            this.DarkKnightPresetButton.Text = "Ultra";
+            this.BasicToolTip.SetToolTip(this.DarkKnightPresetButton, "Graphics are pushed significantly.");
             this.DarkKnightPresetButton.UseVisualStyleBackColor = true;
             this.DarkKnightPresetButton.Click += new System.EventHandler(this.DarkKnightPresetButton_Click);
             // 
@@ -296,6 +297,8 @@
             this.VanillaPresetButton.Size = new System.Drawing.Size(217, 37);
             this.VanillaPresetButton.TabIndex = 10;
             this.VanillaPresetButton.Text = "Vanilla";
+            this.BasicToolTip.SetToolTip(this.VanillaPresetButton, "Maximum graphics settings the vanilla launcher permits (excluding Anti-Aliasing)." +
+        "\r\n- Use as a reference point or for comparisons with upgraded settings.");
             this.VanillaPresetButton.UseVisualStyleBackColor = true;
             this.VanillaPresetButton.Click += new System.EventHandler(this.VanillaPresetButton_Click);
             // 
@@ -306,6 +309,8 @@
             this.OptimizedPresetButton.Size = new System.Drawing.Size(214, 37);
             this.OptimizedPresetButton.TabIndex = 16;
             this.OptimizedPresetButton.Text = "Optimized";
+            this.BasicToolTip.SetToolTip(this.OptimizedPresetButton, "More balanced and performant settings.\r\n- Recommended baseline for improved graph" +
+        "ics.");
             this.OptimizedPresetButton.UseVisualStyleBackColor = true;
             this.OptimizedPresetButton.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -2043,6 +2048,7 @@
             this.HighContrastColorButton.Size = new System.Drawing.Size(102, 37);
             this.HighContrastColorButton.TabIndex = 179;
             this.HighContrastColorButton.Text = "High\r\nContrast";
+            this.BasicToolTip.SetToolTip(this.HighContrastColorButton, "Boosts highlights and lowers shadows for a more intense look.");
             this.HighContrastColorButton.UseVisualStyleBackColor = true;
             this.HighContrastColorButton.Click += new System.EventHandler(this.HighContrastColorButton_Click);
             // 
@@ -2101,6 +2107,7 @@
             this.MutedColorButton.Size = new System.Drawing.Size(102, 37);
             this.MutedColorButton.TabIndex = 176;
             this.MutedColorButton.Text = "Muted";
+            this.BasicToolTip.SetToolTip(this.MutedColorButton, "Tones down colors for a more cinematic look.\r\n");
             this.MutedColorButton.UseVisualStyleBackColor = true;
             this.MutedColorButton.Click += new System.EventHandler(this.MutedColorButton_Click);
             // 
@@ -2121,6 +2128,7 @@
             this.NoirColorButton.Size = new System.Drawing.Size(102, 37);
             this.NoirColorButton.TabIndex = 174;
             this.NoirColorButton.Text = "Noir";
+            this.BasicToolTip.SetToolTip(this.NoirColorButton, "Black and White.");
             this.NoirColorButton.UseVisualStyleBackColor = true;
             this.NoirColorButton.Click += new System.EventHandler(this.NoirColorButton_Click);
             // 
@@ -2131,6 +2139,7 @@
             this.DefaultColorButton.Size = new System.Drawing.Size(128, 37);
             this.DefaultColorButton.TabIndex = 173;
             this.DefaultColorButton.Text = "Default";
+            this.BasicToolTip.SetToolTip(this.DefaultColorButton, "Vanilla settings.");
             this.DefaultColorButton.UseVisualStyleBackColor = true;
             this.DefaultColorButton.Click += new System.EventHandler(this.DefaultColorButton_Click);
             // 
@@ -2220,7 +2229,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(639, 207);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(622, 207);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2258,7 +2267,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(639, 164);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(622, 164);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2340,7 +2349,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV1ValueLabel.AutoSize = true;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(639, 122);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(622, 122);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV1ValueLabel.TabIndex = 156;
