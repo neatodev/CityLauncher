@@ -2037,6 +2037,8 @@
             this.LowContrastColorButton.Size = new System.Drawing.Size(102, 37);
             this.LowContrastColorButton.TabIndex = 180;
             this.LowContrastColorButton.Text = "Log Profile 1";
+            this.BasicToolTip.SetToolTip(this.LowContrastColorButton, "Maintains more of the shadows and highlights and increases visible dynamic range." +
+        "\r\nSuggested for Special K HDR injection.");
             this.LowContrastColorButton.UseVisualStyleBackColor = true;
             this.LowContrastColorButton.Click += new System.EventHandler(this.LowContrastColorButton_Click);
             // 
@@ -2119,6 +2121,8 @@
             this.VividColorButton.Size = new System.Drawing.Size(102, 37);
             this.VividColorButton.TabIndex = 175;
             this.VividColorButton.Text = "Log Profile 2";
+            this.BasicToolTip.SetToolTip(this.VividColorButton, "Pushes visible dynamic range further over Log Profile 1.\r\nSuggested for Special K" +
+        " HDR injection.");
             this.VividColorButton.UseVisualStyleBackColor = true;
             this.VividColorButton.Click += new System.EventHandler(this.VividColorButton_Click);
             // 
