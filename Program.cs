@@ -37,7 +37,7 @@ namespace CityLauncher
         static void Main()
         {
             bool IsNewWindow = true;
-            using (Mutex mtx = new Mutex(true, "{BD4C408D-EF15-4C98-B792-C30D089E19D1}", out IsNewWindow))
+            using (Mutex mtx = new(true, "{BD4C408D-EF15-4C98-B792-C30D089E19D1}", out IsNewWindow))
             {
                 if (IsNewWindow)
                 {
@@ -84,7 +84,7 @@ namespace CityLauncher
                 Directory.CreateDirectory("logs");
             }
 
-            FileTarget logfile = new FileTarget("logfile")
+            FileTarget logfile = new("logfile")
             {
                 FileName = Directory.GetCurrentDirectory() + "\\logs\\citylauncher_report__" + CurrentTime + ".log"
             };

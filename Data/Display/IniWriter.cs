@@ -65,16 +65,17 @@ namespace CityLauncher
                     {
                         if (BmEngineOrig[j].Contains('=') && BmEngineOrig[j].Substring(0, BmEngineOrig[j].LastIndexOf('=')) == LineTrimmed)
                         {
-                            if (LineTrimmed != ExcludedEntries[0] && LineTrimmed != ExcludedEntries[1])
+                            if (LineTrimmed == ExcludedEntries[0] || LineTrimmed == ExcludedEntries[1])
                             {
-                                BmEngineOrig[j] = BmEngineNew[i];
+                                continue;
                             }
+                            BmEngineOrig[j] = BmEngineNew[i];
                         }
                     }
                 }
             }
 
-            using (StreamWriter BmEngineFile = new StreamWriter(BmEnginePath))
+            using (StreamWriter BmEngineFile = new(BmEnginePath))
             {
                 foreach (string Line in BmEngineOrig)
                 {
@@ -89,7 +90,7 @@ namespace CityLauncher
         {
             string[] UserEngine = File.ReadAllLines(UserEnginePath);
 
-            using (StreamWriter UserEngineFile = new StreamWriter(UserEnginePath))
+            using (StreamWriter UserEngineFile = new(UserEnginePath))
             {
                 foreach (string Line in UserEngine)
                 {
@@ -142,18 +143,12 @@ namespace CityLauncher
             Nlog.Info("WriteBmEngineBasic - Set VSync to {0}", IniHandler.BmEngineData["SystemSettings"]["UseVsync"]);
 
             // Detail Mode
-            switch (Program.MainWindow.DetailModeBox.SelectedIndex)
+            IniHandler.BmEngineData["SystemSettings"]["DetailMode"] = Program.MainWindow.DetailModeBox.SelectedIndex switch
             {
-                case 1:
-                    IniHandler.BmEngineData["SystemSettings"]["DetailMode"] = "1";
-                    break;
-                case 2:
-                    IniHandler.BmEngineData["SystemSettings"]["DetailMode"] = "2";
-                    break;
-                default:
-                    IniHandler.BmEngineData["SystemSettings"]["DetailMode"] = "0";
-                    break;
-            }
+                1 => "1",
+                2 => "2",
+                _ => "0",
+            };
             Nlog.Info("WriteBmEngineBasic - Set Detail Mode to {0}", IniHandler.BmEngineData["SystemSettings"]["DetailMode"]);
 
             // Framerate Cap
@@ -271,18 +266,12 @@ namespace CityLauncher
             Nlog.Info("WriteBmEngineAdvanced - Set FXAA to {0} and MSAA to {1}", IniHandler.BmEngineData["SystemSettings"]["PostProcessAAType"], IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"]);
 
             // Anisotropic Filtering
-            switch (Program.MainWindow.AnisoBox.SelectedIndex)
+            IniHandler.BmEngineData["SystemSettings"]["MaxAnisotropy"] = Program.MainWindow.AnisoBox.SelectedIndex switch
             {
-                case 1:
-                    IniHandler.BmEngineData["SystemSettings"]["MaxAnisotropy"] = "8";
-                    break;
-                case 2:
-                    IniHandler.BmEngineData["SystemSettings"]["MaxAnisotropy"] = "16";
-                    break;
-                default:
-                    IniHandler.BmEngineData["SystemSettings"]["MaxAnisotropy"] = "4";
-                    break;
-            }
+                1 => "8",
+                2 => "16",
+                _ => "4",
+            };
             Nlog.Info("WriteBmEngineAdvanced - Set Anisotropic Filtering to {0}", IniHandler.BmEngineData["SystemSettings"]["MaxAnisotropy"]);
 
             // Ambient Occlusion
@@ -327,18 +316,12 @@ namespace CityLauncher
             Nlog.Info("WriteBmEngineAdvanced - Set Tessellation Quality to {0}", IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"]);
 
             // HBAO Intensity
-            switch (Program.MainWindow.HbaoBox.SelectedIndex)
+            IniHandler.BmEngineData["SystemSettings"]["HBAOGamma"] = Program.MainWindow.HbaoBox.SelectedIndex switch
             {
-                case 1:
-                    IniHandler.BmEngineData["SystemSettings"]["HBAOGamma"] = "3.000000";
-                    break;
-                case 2:
-                    IniHandler.BmEngineData["SystemSettings"]["HBAOGamma"] = "5.000000";
-                    break;
-                default:
-                    IniHandler.BmEngineData["SystemSettings"]["HBAOGamma"] = "1.750000";
-                    break;
-            }
+                1 => "3.000000",
+                2 => "5.000000",
+                _ => "1.750000",
+            };
             Nlog.Info("WriteBmEngineAdvanced - Set HBAO Intensity to {0}", IniHandler.BmEngineData["SystemSettings"]["HBAOGamma"]);
 
             // Shadow Quality
@@ -452,99 +435,55 @@ namespace CityLauncher
             Nlog.Info("WriteBmEngineAdvanced - Set Light Rays to {0}", IniHandler.BmEngineData["SystemSettings"]["bAllowLightShafts"]);
 
             // Shadow Softness
-            switch (Program.MainWindow.ShadowSoftnessBox.SelectedIndex)
+            IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"] = Program.MainWindow.ShadowSoftnessBox.SelectedIndex switch
             {
-                case 0:
-                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"] = "2.000000";
-                    break;
-                case 1:
-                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"] = "4.000000";
-                    break;
-                case 2:
-                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"] = "8.000000";
-                    break;
-                case 4:
-                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"] = "32.000000";
-                    break;
-                default:
-                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"] = "16.000000";
-                    break;
-            }
+                0 => "2.000000",
+                1 => "4.000000",
+                2 => "8.000000",
+                4 => "32.000000",
+                _ => "16.000000",
+            };
             Nlog.Info("WriteBmEngineAdvanced - Set Shadow Softness to {0}", IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"]);
 
             // MVSS Coverage
-            switch (Program.MainWindow.MVSSBox.SelectedIndex)
+            IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"] = Program.MainWindow.MVSSBox.SelectedIndex switch
             {
-                case 1:
-                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"] = "0.750000";
-                    break;
-                case 2:
-                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"] = "0.500000";
-                    break;
-                case 3:
-                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"] = "0.250000";
-                    break;
-                default:
-                    IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"] = "1.000000";
-                    break;
-            }
+                1 => "0.750000",
+                2 => "0.500000",
+                3 => "0.250000",
+                _ => "1.000000",
+            };
             Nlog.Info("WriteBmEngineAdvanced - Set MVSS Coverage to {0}", IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"]);
 
             // Shadow Draw Distance
-            switch (Program.MainWindow.ShadowDrawDistBox.SelectedIndex)
+            IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"] = Program.MainWindow.ShadowDrawDistBox.SelectedIndex switch
             {
-                case 1:
-                    IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"] = "1.500000";
-                    break;
-                case 2:
-                    IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"] = "2.000000";
-                    break;
-                case 3:
-                    IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"] = "4.000000";
-                    break;
-                default:
-                    IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"] = "1.000000";
-                    break;
-            }
+                1 => "1.500000",
+                2 => "2.000000",
+                3 => "4.000000",
+                _ => "1.000000",
+            };
             Nlog.Info("WriteBmEngineAdvanced - Set Shadow Draw Distance to {0}", IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"]);
 
             // PhysX
-            switch (Program.MainWindow.PhysXBox.SelectedIndex)
+            IniHandler.BmEngineData["Engine.Engine"]["PhysXLevel"] = Program.MainWindow.PhysXBox.SelectedIndex switch
             {
-                case 1:
-                    IniHandler.BmEngineData["Engine.Engine"]["PhysXLevel"] = "1";
-                    break;
-                case 2:
-                    IniHandler.BmEngineData["Engine.Engine"]["PhysXLevel"] = "2";
-                    break;
-                default:
-                    IniHandler.BmEngineData["Engine.Engine"]["PhysXLevel"] = "0";
-                    break;
-            }
+                1 => "1",
+                2 => "2",
+                _ => "0",
+            };
             Nlog.Info("WriteBmEngineAdvanced - Set PhysX to {0}", IniHandler.BmEngineData["Engine.Engine"]["PhysXLevel"]);
 
             // Poolsize
-            switch (Program.MainWindow.PoolsizeBox.SelectedIndex)
+            IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = Program.MainWindow.PoolsizeBox.SelectedIndex switch
             {
-                case 1:
-                    IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "1024";
-                    break;
-                case 2:
-                    IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "2048";
-                    break;
-                case 3:
-                    IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "3072";
-                    break;
-                case 4:
-                    IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "4096";
-                    break;
-                case 5:
-                    IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "0";
-                    break;
-                default:
-                    IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "512";
-                    break;
-            }
+                1 => "1024",
+                2 => "2048",
+                3 => "3072",
+                4 => "4096",
+                5 => "0",
+                _ => "512",
+            };
             Nlog.Info("WriteBmEngineAdvanced - Set Poolsize to {0}", IniHandler.BmEngineData["TextureStreaming"]["PoolSize"]);
 
             // Reflections

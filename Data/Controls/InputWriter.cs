@@ -132,7 +132,7 @@ namespace CityLauncher
             // Debug Menu
             UserInputLines[105] = ConvertToConfigStyle(Program.MainWindow.DebugMenuButton.Text, 105);
 
-            using (StreamWriter UserInputFile = new StreamWriter(Program.FileHandler.UserInputPath))
+            using (StreamWriter UserInputFile = new(Program.FileHandler.UserInputPath))
             {
                 foreach (string Line in UserInputLines)
                 {
@@ -157,7 +157,7 @@ namespace CityLauncher
                 BmInputLines[1] = "false";
             }
 
-            List<string> BmInputFileLines = new List<string>();
+            List<string> BmInputFileLines = new();
             foreach (string Line in File.ReadAllLines(Program.FileHandler.BmInputPath))
             {
                 BmInputFileLines.Add(Line);
@@ -166,7 +166,7 @@ namespace CityLauncher
             BmInputFileLines[5] = "MouseSensitivity=" + BmInputLines[0];
             BmInputFileLines[7] = "bEnableMouseSmoothing=" + BmInputLines[1];
             Program.FileHandler.BmInput.IsReadOnly = false;
-            using (StreamWriter BmInputFile = new StreamWriter(Program.FileHandler.BmInputPath))
+            using (StreamWriter BmInputFile = new(Program.FileHandler.BmInputPath))
             {
                 for (int i = 0; i < BmInputFileLines.Count; i++)
                 {

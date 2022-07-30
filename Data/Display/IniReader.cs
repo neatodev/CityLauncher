@@ -53,18 +53,12 @@ namespace CityLauncher
             }
 
             // DetailMode
-            switch (IniHandler.BmEngineData["SystemSettings"]["DetailMode"])
+            Program.MainWindow.DetailModeBox.SelectedIndex = IniHandler.BmEngineData["SystemSettings"]["DetailMode"] switch
             {
-                case "1":
-                    Program.MainWindow.DetailModeBox.SelectedIndex = 1;
-                    break;
-                case "2":
-                    Program.MainWindow.DetailModeBox.SelectedIndex = 2;
-                    break;
-                default:
-                    Program.MainWindow.DetailModeBox.SelectedIndex = 0;
-                    break;
-            }
+                "1" => 1,
+                "2" => 2,
+                _ => 0,
+            };
 
             // Framerate Cap
             short Framecap = short.Parse(IniHandler.BmEngineData["Engine.Engine"]["MaxSmoothedFrameRate"]);
@@ -86,43 +80,20 @@ namespace CityLauncher
             }
 
             // Language
-            switch (IniHandler.BmEngineData["Engine.Engine"]["Language"])
+            Program.MainWindow.LanguageBox.SelectedIndex = IniHandler.BmEngineData["Engine.Engine"]["Language"] switch
             {
-                case "Deu":
-                    Program.MainWindow.LanguageBox.SelectedIndex = 1;
-                    break;
-                case "Esm":
-                    Program.MainWindow.LanguageBox.SelectedIndex = 2;
-                    break;
-                case "Esn":
-                    Program.MainWindow.LanguageBox.SelectedIndex = 3;
-                    break;
-                case "Fra":
-                    Program.MainWindow.LanguageBox.SelectedIndex = 4;
-                    break;
-                case "Ita":
-                    Program.MainWindow.LanguageBox.SelectedIndex = 5;
-                    break;
-                case "Jpn":
-                    Program.MainWindow.LanguageBox.SelectedIndex = 6;
-                    break;
-                case "Kor":
-                    Program.MainWindow.LanguageBox.SelectedIndex = 7;
-                    break;
-                case "Pol":
-                    Program.MainWindow.LanguageBox.SelectedIndex = 8;
-                    break;
-                case "Por":
-                    Program.MainWindow.LanguageBox.SelectedIndex = 9;
-                    break;
-                case "Rus":
-                    Program.MainWindow.LanguageBox.SelectedIndex = 10;
-                    break;
-                default:
-                    Program.MainWindow.LanguageBox.SelectedIndex = 0;
-                    break;
-            }
-
+                "Deu" => 1,
+                "Esm" => 2,
+                "Esn" => 3,
+                "Fra" => 4,
+                "Ita" => 5,
+                "Jpn" => 6,
+                "Kor" => 7,
+                "Pol" => 8,
+                "Por" => 9,
+                "Rus" => 10,
+                _ => 0,
+            };
         }
 
         private void InitDisplayAdvanced()
@@ -147,35 +118,23 @@ namespace CityLauncher
                     }
                     else
                     {
-                        switch (IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"])
+                        Program.MainWindow.AntiAliasingBox.SelectedIndex = IniHandler.BmEngineData["SystemSettings"]["MultisampleMode"] switch
                         {
-                            case "2xMSAA":
-                                Program.MainWindow.AntiAliasingBox.SelectedIndex = 4;
-                                break;
-                            case "4xMSAA":
-                                Program.MainWindow.AntiAliasingBox.SelectedIndex = 5;
-                                break;
-                            default:
-                                Program.MainWindow.AntiAliasingBox.SelectedIndex = 6;
-                                break;
-                        }
+                            "2xMSAA" => 4,
+                            "4xMSAA" => 5,
+                            _ => 6,
+                        };
                         break;
                     }
             }
 
             // Anisotropic Filtering
-            switch (IniHandler.BmEngineData["SystemSettings"]["MaxAnisotropy"])
+            Program.MainWindow.AnisoBox.SelectedIndex = IniHandler.BmEngineData["SystemSettings"]["MaxAnisotropy"] switch
             {
-                case "8":
-                    Program.MainWindow.AnisoBox.SelectedIndex = 1;
-                    break;
-                case "16":
-                    Program.MainWindow.AnisoBox.SelectedIndex = 2;
-                    break;
-                default:
-                    Program.MainWindow.AnisoBox.SelectedIndex = 0;
-                    break;
-            }
+                "8" => 1,
+                "16" => 2,
+                _ => 0,
+            };
 
             // Ambient Occlusion
             if (IniHandler.BmEngineData["SystemSettings"]["AmbientOcclusion"] == "True")
@@ -188,59 +147,33 @@ namespace CityLauncher
             }
 
             // Tessellation Quality
-            switch (IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"])
+            Program.MainWindow.TessellationBox.SelectedIndex = IniHandler.BmEngineData["SystemSettings"]["TessellationAdaptivePixelsPerTriangle"] switch
             {
-                case "2048.000000":
-                    Program.MainWindow.TessellationBox.SelectedIndex = 1;
-                    break;
-                case "512.000000":
-                    Program.MainWindow.TessellationBox.SelectedIndex = 2;
-                    break;
-                case "256.000000":
-                    Program.MainWindow.TessellationBox.SelectedIndex = 3;
-                    break;
-                case "128.000000":
-                    Program.MainWindow.TessellationBox.SelectedIndex = 4;
-                    break;
-                case "64.000000":
-                    Program.MainWindow.TessellationBox.SelectedIndex = 5;
-                    break;
-                default:
-                    Program.MainWindow.TessellationBox.SelectedIndex = 0;
-                    break;
-            }
+                "2048.000000" => 1,
+                "512.000000" => 2,
+                "256.000000" => 3,
+                "128.000000" => 4,
+                "64.000000" => 5,
+                _ => 0,
+            };
 
             // HBAO Intensity
-            switch (IniHandler.BmEngineData["SystemSettings"]["HBAOGamma"])
+            Program.MainWindow.HbaoBox.SelectedIndex = IniHandler.BmEngineData["SystemSettings"]["HBAOGamma"] switch
             {
-                case "3.000000":
-                    Program.MainWindow.HbaoBox.SelectedIndex = 1;
-                    break;
-                case "5.000000":
-                    Program.MainWindow.HbaoBox.SelectedIndex = 2;
-                    break;
-                default:
-                    Program.MainWindow.HbaoBox.SelectedIndex = 0;
-                    break;
-            }
+                "3.000000" => 1,
+                "5.000000" => 2,
+                _ => 0,
+            };
 
             // Shadow Quality
             // ShadowDepthBias is not read and only modified during the writing process.
-            switch (IniHandler.BmEngineData["SystemSettings"]["MaxShadowResolution"])
+            Program.MainWindow.ShadowQualityBox.SelectedIndex = IniHandler.BmEngineData["SystemSettings"]["MaxShadowResolution"] switch
             {
-                case "1024":
-                    Program.MainWindow.ShadowQualityBox.SelectedIndex = 1;
-                    break;
-                case "2048":
-                    Program.MainWindow.ShadowQualityBox.SelectedIndex = 2;
-                    break;
-                case "4096":
-                    Program.MainWindow.ShadowQualityBox.SelectedIndex = 3;
-                    break;
-                default:
-                    Program.MainWindow.ShadowQualityBox.SelectedIndex = 0;
-                    break;
-            }
+                "1024" => 1,
+                "2048" => 2,
+                "4096" => 3,
+                _ => 0,
+            };
 
             // Depth of Field
             if (IniHandler.BmEngineData["SystemSettings"]["DepthOfField"] == "True")
@@ -325,95 +258,51 @@ namespace CityLauncher
             }
 
             // Shadow Softness
-            switch (IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"])
+            Program.MainWindow.ShadowSoftnessBox.SelectedIndex = IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowLightRadius"] switch
             {
-                case "2.000000":
-                    Program.MainWindow.ShadowSoftnessBox.SelectedIndex = 0;
-                    break;
-                case "4.000000":
-                    Program.MainWindow.ShadowSoftnessBox.SelectedIndex = 1;
-                    break;
-                case "8.000000":
-                    Program.MainWindow.ShadowSoftnessBox.SelectedIndex = 2;
-                    break;
-                case "32.000000":
-                    Program.MainWindow.ShadowSoftnessBox.SelectedIndex = 4;
-                    break;
-                default:
-                    Program.MainWindow.ShadowSoftnessBox.SelectedIndex = 3;
-                    break;
-            }
+                "2.000000" => 0,
+                "4.000000" => 1,
+                "8.000000" => 2,
+                "32.000000" => 4,
+                _ => 3,
+            };
 
             // MVSS Coverage
-            switch (IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"])
+            Program.MainWindow.MVSSBox.SelectedIndex = IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"] switch
             {
-                case "0.750000":
-                    Program.MainWindow.MVSSBox.SelectedIndex = 1;
-                    break;
-                case "0.500000":
-                    Program.MainWindow.MVSSBox.SelectedIndex = 2;
-                    break;
-                case "0.250000":
-                    Program.MainWindow.MVSSBox.SelectedIndex = 3;
-                    break;
-                default:
-                    Program.MainWindow.MVSSBox.SelectedIndex = 0;
-                    break;
-            }
+                "0.750000" => 1,
+                "0.500000" => 2,
+                "0.250000" => 3,
+                _ => 0,
+            };
 
             // Shadow Draw Distance
-            switch (IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"])
+            Program.MainWindow.ShadowDrawDistBox.SelectedIndex = IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"] switch
             {
-                case "1.500000":
-                    Program.MainWindow.ShadowDrawDistBox.SelectedIndex = 1;
-                    break;
-                case "2.000000":
-                    Program.MainWindow.ShadowDrawDistBox.SelectedIndex = 2;
-                    break;
-                case "4.000000":
-                    Program.MainWindow.ShadowDrawDistBox.SelectedIndex = 3;
-                    break;
-                default:
-                    Program.MainWindow.ShadowDrawDistBox.SelectedIndex = 0;
-                    break;
-            }
+                "1.500000" => 1,
+                "2.000000" => 2,
+                "4.000000" => 3,
+                _ => 0,
+            };
 
             // PhysX
-            switch (IniHandler.BmEngineData["Engine.Engine"]["PhysXLevel"])
+            Program.MainWindow.PhysXBox.SelectedIndex = IniHandler.BmEngineData["Engine.Engine"]["PhysXLevel"] switch
             {
-                case "1":
-                    Program.MainWindow.PhysXBox.SelectedIndex = 1;
-                    break;
-                case "2":
-                    Program.MainWindow.PhysXBox.SelectedIndex = 2;
-                    break;
-                default:
-                    Program.MainWindow.PhysXBox.SelectedIndex = 0;
-                    break;
-            }
+                "1" => 1,
+                "2" => 2,
+                _ => 0,
+            };
 
             // Poolsize
-            switch (IniHandler.BmEngineData["TextureStreaming"]["PoolSize"])
+            Program.MainWindow.PoolsizeBox.SelectedIndex = IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] switch
             {
-                case "1024":
-                    Program.MainWindow.PoolsizeBox.SelectedIndex = 1;
-                    break;
-                case "2048":
-                    Program.MainWindow.PoolsizeBox.SelectedIndex = 2;
-                    break;
-                case "3072":
-                    Program.MainWindow.PoolsizeBox.SelectedIndex = 3;
-                    break;
-                case "4096":
-                    Program.MainWindow.PoolsizeBox.SelectedIndex = 4;
-                    break;
-                case "0":
-                    Program.MainWindow.PoolsizeBox.SelectedIndex = 5;
-                    break;
-                default:
-                    Program.MainWindow.PoolsizeBox.SelectedIndex = 0;
-                    break;
-            }
+                "1024" => 1,
+                "2048" => 2,
+                "3072" => 3,
+                "4096" => 4,
+                "0" => 5,
+                _ => 0,
+            };
 
             // Reflections
             if (IniHandler.BmEngineData["SystemSettings"]["Reflections"] == "True")

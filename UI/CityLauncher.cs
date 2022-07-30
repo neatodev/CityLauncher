@@ -10,10 +10,7 @@ namespace CityLauncher
         private bool ControlSetting = false;
         public bool DisplaySettingChanged
         {
-            get
-            {
-                return DisplaySetting;
-            }
+            get => DisplaySetting;
             set
             {
                 DisplaySetting = value;
@@ -22,10 +19,7 @@ namespace CityLauncher
         }
         public bool ControlSettingChanged
         {
-            get
-            {
-                return ControlSetting;
-            }
+            get => ControlSetting;
             set
             {
                 ControlSetting = value;
@@ -133,7 +127,6 @@ namespace CityLauncher
         private void BwButton1_Click(object sender, EventArgs e)
         {
             new InputForm(BwButton1).ShowDialog();
-
         }
 
         private void LeftButton1_Click(object sender, EventArgs e)
@@ -374,7 +367,7 @@ namespace CityLauncher
 
         private void StartGameButton_Click(object sender, EventArgs e)
         {
-            using (Process LaunchGame = new Process())
+            using (Process LaunchGame = new())
             {
                 if (FileHandler.DetectGameExe())
                 {

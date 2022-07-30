@@ -73,17 +73,17 @@ namespace CityLauncher
                 return;
             }
 
-            if (e.KeyCode == Keys.Shift || e.KeyCode == Keys.ShiftKey || e.KeyCode == Keys.LShiftKey)
+            if (e.KeyCode is Keys.Shift or Keys.ShiftKey or Keys.LShiftKey)
             {
                 ModifierString = "Shift + ";
                 KeybindValueLabel.Text = ModifierString + KeyString;
             }
-            else if (e.KeyCode == Keys.Control || e.KeyCode == Keys.ControlKey || e.KeyCode == Keys.LControlKey)
+            else if (e.KeyCode is Keys.Control or Keys.ControlKey or Keys.LControlKey)
             {
                 ModifierString = "Ctrl + ";
                 KeybindValueLabel.Text = ModifierString + KeyString;
             }
-            else if (e.KeyCode == Keys.Alt || e.KeyCode == Keys.Menu || e.KeyCode == Keys.LMenu)
+            else if (e.KeyCode is Keys.Alt or Keys.Menu or Keys.LMenu)
             {
                 ModifierString = "Alt + ";
                 KeybindValueLabel.Text = ModifierString + KeyString;

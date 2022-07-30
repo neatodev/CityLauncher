@@ -10,7 +10,7 @@ namespace CityLauncher
 
 
         // string list to store resolution values
-        public static List<string>? ResolutionList = new List<string>();
+        public static List<string>? ResolutionList = new();
 
         [DllImport("user32.dll")]
         public static extern bool EnumDisplaySettings(
@@ -22,8 +22,8 @@ namespace CityLauncher
         /// </summary>
         public void GetResolutions()
         {
-            List<string> TempList = new List<string>();
-            DEVMODE vDevMode = new DEVMODE();
+            List<string> TempList = new();
+            DEVMODE vDevMode = new();
             int i = 0;
             while (EnumDisplaySettings(null, i, ref vDevMode))
             {
