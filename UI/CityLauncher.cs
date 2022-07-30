@@ -71,6 +71,18 @@ namespace CityLauncher
             }
         }
 
+        private void ApplySettingsButton_Click()
+        {
+            if (DisplaySettingChanged)
+            {
+                new IniWriter().WriteAll();
+            }
+            if (ControlSettingChanged)
+            {
+                new InputWriter().WriteAll();
+            }
+        }
+
         private void SkipIntroBox_CheckedChanged(object sender, EventArgs e)
         {
             DisplaySettingChanged = true;
@@ -366,6 +378,10 @@ namespace CityLauncher
             {
                 if (FileHandler.DetectGameExe())
                 {
+                    if (ApplySettingsButton.Enabled)
+                    {
+                        ApplySettingsButton_Click();
+                    }
                     LaunchGame.StartInfo.FileName = "BatmanAC.exe";
                     LaunchGame.StartInfo.CreateNoWindow = true;
                     LaunchGame.Start();
