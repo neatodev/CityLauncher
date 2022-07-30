@@ -164,6 +164,8 @@
             this.BackwardLabel = new System.Windows.Forms.Label();
             this.ForwardLabel = new System.Windows.Forms.Label();
             this.MiscTab = new System.Windows.Forms.TabPage();
+            this.DebugMenuButton = new System.Windows.Forms.Button();
+            this.DebugMenuLabel = new System.Windows.Forms.Label();
             this.AdvancedColorBox = new System.Windows.Forms.GroupBox();
             this.LowContrastColorButton = new System.Windows.Forms.Button();
             this.HighContrastColorButton = new System.Windows.Forms.Button();
@@ -218,8 +220,7 @@
             this.StartGameButton = new System.Windows.Forms.Button();
             this.GPULabel = new System.Windows.Forms.Label();
             this.CPULabel = new System.Windows.Forms.Label();
-            this.DebugMenuLabel = new System.Windows.Forms.Label();
-            this.DebugMenuButton = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.PresetBox.SuspendLayout();
@@ -236,6 +237,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).BeginInit();
             this.AboutTab.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -251,7 +253,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(717, 533);
+            this.tabControl1.Size = new System.Drawing.Size(717, 579);
             this.tabControl1.TabIndex = 0;
             // 
             // DisplayTab
@@ -263,9 +265,9 @@
             this.DisplayTab.Location = new System.Drawing.Point(4, 38);
             this.DisplayTab.Name = "DisplayTab";
             this.DisplayTab.Padding = new System.Windows.Forms.Padding(3);
-            this.DisplayTab.Size = new System.Drawing.Size(709, 491);
+            this.DisplayTab.Size = new System.Drawing.Size(709, 537);
             this.DisplayTab.TabIndex = 0;
-            this.DisplayTab.Text = "Display";
+            this.DisplayTab.Text = "          Display          ";
             this.DisplayTab.UseVisualStyleBackColor = true;
             // 
             // PresetBox
@@ -1119,9 +1121,9 @@
             this.ControlTab.Location = new System.Drawing.Point(4, 38);
             this.ControlTab.Name = "ControlTab";
             this.ControlTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ControlTab.Size = new System.Drawing.Size(709, 491);
+            this.ControlTab.Size = new System.Drawing.Size(709, 537);
             this.ControlTab.TabIndex = 1;
-            this.ControlTab.Text = "Controls";
+            this.ControlTab.Text = "          Controls          ";
             this.ControlTab.UseVisualStyleBackColor = true;
             // 
             // MapLabel
@@ -1999,10 +2001,33 @@
             this.MiscTab.Location = new System.Drawing.Point(4, 38);
             this.MiscTab.Name = "MiscTab";
             this.MiscTab.Padding = new System.Windows.Forms.Padding(3);
-            this.MiscTab.Size = new System.Drawing.Size(709, 491);
+            this.MiscTab.Size = new System.Drawing.Size(709, 537);
             this.MiscTab.TabIndex = 3;
-            this.MiscTab.Text = "Misc";
+            this.MiscTab.Text = "         Misc         ";
             this.MiscTab.UseVisualStyleBackColor = true;
+            // 
+            // DebugMenuButton
+            // 
+            this.DebugMenuButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DebugMenuButton.Location = new System.Drawing.Point(595, 48);
+            this.DebugMenuButton.Name = "DebugMenuButton";
+            this.DebugMenuButton.Size = new System.Drawing.Size(83, 35);
+            this.DebugMenuButton.TabIndex = 167;
+            this.DebugMenuButton.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.DebugMenuButton, "Access console commands for cheats and debugging.");
+            this.DebugMenuButton.UseVisualStyleBackColor = true;
+            this.DebugMenuButton.Click += new System.EventHandler(this.DebugMenuButton_Click);
+            // 
+            // DebugMenuLabel
+            // 
+            this.DebugMenuLabel.AutoSize = true;
+            this.DebugMenuLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DebugMenuLabel.Location = new System.Drawing.Point(497, 55);
+            this.DebugMenuLabel.Name = "DebugMenuLabel";
+            this.DebugMenuLabel.Size = new System.Drawing.Size(92, 19);
+            this.DebugMenuLabel.TabIndex = 166;
+            this.DebugMenuLabel.Text = "Debug Menu";
+            this.BasicToolTip.SetToolTip(this.DebugMenuLabel, "Access console commands for cheats and debugging.");
             // 
             // AdvancedColorBox
             // 
@@ -2028,7 +2053,7 @@
             this.AdvancedColorBox.Enabled = false;
             this.AdvancedColorBox.Location = new System.Drawing.Point(9, 259);
             this.AdvancedColorBox.Name = "AdvancedColorBox";
-            this.AdvancedColorBox.Size = new System.Drawing.Size(681, 324);
+            this.AdvancedColorBox.Size = new System.Drawing.Size(680, 324);
             this.AdvancedColorBox.TabIndex = 165;
             this.AdvancedColorBox.TabStop = false;
             this.AdvancedColorBox.Text = "Advanced Color Settings";
@@ -2239,7 +2264,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(588, 207);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(571, 207);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2277,7 +2302,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(588, 164);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(571, 164);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2359,7 +2384,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV1ValueLabel.AutoSize = true;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(588, 122);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(571, 122);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV1ValueLabel.TabIndex = 156;
@@ -2550,9 +2575,9 @@
             this.AboutTab.Controls.Add(this.TempLabel);
             this.AboutTab.Location = new System.Drawing.Point(4, 38);
             this.AboutTab.Name = "AboutTab";
-            this.AboutTab.Size = new System.Drawing.Size(709, 491);
+            this.AboutTab.Size = new System.Drawing.Size(709, 537);
             this.AboutTab.TabIndex = 2;
-            this.AboutTab.Text = "About";
+            this.AboutTab.Text = "         About         ";
             this.AboutTab.UseVisualStyleBackColor = true;
             // 
             // TempLabel
@@ -2571,9 +2596,9 @@
             // ApplySettingsButton
             // 
             this.ApplySettingsButton.Enabled = false;
-            this.ApplySettingsButton.Location = new System.Drawing.Point(253, 551);
+            this.ApplySettingsButton.Location = new System.Drawing.Point(386, 597);
             this.ApplySettingsButton.Name = "ApplySettingsButton";
-            this.ApplySettingsButton.Size = new System.Drawing.Size(178, 37);
+            this.ApplySettingsButton.Size = new System.Drawing.Size(339, 37);
             this.ApplySettingsButton.TabIndex = 1;
             this.ApplySettingsButton.Text = "Apply Settings\r\n";
             this.BasicToolTip.SetToolTip(this.ApplySettingsButton, "Applies all settings.");
@@ -2582,9 +2607,9 @@
             // 
             // ManualModeButton
             // 
-            this.ManualModeButton.Location = new System.Drawing.Point(69, 551);
+            this.ManualModeButton.Location = new System.Drawing.Point(199, 597);
             this.ManualModeButton.Name = "ManualModeButton";
-            this.ManualModeButton.Size = new System.Drawing.Size(178, 37);
+            this.ManualModeButton.Size = new System.Drawing.Size(181, 37);
             this.ManualModeButton.TabIndex = 2;
             this.ManualModeButton.Text = "Manual Mode";
             this.BasicToolTip.SetToolTip(this.ManualModeButton, "This disables the read-only flag of the configuration files to allow for manual e" +
@@ -2600,19 +2625,19 @@
             // 
             // TextureFixButton
             // 
-            this.TextureFixButton.Location = new System.Drawing.Point(437, 625);
+            this.TextureFixButton.Location = new System.Drawing.Point(12, 598);
             this.TextureFixButton.Name = "TextureFixButton";
-            this.TextureFixButton.Size = new System.Drawing.Size(152, 36);
+            this.TextureFixButton.Size = new System.Drawing.Size(181, 36);
             this.TextureFixButton.TabIndex = 9;
-            this.TextureFixButton.Text = "Jef";
-            this.BasicToolTip.SetToolTip(this.TextureFixButton, "Resets display settings to their defaults. ");
+            this.TextureFixButton.Text = "Enable Texture Pack Fix";
+            this.BasicToolTip.SetToolTip(this.TextureFixButton, "Bopp Bipp");
             this.TextureFixButton.UseVisualStyleBackColor = true;
             // 
             // StartGameButton
             // 
-            this.StartGameButton.Location = new System.Drawing.Point(274, 619);
+            this.StartGameButton.Location = new System.Drawing.Point(12, 639);
             this.StartGameButton.Name = "StartGameButton";
-            this.StartGameButton.Size = new System.Drawing.Size(140, 48);
+            this.StartGameButton.Size = new System.Drawing.Size(713, 56);
             this.StartGameButton.TabIndex = 5;
             this.StartGameButton.Text = "Start Game";
             this.StartGameButton.UseVisualStyleBackColor = true;
@@ -2620,44 +2645,32 @@
             // 
             // GPULabel
             // 
-            this.GPULabel.AutoSize = true;
-            this.GPULabel.Location = new System.Drawing.Point(455, 700);
+            this.GPULabel.Location = new System.Drawing.Point(392, 13);
             this.GPULabel.Name = "GPULabel";
-            this.GPULabel.Size = new System.Drawing.Size(33, 15);
+            this.GPULabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.GPULabel.Size = new System.Drawing.Size(343, 21);
             this.GPULabel.TabIndex = 6;
             this.GPULabel.Text = "GPU:";
+            this.GPULabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CPULabel
             // 
-            this.CPULabel.AutoSize = true;
-            this.CPULabel.Location = new System.Drawing.Point(99, 700);
+            this.CPULabel.Location = new System.Drawing.Point(6, 16);
             this.CPULabel.Name = "CPULabel";
-            this.CPULabel.Size = new System.Drawing.Size(33, 15);
+            this.CPULabel.Size = new System.Drawing.Size(361, 18);
             this.CPULabel.TabIndex = 8;
             this.CPULabel.Text = "CPU:";
             // 
-            // DebugMenuLabel
+            // groupBox1
             // 
-            this.DebugMenuLabel.AutoSize = true;
-            this.DebugMenuLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DebugMenuLabel.Location = new System.Drawing.Point(497, 55);
-            this.DebugMenuLabel.Name = "DebugMenuLabel";
-            this.DebugMenuLabel.Size = new System.Drawing.Size(92, 19);
-            this.DebugMenuLabel.TabIndex = 166;
-            this.DebugMenuLabel.Text = "Debug Menu";
-            this.BasicToolTip.SetToolTip(this.DebugMenuLabel, "Access console commands for cheats and debugging.");
-            // 
-            // DebugMenuButton
-            // 
-            this.DebugMenuButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DebugMenuButton.Location = new System.Drawing.Point(595, 48);
-            this.DebugMenuButton.Name = "DebugMenuButton";
-            this.DebugMenuButton.Size = new System.Drawing.Size(83, 35);
-            this.DebugMenuButton.TabIndex = 167;
-            this.DebugMenuButton.Text = "button1";
-            this.BasicToolTip.SetToolTip(this.DebugMenuButton, "Access console commands for cheats and debugging.");
-            this.DebugMenuButton.UseVisualStyleBackColor = true;
-            this.DebugMenuButton.Click += new System.EventHandler(this.DebugMenuButton_Click);
+            this.groupBox1.Controls.Add(this.GPULabel);
+            this.groupBox1.Controls.Add(this.CPULabel);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox1.Location = new System.Drawing.Point(0, 714);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(741, 38);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
             // 
             // CityLauncher
             // 
@@ -2665,9 +2678,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(741, 752);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.TextureFixButton);
-            this.Controls.Add(this.CPULabel);
-            this.Controls.Add(this.GPULabel);
             this.Controls.Add(this.StartGameButton);
             this.Controls.Add(this.ManualModeButton);
             this.Controls.Add(this.ApplySettingsButton);
@@ -2702,8 +2714,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).EndInit();
             this.AboutTab.ResumeLayout(false);
             this.AboutTab.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -2899,5 +2911,6 @@
         private Button LowContrastColorButton;
         private Label DebugMenuLabel;
         public Button DebugMenuButton;
+        private GroupBox groupBox1;
     }
 }

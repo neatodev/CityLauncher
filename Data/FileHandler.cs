@@ -194,6 +194,15 @@ namespace CityLauncher
                 return;
             }
 
+            if (File.Exists(Startup) && File.Exists(StartupNV) && File.Exists(StartupRenamed) && File.Exists(StartupNVRenamed))
+            {
+                File.Delete(StartupRenamed);
+                File.Delete(StartupNVRenamed);
+                Program.MainWindow.SkipIntroBox.Enabled = true;
+                Program.MainWindow.SkipIntroBox.Checked = false;
+                IntroFilesRenamed = false;
+            }
+
             if (File.Exists(Startup) && File.Exists(StartupNV))
             {
                 Program.MainWindow.SkipIntroBox.Enabled = true;
