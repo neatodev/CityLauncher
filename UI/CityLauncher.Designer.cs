@@ -248,13 +248,15 @@
             this.tabControl1.Controls.Add(this.ControlTab);
             this.tabControl1.Controls.Add(this.MiscTab);
             this.tabControl1.Controls.Add(this.AboutTab);
-            this.tabControl1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.tabControl1.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tabControl1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(717, 579);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
             // 
             // DisplayTab
             // 
@@ -262,12 +264,13 @@
             this.DisplayTab.Controls.Add(this.PresetBox);
             this.DisplayTab.Controls.Add(this.AdvancedDisplayGroupBox);
             this.DisplayTab.Controls.Add(this.BasicDisplayGroupBox);
+            this.DisplayTab.ForeColor = System.Drawing.Color.Black;
             this.DisplayTab.Location = new System.Drawing.Point(4, 38);
             this.DisplayTab.Name = "DisplayTab";
             this.DisplayTab.Padding = new System.Windows.Forms.Padding(3);
             this.DisplayTab.Size = new System.Drawing.Size(709, 537);
             this.DisplayTab.TabIndex = 0;
-            this.DisplayTab.Text = "          Display          ";
+            this.DisplayTab.Text = "          DISPLAY          ";
             this.DisplayTab.UseVisualStyleBackColor = true;
             // 
             // PresetBox
@@ -276,6 +279,7 @@
             this.PresetBox.Controls.Add(this.DarkKnightPresetButton);
             this.PresetBox.Controls.Add(this.VanillaPresetButton);
             this.PresetBox.Controls.Add(this.OptimizedPresetButton);
+            this.PresetBox.ForeColor = System.Drawing.Color.Maroon;
             this.PresetBox.Location = new System.Drawing.Point(3, 232);
             this.PresetBox.Name = "PresetBox";
             this.PresetBox.Size = new System.Drawing.Size(683, 101);
@@ -285,6 +289,7 @@
             // 
             // DarkKnightPresetButton
             // 
+            this.DarkKnightPresetButton.ForeColor = System.Drawing.Color.Black;
             this.DarkKnightPresetButton.Location = new System.Drawing.Point(463, 32);
             this.DarkKnightPresetButton.Name = "DarkKnightPresetButton";
             this.DarkKnightPresetButton.Size = new System.Drawing.Size(214, 37);
@@ -296,6 +301,7 @@
             // 
             // VanillaPresetButton
             // 
+            this.VanillaPresetButton.ForeColor = System.Drawing.Color.Black;
             this.VanillaPresetButton.Location = new System.Drawing.Point(6, 32);
             this.VanillaPresetButton.Name = "VanillaPresetButton";
             this.VanillaPresetButton.Size = new System.Drawing.Size(217, 37);
@@ -308,6 +314,7 @@
             // 
             // OptimizedPresetButton
             // 
+            this.OptimizedPresetButton.ForeColor = System.Drawing.Color.Black;
             this.OptimizedPresetButton.Location = new System.Drawing.Point(236, 32);
             this.OptimizedPresetButton.Name = "OptimizedPresetButton";
             this.OptimizedPresetButton.Size = new System.Drawing.Size(214, 37);
@@ -351,6 +358,7 @@
             this.AdvancedDisplayGroupBox.Controls.Add(this.AntiAliasingLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.MaxShadowLabel);
             this.AdvancedDisplayGroupBox.Controls.Add(this.AnisotropyLabel);
+            this.AdvancedDisplayGroupBox.ForeColor = System.Drawing.Color.Maroon;
             this.AdvancedDisplayGroupBox.Location = new System.Drawing.Point(3, 339);
             this.AdvancedDisplayGroupBox.Name = "AdvancedDisplayGroupBox";
             this.AdvancedDisplayGroupBox.Size = new System.Drawing.Size(683, 290);
@@ -361,10 +369,11 @@
             // ShadowSoftnessLabel
             // 
             this.ShadowSoftnessLabel.AutoSize = true;
-            this.ShadowSoftnessLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShadowSoftnessLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ShadowSoftnessLabel.ForeColor = System.Drawing.Color.Black;
             this.ShadowSoftnessLabel.Location = new System.Drawing.Point(393, 234);
             this.ShadowSoftnessLabel.Name = "ShadowSoftnessLabel";
-            this.ShadowSoftnessLabel.Size = new System.Drawing.Size(118, 19);
+            this.ShadowSoftnessLabel.Size = new System.Drawing.Size(124, 19);
             this.ShadowSoftnessLabel.TabIndex = 52;
             this.ShadowSoftnessLabel.Text = "Shadow Softness";
             this.BasicToolTip.SetToolTip(this.ShadowSoftnessLabel, "Adjust MVSS softness amount.\r\n- Effect only applies to player character. \r\n");
@@ -372,7 +381,7 @@
             // ShadowSoftnessBox
             // 
             this.ShadowSoftnessBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ShadowSoftnessBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShadowSoftnessBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ShadowSoftnessBox.FormattingEnabled = true;
             this.ShadowSoftnessBox.Items.AddRange(new object[] {
             "Very Sharp",
@@ -391,10 +400,11 @@
             // 
             this.ReflectionBox.AutoSize = true;
             this.ReflectionBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ReflectionBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ReflectionBox.Location = new System.Drawing.Point(539, 32);
+            this.ReflectionBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ReflectionBox.ForeColor = System.Drawing.Color.Black;
+            this.ReflectionBox.Location = new System.Drawing.Point(543, 32);
             this.ReflectionBox.Name = "ReflectionBox";
-            this.ReflectionBox.Size = new System.Drawing.Size(100, 23);
+            this.ReflectionBox.Size = new System.Drawing.Size(102, 23);
             this.ReflectionBox.TabIndex = 50;
             this.ReflectionBox.Text = "Reflections";
             this.BasicToolTip.SetToolTip(this.ReflectionBox, "Environment will reflect light sources.");
@@ -405,8 +415,9 @@
             // 
             this.LensFlareBox.AutoSize = true;
             this.LensFlareBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LensFlareBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LensFlareBox.Location = new System.Drawing.Point(432, 61);
+            this.LensFlareBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LensFlareBox.ForeColor = System.Drawing.Color.Black;
+            this.LensFlareBox.Location = new System.Drawing.Point(436, 61);
             this.LensFlareBox.Name = "LensFlareBox";
             this.LensFlareBox.Size = new System.Drawing.Size(101, 23);
             this.LensFlareBox.TabIndex = 49;
@@ -420,10 +431,11 @@
             // 
             this.LightRayBox.AutoSize = true;
             this.LightRayBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LightRayBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LightRayBox.Location = new System.Drawing.Point(180, 61);
+            this.LightRayBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LightRayBox.ForeColor = System.Drawing.Color.Black;
+            this.LightRayBox.Location = new System.Drawing.Point(184, 61);
             this.LightRayBox.Name = "LightRayBox";
-            this.LightRayBox.Size = new System.Drawing.Size(95, 23);
+            this.LightRayBox.Size = new System.Drawing.Size(97, 23);
             this.LightRayBox.TabIndex = 48;
             this.LightRayBox.Text = "Light Rays";
             this.BasicToolTip.SetToolTip(this.LightRayBox, "Simulates light traversal in the atmosphere.");
@@ -434,10 +446,11 @@
             // 
             this.BloomBox.AutoSize = true;
             this.BloomBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BloomBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BloomBox.Location = new System.Drawing.Point(570, 61);
+            this.BloomBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BloomBox.ForeColor = System.Drawing.Color.Black;
+            this.BloomBox.Location = new System.Drawing.Point(573, 61);
             this.BloomBox.Name = "BloomBox";
-            this.BloomBox.Size = new System.Drawing.Size(69, 23);
+            this.BloomBox.Size = new System.Drawing.Size(72, 23);
             this.BloomBox.TabIndex = 47;
             this.BloomBox.Text = "Bloom";
             this.BasicToolTip.SetToolTip(this.BloomBox, "Enunciates lighting by adding a glow to bright areas. \r\n- Requires Depth of Field" +
@@ -449,10 +462,11 @@
             // 
             this.DistortionBox.AutoSize = true;
             this.DistortionBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.DistortionBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DistortionBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DistortionBox.ForeColor = System.Drawing.Color.Black;
             this.DistortionBox.Location = new System.Drawing.Point(441, 32);
             this.DistortionBox.Name = "DistortionBox";
-            this.DistortionBox.Size = new System.Drawing.Size(92, 23);
+            this.DistortionBox.Size = new System.Drawing.Size(96, 23);
             this.DistortionBox.TabIndex = 46;
             this.DistortionBox.Text = "Distortion";
             this.BasicToolTip.SetToolTip(this.DistortionBox, "Dynamically distorts areas of the screen to enhance certain actions.");
@@ -463,10 +477,11 @@
             // 
             this.DynShadowBox.AutoSize = true;
             this.DynShadowBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.DynShadowBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DynShadowBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DynShadowBox.ForeColor = System.Drawing.Color.Black;
             this.DynShadowBox.Location = new System.Drawing.Point(281, 32);
             this.DynShadowBox.Name = "DynShadowBox";
-            this.DynShadowBox.Size = new System.Drawing.Size(145, 23);
+            this.DynShadowBox.Size = new System.Drawing.Size(152, 23);
             this.DynShadowBox.TabIndex = 45;
             this.DynShadowBox.Text = "Dynamic Shadows";
             this.BasicToolTip.SetToolTip(this.DynShadowBox, "Enables real-time shadows.");
@@ -477,10 +492,11 @@
             // 
             this.DynLightBox.AutoSize = true;
             this.DynLightBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.DynLightBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DynLightBox.Location = new System.Drawing.Point(286, 61);
+            this.DynLightBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DynLightBox.ForeColor = System.Drawing.Color.Black;
+            this.DynLightBox.Location = new System.Drawing.Point(288, 61);
             this.DynLightBox.Name = "DynLightBox";
-            this.DynLightBox.Size = new System.Drawing.Size(140, 23);
+            this.DynLightBox.Size = new System.Drawing.Size(145, 23);
             this.DynLightBox.TabIndex = 44;
             this.DynLightBox.Text = "Dynamic Lighting";
             this.BasicToolTip.SetToolTip(this.DynLightBox, "Improves game lighting.");
@@ -491,10 +507,11 @@
             // 
             this.MotionBlurBox.AutoSize = true;
             this.MotionBlurBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.MotionBlurBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MotionBlurBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MotionBlurBox.ForeColor = System.Drawing.Color.Black;
             this.MotionBlurBox.Location = new System.Drawing.Point(171, 32);
             this.MotionBlurBox.Name = "MotionBlurBox";
-            this.MotionBlurBox.Size = new System.Drawing.Size(104, 23);
+            this.MotionBlurBox.Size = new System.Drawing.Size(110, 23);
             this.MotionBlurBox.TabIndex = 43;
             this.MotionBlurBox.Text = "Motion Blur";
             this.BasicToolTip.SetToolTip(this.MotionBlurBox, "Emphasizes movement using blur to connect motion between frames.");
@@ -505,10 +522,11 @@
             // 
             this.DOFBox.AutoSize = true;
             this.DOFBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.DOFBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DOFBox.Location = new System.Drawing.Point(46, 61);
+            this.DOFBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DOFBox.ForeColor = System.Drawing.Color.Black;
+            this.DOFBox.Location = new System.Drawing.Point(48, 61);
             this.DOFBox.Name = "DOFBox";
-            this.DOFBox.Size = new System.Drawing.Size(119, 23);
+            this.DOFBox.Size = new System.Drawing.Size(124, 23);
             this.DOFBox.TabIndex = 42;
             this.DOFBox.Text = "Depth of Field";
             this.BasicToolTip.SetToolTip(this.DOFBox, "Adds selective focus to improve depth perception. Will obscure view distance with" +
@@ -521,10 +539,11 @@
             // 
             this.AmbientOcclusionBox.AutoSize = true;
             this.AmbientOcclusionBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AmbientOcclusionBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AmbientOcclusionBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AmbientOcclusionBox.ForeColor = System.Drawing.Color.Black;
             this.AmbientOcclusionBox.Location = new System.Drawing.Point(15, 32);
             this.AmbientOcclusionBox.Name = "AmbientOcclusionBox";
-            this.AmbientOcclusionBox.Size = new System.Drawing.Size(150, 23);
+            this.AmbientOcclusionBox.Size = new System.Drawing.Size(157, 23);
             this.AmbientOcclusionBox.TabIndex = 41;
             this.AmbientOcclusionBox.Text = "Ambient Occlusion";
             this.BasicToolTip.SetToolTip(this.AmbientOcclusionBox, "Improves ambient lighting. HBAO is used instead of SSAO if DirectX 11 is enabled." +
@@ -535,7 +554,7 @@
             // PoolsizeBox
             // 
             this.PoolsizeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.PoolsizeBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PoolsizeBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PoolsizeBox.FormattingEnabled = true;
             this.PoolsizeBox.Items.AddRange(new object[] {
             "512 (Default)",
@@ -554,10 +573,11 @@
             // PoolsizeLabel
             // 
             this.PoolsizeLabel.AutoSize = true;
-            this.PoolsizeLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PoolsizeLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.PoolsizeLabel.ForeColor = System.Drawing.Color.Black;
             this.PoolsizeLabel.Location = new System.Drawing.Point(51, 234);
             this.PoolsizeLabel.Name = "PoolsizeLabel";
-            this.PoolsizeLabel.Size = new System.Drawing.Size(62, 19);
+            this.PoolsizeLabel.Size = new System.Drawing.Size(64, 19);
             this.PoolsizeLabel.TabIndex = 39;
             this.PoolsizeLabel.Text = "Poolsize";
             this.BasicToolTip.SetToolTip(this.PoolsizeLabel, resources.GetString("PoolsizeLabel.ToolTip"));
@@ -565,7 +585,7 @@
             // PhysXBox
             // 
             this.PhysXBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.PhysXBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PhysXBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PhysXBox.FormattingEnabled = true;
             this.PhysXBox.Items.AddRange(new object[] {
             "Off",
@@ -581,7 +601,7 @@
             // ShadowDrawDistBox
             // 
             this.ShadowDrawDistBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ShadowDrawDistBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShadowDrawDistBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ShadowDrawDistBox.FormattingEnabled = true;
             this.ShadowDrawDistBox.Items.AddRange(new object[] {
             "Low (Default)",
@@ -599,10 +619,11 @@
             // ShadowDrawLabel
             // 
             this.ShadowDrawLabel.AutoSize = true;
-            this.ShadowDrawLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShadowDrawLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ShadowDrawLabel.ForeColor = System.Drawing.Color.Black;
             this.ShadowDrawLabel.Location = new System.Drawing.Point(353, 201);
             this.ShadowDrawLabel.Name = "ShadowDrawLabel";
-            this.ShadowDrawLabel.Size = new System.Drawing.Size(158, 19);
+            this.ShadowDrawLabel.Size = new System.Drawing.Size(166, 19);
             this.ShadowDrawLabel.TabIndex = 36;
             this.ShadowDrawLabel.Text = "Shadow Draw Distance";
             this.BasicToolTip.SetToolTip(this.ShadowDrawLabel, "Increases shadow draw distance. Directx 11 is recommended before pushing this set" +
@@ -611,7 +632,7 @@
             // MVSSBox
             // 
             this.MVSSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.MVSSBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MVSSBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MVSSBox.FormattingEnabled = true;
             this.MVSSBox.Items.AddRange(new object[] {
             "Low (Default)",
@@ -629,7 +650,7 @@
             // ShadowQualityBox
             // 
             this.ShadowQualityBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ShadowQualityBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShadowQualityBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ShadowQualityBox.FormattingEnabled = true;
             this.ShadowQualityBox.Items.AddRange(new object[] {
             "Low (Default)",
@@ -647,10 +668,11 @@
             // PhysXLabel
             // 
             this.PhysXLabel.AutoSize = true;
-            this.PhysXLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PhysXLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.PhysXLabel.ForeColor = System.Drawing.Color.Black;
             this.PhysXLabel.Location = new System.Drawing.Point(21, 201);
             this.PhysXLabel.Name = "PhysXLabel";
-            this.PhysXLabel.Size = new System.Drawing.Size(92, 19);
+            this.PhysXLabel.Size = new System.Drawing.Size(98, 19);
             this.PhysXLabel.TabIndex = 24;
             this.PhysXLabel.Text = "Nvidia PhysX";
             this.BasicToolTip.SetToolTip(this.PhysXLabel, "Demanding Feature. Adds breakable fences, cloth physics, smoke simulations etc.");
@@ -658,10 +680,11 @@
             // MVSSLabel
             // 
             this.MVSSLabel.AutoSize = true;
-            this.MVSSLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MVSSLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MVSSLabel.ForeColor = System.Drawing.Color.Black;
             this.MVSSLabel.Location = new System.Drawing.Point(3, 135);
             this.MVSSLabel.Name = "MVSSLabel";
-            this.MVSSLabel.Size = new System.Drawing.Size(110, 19);
+            this.MVSSLabel.Size = new System.Drawing.Size(115, 19);
             this.MVSSLabel.TabIndex = 23;
             this.MVSSLabel.Text = "MVSS Coverage";
             this.BasicToolTip.SetToolTip(this.MVSSLabel, "Increases self-shadowing amount. Recommended to increase shadow quality before pu" +
@@ -670,7 +693,7 @@
             // HbaoBox
             // 
             this.HbaoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.HbaoBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HbaoBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.HbaoBox.FormattingEnabled = true;
             this.HbaoBox.Items.AddRange(new object[] {
             "Subtle",
@@ -687,7 +710,7 @@
             // AntiAliasingBox
             // 
             this.AntiAliasingBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.AntiAliasingBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AntiAliasingBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AntiAliasingBox.FormattingEnabled = true;
             this.AntiAliasingBox.Items.AddRange(new object[] {
             "Off",
@@ -708,7 +731,7 @@
             // AnisoBox
             // 
             this.AnisoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.AnisoBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AnisoBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AnisoBox.FormattingEnabled = true;
             this.AnisoBox.Items.AddRange(new object[] {
             "4x (Default)",
@@ -724,7 +747,7 @@
             // TessellationBox
             // 
             this.TessellationBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.TessellationBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TessellationBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TessellationBox.FormattingEnabled = true;
             this.TessellationBox.Items.AddRange(new object[] {
             "Off",
@@ -744,10 +767,11 @@
             // TessellationLabel
             // 
             this.TessellationLabel.AutoSize = true;
-            this.TessellationLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TessellationLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TessellationLabel.ForeColor = System.Drawing.Color.Black;
             this.TessellationLabel.Location = new System.Drawing.Point(373, 135);
             this.TessellationLabel.Name = "TessellationLabel";
-            this.TessellationLabel.Size = new System.Drawing.Size(138, 19);
+            this.TessellationLabel.Size = new System.Drawing.Size(141, 19);
             this.TessellationLabel.TabIndex = 4;
             this.TessellationLabel.Text = "Tessellation Quality";
             this.BasicToolTip.SetToolTip(this.TessellationLabel, "Increases mesh detail on certain objects when viewed up close (ice, vines, trees," +
@@ -756,10 +780,11 @@
             // HBAOLabel
             // 
             this.HBAOLabel.AutoSize = true;
-            this.HBAOLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HBAOLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.HBAOLabel.ForeColor = System.Drawing.Color.Black;
             this.HBAOLabel.Location = new System.Drawing.Point(5, 168);
             this.HBAOLabel.Name = "HBAOLabel";
-            this.HBAOLabel.Size = new System.Drawing.Size(108, 19);
+            this.HBAOLabel.Size = new System.Drawing.Size(113, 19);
             this.HBAOLabel.TabIndex = 2;
             this.HBAOLabel.Text = "HBAO Intensity";
             this.BasicToolTip.SetToolTip(this.HBAOLabel, "Adjusts ambient occlusion intensity. Higher values will increase ambient occlusio" +
@@ -768,10 +793,11 @@
             // AntiAliasingLabel
             // 
             this.AntiAliasingLabel.AutoSize = true;
-            this.AntiAliasingLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AntiAliasingLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AntiAliasingLabel.ForeColor = System.Drawing.Color.Black;
             this.AntiAliasingLabel.Location = new System.Drawing.Point(21, 102);
             this.AntiAliasingLabel.Name = "AntiAliasingLabel";
-            this.AntiAliasingLabel.Size = new System.Drawing.Size(92, 19);
+            this.AntiAliasingLabel.Size = new System.Drawing.Size(95, 19);
             this.AntiAliasingLabel.TabIndex = 1;
             this.AntiAliasingLabel.Text = "Anti-Aliasing";
             this.BasicToolTip.SetToolTip(this.AntiAliasingLabel, "Cleans up edge aliasing. MSAA may induce stutter. Reshade SMAA suggested for shar" +
@@ -780,10 +806,11 @@
             // MaxShadowLabel
             // 
             this.MaxShadowLabel.AutoSize = true;
-            this.MaxShadowLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MaxShadowLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MaxShadowLabel.ForeColor = System.Drawing.Color.Black;
             this.MaxShadowLabel.Location = new System.Drawing.Point(401, 168);
             this.MaxShadowLabel.Name = "MaxShadowLabel";
-            this.MaxShadowLabel.Size = new System.Drawing.Size(110, 19);
+            this.MaxShadowLabel.Size = new System.Drawing.Size(118, 19);
             this.MaxShadowLabel.TabIndex = 5;
             this.MaxShadowLabel.Text = "Shadow Quality";
             this.BasicToolTip.SetToolTip(this.MaxShadowLabel, "Increases the quality of shadow rendering by increasing the shadowmap resolution." +
@@ -792,10 +819,11 @@
             // AnisotropyLabel
             // 
             this.AnisotropyLabel.AutoSize = true;
-            this.AnisotropyLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AnisotropyLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AnisotropyLabel.ForeColor = System.Drawing.Color.Black;
             this.AnisotropyLabel.Location = new System.Drawing.Point(372, 102);
             this.AnisotropyLabel.Name = "AnisotropyLabel";
-            this.AnisotropyLabel.Size = new System.Drawing.Size(139, 19);
+            this.AnisotropyLabel.Size = new System.Drawing.Size(148, 19);
             this.AnisotropyLabel.TabIndex = 0;
             this.AnisotropyLabel.Text = "Anisotropic Filtering";
             this.BasicToolTip.SetToolTip(this.AnisotropyLabel, "Improve texture clarity across oblique surfaces.");
@@ -818,6 +846,7 @@
             this.BasicDisplayGroupBox.Controls.Add(this.ResolutionLabel);
             this.BasicDisplayGroupBox.Controls.Add(this.LanguageLabel);
             this.BasicDisplayGroupBox.Controls.Add(this.FullscreenLabel);
+            this.BasicDisplayGroupBox.ForeColor = System.Drawing.Color.Maroon;
             this.BasicDisplayGroupBox.Location = new System.Drawing.Point(3, 3);
             this.BasicDisplayGroupBox.Name = "BasicDisplayGroupBox";
             this.BasicDisplayGroupBox.Size = new System.Drawing.Size(683, 225);
@@ -830,10 +859,11 @@
             this.SkipIntroBox.AutoSize = true;
             this.SkipIntroBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SkipIntroBox.Enabled = false;
-            this.SkipIntroBox.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SkipIntroBox.Location = new System.Drawing.Point(65, 166);
+            this.SkipIntroBox.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SkipIntroBox.ForeColor = System.Drawing.Color.Black;
+            this.SkipIntroBox.Location = new System.Drawing.Point(57, 166);
             this.SkipIntroBox.Name = "SkipIntroBox";
-            this.SkipIntroBox.Size = new System.Drawing.Size(206, 27);
+            this.SkipIntroBox.Size = new System.Drawing.Size(214, 27);
             this.SkipIntroBox.TabIndex = 16;
             this.SkipIntroBox.Text = "Disable Startup Movies";
             this.BasicToolTip.SetToolTip(this.SkipIntroBox, "Skips intro logos.");
@@ -844,10 +874,11 @@
             // 
             this.Dx11Box.AutoSize = true;
             this.Dx11Box.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Dx11Box.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Dx11Box.Location = new System.Drawing.Point(91, 134);
+            this.Dx11Box.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Dx11Box.ForeColor = System.Drawing.Color.Black;
+            this.Dx11Box.Location = new System.Drawing.Point(85, 134);
             this.Dx11Box.Name = "Dx11Box";
-            this.Dx11Box.Size = new System.Drawing.Size(180, 27);
+            this.Dx11Box.Size = new System.Drawing.Size(186, 27);
             this.Dx11Box.TabIndex = 15;
             this.Dx11Box.Text = "DirectX 11 Features";
             this.BasicToolTip.SetToolTip(this.Dx11Box, "Enables HBAO, Multi-View Soft Shadows and Tessellation. \r\n\r\n- This option will ru" +
@@ -858,7 +889,7 @@
             // LanguageBox
             // 
             this.LanguageBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.LanguageBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LanguageBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LanguageBox.FormattingEnabled = true;
             this.LanguageBox.Items.AddRange(new object[] {
             "English",
@@ -881,7 +912,7 @@
             // 
             // FrameCapTextBox
             // 
-            this.FrameCapTextBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FrameCapTextBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FrameCapTextBox.Location = new System.Drawing.Point(240, 101);
             this.FrameCapTextBox.Mask = "000";
             this.FrameCapTextBox.Name = "FrameCapTextBox";
@@ -897,6 +928,7 @@
             // 
             // ResetDisplayButton
             // 
+            this.ResetDisplayButton.ForeColor = System.Drawing.Color.Black;
             this.ResetDisplayButton.Location = new System.Drawing.Point(517, 134);
             this.ResetDisplayButton.Name = "ResetDisplayButton";
             this.ResetDisplayButton.Size = new System.Drawing.Size(152, 59);
@@ -909,7 +941,7 @@
             // ResolutionBox
             // 
             this.ResolutionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ResolutionBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResolutionBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ResolutionBox.FormattingEnabled = true;
             this.ResolutionBox.Location = new System.Drawing.Point(119, 35);
             this.ResolutionBox.Name = "ResolutionBox";
@@ -921,7 +953,7 @@
             // VsyncBox
             // 
             this.VsyncBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.VsyncBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.VsyncBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.VsyncBox.FormattingEnabled = true;
             this.VsyncBox.Items.AddRange(new object[] {
             "Enabled",
@@ -936,7 +968,7 @@
             // FullscreenBox
             // 
             this.FullscreenBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.FullscreenBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FullscreenBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FullscreenBox.FormattingEnabled = true;
             this.FullscreenBox.Items.AddRange(new object[] {
             "Enabled",
@@ -951,7 +983,7 @@
             // DetailModeBox
             // 
             this.DetailModeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.DetailModeBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DetailModeBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DetailModeBox.FormattingEnabled = true;
             this.DetailModeBox.Items.AddRange(new object[] {
             "Low",
@@ -968,10 +1000,11 @@
             // DetailModeLabel
             // 
             this.DetailModeLabel.AutoSize = true;
-            this.DetailModeLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DetailModeLabel.Location = new System.Drawing.Point(403, 71);
+            this.DetailModeLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DetailModeLabel.ForeColor = System.Drawing.Color.Black;
+            this.DetailModeLabel.Location = new System.Drawing.Point(397, 71);
             this.DetailModeLabel.Name = "DetailModeLabel";
-            this.DetailModeLabel.Size = new System.Drawing.Size(108, 19);
+            this.DetailModeLabel.Size = new System.Drawing.Size(114, 19);
             this.DetailModeLabel.TabIndex = 4;
             this.DetailModeLabel.Text = "Texture Quality";
             this.BasicToolTip.SetToolTip(this.DetailModeLabel, "Replaces the Detail Level option from the original launcher and covers every valu" +
@@ -980,10 +1013,11 @@
             // VsyncLabel
             // 
             this.VsyncLabel.AutoSize = true;
-            this.VsyncLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.VsyncLabel.Location = new System.Drawing.Point(22, 71);
+            this.VsyncLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.VsyncLabel.ForeColor = System.Drawing.Color.Black;
+            this.VsyncLabel.Location = new System.Drawing.Point(18, 71);
             this.VsyncLabel.Name = "VsyncLabel";
-            this.VsyncLabel.Size = new System.Drawing.Size(91, 19);
+            this.VsyncLabel.Size = new System.Drawing.Size(95, 19);
             this.VsyncLabel.TabIndex = 3;
             this.VsyncLabel.Text = "Vertical Sync";
             this.BasicToolTip.SetToolTip(this.VsyncLabel, "Enable to eliminate screen tearing.");
@@ -991,10 +1025,11 @@
             // FrameCapLabel
             // 
             this.FrameCapLabel.AutoSize = true;
-            this.FrameCapLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FrameCapLabel.Location = new System.Drawing.Point(123, 104);
+            this.FrameCapLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FrameCapLabel.ForeColor = System.Drawing.Color.Black;
+            this.FrameCapLabel.Location = new System.Drawing.Point(117, 101);
             this.FrameCapLabel.Name = "FrameCapLabel";
-            this.FrameCapLabel.Size = new System.Drawing.Size(111, 19);
+            this.FrameCapLabel.Size = new System.Drawing.Size(117, 19);
             this.FrameCapLabel.TabIndex = 2;
             this.FrameCapLabel.Text = "Framerate Limit";
             this.BasicToolTip.SetToolTip(this.FrameCapLabel, "Limits amount of rendered frames per second. The value should be the refresh rate" +
@@ -1004,10 +1039,11 @@
             // ResolutionLabel
             // 
             this.ResolutionLabel.AutoSize = true;
-            this.ResolutionLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResolutionLabel.Location = new System.Drawing.Point(35, 38);
+            this.ResolutionLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ResolutionLabel.ForeColor = System.Drawing.Color.Black;
+            this.ResolutionLabel.Location = new System.Drawing.Point(32, 38);
             this.ResolutionLabel.Name = "ResolutionLabel";
-            this.ResolutionLabel.Size = new System.Drawing.Size(78, 19);
+            this.ResolutionLabel.Size = new System.Drawing.Size(81, 19);
             this.ResolutionLabel.TabIndex = 1;
             this.ResolutionLabel.Text = "Resolution";
             this.BasicToolTip.SetToolTip(this.ResolutionLabel, "Select rendering resolution. ");
@@ -1015,10 +1051,11 @@
             // LanguageLabel
             // 
             this.LanguageLabel.AutoSize = true;
-            this.LanguageLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LanguageLabel.Location = new System.Drawing.Point(439, 104);
+            this.LanguageLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LanguageLabel.ForeColor = System.Drawing.Color.Black;
+            this.LanguageLabel.Location = new System.Drawing.Point(437, 104);
             this.LanguageLabel.Name = "LanguageLabel";
-            this.LanguageLabel.Size = new System.Drawing.Size(72, 19);
+            this.LanguageLabel.Size = new System.Drawing.Size(74, 19);
             this.LanguageLabel.TabIndex = 5;
             this.LanguageLabel.Text = "Language";
             this.BasicToolTip.SetToolTip(this.LanguageLabel, "Sets the voice and text language of the game.");
@@ -1026,10 +1063,11 @@
             // FullscreenLabel
             // 
             this.FullscreenLabel.AutoSize = true;
-            this.FullscreenLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FullscreenLabel.Location = new System.Drawing.Point(436, 38);
+            this.FullscreenLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FullscreenLabel.ForeColor = System.Drawing.Color.Black;
+            this.FullscreenLabel.Location = new System.Drawing.Point(434, 38);
             this.FullscreenLabel.Name = "FullscreenLabel";
-            this.FullscreenLabel.Size = new System.Drawing.Size(75, 19);
+            this.FullscreenLabel.Size = new System.Drawing.Size(77, 19);
             this.FullscreenLabel.TabIndex = 0;
             this.FullscreenLabel.Text = "Fullscreen";
             this.BasicToolTip.SetToolTip(this.FullscreenLabel, "Press \'scroll lock\' in-game to switch between fullscreen and windowed mode. ");
@@ -1116,14 +1154,15 @@
             this.ControlTab.Controls.Add(this.RightLabel);
             this.ControlTab.Controls.Add(this.BackwardLabel);
             this.ControlTab.Controls.Add(this.ForwardLabel);
-            this.ControlTab.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ControlTab.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ControlTab.ForeColor = System.Drawing.Color.Black;
             this.ControlTab.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ControlTab.Location = new System.Drawing.Point(4, 38);
             this.ControlTab.Name = "ControlTab";
             this.ControlTab.Padding = new System.Windows.Forms.Padding(3);
             this.ControlTab.Size = new System.Drawing.Size(709, 537);
             this.ControlTab.TabIndex = 1;
-            this.ControlTab.Text = "          Controls          ";
+            this.ControlTab.Text = "          CONTROLS          ";
             this.ControlTab.UseVisualStyleBackColor = true;
             // 
             // MapLabel
@@ -1998,12 +2037,13 @@
             this.MiscTab.Controls.Add(this.OpenConsoleButton);
             this.MiscTab.Controls.Add(this.OpenConsoleLabel);
             this.MiscTab.Controls.Add(this.CustomFoV1Trackbar);
+            this.MiscTab.ForeColor = System.Drawing.Color.Black;
             this.MiscTab.Location = new System.Drawing.Point(4, 38);
             this.MiscTab.Name = "MiscTab";
             this.MiscTab.Padding = new System.Windows.Forms.Padding(3);
             this.MiscTab.Size = new System.Drawing.Size(709, 537);
             this.MiscTab.TabIndex = 3;
-            this.MiscTab.Text = "         Misc         ";
+            this.MiscTab.Text = "         MISC         ";
             this.MiscTab.UseVisualStyleBackColor = true;
             // 
             // DebugMenuButton
@@ -2060,7 +2100,7 @@
             // 
             // LowContrastColorButton
             // 
-            this.LowContrastColorButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LowContrastColorButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LowContrastColorButton.Location = new System.Drawing.Point(356, 32);
             this.LowContrastColorButton.Name = "LowContrastColorButton";
             this.LowContrastColorButton.Size = new System.Drawing.Size(102, 37);
@@ -2073,7 +2113,7 @@
             // 
             // HighContrastColorButton
             // 
-            this.HighContrastColorButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HighContrastColorButton.Font = new System.Drawing.Font("Impact", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.HighContrastColorButton.Location = new System.Drawing.Point(572, 32);
             this.HighContrastColorButton.Name = "HighContrastColorButton";
             this.HighContrastColorButton.Size = new System.Drawing.Size(102, 37);
@@ -2088,7 +2128,7 @@
             this.ShadowsValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ShadowsValueLabel.AutoSize = true;
             this.ShadowsValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ShadowsValueLabel.Location = new System.Drawing.Point(630, 228);
+            this.ShadowsValueLabel.Location = new System.Drawing.Point(624, 228);
             this.ShadowsValueLabel.Name = "ShadowsValueLabel";
             this.ShadowsValueLabel.Size = new System.Drawing.Size(25, 19);
             this.ShadowsValueLabel.TabIndex = 178;
@@ -2100,7 +2140,7 @@
             this.MidtonesValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.MidtonesValueLabel.AutoSize = true;
             this.MidtonesValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MidtonesValueLabel.Location = new System.Drawing.Point(630, 177);
+            this.MidtonesValueLabel.Location = new System.Drawing.Point(624, 177);
             this.MidtonesValueLabel.Name = "MidtonesValueLabel";
             this.MidtonesValueLabel.Size = new System.Drawing.Size(25, 19);
             this.MidtonesValueLabel.TabIndex = 167;
@@ -2112,7 +2152,7 @@
             this.HighlightsValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HighlightsValueLabel.AutoSize = true;
             this.HighlightsValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.HighlightsValueLabel.Location = new System.Drawing.Point(630, 126);
+            this.HighlightsValueLabel.Location = new System.Drawing.Point(624, 126);
             this.HighlightsValueLabel.Name = "HighlightsValueLabel";
             this.HighlightsValueLabel.Size = new System.Drawing.Size(25, 19);
             this.HighlightsValueLabel.TabIndex = 177;
@@ -2124,7 +2164,7 @@
             this.SaturationValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SaturationValueLabel.AutoSize = true;
             this.SaturationValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SaturationValueLabel.Location = new System.Drawing.Point(630, 75);
+            this.SaturationValueLabel.Location = new System.Drawing.Point(624, 75);
             this.SaturationValueLabel.Name = "SaturationValueLabel";
             this.SaturationValueLabel.Size = new System.Drawing.Size(25, 19);
             this.SaturationValueLabel.TabIndex = 166;
@@ -2144,7 +2184,7 @@
             // 
             // VividColorButton
             // 
-            this.VividColorButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.VividColorButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.VividColorButton.Location = new System.Drawing.Point(464, 32);
             this.VividColorButton.Name = "VividColorButton";
             this.VividColorButton.Size = new System.Drawing.Size(102, 37);
@@ -2157,7 +2197,7 @@
             // 
             // NoirColorButton
             // 
-            this.NoirColorButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NoirColorButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NoirColorButton.Location = new System.Drawing.Point(140, 32);
             this.NoirColorButton.Name = "NoirColorButton";
             this.NoirColorButton.Size = new System.Drawing.Size(102, 37);
@@ -2221,40 +2261,40 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(34, 247);
+            this.label14.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(31, 247);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(80, 23);
+            this.label14.Size = new System.Drawing.Size(90, 26);
             this.label14.TabIndex = 169;
             this.label14.Text = "Shadows";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(31, 196);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(83, 23);
+            this.label13.Size = new System.Drawing.Size(92, 26);
             this.label13.TabIndex = 168;
             this.label13.Text = "Midtones";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(28, 145);
+            this.label12.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(22, 145);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(86, 23);
+            this.label12.Size = new System.Drawing.Size(99, 26);
             this.label12.TabIndex = 167;
             this.label12.Text = "Highlights";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(23, 94);
+            this.label9.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(20, 94);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 23);
+            this.label9.Size = new System.Drawing.Size(103, 26);
             this.label9.TabIndex = 166;
             this.label9.Text = "Saturation";
             // 
@@ -2264,7 +2304,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(571, 207);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(322, 205);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2302,7 +2342,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(571, 164);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(322, 162);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2384,7 +2424,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV1ValueLabel.AutoSize = true;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(571, 122);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(322, 120);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV1ValueLabel.TabIndex = 156;
@@ -2573,11 +2613,12 @@
             // AboutTab
             // 
             this.AboutTab.Controls.Add(this.TempLabel);
+            this.AboutTab.ForeColor = System.Drawing.Color.Black;
             this.AboutTab.Location = new System.Drawing.Point(4, 38);
             this.AboutTab.Name = "AboutTab";
             this.AboutTab.Size = new System.Drawing.Size(709, 537);
             this.AboutTab.TabIndex = 2;
-            this.AboutTab.Text = "         About         ";
+            this.AboutTab.Text = "         ABOUT         ";
             this.AboutTab.UseVisualStyleBackColor = true;
             // 
             // TempLabel
@@ -2635,12 +2676,18 @@
             // 
             // StartGameButton
             // 
+            this.StartGameButton.BackColor = System.Drawing.Color.Transparent;
+            this.StartGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.StartGameButton.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.StartGameButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.StartGameButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.StartGameButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StartGameButton.Image = global::CityLauncher.Properties.Resources.startbutton_croppped;
             this.StartGameButton.Location = new System.Drawing.Point(12, 639);
             this.StartGameButton.Name = "StartGameButton";
-            this.StartGameButton.Size = new System.Drawing.Size(713, 56);
+            this.StartGameButton.Size = new System.Drawing.Size(713, 69);
             this.StartGameButton.TabIndex = 5;
-            this.StartGameButton.Text = "Start Game";
-            this.StartGameButton.UseVisualStyleBackColor = true;
+            this.StartGameButton.UseVisualStyleBackColor = false;
             this.StartGameButton.Click += new System.EventHandler(this.StartGameButton_Click);
             // 
             // GPULabel

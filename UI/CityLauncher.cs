@@ -616,5 +616,23 @@ namespace CityLauncher
         {
             new InputForm(DebugMenuButton).ShowDialog();
         }
+
+        private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            if (e.Index == tabControl1.SelectedIndex)
+            {
+                e.Graphics.DrawString(tabControl1.TabPages[e.Index].Text,
+                    tabControl1.TabPages[e.Index].Font,
+                    Brushes.Firebrick,
+                    new PointF(e.Bounds.X + 3, e.Bounds.Y + 3));
+            }
+            else
+            {
+                e.Graphics.DrawString(tabControl1.TabPages[e.Index].Text,
+                    tabControl1.TabPages[e.Index].Font,
+                    Brushes.Black,
+                    new PointF(e.Bounds.X + 3, e.Bounds.Y + 3));
+            }
+        }
     }
 }

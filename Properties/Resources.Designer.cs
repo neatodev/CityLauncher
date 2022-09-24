@@ -295,6 +295,16 @@ namespace CityLauncher.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap startbutton_croppped {
+            get {
+                object obj = ResourceManager.GetObject("startbutton_croppped", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to [Configuration]
         ///BasedOn=..\BmGame\Config\DefaultEngine.ini
         ///
