@@ -84,85 +84,87 @@
             this.LanguageLabel = new System.Windows.Forms.Label();
             this.FullscreenLabel = new System.Windows.Forms.Label();
             this.ControlTab = new System.Windows.Forms.TabPage();
-            this.MapLabel = new System.Windows.Forms.Label();
-            this.MapButton = new System.Windows.Forms.Button();
-            this.CapeStunButton = new System.Windows.Forms.Button();
-            this.ResetControlButton = new System.Windows.Forms.Button();
-            this.CapeStunLabel = new System.Windows.Forms.Label();
-            this.CWDisarmFixButton1 = new System.Windows.Forms.Button();
-            this.CWDisarmFixLabel = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.QFireGadget5Button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.QFireGadget4Button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.QFireGadget3Button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.QFireGadget2Button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.QFireGadget1Button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Gadget12Button1 = new System.Windows.Forms.Button();
-            this.Gadget12Label = new System.Windows.Forms.Label();
-            this.Gadget11Button1 = new System.Windows.Forms.Button();
-            this.Gadget11Label = new System.Windows.Forms.Label();
-            this.Gadget10Button1 = new System.Windows.Forms.Button();
-            this.Gadget10Label = new System.Windows.Forms.Label();
-            this.Gadget9Button1 = new System.Windows.Forms.Button();
-            this.Gadget9Label = new System.Windows.Forms.Label();
-            this.Gadget8Button1 = new System.Windows.Forms.Button();
-            this.Gadget8Label = new System.Windows.Forms.Label();
-            this.Gadget7Button1 = new System.Windows.Forms.Button();
-            this.Gadget7Label = new System.Windows.Forms.Label();
-            this.Gadget6Button1 = new System.Windows.Forms.Button();
-            this.Gadget6Label = new System.Windows.Forms.Label();
-            this.Gadget5Button1 = new System.Windows.Forms.Button();
-            this.Gadget5Label = new System.Windows.Forms.Label();
-            this.Gadget4Button1 = new System.Windows.Forms.Button();
-            this.Gadget4Label = new System.Windows.Forms.Label();
-            this.Gadget3Button1 = new System.Windows.Forms.Button();
-            this.Gadget3Label = new System.Windows.Forms.Label();
-            this.Gadget2Button1 = new System.Windows.Forms.Button();
-            this.Gadget2Label = new System.Windows.Forms.Label();
-            this.Gadget1Button1 = new System.Windows.Forms.Button();
-            this.Gadget1Label = new System.Windows.Forms.Label();
-            this.DisarmDestroyButton1 = new System.Windows.Forms.Button();
-            this.DisarmDestroyLabel = new System.Windows.Forms.Label();
-            this.MultiGroundTDButton1 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.MultiGroundTDLabel = new System.Windows.Forms.Label();
-            this.SCBSButton1 = new System.Windows.Forms.Button();
-            this.SCBSLabel = new System.Windows.Forms.Label();
-            this.SCTButton1 = new System.Windows.Forms.Button();
+            this.Gadget3Label = new System.Windows.Forms.Label();
             this.SCTLabel = new System.Windows.Forms.Label();
-            this.NextGadgetButton1 = new System.Windows.Forms.Button();
-            this.NextGadgetLabel = new System.Windows.Forms.Label();
-            this.PrevGadgetButton1 = new System.Windows.Forms.Button();
-            this.PrevGadgetLabel = new System.Windows.Forms.Label();
-            this.GadgetSecButton1 = new System.Windows.Forms.Button();
-            this.GadgetSecLabel = new System.Windows.Forms.Label();
-            this.ACTButton1 = new System.Windows.Forms.Button();
-            this.UseGadgetStrikeButton1 = new System.Windows.Forms.Button();
-            this.DetectiveModeButton1 = new System.Windows.Forms.Button();
-            this.ToggleCrouchButton1 = new System.Windows.Forms.Button();
-            this.GrappleButton1 = new System.Windows.Forms.Button();
-            this.ZoomButton1 = new System.Windows.Forms.Button();
-            this.CrouchButton1 = new System.Windows.Forms.Button();
-            this.RGUButton1 = new System.Windows.Forms.Button();
-            this.RightButton1 = new System.Windows.Forms.Button();
-            this.LeftButton1 = new System.Windows.Forms.Button();
-            this.BwButton1 = new System.Windows.Forms.Button();
-            this.FwButton1 = new System.Windows.Forms.Button();
-            this.ACTLabel = new System.Windows.Forms.Label();
-            this.UseGadgetStrikeLabel = new System.Windows.Forms.Label();
-            this.DetectiveModeLabel = new System.Windows.Forms.Label();
-            this.ToggleCrouchLabel = new System.Windows.Forms.Label();
-            this.GrappleLabel = new System.Windows.Forms.Label();
-            this.ZoomLabel = new System.Windows.Forms.Label();
-            this.CrouchLabel = new System.Windows.Forms.Label();
-            this.LeftLabel = new System.Windows.Forms.Label();
-            this.RightLabel = new System.Windows.Forms.Label();
-            this.BackwardLabel = new System.Windows.Forms.Label();
+            this.SCTButton1 = new System.Windows.Forms.Button();
+            this.QFireGadget5Button1 = new System.Windows.Forms.Button();
+            this.Gadget1Label = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Gadget1Button1 = new System.Windows.Forms.Button();
+            this.QFireGadget4Button1 = new System.Windows.Forms.Button();
+            this.Gadget2Label = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.QFireGadget1Button1 = new System.Windows.Forms.Button();
+            this.Gadget2Button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.QFireGadget3Button1 = new System.Windows.Forms.Button();
+            this.SCBSButton1 = new System.Windows.Forms.Button();
+            this.Gadget3Button1 = new System.Windows.Forms.Button();
+            this.SCBSLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Gadget4Label = new System.Windows.Forms.Label();
+            this.QFireGadget2Button1 = new System.Windows.Forms.Button();
+            this.Gadget4Button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Gadget5Label = new System.Windows.Forms.Label();
+            this.Gadget5Button1 = new System.Windows.Forms.Button();
+            this.Gadget6Label = new System.Windows.Forms.Label();
+            this.DisarmDestroyButton1 = new System.Windows.Forms.Button();
+            this.Gadget12Button1 = new System.Windows.Forms.Button();
+            this.DisarmDestroyLabel = new System.Windows.Forms.Label();
+            this.Gadget6Button1 = new System.Windows.Forms.Button();
+            this.MultiGroundTDButton1 = new System.Windows.Forms.Button();
+            this.Gadget12Label = new System.Windows.Forms.Label();
+            this.Gadget7Label = new System.Windows.Forms.Label();
+            this.Gadget11Button1 = new System.Windows.Forms.Button();
+            this.Gadget7Button1 = new System.Windows.Forms.Button();
+            this.Gadget11Label = new System.Windows.Forms.Label();
+            this.Gadget8Label = new System.Windows.Forms.Label();
+            this.Gadget10Button1 = new System.Windows.Forms.Button();
+            this.Gadget8Button1 = new System.Windows.Forms.Button();
+            this.Gadget10Label = new System.Windows.Forms.Label();
+            this.Gadget9Label = new System.Windows.Forms.Label();
+            this.Gadget9Button1 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.ForwardLabel = new System.Windows.Forms.Label();
+            this.MapLabel = new System.Windows.Forms.Label();
+            this.BackwardLabel = new System.Windows.Forms.Label();
+            this.MapButton = new System.Windows.Forms.Button();
+            this.RightLabel = new System.Windows.Forms.Label();
+            this.CapeStunButton = new System.Windows.Forms.Button();
+            this.CWDisarmFixButton1 = new System.Windows.Forms.Button();
+            this.LeftLabel = new System.Windows.Forms.Label();
+            this.CWDisarmFixLabel = new System.Windows.Forms.Label();
+            this.ZoomLabel = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.CapeStunLabel = new System.Windows.Forms.Label();
+            this.DetectiveModeLabel = new System.Windows.Forms.Label();
+            this.UseGadgetStrikeLabel = new System.Windows.Forms.Label();
+            this.ACTLabel = new System.Windows.Forms.Label();
+            this.FwButton1 = new System.Windows.Forms.Button();
+            this.BwButton1 = new System.Windows.Forms.Button();
+            this.LeftButton1 = new System.Windows.Forms.Button();
+            this.RightButton1 = new System.Windows.Forms.Button();
+            this.ZoomButton1 = new System.Windows.Forms.Button();
+            this.DetectiveModeButton1 = new System.Windows.Forms.Button();
+            this.UseGadgetStrikeButton1 = new System.Windows.Forms.Button();
+            this.ACTButton1 = new System.Windows.Forms.Button();
+            this.GadgetSecLabel = new System.Windows.Forms.Label();
+            this.GadgetSecButton1 = new System.Windows.Forms.Button();
+            this.PrevGadgetLabel = new System.Windows.Forms.Label();
+            this.PrevGadgetButton1 = new System.Windows.Forms.Button();
+            this.NextGadgetLabel = new System.Windows.Forms.Label();
+            this.NextGadgetButton1 = new System.Windows.Forms.Button();
+            this.CrouchLabel = new System.Windows.Forms.Label();
+            this.ToggleCrouchLabel = new System.Windows.Forms.Label();
+            this.RGUButton1 = new System.Windows.Forms.Button();
+            this.CrouchButton1 = new System.Windows.Forms.Button();
+            this.ToggleCrouchButton1 = new System.Windows.Forms.Button();
+            this.GrappleLabel = new System.Windows.Forms.Label();
+            this.GrappleButton1 = new System.Windows.Forms.Button();
+            this.ResetControlButton = new System.Windows.Forms.Button();
             this.MiscTab = new System.Windows.Forms.TabPage();
             this.DebugMenuButton = new System.Windows.Forms.Button();
             this.DebugMenuLabel = new System.Windows.Forms.Label();
@@ -227,6 +229,8 @@
             this.AdvancedDisplayGroupBox.SuspendLayout();
             this.BasicDisplayGroupBox.SuspendLayout();
             this.ControlTab.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.MiscTab.SuspendLayout();
             this.AdvancedColorBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShadowsTrackbar)).BeginInit();
@@ -254,7 +258,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(717, 579);
+            this.tabControl1.Size = new System.Drawing.Size(717, 548);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
             // 
@@ -268,7 +272,7 @@
             this.DisplayTab.Location = new System.Drawing.Point(4, 38);
             this.DisplayTab.Name = "DisplayTab";
             this.DisplayTab.Padding = new System.Windows.Forms.Padding(3);
-            this.DisplayTab.Size = new System.Drawing.Size(709, 537);
+            this.DisplayTab.Size = new System.Drawing.Size(709, 506);
             this.DisplayTab.TabIndex = 0;
             this.DisplayTab.Text = "          DISPLAY          ";
             this.DisplayTab.UseVisualStyleBackColor = true;
@@ -285,7 +289,7 @@
             this.PresetBox.Size = new System.Drawing.Size(683, 101);
             this.PresetBox.TabIndex = 17;
             this.PresetBox.TabStop = false;
-            this.PresetBox.Text = "Graphics Presets";
+            this.PresetBox.Text = "GRAPHICS PRESETS";
             // 
             // DarkKnightPresetButton
             // 
@@ -294,7 +298,7 @@
             this.DarkKnightPresetButton.Name = "DarkKnightPresetButton";
             this.DarkKnightPresetButton.Size = new System.Drawing.Size(214, 37);
             this.DarkKnightPresetButton.TabIndex = 17;
-            this.DarkKnightPresetButton.Text = "Ultra";
+            this.DarkKnightPresetButton.Text = "ULTRA";
             this.BasicToolTip.SetToolTip(this.DarkKnightPresetButton, "Graphics are pushed significantly.");
             this.DarkKnightPresetButton.UseVisualStyleBackColor = true;
             this.DarkKnightPresetButton.Click += new System.EventHandler(this.DarkKnightPresetButton_Click);
@@ -306,7 +310,7 @@
             this.VanillaPresetButton.Name = "VanillaPresetButton";
             this.VanillaPresetButton.Size = new System.Drawing.Size(217, 37);
             this.VanillaPresetButton.TabIndex = 10;
-            this.VanillaPresetButton.Text = "Vanilla";
+            this.VanillaPresetButton.Text = "VANILLA";
             this.BasicToolTip.SetToolTip(this.VanillaPresetButton, "Maximum graphics settings the vanilla launcher permits (excluding Anti-Aliasing)." +
         "\r\n- Use as a reference point or for comparisons with upgraded settings.");
             this.VanillaPresetButton.UseVisualStyleBackColor = true;
@@ -319,7 +323,7 @@
             this.OptimizedPresetButton.Name = "OptimizedPresetButton";
             this.OptimizedPresetButton.Size = new System.Drawing.Size(214, 37);
             this.OptimizedPresetButton.TabIndex = 16;
-            this.OptimizedPresetButton.Text = "Optimized";
+            this.OptimizedPresetButton.Text = "OPTIMIZED";
             this.BasicToolTip.SetToolTip(this.OptimizedPresetButton, "More balanced and performant settings.\r\n- Recommended baseline for improved graph" +
         "ics.");
             this.OptimizedPresetButton.UseVisualStyleBackColor = true;
@@ -364,7 +368,7 @@
             this.AdvancedDisplayGroupBox.Size = new System.Drawing.Size(683, 290);
             this.AdvancedDisplayGroupBox.TabIndex = 15;
             this.AdvancedDisplayGroupBox.TabStop = false;
-            this.AdvancedDisplayGroupBox.Text = "Advanced";
+            this.AdvancedDisplayGroupBox.Text = "ADVANCED";
             // 
             // ShadowSoftnessLabel
             // 
@@ -852,7 +856,7 @@
             this.BasicDisplayGroupBox.Size = new System.Drawing.Size(683, 225);
             this.BasicDisplayGroupBox.TabIndex = 13;
             this.BasicDisplayGroupBox.TabStop = false;
-            this.BasicDisplayGroupBox.Text = "Basic";
+            this.BasicDisplayGroupBox.Text = "BASIC";
             // 
             // SkipIntroBox
             // 
@@ -933,7 +937,7 @@
             this.ResetDisplayButton.Name = "ResetDisplayButton";
             this.ResetDisplayButton.Size = new System.Drawing.Size(152, 59);
             this.ResetDisplayButton.TabIndex = 4;
-            this.ResetDisplayButton.Text = "Reset Display";
+            this.ResetDisplayButton.Text = "RESET DISPLAY";
             this.BasicToolTip.SetToolTip(this.ResetDisplayButton, "Resets display settings to their defaults. ");
             this.ResetDisplayButton.UseVisualStyleBackColor = true;
             this.ResetDisplayButton.Click += new System.EventHandler(this.ResetDisplayButton_Click);
@@ -1075,935 +1079,1037 @@
             // ControlTab
             // 
             this.ControlTab.AutoScroll = true;
-            this.ControlTab.Controls.Add(this.MapLabel);
-            this.ControlTab.Controls.Add(this.MapButton);
-            this.ControlTab.Controls.Add(this.CapeStunButton);
+            this.ControlTab.Controls.Add(this.groupBox3);
+            this.ControlTab.Controls.Add(this.groupBox2);
             this.ControlTab.Controls.Add(this.ResetControlButton);
-            this.ControlTab.Controls.Add(this.CapeStunLabel);
-            this.ControlTab.Controls.Add(this.CWDisarmFixButton1);
-            this.ControlTab.Controls.Add(this.CWDisarmFixLabel);
-            this.ControlTab.Controls.Add(this.label8);
-            this.ControlTab.Controls.Add(this.QFireGadget5Button1);
-            this.ControlTab.Controls.Add(this.label1);
-            this.ControlTab.Controls.Add(this.QFireGadget4Button1);
-            this.ControlTab.Controls.Add(this.label2);
-            this.ControlTab.Controls.Add(this.QFireGadget3Button1);
-            this.ControlTab.Controls.Add(this.label3);
-            this.ControlTab.Controls.Add(this.QFireGadget2Button1);
-            this.ControlTab.Controls.Add(this.label4);
-            this.ControlTab.Controls.Add(this.QFireGadget1Button1);
-            this.ControlTab.Controls.Add(this.label5);
-            this.ControlTab.Controls.Add(this.Gadget12Button1);
-            this.ControlTab.Controls.Add(this.Gadget12Label);
-            this.ControlTab.Controls.Add(this.Gadget11Button1);
-            this.ControlTab.Controls.Add(this.Gadget11Label);
-            this.ControlTab.Controls.Add(this.Gadget10Button1);
-            this.ControlTab.Controls.Add(this.Gadget10Label);
-            this.ControlTab.Controls.Add(this.Gadget9Button1);
-            this.ControlTab.Controls.Add(this.Gadget9Label);
-            this.ControlTab.Controls.Add(this.Gadget8Button1);
-            this.ControlTab.Controls.Add(this.Gadget8Label);
-            this.ControlTab.Controls.Add(this.Gadget7Button1);
-            this.ControlTab.Controls.Add(this.Gadget7Label);
-            this.ControlTab.Controls.Add(this.Gadget6Button1);
-            this.ControlTab.Controls.Add(this.Gadget6Label);
-            this.ControlTab.Controls.Add(this.Gadget5Button1);
-            this.ControlTab.Controls.Add(this.Gadget5Label);
-            this.ControlTab.Controls.Add(this.Gadget4Button1);
-            this.ControlTab.Controls.Add(this.Gadget4Label);
-            this.ControlTab.Controls.Add(this.Gadget3Button1);
-            this.ControlTab.Controls.Add(this.Gadget3Label);
-            this.ControlTab.Controls.Add(this.Gadget2Button1);
-            this.ControlTab.Controls.Add(this.Gadget2Label);
-            this.ControlTab.Controls.Add(this.Gadget1Button1);
-            this.ControlTab.Controls.Add(this.Gadget1Label);
-            this.ControlTab.Controls.Add(this.DisarmDestroyButton1);
-            this.ControlTab.Controls.Add(this.DisarmDestroyLabel);
-            this.ControlTab.Controls.Add(this.MultiGroundTDButton1);
-            this.ControlTab.Controls.Add(this.MultiGroundTDLabel);
-            this.ControlTab.Controls.Add(this.SCBSButton1);
-            this.ControlTab.Controls.Add(this.SCBSLabel);
-            this.ControlTab.Controls.Add(this.SCTButton1);
-            this.ControlTab.Controls.Add(this.SCTLabel);
-            this.ControlTab.Controls.Add(this.NextGadgetButton1);
-            this.ControlTab.Controls.Add(this.NextGadgetLabel);
-            this.ControlTab.Controls.Add(this.PrevGadgetButton1);
-            this.ControlTab.Controls.Add(this.PrevGadgetLabel);
-            this.ControlTab.Controls.Add(this.GadgetSecButton1);
-            this.ControlTab.Controls.Add(this.GadgetSecLabel);
-            this.ControlTab.Controls.Add(this.ACTButton1);
-            this.ControlTab.Controls.Add(this.UseGadgetStrikeButton1);
-            this.ControlTab.Controls.Add(this.DetectiveModeButton1);
-            this.ControlTab.Controls.Add(this.ToggleCrouchButton1);
-            this.ControlTab.Controls.Add(this.GrappleButton1);
-            this.ControlTab.Controls.Add(this.ZoomButton1);
-            this.ControlTab.Controls.Add(this.CrouchButton1);
-            this.ControlTab.Controls.Add(this.RGUButton1);
-            this.ControlTab.Controls.Add(this.RightButton1);
-            this.ControlTab.Controls.Add(this.LeftButton1);
-            this.ControlTab.Controls.Add(this.BwButton1);
-            this.ControlTab.Controls.Add(this.FwButton1);
-            this.ControlTab.Controls.Add(this.ACTLabel);
-            this.ControlTab.Controls.Add(this.UseGadgetStrikeLabel);
-            this.ControlTab.Controls.Add(this.DetectiveModeLabel);
-            this.ControlTab.Controls.Add(this.ToggleCrouchLabel);
-            this.ControlTab.Controls.Add(this.GrappleLabel);
-            this.ControlTab.Controls.Add(this.ZoomLabel);
-            this.ControlTab.Controls.Add(this.CrouchLabel);
-            this.ControlTab.Controls.Add(this.LeftLabel);
-            this.ControlTab.Controls.Add(this.RightLabel);
-            this.ControlTab.Controls.Add(this.BackwardLabel);
-            this.ControlTab.Controls.Add(this.ForwardLabel);
             this.ControlTab.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ControlTab.ForeColor = System.Drawing.Color.Black;
             this.ControlTab.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ControlTab.Location = new System.Drawing.Point(4, 38);
             this.ControlTab.Name = "ControlTab";
             this.ControlTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ControlTab.Size = new System.Drawing.Size(709, 537);
+            this.ControlTab.Size = new System.Drawing.Size(709, 506);
             this.ControlTab.TabIndex = 1;
             this.ControlTab.Text = "          CONTROLS          ";
             this.ControlTab.UseVisualStyleBackColor = true;
             // 
-            // MapLabel
-            // 
-            this.MapLabel.AutoSize = true;
-            this.MapLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MapLabel.Location = new System.Drawing.Point(16, 348);
-            this.MapLabel.Name = "MapLabel";
-            this.MapLabel.Size = new System.Drawing.Size(74, 19);
-            this.MapLabel.TabIndex = 144;
-            this.MapLabel.Text = "View Map";
-            // 
-            // MapButton
-            // 
-            this.MapButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MapButton.Location = new System.Drawing.Point(96, 341);
-            this.MapButton.Name = "MapButton";
-            this.MapButton.Size = new System.Drawing.Size(96, 35);
-            this.MapButton.TabIndex = 143;
-            this.MapButton.Text = "button1";
-            this.MapButton.UseVisualStyleBackColor = true;
-            this.MapButton.Click += new System.EventHandler(this.MapButton_Click);
-            // 
-            // CapeStunButton
-            // 
-            this.CapeStunButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CapeStunButton.Location = new System.Drawing.Point(546, 49);
-            this.CapeStunButton.Name = "CapeStunButton";
-            this.CapeStunButton.Size = new System.Drawing.Size(96, 35);
-            this.CapeStunButton.TabIndex = 142;
-            this.CapeStunButton.Text = "button1";
-            this.CapeStunButton.UseVisualStyleBackColor = true;
-            this.CapeStunButton.Click += new System.EventHandler(this.CapeStunButton_Click);
-            // 
-            // ResetControlButton
-            // 
-            this.ResetControlButton.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResetControlButton.Location = new System.Drawing.Point(422, 587);
-            this.ResetControlButton.Name = "ResetControlButton";
-            this.ResetControlButton.Size = new System.Drawing.Size(220, 62);
-            this.ResetControlButton.TabIndex = 3;
-            this.ResetControlButton.Text = "Reset Controls";
-            this.BasicToolTip.SetToolTip(this.ResetControlButton, "Reverts keyboard mapping to vanilla setting. Will affect miscellaneous keys.");
-            this.ResetControlButton.UseVisualStyleBackColor = true;
-            this.ResetControlButton.Click += new System.EventHandler(this.ResetControlButton_Click);
-            // 
-            // CapeStunLabel
-            // 
-            this.CapeStunLabel.AutoSize = true;
-            this.CapeStunLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CapeStunLabel.Location = new System.Drawing.Point(466, 56);
-            this.CapeStunLabel.Name = "CapeStunLabel";
-            this.CapeStunLabel.Size = new System.Drawing.Size(74, 19);
-            this.CapeStunLabel.TabIndex = 141;
-            this.CapeStunLabel.Text = "Cape Stun";
-            // 
-            // CWDisarmFixButton1
-            // 
-            this.CWDisarmFixButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CWDisarmFixButton1.Location = new System.Drawing.Point(307, 315);
-            this.CWDisarmFixButton1.Name = "CWDisarmFixButton1";
-            this.CWDisarmFixButton1.Size = new System.Drawing.Size(96, 57);
-            this.CWDisarmFixButton1.TabIndex = 140;
-            this.CWDisarmFixButton1.Text = "button1";
-            this.CWDisarmFixButton1.UseVisualStyleBackColor = true;
-            this.CWDisarmFixButton1.Click += new System.EventHandler(this.CWDisarmFixButton1_Click);
-            // 
-            // CWDisarmFixLabel
-            // 
-            this.CWDisarmFixLabel.AutoSize = true;
-            this.CWDisarmFixLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CWDisarmFixLabel.Location = new System.Drawing.Point(223, 315);
-            this.CWDisarmFixLabel.Name = "CWDisarmFixLabel";
-            this.CWDisarmFixLabel.Size = new System.Drawing.Size(78, 57);
-            this.CWDisarmFixLabel.TabIndex = 139;
-            this.CWDisarmFixLabel.Text = "Catwoman\r\nDisarm\r\nFix";
-            this.CWDisarmFixLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(47, 238);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 57);
-            this.label8.TabIndex = 107;
-            this.label8.Text = "Run\r\nGlide\r\nUse";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // QFireGadget5Button1
-            // 
-            this.QFireGadget5Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.QFireGadget5Button1.Location = new System.Drawing.Point(546, 546);
-            this.QFireGadget5Button1.Name = "QFireGadget5Button1";
-            this.QFireGadget5Button1.Size = new System.Drawing.Size(96, 35);
-            this.QFireGadget5Button1.TabIndex = 106;
-            this.QFireGadget5Button1.Text = "button1";
-            this.QFireGadget5Button1.UseVisualStyleBackColor = true;
-            this.QFireGadget5Button1.Click += new System.EventHandler(this.QFireGadget5Button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(410, 554);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 19);
-            this.label1.TabIndex = 105;
-            this.label1.Text = "Quickfire Gadget 5";
-            // 
-            // QFireGadget4Button1
-            // 
-            this.QFireGadget4Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.QFireGadget4Button1.Location = new System.Drawing.Point(546, 505);
-            this.QFireGadget4Button1.Name = "QFireGadget4Button1";
-            this.QFireGadget4Button1.Size = new System.Drawing.Size(96, 35);
-            this.QFireGadget4Button1.TabIndex = 103;
-            this.QFireGadget4Button1.Text = "button1";
-            this.QFireGadget4Button1.UseVisualStyleBackColor = true;
-            this.QFireGadget4Button1.Click += new System.EventHandler(this.QFireGadget4Button1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(410, 513);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 19);
-            this.label2.TabIndex = 102;
-            this.label2.Text = "Quickfire Gadget 4";
-            // 
-            // QFireGadget3Button1
-            // 
-            this.QFireGadget3Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.QFireGadget3Button1.Location = new System.Drawing.Point(546, 464);
-            this.QFireGadget3Button1.Name = "QFireGadget3Button1";
-            this.QFireGadget3Button1.Size = new System.Drawing.Size(96, 35);
-            this.QFireGadget3Button1.TabIndex = 100;
-            this.QFireGadget3Button1.Text = "button1";
-            this.QFireGadget3Button1.UseVisualStyleBackColor = true;
-            this.QFireGadget3Button1.Click += new System.EventHandler(this.QFireGadget3Button1_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(410, 472);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 19);
-            this.label3.TabIndex = 99;
-            this.label3.Text = "Quickfire Gadget 3";
-            // 
-            // QFireGadget2Button1
-            // 
-            this.QFireGadget2Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.QFireGadget2Button1.Location = new System.Drawing.Point(546, 423);
-            this.QFireGadget2Button1.Name = "QFireGadget2Button1";
-            this.QFireGadget2Button1.Size = new System.Drawing.Size(96, 35);
-            this.QFireGadget2Button1.TabIndex = 97;
-            this.QFireGadget2Button1.Text = "button1";
-            this.QFireGadget2Button1.UseVisualStyleBackColor = true;
-            this.QFireGadget2Button1.Click += new System.EventHandler(this.QFireGadget2Button1_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(410, 431);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 19);
-            this.label4.TabIndex = 96;
-            this.label4.Text = "Quickfire Gadget 2";
-            // 
-            // QFireGadget1Button1
-            // 
-            this.QFireGadget1Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.QFireGadget1Button1.Location = new System.Drawing.Point(546, 382);
-            this.QFireGadget1Button1.Name = "QFireGadget1Button1";
-            this.QFireGadget1Button1.Size = new System.Drawing.Size(96, 35);
-            this.QFireGadget1Button1.TabIndex = 94;
-            this.QFireGadget1Button1.Text = "button1";
-            this.QFireGadget1Button1.UseVisualStyleBackColor = true;
-            this.QFireGadget1Button1.Click += new System.EventHandler(this.QFireGadget1Button1_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(410, 390);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 19);
-            this.label5.TabIndex = 93;
-            this.label5.Text = "Quickfire Gadget 1";
-            // 
-            // Gadget12Button1
-            // 
-            this.Gadget12Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget12Button1.Location = new System.Drawing.Point(307, 614);
-            this.Gadget12Button1.Name = "Gadget12Button1";
-            this.Gadget12Button1.Size = new System.Drawing.Size(96, 35);
-            this.Gadget12Button1.TabIndex = 91;
-            this.Gadget12Button1.Text = "button1";
-            this.Gadget12Button1.UseVisualStyleBackColor = true;
-            this.Gadget12Button1.Click += new System.EventHandler(this.Gadget12Button1_Click);
-            // 
-            // Gadget12Label
-            // 
-            this.Gadget12Label.AutoSize = true;
-            this.Gadget12Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget12Label.Location = new System.Drawing.Point(225, 622);
-            this.Gadget12Label.Name = "Gadget12Label";
-            this.Gadget12Label.Size = new System.Drawing.Size(76, 19);
-            this.Gadget12Label.TabIndex = 90;
-            this.Gadget12Label.Text = "Gadget 12";
-            // 
-            // Gadget11Button1
-            // 
-            this.Gadget11Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget11Button1.Location = new System.Drawing.Point(307, 573);
-            this.Gadget11Button1.Name = "Gadget11Button1";
-            this.Gadget11Button1.Size = new System.Drawing.Size(96, 35);
-            this.Gadget11Button1.TabIndex = 88;
-            this.Gadget11Button1.Text = "button1";
-            this.Gadget11Button1.UseVisualStyleBackColor = true;
-            this.Gadget11Button1.Click += new System.EventHandler(this.Gadget11Button1_Click);
-            // 
-            // Gadget11Label
-            // 
-            this.Gadget11Label.AutoSize = true;
-            this.Gadget11Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget11Label.Location = new System.Drawing.Point(225, 581);
-            this.Gadget11Label.Name = "Gadget11Label";
-            this.Gadget11Label.Size = new System.Drawing.Size(76, 19);
-            this.Gadget11Label.TabIndex = 87;
-            this.Gadget11Label.Text = "Gadget 11";
-            // 
-            // Gadget10Button1
-            // 
-            this.Gadget10Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget10Button1.Location = new System.Drawing.Point(307, 532);
-            this.Gadget10Button1.Name = "Gadget10Button1";
-            this.Gadget10Button1.Size = new System.Drawing.Size(96, 35);
-            this.Gadget10Button1.TabIndex = 85;
-            this.Gadget10Button1.Text = "button1";
-            this.Gadget10Button1.UseVisualStyleBackColor = true;
-            this.Gadget10Button1.Click += new System.EventHandler(this.Gadget10Button1_Click);
-            // 
-            // Gadget10Label
-            // 
-            this.Gadget10Label.AutoSize = true;
-            this.Gadget10Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget10Label.Location = new System.Drawing.Point(225, 540);
-            this.Gadget10Label.Name = "Gadget10Label";
-            this.Gadget10Label.Size = new System.Drawing.Size(76, 19);
-            this.Gadget10Label.TabIndex = 84;
-            this.Gadget10Label.Text = "Gadget 10";
-            // 
-            // Gadget9Button1
-            // 
-            this.Gadget9Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget9Button1.Location = new System.Drawing.Point(307, 491);
-            this.Gadget9Button1.Name = "Gadget9Button1";
-            this.Gadget9Button1.Size = new System.Drawing.Size(96, 35);
-            this.Gadget9Button1.TabIndex = 82;
-            this.Gadget9Button1.Text = "button1";
-            this.Gadget9Button1.UseVisualStyleBackColor = true;
-            this.Gadget9Button1.Click += new System.EventHandler(this.Gadget9Button1_Click);
-            // 
-            // Gadget9Label
-            // 
-            this.Gadget9Label.AutoSize = true;
-            this.Gadget9Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget9Label.Location = new System.Drawing.Point(233, 498);
-            this.Gadget9Label.Name = "Gadget9Label";
-            this.Gadget9Label.Size = new System.Drawing.Size(68, 19);
-            this.Gadget9Label.TabIndex = 81;
-            this.Gadget9Label.Text = "Gadget 9";
-            // 
-            // Gadget8Button1
-            // 
-            this.Gadget8Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget8Button1.Location = new System.Drawing.Point(307, 450);
-            this.Gadget8Button1.Name = "Gadget8Button1";
-            this.Gadget8Button1.Size = new System.Drawing.Size(96, 35);
-            this.Gadget8Button1.TabIndex = 79;
-            this.Gadget8Button1.Text = "button1";
-            this.Gadget8Button1.UseVisualStyleBackColor = true;
-            this.Gadget8Button1.Click += new System.EventHandler(this.Gadget8Button1_Click);
-            // 
-            // Gadget8Label
-            // 
-            this.Gadget8Label.AutoSize = true;
-            this.Gadget8Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget8Label.Location = new System.Drawing.Point(233, 458);
-            this.Gadget8Label.Name = "Gadget8Label";
-            this.Gadget8Label.Size = new System.Drawing.Size(68, 19);
-            this.Gadget8Label.TabIndex = 78;
-            this.Gadget8Label.Text = "Gadget 8";
-            // 
-            // Gadget7Button1
-            // 
-            this.Gadget7Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget7Button1.Location = new System.Drawing.Point(307, 409);
-            this.Gadget7Button1.Name = "Gadget7Button1";
-            this.Gadget7Button1.Size = new System.Drawing.Size(96, 35);
-            this.Gadget7Button1.TabIndex = 76;
-            this.Gadget7Button1.Text = "button1";
-            this.Gadget7Button1.UseVisualStyleBackColor = true;
-            this.Gadget7Button1.Click += new System.EventHandler(this.Gadget7Button1_Click);
-            // 
-            // Gadget7Label
-            // 
-            this.Gadget7Label.AutoSize = true;
-            this.Gadget7Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget7Label.Location = new System.Drawing.Point(233, 417);
-            this.Gadget7Label.Name = "Gadget7Label";
-            this.Gadget7Label.Size = new System.Drawing.Size(68, 19);
-            this.Gadget7Label.TabIndex = 75;
-            this.Gadget7Label.Text = "Gadget 7";
-            // 
-            // Gadget6Button1
-            // 
-            this.Gadget6Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget6Button1.Location = new System.Drawing.Point(96, 614);
-            this.Gadget6Button1.Name = "Gadget6Button1";
-            this.Gadget6Button1.Size = new System.Drawing.Size(96, 35);
-            this.Gadget6Button1.TabIndex = 73;
-            this.Gadget6Button1.Text = "button1";
-            this.Gadget6Button1.UseVisualStyleBackColor = true;
-            this.Gadget6Button1.Click += new System.EventHandler(this.Gadget6Button1_Click);
-            // 
-            // Gadget6Label
-            // 
-            this.Gadget6Label.AutoSize = true;
-            this.Gadget6Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget6Label.Location = new System.Drawing.Point(22, 621);
-            this.Gadget6Label.Name = "Gadget6Label";
-            this.Gadget6Label.Size = new System.Drawing.Size(68, 19);
-            this.Gadget6Label.TabIndex = 72;
-            this.Gadget6Label.Text = "Gadget 6";
-            // 
-            // Gadget5Button1
-            // 
-            this.Gadget5Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget5Button1.Location = new System.Drawing.Point(96, 573);
-            this.Gadget5Button1.Name = "Gadget5Button1";
-            this.Gadget5Button1.Size = new System.Drawing.Size(96, 35);
-            this.Gadget5Button1.TabIndex = 70;
-            this.Gadget5Button1.Text = "button1";
-            this.Gadget5Button1.UseVisualStyleBackColor = true;
-            this.Gadget5Button1.Click += new System.EventHandler(this.Gadget5Button1_Click);
-            // 
-            // Gadget5Label
-            // 
-            this.Gadget5Label.AutoSize = true;
-            this.Gadget5Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget5Label.Location = new System.Drawing.Point(22, 581);
-            this.Gadget5Label.Name = "Gadget5Label";
-            this.Gadget5Label.Size = new System.Drawing.Size(68, 19);
-            this.Gadget5Label.TabIndex = 69;
-            this.Gadget5Label.Text = "Gadget 5";
-            // 
-            // Gadget4Button1
-            // 
-            this.Gadget4Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget4Button1.Location = new System.Drawing.Point(96, 532);
-            this.Gadget4Button1.Name = "Gadget4Button1";
-            this.Gadget4Button1.Size = new System.Drawing.Size(96, 35);
-            this.Gadget4Button1.TabIndex = 67;
-            this.Gadget4Button1.Text = "button1";
-            this.Gadget4Button1.UseVisualStyleBackColor = true;
-            this.Gadget4Button1.Click += new System.EventHandler(this.Gadget4Button1_Click);
-            // 
-            // Gadget4Label
-            // 
-            this.Gadget4Label.AutoSize = true;
-            this.Gadget4Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget4Label.Location = new System.Drawing.Point(22, 540);
-            this.Gadget4Label.Name = "Gadget4Label";
-            this.Gadget4Label.Size = new System.Drawing.Size(68, 19);
-            this.Gadget4Label.TabIndex = 66;
-            this.Gadget4Label.Text = "Gadget 4";
-            // 
-            // Gadget3Button1
-            // 
-            this.Gadget3Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget3Button1.Location = new System.Drawing.Point(96, 491);
-            this.Gadget3Button1.Name = "Gadget3Button1";
-            this.Gadget3Button1.Size = new System.Drawing.Size(96, 35);
-            this.Gadget3Button1.TabIndex = 64;
-            this.Gadget3Button1.Text = "button1";
-            this.Gadget3Button1.UseVisualStyleBackColor = true;
-            this.Gadget3Button1.Click += new System.EventHandler(this.Gadget3Button1_Click);
-            // 
-            // Gadget3Label
-            // 
-            this.Gadget3Label.AutoSize = true;
-            this.Gadget3Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget3Label.Location = new System.Drawing.Point(22, 500);
-            this.Gadget3Label.Name = "Gadget3Label";
-            this.Gadget3Label.Size = new System.Drawing.Size(68, 19);
-            this.Gadget3Label.TabIndex = 63;
-            this.Gadget3Label.Text = "Gadget 3";
-            // 
-            // Gadget2Button1
-            // 
-            this.Gadget2Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget2Button1.Location = new System.Drawing.Point(96, 450);
-            this.Gadget2Button1.Name = "Gadget2Button1";
-            this.Gadget2Button1.Size = new System.Drawing.Size(96, 35);
-            this.Gadget2Button1.TabIndex = 61;
-            this.Gadget2Button1.Text = "button1";
-            this.Gadget2Button1.UseVisualStyleBackColor = true;
-            this.Gadget2Button1.Click += new System.EventHandler(this.Gadget2Button1_Click);
-            // 
-            // Gadget2Label
-            // 
-            this.Gadget2Label.AutoSize = true;
-            this.Gadget2Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget2Label.Location = new System.Drawing.Point(22, 458);
-            this.Gadget2Label.Name = "Gadget2Label";
-            this.Gadget2Label.Size = new System.Drawing.Size(68, 19);
-            this.Gadget2Label.TabIndex = 60;
-            this.Gadget2Label.Text = "Gadget 2";
-            // 
-            // Gadget1Button1
-            // 
-            this.Gadget1Button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget1Button1.Location = new System.Drawing.Point(96, 409);
-            this.Gadget1Button1.Name = "Gadget1Button1";
-            this.Gadget1Button1.Size = new System.Drawing.Size(96, 35);
-            this.Gadget1Button1.TabIndex = 58;
-            this.Gadget1Button1.Text = "button1";
-            this.Gadget1Button1.UseVisualStyleBackColor = true;
-            this.Gadget1Button1.Click += new System.EventHandler(this.Gadget1Button1_Click);
-            // 
-            // Gadget1Label
-            // 
-            this.Gadget1Label.AutoSize = true;
-            this.Gadget1Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gadget1Label.Location = new System.Drawing.Point(22, 417);
-            this.Gadget1Label.Name = "Gadget1Label";
-            this.Gadget1Label.Size = new System.Drawing.Size(68, 19);
-            this.Gadget1Label.TabIndex = 57;
-            this.Gadget1Label.Text = "Gadget 1";
-            // 
-            // DisarmDestroyButton1
-            // 
-            this.DisarmDestroyButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DisarmDestroyButton1.Location = new System.Drawing.Point(546, 276);
-            this.DisarmDestroyButton1.Name = "DisarmDestroyButton1";
-            this.DisarmDestroyButton1.Size = new System.Drawing.Size(96, 76);
-            this.DisarmDestroyButton1.TabIndex = 55;
-            this.DisarmDestroyButton1.Text = "button1";
-            this.DisarmDestroyButton1.UseVisualStyleBackColor = true;
-            this.DisarmDestroyButton1.Click += new System.EventHandler(this.DisarmDestroyButton1_Click);
-            // 
-            // DisarmDestroyLabel
-            // 
-            this.DisarmDestroyLabel.AutoSize = true;
-            this.DisarmDestroyLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DisarmDestroyLabel.Location = new System.Drawing.Point(457, 275);
-            this.DisarmDestroyLabel.Name = "DisarmDestroyLabel";
-            this.DisarmDestroyLabel.Size = new System.Drawing.Size(83, 76);
-            this.DisarmDestroyLabel.TabIndex = 54;
-            this.DisarmDestroyLabel.Text = "Special\r\nCombo\r\nDisarm and\r\nDestroy\r\n";
-            this.DisarmDestroyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // MultiGroundTDButton1
-            // 
-            this.MultiGroundTDButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MultiGroundTDButton1.Location = new System.Drawing.Point(546, 194);
-            this.MultiGroundTDButton1.Name = "MultiGroundTDButton1";
-            this.MultiGroundTDButton1.Size = new System.Drawing.Size(96, 76);
-            this.MultiGroundTDButton1.TabIndex = 52;
-            this.MultiGroundTDButton1.Text = "button1";
-            this.MultiGroundTDButton1.UseVisualStyleBackColor = true;
-            this.MultiGroundTDButton1.Click += new System.EventHandler(this.MultiGroundTDButton1_Click);
+            // groupBox3
+            // 
+            this.groupBox3.AutoSize = true;
+            this.groupBox3.Controls.Add(this.MultiGroundTDLabel);
+            this.groupBox3.Controls.Add(this.Gadget3Label);
+            this.groupBox3.Controls.Add(this.SCTLabel);
+            this.groupBox3.Controls.Add(this.SCTButton1);
+            this.groupBox3.Controls.Add(this.QFireGadget5Button1);
+            this.groupBox3.Controls.Add(this.Gadget1Label);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.Gadget1Button1);
+            this.groupBox3.Controls.Add(this.QFireGadget4Button1);
+            this.groupBox3.Controls.Add(this.Gadget2Label);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.QFireGadget1Button1);
+            this.groupBox3.Controls.Add(this.Gadget2Button1);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.QFireGadget3Button1);
+            this.groupBox3.Controls.Add(this.SCBSButton1);
+            this.groupBox3.Controls.Add(this.Gadget3Button1);
+            this.groupBox3.Controls.Add(this.SCBSLabel);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.Gadget4Label);
+            this.groupBox3.Controls.Add(this.QFireGadget2Button1);
+            this.groupBox3.Controls.Add(this.Gadget4Button1);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.Gadget5Label);
+            this.groupBox3.Controls.Add(this.Gadget5Button1);
+            this.groupBox3.Controls.Add(this.Gadget6Label);
+            this.groupBox3.Controls.Add(this.DisarmDestroyButton1);
+            this.groupBox3.Controls.Add(this.Gadget12Button1);
+            this.groupBox3.Controls.Add(this.DisarmDestroyLabel);
+            this.groupBox3.Controls.Add(this.Gadget6Button1);
+            this.groupBox3.Controls.Add(this.MultiGroundTDButton1);
+            this.groupBox3.Controls.Add(this.Gadget12Label);
+            this.groupBox3.Controls.Add(this.Gadget7Label);
+            this.groupBox3.Controls.Add(this.Gadget11Button1);
+            this.groupBox3.Controls.Add(this.Gadget7Button1);
+            this.groupBox3.Controls.Add(this.Gadget11Label);
+            this.groupBox3.Controls.Add(this.Gadget8Label);
+            this.groupBox3.Controls.Add(this.Gadget10Button1);
+            this.groupBox3.Controls.Add(this.Gadget8Button1);
+            this.groupBox3.Controls.Add(this.Gadget10Label);
+            this.groupBox3.Controls.Add(this.Gadget9Label);
+            this.groupBox3.Controls.Add(this.Gadget9Button1);
+            this.groupBox3.ForeColor = System.Drawing.Color.Maroon;
+            this.groupBox3.Location = new System.Drawing.Point(3, 489);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(678, 561);
+            this.groupBox3.TabIndex = 146;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "SPECIAL";
             // 
             // MultiGroundTDLabel
             // 
             this.MultiGroundTDLabel.AutoSize = true;
-            this.MultiGroundTDLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MultiGroundTDLabel.Location = new System.Drawing.Point(446, 193);
+            this.MultiGroundTDLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MultiGroundTDLabel.ForeColor = System.Drawing.Color.Black;
+            this.MultiGroundTDLabel.Location = new System.Drawing.Point(361, 95);
             this.MultiGroundTDLabel.Name = "MultiGroundTDLabel";
-            this.MultiGroundTDLabel.Size = new System.Drawing.Size(94, 76);
+            this.MultiGroundTDLabel.Size = new System.Drawing.Size(128, 69);
             this.MultiGroundTDLabel.TabIndex = 51;
-            this.MultiGroundTDLabel.Text = "Special\r\nCombo\r\nMulti Ground\r\nTakedown\r\n";
+            this.MultiGroundTDLabel.Text = "Special Combo\r\nMulti Ground\r\nTakedown\r\n";
             this.MultiGroundTDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // SCBSButton1
+            // Gadget3Label
             // 
-            this.SCBSButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SCBSButton1.Location = new System.Drawing.Point(546, 131);
-            this.SCBSButton1.Name = "SCBSButton1";
-            this.SCBSButton1.Size = new System.Drawing.Size(96, 57);
-            this.SCBSButton1.TabIndex = 49;
-            this.SCBSButton1.Text = "button1";
-            this.SCBSButton1.UseVisualStyleBackColor = true;
-            this.SCBSButton1.Click += new System.EventHandler(this.SCBSButton1_Click);
+            this.Gadget3Label.AutoSize = true;
+            this.Gadget3Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget3Label.ForeColor = System.Drawing.Color.Black;
+            this.Gadget3Label.Location = new System.Drawing.Point(48, 131);
+            this.Gadget3Label.Name = "Gadget3Label";
+            this.Gadget3Label.Size = new System.Drawing.Size(79, 23);
+            this.Gadget3Label.TabIndex = 63;
+            this.Gadget3Label.Text = "Gadget 3";
             // 
-            // SCBSLabel
+            // SCTLabel
             // 
-            this.SCBSLabel.AutoSize = true;
-            this.SCBSLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SCBSLabel.Location = new System.Drawing.Point(462, 129);
-            this.SCBSLabel.Name = "SCBSLabel";
-            this.SCBSLabel.Size = new System.Drawing.Size(78, 57);
-            this.SCBSLabel.TabIndex = 48;
-            this.SCBSLabel.Text = "Special\r\nCombo\r\nBat Swarm\r\n";
-            this.SCBSLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SCTLabel.AutoSize = true;
+            this.SCTLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SCTLabel.ForeColor = System.Drawing.Color.Black;
+            this.SCTLabel.Location = new System.Drawing.Point(361, 170);
+            this.SCTLabel.Name = "SCTLabel";
+            this.SCTLabel.Size = new System.Drawing.Size(128, 46);
+            this.SCTLabel.TabIndex = 45;
+            this.SCTLabel.Text = "Special Combo\r\nTakedown";
+            this.SCTLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // SCTButton1
             // 
-            this.SCTButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SCTButton1.Location = new System.Drawing.Point(307, 252);
+            this.SCTButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SCTButton1.ForeColor = System.Drawing.Color.Black;
+            this.SCTButton1.Location = new System.Drawing.Point(495, 170);
             this.SCTButton1.Name = "SCTButton1";
-            this.SCTButton1.Size = new System.Drawing.Size(96, 57);
+            this.SCTButton1.Size = new System.Drawing.Size(173, 46);
             this.SCTButton1.TabIndex = 46;
             this.SCTButton1.Text = "button1";
             this.SCTButton1.UseVisualStyleBackColor = true;
             this.SCTButton1.Click += new System.EventHandler(this.SCTButton1_Click);
             // 
-            // SCTLabel
+            // QFireGadget5Button1
             // 
-            this.SCTLabel.AutoSize = true;
-            this.SCTLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SCTLabel.Location = new System.Drawing.Point(228, 252);
-            this.SCTLabel.Name = "SCTLabel";
-            this.SCTLabel.Size = new System.Drawing.Size(73, 57);
-            this.SCTLabel.TabIndex = 45;
-            this.SCTLabel.Text = "Special\r\nCombo\r\nTakedown\r\n";
-            this.SCTLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.QFireGadget5Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QFireGadget5Button1.ForeColor = System.Drawing.Color.Black;
+            this.QFireGadget5Button1.Location = new System.Drawing.Point(495, 438);
+            this.QFireGadget5Button1.Name = "QFireGadget5Button1";
+            this.QFireGadget5Button1.Size = new System.Drawing.Size(173, 35);
+            this.QFireGadget5Button1.TabIndex = 106;
+            this.QFireGadget5Button1.Text = "button1";
+            this.QFireGadget5Button1.UseVisualStyleBackColor = true;
+            this.QFireGadget5Button1.Click += new System.EventHandler(this.QFireGadget5Button1_Click);
             // 
-            // NextGadgetButton1
+            // Gadget1Label
             // 
-            this.NextGadgetButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NextGadgetButton1.Location = new System.Drawing.Point(307, 129);
-            this.NextGadgetButton1.Name = "NextGadgetButton1";
-            this.NextGadgetButton1.Size = new System.Drawing.Size(96, 35);
-            this.NextGadgetButton1.TabIndex = 44;
-            this.NextGadgetButton1.Text = "button1";
-            this.NextGadgetButton1.UseVisualStyleBackColor = true;
-            this.NextGadgetButton1.Click += new System.EventHandler(this.NextGadgetButton1_Click);
+            this.Gadget1Label.AutoSize = true;
+            this.Gadget1Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget1Label.ForeColor = System.Drawing.Color.Black;
+            this.Gadget1Label.Location = new System.Drawing.Point(51, 49);
+            this.Gadget1Label.Name = "Gadget1Label";
+            this.Gadget1Label.Size = new System.Drawing.Size(76, 23);
+            this.Gadget1Label.TabIndex = 57;
+            this.Gadget1Label.Text = "Gadget 1";
             // 
-            // NextGadgetLabel
+            // label1
             // 
-            this.NextGadgetLabel.AutoSize = true;
-            this.NextGadgetLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NextGadgetLabel.Location = new System.Drawing.Point(211, 137);
-            this.NextGadgetLabel.Name = "NextGadgetLabel";
-            this.NextGadgetLabel.Size = new System.Drawing.Size(90, 19);
-            this.NextGadgetLabel.TabIndex = 42;
-            this.NextGadgetLabel.Text = "Next Gadget";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(336, 444);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 23);
+            this.label1.TabIndex = 105;
+            this.label1.Text = "Quickfire Gadget 5";
             // 
-            // PrevGadgetButton1
+            // Gadget1Button1
             // 
-            this.PrevGadgetButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PrevGadgetButton1.Location = new System.Drawing.Point(307, 88);
-            this.PrevGadgetButton1.Name = "PrevGadgetButton1";
-            this.PrevGadgetButton1.Size = new System.Drawing.Size(96, 35);
-            this.PrevGadgetButton1.TabIndex = 41;
-            this.PrevGadgetButton1.Text = "button1";
-            this.PrevGadgetButton1.UseVisualStyleBackColor = true;
-            this.PrevGadgetButton1.Click += new System.EventHandler(this.PrevGadgetButton1_Click);
+            this.Gadget1Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget1Button1.ForeColor = System.Drawing.Color.Black;
+            this.Gadget1Button1.Location = new System.Drawing.Point(133, 43);
+            this.Gadget1Button1.Name = "Gadget1Button1";
+            this.Gadget1Button1.Size = new System.Drawing.Size(175, 35);
+            this.Gadget1Button1.TabIndex = 58;
+            this.Gadget1Button1.Text = "button1";
+            this.Gadget1Button1.UseVisualStyleBackColor = true;
+            this.Gadget1Button1.Click += new System.EventHandler(this.Gadget1Button1_Click);
             // 
-            // PrevGadgetLabel
+            // QFireGadget4Button1
             // 
-            this.PrevGadgetLabel.AutoSize = true;
-            this.PrevGadgetLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PrevGadgetLabel.Location = new System.Drawing.Point(210, 95);
-            this.PrevGadgetLabel.Name = "PrevGadgetLabel";
-            this.PrevGadgetLabel.Size = new System.Drawing.Size(91, 19);
-            this.PrevGadgetLabel.TabIndex = 39;
-            this.PrevGadgetLabel.Text = "Prev. Gadget";
+            this.QFireGadget4Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QFireGadget4Button1.ForeColor = System.Drawing.Color.Black;
+            this.QFireGadget4Button1.Location = new System.Drawing.Point(495, 397);
+            this.QFireGadget4Button1.Name = "QFireGadget4Button1";
+            this.QFireGadget4Button1.Size = new System.Drawing.Size(173, 35);
+            this.QFireGadget4Button1.TabIndex = 103;
+            this.QFireGadget4Button1.Text = "button1";
+            this.QFireGadget4Button1.UseVisualStyleBackColor = true;
+            this.QFireGadget4Button1.Click += new System.EventHandler(this.QFireGadget4Button1_Click);
             // 
-            // GadgetSecButton1
+            // Gadget2Label
             // 
-            this.GadgetSecButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GadgetSecButton1.Location = new System.Drawing.Point(546, 6);
-            this.GadgetSecButton1.Name = "GadgetSecButton1";
-            this.GadgetSecButton1.Size = new System.Drawing.Size(96, 37);
-            this.GadgetSecButton1.TabIndex = 38;
-            this.GadgetSecButton1.Text = "button1";
-            this.GadgetSecButton1.UseVisualStyleBackColor = true;
-            this.GadgetSecButton1.Click += new System.EventHandler(this.GadgetSecButton1_Click);
+            this.Gadget2Label.AutoSize = true;
+            this.Gadget2Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget2Label.ForeColor = System.Drawing.Color.Black;
+            this.Gadget2Label.Location = new System.Drawing.Point(48, 90);
+            this.Gadget2Label.Name = "Gadget2Label";
+            this.Gadget2Label.Size = new System.Drawing.Size(79, 23);
+            this.Gadget2Label.TabIndex = 60;
+            this.Gadget2Label.Text = "Gadget 2";
             // 
-            // GadgetSecLabel
+            // label2
             // 
-            this.GadgetSecLabel.AutoSize = true;
-            this.GadgetSecLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GadgetSecLabel.Location = new System.Drawing.Point(414, 6);
-            this.GadgetSecLabel.Name = "GadgetSecLabel";
-            this.GadgetSecLabel.Size = new System.Drawing.Size(126, 38);
-            this.GadgetSecLabel.TabIndex = 36;
-            this.GadgetSecLabel.Text = "Gadget Secondary\r\nCape Stun";
-            this.GadgetSecLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(337, 403);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(152, 23);
+            this.label2.TabIndex = 102;
+            this.label2.Text = "Quickfire Gadget 4";
             // 
-            // ACTButton1
+            // QFireGadget1Button1
             // 
-            this.ACTButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ACTButton1.Location = new System.Drawing.Point(96, 88);
-            this.ACTButton1.Name = "ACTButton1";
-            this.ACTButton1.Size = new System.Drawing.Size(96, 59);
-            this.ACTButton1.TabIndex = 34;
-            this.ACTButton1.Text = "button1";
-            this.ACTButton1.UseVisualStyleBackColor = true;
-            this.ACTButton1.Click += new System.EventHandler(this.ACTButton1_Click);
+            this.QFireGadget1Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QFireGadget1Button1.ForeColor = System.Drawing.Color.Black;
+            this.QFireGadget1Button1.Location = new System.Drawing.Point(495, 274);
+            this.QFireGadget1Button1.Name = "QFireGadget1Button1";
+            this.QFireGadget1Button1.Size = new System.Drawing.Size(173, 35);
+            this.QFireGadget1Button1.TabIndex = 94;
+            this.QFireGadget1Button1.Text = "button1";
+            this.QFireGadget1Button1.UseVisualStyleBackColor = true;
+            this.QFireGadget1Button1.Click += new System.EventHandler(this.QFireGadget1Button1_Click);
             // 
-            // UseGadgetStrikeButton1
+            // Gadget2Button1
             // 
-            this.UseGadgetStrikeButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UseGadgetStrikeButton1.Location = new System.Drawing.Point(96, 153);
-            this.UseGadgetStrikeButton1.Name = "UseGadgetStrikeButton1";
-            this.UseGadgetStrikeButton1.Size = new System.Drawing.Size(96, 38);
-            this.UseGadgetStrikeButton1.TabIndex = 32;
-            this.UseGadgetStrikeButton1.Text = "button1";
-            this.UseGadgetStrikeButton1.UseVisualStyleBackColor = true;
-            this.UseGadgetStrikeButton1.Click += new System.EventHandler(this.UseGadgetStrikeButton1_Click);
+            this.Gadget2Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget2Button1.ForeColor = System.Drawing.Color.Black;
+            this.Gadget2Button1.Location = new System.Drawing.Point(133, 84);
+            this.Gadget2Button1.Name = "Gadget2Button1";
+            this.Gadget2Button1.Size = new System.Drawing.Size(175, 35);
+            this.Gadget2Button1.TabIndex = 61;
+            this.Gadget2Button1.Text = "button1";
+            this.Gadget2Button1.UseVisualStyleBackColor = true;
+            this.Gadget2Button1.Click += new System.EventHandler(this.Gadget2Button1_Click);
             // 
-            // DetectiveModeButton1
+            // label5
             // 
-            this.DetectiveModeButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DetectiveModeButton1.Location = new System.Drawing.Point(546, 90);
-            this.DetectiveModeButton1.Name = "DetectiveModeButton1";
-            this.DetectiveModeButton1.Size = new System.Drawing.Size(96, 35);
-            this.DetectiveModeButton1.TabIndex = 30;
-            this.DetectiveModeButton1.Text = "button1";
-            this.DetectiveModeButton1.UseVisualStyleBackColor = true;
-            this.DetectiveModeButton1.Click += new System.EventHandler(this.DetectiveModeButton1_Click);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(339, 280);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(150, 23);
+            this.label5.TabIndex = 93;
+            this.label5.Text = "Quickfire Gadget 1";
             // 
-            // ToggleCrouchButton1
+            // QFireGadget3Button1
             // 
-            this.ToggleCrouchButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ToggleCrouchButton1.Location = new System.Drawing.Point(307, 211);
-            this.ToggleCrouchButton1.Name = "ToggleCrouchButton1";
-            this.ToggleCrouchButton1.Size = new System.Drawing.Size(96, 35);
-            this.ToggleCrouchButton1.TabIndex = 28;
-            this.ToggleCrouchButton1.Text = "button1";
-            this.ToggleCrouchButton1.UseVisualStyleBackColor = true;
-            this.ToggleCrouchButton1.Click += new System.EventHandler(this.ToggleCrouchButton1_Click);
+            this.QFireGadget3Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QFireGadget3Button1.ForeColor = System.Drawing.Color.Black;
+            this.QFireGadget3Button1.Location = new System.Drawing.Point(495, 356);
+            this.QFireGadget3Button1.Name = "QFireGadget3Button1";
+            this.QFireGadget3Button1.Size = new System.Drawing.Size(173, 35);
+            this.QFireGadget3Button1.TabIndex = 100;
+            this.QFireGadget3Button1.Text = "button1";
+            this.QFireGadget3Button1.UseVisualStyleBackColor = true;
+            this.QFireGadget3Button1.Click += new System.EventHandler(this.QFireGadget3Button1_Click);
             // 
-            // GrappleButton1
+            // SCBSButton1
             // 
-            this.GrappleButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GrappleButton1.Location = new System.Drawing.Point(96, 300);
-            this.GrappleButton1.Name = "GrappleButton1";
-            this.GrappleButton1.Size = new System.Drawing.Size(96, 35);
-            this.GrappleButton1.TabIndex = 26;
-            this.GrappleButton1.Text = "button1";
-            this.GrappleButton1.UseVisualStyleBackColor = true;
-            this.GrappleButton1.Click += new System.EventHandler(this.GrappleButton1_Click);
+            this.SCBSButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SCBSButton1.ForeColor = System.Drawing.Color.Black;
+            this.SCBSButton1.Location = new System.Drawing.Point(494, 43);
+            this.SCBSButton1.Name = "SCBSButton1";
+            this.SCBSButton1.Size = new System.Drawing.Size(174, 46);
+            this.SCBSButton1.TabIndex = 49;
+            this.SCBSButton1.Text = "button1";
+            this.SCBSButton1.UseVisualStyleBackColor = true;
+            this.SCBSButton1.Click += new System.EventHandler(this.SCBSButton1_Click);
             // 
-            // ZoomButton1
+            // Gadget3Button1
             // 
-            this.ZoomButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ZoomButton1.Location = new System.Drawing.Point(307, 170);
-            this.ZoomButton1.Name = "ZoomButton1";
-            this.ZoomButton1.Size = new System.Drawing.Size(96, 35);
-            this.ZoomButton1.TabIndex = 24;
-            this.ZoomButton1.Text = "button1";
-            this.ZoomButton1.UseVisualStyleBackColor = true;
-            this.ZoomButton1.Click += new System.EventHandler(this.ZoomButton1_Click);
+            this.Gadget3Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget3Button1.ForeColor = System.Drawing.Color.Black;
+            this.Gadget3Button1.Location = new System.Drawing.Point(133, 125);
+            this.Gadget3Button1.Name = "Gadget3Button1";
+            this.Gadget3Button1.Size = new System.Drawing.Size(175, 35);
+            this.Gadget3Button1.TabIndex = 64;
+            this.Gadget3Button1.Text = "button1";
+            this.Gadget3Button1.UseVisualStyleBackColor = true;
+            this.Gadget3Button1.Click += new System.EventHandler(this.Gadget3Button1_Click);
             // 
-            // CrouchButton1
+            // SCBSLabel
             // 
-            this.CrouchButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CrouchButton1.Location = new System.Drawing.Point(96, 197);
-            this.CrouchButton1.Name = "CrouchButton1";
-            this.CrouchButton1.Size = new System.Drawing.Size(96, 35);
-            this.CrouchButton1.TabIndex = 22;
-            this.CrouchButton1.Text = "button1";
-            this.CrouchButton1.UseVisualStyleBackColor = true;
-            this.CrouchButton1.Click += new System.EventHandler(this.CrouchButton1_Click);
+            this.SCBSLabel.AutoSize = true;
+            this.SCBSLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SCBSLabel.ForeColor = System.Drawing.Color.Black;
+            this.SCBSLabel.Location = new System.Drawing.Point(360, 44);
+            this.SCBSLabel.Name = "SCBSLabel";
+            this.SCBSLabel.Size = new System.Drawing.Size(128, 69);
+            this.SCBSLabel.TabIndex = 48;
+            this.SCBSLabel.Text = "Special Combo\r\nBat Swarm\r\n\r\n";
+            this.SCBSLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // RGUButton1
+            // label3
             // 
-            this.RGUButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RGUButton1.Location = new System.Drawing.Point(96, 238);
-            this.RGUButton1.Name = "RGUButton1";
-            this.RGUButton1.Size = new System.Drawing.Size(96, 56);
-            this.RGUButton1.TabIndex = 20;
-            this.RGUButton1.Text = "button1";
-            this.RGUButton1.UseVisualStyleBackColor = true;
-            this.RGUButton1.Click += new System.EventHandler(this.RGUButton1_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(336, 362);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(153, 23);
+            this.label3.TabIndex = 99;
+            this.label3.Text = "Quickfire Gadget 3";
             // 
-            // RightButton1
+            // Gadget4Label
             // 
-            this.RightButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RightButton1.Location = new System.Drawing.Point(307, 47);
-            this.RightButton1.Name = "RightButton1";
-            this.RightButton1.Size = new System.Drawing.Size(96, 35);
-            this.RightButton1.TabIndex = 18;
-            this.RightButton1.Text = "button1";
-            this.RightButton1.UseVisualStyleBackColor = true;
-            this.RightButton1.Click += new System.EventHandler(this.RightButton1_Click);
+            this.Gadget4Label.AutoSize = true;
+            this.Gadget4Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget4Label.ForeColor = System.Drawing.Color.Black;
+            this.Gadget4Label.Location = new System.Drawing.Point(49, 172);
+            this.Gadget4Label.Name = "Gadget4Label";
+            this.Gadget4Label.Size = new System.Drawing.Size(78, 23);
+            this.Gadget4Label.TabIndex = 66;
+            this.Gadget4Label.Text = "Gadget 4";
             // 
-            // LeftButton1
+            // QFireGadget2Button1
             // 
-            this.LeftButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LeftButton1.Location = new System.Drawing.Point(307, 6);
-            this.LeftButton1.Name = "LeftButton1";
-            this.LeftButton1.Size = new System.Drawing.Size(96, 35);
-            this.LeftButton1.TabIndex = 16;
-            this.LeftButton1.Text = "button1";
-            this.LeftButton1.UseVisualStyleBackColor = true;
-            this.LeftButton1.Click += new System.EventHandler(this.LeftButton1_Click);
+            this.QFireGadget2Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QFireGadget2Button1.ForeColor = System.Drawing.Color.Black;
+            this.QFireGadget2Button1.Location = new System.Drawing.Point(495, 315);
+            this.QFireGadget2Button1.Name = "QFireGadget2Button1";
+            this.QFireGadget2Button1.Size = new System.Drawing.Size(173, 35);
+            this.QFireGadget2Button1.TabIndex = 97;
+            this.QFireGadget2Button1.Text = "button1";
+            this.QFireGadget2Button1.UseVisualStyleBackColor = true;
+            this.QFireGadget2Button1.Click += new System.EventHandler(this.QFireGadget2Button1_Click);
             // 
-            // BwButton1
+            // Gadget4Button1
             // 
-            this.BwButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BwButton1.Location = new System.Drawing.Point(96, 47);
-            this.BwButton1.Name = "BwButton1";
-            this.BwButton1.Size = new System.Drawing.Size(96, 35);
-            this.BwButton1.TabIndex = 14;
-            this.BwButton1.Text = "button3";
-            this.BwButton1.UseVisualStyleBackColor = true;
-            this.BwButton1.Click += new System.EventHandler(this.BwButton1_Click);
+            this.Gadget4Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget4Button1.ForeColor = System.Drawing.Color.Black;
+            this.Gadget4Button1.Location = new System.Drawing.Point(133, 166);
+            this.Gadget4Button1.Name = "Gadget4Button1";
+            this.Gadget4Button1.Size = new System.Drawing.Size(175, 35);
+            this.Gadget4Button1.TabIndex = 67;
+            this.Gadget4Button1.Text = "button1";
+            this.Gadget4Button1.UseVisualStyleBackColor = true;
+            this.Gadget4Button1.Click += new System.EventHandler(this.Gadget4Button1_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(336, 321);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 23);
+            this.label4.TabIndex = 96;
+            this.label4.Text = "Quickfire Gadget 2";
+            // 
+            // Gadget5Label
+            // 
+            this.Gadget5Label.AutoSize = true;
+            this.Gadget5Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget5Label.ForeColor = System.Drawing.Color.Black;
+            this.Gadget5Label.Location = new System.Drawing.Point(48, 213);
+            this.Gadget5Label.Name = "Gadget5Label";
+            this.Gadget5Label.Size = new System.Drawing.Size(79, 23);
+            this.Gadget5Label.TabIndex = 69;
+            this.Gadget5Label.Text = "Gadget 5";
+            // 
+            // Gadget5Button1
+            // 
+            this.Gadget5Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget5Button1.ForeColor = System.Drawing.Color.Black;
+            this.Gadget5Button1.Location = new System.Drawing.Point(133, 207);
+            this.Gadget5Button1.Name = "Gadget5Button1";
+            this.Gadget5Button1.Size = new System.Drawing.Size(175, 35);
+            this.Gadget5Button1.TabIndex = 70;
+            this.Gadget5Button1.Text = "button1";
+            this.Gadget5Button1.UseVisualStyleBackColor = true;
+            this.Gadget5Button1.Click += new System.EventHandler(this.Gadget5Button1_Click);
+            // 
+            // Gadget6Label
+            // 
+            this.Gadget6Label.AutoSize = true;
+            this.Gadget6Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget6Label.ForeColor = System.Drawing.Color.Black;
+            this.Gadget6Label.Location = new System.Drawing.Point(48, 254);
+            this.Gadget6Label.Name = "Gadget6Label";
+            this.Gadget6Label.Size = new System.Drawing.Size(79, 23);
+            this.Gadget6Label.TabIndex = 72;
+            this.Gadget6Label.Text = "Gadget 6";
+            // 
+            // DisarmDestroyButton1
+            // 
+            this.DisarmDestroyButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DisarmDestroyButton1.ForeColor = System.Drawing.Color.Black;
+            this.DisarmDestroyButton1.Location = new System.Drawing.Point(495, 222);
+            this.DisarmDestroyButton1.Name = "DisarmDestroyButton1";
+            this.DisarmDestroyButton1.Size = new System.Drawing.Size(173, 46);
+            this.DisarmDestroyButton1.TabIndex = 55;
+            this.DisarmDestroyButton1.Text = "button1";
+            this.DisarmDestroyButton1.UseVisualStyleBackColor = true;
+            this.DisarmDestroyButton1.Click += new System.EventHandler(this.DisarmDestroyButton1_Click);
+            // 
+            // Gadget12Button1
+            // 
+            this.Gadget12Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget12Button1.ForeColor = System.Drawing.Color.Black;
+            this.Gadget12Button1.Location = new System.Drawing.Point(132, 494);
+            this.Gadget12Button1.Name = "Gadget12Button1";
+            this.Gadget12Button1.Size = new System.Drawing.Size(175, 35);
+            this.Gadget12Button1.TabIndex = 91;
+            this.Gadget12Button1.Text = "button1";
+            this.Gadget12Button1.UseVisualStyleBackColor = true;
+            this.Gadget12Button1.Click += new System.EventHandler(this.Gadget12Button1_Click);
+            // 
+            // DisarmDestroyLabel
+            // 
+            this.DisarmDestroyLabel.AutoSize = true;
+            this.DisarmDestroyLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DisarmDestroyLabel.ForeColor = System.Drawing.Color.Black;
+            this.DisarmDestroyLabel.Location = new System.Drawing.Point(328, 222);
+            this.DisarmDestroyLabel.Name = "DisarmDestroyLabel";
+            this.DisarmDestroyLabel.Size = new System.Drawing.Size(165, 46);
+            this.DisarmDestroyLabel.TabIndex = 54;
+            this.DisarmDestroyLabel.Text = "Special Combo\r\nDisarm and Destroy\r\n";
+            this.DisarmDestroyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // Gadget6Button1
+            // 
+            this.Gadget6Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget6Button1.ForeColor = System.Drawing.Color.Black;
+            this.Gadget6Button1.Location = new System.Drawing.Point(133, 248);
+            this.Gadget6Button1.Name = "Gadget6Button1";
+            this.Gadget6Button1.Size = new System.Drawing.Size(175, 35);
+            this.Gadget6Button1.TabIndex = 73;
+            this.Gadget6Button1.Text = "button1";
+            this.Gadget6Button1.UseVisualStyleBackColor = true;
+            this.Gadget6Button1.Click += new System.EventHandler(this.Gadget6Button1_Click);
+            // 
+            // MultiGroundTDButton1
+            // 
+            this.MultiGroundTDButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MultiGroundTDButton1.ForeColor = System.Drawing.Color.Black;
+            this.MultiGroundTDButton1.Location = new System.Drawing.Point(494, 95);
+            this.MultiGroundTDButton1.Name = "MultiGroundTDButton1";
+            this.MultiGroundTDButton1.Size = new System.Drawing.Size(174, 69);
+            this.MultiGroundTDButton1.TabIndex = 52;
+            this.MultiGroundTDButton1.Text = "button1";
+            this.MultiGroundTDButton1.UseVisualStyleBackColor = true;
+            this.MultiGroundTDButton1.Click += new System.EventHandler(this.MultiGroundTDButton1_Click);
+            // 
+            // Gadget12Label
+            // 
+            this.Gadget12Label.AutoSize = true;
+            this.Gadget12Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget12Label.ForeColor = System.Drawing.Color.Black;
+            this.Gadget12Label.Location = new System.Drawing.Point(40, 499);
+            this.Gadget12Label.Name = "Gadget12Label";
+            this.Gadget12Label.Size = new System.Drawing.Size(86, 23);
+            this.Gadget12Label.TabIndex = 90;
+            this.Gadget12Label.Text = "Gadget 12";
+            // 
+            // Gadget7Label
+            // 
+            this.Gadget7Label.AutoSize = true;
+            this.Gadget7Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget7Label.ForeColor = System.Drawing.Color.Black;
+            this.Gadget7Label.Location = new System.Drawing.Point(51, 294);
+            this.Gadget7Label.Name = "Gadget7Label";
+            this.Gadget7Label.Size = new System.Drawing.Size(76, 23);
+            this.Gadget7Label.TabIndex = 75;
+            this.Gadget7Label.Text = "Gadget 7";
+            // 
+            // Gadget11Button1
+            // 
+            this.Gadget11Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget11Button1.ForeColor = System.Drawing.Color.Black;
+            this.Gadget11Button1.Location = new System.Drawing.Point(132, 453);
+            this.Gadget11Button1.Name = "Gadget11Button1";
+            this.Gadget11Button1.Size = new System.Drawing.Size(175, 35);
+            this.Gadget11Button1.TabIndex = 88;
+            this.Gadget11Button1.Text = "button1";
+            this.Gadget11Button1.UseVisualStyleBackColor = true;
+            this.Gadget11Button1.Click += new System.EventHandler(this.Gadget11Button1_Click);
+            // 
+            // Gadget7Button1
+            // 
+            this.Gadget7Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget7Button1.ForeColor = System.Drawing.Color.Black;
+            this.Gadget7Button1.Location = new System.Drawing.Point(133, 289);
+            this.Gadget7Button1.Name = "Gadget7Button1";
+            this.Gadget7Button1.Size = new System.Drawing.Size(175, 35);
+            this.Gadget7Button1.TabIndex = 76;
+            this.Gadget7Button1.Text = "button1";
+            this.Gadget7Button1.UseVisualStyleBackColor = true;
+            this.Gadget7Button1.Click += new System.EventHandler(this.Gadget7Button1_Click);
+            // 
+            // Gadget11Label
+            // 
+            this.Gadget11Label.AutoSize = true;
+            this.Gadget11Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget11Label.ForeColor = System.Drawing.Color.Black;
+            this.Gadget11Label.Location = new System.Drawing.Point(43, 459);
+            this.Gadget11Label.Name = "Gadget11Label";
+            this.Gadget11Label.Size = new System.Drawing.Size(83, 23);
+            this.Gadget11Label.TabIndex = 87;
+            this.Gadget11Label.Text = "Gadget 11";
+            // 
+            // Gadget8Label
+            // 
+            this.Gadget8Label.AutoSize = true;
+            this.Gadget8Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget8Label.ForeColor = System.Drawing.Color.Black;
+            this.Gadget8Label.Location = new System.Drawing.Point(48, 336);
+            this.Gadget8Label.Name = "Gadget8Label";
+            this.Gadget8Label.Size = new System.Drawing.Size(79, 23);
+            this.Gadget8Label.TabIndex = 78;
+            this.Gadget8Label.Text = "Gadget 8";
+            // 
+            // Gadget10Button1
+            // 
+            this.Gadget10Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget10Button1.ForeColor = System.Drawing.Color.Black;
+            this.Gadget10Button1.Location = new System.Drawing.Point(133, 412);
+            this.Gadget10Button1.Name = "Gadget10Button1";
+            this.Gadget10Button1.Size = new System.Drawing.Size(175, 35);
+            this.Gadget10Button1.TabIndex = 85;
+            this.Gadget10Button1.Text = "button1";
+            this.Gadget10Button1.UseVisualStyleBackColor = true;
+            this.Gadget10Button1.Click += new System.EventHandler(this.Gadget10Button1_Click);
+            // 
+            // Gadget8Button1
+            // 
+            this.Gadget8Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget8Button1.ForeColor = System.Drawing.Color.Black;
+            this.Gadget8Button1.Location = new System.Drawing.Point(133, 330);
+            this.Gadget8Button1.Name = "Gadget8Button1";
+            this.Gadget8Button1.Size = new System.Drawing.Size(175, 35);
+            this.Gadget8Button1.TabIndex = 79;
+            this.Gadget8Button1.Text = "button1";
+            this.Gadget8Button1.UseVisualStyleBackColor = true;
+            this.Gadget8Button1.Click += new System.EventHandler(this.Gadget8Button1_Click);
+            // 
+            // Gadget10Label
+            // 
+            this.Gadget10Label.AutoSize = true;
+            this.Gadget10Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget10Label.ForeColor = System.Drawing.Color.Black;
+            this.Gadget10Label.Location = new System.Drawing.Point(41, 418);
+            this.Gadget10Label.Name = "Gadget10Label";
+            this.Gadget10Label.Size = new System.Drawing.Size(86, 23);
+            this.Gadget10Label.TabIndex = 84;
+            this.Gadget10Label.Text = "Gadget 10";
+            // 
+            // Gadget9Label
+            // 
+            this.Gadget9Label.AutoSize = true;
+            this.Gadget9Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget9Label.ForeColor = System.Drawing.Color.Black;
+            this.Gadget9Label.Location = new System.Drawing.Point(48, 377);
+            this.Gadget9Label.Name = "Gadget9Label";
+            this.Gadget9Label.Size = new System.Drawing.Size(79, 23);
+            this.Gadget9Label.TabIndex = 81;
+            this.Gadget9Label.Text = "Gadget 9";
+            // 
+            // Gadget9Button1
+            // 
+            this.Gadget9Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget9Button1.ForeColor = System.Drawing.Color.Black;
+            this.Gadget9Button1.Location = new System.Drawing.Point(133, 371);
+            this.Gadget9Button1.Name = "Gadget9Button1";
+            this.Gadget9Button1.Size = new System.Drawing.Size(175, 35);
+            this.Gadget9Button1.TabIndex = 82;
+            this.Gadget9Button1.Text = "button1";
+            this.Gadget9Button1.UseVisualStyleBackColor = true;
+            this.Gadget9Button1.Click += new System.EventHandler(this.Gadget9Button1_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.AutoSize = true;
+            this.groupBox2.Controls.Add(this.ForwardLabel);
+            this.groupBox2.Controls.Add(this.MapLabel);
+            this.groupBox2.Controls.Add(this.BackwardLabel);
+            this.groupBox2.Controls.Add(this.MapButton);
+            this.groupBox2.Controls.Add(this.RightLabel);
+            this.groupBox2.Controls.Add(this.CapeStunButton);
+            this.groupBox2.Controls.Add(this.CWDisarmFixButton1);
+            this.groupBox2.Controls.Add(this.LeftLabel);
+            this.groupBox2.Controls.Add(this.CWDisarmFixLabel);
+            this.groupBox2.Controls.Add(this.ZoomLabel);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.CapeStunLabel);
+            this.groupBox2.Controls.Add(this.DetectiveModeLabel);
+            this.groupBox2.Controls.Add(this.UseGadgetStrikeLabel);
+            this.groupBox2.Controls.Add(this.ACTLabel);
+            this.groupBox2.Controls.Add(this.FwButton1);
+            this.groupBox2.Controls.Add(this.BwButton1);
+            this.groupBox2.Controls.Add(this.LeftButton1);
+            this.groupBox2.Controls.Add(this.RightButton1);
+            this.groupBox2.Controls.Add(this.ZoomButton1);
+            this.groupBox2.Controls.Add(this.DetectiveModeButton1);
+            this.groupBox2.Controls.Add(this.UseGadgetStrikeButton1);
+            this.groupBox2.Controls.Add(this.ACTButton1);
+            this.groupBox2.Controls.Add(this.GadgetSecLabel);
+            this.groupBox2.Controls.Add(this.GadgetSecButton1);
+            this.groupBox2.Controls.Add(this.PrevGadgetLabel);
+            this.groupBox2.Controls.Add(this.PrevGadgetButton1);
+            this.groupBox2.Controls.Add(this.NextGadgetLabel);
+            this.groupBox2.Controls.Add(this.NextGadgetButton1);
+            this.groupBox2.Controls.Add(this.CrouchLabel);
+            this.groupBox2.Controls.Add(this.ToggleCrouchLabel);
+            this.groupBox2.Controls.Add(this.RGUButton1);
+            this.groupBox2.Controls.Add(this.CrouchButton1);
+            this.groupBox2.Controls.Add(this.ToggleCrouchButton1);
+            this.groupBox2.Controls.Add(this.GrappleLabel);
+            this.groupBox2.Controls.Add(this.GrappleButton1);
+            this.groupBox2.ForeColor = System.Drawing.Color.Maroon;
+            this.groupBox2.Location = new System.Drawing.Point(3, 3);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(678, 480);
+            this.groupBox2.TabIndex = 145;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "MAIN";
+            // 
+            // ForwardLabel
+            // 
+            this.ForwardLabel.AutoSize = true;
+            this.ForwardLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ForwardLabel.ForeColor = System.Drawing.Color.Black;
+            this.ForwardLabel.Location = new System.Drawing.Point(52, 38);
+            this.ForwardLabel.Name = "ForwardLabel";
+            this.ForwardLabel.Size = new System.Drawing.Size(75, 23);
+            this.ForwardLabel.TabIndex = 0;
+            this.ForwardLabel.Text = "Forward";
+            // 
+            // MapLabel
+            // 
+            this.MapLabel.AutoSize = true;
+            this.MapLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MapLabel.ForeColor = System.Drawing.Color.Black;
+            this.MapLabel.Location = new System.Drawing.Point(43, 409);
+            this.MapLabel.Name = "MapLabel";
+            this.MapLabel.Size = new System.Drawing.Size(84, 23);
+            this.MapLabel.TabIndex = 144;
+            this.MapLabel.Text = "View Map";
+            // 
+            // BackwardLabel
+            // 
+            this.BackwardLabel.AutoSize = true;
+            this.BackwardLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BackwardLabel.ForeColor = System.Drawing.Color.Black;
+            this.BackwardLabel.Location = new System.Drawing.Point(38, 79);
+            this.BackwardLabel.Name = "BackwardLabel";
+            this.BackwardLabel.Size = new System.Drawing.Size(89, 23);
+            this.BackwardLabel.TabIndex = 1;
+            this.BackwardLabel.Text = "Backward";
+            // 
+            // MapButton
+            // 
+            this.MapButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MapButton.ForeColor = System.Drawing.Color.Black;
+            this.MapButton.Location = new System.Drawing.Point(133, 403);
+            this.MapButton.Name = "MapButton";
+            this.MapButton.Size = new System.Drawing.Size(175, 35);
+            this.MapButton.TabIndex = 143;
+            this.MapButton.Text = "button1";
+            this.MapButton.UseVisualStyleBackColor = true;
+            this.MapButton.Click += new System.EventHandler(this.MapButton_Click);
+            // 
+            // RightLabel
+            // 
+            this.RightLabel.AutoSize = true;
+            this.RightLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RightLabel.ForeColor = System.Drawing.Color.Black;
+            this.RightLabel.Location = new System.Drawing.Point(437, 79);
+            this.RightLabel.Name = "RightLabel";
+            this.RightLabel.Size = new System.Drawing.Size(51, 23);
+            this.RightLabel.TabIndex = 2;
+            this.RightLabel.Text = "Right";
+            // 
+            // CapeStunButton
+            // 
+            this.CapeStunButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CapeStunButton.ForeColor = System.Drawing.Color.Black;
+            this.CapeStunButton.Location = new System.Drawing.Point(493, 248);
+            this.CapeStunButton.Name = "CapeStunButton";
+            this.CapeStunButton.Size = new System.Drawing.Size(175, 35);
+            this.CapeStunButton.TabIndex = 142;
+            this.CapeStunButton.Text = "button1";
+            this.CapeStunButton.UseVisualStyleBackColor = true;
+            this.CapeStunButton.Click += new System.EventHandler(this.CapeStunButton_Click);
+            // 
+            // CWDisarmFixButton1
+            // 
+            this.CWDisarmFixButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CWDisarmFixButton1.ForeColor = System.Drawing.Color.Black;
+            this.CWDisarmFixButton1.Location = new System.Drawing.Point(495, 402);
+            this.CWDisarmFixButton1.Name = "CWDisarmFixButton1";
+            this.CWDisarmFixButton1.Size = new System.Drawing.Size(174, 46);
+            this.CWDisarmFixButton1.TabIndex = 140;
+            this.CWDisarmFixButton1.Text = "button1";
+            this.CWDisarmFixButton1.UseVisualStyleBackColor = true;
+            this.CWDisarmFixButton1.Click += new System.EventHandler(this.CWDisarmFixButton1_Click);
+            // 
+            // LeftLabel
+            // 
+            this.LeftLabel.AutoSize = true;
+            this.LeftLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LeftLabel.ForeColor = System.Drawing.Color.Black;
+            this.LeftLabel.Location = new System.Drawing.Point(449, 38);
+            this.LeftLabel.Name = "LeftLabel";
+            this.LeftLabel.Size = new System.Drawing.Size(39, 23);
+            this.LeftLabel.TabIndex = 3;
+            this.LeftLabel.Text = "Left";
+            // 
+            // CWDisarmFixLabel
+            // 
+            this.CWDisarmFixLabel.AutoSize = true;
+            this.CWDisarmFixLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CWDisarmFixLabel.ForeColor = System.Drawing.Color.Black;
+            this.CWDisarmFixLabel.Location = new System.Drawing.Point(394, 401);
+            this.CWDisarmFixLabel.Name = "CWDisarmFixLabel";
+            this.CWDisarmFixLabel.Size = new System.Drawing.Size(95, 46);
+            this.CWDisarmFixLabel.TabIndex = 139;
+            this.CWDisarmFixLabel.Text = "Catwoman\r\nDisarm Fix";
+            this.CWDisarmFixLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // ZoomLabel
+            // 
+            this.ZoomLabel.AutoSize = true;
+            this.ZoomLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ZoomLabel.ForeColor = System.Drawing.Color.Black;
+            this.ZoomLabel.Location = new System.Drawing.Point(74, 245);
+            this.ZoomLabel.Name = "ZoomLabel";
+            this.ZoomLabel.Size = new System.Drawing.Size(53, 23);
+            this.ZoomLabel.TabIndex = 6;
+            this.ZoomLabel.Text = "Zoom";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(438, 328);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 69);
+            this.label8.TabIndex = 107;
+            this.label8.Text = "Run\r\nGlide\r\nUse";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CapeStunLabel
+            // 
+            this.CapeStunLabel.AutoSize = true;
+            this.CapeStunLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CapeStunLabel.ForeColor = System.Drawing.Color.Black;
+            this.CapeStunLabel.Location = new System.Drawing.Point(397, 254);
+            this.CapeStunLabel.Name = "CapeStunLabel";
+            this.CapeStunLabel.Size = new System.Drawing.Size(90, 23);
+            this.CapeStunLabel.TabIndex = 141;
+            this.CapeStunLabel.Text = "Cape Stun";
+            // 
+            // DetectiveModeLabel
+            // 
+            this.DetectiveModeLabel.AutoSize = true;
+            this.DetectiveModeLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DetectiveModeLabel.ForeColor = System.Drawing.Color.Black;
+            this.DetectiveModeLabel.Location = new System.Drawing.Point(357, 295);
+            this.DetectiveModeLabel.Name = "DetectiveModeLabel";
+            this.DetectiveModeLabel.Size = new System.Drawing.Size(131, 23);
+            this.DetectiveModeLabel.TabIndex = 9;
+            this.DetectiveModeLabel.Text = "Detective Mode";
+            // 
+            // UseGadgetStrikeLabel
+            // 
+            this.UseGadgetStrikeLabel.AutoSize = true;
+            this.UseGadgetStrikeLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UseGadgetStrikeLabel.ForeColor = System.Drawing.Color.Black;
+            this.UseGadgetStrikeLabel.Location = new System.Drawing.Point(29, 188);
+            this.UseGadgetStrikeLabel.Name = "UseGadgetStrikeLabel";
+            this.UseGadgetStrikeLabel.Size = new System.Drawing.Size(98, 46);
+            this.UseGadgetStrikeLabel.TabIndex = 10;
+            this.UseGadgetStrikeLabel.Text = "Use Gadget\r\nStrike";
+            this.UseGadgetStrikeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // ACTLabel
+            // 
+            this.ACTLabel.AutoSize = true;
+            this.ACTLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ACTLabel.ForeColor = System.Drawing.Color.Black;
+            this.ACTLabel.Location = new System.Drawing.Point(29, 113);
+            this.ACTLabel.Name = "ACTLabel";
+            this.ACTLabel.Size = new System.Drawing.Size(98, 69);
+            this.ACTLabel.TabIndex = 11;
+            this.ACTLabel.Text = "Aim Gadget\r\nCounter\r\nTakedown";
+            this.ACTLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FwButton1
             // 
-            this.FwButton1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FwButton1.Location = new System.Drawing.Point(96, 6);
+            this.FwButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FwButton1.ForeColor = System.Drawing.Color.Black;
+            this.FwButton1.Location = new System.Drawing.Point(133, 32);
             this.FwButton1.Name = "FwButton1";
-            this.FwButton1.Size = new System.Drawing.Size(96, 35);
+            this.FwButton1.Size = new System.Drawing.Size(175, 35);
             this.FwButton1.TabIndex = 12;
             this.FwButton1.Text = "button1";
             this.FwButton1.UseVisualStyleBackColor = true;
             this.FwButton1.Click += new System.EventHandler(this.FwButton1_Click);
             // 
-            // ACTLabel
+            // BwButton1
             // 
-            this.ACTLabel.AutoSize = true;
-            this.ACTLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ACTLabel.Location = new System.Drawing.Point(5, 90);
-            this.ACTLabel.Name = "ACTLabel";
-            this.ACTLabel.Size = new System.Drawing.Size(85, 57);
-            this.ACTLabel.TabIndex = 11;
-            this.ACTLabel.Text = "Aim Gadget\r\nCounter\r\nTakedown";
-            this.ACTLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BwButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BwButton1.ForeColor = System.Drawing.Color.Black;
+            this.BwButton1.Location = new System.Drawing.Point(133, 73);
+            this.BwButton1.Name = "BwButton1";
+            this.BwButton1.Size = new System.Drawing.Size(175, 35);
+            this.BwButton1.TabIndex = 14;
+            this.BwButton1.Text = "button3";
+            this.BwButton1.UseVisualStyleBackColor = true;
+            this.BwButton1.Click += new System.EventHandler(this.BwButton1_Click);
             // 
-            // UseGadgetStrikeLabel
+            // LeftButton1
             // 
-            this.UseGadgetStrikeLabel.AutoSize = true;
-            this.UseGadgetStrikeLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UseGadgetStrikeLabel.Location = new System.Drawing.Point(6, 153);
-            this.UseGadgetStrikeLabel.Name = "UseGadgetStrikeLabel";
-            this.UseGadgetStrikeLabel.Size = new System.Drawing.Size(85, 38);
-            this.UseGadgetStrikeLabel.TabIndex = 10;
-            this.UseGadgetStrikeLabel.Text = "Use Gadget\r\nStrike";
-            this.UseGadgetStrikeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LeftButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LeftButton1.ForeColor = System.Drawing.Color.Black;
+            this.LeftButton1.Location = new System.Drawing.Point(494, 32);
+            this.LeftButton1.Name = "LeftButton1";
+            this.LeftButton1.Size = new System.Drawing.Size(175, 35);
+            this.LeftButton1.TabIndex = 16;
+            this.LeftButton1.Text = "button1";
+            this.LeftButton1.UseVisualStyleBackColor = true;
+            this.LeftButton1.Click += new System.EventHandler(this.LeftButton1_Click);
             // 
-            // DetectiveModeLabel
+            // RightButton1
             // 
-            this.DetectiveModeLabel.AutoSize = true;
-            this.DetectiveModeLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DetectiveModeLabel.Location = new System.Drawing.Point(428, 97);
-            this.DetectiveModeLabel.Name = "DetectiveModeLabel";
-            this.DetectiveModeLabel.Size = new System.Drawing.Size(112, 19);
-            this.DetectiveModeLabel.TabIndex = 9;
-            this.DetectiveModeLabel.Text = "Detective Mode";
+            this.RightButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RightButton1.ForeColor = System.Drawing.Color.Black;
+            this.RightButton1.Location = new System.Drawing.Point(494, 73);
+            this.RightButton1.Name = "RightButton1";
+            this.RightButton1.Size = new System.Drawing.Size(175, 35);
+            this.RightButton1.TabIndex = 18;
+            this.RightButton1.Text = "button1";
+            this.RightButton1.UseVisualStyleBackColor = true;
+            this.RightButton1.Click += new System.EventHandler(this.RightButton1_Click);
             // 
-            // ToggleCrouchLabel
+            // ZoomButton1
             // 
-            this.ToggleCrouchLabel.AutoSize = true;
-            this.ToggleCrouchLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ToggleCrouchLabel.Location = new System.Drawing.Point(200, 219);
-            this.ToggleCrouchLabel.Name = "ToggleCrouchLabel";
-            this.ToggleCrouchLabel.Size = new System.Drawing.Size(101, 19);
-            this.ToggleCrouchLabel.TabIndex = 8;
-            this.ToggleCrouchLabel.Text = "Toggle Crouch";
+            this.ZoomButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ZoomButton1.ForeColor = System.Drawing.Color.Black;
+            this.ZoomButton1.Location = new System.Drawing.Point(133, 239);
+            this.ZoomButton1.Name = "ZoomButton1";
+            this.ZoomButton1.Size = new System.Drawing.Size(175, 35);
+            this.ZoomButton1.TabIndex = 24;
+            this.ZoomButton1.Text = "button1";
+            this.ZoomButton1.UseVisualStyleBackColor = true;
+            this.ZoomButton1.Click += new System.EventHandler(this.ZoomButton1_Click);
             // 
-            // GrappleLabel
+            // DetectiveModeButton1
             // 
-            this.GrappleLabel.AutoSize = true;
-            this.GrappleLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GrappleLabel.Location = new System.Drawing.Point(30, 308);
-            this.GrappleLabel.Name = "GrappleLabel";
-            this.GrappleLabel.Size = new System.Drawing.Size(60, 19);
-            this.GrappleLabel.TabIndex = 7;
-            this.GrappleLabel.Text = "Grapple";
+            this.DetectiveModeButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DetectiveModeButton1.ForeColor = System.Drawing.Color.Black;
+            this.DetectiveModeButton1.Location = new System.Drawing.Point(494, 289);
+            this.DetectiveModeButton1.Name = "DetectiveModeButton1";
+            this.DetectiveModeButton1.Size = new System.Drawing.Size(174, 35);
+            this.DetectiveModeButton1.TabIndex = 30;
+            this.DetectiveModeButton1.Text = "button1";
+            this.DetectiveModeButton1.UseVisualStyleBackColor = true;
+            this.DetectiveModeButton1.Click += new System.EventHandler(this.DetectiveModeButton1_Click);
             // 
-            // ZoomLabel
+            // UseGadgetStrikeButton1
             // 
-            this.ZoomLabel.AutoSize = true;
-            this.ZoomLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ZoomLabel.Location = new System.Drawing.Point(256, 178);
-            this.ZoomLabel.Name = "ZoomLabel";
-            this.ZoomLabel.Size = new System.Drawing.Size(45, 19);
-            this.ZoomLabel.TabIndex = 6;
-            this.ZoomLabel.Text = "Zoom";
+            this.UseGadgetStrikeButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UseGadgetStrikeButton1.ForeColor = System.Drawing.Color.Black;
+            this.UseGadgetStrikeButton1.Location = new System.Drawing.Point(133, 187);
+            this.UseGadgetStrikeButton1.Name = "UseGadgetStrikeButton1";
+            this.UseGadgetStrikeButton1.Size = new System.Drawing.Size(175, 46);
+            this.UseGadgetStrikeButton1.TabIndex = 32;
+            this.UseGadgetStrikeButton1.Text = "button1";
+            this.UseGadgetStrikeButton1.UseVisualStyleBackColor = true;
+            this.UseGadgetStrikeButton1.Click += new System.EventHandler(this.UseGadgetStrikeButton1_Click);
+            // 
+            // ACTButton1
+            // 
+            this.ACTButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ACTButton1.ForeColor = System.Drawing.Color.Black;
+            this.ACTButton1.Location = new System.Drawing.Point(133, 114);
+            this.ACTButton1.Name = "ACTButton1";
+            this.ACTButton1.Size = new System.Drawing.Size(175, 67);
+            this.ACTButton1.TabIndex = 34;
+            this.ACTButton1.Text = "button1";
+            this.ACTButton1.UseVisualStyleBackColor = true;
+            this.ACTButton1.Click += new System.EventHandler(this.ACTButton1_Click);
+            // 
+            // GadgetSecLabel
+            // 
+            this.GadgetSecLabel.AutoSize = true;
+            this.GadgetSecLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GadgetSecLabel.ForeColor = System.Drawing.Color.Black;
+            this.GadgetSecLabel.Location = new System.Drawing.Point(334, 195);
+            this.GadgetSecLabel.Name = "GadgetSecLabel";
+            this.GadgetSecLabel.Size = new System.Drawing.Size(154, 46);
+            this.GadgetSecLabel.TabIndex = 36;
+            this.GadgetSecLabel.Text = "Gadget Secondary\r\nCape Stun";
+            this.GadgetSecLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // GadgetSecButton1
+            // 
+            this.GadgetSecButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GadgetSecButton1.ForeColor = System.Drawing.Color.Black;
+            this.GadgetSecButton1.Location = new System.Drawing.Point(494, 196);
+            this.GadgetSecButton1.Name = "GadgetSecButton1";
+            this.GadgetSecButton1.Size = new System.Drawing.Size(174, 46);
+            this.GadgetSecButton1.TabIndex = 38;
+            this.GadgetSecButton1.Text = "button1";
+            this.GadgetSecButton1.UseVisualStyleBackColor = true;
+            this.GadgetSecButton1.Click += new System.EventHandler(this.GadgetSecButton1_Click);
+            // 
+            // PrevGadgetLabel
+            // 
+            this.PrevGadgetLabel.AutoSize = true;
+            this.PrevGadgetLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PrevGadgetLabel.ForeColor = System.Drawing.Color.Black;
+            this.PrevGadgetLabel.Location = new System.Drawing.Point(381, 120);
+            this.PrevGadgetLabel.Name = "PrevGadgetLabel";
+            this.PrevGadgetLabel.Size = new System.Drawing.Size(107, 23);
+            this.PrevGadgetLabel.TabIndex = 39;
+            this.PrevGadgetLabel.Text = "Prev. Gadget";
+            // 
+            // PrevGadgetButton1
+            // 
+            this.PrevGadgetButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PrevGadgetButton1.ForeColor = System.Drawing.Color.Black;
+            this.PrevGadgetButton1.Location = new System.Drawing.Point(494, 114);
+            this.PrevGadgetButton1.Name = "PrevGadgetButton1";
+            this.PrevGadgetButton1.Size = new System.Drawing.Size(174, 35);
+            this.PrevGadgetButton1.TabIndex = 41;
+            this.PrevGadgetButton1.Text = "button1";
+            this.PrevGadgetButton1.UseVisualStyleBackColor = true;
+            this.PrevGadgetButton1.Click += new System.EventHandler(this.PrevGadgetButton1_Click);
+            // 
+            // NextGadgetLabel
+            // 
+            this.NextGadgetLabel.AutoSize = true;
+            this.NextGadgetLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NextGadgetLabel.ForeColor = System.Drawing.Color.Black;
+            this.NextGadgetLabel.Location = new System.Drawing.Point(386, 161);
+            this.NextGadgetLabel.Name = "NextGadgetLabel";
+            this.NextGadgetLabel.Size = new System.Drawing.Size(102, 23);
+            this.NextGadgetLabel.TabIndex = 42;
+            this.NextGadgetLabel.Text = "Next Gadget";
+            // 
+            // NextGadgetButton1
+            // 
+            this.NextGadgetButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NextGadgetButton1.ForeColor = System.Drawing.Color.Black;
+            this.NextGadgetButton1.Location = new System.Drawing.Point(494, 155);
+            this.NextGadgetButton1.Name = "NextGadgetButton1";
+            this.NextGadgetButton1.Size = new System.Drawing.Size(175, 35);
+            this.NextGadgetButton1.TabIndex = 44;
+            this.NextGadgetButton1.Text = "button1";
+            this.NextGadgetButton1.UseVisualStyleBackColor = true;
+            this.NextGadgetButton1.Click += new System.EventHandler(this.NextGadgetButton1_Click);
             // 
             // CrouchLabel
             // 
             this.CrouchLabel.AutoSize = true;
-            this.CrouchLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CrouchLabel.Location = new System.Drawing.Point(37, 205);
+            this.CrouchLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CrouchLabel.ForeColor = System.Drawing.Color.Black;
+            this.CrouchLabel.Location = new System.Drawing.Point(60, 286);
             this.CrouchLabel.Name = "CrouchLabel";
-            this.CrouchLabel.Size = new System.Drawing.Size(54, 19);
+            this.CrouchLabel.Size = new System.Drawing.Size(67, 23);
             this.CrouchLabel.TabIndex = 5;
             this.CrouchLabel.Text = "Crouch";
             // 
-            // LeftLabel
+            // ToggleCrouchLabel
             // 
-            this.LeftLabel.AutoSize = true;
-            this.LeftLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LeftLabel.Location = new System.Drawing.Point(267, 14);
-            this.LeftLabel.Name = "LeftLabel";
-            this.LeftLabel.Size = new System.Drawing.Size(34, 19);
-            this.LeftLabel.TabIndex = 3;
-            this.LeftLabel.Text = "Left";
+            this.ToggleCrouchLabel.AutoSize = true;
+            this.ToggleCrouchLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ToggleCrouchLabel.ForeColor = System.Drawing.Color.Black;
+            this.ToggleCrouchLabel.Location = new System.Drawing.Point(3, 327);
+            this.ToggleCrouchLabel.Name = "ToggleCrouchLabel";
+            this.ToggleCrouchLabel.Size = new System.Drawing.Size(124, 23);
+            this.ToggleCrouchLabel.TabIndex = 8;
+            this.ToggleCrouchLabel.Text = "Toggle Crouch";
             // 
-            // RightLabel
+            // RGUButton1
             // 
-            this.RightLabel.AutoSize = true;
-            this.RightLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RightLabel.Location = new System.Drawing.Point(258, 55);
-            this.RightLabel.Name = "RightLabel";
-            this.RightLabel.Size = new System.Drawing.Size(43, 19);
-            this.RightLabel.TabIndex = 2;
-            this.RightLabel.Text = "Right";
+            this.RGUButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RGUButton1.ForeColor = System.Drawing.Color.Black;
+            this.RGUButton1.Location = new System.Drawing.Point(494, 330);
+            this.RGUButton1.Name = "RGUButton1";
+            this.RGUButton1.Size = new System.Drawing.Size(174, 66);
+            this.RGUButton1.TabIndex = 20;
+            this.RGUButton1.Text = "button1";
+            this.RGUButton1.UseVisualStyleBackColor = true;
+            this.RGUButton1.Click += new System.EventHandler(this.RGUButton1_Click);
             // 
-            // BackwardLabel
+            // CrouchButton1
             // 
-            this.BackwardLabel.AutoSize = true;
-            this.BackwardLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BackwardLabel.Location = new System.Drawing.Point(19, 55);
-            this.BackwardLabel.Name = "BackwardLabel";
-            this.BackwardLabel.Size = new System.Drawing.Size(72, 19);
-            this.BackwardLabel.TabIndex = 1;
-            this.BackwardLabel.Text = "Backward";
+            this.CrouchButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CrouchButton1.ForeColor = System.Drawing.Color.Black;
+            this.CrouchButton1.Location = new System.Drawing.Point(133, 280);
+            this.CrouchButton1.Name = "CrouchButton1";
+            this.CrouchButton1.Size = new System.Drawing.Size(175, 35);
+            this.CrouchButton1.TabIndex = 22;
+            this.CrouchButton1.Text = "button1";
+            this.CrouchButton1.UseVisualStyleBackColor = true;
+            this.CrouchButton1.Click += new System.EventHandler(this.CrouchButton1_Click);
             // 
-            // ForwardLabel
+            // ToggleCrouchButton1
             // 
-            this.ForwardLabel.AutoSize = true;
-            this.ForwardLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ForwardLabel.Location = new System.Drawing.Point(29, 14);
-            this.ForwardLabel.Name = "ForwardLabel";
-            this.ForwardLabel.Size = new System.Drawing.Size(61, 19);
-            this.ForwardLabel.TabIndex = 0;
-            this.ForwardLabel.Text = "Forward";
+            this.ToggleCrouchButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ToggleCrouchButton1.ForeColor = System.Drawing.Color.Black;
+            this.ToggleCrouchButton1.Location = new System.Drawing.Point(133, 321);
+            this.ToggleCrouchButton1.Name = "ToggleCrouchButton1";
+            this.ToggleCrouchButton1.Size = new System.Drawing.Size(175, 35);
+            this.ToggleCrouchButton1.TabIndex = 28;
+            this.ToggleCrouchButton1.Text = "button1";
+            this.ToggleCrouchButton1.UseVisualStyleBackColor = true;
+            this.ToggleCrouchButton1.Click += new System.EventHandler(this.ToggleCrouchButton1_Click);
+            // 
+            // GrappleLabel
+            // 
+            this.GrappleLabel.AutoSize = true;
+            this.GrappleLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GrappleLabel.ForeColor = System.Drawing.Color.Black;
+            this.GrappleLabel.Location = new System.Drawing.Point(55, 368);
+            this.GrappleLabel.Name = "GrappleLabel";
+            this.GrappleLabel.Size = new System.Drawing.Size(72, 23);
+            this.GrappleLabel.TabIndex = 7;
+            this.GrappleLabel.Text = "Grapple";
+            // 
+            // GrappleButton1
+            // 
+            this.GrappleButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GrappleButton1.ForeColor = System.Drawing.Color.Black;
+            this.GrappleButton1.Location = new System.Drawing.Point(133, 362);
+            this.GrappleButton1.Name = "GrappleButton1";
+            this.GrappleButton1.Size = new System.Drawing.Size(175, 35);
+            this.GrappleButton1.TabIndex = 26;
+            this.GrappleButton1.Text = "button1";
+            this.GrappleButton1.UseVisualStyleBackColor = true;
+            this.GrappleButton1.Click += new System.EventHandler(this.GrappleButton1_Click);
+            // 
+            // ResetControlButton
+            // 
+            this.ResetControlButton.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetControlButton.Location = new System.Drawing.Point(3, 1056);
+            this.ResetControlButton.Name = "ResetControlButton";
+            this.ResetControlButton.Size = new System.Drawing.Size(678, 40);
+            this.ResetControlButton.TabIndex = 3;
+            this.ResetControlButton.Text = "RESET CONTROLS";
+            this.BasicToolTip.SetToolTip(this.ResetControlButton, "Reverts keyboard mapping to vanilla setting. Will affect miscellaneous keys.");
+            this.ResetControlButton.UseVisualStyleBackColor = true;
+            this.ResetControlButton.Click += new System.EventHandler(this.ResetControlButton_Click);
             // 
             // MiscTab
             // 
@@ -2041,7 +2147,7 @@
             this.MiscTab.Location = new System.Drawing.Point(4, 38);
             this.MiscTab.Name = "MiscTab";
             this.MiscTab.Padding = new System.Windows.Forms.Padding(3);
-            this.MiscTab.Size = new System.Drawing.Size(709, 537);
+            this.MiscTab.Size = new System.Drawing.Size(709, 506);
             this.MiscTab.TabIndex = 3;
             this.MiscTab.Text = "         MISC         ";
             this.MiscTab.UseVisualStyleBackColor = true;
@@ -2304,7 +2410,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(322, 205);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(237, 205);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2342,7 +2448,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(322, 162);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(237, 162);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2424,7 +2530,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV1ValueLabel.AutoSize = true;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(322, 120);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(237, 120);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
             this.CustomFoV1ValueLabel.TabIndex = 156;
@@ -2616,7 +2722,7 @@
             this.AboutTab.ForeColor = System.Drawing.Color.Black;
             this.AboutTab.Location = new System.Drawing.Point(4, 38);
             this.AboutTab.Name = "AboutTab";
-            this.AboutTab.Size = new System.Drawing.Size(709, 537);
+            this.AboutTab.Size = new System.Drawing.Size(709, 506);
             this.AboutTab.TabIndex = 2;
             this.AboutTab.Text = "         ABOUT         ";
             this.AboutTab.UseVisualStyleBackColor = true;
@@ -2637,22 +2743,24 @@
             // ApplySettingsButton
             // 
             this.ApplySettingsButton.Enabled = false;
-            this.ApplySettingsButton.Location = new System.Drawing.Point(386, 597);
+            this.ApplySettingsButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ApplySettingsButton.Location = new System.Drawing.Point(492, 578);
             this.ApplySettingsButton.Name = "ApplySettingsButton";
-            this.ApplySettingsButton.Size = new System.Drawing.Size(339, 37);
+            this.ApplySettingsButton.Size = new System.Drawing.Size(233, 55);
             this.ApplySettingsButton.TabIndex = 1;
-            this.ApplySettingsButton.Text = "Apply Settings\r\n";
+            this.ApplySettingsButton.Text = "APPLY SETTINGS";
             this.BasicToolTip.SetToolTip(this.ApplySettingsButton, "Applies all settings.");
             this.ApplySettingsButton.UseVisualStyleBackColor = true;
             this.ApplySettingsButton.Click += new System.EventHandler(this.ApplySettingsButton_Click);
             // 
             // ManualModeButton
             // 
-            this.ManualModeButton.Location = new System.Drawing.Point(199, 597);
+            this.ManualModeButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ManualModeButton.Location = new System.Drawing.Point(12, 578);
             this.ManualModeButton.Name = "ManualModeButton";
-            this.ManualModeButton.Size = new System.Drawing.Size(181, 37);
+            this.ManualModeButton.Size = new System.Drawing.Size(233, 55);
             this.ManualModeButton.TabIndex = 2;
-            this.ManualModeButton.Text = "Manual Mode";
+            this.ManualModeButton.Text = "MANUAL MODE";
             this.BasicToolTip.SetToolTip(this.ManualModeButton, "This disables the read-only flag of the configuration files to allow for manual e" +
         "diting.");
             this.ManualModeButton.UseVisualStyleBackColor = true;
@@ -2666,11 +2774,12 @@
             // 
             // TextureFixButton
             // 
-            this.TextureFixButton.Location = new System.Drawing.Point(12, 598);
+            this.TextureFixButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextureFixButton.Location = new System.Drawing.Point(251, 578);
             this.TextureFixButton.Name = "TextureFixButton";
-            this.TextureFixButton.Size = new System.Drawing.Size(181, 36);
+            this.TextureFixButton.Size = new System.Drawing.Size(235, 55);
             this.TextureFixButton.TabIndex = 9;
-            this.TextureFixButton.Text = "Enable Texture Pack Fix";
+            this.TextureFixButton.Text = "ENABLE TEXTURE PACK FIX";
             this.BasicToolTip.SetToolTip(this.TextureFixButton, "Bopp Bipp");
             this.TextureFixButton.UseVisualStyleBackColor = true;
             // 
@@ -2748,6 +2857,10 @@
             this.BasicDisplayGroupBox.PerformLayout();
             this.ControlTab.ResumeLayout(false);
             this.ControlTab.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.MiscTab.ResumeLayout(false);
             this.MiscTab.PerformLayout();
             this.AdvancedColorBox.ResumeLayout(false);
@@ -2882,7 +2995,6 @@
         public Button Gadget6Button1;
         public Button Gadget12Button1;
         public Button Gadget11Button1;
-        public Button QFireGadget5Button1;
         public Button QFireGadget4Button1;
         public Button QFireGadget3Button1;
         public Button QFireGadget2Button1;
@@ -2959,5 +3071,8 @@
         private Label DebugMenuLabel;
         public Button DebugMenuButton;
         private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private GroupBox groupBox3;
+        public Button QFireGadget5Button1;
     }
 }

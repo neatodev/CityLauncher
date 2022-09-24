@@ -60,6 +60,9 @@
   <metadata name="BasicToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="BasicToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="PoolsizeBox.ToolTip" xml:space="preserve">
     <value>Allocates graphics memory in megabytes to texture streaming. Value should be lower than GPU memory size. 2048 minimum is recommended for the HD Texture Pack.
 - 'Infinite'= Pool size limit will be removed. Useful for in-game texture dumping and debugging.</value>
