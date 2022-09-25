@@ -1085,9 +1085,9 @@
             // ControlTab
             // 
             this.ControlTab.AutoScroll = true;
+            this.ControlTab.Controls.Add(this.ResetControlButton);
             this.ControlTab.Controls.Add(this.groupBox3);
             this.ControlTab.Controls.Add(this.groupBox2);
-            this.ControlTab.Controls.Add(this.ResetControlButton);
             this.ControlTab.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ControlTab.ForeColor = System.Drawing.Color.Black;
             this.ControlTab.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -2121,8 +2121,8 @@
             // MiscTab
             // 
             this.MiscTab.AutoScroll = true;
-            this.MiscTab.Controls.Add(this.groupBox4);
             this.MiscTab.Controls.Add(this.AdvancedColorBox);
+            this.MiscTab.Controls.Add(this.groupBox4);
             this.MiscTab.ForeColor = System.Drawing.Color.Black;
             this.MiscTab.Location = new System.Drawing.Point(4, 38);
             this.MiscTab.Name = "MiscTab";
@@ -2605,7 +2605,6 @@
             this.AdvancedColorBox.Controls.Add(this.label13);
             this.AdvancedColorBox.Controls.Add(this.label12);
             this.AdvancedColorBox.Controls.Add(this.label9);
-            this.AdvancedColorBox.Enabled = false;
             this.AdvancedColorBox.ForeColor = System.Drawing.Color.Maroon;
             this.AdvancedColorBox.Location = new System.Drawing.Point(6, 497);
             this.AdvancedColorBox.Name = "AdvancedColorBox";
