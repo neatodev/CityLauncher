@@ -2933,9 +2933,9 @@
             // ManualModeButton
             // 
             this.ManualModeButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ManualModeButton.Location = new System.Drawing.Point(12, 566);
+            this.ManualModeButton.Location = new System.Drawing.Point(16, 566);
             this.ManualModeButton.Name = "ManualModeButton";
-            this.ManualModeButton.Size = new System.Drawing.Size(233, 67);
+            this.ManualModeButton.Size = new System.Drawing.Size(229, 67);
             this.ManualModeButton.TabIndex = 2;
             this.ManualModeButton.Text = "MANUAL MODE";
             this.BasicToolTip.SetToolTip(this.ManualModeButton, "This disables the read-only flag of the configuration files to allow for manual e" +
@@ -2970,9 +2970,9 @@
             this.StartGameButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.StartGameButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StartGameButton.Image = global::CityLauncher.Properties.Resources.Phase1;
-            this.StartGameButton.Location = new System.Drawing.Point(12, 639);
+            this.StartGameButton.Location = new System.Drawing.Point(16, 639);
             this.StartGameButton.Name = "StartGameButton";
-            this.StartGameButton.Size = new System.Drawing.Size(713, 69);
+            this.StartGameButton.Size = new System.Drawing.Size(709, 69);
             this.StartGameButton.TabIndex = 5;
             this.StartGameButton.UseVisualStyleBackColor = false;
             this.StartGameButton.Click += new System.EventHandler(this.StartGameButton_Click);
