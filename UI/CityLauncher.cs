@@ -454,13 +454,32 @@ namespace CityLauncher
             DisplaySettingChanged = true;
             if (DOFBox.Checked)
             {
-                AdvancedColorBox.Enabled = true;
                 Program.MainWindow.AdvancedColorBox.Text = "ADVANCED COLOR SETTINGS";
+                Program.MainWindow.DefaultColorButton.Enabled = true;
+                Program.MainWindow.NoirColorButton.Enabled = true;
+                Program.MainWindow.MutedColorButton.Enabled = true;
+                Program.MainWindow.LowContrastColorButton.Enabled = true;
+                Program.MainWindow.HighContrastColorButton.Enabled = true;
+                Program.MainWindow.VividColorButton.Enabled = true;
+                Program.MainWindow.SaturationTrackbar.Enabled = true;
+                Program.MainWindow.HighlightsTrackbar.Enabled = true;
+                Program.MainWindow.MidtonesTrackbar.Enabled = true;
+                Program.MainWindow.ShadowsTrackbar.Enabled = true;
+
             }
             else
             {
-                AdvancedColorBox.Enabled = false;
                 Program.MainWindow.AdvancedColorBox.Text = "ADVANCED COLOR SETTINGS ('Depth of Field' must be enabled to edit.)";
+                Program.MainWindow.DefaultColorButton.Enabled = false;
+                Program.MainWindow.NoirColorButton.Enabled = false;
+                Program.MainWindow.MutedColorButton.Enabled = false;
+                Program.MainWindow.LowContrastColorButton.Enabled = false;
+                Program.MainWindow.HighContrastColorButton.Enabled = false;
+                Program.MainWindow.VividColorButton.Enabled = false;
+                Program.MainWindow.SaturationTrackbar.Enabled = false;
+                Program.MainWindow.HighlightsTrackbar.Enabled = false;
+                Program.MainWindow.MidtonesTrackbar.Enabled = false;
+                Program.MainWindow.ShadowsTrackbar.Enabled = false;
             }
         }
 
@@ -633,11 +652,6 @@ namespace CityLauncher
                     Brushes.Black,
                     new PointF(e.Bounds.X + 3, e.Bounds.Y + 3));
             }
-        }
-
-        private void ToggleHudLabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

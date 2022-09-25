@@ -84,6 +84,7 @@
             this.LanguageLabel = new System.Windows.Forms.Label();
             this.FullscreenLabel = new System.Windows.Forms.Label();
             this.ControlTab = new System.Windows.Forms.TabPage();
+            this.ResetControlButton = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.MultiGroundTDLabel = new System.Windows.Forms.Label();
             this.Gadget3Label = new System.Windows.Forms.Label();
@@ -164,8 +165,26 @@
             this.ToggleCrouchButton1 = new System.Windows.Forms.Button();
             this.GrappleLabel = new System.Windows.Forms.Label();
             this.GrappleButton1 = new System.Windows.Forms.Button();
-            this.ResetControlButton = new System.Windows.Forms.Button();
             this.MiscTab = new System.Windows.Forms.TabPage();
+            this.AdvancedColorBox = new System.Windows.Forms.GroupBox();
+            this.LowContrastColorButton = new System.Windows.Forms.Button();
+            this.HighContrastColorButton = new System.Windows.Forms.Button();
+            this.ShadowsValueLabel = new System.Windows.Forms.Label();
+            this.MidtonesValueLabel = new System.Windows.Forms.Label();
+            this.HighlightsValueLabel = new System.Windows.Forms.Label();
+            this.SaturationValueLabel = new System.Windows.Forms.Label();
+            this.MutedColorButton = new System.Windows.Forms.Button();
+            this.VividColorButton = new System.Windows.Forms.Button();
+            this.NoirColorButton = new System.Windows.Forms.Button();
+            this.DefaultColorButton = new System.Windows.Forms.Button();
+            this.ShadowsTrackbar = new System.Windows.Forms.TrackBar();
+            this.MidtonesTrackbar = new System.Windows.Forms.TrackBar();
+            this.HighlightsTrackbar = new System.Windows.Forms.TrackBar();
+            this.SaturationTrackbar = new System.Windows.Forms.TrackBar();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
             this.DebugMenuButton = new System.Windows.Forms.Button();
@@ -199,25 +218,6 @@
             this.MouseSmoothingBox = new System.Windows.Forms.CheckBox();
             this.CustomFoV1Button = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.AdvancedColorBox = new System.Windows.Forms.GroupBox();
-            this.LowContrastColorButton = new System.Windows.Forms.Button();
-            this.HighContrastColorButton = new System.Windows.Forms.Button();
-            this.ShadowsValueLabel = new System.Windows.Forms.Label();
-            this.MidtonesValueLabel = new System.Windows.Forms.Label();
-            this.HighlightsValueLabel = new System.Windows.Forms.Label();
-            this.SaturationValueLabel = new System.Windows.Forms.Label();
-            this.MutedColorButton = new System.Windows.Forms.Button();
-            this.VividColorButton = new System.Windows.Forms.Button();
-            this.NoirColorButton = new System.Windows.Forms.Button();
-            this.DefaultColorButton = new System.Windows.Forms.Button();
-            this.ShadowsTrackbar = new System.Windows.Forms.TrackBar();
-            this.MidtonesTrackbar = new System.Windows.Forms.TrackBar();
-            this.HighlightsTrackbar = new System.Windows.Forms.TrackBar();
-            this.SaturationTrackbar = new System.Windows.Forms.TrackBar();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.AboutTab = new System.Windows.Forms.TabPage();
             this.TempLabel = new System.Windows.Forms.LinkLabel();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
@@ -237,15 +237,15 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.MiscTab.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).BeginInit();
             this.AdvancedColorBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShadowsTrackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MidtonesTrackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HighlightsTrackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SaturationTrackbar)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).BeginInit();
             this.AboutTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -1098,6 +1098,19 @@
             this.ControlTab.TabIndex = 1;
             this.ControlTab.Text = "          CONTROLS          ";
             this.ControlTab.UseVisualStyleBackColor = true;
+            // 
+            // ResetControlButton
+            // 
+            this.ResetControlButton.AutoSize = true;
+            this.ResetControlButton.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetControlButton.Location = new System.Drawing.Point(3, 1061);
+            this.ResetControlButton.Name = "ResetControlButton";
+            this.ResetControlButton.Size = new System.Drawing.Size(678, 44);
+            this.ResetControlButton.TabIndex = 3;
+            this.ResetControlButton.Text = "RESET CONTROLS";
+            this.BasicToolTip.SetToolTip(this.ResetControlButton, "Reverts keyboard mapping to vanilla setting. Will affect miscellaneous keys.");
+            this.ResetControlButton.UseVisualStyleBackColor = true;
+            this.ResetControlButton.Click += new System.EventHandler(this.ResetControlButton_Click);
             // 
             // groupBox3
             // 
@@ -2105,19 +2118,6 @@
             this.GrappleButton1.UseVisualStyleBackColor = true;
             this.GrappleButton1.Click += new System.EventHandler(this.GrappleButton1_Click);
             // 
-            // ResetControlButton
-            // 
-            this.ResetControlButton.AutoSize = true;
-            this.ResetControlButton.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResetControlButton.Location = new System.Drawing.Point(0, 1056);
-            this.ResetControlButton.Name = "ResetControlButton";
-            this.ResetControlButton.Size = new System.Drawing.Size(678, 44);
-            this.ResetControlButton.TabIndex = 3;
-            this.ResetControlButton.Text = "RESET CONTROLS";
-            this.BasicToolTip.SetToolTip(this.ResetControlButton, "Reverts keyboard mapping to vanilla setting. Will affect miscellaneous keys.");
-            this.ResetControlButton.UseVisualStyleBackColor = true;
-            this.ResetControlButton.Click += new System.EventHandler(this.ResetControlButton_Click);
-            // 
             // MiscTab
             // 
             this.MiscTab.AutoScroll = true;
@@ -2131,6 +2131,249 @@
             this.MiscTab.TabIndex = 3;
             this.MiscTab.Text = "         EXTRA         ";
             this.MiscTab.UseVisualStyleBackColor = true;
+            // 
+            // AdvancedColorBox
+            // 
+            this.AdvancedColorBox.AutoSize = true;
+            this.AdvancedColorBox.Controls.Add(this.LowContrastColorButton);
+            this.AdvancedColorBox.Controls.Add(this.HighContrastColorButton);
+            this.AdvancedColorBox.Controls.Add(this.ShadowsValueLabel);
+            this.AdvancedColorBox.Controls.Add(this.MidtonesValueLabel);
+            this.AdvancedColorBox.Controls.Add(this.HighlightsValueLabel);
+            this.AdvancedColorBox.Controls.Add(this.SaturationValueLabel);
+            this.AdvancedColorBox.Controls.Add(this.MutedColorButton);
+            this.AdvancedColorBox.Controls.Add(this.VividColorButton);
+            this.AdvancedColorBox.Controls.Add(this.NoirColorButton);
+            this.AdvancedColorBox.Controls.Add(this.DefaultColorButton);
+            this.AdvancedColorBox.Controls.Add(this.ShadowsTrackbar);
+            this.AdvancedColorBox.Controls.Add(this.MidtonesTrackbar);
+            this.AdvancedColorBox.Controls.Add(this.HighlightsTrackbar);
+            this.AdvancedColorBox.Controls.Add(this.SaturationTrackbar);
+            this.AdvancedColorBox.Controls.Add(this.label14);
+            this.AdvancedColorBox.Controls.Add(this.label13);
+            this.AdvancedColorBox.Controls.Add(this.label12);
+            this.AdvancedColorBox.Controls.Add(this.label9);
+            this.AdvancedColorBox.ForeColor = System.Drawing.Color.Maroon;
+            this.AdvancedColorBox.Location = new System.Drawing.Point(6, 500);
+            this.AdvancedColorBox.Name = "AdvancedColorBox";
+            this.AdvancedColorBox.Size = new System.Drawing.Size(681, 421);
+            this.AdvancedColorBox.TabIndex = 165;
+            this.AdvancedColorBox.TabStop = false;
+            this.AdvancedColorBox.Text = "ADVANCED COLOR SETTINGS";
+            // 
+            // LowContrastColorButton
+            // 
+            this.LowContrastColorButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LowContrastColorButton.ForeColor = System.Drawing.Color.Black;
+            this.LowContrastColorButton.Location = new System.Drawing.Point(356, 32);
+            this.LowContrastColorButton.Name = "LowContrastColorButton";
+            this.LowContrastColorButton.Size = new System.Drawing.Size(102, 37);
+            this.LowContrastColorButton.TabIndex = 180;
+            this.LowContrastColorButton.Text = "Log Profile 1";
+            this.BasicToolTip.SetToolTip(this.LowContrastColorButton, "Maintains more of the shadows and highlights and increases visible dynamic range." +
+        "\r\nSuggested for Special K HDR injection.");
+            this.LowContrastColorButton.UseVisualStyleBackColor = true;
+            this.LowContrastColorButton.Click += new System.EventHandler(this.LowContrastColorButton_Click);
+            // 
+            // HighContrastColorButton
+            // 
+            this.HighContrastColorButton.Font = new System.Drawing.Font("Impact", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HighContrastColorButton.ForeColor = System.Drawing.Color.Black;
+            this.HighContrastColorButton.Location = new System.Drawing.Point(572, 32);
+            this.HighContrastColorButton.Name = "HighContrastColorButton";
+            this.HighContrastColorButton.Size = new System.Drawing.Size(102, 37);
+            this.HighContrastColorButton.TabIndex = 179;
+            this.HighContrastColorButton.Text = "High\r\nContrast";
+            this.BasicToolTip.SetToolTip(this.HighContrastColorButton, "Boosts highlights and lowers shadows for a more intense look.");
+            this.HighContrastColorButton.UseVisualStyleBackColor = true;
+            this.HighContrastColorButton.Click += new System.EventHandler(this.HighContrastColorButton_Click);
+            // 
+            // ShadowsValueLabel
+            // 
+            this.ShadowsValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ShadowsValueLabel.AutoSize = true;
+            this.ShadowsValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ShadowsValueLabel.ForeColor = System.Drawing.Color.Black;
+            this.ShadowsValueLabel.Location = new System.Drawing.Point(616, 315);
+            this.ShadowsValueLabel.Name = "ShadowsValueLabel";
+            this.ShadowsValueLabel.Size = new System.Drawing.Size(34, 26);
+            this.ShadowsValueLabel.TabIndex = 178;
+            this.ShadowsValueLabel.Text = "00";
+            this.ShadowsValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // MidtonesValueLabel
+            // 
+            this.MidtonesValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.MidtonesValueLabel.AutoSize = true;
+            this.MidtonesValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MidtonesValueLabel.ForeColor = System.Drawing.Color.Black;
+            this.MidtonesValueLabel.Location = new System.Drawing.Point(616, 238);
+            this.MidtonesValueLabel.Name = "MidtonesValueLabel";
+            this.MidtonesValueLabel.Size = new System.Drawing.Size(34, 26);
+            this.MidtonesValueLabel.TabIndex = 167;
+            this.MidtonesValueLabel.Text = "00";
+            this.MidtonesValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // HighlightsValueLabel
+            // 
+            this.HighlightsValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.HighlightsValueLabel.AutoSize = true;
+            this.HighlightsValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.HighlightsValueLabel.ForeColor = System.Drawing.Color.Black;
+            this.HighlightsValueLabel.Location = new System.Drawing.Point(616, 161);
+            this.HighlightsValueLabel.Name = "HighlightsValueLabel";
+            this.HighlightsValueLabel.Size = new System.Drawing.Size(34, 26);
+            this.HighlightsValueLabel.TabIndex = 177;
+            this.HighlightsValueLabel.Text = "00";
+            this.HighlightsValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // SaturationValueLabel
+            // 
+            this.SaturationValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.SaturationValueLabel.AutoSize = true;
+            this.SaturationValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SaturationValueLabel.ForeColor = System.Drawing.Color.Black;
+            this.SaturationValueLabel.Location = new System.Drawing.Point(616, 84);
+            this.SaturationValueLabel.Name = "SaturationValueLabel";
+            this.SaturationValueLabel.Size = new System.Drawing.Size(34, 26);
+            this.SaturationValueLabel.TabIndex = 166;
+            this.SaturationValueLabel.Text = "00";
+            this.SaturationValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // MutedColorButton
+            // 
+            this.MutedColorButton.ForeColor = System.Drawing.Color.Black;
+            this.MutedColorButton.Location = new System.Drawing.Point(248, 32);
+            this.MutedColorButton.Name = "MutedColorButton";
+            this.MutedColorButton.Size = new System.Drawing.Size(102, 37);
+            this.MutedColorButton.TabIndex = 176;
+            this.MutedColorButton.Text = "Muted";
+            this.BasicToolTip.SetToolTip(this.MutedColorButton, "Tones down colors for a more cinematic look.\r\n");
+            this.MutedColorButton.UseVisualStyleBackColor = true;
+            this.MutedColorButton.Click += new System.EventHandler(this.MutedColorButton_Click);
+            // 
+            // VividColorButton
+            // 
+            this.VividColorButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.VividColorButton.ForeColor = System.Drawing.Color.Black;
+            this.VividColorButton.Location = new System.Drawing.Point(464, 32);
+            this.VividColorButton.Name = "VividColorButton";
+            this.VividColorButton.Size = new System.Drawing.Size(102, 37);
+            this.VividColorButton.TabIndex = 175;
+            this.VividColorButton.Text = "Log Profile 2";
+            this.BasicToolTip.SetToolTip(this.VividColorButton, "Pushes visible dynamic range further over Log Profile 1.\r\nSuggested for Special K" +
+        " HDR injection.");
+            this.VividColorButton.UseVisualStyleBackColor = true;
+            this.VividColorButton.Click += new System.EventHandler(this.VividColorButton_Click);
+            // 
+            // NoirColorButton
+            // 
+            this.NoirColorButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NoirColorButton.ForeColor = System.Drawing.Color.Black;
+            this.NoirColorButton.Location = new System.Drawing.Point(140, 32);
+            this.NoirColorButton.Name = "NoirColorButton";
+            this.NoirColorButton.Size = new System.Drawing.Size(102, 37);
+            this.NoirColorButton.TabIndex = 174;
+            this.NoirColorButton.Text = "Monochrome";
+            this.BasicToolTip.SetToolTip(this.NoirColorButton, "Black and White.");
+            this.NoirColorButton.UseVisualStyleBackColor = true;
+            this.NoirColorButton.Click += new System.EventHandler(this.NoirColorButton_Click);
+            // 
+            // DefaultColorButton
+            // 
+            this.DefaultColorButton.ForeColor = System.Drawing.Color.Black;
+            this.DefaultColorButton.Location = new System.Drawing.Point(6, 32);
+            this.DefaultColorButton.Name = "DefaultColorButton";
+            this.DefaultColorButton.Size = new System.Drawing.Size(128, 37);
+            this.DefaultColorButton.TabIndex = 173;
+            this.DefaultColorButton.Text = "Default";
+            this.BasicToolTip.SetToolTip(this.DefaultColorButton, "Vanilla settings.");
+            this.DefaultColorButton.UseVisualStyleBackColor = true;
+            this.DefaultColorButton.Click += new System.EventHandler(this.DefaultColorButton_Click);
+            // 
+            // ShadowsTrackbar
+            // 
+            this.ShadowsTrackbar.Location = new System.Drawing.Point(6, 344);
+            this.ShadowsTrackbar.Maximum = 125;
+            this.ShadowsTrackbar.Name = "ShadowsTrackbar";
+            this.ShadowsTrackbar.Size = new System.Drawing.Size(660, 45);
+            this.ShadowsTrackbar.TabIndex = 172;
+            this.ShadowsTrackbar.Value = 1;
+            this.ShadowsTrackbar.Scroll += new System.EventHandler(this.ShadowsTrackbar_Scroll);
+            // 
+            // MidtonesTrackbar
+            // 
+            this.MidtonesTrackbar.Location = new System.Drawing.Point(6, 267);
+            this.MidtonesTrackbar.Maximum = 125;
+            this.MidtonesTrackbar.Name = "MidtonesTrackbar";
+            this.MidtonesTrackbar.Size = new System.Drawing.Size(660, 45);
+            this.MidtonesTrackbar.TabIndex = 171;
+            this.MidtonesTrackbar.Value = 1;
+            this.MidtonesTrackbar.Scroll += new System.EventHandler(this.MidtonesTrackbar_Scroll);
+            // 
+            // HighlightsTrackbar
+            // 
+            this.HighlightsTrackbar.Location = new System.Drawing.Point(6, 190);
+            this.HighlightsTrackbar.Maximum = 125;
+            this.HighlightsTrackbar.Name = "HighlightsTrackbar";
+            this.HighlightsTrackbar.Size = new System.Drawing.Size(660, 45);
+            this.HighlightsTrackbar.TabIndex = 170;
+            this.HighlightsTrackbar.Value = 1;
+            this.HighlightsTrackbar.Scroll += new System.EventHandler(this.HighlightsTrackbar_Scroll);
+            // 
+            // SaturationTrackbar
+            // 
+            this.SaturationTrackbar.Location = new System.Drawing.Point(6, 113);
+            this.SaturationTrackbar.Maximum = 125;
+            this.SaturationTrackbar.Name = "SaturationTrackbar";
+            this.SaturationTrackbar.Size = new System.Drawing.Size(660, 45);
+            this.SaturationTrackbar.TabIndex = 166;
+            this.SaturationTrackbar.Value = 1;
+            this.SaturationTrackbar.Scroll += new System.EventHandler(this.SaturationTrackbar_Scroll);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(20, 315);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(89, 26);
+            this.label14.TabIndex = 169;
+            this.label14.Text = "Shadows";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(20, 238);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(94, 26);
+            this.label13.TabIndex = 168;
+            this.label13.Text = "Midtones";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(20, 161);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(97, 26);
+            this.label12.TabIndex = 167;
+            this.label12.Text = "Highlights";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(20, 84);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(101, 26);
+            this.label9.TabIndex = 166;
+            this.label9.Text = "Saturation";
             // 
             // groupBox4
             // 
@@ -2274,7 +2517,6 @@
             this.ToggleHudLabel.Text = "Toggle HUD";
             this.BasicToolTip.SetToolTip(this.ToggleHudLabel, "Toggles UI elements. Re-enable HUD during forensic sections of the game to progre" +
         "ss.");
-            this.ToggleHudLabel.Click += new System.EventHandler(this.ToggleHudLabel_Click);
             // 
             // MouseSensitivityLabel
             // 
@@ -2584,249 +2826,6 @@
             this.label6.Text = "Custom FoV 1";
             this.BasicToolTip.SetToolTip(this.label6, "Choose custom field of view values using the slider.\r\n");
             // 
-            // AdvancedColorBox
-            // 
-            this.AdvancedColorBox.AutoSize = true;
-            this.AdvancedColorBox.Controls.Add(this.LowContrastColorButton);
-            this.AdvancedColorBox.Controls.Add(this.HighContrastColorButton);
-            this.AdvancedColorBox.Controls.Add(this.ShadowsValueLabel);
-            this.AdvancedColorBox.Controls.Add(this.MidtonesValueLabel);
-            this.AdvancedColorBox.Controls.Add(this.HighlightsValueLabel);
-            this.AdvancedColorBox.Controls.Add(this.SaturationValueLabel);
-            this.AdvancedColorBox.Controls.Add(this.MutedColorButton);
-            this.AdvancedColorBox.Controls.Add(this.VividColorButton);
-            this.AdvancedColorBox.Controls.Add(this.NoirColorButton);
-            this.AdvancedColorBox.Controls.Add(this.DefaultColorButton);
-            this.AdvancedColorBox.Controls.Add(this.ShadowsTrackbar);
-            this.AdvancedColorBox.Controls.Add(this.MidtonesTrackbar);
-            this.AdvancedColorBox.Controls.Add(this.HighlightsTrackbar);
-            this.AdvancedColorBox.Controls.Add(this.SaturationTrackbar);
-            this.AdvancedColorBox.Controls.Add(this.label14);
-            this.AdvancedColorBox.Controls.Add(this.label13);
-            this.AdvancedColorBox.Controls.Add(this.label12);
-            this.AdvancedColorBox.Controls.Add(this.label9);
-            this.AdvancedColorBox.ForeColor = System.Drawing.Color.Maroon;
-            this.AdvancedColorBox.Location = new System.Drawing.Point(6, 497);
-            this.AdvancedColorBox.Name = "AdvancedColorBox";
-            this.AdvancedColorBox.Size = new System.Drawing.Size(681, 421);
-            this.AdvancedColorBox.TabIndex = 165;
-            this.AdvancedColorBox.TabStop = false;
-            this.AdvancedColorBox.Text = "ADVANCED COLOR SETTINGS";
-            // 
-            // LowContrastColorButton
-            // 
-            this.LowContrastColorButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LowContrastColorButton.ForeColor = System.Drawing.Color.Black;
-            this.LowContrastColorButton.Location = new System.Drawing.Point(356, 32);
-            this.LowContrastColorButton.Name = "LowContrastColorButton";
-            this.LowContrastColorButton.Size = new System.Drawing.Size(102, 37);
-            this.LowContrastColorButton.TabIndex = 180;
-            this.LowContrastColorButton.Text = "Log Profile 1";
-            this.BasicToolTip.SetToolTip(this.LowContrastColorButton, "Maintains more of the shadows and highlights and increases visible dynamic range." +
-        "\r\nSuggested for Special K HDR injection.");
-            this.LowContrastColorButton.UseVisualStyleBackColor = true;
-            this.LowContrastColorButton.Click += new System.EventHandler(this.LowContrastColorButton_Click);
-            // 
-            // HighContrastColorButton
-            // 
-            this.HighContrastColorButton.Font = new System.Drawing.Font("Impact", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.HighContrastColorButton.ForeColor = System.Drawing.Color.Black;
-            this.HighContrastColorButton.Location = new System.Drawing.Point(572, 32);
-            this.HighContrastColorButton.Name = "HighContrastColorButton";
-            this.HighContrastColorButton.Size = new System.Drawing.Size(102, 37);
-            this.HighContrastColorButton.TabIndex = 179;
-            this.HighContrastColorButton.Text = "High\r\nContrast";
-            this.BasicToolTip.SetToolTip(this.HighContrastColorButton, "Boosts highlights and lowers shadows for a more intense look.");
-            this.HighContrastColorButton.UseVisualStyleBackColor = true;
-            this.HighContrastColorButton.Click += new System.EventHandler(this.HighContrastColorButton_Click);
-            // 
-            // ShadowsValueLabel
-            // 
-            this.ShadowsValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.ShadowsValueLabel.AutoSize = true;
-            this.ShadowsValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ShadowsValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.ShadowsValueLabel.Location = new System.Drawing.Point(616, 315);
-            this.ShadowsValueLabel.Name = "ShadowsValueLabel";
-            this.ShadowsValueLabel.Size = new System.Drawing.Size(34, 26);
-            this.ShadowsValueLabel.TabIndex = 178;
-            this.ShadowsValueLabel.Text = "00";
-            this.ShadowsValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // MidtonesValueLabel
-            // 
-            this.MidtonesValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.MidtonesValueLabel.AutoSize = true;
-            this.MidtonesValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MidtonesValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.MidtonesValueLabel.Location = new System.Drawing.Point(616, 238);
-            this.MidtonesValueLabel.Name = "MidtonesValueLabel";
-            this.MidtonesValueLabel.Size = new System.Drawing.Size(34, 26);
-            this.MidtonesValueLabel.TabIndex = 167;
-            this.MidtonesValueLabel.Text = "00";
-            this.MidtonesValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // HighlightsValueLabel
-            // 
-            this.HighlightsValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.HighlightsValueLabel.AutoSize = true;
-            this.HighlightsValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.HighlightsValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.HighlightsValueLabel.Location = new System.Drawing.Point(616, 161);
-            this.HighlightsValueLabel.Name = "HighlightsValueLabel";
-            this.HighlightsValueLabel.Size = new System.Drawing.Size(34, 26);
-            this.HighlightsValueLabel.TabIndex = 177;
-            this.HighlightsValueLabel.Text = "00";
-            this.HighlightsValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // SaturationValueLabel
-            // 
-            this.SaturationValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.SaturationValueLabel.AutoSize = true;
-            this.SaturationValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SaturationValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.SaturationValueLabel.Location = new System.Drawing.Point(616, 84);
-            this.SaturationValueLabel.Name = "SaturationValueLabel";
-            this.SaturationValueLabel.Size = new System.Drawing.Size(34, 26);
-            this.SaturationValueLabel.TabIndex = 166;
-            this.SaturationValueLabel.Text = "00";
-            this.SaturationValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // MutedColorButton
-            // 
-            this.MutedColorButton.ForeColor = System.Drawing.Color.Black;
-            this.MutedColorButton.Location = new System.Drawing.Point(248, 32);
-            this.MutedColorButton.Name = "MutedColorButton";
-            this.MutedColorButton.Size = new System.Drawing.Size(102, 37);
-            this.MutedColorButton.TabIndex = 176;
-            this.MutedColorButton.Text = "Muted";
-            this.BasicToolTip.SetToolTip(this.MutedColorButton, "Tones down colors for a more cinematic look.\r\n");
-            this.MutedColorButton.UseVisualStyleBackColor = true;
-            this.MutedColorButton.Click += new System.EventHandler(this.MutedColorButton_Click);
-            // 
-            // VividColorButton
-            // 
-            this.VividColorButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.VividColorButton.ForeColor = System.Drawing.Color.Black;
-            this.VividColorButton.Location = new System.Drawing.Point(464, 32);
-            this.VividColorButton.Name = "VividColorButton";
-            this.VividColorButton.Size = new System.Drawing.Size(102, 37);
-            this.VividColorButton.TabIndex = 175;
-            this.VividColorButton.Text = "Log Profile 2";
-            this.BasicToolTip.SetToolTip(this.VividColorButton, "Pushes visible dynamic range further over Log Profile 1.\r\nSuggested for Special K" +
-        " HDR injection.");
-            this.VividColorButton.UseVisualStyleBackColor = true;
-            this.VividColorButton.Click += new System.EventHandler(this.VividColorButton_Click);
-            // 
-            // NoirColorButton
-            // 
-            this.NoirColorButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NoirColorButton.ForeColor = System.Drawing.Color.Black;
-            this.NoirColorButton.Location = new System.Drawing.Point(140, 32);
-            this.NoirColorButton.Name = "NoirColorButton";
-            this.NoirColorButton.Size = new System.Drawing.Size(102, 37);
-            this.NoirColorButton.TabIndex = 174;
-            this.NoirColorButton.Text = "Monochrome";
-            this.BasicToolTip.SetToolTip(this.NoirColorButton, "Black and White.");
-            this.NoirColorButton.UseVisualStyleBackColor = true;
-            this.NoirColorButton.Click += new System.EventHandler(this.NoirColorButton_Click);
-            // 
-            // DefaultColorButton
-            // 
-            this.DefaultColorButton.ForeColor = System.Drawing.Color.Black;
-            this.DefaultColorButton.Location = new System.Drawing.Point(6, 32);
-            this.DefaultColorButton.Name = "DefaultColorButton";
-            this.DefaultColorButton.Size = new System.Drawing.Size(128, 37);
-            this.DefaultColorButton.TabIndex = 173;
-            this.DefaultColorButton.Text = "Default";
-            this.BasicToolTip.SetToolTip(this.DefaultColorButton, "Vanilla settings.");
-            this.DefaultColorButton.UseVisualStyleBackColor = true;
-            this.DefaultColorButton.Click += new System.EventHandler(this.DefaultColorButton_Click);
-            // 
-            // ShadowsTrackbar
-            // 
-            this.ShadowsTrackbar.Location = new System.Drawing.Point(6, 344);
-            this.ShadowsTrackbar.Maximum = 125;
-            this.ShadowsTrackbar.Name = "ShadowsTrackbar";
-            this.ShadowsTrackbar.Size = new System.Drawing.Size(660, 45);
-            this.ShadowsTrackbar.TabIndex = 172;
-            this.ShadowsTrackbar.Value = 1;
-            this.ShadowsTrackbar.Scroll += new System.EventHandler(this.ShadowsTrackbar_Scroll);
-            // 
-            // MidtonesTrackbar
-            // 
-            this.MidtonesTrackbar.Location = new System.Drawing.Point(6, 267);
-            this.MidtonesTrackbar.Maximum = 125;
-            this.MidtonesTrackbar.Name = "MidtonesTrackbar";
-            this.MidtonesTrackbar.Size = new System.Drawing.Size(660, 45);
-            this.MidtonesTrackbar.TabIndex = 171;
-            this.MidtonesTrackbar.Value = 1;
-            this.MidtonesTrackbar.Scroll += new System.EventHandler(this.MidtonesTrackbar_Scroll);
-            // 
-            // HighlightsTrackbar
-            // 
-            this.HighlightsTrackbar.Location = new System.Drawing.Point(6, 190);
-            this.HighlightsTrackbar.Maximum = 125;
-            this.HighlightsTrackbar.Name = "HighlightsTrackbar";
-            this.HighlightsTrackbar.Size = new System.Drawing.Size(660, 45);
-            this.HighlightsTrackbar.TabIndex = 170;
-            this.HighlightsTrackbar.Value = 1;
-            this.HighlightsTrackbar.Scroll += new System.EventHandler(this.HighlightsTrackbar_Scroll);
-            // 
-            // SaturationTrackbar
-            // 
-            this.SaturationTrackbar.Location = new System.Drawing.Point(6, 113);
-            this.SaturationTrackbar.Maximum = 125;
-            this.SaturationTrackbar.Name = "SaturationTrackbar";
-            this.SaturationTrackbar.Size = new System.Drawing.Size(660, 45);
-            this.SaturationTrackbar.TabIndex = 166;
-            this.SaturationTrackbar.Value = 1;
-            this.SaturationTrackbar.Scroll += new System.EventHandler(this.SaturationTrackbar_Scroll);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(20, 315);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 26);
-            this.label14.TabIndex = 169;
-            this.label14.Text = "Shadows";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(20, 238);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(94, 26);
-            this.label13.TabIndex = 168;
-            this.label13.Text = "Midtones";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(20, 161);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(97, 26);
-            this.label12.TabIndex = 167;
-            this.label12.Text = "Highlights";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(20, 84);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(101, 26);
-            this.label9.TabIndex = 166;
-            this.label9.Text = "Saturation";
-            // 
             // AboutTab
             // 
             this.AboutTab.Controls.Add(this.TempLabel);
@@ -2912,7 +2911,9 @@
             // 
             // GPULabel
             // 
-            this.GPULabel.Location = new System.Drawing.Point(392, 13);
+            this.GPULabel.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GPULabel.ForeColor = System.Drawing.Color.Maroon;
+            this.GPULabel.Location = new System.Drawing.Point(392, 15);
             this.GPULabel.Name = "GPULabel";
             this.GPULabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.GPULabel.Size = new System.Drawing.Size(343, 21);
@@ -2922,7 +2923,9 @@
             // 
             // CPULabel
             // 
-            this.CPULabel.Location = new System.Drawing.Point(6, 16);
+            this.CPULabel.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CPULabel.ForeColor = System.Drawing.Color.Maroon;
+            this.CPULabel.Location = new System.Drawing.Point(6, 15);
             this.CPULabel.Name = "CPULabel";
             this.CPULabel.Size = new System.Drawing.Size(361, 18);
             this.CPULabel.TabIndex = 8;
@@ -2974,17 +2977,17 @@
             this.groupBox2.PerformLayout();
             this.MiscTab.ResumeLayout(false);
             this.MiscTab.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).EndInit();
             this.AdvancedColorBox.ResumeLayout(false);
             this.AdvancedColorBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShadowsTrackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MidtonesTrackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HighlightsTrackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SaturationTrackbar)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).EndInit();
             this.AboutTab.ResumeLayout(false);
             this.AboutTab.PerformLayout();
             this.groupBox1.ResumeLayout(false);

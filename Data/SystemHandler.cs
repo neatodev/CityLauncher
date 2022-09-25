@@ -15,8 +15,8 @@ namespace CityLauncher
         public SystemHandler()
         {
             Nlog.Info("Constructor - Sucessfully initialized SystemHandler.");
-            CPUData = InitializeCPU();
-            GPUData = InitializeGPUValues();
+            CPUData = InitializeCPU().ToUpper();
+            GPUData = InitializeGPUValues().ToUpper();
         }
 
         private string InitializeCPU()
