@@ -219,6 +219,9 @@
             this.CustomFoV1Button = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.AboutTab = new System.Windows.Forms.TabPage();
+            this.PayPalLabel = new System.Windows.Forms.LinkLabel();
+            this.NeatoLabel = new System.Windows.Forms.LinkLabel();
+            this.GPUnityLabel = new System.Windows.Forms.LinkLabel();
             this.TempLabel = new System.Windows.Forms.LinkLabel();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
             this.ManualModeButton = new System.Windows.Forms.Button();
@@ -2829,7 +2832,10 @@
             // AboutTab
             // 
             this.AboutTab.BackgroundImage = global::CityLauncher.Properties.Resources.About_Image_3_border;
-            this.AboutTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AboutTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AboutTab.Controls.Add(this.PayPalLabel);
+            this.AboutTab.Controls.Add(this.NeatoLabel);
+            this.AboutTab.Controls.Add(this.GPUnityLabel);
             this.AboutTab.Controls.Add(this.TempLabel);
             this.AboutTab.ForeColor = System.Drawing.Color.Black;
             this.AboutTab.Location = new System.Drawing.Point(4, 38);
@@ -2838,6 +2844,60 @@
             this.AboutTab.TabIndex = 2;
             this.AboutTab.Text = "         ABOUT         ";
             this.AboutTab.UseVisualStyleBackColor = true;
+            // 
+            // PayPalLabel
+            // 
+            this.PayPalLabel.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.PayPalLabel.AutoSize = true;
+            this.PayPalLabel.BackColor = System.Drawing.Color.Transparent;
+            this.PayPalLabel.DisabledLinkColor = System.Drawing.Color.Transparent;
+            this.PayPalLabel.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PayPalLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.PayPalLabel.LinkColor = System.Drawing.Color.Transparent;
+            this.PayPalLabel.Location = new System.Drawing.Point(658, 462);
+            this.PayPalLabel.Name = "PayPalLabel";
+            this.PayPalLabel.Size = new System.Drawing.Size(45, 36);
+            this.PayPalLabel.TabIndex = 3;
+            this.PayPalLabel.TabStop = true;
+            this.PayPalLabel.Text = "PP";
+            this.PayPalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PayPalLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.PayPalLabel_LinkClicked);
+            // 
+            // NeatoLabel
+            // 
+            this.NeatoLabel.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.NeatoLabel.AutoSize = true;
+            this.NeatoLabel.BackColor = System.Drawing.Color.Transparent;
+            this.NeatoLabel.DisabledLinkColor = System.Drawing.Color.Transparent;
+            this.NeatoLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NeatoLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.NeatoLabel.LinkColor = System.Drawing.Color.Transparent;
+            this.NeatoLabel.Location = new System.Drawing.Point(396, 260);
+            this.NeatoLabel.Name = "NeatoLabel";
+            this.NeatoLabel.Size = new System.Drawing.Size(64, 26);
+            this.NeatoLabel.TabIndex = 2;
+            this.NeatoLabel.TabStop = true;
+            this.NeatoLabel.Text = "Neato";
+            this.NeatoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NeatoLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.NeatoLabel_LinkClicked);
+            // 
+            // GPUnityLabel
+            // 
+            this.GPUnityLabel.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.GPUnityLabel.AutoSize = true;
+            this.GPUnityLabel.BackColor = System.Drawing.Color.Transparent;
+            this.GPUnityLabel.DisabledLinkColor = System.Drawing.Color.Transparent;
+            this.GPUnityLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GPUnityLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.GPUnityLabel.LinkColor = System.Drawing.Color.Transparent;
+            this.GPUnityLabel.Location = new System.Drawing.Point(470, 260);
+            this.GPUnityLabel.Name = "GPUnityLabel";
+            this.GPUnityLabel.Size = new System.Drawing.Size(82, 26);
+            this.GPUnityLabel.TabIndex = 1;
+            this.GPUnityLabel.TabStop = true;
+            this.GPUnityLabel.Text = "GPUnity";
+            this.GPUnityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.GPUnityLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GPUnityLabel_LinkClicked);
             // 
             // TempLabel
             // 
@@ -2861,9 +2921,9 @@
             // 
             this.ApplySettingsButton.Enabled = false;
             this.ApplySettingsButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ApplySettingsButton.Location = new System.Drawing.Point(492, 578);
+            this.ApplySettingsButton.Location = new System.Drawing.Point(492, 566);
             this.ApplySettingsButton.Name = "ApplySettingsButton";
-            this.ApplySettingsButton.Size = new System.Drawing.Size(233, 55);
+            this.ApplySettingsButton.Size = new System.Drawing.Size(233, 67);
             this.ApplySettingsButton.TabIndex = 1;
             this.ApplySettingsButton.Text = "APPLY SETTINGS";
             this.BasicToolTip.SetToolTip(this.ApplySettingsButton, "Applies all settings.");
@@ -2873,9 +2933,9 @@
             // ManualModeButton
             // 
             this.ManualModeButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ManualModeButton.Location = new System.Drawing.Point(12, 578);
+            this.ManualModeButton.Location = new System.Drawing.Point(12, 566);
             this.ManualModeButton.Name = "ManualModeButton";
-            this.ManualModeButton.Size = new System.Drawing.Size(233, 55);
+            this.ManualModeButton.Size = new System.Drawing.Size(233, 67);
             this.ManualModeButton.TabIndex = 2;
             this.ManualModeButton.Text = "MANUAL MODE";
             this.BasicToolTip.SetToolTip(this.ManualModeButton, "This disables the read-only flag of the configuration files to allow for manual e" +
@@ -2892,9 +2952,9 @@
             // TextureFixButton
             // 
             this.TextureFixButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextureFixButton.Location = new System.Drawing.Point(251, 578);
+            this.TextureFixButton.Location = new System.Drawing.Point(251, 566);
             this.TextureFixButton.Name = "TextureFixButton";
-            this.TextureFixButton.Size = new System.Drawing.Size(235, 55);
+            this.TextureFixButton.Size = new System.Drawing.Size(235, 67);
             this.TextureFixButton.TabIndex = 9;
             this.TextureFixButton.Text = "ENABLE TEXTURE PACK FIX";
             this.BasicToolTip.SetToolTip(this.TextureFixButton, "Bopp Bipp");
@@ -3204,5 +3264,8 @@
         public Label label16;
         public Label label17;
         public Label label18;
+        private LinkLabel NeatoLabel;
+        private LinkLabel GPUnityLabel;
+        private LinkLabel PayPalLabel;
     }
 }

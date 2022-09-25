@@ -371,6 +371,8 @@ namespace CityLauncher
             {
                 if (FileHandler.DetectGameExe())
                 {
+                    this.ActiveControl = null;
+                    Thread.Sleep(250);
                     this.StartGameButton.Image = (Image)Properties.Resources.Phase3;
                     if (ApplySettingsButton.Enabled)
                     {
@@ -663,6 +665,21 @@ namespace CityLauncher
         private void StartGameButton_MouseLeave(object sender, EventArgs e)
         {
             this.StartGameButton.Image = (Image)Properties.Resources.Phase1;
+        }
+
+        private void NeatoLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo { FileName = @"https://steamcommunity.com/id/frofoo/", UseShellExecute = true });
+        }
+
+        private void GPUnityLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo { FileName = @"https://www.youtube.com/c/GPUnity", UseShellExecute = true });
+        }
+
+        private void PayPalLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo { FileName = @"https://www.paypal.com/donate/?hosted_button_id=LG7YTKP4JYN5S", UseShellExecute = true });
         }
     }
 }
