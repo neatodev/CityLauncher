@@ -2991,6 +2991,7 @@
             this.GPULabel.TabIndex = 6;
             this.GPULabel.Text = "GPU:";
             this.GPULabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BasicToolTip.SetToolTip(this.GPULabel, "This is your GPU.");
             // 
             // CPULabel
             // 
@@ -3001,6 +3002,7 @@
             this.CPULabel.Size = new System.Drawing.Size(361, 18);
             this.CPULabel.TabIndex = 8;
             this.CPULabel.Text = "CPU:";
+            this.BasicToolTip.SetToolTip(this.CPULabel, "This is your CPU.");
             // 
             // groupBox1
             // 
