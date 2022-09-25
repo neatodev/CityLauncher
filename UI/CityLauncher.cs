@@ -63,6 +63,7 @@ namespace CityLauncher
             {
                 new InputWriter().WriteAll();
             }
+            ApplySettingsButton.Enabled = false;
         }
 
         private void ApplySettingsButton_Click()
@@ -75,6 +76,7 @@ namespace CityLauncher
             {
                 new InputWriter().WriteAll();
             }
+            ApplySettingsButton.Enabled = false;
         }
 
         private void SkipIntroBox_CheckedChanged(object sender, EventArgs e)
