@@ -61,6 +61,16 @@ namespace CityLauncher.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap About_Image_3_border {
+            get {
+                object obj = ResourceManager.GetObject("About_Image_3_border", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to [BmGame.R3rdPersonCamera]
         ///EnableCameraAssist=True
         ///

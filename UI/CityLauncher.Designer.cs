@@ -2828,6 +2828,8 @@
             // 
             // AboutTab
             // 
+            this.AboutTab.BackgroundImage = global::CityLauncher.Properties.Resources.About_Image_3_border;
+            this.AboutTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AboutTab.Controls.Add(this.TempLabel);
             this.AboutTab.ForeColor = System.Drawing.Color.Black;
             this.AboutTab.Location = new System.Drawing.Point(4, 38);
@@ -2839,14 +2841,19 @@
             // 
             // TempLabel
             // 
+            this.TempLabel.ActiveLinkColor = System.Drawing.Color.Transparent;
             this.TempLabel.AutoSize = true;
+            this.TempLabel.BackColor = System.Drawing.Color.Transparent;
+            this.TempLabel.DisabledLinkColor = System.Drawing.Color.Transparent;
             this.TempLabel.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TempLabel.Location = new System.Drawing.Point(32, 167);
+            this.TempLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.TempLabel.LinkColor = System.Drawing.Color.Transparent;
+            this.TempLabel.Location = new System.Drawing.Point(155, 203);
             this.TempLabel.Name = "TempLabel";
-            this.TempLabel.Size = new System.Drawing.Size(616, 118);
+            this.TempLabel.Size = new System.Drawing.Size(423, 59);
             this.TempLabel.TabIndex = 0;
             this.TempLabel.TabStop = true;
-            this.TempLabel.Text = "Written by GPUnity and Neato\r\nDeveloped by Neato";
+            this.TempLabel.Text = "Developed by Neato";
             this.TempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TempLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.TempLabel_LinkClicked);
             // 
