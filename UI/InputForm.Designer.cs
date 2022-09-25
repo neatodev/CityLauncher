@@ -59,30 +59,30 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(7, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(570, 34);
+            this.label3.Size = new System.Drawing.Size(584, 33);
             this.label3.TabIndex = 3;
             this.label3.Text = "Press ESCAPE (ESC) to close this window and abort.";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(7, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(452, 34);
+            this.label1.Size = new System.Drawing.Size(464, 33);
             this.label1.TabIndex = 4;
             this.label1.Text = "Press BACKSPACE to delete the Keybind.\r\n";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(7, 77);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(407, 34);
+            this.label4.Size = new System.Drawing.Size(420, 33);
             this.label4.TabIndex = 5;
             this.label4.Text = "Confirm Keybind by pressing ENTER.";
             // 
