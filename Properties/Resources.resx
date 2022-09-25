@@ -139,9 +139,6 @@
   <data name="GlobalShaderCache-PC-D3D-SM5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GlobalShaderCache-PC-D3D-SM5.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="BmInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BmInput.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
   <data name="BmCamera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BmCamera.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
@@ -177,5 +174,8 @@
   </data>
   <data name="startup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\startup.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BmInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BmInput.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>

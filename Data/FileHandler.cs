@@ -103,12 +103,6 @@ namespace CityLauncher
                 Nlog.Warn("CheckConfigFilesExist - Can't find 'BmEngine.ini'. Creating it now.");
             }
 
-            if (!File.Exists(BmInputPath))
-            {
-                CreateConfigFile(BmInputPath, Resources.BmInput);
-                Nlog.Warn("CheckConfigFilesExist - Can't find 'BmInput.ini'. Creating it now.");
-            }
-
             if (!File.Exists(UserEnginePath))
             {
                 CreateConfigFile(UserEnginePath, Resources.UserEngine);
@@ -129,6 +123,12 @@ namespace CityLauncher
             {
                 CreateConfigFile(UserInputPath, Resources.UserInput);
                 Nlog.Warn("CheckConfigFilesExist - Can't find 'UserInput.ini'. Creating it now.");
+            }
+
+            if (!File.Exists(BmInputPath))
+            {
+                CreateConfigFile(BmInputPath, Resources.BmInput);
+                Nlog.Warn("CheckConfigFilesExist - Can't find 'BmInput.ini'. Creating it now.");
             }
 
             if (!File.Exists(Path.Combine(ConfigDirectoryPath, "BmCamera.ini")))
