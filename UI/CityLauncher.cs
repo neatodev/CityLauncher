@@ -371,9 +371,8 @@ namespace CityLauncher
             {
                 if (FileHandler.DetectGameExe())
                 {
-                    this.ActiveControl = null;
-                    Thread.Sleep(250);
                     this.StartGameButton.Image = (Image)Properties.Resources.Phase3;
+                    this.ActiveControl = null;
                     if (ApplySettingsButton.Enabled)
                     {
                         ApplySettingsButton_Click();
@@ -680,6 +679,11 @@ namespace CityLauncher
         private void PayPalLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start(new ProcessStartInfo { FileName = @"https://www.paypal.com/donate/?hosted_button_id=LG7YTKP4JYN5S", UseShellExecute = true });
+        }
+
+        private void StartGameButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.StartGameButton.Image = (Image)Properties.Resources.Phase3;
         }
     }
 }

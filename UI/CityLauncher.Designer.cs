@@ -874,7 +874,7 @@
             this.SkipIntroBox.Enabled = false;
             this.SkipIntroBox.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SkipIntroBox.ForeColor = System.Drawing.Color.Black;
-            this.SkipIntroBox.Location = new System.Drawing.Point(62, 171);
+            this.SkipIntroBox.Location = new System.Drawing.Point(62, 170);
             this.SkipIntroBox.Name = "SkipIntroBox";
             this.SkipIntroBox.Size = new System.Drawing.Size(214, 27);
             this.SkipIntroBox.TabIndex = 16;
@@ -889,7 +889,7 @@
             this.Dx11Box.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Dx11Box.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Dx11Box.ForeColor = System.Drawing.Color.Black;
-            this.Dx11Box.Location = new System.Drawing.Point(90, 138);
+            this.Dx11Box.Location = new System.Drawing.Point(90, 137);
             this.Dx11Box.Name = "Dx11Box";
             this.Dx11Box.Size = new System.Drawing.Size(186, 27);
             this.Dx11Box.TabIndex = 15;
@@ -2976,6 +2976,7 @@
             this.StartGameButton.TabIndex = 5;
             this.StartGameButton.UseVisualStyleBackColor = false;
             this.StartGameButton.Click += new System.EventHandler(this.StartGameButton_Click);
+            this.StartGameButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.StartGameButton_MouseDown);
             this.StartGameButton.MouseEnter += new System.EventHandler(this.StartGameButton_MouseEnter);
             this.StartGameButton.MouseLeave += new System.EventHandler(this.StartGameButton_MouseLeave);
             // 
