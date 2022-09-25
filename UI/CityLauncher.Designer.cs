@@ -1163,7 +1163,7 @@
             this.groupBox3.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox3.Location = new System.Drawing.Point(3, 489);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(678, 561);
+            this.groupBox3.Size = new System.Drawing.Size(683, 561);
             this.groupBox3.TabIndex = 146;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "SPECIAL";
@@ -1697,7 +1697,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(678, 480);
+            this.groupBox2.Size = new System.Drawing.Size(683, 480);
             this.groupBox2.TabIndex = 145;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "MAIN";
@@ -2157,9 +2157,9 @@
             this.AdvancedColorBox.Controls.Add(this.label12);
             this.AdvancedColorBox.Controls.Add(this.label9);
             this.AdvancedColorBox.ForeColor = System.Drawing.Color.Maroon;
-            this.AdvancedColorBox.Location = new System.Drawing.Point(6, 500);
+            this.AdvancedColorBox.Location = new System.Drawing.Point(3, 500);
             this.AdvancedColorBox.Name = "AdvancedColorBox";
-            this.AdvancedColorBox.Size = new System.Drawing.Size(681, 421);
+            this.AdvancedColorBox.Size = new System.Drawing.Size(684, 421);
             this.AdvancedColorBox.TabIndex = 165;
             this.AdvancedColorBox.TabStop = false;
             this.AdvancedColorBox.Text = "ADVANCED COLOR SETTINGS";
@@ -2197,7 +2197,7 @@
             this.ShadowsValueLabel.AutoSize = true;
             this.ShadowsValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ShadowsValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.ShadowsValueLabel.Location = new System.Drawing.Point(616, 315);
+            this.ShadowsValueLabel.Location = new System.Drawing.Point(618, 315);
             this.ShadowsValueLabel.Name = "ShadowsValueLabel";
             this.ShadowsValueLabel.Size = new System.Drawing.Size(34, 26);
             this.ShadowsValueLabel.TabIndex = 178;
@@ -2210,7 +2210,7 @@
             this.MidtonesValueLabel.AutoSize = true;
             this.MidtonesValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MidtonesValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.MidtonesValueLabel.Location = new System.Drawing.Point(616, 238);
+            this.MidtonesValueLabel.Location = new System.Drawing.Point(618, 238);
             this.MidtonesValueLabel.Name = "MidtonesValueLabel";
             this.MidtonesValueLabel.Size = new System.Drawing.Size(34, 26);
             this.MidtonesValueLabel.TabIndex = 167;
@@ -2223,7 +2223,7 @@
             this.HighlightsValueLabel.AutoSize = true;
             this.HighlightsValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.HighlightsValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.HighlightsValueLabel.Location = new System.Drawing.Point(616, 161);
+            this.HighlightsValueLabel.Location = new System.Drawing.Point(618, 161);
             this.HighlightsValueLabel.Name = "HighlightsValueLabel";
             this.HighlightsValueLabel.Size = new System.Drawing.Size(34, 26);
             this.HighlightsValueLabel.TabIndex = 177;
@@ -2236,7 +2236,7 @@
             this.SaturationValueLabel.AutoSize = true;
             this.SaturationValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SaturationValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.SaturationValueLabel.Location = new System.Drawing.Point(616, 84);
+            this.SaturationValueLabel.Location = new System.Drawing.Point(618, 84);
             this.SaturationValueLabel.Name = "SaturationValueLabel";
             this.SaturationValueLabel.Size = new System.Drawing.Size(34, 26);
             this.SaturationValueLabel.TabIndex = 166;
@@ -2414,9 +2414,9 @@
             this.groupBox4.Controls.Add(this.CustomFoV1Button);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.ForeColor = System.Drawing.Color.Maroon;
-            this.groupBox4.Location = new System.Drawing.Point(6, 6);
+            this.groupBox4.Location = new System.Drawing.Point(3, 6);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(681, 485);
+            this.groupBox4.Size = new System.Drawing.Size(684, 485);
             this.groupBox4.TabIndex = 181;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "MAIN";
@@ -2426,7 +2426,7 @@
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(864, 228);
+            this.label15.Location = new System.Drawing.Point(866, 228);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(25, 19);
             this.label15.TabIndex = 178;
@@ -2451,7 +2451,7 @@
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(864, 177);
+            this.label16.Location = new System.Drawing.Point(866, 177);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(25, 19);
             this.label16.TabIndex = 167;
@@ -2475,7 +2475,7 @@
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(864, 126);
+            this.label17.Location = new System.Drawing.Point(866, 126);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(25, 19);
             this.label17.TabIndex = 177;
@@ -2487,7 +2487,7 @@
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(864, 75);
+            this.label18.Location = new System.Drawing.Point(866, 75);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(25, 19);
             this.label18.TabIndex = 166;
@@ -2501,7 +2501,7 @@
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MouseSensitivityValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(625, 382);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(628, 382);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(30, 23);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2577,7 +2577,7 @@
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CustomFoV2ValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(625, 308);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(628, 308);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(30, 23);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2760,7 +2760,7 @@
             this.CustomFoV1ValueLabel.AutoSize = true;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CustomFoV1ValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(625, 234);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(628, 234);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(30, 23);
             this.CustomFoV1ValueLabel.TabIndex = 156;
@@ -2951,6 +2951,7 @@
             // 
             // TextureFixButton
             // 
+            this.TextureFixButton.Enabled = false;
             this.TextureFixButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextureFixButton.Location = new System.Drawing.Point(251, 566);
             this.TextureFixButton.Name = "TextureFixButton";
@@ -2963,7 +2964,7 @@
             // StartGameButton
             // 
             this.StartGameButton.BackColor = System.Drawing.Color.Transparent;
-            this.StartGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.StartGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.StartGameButton.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.StartGameButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.StartGameButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
