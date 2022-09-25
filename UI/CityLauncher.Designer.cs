@@ -166,8 +166,39 @@
             this.GrappleButton1 = new System.Windows.Forms.Button();
             this.ResetControlButton = new System.Windows.Forms.Button();
             this.MiscTab = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.DebugMenuButton = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
             this.DebugMenuLabel = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.MouseSensitivityValueLabel = new System.Windows.Forms.Label();
+            this.ToggleHudLabel = new System.Windows.Forms.Label();
+            this.MouseSensitivityLabel = new System.Windows.Forms.Label();
+            this.CustomFoV1Trackbar = new System.Windows.Forms.TrackBar();
+            this.MouseSensitivityTrackbar = new System.Windows.Forms.TrackBar();
+            this.OpenConsoleLabel = new System.Windows.Forms.Label();
+            this.CustomFoV2ValueLabel = new System.Windows.Forms.Label();
+            this.OpenConsoleButton = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ToggleHudButton = new System.Windows.Forms.Button();
+            this.CustomFoV2Trackbar = new System.Windows.Forms.TrackBar();
+            this.ResetFoVLabel = new System.Windows.Forms.Label();
+            this.CustomFoV2Button = new System.Windows.Forms.Button();
+            this.ResetFoVButton = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.CentreCameraLabel = new System.Windows.Forms.Label();
+            this.CustomCommandButton = new System.Windows.Forms.Button();
+            this.CentreCameraButton = new System.Windows.Forms.Button();
+            this.CustomCommandLabel = new System.Windows.Forms.Label();
+            this.SpeedRunLabel = new System.Windows.Forms.Label();
+            this.CustomFoV1ValueLabel = new System.Windows.Forms.Label();
+            this.SpeedRunButton = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.MouseSmoothingBox = new System.Windows.Forms.CheckBox();
+            this.CustomFoV1Button = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.AdvancedColorBox = new System.Windows.Forms.GroupBox();
             this.LowContrastColorButton = new System.Windows.Forms.Button();
             this.HighContrastColorButton = new System.Windows.Forms.Button();
@@ -187,32 +218,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.MouseSensitivityValueLabel = new System.Windows.Forms.Label();
-            this.MouseSensitivityLabel = new System.Windows.Forms.Label();
-            this.MouseSensitivityTrackbar = new System.Windows.Forms.TrackBar();
-            this.CustomFoV2ValueLabel = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.CustomFoV2Trackbar = new System.Windows.Forms.TrackBar();
-            this.CustomFoV2Button = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.CustomCommandButton = new System.Windows.Forms.Button();
-            this.CustomCommandLabel = new System.Windows.Forms.Label();
-            this.CustomFoV1ValueLabel = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.CustomFoV1Button = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.MouseSmoothingBox = new System.Windows.Forms.CheckBox();
-            this.SpeedRunButton = new System.Windows.Forms.Button();
-            this.SpeedRunLabel = new System.Windows.Forms.Label();
-            this.CentreCameraButton = new System.Windows.Forms.Button();
-            this.CentreCameraLabel = new System.Windows.Forms.Label();
-            this.ResetFoVButton = new System.Windows.Forms.Button();
-            this.ResetFoVLabel = new System.Windows.Forms.Label();
-            this.ToggleHudButton = new System.Windows.Forms.Button();
-            this.ToggleHudLabel = new System.Windows.Forms.Label();
-            this.OpenConsoleButton = new System.Windows.Forms.Button();
-            this.OpenConsoleLabel = new System.Windows.Forms.Label();
-            this.CustomFoV1Trackbar = new System.Windows.Forms.TrackBar();
             this.AboutTab = new System.Windows.Forms.TabPage();
             this.TempLabel = new System.Windows.Forms.LinkLabel();
             this.ApplySettingsButton = new System.Windows.Forms.Button();
@@ -232,14 +237,15 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.MiscTab.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).BeginInit();
             this.AdvancedColorBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShadowsTrackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MidtonesTrackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HighlightsTrackbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SaturationTrackbar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).BeginInit();
             this.AboutTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -2114,35 +2120,8 @@
             // MiscTab
             // 
             this.MiscTab.AutoScroll = true;
-            this.MiscTab.Controls.Add(this.DebugMenuButton);
-            this.MiscTab.Controls.Add(this.DebugMenuLabel);
+            this.MiscTab.Controls.Add(this.groupBox4);
             this.MiscTab.Controls.Add(this.AdvancedColorBox);
-            this.MiscTab.Controls.Add(this.MouseSensitivityValueLabel);
-            this.MiscTab.Controls.Add(this.MouseSensitivityLabel);
-            this.MiscTab.Controls.Add(this.MouseSensitivityTrackbar);
-            this.MiscTab.Controls.Add(this.CustomFoV2ValueLabel);
-            this.MiscTab.Controls.Add(this.label10);
-            this.MiscTab.Controls.Add(this.CustomFoV2Trackbar);
-            this.MiscTab.Controls.Add(this.CustomFoV2Button);
-            this.MiscTab.Controls.Add(this.label11);
-            this.MiscTab.Controls.Add(this.CustomCommandButton);
-            this.MiscTab.Controls.Add(this.CustomCommandLabel);
-            this.MiscTab.Controls.Add(this.CustomFoV1ValueLabel);
-            this.MiscTab.Controls.Add(this.label7);
-            this.MiscTab.Controls.Add(this.CustomFoV1Button);
-            this.MiscTab.Controls.Add(this.label6);
-            this.MiscTab.Controls.Add(this.MouseSmoothingBox);
-            this.MiscTab.Controls.Add(this.SpeedRunButton);
-            this.MiscTab.Controls.Add(this.SpeedRunLabel);
-            this.MiscTab.Controls.Add(this.CentreCameraButton);
-            this.MiscTab.Controls.Add(this.CentreCameraLabel);
-            this.MiscTab.Controls.Add(this.ResetFoVButton);
-            this.MiscTab.Controls.Add(this.ResetFoVLabel);
-            this.MiscTab.Controls.Add(this.ToggleHudButton);
-            this.MiscTab.Controls.Add(this.ToggleHudLabel);
-            this.MiscTab.Controls.Add(this.OpenConsoleButton);
-            this.MiscTab.Controls.Add(this.OpenConsoleLabel);
-            this.MiscTab.Controls.Add(this.CustomFoV1Trackbar);
             this.MiscTab.ForeColor = System.Drawing.Color.Black;
             this.MiscTab.Location = new System.Drawing.Point(4, 38);
             this.MiscTab.Name = "MiscTab";
@@ -2152,28 +2131,457 @@
             this.MiscTab.Text = "         MISC         ";
             this.MiscTab.UseVisualStyleBackColor = true;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.AutoSize = true;
+            this.groupBox4.Controls.Add(this.label15);
+            this.groupBox4.Controls.Add(this.DebugMenuButton);
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.DebugMenuLabel);
+            this.groupBox4.Controls.Add(this.label17);
+            this.groupBox4.Controls.Add(this.label18);
+            this.groupBox4.Controls.Add(this.MouseSensitivityValueLabel);
+            this.groupBox4.Controls.Add(this.ToggleHudLabel);
+            this.groupBox4.Controls.Add(this.MouseSensitivityLabel);
+            this.groupBox4.Controls.Add(this.CustomFoV1Trackbar);
+            this.groupBox4.Controls.Add(this.MouseSensitivityTrackbar);
+            this.groupBox4.Controls.Add(this.OpenConsoleLabel);
+            this.groupBox4.Controls.Add(this.CustomFoV2ValueLabel);
+            this.groupBox4.Controls.Add(this.OpenConsoleButton);
+            this.groupBox4.Controls.Add(this.label10);
+            this.groupBox4.Controls.Add(this.ToggleHudButton);
+            this.groupBox4.Controls.Add(this.CustomFoV2Trackbar);
+            this.groupBox4.Controls.Add(this.ResetFoVLabel);
+            this.groupBox4.Controls.Add(this.CustomFoV2Button);
+            this.groupBox4.Controls.Add(this.ResetFoVButton);
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Controls.Add(this.CentreCameraLabel);
+            this.groupBox4.Controls.Add(this.CustomCommandButton);
+            this.groupBox4.Controls.Add(this.CentreCameraButton);
+            this.groupBox4.Controls.Add(this.CustomCommandLabel);
+            this.groupBox4.Controls.Add(this.SpeedRunLabel);
+            this.groupBox4.Controls.Add(this.CustomFoV1ValueLabel);
+            this.groupBox4.Controls.Add(this.SpeedRunButton);
+            this.groupBox4.Controls.Add(this.label7);
+            this.groupBox4.Controls.Add(this.MouseSmoothingBox);
+            this.groupBox4.Controls.Add(this.CustomFoV1Button);
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.ForeColor = System.Drawing.Color.Maroon;
+            this.groupBox4.Location = new System.Drawing.Point(6, 6);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(681, 485);
+            this.groupBox4.TabIndex = 181;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "MAIN";
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(864, 228);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(25, 19);
+            this.label15.TabIndex = 178;
+            this.label15.Text = "00";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // DebugMenuButton
             // 
-            this.DebugMenuButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DebugMenuButton.Location = new System.Drawing.Point(595, 48);
+            this.DebugMenuButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DebugMenuButton.ForeColor = System.Drawing.Color.Black;
+            this.DebugMenuButton.Location = new System.Drawing.Point(491, 105);
             this.DebugMenuButton.Name = "DebugMenuButton";
-            this.DebugMenuButton.Size = new System.Drawing.Size(83, 35);
+            this.DebugMenuButton.Size = new System.Drawing.Size(175, 35);
             this.DebugMenuButton.TabIndex = 167;
             this.DebugMenuButton.Text = "button1";
             this.BasicToolTip.SetToolTip(this.DebugMenuButton, "Access console commands for cheats and debugging.");
             this.DebugMenuButton.UseVisualStyleBackColor = true;
             this.DebugMenuButton.Click += new System.EventHandler(this.DebugMenuButton_Click);
             // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(864, 177);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(25, 19);
+            this.label16.TabIndex = 167;
+            this.label16.Text = "00";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // DebugMenuLabel
             // 
             this.DebugMenuLabel.AutoSize = true;
-            this.DebugMenuLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DebugMenuLabel.Location = new System.Drawing.Point(497, 55);
+            this.DebugMenuLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DebugMenuLabel.ForeColor = System.Drawing.Color.Black;
+            this.DebugMenuLabel.Location = new System.Drawing.Point(377, 111);
             this.DebugMenuLabel.Name = "DebugMenuLabel";
-            this.DebugMenuLabel.Size = new System.Drawing.Size(92, 19);
+            this.DebugMenuLabel.Size = new System.Drawing.Size(108, 23);
             this.DebugMenuLabel.TabIndex = 166;
             this.DebugMenuLabel.Text = "Debug Menu";
             this.BasicToolTip.SetToolTip(this.DebugMenuLabel, "Access console commands for cheats and debugging.");
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.Location = new System.Drawing.Point(864, 126);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(25, 19);
+            this.label17.TabIndex = 177;
+            this.label17.Text = "00";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(864, 75);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(25, 19);
+            this.label18.TabIndex = 166;
+            this.label18.Text = "00";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // MouseSensitivityValueLabel
+            // 
+            this.MouseSensitivityValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MouseSensitivityValueLabel.AutoSize = true;
+            this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MouseSensitivityValueLabel.ForeColor = System.Drawing.Color.Black;
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(625, 382);
+            this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
+            this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(30, 23);
+            this.MouseSensitivityValueLabel.TabIndex = 155;
+            this.MouseSensitivityValueLabel.Text = "00";
+            this.MouseSensitivityValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // ToggleHudLabel
+            // 
+            this.ToggleHudLabel.AutoSize = true;
+            this.ToggleHudLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ToggleHudLabel.ForeColor = System.Drawing.Color.Black;
+            this.ToggleHudLabel.Location = new System.Drawing.Point(34, 29);
+            this.ToggleHudLabel.Name = "ToggleHudLabel";
+            this.ToggleHudLabel.Size = new System.Drawing.Size(99, 23);
+            this.ToggleHudLabel.TabIndex = 141;
+            this.ToggleHudLabel.Text = "Toggle HUD";
+            this.BasicToolTip.SetToolTip(this.ToggleHudLabel, "Toggles UI elements. Re-enable HUD during forensic sections of the game to progre" +
+        "ss.");
+            this.ToggleHudLabel.Click += new System.EventHandler(this.ToggleHudLabel_Click);
+            // 
+            // MouseSensitivityLabel
+            // 
+            this.MouseSensitivityLabel.AutoSize = true;
+            this.MouseSensitivityLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MouseSensitivityLabel.ForeColor = System.Drawing.Color.Black;
+            this.MouseSensitivityLabel.Location = new System.Drawing.Point(20, 382);
+            this.MouseSensitivityLabel.Name = "MouseSensitivityLabel";
+            this.MouseSensitivityLabel.Size = new System.Drawing.Size(157, 23);
+            this.MouseSensitivityLabel.TabIndex = 153;
+            this.MouseSensitivityLabel.Text = "Mouse Sensitivity:";
+            this.BasicToolTip.SetToolTip(this.MouseSensitivityLabel, "Higher values will increase in-game mouse sensitivity. \'30\' is the vanilla value." +
+        "");
+            // 
+            // CustomFoV1Trackbar
+            // 
+            this.CustomFoV1Trackbar.Location = new System.Drawing.Point(6, 260);
+            this.CustomFoV1Trackbar.Maximum = 150;
+            this.CustomFoV1Trackbar.Minimum = 75;
+            this.CustomFoV1Trackbar.Name = "CustomFoV1Trackbar";
+            this.CustomFoV1Trackbar.Size = new System.Drawing.Size(660, 45);
+            this.CustomFoV1Trackbar.TabIndex = 164;
+            this.CustomFoV1Trackbar.Value = 75;
+            this.CustomFoV1Trackbar.Scroll += new System.EventHandler(this.CustomFoV1Trackbar_Scroll);
+            // 
+            // MouseSensitivityTrackbar
+            // 
+            this.MouseSensitivityTrackbar.Location = new System.Drawing.Point(3, 408);
+            this.MouseSensitivityTrackbar.Maximum = 100;
+            this.MouseSensitivityTrackbar.Minimum = 1;
+            this.MouseSensitivityTrackbar.Name = "MouseSensitivityTrackbar";
+            this.MouseSensitivityTrackbar.Size = new System.Drawing.Size(663, 45);
+            this.MouseSensitivityTrackbar.TabIndex = 150;
+            this.BasicToolTip.SetToolTip(this.MouseSensitivityTrackbar, "Higher values will increase in-game mouse sensitivity. \'30\' is the vanilla value." +
+        "");
+            this.MouseSensitivityTrackbar.Value = 1;
+            this.MouseSensitivityTrackbar.Scroll += new System.EventHandler(this.MouseSensitivityTrackbar_Scroll);
+            // 
+            // OpenConsoleLabel
+            // 
+            this.OpenConsoleLabel.AutoSize = true;
+            this.OpenConsoleLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OpenConsoleLabel.ForeColor = System.Drawing.Color.Black;
+            this.OpenConsoleLabel.Location = new System.Drawing.Point(367, 70);
+            this.OpenConsoleLabel.Name = "OpenConsoleLabel";
+            this.OpenConsoleLabel.Size = new System.Drawing.Size(118, 23);
+            this.OpenConsoleLabel.TabIndex = 139;
+            this.OpenConsoleLabel.Text = "Open Console";
+            this.BasicToolTip.SetToolTip(this.OpenConsoleLabel, "Access console commands for cheats and debugging.");
+            // 
+            // CustomFoV2ValueLabel
+            // 
+            this.CustomFoV2ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CustomFoV2ValueLabel.AutoSize = true;
+            this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CustomFoV2ValueLabel.ForeColor = System.Drawing.Color.Black;
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(625, 308);
+            this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
+            this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(30, 23);
+            this.CustomFoV2ValueLabel.TabIndex = 163;
+            this.CustomFoV2ValueLabel.Text = "00";
+            this.CustomFoV2ValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // OpenConsoleButton
+            // 
+            this.OpenConsoleButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OpenConsoleButton.ForeColor = System.Drawing.Color.Black;
+            this.OpenConsoleButton.Location = new System.Drawing.Point(491, 64);
+            this.OpenConsoleButton.Name = "OpenConsoleButton";
+            this.OpenConsoleButton.Size = new System.Drawing.Size(175, 35);
+            this.OpenConsoleButton.TabIndex = 140;
+            this.OpenConsoleButton.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.OpenConsoleButton, "Access console commands for cheats and debugging.");
+            this.OpenConsoleButton.UseVisualStyleBackColor = true;
+            this.OpenConsoleButton.Click += new System.EventHandler(this.OpenConsoleButton_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(20, 308);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(171, 23);
+            this.label10.TabIndex = 162;
+            this.label10.Text = "Custom FoV 2 Value:";
+            // 
+            // ToggleHudButton
+            // 
+            this.ToggleHudButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ToggleHudButton.ForeColor = System.Drawing.Color.Black;
+            this.ToggleHudButton.Location = new System.Drawing.Point(139, 23);
+            this.ToggleHudButton.Name = "ToggleHudButton";
+            this.ToggleHudButton.Size = new System.Drawing.Size(175, 35);
+            this.ToggleHudButton.TabIndex = 142;
+            this.ToggleHudButton.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.ToggleHudButton, "Toggles UI elements. Re-enable HUD during forensic sections of the game to progre" +
+        "ss.");
+            this.ToggleHudButton.UseVisualStyleBackColor = true;
+            this.ToggleHudButton.Click += new System.EventHandler(this.ToggleHudButton_Click);
+            // 
+            // CustomFoV2Trackbar
+            // 
+            this.CustomFoV2Trackbar.Location = new System.Drawing.Point(6, 334);
+            this.CustomFoV2Trackbar.Maximum = 150;
+            this.CustomFoV2Trackbar.Minimum = 75;
+            this.CustomFoV2Trackbar.Name = "CustomFoV2Trackbar";
+            this.CustomFoV2Trackbar.Size = new System.Drawing.Size(660, 45);
+            this.CustomFoV2Trackbar.TabIndex = 161;
+            this.CustomFoV2Trackbar.Value = 75;
+            this.CustomFoV2Trackbar.Scroll += new System.EventHandler(this.CustomFoV2Trackbar_Scroll);
+            // 
+            // ResetFoVLabel
+            // 
+            this.ResetFoVLabel.AutoSize = true;
+            this.ResetFoVLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetFoVLabel.ForeColor = System.Drawing.Color.Black;
+            this.ResetFoVLabel.Location = new System.Drawing.Point(48, 152);
+            this.ResetFoVLabel.Name = "ResetFoVLabel";
+            this.ResetFoVLabel.Size = new System.Drawing.Size(85, 23);
+            this.ResetFoVLabel.TabIndex = 143;
+            this.ResetFoVLabel.Text = "Reset FoV";
+            this.BasicToolTip.SetToolTip(this.ResetFoVLabel, "Reverts field of view to original value. Needed for certain actions, including th" +
+        "e zoom function.");
+            // 
+            // CustomFoV2Button
+            // 
+            this.CustomFoV2Button.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomFoV2Button.ForeColor = System.Drawing.Color.Black;
+            this.CustomFoV2Button.Location = new System.Drawing.Point(491, 187);
+            this.CustomFoV2Button.Name = "CustomFoV2Button";
+            this.CustomFoV2Button.Size = new System.Drawing.Size(175, 35);
+            this.CustomFoV2Button.TabIndex = 160;
+            this.CustomFoV2Button.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.CustomFoV2Button, "Choose custom field of view values using the slider.\r\n");
+            this.CustomFoV2Button.UseVisualStyleBackColor = true;
+            this.CustomFoV2Button.Click += new System.EventHandler(this.CustomFoV2Button_Click);
+            // 
+            // ResetFoVButton
+            // 
+            this.ResetFoVButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetFoVButton.ForeColor = System.Drawing.Color.Black;
+            this.ResetFoVButton.Location = new System.Drawing.Point(139, 146);
+            this.ResetFoVButton.Name = "ResetFoVButton";
+            this.ResetFoVButton.Size = new System.Drawing.Size(175, 35);
+            this.ResetFoVButton.TabIndex = 144;
+            this.ResetFoVButton.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.ResetFoVButton, "Reverts field of view to original value. Needed for certain actions, including th" +
+        "e zoom function.");
+            this.ResetFoVButton.UseVisualStyleBackColor = true;
+            this.ResetFoVButton.Click += new System.EventHandler(this.ResetFoVButton_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(371, 193);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(114, 23);
+            this.label11.TabIndex = 159;
+            this.label11.Text = "Custom FoV 2";
+            this.BasicToolTip.SetToolTip(this.label11, "Choose custom field of view values using the slider.\r\n");
+            // 
+            // CentreCameraLabel
+            // 
+            this.CentreCameraLabel.AutoSize = true;
+            this.CentreCameraLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CentreCameraLabel.ForeColor = System.Drawing.Color.Black;
+            this.CentreCameraLabel.Location = new System.Drawing.Point(3, 111);
+            this.CentreCameraLabel.Name = "CentreCameraLabel";
+            this.CentreCameraLabel.Size = new System.Drawing.Size(130, 23);
+            this.CentreCameraLabel.TabIndex = 145;
+            this.CentreCameraLabel.Text = "Centre Camera";
+            this.BasicToolTip.SetToolTip(this.CentreCameraLabel, "Camera will centre on player character. Requires running while pressing hotkey to" +
+        " trigger. \r\n- Advanced users can repurpose \'centre_camera\' file as a second Cust" +
+        "om Command function.");
+            // 
+            // CustomCommandButton
+            // 
+            this.CustomCommandButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomCommandButton.ForeColor = System.Drawing.Color.Black;
+            this.CustomCommandButton.Location = new System.Drawing.Point(491, 23);
+            this.CustomCommandButton.Name = "CustomCommandButton";
+            this.CustomCommandButton.Size = new System.Drawing.Size(175, 35);
+            this.CustomCommandButton.TabIndex = 158;
+            this.CustomCommandButton.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.CustomCommandButton, "Execute pre-written commands by editing the \'custom_commands\' file.\r\n- The file i" +
+        "s located in \'Batman Arkham City GOTY/Binaries/Win32/Custom\'.");
+            this.CustomCommandButton.UseVisualStyleBackColor = true;
+            this.CustomCommandButton.Click += new System.EventHandler(this.CustomCommandButton_Click);
+            // 
+            // CentreCameraButton
+            // 
+            this.CentreCameraButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CentreCameraButton.ForeColor = System.Drawing.Color.Black;
+            this.CentreCameraButton.Location = new System.Drawing.Point(139, 105);
+            this.CentreCameraButton.Name = "CentreCameraButton";
+            this.CentreCameraButton.Size = new System.Drawing.Size(175, 35);
+            this.CentreCameraButton.TabIndex = 146;
+            this.CentreCameraButton.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.CentreCameraButton, "Camera will centre on player character. Requires running while pressing hotkey to" +
+        " trigger. \r\n- Advanced users can repurpose \'centre_camera\' file as a second Cust" +
+        "om Command function.");
+            this.CentreCameraButton.UseVisualStyleBackColor = true;
+            this.CentreCameraButton.Click += new System.EventHandler(this.CentreCameraButton_Click);
+            // 
+            // CustomCommandLabel
+            // 
+            this.CustomCommandLabel.AutoSize = true;
+            this.CustomCommandLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomCommandLabel.ForeColor = System.Drawing.Color.Black;
+            this.CustomCommandLabel.Location = new System.Drawing.Point(330, 29);
+            this.CustomCommandLabel.Name = "CustomCommandLabel";
+            this.CustomCommandLabel.Size = new System.Drawing.Size(155, 23);
+            this.CustomCommandLabel.TabIndex = 157;
+            this.CustomCommandLabel.Text = "Custom Command";
+            this.BasicToolTip.SetToolTip(this.CustomCommandLabel, "Execute pre-written commands by editing the \'custom_commands\' file.\r\n- The file i" +
+        "s located in \'Batman Arkham City GOTY/Binaries/Win32/Custom\'.");
+            // 
+            // SpeedRunLabel
+            // 
+            this.SpeedRunLabel.AutoSize = true;
+            this.SpeedRunLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SpeedRunLabel.ForeColor = System.Drawing.Color.Black;
+            this.SpeedRunLabel.Location = new System.Drawing.Point(46, 70);
+            this.SpeedRunLabel.Name = "SpeedRunLabel";
+            this.SpeedRunLabel.Size = new System.Drawing.Size(87, 23);
+            this.SpeedRunLabel.TabIndex = 147;
+            this.SpeedRunLabel.Text = "Speedrun";
+            this.BasicToolTip.SetToolTip(this.SpeedRunLabel, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.");
+            // 
+            // CustomFoV1ValueLabel
+            // 
+            this.CustomFoV1ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CustomFoV1ValueLabel.AutoSize = true;
+            this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CustomFoV1ValueLabel.ForeColor = System.Drawing.Color.Black;
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(625, 234);
+            this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
+            this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(30, 23);
+            this.CustomFoV1ValueLabel.TabIndex = 156;
+            this.CustomFoV1ValueLabel.Text = "00";
+            this.CustomFoV1ValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // SpeedRunButton
+            // 
+            this.SpeedRunButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SpeedRunButton.ForeColor = System.Drawing.Color.Black;
+            this.SpeedRunButton.Location = new System.Drawing.Point(139, 64);
+            this.SpeedRunButton.Name = "SpeedRunButton";
+            this.SpeedRunButton.Size = new System.Drawing.Size(175, 35);
+            this.SpeedRunButton.TabIndex = 148;
+            this.SpeedRunButton.Text = "SpeedRun";
+            this.BasicToolTip.SetToolTip(this.SpeedRunButton, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.");
+            this.SpeedRunButton.UseVisualStyleBackColor = true;
+            this.SpeedRunButton.Click += new System.EventHandler(this.SpeedRunButton_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(20, 234);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(171, 23);
+            this.label7.TabIndex = 154;
+            this.label7.Text = "Custom FoV 1 Value:";
+            // 
+            // MouseSmoothingBox
+            // 
+            this.MouseSmoothingBox.AutoSize = true;
+            this.MouseSmoothingBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.MouseSmoothingBox.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MouseSmoothingBox.ForeColor = System.Drawing.Color.Black;
+            this.MouseSmoothingBox.Location = new System.Drawing.Point(126, 186);
+            this.MouseSmoothingBox.Name = "MouseSmoothingBox";
+            this.MouseSmoothingBox.Size = new System.Drawing.Size(188, 30);
+            this.MouseSmoothingBox.TabIndex = 149;
+            this.MouseSmoothingBox.Text = "Mouse Smoothing";
+            this.MouseSmoothingBox.UseVisualStyleBackColor = true;
+            // 
+            // CustomFoV1Button
+            // 
+            this.CustomFoV1Button.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomFoV1Button.ForeColor = System.Drawing.Color.Black;
+            this.CustomFoV1Button.Location = new System.Drawing.Point(491, 146);
+            this.CustomFoV1Button.Name = "CustomFoV1Button";
+            this.CustomFoV1Button.Size = new System.Drawing.Size(175, 35);
+            this.CustomFoV1Button.TabIndex = 152;
+            this.CustomFoV1Button.Text = "button1";
+            this.BasicToolTip.SetToolTip(this.CustomFoV1Button, "Choose custom field of view values using the slider.\r\n");
+            this.CustomFoV1Button.UseVisualStyleBackColor = true;
+            this.CustomFoV1Button.Click += new System.EventHandler(this.CustomFoV1Button_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(374, 152);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(111, 23);
+            this.label6.TabIndex = 151;
+            this.label6.Text = "Custom FoV 1";
+            this.BasicToolTip.SetToolTip(this.label6, "Choose custom field of view values using the slider.\r\n");
             // 
             // AdvancedColorBox
             // 
@@ -2197,9 +2605,9 @@
             this.AdvancedColorBox.Controls.Add(this.label12);
             this.AdvancedColorBox.Controls.Add(this.label9);
             this.AdvancedColorBox.Enabled = false;
-            this.AdvancedColorBox.Location = new System.Drawing.Point(9, 259);
+            this.AdvancedColorBox.Location = new System.Drawing.Point(6, 494);
             this.AdvancedColorBox.Name = "AdvancedColorBox";
-            this.AdvancedColorBox.Size = new System.Drawing.Size(680, 324);
+            this.AdvancedColorBox.Size = new System.Drawing.Size(681, 421);
             this.AdvancedColorBox.TabIndex = 165;
             this.AdvancedColorBox.TabStop = false;
             this.AdvancedColorBox.Text = "Advanced Color Settings";
@@ -2233,10 +2641,10 @@
             // 
             this.ShadowsValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ShadowsValueLabel.AutoSize = true;
-            this.ShadowsValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ShadowsValueLabel.Location = new System.Drawing.Point(624, 228);
+            this.ShadowsValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ShadowsValueLabel.Location = new System.Drawing.Point(616, 315);
             this.ShadowsValueLabel.Name = "ShadowsValueLabel";
-            this.ShadowsValueLabel.Size = new System.Drawing.Size(25, 19);
+            this.ShadowsValueLabel.Size = new System.Drawing.Size(34, 26);
             this.ShadowsValueLabel.TabIndex = 178;
             this.ShadowsValueLabel.Text = "00";
             this.ShadowsValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -2245,10 +2653,10 @@
             // 
             this.MidtonesValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.MidtonesValueLabel.AutoSize = true;
-            this.MidtonesValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MidtonesValueLabel.Location = new System.Drawing.Point(624, 177);
+            this.MidtonesValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MidtonesValueLabel.Location = new System.Drawing.Point(616, 238);
             this.MidtonesValueLabel.Name = "MidtonesValueLabel";
-            this.MidtonesValueLabel.Size = new System.Drawing.Size(25, 19);
+            this.MidtonesValueLabel.Size = new System.Drawing.Size(34, 26);
             this.MidtonesValueLabel.TabIndex = 167;
             this.MidtonesValueLabel.Text = "00";
             this.MidtonesValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -2257,10 +2665,10 @@
             // 
             this.HighlightsValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HighlightsValueLabel.AutoSize = true;
-            this.HighlightsValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.HighlightsValueLabel.Location = new System.Drawing.Point(624, 126);
+            this.HighlightsValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.HighlightsValueLabel.Location = new System.Drawing.Point(616, 161);
             this.HighlightsValueLabel.Name = "HighlightsValueLabel";
-            this.HighlightsValueLabel.Size = new System.Drawing.Size(25, 19);
+            this.HighlightsValueLabel.Size = new System.Drawing.Size(34, 26);
             this.HighlightsValueLabel.TabIndex = 177;
             this.HighlightsValueLabel.Text = "00";
             this.HighlightsValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -2269,10 +2677,10 @@
             // 
             this.SaturationValueLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SaturationValueLabel.AutoSize = true;
-            this.SaturationValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SaturationValueLabel.Location = new System.Drawing.Point(624, 75);
+            this.SaturationValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SaturationValueLabel.Location = new System.Drawing.Point(616, 84);
             this.SaturationValueLabel.Name = "SaturationValueLabel";
-            this.SaturationValueLabel.Size = new System.Drawing.Size(25, 19);
+            this.SaturationValueLabel.Size = new System.Drawing.Size(34, 26);
             this.SaturationValueLabel.TabIndex = 166;
             this.SaturationValueLabel.Text = "00";
             this.SaturationValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -2326,40 +2734,40 @@
             // 
             // ShadowsTrackbar
             // 
-            this.ShadowsTrackbar.Location = new System.Drawing.Point(120, 247);
+            this.ShadowsTrackbar.Location = new System.Drawing.Point(6, 344);
             this.ShadowsTrackbar.Maximum = 125;
             this.ShadowsTrackbar.Name = "ShadowsTrackbar";
-            this.ShadowsTrackbar.Size = new System.Drawing.Size(552, 45);
+            this.ShadowsTrackbar.Size = new System.Drawing.Size(660, 45);
             this.ShadowsTrackbar.TabIndex = 172;
             this.ShadowsTrackbar.Value = 1;
             this.ShadowsTrackbar.Scroll += new System.EventHandler(this.ShadowsTrackbar_Scroll);
             // 
             // MidtonesTrackbar
             // 
-            this.MidtonesTrackbar.Location = new System.Drawing.Point(120, 196);
+            this.MidtonesTrackbar.Location = new System.Drawing.Point(6, 267);
             this.MidtonesTrackbar.Maximum = 125;
             this.MidtonesTrackbar.Name = "MidtonesTrackbar";
-            this.MidtonesTrackbar.Size = new System.Drawing.Size(552, 45);
+            this.MidtonesTrackbar.Size = new System.Drawing.Size(660, 45);
             this.MidtonesTrackbar.TabIndex = 171;
             this.MidtonesTrackbar.Value = 1;
             this.MidtonesTrackbar.Scroll += new System.EventHandler(this.MidtonesTrackbar_Scroll);
             // 
             // HighlightsTrackbar
             // 
-            this.HighlightsTrackbar.Location = new System.Drawing.Point(120, 145);
+            this.HighlightsTrackbar.Location = new System.Drawing.Point(6, 190);
             this.HighlightsTrackbar.Maximum = 125;
             this.HighlightsTrackbar.Name = "HighlightsTrackbar";
-            this.HighlightsTrackbar.Size = new System.Drawing.Size(552, 45);
+            this.HighlightsTrackbar.Size = new System.Drawing.Size(660, 45);
             this.HighlightsTrackbar.TabIndex = 170;
             this.HighlightsTrackbar.Value = 1;
             this.HighlightsTrackbar.Scroll += new System.EventHandler(this.HighlightsTrackbar_Scroll);
             // 
             // SaturationTrackbar
             // 
-            this.SaturationTrackbar.Location = new System.Drawing.Point(120, 94);
+            this.SaturationTrackbar.Location = new System.Drawing.Point(6, 113);
             this.SaturationTrackbar.Maximum = 125;
             this.SaturationTrackbar.Name = "SaturationTrackbar";
-            this.SaturationTrackbar.Size = new System.Drawing.Size(552, 45);
+            this.SaturationTrackbar.Size = new System.Drawing.Size(660, 45);
             this.SaturationTrackbar.TabIndex = 166;
             this.SaturationTrackbar.Value = 1;
             this.SaturationTrackbar.Scroll += new System.EventHandler(this.SaturationTrackbar_Scroll);
@@ -2367,354 +2775,42 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(31, 247);
+            this.label14.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(20, 315);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(90, 26);
+            this.label14.Size = new System.Drawing.Size(89, 26);
             this.label14.TabIndex = 169;
             this.label14.Text = "Shadows";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(31, 196);
+            this.label13.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(20, 238);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(92, 26);
+            this.label13.Size = new System.Drawing.Size(94, 26);
             this.label13.TabIndex = 168;
             this.label13.Text = "Midtones";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(22, 145);
+            this.label12.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(20, 161);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(99, 26);
+            this.label12.Size = new System.Drawing.Size(97, 26);
             this.label12.TabIndex = 167;
             this.label12.Text = "Highlights";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(20, 94);
+            this.label9.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(20, 84);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 26);
+            this.label9.Size = new System.Drawing.Size(101, 26);
             this.label9.TabIndex = 166;
             this.label9.Text = "Saturation";
-            // 
-            // MouseSensitivityValueLabel
-            // 
-            this.MouseSensitivityValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MouseSensitivityValueLabel.AutoSize = true;
-            this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(237, 205);
-            this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
-            this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(25, 19);
-            this.MouseSensitivityValueLabel.TabIndex = 155;
-            this.MouseSensitivityValueLabel.Text = "00";
-            this.MouseSensitivityValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // MouseSensitivityLabel
-            // 
-            this.MouseSensitivityLabel.AutoSize = true;
-            this.MouseSensitivityLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSensitivityLabel.Location = new System.Drawing.Point(218, 207);
-            this.MouseSensitivityLabel.Name = "MouseSensitivityLabel";
-            this.MouseSensitivityLabel.Size = new System.Drawing.Size(127, 19);
-            this.MouseSensitivityLabel.TabIndex = 153;
-            this.MouseSensitivityLabel.Text = "Mouse Sensitivity:";
-            this.BasicToolTip.SetToolTip(this.MouseSensitivityLabel, "Higher values will increase in-game mouse sensitivity. \'30\' is the vanilla value." +
-        "");
-            // 
-            // MouseSensitivityTrackbar
-            // 
-            this.MouseSensitivityTrackbar.Location = new System.Drawing.Point(214, 224);
-            this.MouseSensitivityTrackbar.Maximum = 100;
-            this.MouseSensitivityTrackbar.Minimum = 1;
-            this.MouseSensitivityTrackbar.Name = "MouseSensitivityTrackbar";
-            this.MouseSensitivityTrackbar.Size = new System.Drawing.Size(467, 45);
-            this.MouseSensitivityTrackbar.TabIndex = 150;
-            this.BasicToolTip.SetToolTip(this.MouseSensitivityTrackbar, "Higher values will increase in-game mouse sensitivity. \'30\' is the vanilla value." +
-        "");
-            this.MouseSensitivityTrackbar.Value = 1;
-            this.MouseSensitivityTrackbar.Scroll += new System.EventHandler(this.MouseSensitivityTrackbar_Scroll);
-            // 
-            // CustomFoV2ValueLabel
-            // 
-            this.CustomFoV2ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CustomFoV2ValueLabel.AutoSize = true;
-            this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(237, 162);
-            this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
-            this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(25, 19);
-            this.CustomFoV2ValueLabel.TabIndex = 163;
-            this.CustomFoV2ValueLabel.Text = "00";
-            this.CustomFoV2ValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(218, 164);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(142, 19);
-            this.label10.TabIndex = 162;
-            this.label10.Text = "Custom FoV 2 Value:";
-            // 
-            // CustomFoV2Trackbar
-            // 
-            this.CustomFoV2Trackbar.Location = new System.Drawing.Point(214, 179);
-            this.CustomFoV2Trackbar.Maximum = 150;
-            this.CustomFoV2Trackbar.Minimum = 75;
-            this.CustomFoV2Trackbar.Name = "CustomFoV2Trackbar";
-            this.CustomFoV2Trackbar.Size = new System.Drawing.Size(467, 45);
-            this.CustomFoV2Trackbar.TabIndex = 161;
-            this.CustomFoV2Trackbar.Value = 75;
-            this.CustomFoV2Trackbar.Scroll += new System.EventHandler(this.CustomFoV2Trackbar_Scroll);
-            // 
-            // CustomFoV2Button
-            // 
-            this.CustomFoV2Button.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV2Button.Location = new System.Drawing.Point(121, 170);
-            this.CustomFoV2Button.Name = "CustomFoV2Button";
-            this.CustomFoV2Button.Size = new System.Drawing.Size(83, 35);
-            this.CustomFoV2Button.TabIndex = 160;
-            this.CustomFoV2Button.Text = "button1";
-            this.BasicToolTip.SetToolTip(this.CustomFoV2Button, "Choose custom field of view values using the slider.\r\n");
-            this.CustomFoV2Button.UseVisualStyleBackColor = true;
-            this.CustomFoV2Button.Click += new System.EventHandler(this.CustomFoV2Button_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(17, 178);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(98, 19);
-            this.label11.TabIndex = 159;
-            this.label11.Text = "Custom FoV 2";
-            this.BasicToolTip.SetToolTip(this.label11, "Choose custom field of view values using the slider.\r\n");
-            // 
-            // CustomCommandButton
-            // 
-            this.CustomCommandButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomCommandButton.Location = new System.Drawing.Point(351, 6);
-            this.CustomCommandButton.Name = "CustomCommandButton";
-            this.CustomCommandButton.Size = new System.Drawing.Size(83, 35);
-            this.CustomCommandButton.TabIndex = 158;
-            this.CustomCommandButton.Text = "button1";
-            this.BasicToolTip.SetToolTip(this.CustomCommandButton, "Execute pre-written commands by editing the \'custom_commands\' file.\r\n- The file i" +
-        "s located in \'Batman Arkham City GOTY/Binaries/Win32/Custom\'.");
-            this.CustomCommandButton.UseVisualStyleBackColor = true;
-            this.CustomCommandButton.Click += new System.EventHandler(this.CustomCommandButton_Click);
-            // 
-            // CustomCommandLabel
-            // 
-            this.CustomCommandLabel.AutoSize = true;
-            this.CustomCommandLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomCommandLabel.Location = new System.Drawing.Point(218, 14);
-            this.CustomCommandLabel.Name = "CustomCommandLabel";
-            this.CustomCommandLabel.Size = new System.Drawing.Size(127, 19);
-            this.CustomCommandLabel.TabIndex = 157;
-            this.CustomCommandLabel.Text = "Custom Command";
-            this.BasicToolTip.SetToolTip(this.CustomCommandLabel, "Execute pre-written commands by editing the \'custom_commands\' file.\r\n- The file i" +
-        "s located in \'Batman Arkham City GOTY/Binaries/Win32/Custom\'.");
-            // 
-            // CustomFoV1ValueLabel
-            // 
-            this.CustomFoV1ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CustomFoV1ValueLabel.AutoSize = true;
-            this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(237, 120);
-            this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
-            this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(25, 19);
-            this.CustomFoV1ValueLabel.TabIndex = 156;
-            this.CustomFoV1ValueLabel.Text = "00";
-            this.CustomFoV1ValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(218, 122);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(142, 19);
-            this.label7.TabIndex = 154;
-            this.label7.Text = "Custom FoV 1 Value:";
-            // 
-            // CustomFoV1Button
-            // 
-            this.CustomFoV1Button.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CustomFoV1Button.Location = new System.Drawing.Point(121, 129);
-            this.CustomFoV1Button.Name = "CustomFoV1Button";
-            this.CustomFoV1Button.Size = new System.Drawing.Size(83, 35);
-            this.CustomFoV1Button.TabIndex = 152;
-            this.CustomFoV1Button.Text = "button1";
-            this.BasicToolTip.SetToolTip(this.CustomFoV1Button, "Choose custom field of view values using the slider.\r\n");
-            this.CustomFoV1Button.UseVisualStyleBackColor = true;
-            this.CustomFoV1Button.Click += new System.EventHandler(this.CustomFoV1Button_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(17, 137);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 19);
-            this.label6.TabIndex = 151;
-            this.label6.Text = "Custom FoV 1";
-            this.BasicToolTip.SetToolTip(this.label6, "Choose custom field of view values using the slider.\r\n");
-            // 
-            // MouseSmoothingBox
-            // 
-            this.MouseSmoothingBox.AutoSize = true;
-            this.MouseSmoothingBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.MouseSmoothingBox.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MouseSmoothingBox.Location = new System.Drawing.Point(35, 219);
-            this.MouseSmoothingBox.Name = "MouseSmoothingBox";
-            this.MouseSmoothingBox.Size = new System.Drawing.Size(169, 27);
-            this.MouseSmoothingBox.TabIndex = 149;
-            this.MouseSmoothingBox.Text = "Mouse Smoothing";
-            this.MouseSmoothingBox.UseVisualStyleBackColor = true;
-            // 
-            // SpeedRunButton
-            // 
-            this.SpeedRunButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SpeedRunButton.Location = new System.Drawing.Point(121, 47);
-            this.SpeedRunButton.Name = "SpeedRunButton";
-            this.SpeedRunButton.Size = new System.Drawing.Size(83, 35);
-            this.SpeedRunButton.TabIndex = 148;
-            this.SpeedRunButton.Text = "SpeedRun";
-            this.BasicToolTip.SetToolTip(this.SpeedRunButton, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.");
-            this.SpeedRunButton.UseVisualStyleBackColor = true;
-            this.SpeedRunButton.Click += new System.EventHandler(this.SpeedRunButton_Click);
-            // 
-            // SpeedRunLabel
-            // 
-            this.SpeedRunLabel.AutoSize = true;
-            this.SpeedRunLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SpeedRunLabel.Location = new System.Drawing.Point(46, 55);
-            this.SpeedRunLabel.Name = "SpeedRunLabel";
-            this.SpeedRunLabel.Size = new System.Drawing.Size(69, 19);
-            this.SpeedRunLabel.TabIndex = 147;
-            this.SpeedRunLabel.Text = "Speedrun";
-            this.BasicToolTip.SetToolTip(this.SpeedRunLabel, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.");
-            // 
-            // CentreCameraButton
-            // 
-            this.CentreCameraButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CentreCameraButton.Location = new System.Drawing.Point(121, 88);
-            this.CentreCameraButton.Name = "CentreCameraButton";
-            this.CentreCameraButton.Size = new System.Drawing.Size(83, 35);
-            this.CentreCameraButton.TabIndex = 146;
-            this.CentreCameraButton.Text = "button1";
-            this.BasicToolTip.SetToolTip(this.CentreCameraButton, "Camera will centre on player character. Requires running while pressing hotkey to" +
-        " trigger. \r\n- Advanced users can repurpose \'centre_camera\' file as a second Cust" +
-        "om Command function.");
-            this.CentreCameraButton.UseVisualStyleBackColor = true;
-            this.CentreCameraButton.Click += new System.EventHandler(this.CentreCameraButton_Click);
-            // 
-            // CentreCameraLabel
-            // 
-            this.CentreCameraLabel.AutoSize = true;
-            this.CentreCameraLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CentreCameraLabel.Location = new System.Drawing.Point(9, 96);
-            this.CentreCameraLabel.Name = "CentreCameraLabel";
-            this.CentreCameraLabel.Size = new System.Drawing.Size(106, 19);
-            this.CentreCameraLabel.TabIndex = 145;
-            this.CentreCameraLabel.Text = "Centre Camera";
-            this.BasicToolTip.SetToolTip(this.CentreCameraLabel, "Camera will centre on player character. Requires running while pressing hotkey to" +
-        " trigger. \r\n- Advanced users can repurpose \'centre_camera\' file as a second Cust" +
-        "om Command function.");
-            // 
-            // ResetFoVButton
-            // 
-            this.ResetFoVButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResetFoVButton.Location = new System.Drawing.Point(351, 47);
-            this.ResetFoVButton.Name = "ResetFoVButton";
-            this.ResetFoVButton.Size = new System.Drawing.Size(83, 35);
-            this.ResetFoVButton.TabIndex = 144;
-            this.ResetFoVButton.Text = "button1";
-            this.BasicToolTip.SetToolTip(this.ResetFoVButton, "Reverts field of view to original value. Needed for certain actions, including th" +
-        "e zoom function.");
-            this.ResetFoVButton.UseVisualStyleBackColor = true;
-            this.ResetFoVButton.Click += new System.EventHandler(this.ResetFoVButton_Click);
-            // 
-            // ResetFoVLabel
-            // 
-            this.ResetFoVLabel.AutoSize = true;
-            this.ResetFoVLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResetFoVLabel.Location = new System.Drawing.Point(271, 55);
-            this.ResetFoVLabel.Name = "ResetFoVLabel";
-            this.ResetFoVLabel.Size = new System.Drawing.Size(74, 19);
-            this.ResetFoVLabel.TabIndex = 143;
-            this.ResetFoVLabel.Text = "Reset FoV";
-            this.BasicToolTip.SetToolTip(this.ResetFoVLabel, "Reverts field of view to original value. Needed for certain actions, including th" +
-        "e zoom function.");
-            // 
-            // ToggleHudButton
-            // 
-            this.ToggleHudButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ToggleHudButton.Location = new System.Drawing.Point(121, 6);
-            this.ToggleHudButton.Name = "ToggleHudButton";
-            this.ToggleHudButton.Size = new System.Drawing.Size(83, 35);
-            this.ToggleHudButton.TabIndex = 142;
-            this.ToggleHudButton.Text = "button1";
-            this.BasicToolTip.SetToolTip(this.ToggleHudButton, "Toggles UI elements. Re-enable HUD during forensic sections of the game to progre" +
-        "ss.");
-            this.ToggleHudButton.UseVisualStyleBackColor = true;
-            this.ToggleHudButton.Click += new System.EventHandler(this.ToggleHudButton_Click);
-            // 
-            // ToggleHudLabel
-            // 
-            this.ToggleHudLabel.AutoSize = true;
-            this.ToggleHudLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ToggleHudLabel.Location = new System.Drawing.Point(29, 14);
-            this.ToggleHudLabel.Name = "ToggleHudLabel";
-            this.ToggleHudLabel.Size = new System.Drawing.Size(86, 19);
-            this.ToggleHudLabel.TabIndex = 141;
-            this.ToggleHudLabel.Text = "Toggle HUD";
-            this.BasicToolTip.SetToolTip(this.ToggleHudLabel, "Toggles UI elements. Re-enable HUD during forensic sections of the game to progre" +
-        "ss.");
-            // 
-            // OpenConsoleButton
-            // 
-            this.OpenConsoleButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OpenConsoleButton.Location = new System.Drawing.Point(595, 6);
-            this.OpenConsoleButton.Name = "OpenConsoleButton";
-            this.OpenConsoleButton.Size = new System.Drawing.Size(83, 35);
-            this.OpenConsoleButton.TabIndex = 140;
-            this.OpenConsoleButton.Text = "button1";
-            this.BasicToolTip.SetToolTip(this.OpenConsoleButton, "Access console commands for cheats and debugging.");
-            this.OpenConsoleButton.UseVisualStyleBackColor = true;
-            this.OpenConsoleButton.Click += new System.EventHandler(this.OpenConsoleButton_Click);
-            // 
-            // OpenConsoleLabel
-            // 
-            this.OpenConsoleLabel.AutoSize = true;
-            this.OpenConsoleLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OpenConsoleLabel.Location = new System.Drawing.Point(489, 14);
-            this.OpenConsoleLabel.Name = "OpenConsoleLabel";
-            this.OpenConsoleLabel.Size = new System.Drawing.Size(100, 19);
-            this.OpenConsoleLabel.TabIndex = 139;
-            this.OpenConsoleLabel.Text = "Open Console";
-            this.BasicToolTip.SetToolTip(this.OpenConsoleLabel, "Access console commands for cheats and debugging.");
-            // 
-            // CustomFoV1Trackbar
-            // 
-            this.CustomFoV1Trackbar.Location = new System.Drawing.Point(214, 137);
-            this.CustomFoV1Trackbar.Maximum = 150;
-            this.CustomFoV1Trackbar.Minimum = 75;
-            this.CustomFoV1Trackbar.Name = "CustomFoV1Trackbar";
-            this.CustomFoV1Trackbar.Size = new System.Drawing.Size(467, 45);
-            this.CustomFoV1Trackbar.TabIndex = 164;
-            this.CustomFoV1Trackbar.Value = 75;
-            this.CustomFoV1Trackbar.Scroll += new System.EventHandler(this.CustomFoV1Trackbar_Scroll);
             // 
             // AboutTab
             // 
@@ -2863,15 +2959,17 @@
             this.groupBox2.PerformLayout();
             this.MiscTab.ResumeLayout(false);
             this.MiscTab.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).EndInit();
             this.AdvancedColorBox.ResumeLayout(false);
             this.AdvancedColorBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShadowsTrackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MidtonesTrackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HighlightsTrackbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SaturationTrackbar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MouseSensitivityTrackbar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV2Trackbar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomFoV1Trackbar)).EndInit();
             this.AboutTab.ResumeLayout(false);
             this.AboutTab.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -3074,5 +3172,10 @@
         private GroupBox groupBox2;
         private GroupBox groupBox3;
         public Button QFireGadget5Button1;
+        public GroupBox groupBox4;
+        public Label label15;
+        public Label label16;
+        public Label label17;
+        public Label label18;
     }
 }

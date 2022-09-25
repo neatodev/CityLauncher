@@ -634,5 +634,10 @@ namespace CityLauncher
                     new PointF(e.Bounds.X + 3, e.Bounds.Y + 3));
             }
         }
+
+        private void ToggleHudLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
