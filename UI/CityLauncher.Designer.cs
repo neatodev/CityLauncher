@@ -2547,11 +2547,11 @@
             // 
             // MouseSensitivityTrackbar
             // 
-            this.MouseSensitivityTrackbar.Location = new System.Drawing.Point(3, 408);
+            this.MouseSensitivityTrackbar.Location = new System.Drawing.Point(6, 408);
             this.MouseSensitivityTrackbar.Maximum = 100;
             this.MouseSensitivityTrackbar.Minimum = 1;
             this.MouseSensitivityTrackbar.Name = "MouseSensitivityTrackbar";
-            this.MouseSensitivityTrackbar.Size = new System.Drawing.Size(663, 45);
+            this.MouseSensitivityTrackbar.Size = new System.Drawing.Size(660, 45);
             this.MouseSensitivityTrackbar.TabIndex = 150;
             this.BasicToolTip.SetToolTip(this.MouseSensitivityTrackbar, "Higher values will increase in-game mouse sensitivity. \'30\' is the vanilla value." +
         "");
