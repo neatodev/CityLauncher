@@ -2128,7 +2128,7 @@
             this.MiscTab.Padding = new System.Windows.Forms.Padding(3);
             this.MiscTab.Size = new System.Drawing.Size(709, 506);
             this.MiscTab.TabIndex = 3;
-            this.MiscTab.Text = "         MISC         ";
+            this.MiscTab.Text = "         EXTRA         ";
             this.MiscTab.UseVisualStyleBackColor = true;
             // 
             // groupBox4
