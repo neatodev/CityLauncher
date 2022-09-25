@@ -1,6 +1,7 @@
 using NLog;
 using System.Diagnostics;
 using System.Globalization;
+using System.Media;
 
 namespace CityLauncher
 {
@@ -382,6 +383,7 @@ namespace CityLauncher
                     LaunchGame.StartInfo.FileName = "BatmanAC.exe";
                     LaunchGame.StartInfo.CreateNoWindow = true;
                     LaunchGame.Start();
+                    new SoundPlayer(Properties.Resources.startup).PlaySync();
                     Nlog.Info("StartGameButton_Click - Launching the game. Concluding logs at {0} on {1}.", DateTime.Now.ToString("HH:mm:ss"), DateTime.Now.ToString("D", new CultureInfo("en-GB")));
                     Application.Exit();
                 }
@@ -389,7 +391,6 @@ namespace CityLauncher
                 {
                     MessageBox.Show("Could not find 'BatmanAC.exe'. Is the Launcher in the correct folder?", "Error!", MessageBoxButtons.OK);
                 }
-
             }
         }
 

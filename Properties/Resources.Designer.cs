@@ -295,6 +295,16 @@ namespace CityLauncher.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon icon2 {
+            get {
+                object obj = ResourceManager.GetObject("icon2", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Phase1 {
@@ -325,12 +335,11 @@ namespace CityLauncher.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.Drawing.Icon Placeholder_Icon {
+        internal static System.IO.UnmanagedMemoryStream startup {
             get {
-                object obj = ResourceManager.GetObject("Placeholder_Icon", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
+                return ResourceManager.GetStream("startup", resourceCulture);
             }
         }
         

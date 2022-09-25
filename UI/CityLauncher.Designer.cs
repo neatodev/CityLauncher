@@ -1171,11 +1171,11 @@
             // MultiGroundTDLabel
             // 
             this.MultiGroundTDLabel.AutoSize = true;
-            this.MultiGroundTDLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MultiGroundTDLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MultiGroundTDLabel.ForeColor = System.Drawing.Color.Black;
-            this.MultiGroundTDLabel.Location = new System.Drawing.Point(361, 95);
+            this.MultiGroundTDLabel.Location = new System.Drawing.Point(364, 95);
             this.MultiGroundTDLabel.Name = "MultiGroundTDLabel";
-            this.MultiGroundTDLabel.Size = new System.Drawing.Size(128, 69);
+            this.MultiGroundTDLabel.Size = new System.Drawing.Size(125, 69);
             this.MultiGroundTDLabel.TabIndex = 51;
             this.MultiGroundTDLabel.Text = "Special Combo\r\nMulti Ground\r\nTakedown\r\n";
             this.MultiGroundTDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1183,29 +1183,29 @@
             // Gadget3Label
             // 
             this.Gadget3Label.AutoSize = true;
-            this.Gadget3Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget3Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget3Label.ForeColor = System.Drawing.Color.Black;
-            this.Gadget3Label.Location = new System.Drawing.Point(48, 131);
+            this.Gadget3Label.Location = new System.Drawing.Point(46, 131);
             this.Gadget3Label.Name = "Gadget3Label";
-            this.Gadget3Label.Size = new System.Drawing.Size(79, 23);
+            this.Gadget3Label.Size = new System.Drawing.Size(81, 23);
             this.Gadget3Label.TabIndex = 63;
             this.Gadget3Label.Text = "Gadget 3";
             // 
             // SCTLabel
             // 
             this.SCTLabel.AutoSize = true;
-            this.SCTLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SCTLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SCTLabel.ForeColor = System.Drawing.Color.Black;
-            this.SCTLabel.Location = new System.Drawing.Point(361, 170);
+            this.SCTLabel.Location = new System.Drawing.Point(364, 170);
             this.SCTLabel.Name = "SCTLabel";
-            this.SCTLabel.Size = new System.Drawing.Size(128, 46);
+            this.SCTLabel.Size = new System.Drawing.Size(125, 46);
             this.SCTLabel.TabIndex = 45;
             this.SCTLabel.Text = "Special Combo\r\nTakedown";
             this.SCTLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // SCTButton1
             // 
-            this.SCTButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SCTButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SCTButton1.ForeColor = System.Drawing.Color.Black;
             this.SCTButton1.Location = new System.Drawing.Point(495, 170);
             this.SCTButton1.Name = "SCTButton1";
@@ -1217,7 +1217,7 @@
             // 
             // QFireGadget5Button1
             // 
-            this.QFireGadget5Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QFireGadget5Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.QFireGadget5Button1.ForeColor = System.Drawing.Color.Black;
             this.QFireGadget5Button1.Location = new System.Drawing.Point(495, 438);
             this.QFireGadget5Button1.Name = "QFireGadget5Button1";
@@ -1230,28 +1230,28 @@
             // Gadget1Label
             // 
             this.Gadget1Label.AutoSize = true;
-            this.Gadget1Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget1Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget1Label.ForeColor = System.Drawing.Color.Black;
-            this.Gadget1Label.Location = new System.Drawing.Point(51, 49);
+            this.Gadget1Label.Location = new System.Drawing.Point(46, 49);
             this.Gadget1Label.Name = "Gadget1Label";
-            this.Gadget1Label.Size = new System.Drawing.Size(76, 23);
+            this.Gadget1Label.Size = new System.Drawing.Size(81, 23);
             this.Gadget1Label.TabIndex = 57;
             this.Gadget1Label.Text = "Gadget 1";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(336, 444);
+            this.label1.Location = new System.Drawing.Point(331, 444);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 23);
+            this.label1.Size = new System.Drawing.Size(158, 23);
             this.label1.TabIndex = 105;
             this.label1.Text = "Quickfire Gadget 5";
             // 
             // Gadget1Button1
             // 
-            this.Gadget1Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget1Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget1Button1.ForeColor = System.Drawing.Color.Black;
             this.Gadget1Button1.Location = new System.Drawing.Point(133, 43);
             this.Gadget1Button1.Name = "Gadget1Button1";
@@ -1263,7 +1263,7 @@
             // 
             // QFireGadget4Button1
             // 
-            this.QFireGadget4Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QFireGadget4Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.QFireGadget4Button1.ForeColor = System.Drawing.Color.Black;
             this.QFireGadget4Button1.Location = new System.Drawing.Point(495, 397);
             this.QFireGadget4Button1.Name = "QFireGadget4Button1";
@@ -1276,28 +1276,28 @@
             // Gadget2Label
             // 
             this.Gadget2Label.AutoSize = true;
-            this.Gadget2Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget2Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget2Label.ForeColor = System.Drawing.Color.Black;
-            this.Gadget2Label.Location = new System.Drawing.Point(48, 90);
+            this.Gadget2Label.Location = new System.Drawing.Point(46, 90);
             this.Gadget2Label.Name = "Gadget2Label";
-            this.Gadget2Label.Size = new System.Drawing.Size(79, 23);
+            this.Gadget2Label.Size = new System.Drawing.Size(81, 23);
             this.Gadget2Label.TabIndex = 60;
             this.Gadget2Label.Text = "Gadget 2";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(337, 403);
+            this.label2.Location = new System.Drawing.Point(331, 403);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 23);
+            this.label2.Size = new System.Drawing.Size(158, 23);
             this.label2.TabIndex = 102;
             this.label2.Text = "Quickfire Gadget 4";
             // 
             // QFireGadget1Button1
             // 
-            this.QFireGadget1Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QFireGadget1Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.QFireGadget1Button1.ForeColor = System.Drawing.Color.Black;
             this.QFireGadget1Button1.Location = new System.Drawing.Point(495, 274);
             this.QFireGadget1Button1.Name = "QFireGadget1Button1";
@@ -1309,7 +1309,7 @@
             // 
             // Gadget2Button1
             // 
-            this.Gadget2Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget2Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget2Button1.ForeColor = System.Drawing.Color.Black;
             this.Gadget2Button1.Location = new System.Drawing.Point(133, 84);
             this.Gadget2Button1.Name = "Gadget2Button1";
@@ -1322,17 +1322,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(339, 280);
+            this.label5.Location = new System.Drawing.Point(331, 280);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 23);
+            this.label5.Size = new System.Drawing.Size(158, 23);
             this.label5.TabIndex = 93;
             this.label5.Text = "Quickfire Gadget 1";
             // 
             // QFireGadget3Button1
             // 
-            this.QFireGadget3Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QFireGadget3Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.QFireGadget3Button1.ForeColor = System.Drawing.Color.Black;
             this.QFireGadget3Button1.Location = new System.Drawing.Point(495, 356);
             this.QFireGadget3Button1.Name = "QFireGadget3Button1";
@@ -1344,7 +1344,7 @@
             // 
             // SCBSButton1
             // 
-            this.SCBSButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SCBSButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SCBSButton1.ForeColor = System.Drawing.Color.Black;
             this.SCBSButton1.Location = new System.Drawing.Point(494, 43);
             this.SCBSButton1.Name = "SCBSButton1";
@@ -1356,7 +1356,7 @@
             // 
             // Gadget3Button1
             // 
-            this.Gadget3Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget3Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget3Button1.ForeColor = System.Drawing.Color.Black;
             this.Gadget3Button1.Location = new System.Drawing.Point(133, 125);
             this.Gadget3Button1.Name = "Gadget3Button1";
@@ -1369,11 +1369,11 @@
             // SCBSLabel
             // 
             this.SCBSLabel.AutoSize = true;
-            this.SCBSLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SCBSLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SCBSLabel.ForeColor = System.Drawing.Color.Black;
-            this.SCBSLabel.Location = new System.Drawing.Point(360, 44);
+            this.SCBSLabel.Location = new System.Drawing.Point(363, 44);
             this.SCBSLabel.Name = "SCBSLabel";
-            this.SCBSLabel.Size = new System.Drawing.Size(128, 69);
+            this.SCBSLabel.Size = new System.Drawing.Size(125, 69);
             this.SCBSLabel.TabIndex = 48;
             this.SCBSLabel.Text = "Special Combo\r\nBat Swarm\r\n\r\n";
             this.SCBSLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1381,28 +1381,28 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(336, 362);
+            this.label3.Location = new System.Drawing.Point(331, 362);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 23);
+            this.label3.Size = new System.Drawing.Size(158, 23);
             this.label3.TabIndex = 99;
             this.label3.Text = "Quickfire Gadget 3";
             // 
             // Gadget4Label
             // 
             this.Gadget4Label.AutoSize = true;
-            this.Gadget4Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget4Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget4Label.ForeColor = System.Drawing.Color.Black;
-            this.Gadget4Label.Location = new System.Drawing.Point(49, 172);
+            this.Gadget4Label.Location = new System.Drawing.Point(46, 172);
             this.Gadget4Label.Name = "Gadget4Label";
-            this.Gadget4Label.Size = new System.Drawing.Size(78, 23);
+            this.Gadget4Label.Size = new System.Drawing.Size(81, 23);
             this.Gadget4Label.TabIndex = 66;
             this.Gadget4Label.Text = "Gadget 4";
             // 
             // QFireGadget2Button1
             // 
-            this.QFireGadget2Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QFireGadget2Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.QFireGadget2Button1.ForeColor = System.Drawing.Color.Black;
             this.QFireGadget2Button1.Location = new System.Drawing.Point(495, 315);
             this.QFireGadget2Button1.Name = "QFireGadget2Button1";
@@ -1414,7 +1414,7 @@
             // 
             // Gadget4Button1
             // 
-            this.Gadget4Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget4Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget4Button1.ForeColor = System.Drawing.Color.Black;
             this.Gadget4Button1.Location = new System.Drawing.Point(133, 166);
             this.Gadget4Button1.Name = "Gadget4Button1";
@@ -1427,28 +1427,28 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(336, 321);
+            this.label4.Location = new System.Drawing.Point(331, 321);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 23);
+            this.label4.Size = new System.Drawing.Size(158, 23);
             this.label4.TabIndex = 96;
             this.label4.Text = "Quickfire Gadget 2";
             // 
             // Gadget5Label
             // 
             this.Gadget5Label.AutoSize = true;
-            this.Gadget5Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget5Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget5Label.ForeColor = System.Drawing.Color.Black;
-            this.Gadget5Label.Location = new System.Drawing.Point(48, 213);
+            this.Gadget5Label.Location = new System.Drawing.Point(46, 213);
             this.Gadget5Label.Name = "Gadget5Label";
-            this.Gadget5Label.Size = new System.Drawing.Size(79, 23);
+            this.Gadget5Label.Size = new System.Drawing.Size(81, 23);
             this.Gadget5Label.TabIndex = 69;
             this.Gadget5Label.Text = "Gadget 5";
             // 
             // Gadget5Button1
             // 
-            this.Gadget5Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget5Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget5Button1.ForeColor = System.Drawing.Color.Black;
             this.Gadget5Button1.Location = new System.Drawing.Point(133, 207);
             this.Gadget5Button1.Name = "Gadget5Button1";
@@ -1461,17 +1461,17 @@
             // Gadget6Label
             // 
             this.Gadget6Label.AutoSize = true;
-            this.Gadget6Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget6Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget6Label.ForeColor = System.Drawing.Color.Black;
-            this.Gadget6Label.Location = new System.Drawing.Point(48, 254);
+            this.Gadget6Label.Location = new System.Drawing.Point(46, 254);
             this.Gadget6Label.Name = "Gadget6Label";
-            this.Gadget6Label.Size = new System.Drawing.Size(79, 23);
+            this.Gadget6Label.Size = new System.Drawing.Size(81, 23);
             this.Gadget6Label.TabIndex = 72;
             this.Gadget6Label.Text = "Gadget 6";
             // 
             // DisarmDestroyButton1
             // 
-            this.DisarmDestroyButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DisarmDestroyButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DisarmDestroyButton1.ForeColor = System.Drawing.Color.Black;
             this.DisarmDestroyButton1.Location = new System.Drawing.Point(495, 222);
             this.DisarmDestroyButton1.Name = "DisarmDestroyButton1";
@@ -1483,9 +1483,9 @@
             // 
             // Gadget12Button1
             // 
-            this.Gadget12Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget12Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget12Button1.ForeColor = System.Drawing.Color.Black;
-            this.Gadget12Button1.Location = new System.Drawing.Point(132, 494);
+            this.Gadget12Button1.Location = new System.Drawing.Point(133, 494);
             this.Gadget12Button1.Name = "Gadget12Button1";
             this.Gadget12Button1.Size = new System.Drawing.Size(175, 35);
             this.Gadget12Button1.TabIndex = 91;
@@ -1496,18 +1496,18 @@
             // DisarmDestroyLabel
             // 
             this.DisarmDestroyLabel.AutoSize = true;
-            this.DisarmDestroyLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DisarmDestroyLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DisarmDestroyLabel.ForeColor = System.Drawing.Color.Black;
-            this.DisarmDestroyLabel.Location = new System.Drawing.Point(328, 222);
+            this.DisarmDestroyLabel.Location = new System.Drawing.Point(323, 222);
             this.DisarmDestroyLabel.Name = "DisarmDestroyLabel";
-            this.DisarmDestroyLabel.Size = new System.Drawing.Size(165, 46);
+            this.DisarmDestroyLabel.Size = new System.Drawing.Size(166, 46);
             this.DisarmDestroyLabel.TabIndex = 54;
             this.DisarmDestroyLabel.Text = "Special Combo\r\nDisarm and Destroy\r\n";
             this.DisarmDestroyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Gadget6Button1
             // 
-            this.Gadget6Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget6Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget6Button1.ForeColor = System.Drawing.Color.Black;
             this.Gadget6Button1.Location = new System.Drawing.Point(133, 248);
             this.Gadget6Button1.Name = "Gadget6Button1";
@@ -1519,11 +1519,11 @@
             // 
             // MultiGroundTDButton1
             // 
-            this.MultiGroundTDButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MultiGroundTDButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MultiGroundTDButton1.ForeColor = System.Drawing.Color.Black;
-            this.MultiGroundTDButton1.Location = new System.Drawing.Point(494, 95);
+            this.MultiGroundTDButton1.Location = new System.Drawing.Point(495, 95);
             this.MultiGroundTDButton1.Name = "MultiGroundTDButton1";
-            this.MultiGroundTDButton1.Size = new System.Drawing.Size(174, 69);
+            this.MultiGroundTDButton1.Size = new System.Drawing.Size(173, 69);
             this.MultiGroundTDButton1.TabIndex = 52;
             this.MultiGroundTDButton1.Text = "button1";
             this.MultiGroundTDButton1.UseVisualStyleBackColor = true;
@@ -1532,30 +1532,30 @@
             // Gadget12Label
             // 
             this.Gadget12Label.AutoSize = true;
-            this.Gadget12Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget12Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget12Label.ForeColor = System.Drawing.Color.Black;
-            this.Gadget12Label.Location = new System.Drawing.Point(40, 499);
+            this.Gadget12Label.Location = new System.Drawing.Point(36, 500);
             this.Gadget12Label.Name = "Gadget12Label";
-            this.Gadget12Label.Size = new System.Drawing.Size(86, 23);
+            this.Gadget12Label.Size = new System.Drawing.Size(91, 23);
             this.Gadget12Label.TabIndex = 90;
             this.Gadget12Label.Text = "Gadget 12";
             // 
             // Gadget7Label
             // 
             this.Gadget7Label.AutoSize = true;
-            this.Gadget7Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget7Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget7Label.ForeColor = System.Drawing.Color.Black;
-            this.Gadget7Label.Location = new System.Drawing.Point(51, 294);
+            this.Gadget7Label.Location = new System.Drawing.Point(46, 295);
             this.Gadget7Label.Name = "Gadget7Label";
-            this.Gadget7Label.Size = new System.Drawing.Size(76, 23);
+            this.Gadget7Label.Size = new System.Drawing.Size(81, 23);
             this.Gadget7Label.TabIndex = 75;
             this.Gadget7Label.Text = "Gadget 7";
             // 
             // Gadget11Button1
             // 
-            this.Gadget11Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget11Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget11Button1.ForeColor = System.Drawing.Color.Black;
-            this.Gadget11Button1.Location = new System.Drawing.Point(132, 453);
+            this.Gadget11Button1.Location = new System.Drawing.Point(133, 453);
             this.Gadget11Button1.Name = "Gadget11Button1";
             this.Gadget11Button1.Size = new System.Drawing.Size(175, 35);
             this.Gadget11Button1.TabIndex = 88;
@@ -1565,7 +1565,7 @@
             // 
             // Gadget7Button1
             // 
-            this.Gadget7Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget7Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget7Button1.ForeColor = System.Drawing.Color.Black;
             this.Gadget7Button1.Location = new System.Drawing.Point(133, 289);
             this.Gadget7Button1.Name = "Gadget7Button1";
@@ -1578,28 +1578,28 @@
             // Gadget11Label
             // 
             this.Gadget11Label.AutoSize = true;
-            this.Gadget11Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget11Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget11Label.ForeColor = System.Drawing.Color.Black;
-            this.Gadget11Label.Location = new System.Drawing.Point(43, 459);
+            this.Gadget11Label.Location = new System.Drawing.Point(36, 459);
             this.Gadget11Label.Name = "Gadget11Label";
-            this.Gadget11Label.Size = new System.Drawing.Size(83, 23);
+            this.Gadget11Label.Size = new System.Drawing.Size(91, 23);
             this.Gadget11Label.TabIndex = 87;
             this.Gadget11Label.Text = "Gadget 11";
             // 
             // Gadget8Label
             // 
             this.Gadget8Label.AutoSize = true;
-            this.Gadget8Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget8Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget8Label.ForeColor = System.Drawing.Color.Black;
-            this.Gadget8Label.Location = new System.Drawing.Point(48, 336);
+            this.Gadget8Label.Location = new System.Drawing.Point(46, 336);
             this.Gadget8Label.Name = "Gadget8Label";
-            this.Gadget8Label.Size = new System.Drawing.Size(79, 23);
+            this.Gadget8Label.Size = new System.Drawing.Size(81, 23);
             this.Gadget8Label.TabIndex = 78;
             this.Gadget8Label.Text = "Gadget 8";
             // 
             // Gadget10Button1
             // 
-            this.Gadget10Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget10Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget10Button1.ForeColor = System.Drawing.Color.Black;
             this.Gadget10Button1.Location = new System.Drawing.Point(133, 412);
             this.Gadget10Button1.Name = "Gadget10Button1";
@@ -1611,7 +1611,7 @@
             // 
             // Gadget8Button1
             // 
-            this.Gadget8Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget8Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget8Button1.ForeColor = System.Drawing.Color.Black;
             this.Gadget8Button1.Location = new System.Drawing.Point(133, 330);
             this.Gadget8Button1.Name = "Gadget8Button1";
@@ -1624,28 +1624,28 @@
             // Gadget10Label
             // 
             this.Gadget10Label.AutoSize = true;
-            this.Gadget10Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget10Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget10Label.ForeColor = System.Drawing.Color.Black;
-            this.Gadget10Label.Location = new System.Drawing.Point(41, 418);
+            this.Gadget10Label.Location = new System.Drawing.Point(36, 418);
             this.Gadget10Label.Name = "Gadget10Label";
-            this.Gadget10Label.Size = new System.Drawing.Size(86, 23);
+            this.Gadget10Label.Size = new System.Drawing.Size(91, 23);
             this.Gadget10Label.TabIndex = 84;
             this.Gadget10Label.Text = "Gadget 10";
             // 
             // Gadget9Label
             // 
             this.Gadget9Label.AutoSize = true;
-            this.Gadget9Label.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget9Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget9Label.ForeColor = System.Drawing.Color.Black;
-            this.Gadget9Label.Location = new System.Drawing.Point(48, 377);
+            this.Gadget9Label.Location = new System.Drawing.Point(46, 377);
             this.Gadget9Label.Name = "Gadget9Label";
-            this.Gadget9Label.Size = new System.Drawing.Size(79, 23);
+            this.Gadget9Label.Size = new System.Drawing.Size(81, 23);
             this.Gadget9Label.TabIndex = 81;
             this.Gadget9Label.Text = "Gadget 9";
             // 
             // Gadget9Button1
             // 
-            this.Gadget9Button1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gadget9Button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Gadget9Button1.ForeColor = System.Drawing.Color.Black;
             this.Gadget9Button1.Location = new System.Drawing.Point(133, 371);
             this.Gadget9Button1.Name = "Gadget9Button1";
@@ -1705,39 +1705,39 @@
             // ForwardLabel
             // 
             this.ForwardLabel.AutoSize = true;
-            this.ForwardLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ForwardLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ForwardLabel.ForeColor = System.Drawing.Color.Black;
-            this.ForwardLabel.Location = new System.Drawing.Point(52, 38);
+            this.ForwardLabel.Location = new System.Drawing.Point(51, 39);
             this.ForwardLabel.Name = "ForwardLabel";
-            this.ForwardLabel.Size = new System.Drawing.Size(75, 23);
+            this.ForwardLabel.Size = new System.Drawing.Size(76, 23);
             this.ForwardLabel.TabIndex = 0;
             this.ForwardLabel.Text = "Forward";
             // 
             // MapLabel
             // 
             this.MapLabel.AutoSize = true;
-            this.MapLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MapLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MapLabel.ForeColor = System.Drawing.Color.Black;
-            this.MapLabel.Location = new System.Drawing.Point(43, 409);
+            this.MapLabel.Location = new System.Drawing.Point(37, 410);
             this.MapLabel.Name = "MapLabel";
-            this.MapLabel.Size = new System.Drawing.Size(84, 23);
+            this.MapLabel.Size = new System.Drawing.Size(90, 23);
             this.MapLabel.TabIndex = 144;
             this.MapLabel.Text = "View Map";
             // 
             // BackwardLabel
             // 
             this.BackwardLabel.AutoSize = true;
-            this.BackwardLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BackwardLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BackwardLabel.ForeColor = System.Drawing.Color.Black;
-            this.BackwardLabel.Location = new System.Drawing.Point(38, 79);
+            this.BackwardLabel.Location = new System.Drawing.Point(40, 79);
             this.BackwardLabel.Name = "BackwardLabel";
-            this.BackwardLabel.Size = new System.Drawing.Size(89, 23);
+            this.BackwardLabel.Size = new System.Drawing.Size(87, 23);
             this.BackwardLabel.TabIndex = 1;
             this.BackwardLabel.Text = "Backward";
             // 
             // MapButton
             // 
-            this.MapButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MapButton.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MapButton.ForeColor = System.Drawing.Color.Black;
             this.MapButton.Location = new System.Drawing.Point(133, 403);
             this.MapButton.Name = "MapButton";
@@ -1750,17 +1750,17 @@
             // RightLabel
             // 
             this.RightLabel.AutoSize = true;
-            this.RightLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RightLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RightLabel.ForeColor = System.Drawing.Color.Black;
-            this.RightLabel.Location = new System.Drawing.Point(437, 79);
+            this.RightLabel.Location = new System.Drawing.Point(436, 79);
             this.RightLabel.Name = "RightLabel";
-            this.RightLabel.Size = new System.Drawing.Size(51, 23);
+            this.RightLabel.Size = new System.Drawing.Size(52, 23);
             this.RightLabel.TabIndex = 2;
             this.RightLabel.Text = "Right";
             // 
             // CapeStunButton
             // 
-            this.CapeStunButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CapeStunButton.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CapeStunButton.ForeColor = System.Drawing.Color.Black;
             this.CapeStunButton.Location = new System.Drawing.Point(493, 248);
             this.CapeStunButton.Name = "CapeStunButton";
@@ -1772,7 +1772,7 @@
             // 
             // CWDisarmFixButton1
             // 
-            this.CWDisarmFixButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CWDisarmFixButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CWDisarmFixButton1.ForeColor = System.Drawing.Color.Black;
             this.CWDisarmFixButton1.Location = new System.Drawing.Point(495, 402);
             this.CWDisarmFixButton1.Name = "CWDisarmFixButton1";
@@ -1785,22 +1785,22 @@
             // LeftLabel
             // 
             this.LeftLabel.AutoSize = true;
-            this.LeftLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LeftLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LeftLabel.ForeColor = System.Drawing.Color.Black;
-            this.LeftLabel.Location = new System.Drawing.Point(449, 38);
+            this.LeftLabel.Location = new System.Drawing.Point(448, 39);
             this.LeftLabel.Name = "LeftLabel";
-            this.LeftLabel.Size = new System.Drawing.Size(39, 23);
+            this.LeftLabel.Size = new System.Drawing.Size(40, 23);
             this.LeftLabel.TabIndex = 3;
             this.LeftLabel.Text = "Left";
             // 
             // CWDisarmFixLabel
             // 
             this.CWDisarmFixLabel.AutoSize = true;
-            this.CWDisarmFixLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CWDisarmFixLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CWDisarmFixLabel.ForeColor = System.Drawing.Color.Black;
-            this.CWDisarmFixLabel.Location = new System.Drawing.Point(394, 401);
+            this.CWDisarmFixLabel.Location = new System.Drawing.Point(395, 402);
             this.CWDisarmFixLabel.Name = "CWDisarmFixLabel";
-            this.CWDisarmFixLabel.Size = new System.Drawing.Size(95, 46);
+            this.CWDisarmFixLabel.Size = new System.Drawing.Size(94, 46);
             this.CWDisarmFixLabel.TabIndex = 139;
             this.CWDisarmFixLabel.Text = "Catwoman\r\nDisarm Fix";
             this.CWDisarmFixLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1808,22 +1808,22 @@
             // ZoomLabel
             // 
             this.ZoomLabel.AutoSize = true;
-            this.ZoomLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ZoomLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ZoomLabel.ForeColor = System.Drawing.Color.Black;
-            this.ZoomLabel.Location = new System.Drawing.Point(74, 245);
+            this.ZoomLabel.Location = new System.Drawing.Point(73, 246);
             this.ZoomLabel.Name = "ZoomLabel";
-            this.ZoomLabel.Size = new System.Drawing.Size(53, 23);
+            this.ZoomLabel.Size = new System.Drawing.Size(54, 23);
             this.ZoomLabel.TabIndex = 6;
             this.ZoomLabel.Text = "Zoom";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(438, 328);
+            this.label8.Location = new System.Drawing.Point(436, 330);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 69);
+            this.label8.Size = new System.Drawing.Size(52, 69);
             this.label8.TabIndex = 107;
             this.label8.Text = "Run\r\nGlide\r\nUse";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1831,33 +1831,33 @@
             // CapeStunLabel
             // 
             this.CapeStunLabel.AutoSize = true;
-            this.CapeStunLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CapeStunLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CapeStunLabel.ForeColor = System.Drawing.Color.Black;
-            this.CapeStunLabel.Location = new System.Drawing.Point(397, 254);
+            this.CapeStunLabel.Location = new System.Drawing.Point(398, 255);
             this.CapeStunLabel.Name = "CapeStunLabel";
-            this.CapeStunLabel.Size = new System.Drawing.Size(90, 23);
+            this.CapeStunLabel.Size = new System.Drawing.Size(89, 23);
             this.CapeStunLabel.TabIndex = 141;
             this.CapeStunLabel.Text = "Cape Stun";
             // 
             // DetectiveModeLabel
             // 
             this.DetectiveModeLabel.AutoSize = true;
-            this.DetectiveModeLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DetectiveModeLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DetectiveModeLabel.ForeColor = System.Drawing.Color.Black;
-            this.DetectiveModeLabel.Location = new System.Drawing.Point(357, 295);
+            this.DetectiveModeLabel.Location = new System.Drawing.Point(350, 296);
             this.DetectiveModeLabel.Name = "DetectiveModeLabel";
-            this.DetectiveModeLabel.Size = new System.Drawing.Size(131, 23);
+            this.DetectiveModeLabel.Size = new System.Drawing.Size(138, 23);
             this.DetectiveModeLabel.TabIndex = 9;
             this.DetectiveModeLabel.Text = "Detective Mode";
             // 
             // UseGadgetStrikeLabel
             // 
             this.UseGadgetStrikeLabel.AutoSize = true;
-            this.UseGadgetStrikeLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UseGadgetStrikeLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UseGadgetStrikeLabel.ForeColor = System.Drawing.Color.Black;
-            this.UseGadgetStrikeLabel.Location = new System.Drawing.Point(29, 188);
+            this.UseGadgetStrikeLabel.Location = new System.Drawing.Point(26, 187);
             this.UseGadgetStrikeLabel.Name = "UseGadgetStrikeLabel";
-            this.UseGadgetStrikeLabel.Size = new System.Drawing.Size(98, 46);
+            this.UseGadgetStrikeLabel.Size = new System.Drawing.Size(101, 46);
             this.UseGadgetStrikeLabel.TabIndex = 10;
             this.UseGadgetStrikeLabel.Text = "Use Gadget\r\nStrike";
             this.UseGadgetStrikeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1865,18 +1865,18 @@
             // ACTLabel
             // 
             this.ACTLabel.AutoSize = true;
-            this.ACTLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ACTLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ACTLabel.ForeColor = System.Drawing.Color.Black;
-            this.ACTLabel.Location = new System.Drawing.Point(29, 113);
+            this.ACTLabel.Location = new System.Drawing.Point(24, 112);
             this.ACTLabel.Name = "ACTLabel";
-            this.ACTLabel.Size = new System.Drawing.Size(98, 69);
+            this.ACTLabel.Size = new System.Drawing.Size(103, 69);
             this.ACTLabel.TabIndex = 11;
             this.ACTLabel.Text = "Aim Gadget\r\nCounter\r\nTakedown";
             this.ACTLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FwButton1
             // 
-            this.FwButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FwButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FwButton1.ForeColor = System.Drawing.Color.Black;
             this.FwButton1.Location = new System.Drawing.Point(133, 32);
             this.FwButton1.Name = "FwButton1";
@@ -1888,7 +1888,7 @@
             // 
             // BwButton1
             // 
-            this.BwButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BwButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BwButton1.ForeColor = System.Drawing.Color.Black;
             this.BwButton1.Location = new System.Drawing.Point(133, 73);
             this.BwButton1.Name = "BwButton1";
@@ -1900,7 +1900,7 @@
             // 
             // LeftButton1
             // 
-            this.LeftButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LeftButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LeftButton1.ForeColor = System.Drawing.Color.Black;
             this.LeftButton1.Location = new System.Drawing.Point(494, 32);
             this.LeftButton1.Name = "LeftButton1";
@@ -1912,7 +1912,7 @@
             // 
             // RightButton1
             // 
-            this.RightButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RightButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RightButton1.ForeColor = System.Drawing.Color.Black;
             this.RightButton1.Location = new System.Drawing.Point(494, 73);
             this.RightButton1.Name = "RightButton1";
@@ -1924,7 +1924,7 @@
             // 
             // ZoomButton1
             // 
-            this.ZoomButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ZoomButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ZoomButton1.ForeColor = System.Drawing.Color.Black;
             this.ZoomButton1.Location = new System.Drawing.Point(133, 239);
             this.ZoomButton1.Name = "ZoomButton1";
@@ -1936,7 +1936,7 @@
             // 
             // DetectiveModeButton1
             // 
-            this.DetectiveModeButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DetectiveModeButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DetectiveModeButton1.ForeColor = System.Drawing.Color.Black;
             this.DetectiveModeButton1.Location = new System.Drawing.Point(494, 289);
             this.DetectiveModeButton1.Name = "DetectiveModeButton1";
@@ -1948,7 +1948,7 @@
             // 
             // UseGadgetStrikeButton1
             // 
-            this.UseGadgetStrikeButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UseGadgetStrikeButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UseGadgetStrikeButton1.ForeColor = System.Drawing.Color.Black;
             this.UseGadgetStrikeButton1.Location = new System.Drawing.Point(133, 187);
             this.UseGadgetStrikeButton1.Name = "UseGadgetStrikeButton1";
@@ -1960,7 +1960,7 @@
             // 
             // ACTButton1
             // 
-            this.ACTButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ACTButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ACTButton1.ForeColor = System.Drawing.Color.Black;
             this.ACTButton1.Location = new System.Drawing.Point(133, 114);
             this.ACTButton1.Name = "ACTButton1";
@@ -1973,18 +1973,18 @@
             // GadgetSecLabel
             // 
             this.GadgetSecLabel.AutoSize = true;
-            this.GadgetSecLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GadgetSecLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.GadgetSecLabel.ForeColor = System.Drawing.Color.Black;
-            this.GadgetSecLabel.Location = new System.Drawing.Point(334, 195);
+            this.GadgetSecLabel.Location = new System.Drawing.Point(335, 196);
             this.GadgetSecLabel.Name = "GadgetSecLabel";
-            this.GadgetSecLabel.Size = new System.Drawing.Size(154, 46);
+            this.GadgetSecLabel.Size = new System.Drawing.Size(153, 46);
             this.GadgetSecLabel.TabIndex = 36;
             this.GadgetSecLabel.Text = "Gadget Secondary\r\nCape Stun";
             this.GadgetSecLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // GadgetSecButton1
             // 
-            this.GadgetSecButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GadgetSecButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.GadgetSecButton1.ForeColor = System.Drawing.Color.Black;
             this.GadgetSecButton1.Location = new System.Drawing.Point(494, 196);
             this.GadgetSecButton1.Name = "GadgetSecButton1";
@@ -1997,17 +1997,17 @@
             // PrevGadgetLabel
             // 
             this.PrevGadgetLabel.AutoSize = true;
-            this.PrevGadgetLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PrevGadgetLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PrevGadgetLabel.ForeColor = System.Drawing.Color.Black;
-            this.PrevGadgetLabel.Location = new System.Drawing.Point(381, 120);
+            this.PrevGadgetLabel.Location = new System.Drawing.Point(377, 121);
             this.PrevGadgetLabel.Name = "PrevGadgetLabel";
-            this.PrevGadgetLabel.Size = new System.Drawing.Size(107, 23);
+            this.PrevGadgetLabel.Size = new System.Drawing.Size(111, 23);
             this.PrevGadgetLabel.TabIndex = 39;
             this.PrevGadgetLabel.Text = "Prev. Gadget";
             // 
             // PrevGadgetButton1
             // 
-            this.PrevGadgetButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PrevGadgetButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PrevGadgetButton1.ForeColor = System.Drawing.Color.Black;
             this.PrevGadgetButton1.Location = new System.Drawing.Point(494, 114);
             this.PrevGadgetButton1.Name = "PrevGadgetButton1";
@@ -2020,17 +2020,17 @@
             // NextGadgetLabel
             // 
             this.NextGadgetLabel.AutoSize = true;
-            this.NextGadgetLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NextGadgetLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NextGadgetLabel.ForeColor = System.Drawing.Color.Black;
-            this.NextGadgetLabel.Location = new System.Drawing.Point(386, 161);
+            this.NextGadgetLabel.Location = new System.Drawing.Point(378, 162);
             this.NextGadgetLabel.Name = "NextGadgetLabel";
-            this.NextGadgetLabel.Size = new System.Drawing.Size(102, 23);
+            this.NextGadgetLabel.Size = new System.Drawing.Size(110, 23);
             this.NextGadgetLabel.TabIndex = 42;
             this.NextGadgetLabel.Text = "Next Gadget";
             // 
             // NextGadgetButton1
             // 
-            this.NextGadgetButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NextGadgetButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NextGadgetButton1.ForeColor = System.Drawing.Color.Black;
             this.NextGadgetButton1.Location = new System.Drawing.Point(494, 155);
             this.NextGadgetButton1.Name = "NextGadgetButton1";
@@ -2043,28 +2043,28 @@
             // CrouchLabel
             // 
             this.CrouchLabel.AutoSize = true;
-            this.CrouchLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CrouchLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CrouchLabel.ForeColor = System.Drawing.Color.Black;
-            this.CrouchLabel.Location = new System.Drawing.Point(60, 286);
+            this.CrouchLabel.Location = new System.Drawing.Point(62, 287);
             this.CrouchLabel.Name = "CrouchLabel";
-            this.CrouchLabel.Size = new System.Drawing.Size(67, 23);
+            this.CrouchLabel.Size = new System.Drawing.Size(65, 23);
             this.CrouchLabel.TabIndex = 5;
             this.CrouchLabel.Text = "Crouch";
             // 
             // ToggleCrouchLabel
             // 
             this.ToggleCrouchLabel.AutoSize = true;
-            this.ToggleCrouchLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ToggleCrouchLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ToggleCrouchLabel.ForeColor = System.Drawing.Color.Black;
-            this.ToggleCrouchLabel.Location = new System.Drawing.Point(3, 327);
+            this.ToggleCrouchLabel.Location = new System.Drawing.Point(8, 328);
             this.ToggleCrouchLabel.Name = "ToggleCrouchLabel";
-            this.ToggleCrouchLabel.Size = new System.Drawing.Size(124, 23);
+            this.ToggleCrouchLabel.Size = new System.Drawing.Size(119, 23);
             this.ToggleCrouchLabel.TabIndex = 8;
             this.ToggleCrouchLabel.Text = "Toggle Crouch";
             // 
             // RGUButton1
             // 
-            this.RGUButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RGUButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RGUButton1.ForeColor = System.Drawing.Color.Black;
             this.RGUButton1.Location = new System.Drawing.Point(494, 330);
             this.RGUButton1.Name = "RGUButton1";
@@ -2076,7 +2076,7 @@
             // 
             // CrouchButton1
             // 
-            this.CrouchButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CrouchButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CrouchButton1.ForeColor = System.Drawing.Color.Black;
             this.CrouchButton1.Location = new System.Drawing.Point(133, 280);
             this.CrouchButton1.Name = "CrouchButton1";
@@ -2088,7 +2088,7 @@
             // 
             // ToggleCrouchButton1
             // 
-            this.ToggleCrouchButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ToggleCrouchButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ToggleCrouchButton1.ForeColor = System.Drawing.Color.Black;
             this.ToggleCrouchButton1.Location = new System.Drawing.Point(133, 321);
             this.ToggleCrouchButton1.Name = "ToggleCrouchButton1";
@@ -2101,17 +2101,17 @@
             // GrappleLabel
             // 
             this.GrappleLabel.AutoSize = true;
-            this.GrappleLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GrappleLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.GrappleLabel.ForeColor = System.Drawing.Color.Black;
-            this.GrappleLabel.Location = new System.Drawing.Point(55, 368);
+            this.GrappleLabel.Location = new System.Drawing.Point(54, 369);
             this.GrappleLabel.Name = "GrappleLabel";
-            this.GrappleLabel.Size = new System.Drawing.Size(72, 23);
+            this.GrappleLabel.Size = new System.Drawing.Size(73, 23);
             this.GrappleLabel.TabIndex = 7;
             this.GrappleLabel.Text = "Grapple";
             // 
             // GrappleButton1
             // 
-            this.GrappleButton1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GrappleButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.GrappleButton1.ForeColor = System.Drawing.Color.Black;
             this.GrappleButton1.Location = new System.Drawing.Point(133, 362);
             this.GrappleButton1.Name = "GrappleButton1";
@@ -2435,7 +2435,7 @@
             // 
             // DebugMenuButton
             // 
-            this.DebugMenuButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DebugMenuButton.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DebugMenuButton.ForeColor = System.Drawing.Color.Black;
             this.DebugMenuButton.Location = new System.Drawing.Point(491, 105);
             this.DebugMenuButton.Name = "DebugMenuButton";
@@ -2461,11 +2461,11 @@
             // DebugMenuLabel
             // 
             this.DebugMenuLabel.AutoSize = true;
-            this.DebugMenuLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DebugMenuLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DebugMenuLabel.ForeColor = System.Drawing.Color.Black;
-            this.DebugMenuLabel.Location = new System.Drawing.Point(377, 111);
+            this.DebugMenuLabel.Location = new System.Drawing.Point(373, 111);
             this.DebugMenuLabel.Name = "DebugMenuLabel";
-            this.DebugMenuLabel.Size = new System.Drawing.Size(108, 23);
+            this.DebugMenuLabel.Size = new System.Drawing.Size(112, 23);
             this.DebugMenuLabel.TabIndex = 166;
             this.DebugMenuLabel.Text = "Debug Menu";
             this.BasicToolTip.SetToolTip(this.DebugMenuLabel, "Access console commands for cheats and debugging.");
@@ -2511,11 +2511,11 @@
             // ToggleHudLabel
             // 
             this.ToggleHudLabel.AutoSize = true;
-            this.ToggleHudLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ToggleHudLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ToggleHudLabel.ForeColor = System.Drawing.Color.Black;
-            this.ToggleHudLabel.Location = new System.Drawing.Point(34, 29);
+            this.ToggleHudLabel.Location = new System.Drawing.Point(33, 29);
             this.ToggleHudLabel.Name = "ToggleHudLabel";
-            this.ToggleHudLabel.Size = new System.Drawing.Size(99, 23);
+            this.ToggleHudLabel.Size = new System.Drawing.Size(100, 23);
             this.ToggleHudLabel.TabIndex = 141;
             this.ToggleHudLabel.Text = "Toggle HUD";
             this.BasicToolTip.SetToolTip(this.ToggleHudLabel, "Toggles UI elements. Re-enable HUD during forensic sections of the game to progre" +
@@ -2561,11 +2561,11 @@
             // OpenConsoleLabel
             // 
             this.OpenConsoleLabel.AutoSize = true;
-            this.OpenConsoleLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OpenConsoleLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.OpenConsoleLabel.ForeColor = System.Drawing.Color.Black;
-            this.OpenConsoleLabel.Location = new System.Drawing.Point(367, 70);
+            this.OpenConsoleLabel.Location = new System.Drawing.Point(365, 70);
             this.OpenConsoleLabel.Name = "OpenConsoleLabel";
-            this.OpenConsoleLabel.Size = new System.Drawing.Size(118, 23);
+            this.OpenConsoleLabel.Size = new System.Drawing.Size(120, 23);
             this.OpenConsoleLabel.TabIndex = 139;
             this.OpenConsoleLabel.Text = "Open Console";
             this.BasicToolTip.SetToolTip(this.OpenConsoleLabel, "Access console commands for cheats and debugging.");
@@ -2586,7 +2586,7 @@
             // 
             // OpenConsoleButton
             // 
-            this.OpenConsoleButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OpenConsoleButton.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.OpenConsoleButton.ForeColor = System.Drawing.Color.Black;
             this.OpenConsoleButton.Location = new System.Drawing.Point(491, 64);
             this.OpenConsoleButton.Name = "OpenConsoleButton";
@@ -2610,7 +2610,7 @@
             // 
             // ToggleHudButton
             // 
-            this.ToggleHudButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ToggleHudButton.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ToggleHudButton.ForeColor = System.Drawing.Color.Black;
             this.ToggleHudButton.Location = new System.Drawing.Point(139, 23);
             this.ToggleHudButton.Name = "ToggleHudButton";
@@ -2636,11 +2636,11 @@
             // ResetFoVLabel
             // 
             this.ResetFoVLabel.AutoSize = true;
-            this.ResetFoVLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetFoVLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ResetFoVLabel.ForeColor = System.Drawing.Color.Black;
-            this.ResetFoVLabel.Location = new System.Drawing.Point(48, 152);
+            this.ResetFoVLabel.Location = new System.Drawing.Point(43, 152);
             this.ResetFoVLabel.Name = "ResetFoVLabel";
-            this.ResetFoVLabel.Size = new System.Drawing.Size(85, 23);
+            this.ResetFoVLabel.Size = new System.Drawing.Size(90, 23);
             this.ResetFoVLabel.TabIndex = 143;
             this.ResetFoVLabel.Text = "Reset FoV";
             this.BasicToolTip.SetToolTip(this.ResetFoVLabel, "Reverts field of view to original value. Needed for certain actions, including th" +
@@ -2648,7 +2648,7 @@
             // 
             // CustomFoV2Button
             // 
-            this.CustomFoV2Button.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomFoV2Button.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CustomFoV2Button.ForeColor = System.Drawing.Color.Black;
             this.CustomFoV2Button.Location = new System.Drawing.Point(491, 187);
             this.CustomFoV2Button.Name = "CustomFoV2Button";
@@ -2661,7 +2661,7 @@
             // 
             // ResetFoVButton
             // 
-            this.ResetFoVButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetFoVButton.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ResetFoVButton.ForeColor = System.Drawing.Color.Black;
             this.ResetFoVButton.Location = new System.Drawing.Point(139, 146);
             this.ResetFoVButton.Name = "ResetFoVButton";
@@ -2676,11 +2676,11 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(371, 193);
+            this.label11.Location = new System.Drawing.Point(367, 193);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(114, 23);
+            this.label11.Size = new System.Drawing.Size(118, 23);
             this.label11.TabIndex = 159;
             this.label11.Text = "Custom FoV 2";
             this.BasicToolTip.SetToolTip(this.label11, "Choose custom field of view values using the slider.\r\n");
@@ -2688,11 +2688,11 @@
             // CentreCameraLabel
             // 
             this.CentreCameraLabel.AutoSize = true;
-            this.CentreCameraLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CentreCameraLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CentreCameraLabel.ForeColor = System.Drawing.Color.Black;
-            this.CentreCameraLabel.Location = new System.Drawing.Point(3, 111);
+            this.CentreCameraLabel.Location = new System.Drawing.Point(5, 111);
             this.CentreCameraLabel.Name = "CentreCameraLabel";
-            this.CentreCameraLabel.Size = new System.Drawing.Size(130, 23);
+            this.CentreCameraLabel.Size = new System.Drawing.Size(128, 23);
             this.CentreCameraLabel.TabIndex = 145;
             this.CentreCameraLabel.Text = "Centre Camera";
             this.BasicToolTip.SetToolTip(this.CentreCameraLabel, "Camera will centre on player character. Requires running while pressing hotkey to" +
@@ -2701,7 +2701,7 @@
             // 
             // CustomCommandButton
             // 
-            this.CustomCommandButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomCommandButton.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CustomCommandButton.ForeColor = System.Drawing.Color.Black;
             this.CustomCommandButton.Location = new System.Drawing.Point(491, 23);
             this.CustomCommandButton.Name = "CustomCommandButton";
@@ -2715,7 +2715,7 @@
             // 
             // CentreCameraButton
             // 
-            this.CentreCameraButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CentreCameraButton.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CentreCameraButton.ForeColor = System.Drawing.Color.Black;
             this.CentreCameraButton.Location = new System.Drawing.Point(139, 105);
             this.CentreCameraButton.Name = "CentreCameraButton";
@@ -2731,11 +2731,11 @@
             // CustomCommandLabel
             // 
             this.CustomCommandLabel.AutoSize = true;
-            this.CustomCommandLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomCommandLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CustomCommandLabel.ForeColor = System.Drawing.Color.Black;
-            this.CustomCommandLabel.Location = new System.Drawing.Point(330, 29);
+            this.CustomCommandLabel.Location = new System.Drawing.Point(332, 29);
             this.CustomCommandLabel.Name = "CustomCommandLabel";
-            this.CustomCommandLabel.Size = new System.Drawing.Size(155, 23);
+            this.CustomCommandLabel.Size = new System.Drawing.Size(153, 23);
             this.CustomCommandLabel.TabIndex = 157;
             this.CustomCommandLabel.Text = "Custom Command";
             this.BasicToolTip.SetToolTip(this.CustomCommandLabel, "Execute pre-written commands by editing the \'custom_commands\' file.\r\n- The file i" +
@@ -2744,11 +2744,11 @@
             // SpeedRunLabel
             // 
             this.SpeedRunLabel.AutoSize = true;
-            this.SpeedRunLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SpeedRunLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SpeedRunLabel.ForeColor = System.Drawing.Color.Black;
-            this.SpeedRunLabel.Location = new System.Drawing.Point(46, 70);
+            this.SpeedRunLabel.Location = new System.Drawing.Point(47, 70);
             this.SpeedRunLabel.Name = "SpeedRunLabel";
-            this.SpeedRunLabel.Size = new System.Drawing.Size(87, 23);
+            this.SpeedRunLabel.Size = new System.Drawing.Size(86, 23);
             this.SpeedRunLabel.TabIndex = 147;
             this.SpeedRunLabel.Text = "Speedrun";
             this.BasicToolTip.SetToolTip(this.SpeedRunLabel, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.");
@@ -2769,7 +2769,7 @@
             // 
             // SpeedRunButton
             // 
-            this.SpeedRunButton.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SpeedRunButton.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SpeedRunButton.ForeColor = System.Drawing.Color.Black;
             this.SpeedRunButton.Location = new System.Drawing.Point(139, 64);
             this.SpeedRunButton.Name = "SpeedRunButton";
@@ -2797,7 +2797,7 @@
             this.MouseSmoothingBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.MouseSmoothingBox.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MouseSmoothingBox.ForeColor = System.Drawing.Color.Black;
-            this.MouseSmoothingBox.Location = new System.Drawing.Point(126, 186);
+            this.MouseSmoothingBox.Location = new System.Drawing.Point(126, 187);
             this.MouseSmoothingBox.Name = "MouseSmoothingBox";
             this.MouseSmoothingBox.Size = new System.Drawing.Size(188, 30);
             this.MouseSmoothingBox.TabIndex = 149;
@@ -2806,7 +2806,7 @@
             // 
             // CustomFoV1Button
             // 
-            this.CustomFoV1Button.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomFoV1Button.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CustomFoV1Button.ForeColor = System.Drawing.Color.Black;
             this.CustomFoV1Button.Location = new System.Drawing.Point(491, 146);
             this.CustomFoV1Button.Name = "CustomFoV1Button";
@@ -2820,11 +2820,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(374, 152);
+            this.label6.Location = new System.Drawing.Point(367, 152);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 23);
+            this.label6.Size = new System.Drawing.Size(118, 23);
             this.label6.TabIndex = 151;
             this.label6.Text = "Custom FoV 1";
             this.BasicToolTip.SetToolTip(this.label6, "Choose custom field of view values using the slider.\r\n");
