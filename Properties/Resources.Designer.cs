@@ -285,22 +285,42 @@ namespace CityLauncher.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Icon Placeholder_Icon {
+        internal static System.Drawing.Bitmap Phase1 {
             get {
-                object obj = ResourceManager.GetObject("Placeholder_Icon", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
+                object obj = ResourceManager.GetObject("Phase1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap startbutton_croppped {
+        internal static System.Drawing.Bitmap Phase2 {
             get {
-                object obj = ResourceManager.GetObject("startbutton_croppped", resourceCulture);
+                object obj = ResourceManager.GetObject("Phase2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Phase3 {
+            get {
+                object obj = ResourceManager.GetObject("Phase3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon Placeholder_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Placeholder_Icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         

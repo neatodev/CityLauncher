@@ -2896,18 +2896,20 @@
             // StartGameButton
             // 
             this.StartGameButton.BackColor = System.Drawing.Color.Transparent;
-            this.StartGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.StartGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.StartGameButton.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.StartGameButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.StartGameButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.StartGameButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StartGameButton.Image = global::CityLauncher.Properties.Resources.startbutton_croppped;
+            this.StartGameButton.Image = global::CityLauncher.Properties.Resources.Phase1;
             this.StartGameButton.Location = new System.Drawing.Point(12, 639);
             this.StartGameButton.Name = "StartGameButton";
             this.StartGameButton.Size = new System.Drawing.Size(713, 69);
             this.StartGameButton.TabIndex = 5;
             this.StartGameButton.UseVisualStyleBackColor = false;
             this.StartGameButton.Click += new System.EventHandler(this.StartGameButton_Click);
+            this.StartGameButton.MouseEnter += new System.EventHandler(this.StartGameButton_MouseEnter);
+            this.StartGameButton.MouseLeave += new System.EventHandler(this.StartGameButton_MouseLeave);
             // 
             // GPULabel
             // 

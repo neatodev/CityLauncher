@@ -371,6 +371,7 @@ namespace CityLauncher
             {
                 if (FileHandler.DetectGameExe())
                 {
+                    this.StartGameButton.Image = (Image)Properties.Resources.Phase3;
                     if (ApplySettingsButton.Enabled)
                     {
                         ApplySettingsButton_Click();
@@ -652,6 +653,16 @@ namespace CityLauncher
                     Brushes.Black,
                     new PointF(e.Bounds.X + 3, e.Bounds.Y + 3));
             }
+        }
+
+        private void StartGameButton_MouseEnter(object sender, EventArgs e)
+        {
+            this.StartGameButton.Image = (Image)Properties.Resources.Phase2;
+        }
+
+        private void StartGameButton_MouseLeave(object sender, EventArgs e)
+        {
+            this.StartGameButton.Image = (Image)Properties.Resources.Phase1;
         }
     }
 }
