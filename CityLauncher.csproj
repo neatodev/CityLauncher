@@ -19,7 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Resources\Placeholder_Icon.ico" />
+    <Content Include="Resources\icon2.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -62,7 +62,7 @@
 		<Copyright>Mario Schweidler (neatodev)</Copyright>
 		<WebPage>https://github.com/neatodev/CityLauncher</WebPage>
 		<AssemblyTitle>Batman: Arkham City - Advanced Launcher</AssemblyTitle>
-		<ApplicationIcon>Resources\Placeholder_Icon.ico</ApplicationIcon>
+		<ApplicationIcon>Resources\icon2.ico</ApplicationIcon>
 	</PropertyGroup>
 
 </Project>
