@@ -227,9 +227,9 @@
             this.ManualModeButton = new System.Windows.Forms.Button();
             this.BasicToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.TextureFixButton = new System.Windows.Forms.Button();
-            this.StartGameButton = new System.Windows.Forms.Button();
             this.GPULabel = new System.Windows.Forms.Label();
             this.CPULabel = new System.Windows.Forms.Label();
+            this.StartGameButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
@@ -2180,13 +2180,13 @@
             // 
             // HighContrastColorButton
             // 
-            this.HighContrastColorButton.Font = new System.Drawing.Font("Impact", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HighContrastColorButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.HighContrastColorButton.ForeColor = System.Drawing.Color.Black;
             this.HighContrastColorButton.Location = new System.Drawing.Point(572, 32);
             this.HighContrastColorButton.Name = "HighContrastColorButton";
             this.HighContrastColorButton.Size = new System.Drawing.Size(102, 37);
             this.HighContrastColorButton.TabIndex = 179;
-            this.HighContrastColorButton.Text = "High\r\nContrast";
+            this.HighContrastColorButton.Text = "High Contrast";
             this.BasicToolTip.SetToolTip(this.HighContrastColorButton, "Boosts highlights and lowers shadows for a more intense look.");
             this.HighContrastColorButton.UseVisualStyleBackColor = true;
             this.HighContrastColorButton.Click += new System.EventHandler(this.HighContrastColorButton_Click);
@@ -2961,25 +2961,6 @@
             this.BasicToolTip.SetToolTip(this.TextureFixButton, "Bopp Bipp");
             this.TextureFixButton.UseVisualStyleBackColor = true;
             // 
-            // StartGameButton
-            // 
-            this.StartGameButton.BackColor = System.Drawing.Color.Transparent;
-            this.StartGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.StartGameButton.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.StartGameButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.StartGameButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.StartGameButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StartGameButton.Image = global::CityLauncher.Properties.Resources.Phase1;
-            this.StartGameButton.Location = new System.Drawing.Point(16, 639);
-            this.StartGameButton.Name = "StartGameButton";
-            this.StartGameButton.Size = new System.Drawing.Size(709, 69);
-            this.StartGameButton.TabIndex = 5;
-            this.StartGameButton.UseVisualStyleBackColor = false;
-            this.StartGameButton.Click += new System.EventHandler(this.StartGameButton_Click);
-            this.StartGameButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.StartGameButton_MouseDown);
-            this.StartGameButton.MouseEnter += new System.EventHandler(this.StartGameButton_MouseEnter);
-            this.StartGameButton.MouseLeave += new System.EventHandler(this.StartGameButton_MouseLeave);
-            // 
             // GPULabel
             // 
             this.GPULabel.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -3003,6 +2984,25 @@
             this.CPULabel.TabIndex = 8;
             this.CPULabel.Text = "CPU:";
             this.BasicToolTip.SetToolTip(this.CPULabel, "This is your CPU.");
+            // 
+            // StartGameButton
+            // 
+            this.StartGameButton.BackColor = System.Drawing.Color.Transparent;
+            this.StartGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.StartGameButton.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.StartGameButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.StartGameButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.StartGameButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StartGameButton.Image = global::CityLauncher.Properties.Resources.Phase1;
+            this.StartGameButton.Location = new System.Drawing.Point(16, 639);
+            this.StartGameButton.Name = "StartGameButton";
+            this.StartGameButton.Size = new System.Drawing.Size(709, 69);
+            this.StartGameButton.TabIndex = 5;
+            this.StartGameButton.UseVisualStyleBackColor = false;
+            this.StartGameButton.Click += new System.EventHandler(this.StartGameButton_Click);
+            this.StartGameButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.StartGameButton_MouseDown);
+            this.StartGameButton.MouseEnter += new System.EventHandler(this.StartGameButton_MouseEnter);
+            this.StartGameButton.MouseLeave += new System.EventHandler(this.StartGameButton_MouseLeave);
             // 
             // groupBox1
             // 
