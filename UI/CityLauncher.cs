@@ -9,6 +9,7 @@ namespace CityLauncher
     {
         private bool DisplaySetting = false;
         private bool ControlSetting = false;
+        private ImageTooltip ImgToolTip;
         public bool DisplaySettingChanged
         {
             get => DisplaySetting;
@@ -33,6 +34,17 @@ namespace CityLauncher
         public CityLauncher()
         {
             InitializeComponent();
+            ImgToolTip = new();
+            ImgToolTip.InitialDelay = 50;
+            ImgToolTip.AutoPopDelay = 5000000;
+            ImgToolTip.AutomaticDelay = 500;
+            ImgToolTip.ReshowDelay = 20;
+            ImgToolTip.SetToolTip(DefaultColorButton, "Default");
+            ImgToolTip.SetToolTip(NoirColorButton, "Monochrome");
+            ImgToolTip.SetToolTip(MutedColorButton, "Muted");
+            ImgToolTip.SetToolTip(LowContrastColorButton, "Log Profile 1");
+            ImgToolTip.SetToolTip(VividColorButton, "Log Profile 2");
+            ImgToolTip.SetToolTip(HighContrastColorButton, "High Contrast");
         }
 
         private void Dx11Box_CheckedChanged(object sender, EventArgs e)

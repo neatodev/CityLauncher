@@ -275,6 +275,16 @@ namespace CityLauncher.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Default_2 {
+            get {
+                object obj = ResourceManager.GetObject("Default_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] GlobalShaderCache_PC_D3D_SM3 {
@@ -295,12 +305,62 @@ namespace CityLauncher.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap High_Contrast_2 {
+            get {
+                object obj = ResourceManager.GetObject("High_Contrast_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon icon2 {
             get {
                 object obj = ResourceManager.GetObject("icon2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Log_1_2 {
+            get {
+                object obj = ResourceManager.GetObject("Log_1_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Log_2_2 {
+            get {
+                object obj = ResourceManager.GetObject("Log_2_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Monochrome_2 {
+            get {
+                object obj = ResourceManager.GetObject("Monochrome_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Muted_2 {
+            get {
+                object obj = ResourceManager.GetObject("Muted_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

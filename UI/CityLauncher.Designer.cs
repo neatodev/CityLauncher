@@ -2173,8 +2173,6 @@
             this.LowContrastColorButton.Size = new System.Drawing.Size(102, 37);
             this.LowContrastColorButton.TabIndex = 180;
             this.LowContrastColorButton.Text = "Log Profile 1";
-            this.BasicToolTip.SetToolTip(this.LowContrastColorButton, "Maintains more of the shadows and highlights and increases visible dynamic range." +
-        "\r\nSuggested for Special K HDR injection.");
             this.LowContrastColorButton.UseVisualStyleBackColor = true;
             this.LowContrastColorButton.Click += new System.EventHandler(this.LowContrastColorButton_Click);
             // 
@@ -2187,7 +2185,6 @@
             this.HighContrastColorButton.Size = new System.Drawing.Size(102, 37);
             this.HighContrastColorButton.TabIndex = 179;
             this.HighContrastColorButton.Text = "High Contrast";
-            this.BasicToolTip.SetToolTip(this.HighContrastColorButton, "Boosts highlights and lowers shadows for a more intense look.");
             this.HighContrastColorButton.UseVisualStyleBackColor = true;
             this.HighContrastColorButton.Click += new System.EventHandler(this.HighContrastColorButton_Click);
             // 
@@ -2251,7 +2248,6 @@
             this.MutedColorButton.Size = new System.Drawing.Size(102, 37);
             this.MutedColorButton.TabIndex = 176;
             this.MutedColorButton.Text = "Muted";
-            this.BasicToolTip.SetToolTip(this.MutedColorButton, "Tones down colors for a more cinematic look.\r\n");
             this.MutedColorButton.UseVisualStyleBackColor = true;
             this.MutedColorButton.Click += new System.EventHandler(this.MutedColorButton_Click);
             // 
@@ -2264,8 +2260,6 @@
             this.VividColorButton.Size = new System.Drawing.Size(102, 37);
             this.VividColorButton.TabIndex = 175;
             this.VividColorButton.Text = "Log Profile 2";
-            this.BasicToolTip.SetToolTip(this.VividColorButton, "Pushes visible dynamic range further over Log Profile 1.\r\nSuggested for Special K" +
-        " HDR injection.");
             this.VividColorButton.UseVisualStyleBackColor = true;
             this.VividColorButton.Click += new System.EventHandler(this.VividColorButton_Click);
             // 
@@ -2278,7 +2272,6 @@
             this.NoirColorButton.Size = new System.Drawing.Size(102, 37);
             this.NoirColorButton.TabIndex = 174;
             this.NoirColorButton.Text = "Monochrome";
-            this.BasicToolTip.SetToolTip(this.NoirColorButton, "Black and White.");
             this.NoirColorButton.UseVisualStyleBackColor = true;
             this.NoirColorButton.Click += new System.EventHandler(this.NoirColorButton_Click);
             // 
@@ -2290,7 +2283,6 @@
             this.DefaultColorButton.Size = new System.Drawing.Size(128, 37);
             this.DefaultColorButton.TabIndex = 173;
             this.DefaultColorButton.Text = "Default";
-            this.BasicToolTip.SetToolTip(this.DefaultColorButton, "Vanilla settings.");
             this.DefaultColorButton.UseVisualStyleBackColor = true;
             this.DefaultColorButton.Click += new System.EventHandler(this.DefaultColorButton_Click);
             // 
@@ -3246,17 +3238,11 @@
         public TrackBar HighlightsTrackbar;
         public TrackBar MidtonesTrackbar;
         public TrackBar ShadowsTrackbar;
-        private Button DefaultColorButton;
-        private Button NoirColorButton;
-        private Button VividColorButton;
-        private Button MutedColorButton;
         public Label SaturationValueLabel;
         public Label HighlightsValueLabel;
         public Label MidtonesValueLabel;
         public Label ShadowsValueLabel;
         public GroupBox AdvancedColorBox;
-        private Button HighContrastColorButton;
-        private Button LowContrastColorButton;
         private Label DebugMenuLabel;
         public Button DebugMenuButton;
         private GroupBox groupBox1;
@@ -3271,5 +3257,11 @@
         private LinkLabel NeatoLabel;
         private LinkLabel GPUnityLabel;
         private LinkLabel PayPalLabel;
+        public Button DefaultColorButton;
+        public Button NoirColorButton;
+        public Button VividColorButton;
+        public Button MutedColorButton;
+        public Button HighContrastColorButton;
+        public Button LowContrastColorButton;
     }
 }
