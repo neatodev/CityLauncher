@@ -2468,7 +2468,7 @@
             this.DebugMenuLabel.Size = new System.Drawing.Size(112, 23);
             this.DebugMenuLabel.TabIndex = 166;
             this.DebugMenuLabel.Text = "Debug Menu";
-            this.BasicToolTip.SetToolTip(this.DebugMenuLabel, "Access console commands for cheats and debugging.");
+            this.BasicToolTip.SetToolTip(this.DebugMenuLabel, "Enables Debugging options. Some functions may cause crashes.");
             // 
             // label17
             // 
