@@ -25,7 +25,15 @@ namespace CityLauncher
             uint Clockspeed = (uint)CPU["MaxClockSpeed"];
             double GHzSpeed = (double)Clockspeed / 1000;
             Nlog.Info("InitializeCPU - Recognized CPU as {0} with a base clock speed of {1}GHz.", CPU["Name"].ToString().Trim(' '), Math.Round(GHzSpeed, 1));
-            return CPU["Name"].ToString().Trim(' ') + " @ " + Math.Round(GHzSpeed, 1) + "GHz";
+            var CPUName = CPU["Name"].ToString().Trim(' ');
+            if (CPUName.ToUpper().Contains("GHZ"))
+            {
+                return CPUName;
+            }
+            else
+            {
+                return CPUName + " @ " + Math.Round(GHzSpeed, 1) + "GHz";
+            }
         }
 
         private string InitializeGPUValues()
