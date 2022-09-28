@@ -22,7 +22,14 @@ namespace CityLauncher
             this.MouseClick += InputForm_MouseClick;
             this.MouseWheel += InputForm_MouseWheel;
             Program.MainWindow.ControlSettingChanged = true;
+            CenterMouseCursor();
             Nlog.Info("Constructor - Created a new instance of InputForm for '{0}'.", InputButton.Name);
+        }
+
+        private void CenterMouseCursor()
+        {
+            Screen ActiveScreen = Screen.FromControl(this);
+            Cursor.Position = new Point(ActiveScreen.Bounds.Width / 2, ActiveScreen.Bounds.Height / 2);
         }
 
         private void InputForm_MouseWheel(object? sender, MouseEventArgs e)
