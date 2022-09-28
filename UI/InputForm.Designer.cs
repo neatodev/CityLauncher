@@ -107,6 +107,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InputForm";
             this.Load += new System.EventHandler(this.InputForm_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.InputForm_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 

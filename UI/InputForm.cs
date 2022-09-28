@@ -136,5 +136,10 @@ namespace CityLauncher
             InputForm_MouseClick(sender, e);
             this.Focus();
         }
+
+        private void InputForm_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.Black, 2), this.DisplayRectangle);
+        }
     }
 }
