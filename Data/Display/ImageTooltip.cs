@@ -23,8 +23,9 @@
 
             var img = SelectImage(e);
             var scaledimg = ScaleImage(img, 512, 512);
+            img.Dispose();
             g.DrawImage(scaledimg, 0, 0);
-
+            scaledimg.Dispose();
             b.Dispose();
         }
 
