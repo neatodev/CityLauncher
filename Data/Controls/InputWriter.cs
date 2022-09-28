@@ -140,6 +140,11 @@ namespace CityLauncher
                 }
                 UserInputFile.Close();
             }
+
+            foreach (Button KeyButton in Program.InputHandler.ButtonList)
+            {
+                KeyButton.ForeColor = Color.Black;
+            }
         }
 
         private void WriteBmInput()

@@ -147,6 +147,7 @@ namespace CityLauncher
                 if (KeyButton.Text == Text)
                 {
                     KeyButton.Text = "Unbound";
+                    KeyButton.ForeColor = Color.Maroon;
                 }
             }
 
