@@ -57,6 +57,7 @@
             this.KeybindValueLabel.Name = "KeybindValueLabel";
             this.KeybindValueLabel.Size = new System.Drawing.Size(0, 39);
             this.KeybindValueLabel.TabIndex = 2;
+            this.KeybindValueLabel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label4_MouseClick);
             // 
             // label3
             // 
