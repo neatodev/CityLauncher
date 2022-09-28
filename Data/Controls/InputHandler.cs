@@ -177,6 +177,10 @@ namespace CityLauncher
         {
             File.Delete(UserInputFile);
             Program.FileHandler.CreateConfigFile(UserInputFile, Resources.UserInput);
+            foreach (Button KeyButton in ButtonList)
+            {
+                KeyButton.ForeColor = Color.Black;
+            }
             new InputReader().InitControls();
             Nlog.Info("ResetControls - Sucessfully reset control scheme.");
         }
