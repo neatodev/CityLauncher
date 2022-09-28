@@ -45,6 +45,7 @@
             this.label2.Size = new System.Drawing.Size(130, 39);
             this.label2.TabIndex = 1;
             this.label2.Text = "KEYBIND:";
+            this.label2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label4_MouseClick);
             // 
             // KeybindValueLabel
             // 
@@ -65,6 +66,7 @@
             this.label3.Size = new System.Drawing.Size(584, 33);
             this.label3.TabIndex = 3;
             this.label3.Text = "Press ESCAPE (ESC) to close this window and abort.";
+            this.label3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label4_MouseClick);
             // 
             // label1
             // 
@@ -75,6 +77,7 @@
             this.label1.Size = new System.Drawing.Size(464, 33);
             this.label1.TabIndex = 4;
             this.label1.Text = "Press BACKSPACE to delete the Keybind.\r\n";
+            this.label1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label4_MouseClick);
             // 
             // label4
             // 
@@ -85,6 +88,7 @@
             this.label4.Size = new System.Drawing.Size(420, 33);
             this.label4.TabIndex = 5;
             this.label4.Text = "Confirm Keybind by pressing ENTER.";
+            this.label4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label4_MouseClick);
             // 
             // InputForm
             // 

@@ -128,7 +128,13 @@ namespace CityLauncher
 
         private void InputForm_Load(object sender, EventArgs e)
         {
-            Focus();
+            this.Focus();
+        }
+
+        private void label4_MouseClick(object sender, MouseEventArgs e)
+        {
+            InputForm_MouseClick(sender, e);
+            this.Focus();
         }
     }
 }
