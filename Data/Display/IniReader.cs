@@ -336,8 +336,6 @@ namespace CityLauncher
 
         private void InitTexturePackFix()
         {
-            MessageBox.Show(IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_Character"]);
-
             //TEXTUREGROUP_Character
             if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_Character"] == Program.IniHandler.TexturePackEnabled[0])
             {
