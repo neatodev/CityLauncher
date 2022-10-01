@@ -370,6 +370,7 @@ namespace CityLauncher
             if (Program.IniHandler.TexPackEnabled.All(x => x) && Program.IniHandler.TexPackPlusEnabled.All(x => x))
             {
                 Program.MainWindow.TextureFixButton.Text = "Disable Texture Pack Fix";
+                Program.MainWindow.BasicToolTip.SetToolTip(Program.MainWindow.TextureFixButton, "Disable Texture Pack Fix.");
                 Program.MainWindow.TexturePlusCheckBox.Enabled = true;
                 Program.MainWindow.TexturePlusCheckBox.Checked = true;
             }

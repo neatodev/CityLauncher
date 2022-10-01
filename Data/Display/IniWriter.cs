@@ -31,6 +31,7 @@ namespace CityLauncher
             WriteBmEngineBasic();
             WriteBmEngineAdvanced();
             WriteColors();
+            WriteTextureGroupLines();
             WriteToTempFile();
             MergeBmEngine();
             WriteToUserEngine();
@@ -515,6 +516,44 @@ namespace CityLauncher
             // Shadows
             IniHandler.BmEngineData["Engine.Player"]["PP_ShadowsMultiplier"] = Program.IniHandler.ColorLauncherToIni(Program.MainWindow.ShadowsTrackbar.Value);
             Nlog.Info("WriteColors - Set Shadows to {0}", IniHandler.BmEngineData["Engine.Player"]["PP_ShadowsMultiplier"]);
+        }
+
+        private void WriteTextureGroupLines()
+        {
+            if (Program.MainWindow.TextureFixButton.Text.Contains("DISABLE"))
+            {
+                //TEXTUREGROUP_Character
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_Character"] = Program.IniHandler.TexturePackEnabled[0];
+                //TEXTUREGROUP_CharacterNormalMap
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_CharacterNormalMap"] = Program.IniHandler.TexturePackEnabled[1];
+                //TEXTUREGROUP_World_Hi
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World_Hi"] = Program.IniHandler.TexturePackEnabled[1];
+                //TEXTUREGROUP_WorldNormalMap_Hi
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap_Hi"] = Program.IniHandler.TexturePackEnabled[1];
+
+                if (Program.MainWindow.TexturePlusCheckBox.Enabled && Program.MainWindow.TexturePlusCheckBox.Checked)
+                {
+                    //TEXTUREGROUP_World
+                    IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] = Program.IniHandler.TexturePackEnabled[1];
+                    //TEXTUREGROUP_WorldNormalMap
+                    IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] = Program.IniHandler.TexturePackEnabled[1];
+                }
+            }
+            else
+            {
+                //TEXTUREGROUP_Character
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_Character"] = Program.IniHandler.TexturePackDefaults[0];
+                //TEXTUREGROUP_CharacterNormalMap
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_CharacterNormalMap"] = Program.IniHandler.TexturePackDefaults[1];
+                //TEXTUREGROUP_World_Hi
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World_Hi"] = Program.IniHandler.TexturePackDefaults[1];
+                //TEXTUREGROUP_WorldNormalMap_Hi
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap_Hi"] = Program.IniHandler.TexturePackDefaults[1];
+                //TEXTUREGROUP_World
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] = Program.IniHandler.TexturePackDefaults[1];
+                //TEXTUREGROUP_WorldNormalMap
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] = Program.IniHandler.TexturePackDefaults[1];
+            }
         }
     }
 }

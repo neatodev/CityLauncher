@@ -229,9 +229,9 @@
             this.TextureFixButton = new System.Windows.Forms.Button();
             this.GPULabel = new System.Windows.Forms.Label();
             this.CPULabel = new System.Windows.Forms.Label();
+            this.TexturePlusCheckBox = new System.Windows.Forms.CheckBox();
             this.StartGameButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TexturePlusCheckBox = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.PresetBox.SuspendLayout();
@@ -2950,7 +2950,8 @@
             this.TextureFixButton.Size = new System.Drawing.Size(235, 43);
             this.TextureFixButton.TabIndex = 9;
             this.TextureFixButton.Text = "ENABLE TEXTURE PACK FIX";
-            this.BasicToolTip.SetToolTip(this.TextureFixButton, "Bopp Bipp");
+            this.BasicToolTip.SetToolTip(this.TextureFixButton, "Enable for HD Texture Pack support. Raises the maximum texture resolution rendere" +
+        "d by the game.");
             this.TextureFixButton.UseVisualStyleBackColor = true;
             // 
             // GPULabel
@@ -2976,6 +2977,21 @@
             this.CPULabel.TabIndex = 8;
             this.CPULabel.Text = "CPU:";
             this.BasicToolTip.SetToolTip(this.CPULabel, "This is your CPU.");
+            // 
+            // TexturePlusCheckBox
+            // 
+            this.TexturePlusCheckBox.AutoSize = true;
+            this.TexturePlusCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.TexturePlusCheckBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TexturePlusCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.TexturePlusCheckBox.Location = new System.Drawing.Point(339, 610);
+            this.TexturePlusCheckBox.Name = "TexturePlusCheckBox";
+            this.TexturePlusCheckBox.Size = new System.Drawing.Size(147, 23);
+            this.TexturePlusCheckBox.TabIndex = 46;
+            this.TexturePlusCheckBox.Text = "Texture Pack Plus";
+            this.BasicToolTip.SetToolTip(this.TexturePlusCheckBox, "Only enable if \'HD Texture Pack Plus\' is installed, or will result in graphical e" +
+        "rrors.");
+            this.TexturePlusCheckBox.UseVisualStyleBackColor = true;
             // 
             // StartGameButton
             // 
@@ -3006,20 +3022,6 @@
             this.groupBox1.Size = new System.Drawing.Size(741, 38);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
-            // 
-            // TexturePlusCheckBox
-            // 
-            this.TexturePlusCheckBox.AutoSize = true;
-            this.TexturePlusCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.TexturePlusCheckBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TexturePlusCheckBox.ForeColor = System.Drawing.Color.Black;
-            this.TexturePlusCheckBox.Location = new System.Drawing.Point(339, 610);
-            this.TexturePlusCheckBox.Name = "TexturePlusCheckBox";
-            this.TexturePlusCheckBox.Size = new System.Drawing.Size(147, 23);
-            this.TexturePlusCheckBox.TabIndex = 46;
-            this.TexturePlusCheckBox.Text = "Texture Pack Plus";
-            this.BasicToolTip.SetToolTip(this.TexturePlusCheckBox, "Whoa");
-            this.TexturePlusCheckBox.UseVisualStyleBackColor = true;
             // 
             // CityLauncher
             // 
@@ -3232,7 +3234,6 @@
         private Label CapeStunLabel;
         public Button MapButton;
         private Label MapLabel;
-        private ToolTip BasicToolTip;
         private Button StartGameButton;
         private LinkLabel TempLabel;
         public CheckBox ReflectionBox;
@@ -3280,5 +3281,6 @@
         public Button LowContrastColorButton;
         public CheckBox TexturePlusCheckBox;
         public Button TextureFixButton;
+        public ToolTip BasicToolTip;
     }
 }
