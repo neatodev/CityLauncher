@@ -2914,9 +2914,9 @@
             // 
             this.ApplySettingsButton.Enabled = false;
             this.ApplySettingsButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ApplySettingsButton.Location = new System.Drawing.Point(492, 566);
+            this.ApplySettingsButton.Location = new System.Drawing.Point(495, 566);
             this.ApplySettingsButton.Name = "ApplySettingsButton";
-            this.ApplySettingsButton.Size = new System.Drawing.Size(233, 67);
+            this.ApplySettingsButton.Size = new System.Drawing.Size(230, 67);
             this.ApplySettingsButton.TabIndex = 1;
             this.ApplySettingsButton.Text = "APPLY SETTINGS";
             this.BasicToolTip.SetToolTip(this.ApplySettingsButton, "Applies all settings.");
@@ -2928,7 +2928,7 @@
             this.ManualModeButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ManualModeButton.Location = new System.Drawing.Point(16, 566);
             this.ManualModeButton.Name = "ManualModeButton";
-            this.ManualModeButton.Size = new System.Drawing.Size(229, 67);
+            this.ManualModeButton.Size = new System.Drawing.Size(230, 67);
             this.ManualModeButton.TabIndex = 2;
             this.ManualModeButton.Text = "MANUAL MODE";
             this.BasicToolTip.SetToolTip(this.ManualModeButton, "This disables the read-only flag of the configuration files to allow for manual e" +
@@ -2945,9 +2945,9 @@
             // TextureFixButton
             // 
             this.TextureFixButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextureFixButton.Location = new System.Drawing.Point(251, 566);
+            this.TextureFixButton.Location = new System.Drawing.Point(252, 566);
             this.TextureFixButton.Name = "TextureFixButton";
-            this.TextureFixButton.Size = new System.Drawing.Size(235, 43);
+            this.TextureFixButton.Size = new System.Drawing.Size(237, 43);
             this.TextureFixButton.TabIndex = 9;
             this.TextureFixButton.Text = "ENABLE TEXTURE PACK FIX";
             this.BasicToolTip.SetToolTip(this.TextureFixButton, "Enable for HD Texture Pack support. Raises the maximum texture resolution rendere" +
@@ -2983,11 +2983,11 @@
             // 
             this.TexturePlusCheckBox.AutoSize = true;
             this.TexturePlusCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.TexturePlusCheckBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TexturePlusCheckBox.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TexturePlusCheckBox.ForeColor = System.Drawing.Color.Black;
-            this.TexturePlusCheckBox.Location = new System.Drawing.Point(339, 610);
+            this.TexturePlusCheckBox.Location = new System.Drawing.Point(305, 603);
             this.TexturePlusCheckBox.Name = "TexturePlusCheckBox";
-            this.TexturePlusCheckBox.Size = new System.Drawing.Size(147, 23);
+            this.TexturePlusCheckBox.Size = new System.Drawing.Size(181, 30);
             this.TexturePlusCheckBox.TabIndex = 46;
             this.TexturePlusCheckBox.Text = "Texture Pack Plus";
             this.BasicToolTip.SetToolTip(this.TexturePlusCheckBox, "Only enable if \'HD Texture Pack Plus\' is installed, or will result in graphical e" +
