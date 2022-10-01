@@ -700,5 +700,30 @@ namespace CityLauncher
         {
             this.StartGameButton.Image = (Image)Properties.Resources.Phase3;
         }
+
+        private void TextureFixButton_Click(object sender, EventArgs e)
+        {
+            if (Program.IniHandler.TexPackEnabled.All(x => x))
+            {
+                Program.MainWindow.TextureFixButton.Text = "ENABLE TEXTURE PACK FIX";
+                Program.MainWindow.BasicToolTip.SetToolTip(Program.MainWindow.TextureFixButton, "Enable for HD Texture Pack support. Raises the maximum texture resolution rendered by the game.");
+                Program.MainWindow.TexturePlusCheckBox.Enabled = false;
+                for (int i = 0; Program.IniHandler.TexPackEnabled.Length > i; i++)
+                {
+                    Program.IniHandler.TexPackEnabled[i] = false;
+                }
+            }
+            else
+            {
+                Program.MainWindow.TextureFixButton.Text = "DISABLE TEXTURE PACK FIX";
+                Program.MainWindow.BasicToolTip.SetToolTip(Program.MainWindow.TextureFixButton, "Disable Texture Pack Fix.");
+                Program.MainWindow.TexturePlusCheckBox.Enabled = true;
+                for (int i = 0; Program.IniHandler.TexPackEnabled.Length > i; i++)
+                {
+                    Program.IniHandler.TexPackEnabled[i] = true;
+                }
+            }
+            DisplaySettingChanged = true;
+        }
     }
 }

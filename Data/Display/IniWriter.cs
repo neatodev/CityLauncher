@@ -61,10 +61,10 @@ namespace CityLauncher
             {
                 if (BmEngineNew[i].Contains('='))
                 {
-                    var LineTrimmed = BmEngineNew[i].Substring(0, BmEngineNew[i].LastIndexOf('='));
+                    var LineTrimmed = BmEngineNew[i].Substring(0, BmEngineNew[i].IndexOf('='));
                     for (int j = 0; j < BmEngineOrig.Length; j++)
                     {
-                        if (BmEngineOrig[j].Contains('=') && BmEngineOrig[j].Substring(0, BmEngineOrig[j].LastIndexOf('=')) == LineTrimmed)
+                        if (BmEngineOrig[j].Contains('=') && BmEngineOrig[j].Substring(0, BmEngineOrig[j].IndexOf('=')) == LineTrimmed)
                         {
                             if (LineTrimmed == ExcludedEntries[0] || LineTrimmed == ExcludedEntries[1])
                             {
@@ -520,7 +520,7 @@ namespace CityLauncher
 
         private void WriteTextureGroupLines()
         {
-            if (Program.MainWindow.TextureFixButton.Text.Contains("DISABLE"))
+            if (Program.IniHandler.TexPackEnabled.All(x => x))
             {
                 //TEXTUREGROUP_Character
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_Character"] = Program.IniHandler.TexturePackEnabled[0];
@@ -530,14 +530,6 @@ namespace CityLauncher
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World_Hi"] = Program.IniHandler.TexturePackEnabled[1];
                 //TEXTUREGROUP_WorldNormalMap_Hi
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap_Hi"] = Program.IniHandler.TexturePackEnabled[1];
-
-                if (Program.MainWindow.TexturePlusCheckBox.Enabled && Program.MainWindow.TexturePlusCheckBox.Checked)
-                {
-                    //TEXTUREGROUP_World
-                    IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] = Program.IniHandler.TexturePackEnabled[1];
-                    //TEXTUREGROUP_WorldNormalMap
-                    IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] = Program.IniHandler.TexturePackEnabled[1];
-                }
             }
             else
             {
@@ -549,6 +541,18 @@ namespace CityLauncher
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World_Hi"] = Program.IniHandler.TexturePackDefaults[1];
                 //TEXTUREGROUP_WorldNormalMap_Hi
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap_Hi"] = Program.IniHandler.TexturePackDefaults[1];
+
+            }
+
+            if (Program.MainWindow.TexturePlusCheckBox.Enabled && Program.MainWindow.TexturePlusCheckBox.Checked)
+            {
+                //TEXTUREGROUP_World
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] = Program.IniHandler.TexturePackEnabled[1];
+                //TEXTUREGROUP_WorldNormalMap
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] = Program.IniHandler.TexturePackEnabled[1];
+            }
+            else
+            {
                 //TEXTUREGROUP_World
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] = Program.IniHandler.TexturePackDefaults[1];
                 //TEXTUREGROUP_WorldNormalMap

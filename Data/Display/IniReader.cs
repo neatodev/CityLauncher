@@ -336,6 +336,8 @@ namespace CityLauncher
 
         private void InitTexturePackFix()
         {
+            MessageBox.Show(IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_Character"]);
+
             //TEXTUREGROUP_Character
             if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_Character"] == Program.IniHandler.TexturePackEnabled[0])
             {
@@ -369,7 +371,7 @@ namespace CityLauncher
 
             if (Program.IniHandler.TexPackEnabled.All(x => x) && Program.IniHandler.TexPackPlusEnabled.All(x => x))
             {
-                Program.MainWindow.TextureFixButton.Text = "Disable Texture Pack Fix";
+                Program.MainWindow.TextureFixButton.Text = "DISABLE TEXTURE PACK FIX";
                 Program.MainWindow.BasicToolTip.SetToolTip(Program.MainWindow.TextureFixButton, "Disable Texture Pack Fix.");
                 Program.MainWindow.TexturePlusCheckBox.Enabled = true;
                 Program.MainWindow.TexturePlusCheckBox.Checked = true;
@@ -377,6 +379,7 @@ namespace CityLauncher
             else if (Program.IniHandler.TexPackEnabled.All(x => x))
             {
                 Program.MainWindow.TextureFixButton.Text = "Disable Texture Pack Fix";
+                Program.MainWindow.BasicToolTip.SetToolTip(Program.MainWindow.TextureFixButton, "Disable Texture Pack Fix.");
                 Program.MainWindow.TexturePlusCheckBox.Enabled = true;
                 Program.MainWindow.TexturePlusCheckBox.Checked = false;
             }

@@ -2953,6 +2953,7 @@
             this.BasicToolTip.SetToolTip(this.TextureFixButton, "Enable for HD Texture Pack support. Raises the maximum texture resolution rendere" +
         "d by the game.");
             this.TextureFixButton.UseVisualStyleBackColor = true;
+            this.TextureFixButton.Click += new System.EventHandler(this.TextureFixButton_Click);
             // 
             // GPULabel
             // 
