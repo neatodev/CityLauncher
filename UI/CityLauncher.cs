@@ -726,5 +726,10 @@ namespace CityLauncher
             }
             DisplaySettingChanged = true;
         }
+
+        private void TexturePlusCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            DisplaySettingChanged = true;
+        }
     }
 }

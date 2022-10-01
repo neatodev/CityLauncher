@@ -556,7 +556,10 @@ namespace CityLauncher
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World_Hi"] = Program.IniHandler.TexturePackDefaults[1];
                 //TEXTUREGROUP_WorldNormalMap_Hi
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap_Hi"] = Program.IniHandler.TexturePackDefaults[1];
-
+                //TEXTUREGROUP_World
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] = Program.IniHandler.TexturePackDefaults[2];
+                //TEXTUREGROUP_WorldNormalMap
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] = Program.IniHandler.TexturePackDefaults[2];
             }
         }
     }

@@ -2993,6 +2993,7 @@
             this.BasicToolTip.SetToolTip(this.TexturePlusCheckBox, "Only enable if \'HD Texture Pack Plus\' is installed, or will result in graphical e" +
         "rrors.");
             this.TexturePlusCheckBox.UseVisualStyleBackColor = true;
+            this.TexturePlusCheckBox.CheckedChanged += new System.EventHandler(this.TexturePlusCheckBox_CheckedChanged);
             // 
             // StartGameButton
             // 
