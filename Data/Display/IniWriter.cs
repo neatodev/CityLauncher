@@ -561,6 +561,7 @@ namespace CityLauncher
                 //TEXTUREGROUP_WorldNormalMap
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] = Program.IniHandler.TexturePackDefaults[2];
             }
+            Nlog.Info("WriteTextureGroupLines - Set Texture Pack Fix to: {0} || Set Texture Pack Plus to: {1}.", Program.IniHandler.TexPackEnabled.All(x => x).ToString(), Program.IniHandler.TexPackPlusEnabled.All(x => x).ToString());
         }
     }
 }

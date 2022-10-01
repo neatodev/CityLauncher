@@ -386,6 +386,9 @@ namespace CityLauncher
                 Program.MainWindow.TexturePlusCheckBox.Checked = false;
                 Program.MainWindow.TexturePlusCheckBox.Enabled = false;
             }
+
+            Nlog.Info("InitTexturePackFix - Texture Pack is enabled: {0} || Texture Pack Plus is enabled: {1}.", Program.IniHandler.TexPackEnabled.All(x => x).ToString(), Program.IniHandler.TexPackPlusEnabled.All(x => x).ToString());
+
         }
     }
 }

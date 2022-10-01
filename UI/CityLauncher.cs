@@ -729,6 +729,13 @@ namespace CityLauncher
 
         private void TexturePlusCheckBox_CheckedChanged(object sender, EventArgs e)
         {
+            bool CheckboxValue = TexturePlusCheckBox.Checked;
+
+            for (int i = 0; Program.IniHandler.TexPackPlusEnabled.Length > i; i++)
+            {
+                Program.IniHandler.TexPackPlusEnabled[i] = CheckboxValue;
+            }
+
             DisplaySettingChanged = true;
         }
     }
