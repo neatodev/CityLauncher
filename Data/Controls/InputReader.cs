@@ -16,7 +16,7 @@ namespace CityLauncher
             BmInputLines[1] = IniHandler.BmInputData["Engine.PlayerInput"]["bEnableMouseSmoothing"];
             Program.MainWindow.ControlSettingChanged = false;
             Program.MainWindow.ApplySettingsButton.Enabled = false;
-            Nlog.Info("Constructor - Sucessfully initialized InputReader.");
+            Nlog.Info("Constructor - Successfully initialized InputReader.");
         }
 
         public void InitControls()

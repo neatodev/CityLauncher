@@ -25,7 +25,7 @@ namespace CityLauncher
             UserInputFile = Program.FileHandler.UserInputPath;
             LinesConfigStyle = FillConfigStyle();
             LinesHumanReadable = FillHumanReadable();
-            Nlog.Info("Constructor - Sucessfully initialized InputHandler.");
+            Nlog.Info("Constructor - Successfully initialized InputHandler.");
         }
 
         private string[] FillConfigStyle()
