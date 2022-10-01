@@ -383,8 +383,8 @@ namespace CityLauncher
             }
             else
             {
-                Program.MainWindow.TexturePlusCheckBox.Enabled = false;
                 Program.MainWindow.TexturePlusCheckBox.Checked = false;
+                Program.MainWindow.TexturePlusCheckBox.Enabled = false;
             }
         }
     }

@@ -707,6 +707,7 @@ namespace CityLauncher
             {
                 Program.MainWindow.TextureFixButton.Text = "ENABLE TEXTURE PACK FIX";
                 Program.MainWindow.BasicToolTip.SetToolTip(Program.MainWindow.TextureFixButton, "Enable for HD Texture Pack support. Raises the maximum texture resolution rendered by the game.");
+                Program.MainWindow.TexturePlusCheckBox.Checked = false;
                 Program.MainWindow.TexturePlusCheckBox.Enabled = false;
                 for (int i = 0; Program.IniHandler.TexPackEnabled.Length > i; i++)
                 {
