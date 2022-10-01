@@ -2947,7 +2947,7 @@
             this.TextureFixButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextureFixButton.Location = new System.Drawing.Point(252, 566);
             this.TextureFixButton.Name = "TextureFixButton";
-            this.TextureFixButton.Size = new System.Drawing.Size(237, 43);
+            this.TextureFixButton.Size = new System.Drawing.Size(237, 34);
             this.TextureFixButton.TabIndex = 9;
             this.TextureFixButton.Text = "ENABLE TEXTURE PACK FIX";
             this.BasicToolTip.SetToolTip(this.TextureFixButton, "Enable for HD Texture Pack support. Raises the maximum texture resolution rendere" +
@@ -2982,17 +2982,19 @@
             // TexturePlusCheckBox
             // 
             this.TexturePlusCheckBox.AutoSize = true;
+            this.TexturePlusCheckBox.BackColor = System.Drawing.Color.White;
             this.TexturePlusCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.TexturePlusCheckBox.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TexturePlusCheckBox.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TexturePlusCheckBox.ForeColor = System.Drawing.Color.Black;
-            this.TexturePlusCheckBox.Location = new System.Drawing.Point(305, 603);
+            this.TexturePlusCheckBox.Location = new System.Drawing.Point(255, 602);
             this.TexturePlusCheckBox.Name = "TexturePlusCheckBox";
-            this.TexturePlusCheckBox.Size = new System.Drawing.Size(181, 30);
+            this.TexturePlusCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TexturePlusCheckBox.Size = new System.Drawing.Size(234, 27);
             this.TexturePlusCheckBox.TabIndex = 46;
-            this.TexturePlusCheckBox.Text = "Texture Pack Plus";
+            this.TexturePlusCheckBox.Text = "ENABLE TEXTURE PACK PLUS \r\n";
             this.BasicToolTip.SetToolTip(this.TexturePlusCheckBox, "Only enable if \'HD Texture Pack Plus\' is installed, or will result in graphical e" +
         "rrors.");
-            this.TexturePlusCheckBox.UseVisualStyleBackColor = true;
+            this.TexturePlusCheckBox.UseVisualStyleBackColor = false;
             this.TexturePlusCheckBox.CheckedChanged += new System.EventHandler(this.TexturePlusCheckBox_CheckedChanged);
             // 
             // StartGameButton

@@ -31,7 +31,7 @@ namespace CityLauncher
             CheckConfigFilesExist();
             CheckCustomFilesExist();
             CheckIntroVideoFilesRenamed();
-            Nlog.Info("Constructor - Sucessfully initialized FileHandler.");
+            Nlog.Info("Constructor - Successfully initialized FileHandler.");
             CheckLightingFix();
         }
 
@@ -94,7 +94,7 @@ namespace CityLauncher
             if (!Directory.Exists(ConfigDirectoryPath))
             {
                 Directory.CreateDirectory(ConfigDirectoryPath);
-                Nlog.Warn("CheckConfigFilesExist - Can't find the configuration directory. Creating it now. Please make sure you have installed the game.");
+                Nlog.Warn("CheckConfigFilesExist - Can't find configuration directory. Creating it now. Please make sure you have installed the game.");
             }
 
             if (!File.Exists(BmEnginePath))

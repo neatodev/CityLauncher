@@ -20,7 +20,7 @@ namespace CityLauncher
             BmEnginePath = Program.FileHandler.BmEnginePath;
             UserEnginePath = Program.FileHandler.UserEnginePath;
             DataParser = new FileIniDataParser();
-            Nlog.Info("Constructor - Sucessfully initialized IniWriter.");
+            Nlog.Info("Constructor - Successfully initialized IniWriter.");
         }
 
         public void WriteAll()
@@ -39,7 +39,7 @@ namespace CityLauncher
             Program.FileHandler.BmEngine.IsReadOnly = true;
             Program.FileHandler.UserEngine.IsReadOnly = true;
             Program.FileHandler.BmInput.IsReadOnly = true;
-            Nlog.Info("WriteAll - Sucessfully wrote settings to 'BmEngine.ini' and 'UserEngine.ini'.");
+            Nlog.Info("WriteAll - Successfully wrote settings to 'BmEngine.ini' and 'UserEngine.ini'.");
         }
 
         private void WriteToTempFile()

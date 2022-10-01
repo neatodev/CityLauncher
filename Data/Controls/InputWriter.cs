@@ -15,14 +15,14 @@ namespace CityLauncher
             UserInputLines = File.ReadAllLines(Program.FileHandler.UserInputPath);
             BmInputLines[0] = IniHandler.BmInputData["Engine.PlayerInput"]["MouseSensitivity"];
             BmInputLines[1] = IniHandler.BmInputData["Engine.PlayerInput"]["bEnableMouseSmoothing"];
-            Nlog.Info("Constructor - Sucessfully initialized InputWriter.");
+            Nlog.Info("Constructor - Successfully initialized InputWriter.");
         }
 
         public void WriteAll()
         {
             WriteControls();
             WriteBmInput();
-            Nlog.Info("WriteAll - Sucessfully wrote settings to 'BmInput.ini' and 'UserInput.ini'.");
+            Nlog.Info("WriteAll - Successfully wrote settings to 'BmInput.ini' and 'UserInput.ini'.");
         }
 
         public void WriteControls()

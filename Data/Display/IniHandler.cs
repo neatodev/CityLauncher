@@ -27,7 +27,7 @@ namespace CityLauncher
             BmEngineData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
             BmInputData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini"));
             RemoveSections();
-            Nlog.Info("Constructor - Sucessfully initialized IniHandler.");
+            Nlog.Info("Constructor - Successfully initialized IniHandler.");
         }
 
         private IniData SetIniData(string Path)
@@ -137,7 +137,7 @@ namespace CityLauncher
             BmEngineData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
             RemoveSections();
             new IniReader().InitDisplay();
-            Nlog.Info("ResetDisplay - Sucessfully reset display settings.");
+            Nlog.Info("ResetDisplay - Successfully reset display settings.");
         }
     }
 }

@@ -15,7 +15,7 @@ namespace CityLauncher
             InitTexturePackFix();
             Program.MainWindow.DisplaySettingChanged = false;
             Program.MainWindow.ApplySettingsButton.Enabled = false;
-            Nlog.Info("InitDisplay - Sucessfully initialized display settings.");
+            Nlog.Info("InitDisplay - Successfully initialized display settings.");
         }
 
         private void InitDisplayBasic()
