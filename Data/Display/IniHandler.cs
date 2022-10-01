@@ -12,6 +12,15 @@ namespace CityLauncher
 
         private static Logger Nlog = LogManager.GetCurrentClassLogger();
 
+        public string[] TexturePackDefaults = { "(MinLODSize=256,MaxLODSize=2048,LODBias=0,MinMagFilter=Aniso,MipFilter=Point,MipGenSettings=TMGS_SimpleAverage)",
+                                                "(MinLODSize=128,MaxLODSize=2048,LODBias=0,MinMagFilter=Aniso,MipFilter=Point,MipGenSettings=TMGS_SimpleAverage)"};
+
+        public string[] TexturePackEnabled = { "(MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=Aniso,MipFilter=Point,MipGenSettings=TMGS_SimpleAverage)",
+                                               "(MinLODSize=128,MaxLODSize=4096,LODBias=0,MinMagFilter=Aniso,MipFilter=Point,MipGenSettings=TMGS_SimpleAverage)"};
+
+        public bool[] TexPackEnabled = { false, false, false, false };
+        public bool[] TexPackPlusEnabled = { false, false };
+
         public IniHandler()
         {
             BmEngineData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));

@@ -231,6 +231,7 @@
             this.CPULabel = new System.Windows.Forms.Label();
             this.StartGameButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TexturePlusCheckBox = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.DisplayTab.SuspendLayout();
             this.PresetBox.SuspendLayout();
@@ -2943,11 +2944,10 @@
             // 
             // TextureFixButton
             // 
-            this.TextureFixButton.Enabled = false;
             this.TextureFixButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextureFixButton.Location = new System.Drawing.Point(251, 566);
             this.TextureFixButton.Name = "TextureFixButton";
-            this.TextureFixButton.Size = new System.Drawing.Size(235, 67);
+            this.TextureFixButton.Size = new System.Drawing.Size(235, 43);
             this.TextureFixButton.TabIndex = 9;
             this.TextureFixButton.Text = "ENABLE TEXTURE PACK FIX";
             this.BasicToolTip.SetToolTip(this.TextureFixButton, "Bopp Bipp");
@@ -3007,12 +3007,27 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             // 
+            // TexturePlusCheckBox
+            // 
+            this.TexturePlusCheckBox.AutoSize = true;
+            this.TexturePlusCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.TexturePlusCheckBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TexturePlusCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.TexturePlusCheckBox.Location = new System.Drawing.Point(339, 610);
+            this.TexturePlusCheckBox.Name = "TexturePlusCheckBox";
+            this.TexturePlusCheckBox.Size = new System.Drawing.Size(147, 23);
+            this.TexturePlusCheckBox.TabIndex = 46;
+            this.TexturePlusCheckBox.Text = "Texture Pack Plus";
+            this.BasicToolTip.SetToolTip(this.TexturePlusCheckBox, "Whoa");
+            this.TexturePlusCheckBox.UseVisualStyleBackColor = true;
+            // 
             // CityLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(741, 752);
+            this.Controls.Add(this.TexturePlusCheckBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.TextureFixButton);
             this.Controls.Add(this.StartGameButton);
@@ -3057,6 +3072,7 @@
             this.AboutTab.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -3225,7 +3241,6 @@
         public Button ApplySettingsButton;
         public Label GPULabel;
         public Label CPULabel;
-        private Button TextureFixButton;
         private Button DarkKnightPresetButton;
         private Button OptimizedPresetButton;
         private Button VanillaPresetButton;
@@ -3263,5 +3278,7 @@
         public Button MutedColorButton;
         public Button HighContrastColorButton;
         public Button LowContrastColorButton;
+        public CheckBox TexturePlusCheckBox;
+        public Button TextureFixButton;
     }
 }

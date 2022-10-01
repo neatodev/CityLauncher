@@ -12,6 +12,7 @@ namespace CityLauncher
             InitDisplayBasic();
             InitDisplayAdvanced();
             InitColors();
+            InitTexturePackFix();
             Program.MainWindow.DisplaySettingChanged = false;
             Program.MainWindow.ApplySettingsButton.Enabled = false;
             Nlog.Info("InitDisplay - Sucessfully initialized display settings.");
@@ -331,6 +332,58 @@ namespace CityLauncher
             // Shadows
             Program.MainWindow.ShadowsTrackbar.Value = Program.IniHandler.ColorIniToLauncher(IniHandler.BmEngineData["Engine.Player"]["PP_ShadowsMultiplier"]);
             Program.MainWindow.ShadowsValueLabel.Text = Program.MainWindow.ShadowsTrackbar.Value.ToString() + "%";
+        }
+
+        private void InitTexturePackFix()
+        {
+            //TEXTUREGROUP_Character
+            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_Character"] == Program.IniHandler.TexturePackEnabled[0])
+            {
+                Program.IniHandler.TexPackEnabled[0] = true;
+            }
+            //TEXTUREGROUP_CharacterNormalMap
+            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_CharacterNormalMap"] == Program.IniHandler.TexturePackEnabled[1])
+            {
+                Program.IniHandler.TexPackEnabled[1] = true;
+            }
+            //TEXTUREGROUP_World_Hi
+            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World_Hi"] == Program.IniHandler.TexturePackEnabled[1])
+            {
+                Program.IniHandler.TexPackEnabled[2] = true;
+            }
+            //TEXTUREGROUP_WorldNormalMap_Hi
+            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap_Hi"] == Program.IniHandler.TexturePackEnabled[1])
+            {
+                Program.IniHandler.TexPackEnabled[3] = true;
+            }
+            //TEXTUREGROUP_World
+            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] == Program.IniHandler.TexturePackEnabled[1])
+            {
+                Program.IniHandler.TexPackPlusEnabled[0] = true;
+            }
+            //TEXTUREGROUP_WorldNormalMap
+            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] == Program.IniHandler.TexturePackEnabled[1])
+            {
+                Program.IniHandler.TexPackPlusEnabled[1] = true;
+            }
+
+            if (Program.IniHandler.TexPackEnabled.All(x => x) && Program.IniHandler.TexPackPlusEnabled.All(x => x))
+            {
+                Program.MainWindow.TextureFixButton.Text = "Disable Texture Pack Fix";
+                Program.MainWindow.TexturePlusCheckBox.Enabled = true;
+                Program.MainWindow.TexturePlusCheckBox.Checked = true;
+            }
+            else if (Program.IniHandler.TexPackEnabled.All(x => x))
+            {
+                Program.MainWindow.TextureFixButton.Text = "Disable Texture Pack Fix";
+                Program.MainWindow.TexturePlusCheckBox.Enabled = true;
+                Program.MainWindow.TexturePlusCheckBox.Checked = false;
+            }
+            else
+            {
+                Program.MainWindow.TexturePlusCheckBox.Enabled = false;
+                Program.MainWindow.TexturePlusCheckBox.Checked = false;
+            }
         }
     }
 }
