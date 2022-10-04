@@ -24,7 +24,7 @@ Supports the GOTY version on STEAM, GOG and EPIC GAMES.
 
 ## Download
 
-**See: [Current Release](https://github.com/neatodev/BmLauncher/releases/latest)**
+**See: [Current Release](https://github.com/neatodev/CityLauncher/releases/latest)**
 
 If you enjoy this application, please consider donating: 
 
