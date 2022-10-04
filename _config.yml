@@ -12,6 +12,9 @@ sidebar:
   - name: Nexusmods Page
     icon: <img src="Resources/nexus_icon.ico" height="16" width="16" />
     link: https://github.com/neatodev
+  - name: Donate
+    icon: <i class="fa-brands fa-paypal"></i>
+    link: https://www.paypal.com/donate/?hosted_button_id=LG7YTKP4JYN5S
     
 github: [metadata]
 color-scheme: auto
