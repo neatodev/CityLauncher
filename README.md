@@ -20,7 +20,7 @@ Supports the GOTY version on STEAM, GOG and EPIC GAMES.
 
 ## Preview
 
-![CityLauncher Preview](https://user-images.githubusercontent.com/49599979/193795228-2120ff8f-24f5-45a2-af87-5c5d74ceefaf.jpg)
+![CityLauncher Preview](https://user-images.githubusercontent.com/49599979/193801420-cb5784a0-abcf-4579-b07f-97cd0a1e0c70.png)
 
 ## Download
 
