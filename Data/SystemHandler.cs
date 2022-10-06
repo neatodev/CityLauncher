@@ -46,9 +46,46 @@ namespace CityLauncher
                 RegDirectory = Path.Combine(Registry.LocalMachine.ToString(), "SYSTEM\\ControlSet001\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}\\0001");
             }
 
+            var VRam = ConvertVRamValue((object)Registry.GetValue(RegDirectory, "HardwareInformation.qwMemorySize", 0));
+            if (VRam.Trim() == "")
+            {
+                return SetGPUNameVideoController();
+            }
             Nlog.Info("InitializeGPUValues - Recognized GPU as {0} with a total VRAM amount of {1}.", (string)Registry.GetValue(RegDirectory, "DriverDesc", "Could not find GPU name."), ConvertVRamValue((object)Registry.GetValue(RegDirectory, "HardwareInformation.qwMemorySize", 0)));
             return (string)Registry.GetValue(RegDirectory, "DriverDesc", "GPU not found.") + " " + ConvertVRamValue((object)Registry.GetValue(RegDirectory, "HardwareInformation.qwMemorySize", 0));
 
+        }
+
+        private string SetGPUNameVideoController()
+        {
+            List<string> GPUList = new();
+            ManagementObjectSearcher search = new("SELECT * FROM Win32_VideoController");
+            foreach (ManagementBaseObject o in search.Get())
+            {
+                ManagementObject obj = (ManagementObject)o;
+                foreach (PropertyData data in obj.Properties)
+                {
+                    if (data.Name == "Description")
+                    {
+                        GPUList.Add(data.Value.ToString());
+                    }
+                }
+            }
+            var GPU = GPUList[0];
+            if (GPUList.Count > 1)
+            {
+                foreach (string s in GPUList)
+                {
+                    if (!s.Contains("NVIDIA") || !s.Contains("AMD"))
+                    {
+                        continue;
+                    }
+                    GPU = s;
+                    break;
+                }
+            }
+            Nlog.Warn("SetGPUNameVideoController - Used fallback method to determine GPU as {0}. Could not correctly determine VRAM amount.", GPU);
+            return GPU;
         }
 
         ///<Returns VRAM value in GB in most cases.</Returns>.</summary>
