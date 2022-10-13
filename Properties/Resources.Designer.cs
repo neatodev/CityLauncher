@@ -63,9 +63,9 @@ namespace CityLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap About_Image_3_border {
+        internal static System.Drawing.Bitmap About_Image_4_border {
             get {
-                object obj = ResourceManager.GetObject("About_Image_3_border", resourceCulture);
+                object obj = ResourceManager.GetObject("About_Image_4_border", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

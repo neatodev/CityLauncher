@@ -2824,7 +2824,7 @@
             // 
             // AboutTab
             // 
-            this.AboutTab.BackgroundImage = global::CityLauncher.Properties.Resources.About_Image_3_border;
+            this.AboutTab.BackgroundImage = global::CityLauncher.Properties.Resources.About_Image_4_border;
             this.AboutTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.AboutTab.Controls.Add(this.PayPalLabel);
             this.AboutTab.Controls.Add(this.NeatoLabel);
