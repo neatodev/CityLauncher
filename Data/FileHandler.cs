@@ -111,8 +111,8 @@ namespace CityLauncher
 
             if (File.Exists(UserInputPath))
             {
-                string[] Lines = File.ReadAllLines(UserInputPath);
-                if (Lines.Length < 111)
+                string[] UserLines = File.ReadAllLines(UserInputPath);
+                if (UserLines.Length < 111)
                 {
                     File.Delete(UserInputPath);
                     CreateConfigFile(UserInputPath, Resources.UserInput);
@@ -124,8 +124,17 @@ namespace CityLauncher
                 CreateConfigFile(UserInputPath, Resources.UserInput);
                 Nlog.Warn("CheckConfigFilesExist - Can't find 'UserInput.ini'. Creating it now.");
             }
-
-            if (!File.Exists(BmInputPath))
+            if (File.Exists(BmInputPath))
+            {
+                string[] BMLines = File.ReadAllLines(BmInputPath);
+                if (BMLines.Length < 718)
+                {
+                    File.Delete(BmInputPath);
+                    CreateConfigFile(BmInputPath, Resources.BmInput);
+                    Nlog.Info("CheckConfigFilesExist - Overwriting the default 'BmInput.ini' file with a custom-made one.");
+                }
+            }
+            else if (!File.Exists(BmInputPath))
             {
                 CreateConfigFile(BmInputPath, Resources.BmInput);
                 Nlog.Warn("CheckConfigFilesExist - Can't find 'BmInput.ini'. Creating it now.");
