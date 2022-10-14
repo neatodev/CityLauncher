@@ -9,11 +9,11 @@ namespace CityLauncher
 
         public void InitDisplay()
         {
+            InitCommunityPatchSupport();
             InitDisplayBasic();
             InitDisplayAdvanced();
             InitColors();
             InitTexturePackFix();
-            InitCommunityPatchSupport();
             Program.MainWindow.DisplaySettingChanged = false;
             Program.MainWindow.ApplySettingsButton.Enabled = false;
             Nlog.Info("InitDisplay - Successfully initialized display settings.");

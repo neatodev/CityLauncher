@@ -741,11 +741,11 @@ namespace CityLauncher
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            DisplaySettingChanged = true;
-            if (checkBox1.Checked)
+            if (checkBox1.Checked && DisplaySettingChanged)
             {
                 MessageBox.Show("Only check this box if you're using the 'Arkham City Community Patch'.\nEnabling this option without the patch WILL CRASH YOUR GAME.", "Warning!", MessageBoxButtons.OK);
             }
+            DisplaySettingChanged = true;
         }
 
         private void checkBox1_MouseDown(object sender, MouseEventArgs e)
