@@ -568,7 +568,7 @@ namespace CityLauncher
         private void SetCommunityPatchCompatibility(bool Checked)
         {
             IniHandler.BmEngineData["Engine.Engine"]["bOnScreenKismetWarnings"] = Checked.ToString().ToUpper();
-            Nlog.Info("SetCommunityPatchCompatibility - Set compatibility to: {0}", Checked.ToString());
+            Nlog.Info("SetCommunityPatchCompatibility - Set compatibility to: {0}.", Checked.ToString());
         }
     }
 }
