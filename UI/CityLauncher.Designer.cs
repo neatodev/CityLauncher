@@ -186,6 +186,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
             this.DebugMenuButton = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
@@ -2158,7 +2159,7 @@
             this.AdvancedColorBox.Controls.Add(this.label12);
             this.AdvancedColorBox.Controls.Add(this.label9);
             this.AdvancedColorBox.ForeColor = System.Drawing.Color.Maroon;
-            this.AdvancedColorBox.Location = new System.Drawing.Point(3, 500);
+            this.AdvancedColorBox.Location = new System.Drawing.Point(3, 557);
             this.AdvancedColorBox.Name = "AdvancedColorBox";
             this.AdvancedColorBox.Size = new System.Drawing.Size(684, 421);
             this.AdvancedColorBox.TabIndex = 165;
@@ -2195,7 +2196,7 @@
             this.ShadowsValueLabel.AutoSize = true;
             this.ShadowsValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ShadowsValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.ShadowsValueLabel.Location = new System.Drawing.Point(618, 315);
+            this.ShadowsValueLabel.Location = new System.Drawing.Point(624, 315);
             this.ShadowsValueLabel.Name = "ShadowsValueLabel";
             this.ShadowsValueLabel.Size = new System.Drawing.Size(34, 26);
             this.ShadowsValueLabel.TabIndex = 178;
@@ -2208,7 +2209,7 @@
             this.MidtonesValueLabel.AutoSize = true;
             this.MidtonesValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MidtonesValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.MidtonesValueLabel.Location = new System.Drawing.Point(618, 238);
+            this.MidtonesValueLabel.Location = new System.Drawing.Point(624, 238);
             this.MidtonesValueLabel.Name = "MidtonesValueLabel";
             this.MidtonesValueLabel.Size = new System.Drawing.Size(34, 26);
             this.MidtonesValueLabel.TabIndex = 167;
@@ -2221,7 +2222,7 @@
             this.HighlightsValueLabel.AutoSize = true;
             this.HighlightsValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.HighlightsValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.HighlightsValueLabel.Location = new System.Drawing.Point(618, 161);
+            this.HighlightsValueLabel.Location = new System.Drawing.Point(624, 161);
             this.HighlightsValueLabel.Name = "HighlightsValueLabel";
             this.HighlightsValueLabel.Size = new System.Drawing.Size(34, 26);
             this.HighlightsValueLabel.TabIndex = 177;
@@ -2234,7 +2235,7 @@
             this.SaturationValueLabel.AutoSize = true;
             this.SaturationValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SaturationValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.SaturationValueLabel.Location = new System.Drawing.Point(618, 84);
+            this.SaturationValueLabel.Location = new System.Drawing.Point(624, 84);
             this.SaturationValueLabel.Name = "SaturationValueLabel";
             this.SaturationValueLabel.Size = new System.Drawing.Size(34, 26);
             this.SaturationValueLabel.TabIndex = 166;
@@ -2374,6 +2375,7 @@
             // groupBox4
             // 
             this.groupBox4.AutoSize = true;
+            this.groupBox4.Controls.Add(this.checkBox1);
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Controls.Add(this.DebugMenuButton);
             this.groupBox4.Controls.Add(this.label16);
@@ -2409,10 +2411,27 @@
             this.groupBox4.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox4.Location = new System.Drawing.Point(3, 6);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(684, 485);
+            this.groupBox4.Size = new System.Drawing.Size(684, 545);
             this.groupBox4.TabIndex = 181;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "MAIN";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.checkBox1.ForeColor = System.Drawing.Color.Black;
+            this.checkBox1.Location = new System.Drawing.Point(57, 215);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(257, 30);
+            this.checkBox1.TabIndex = 179;
+            this.checkBox1.Text = "Community Patch Support";
+            this.BasicToolTip.SetToolTip(this.checkBox1, "Only enable if you\'re using the \'Arkham City Community Patch\'. \r\nRIGHT CLICK to o" +
+        "pen the relevant Nexusmods page.");
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.checkBox1_MouseDown);
             // 
             // label15
             // 
@@ -2494,7 +2513,7 @@
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MouseSensitivityValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(628, 382);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(628, 406);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(30, 23);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2519,7 +2538,7 @@
             this.MouseSensitivityLabel.AutoSize = true;
             this.MouseSensitivityLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MouseSensitivityLabel.ForeColor = System.Drawing.Color.Black;
-            this.MouseSensitivityLabel.Location = new System.Drawing.Point(20, 382);
+            this.MouseSensitivityLabel.Location = new System.Drawing.Point(20, 406);
             this.MouseSensitivityLabel.Name = "MouseSensitivityLabel";
             this.MouseSensitivityLabel.Size = new System.Drawing.Size(157, 23);
             this.MouseSensitivityLabel.TabIndex = 153;
@@ -2529,7 +2548,7 @@
             // 
             // CustomFoV1Trackbar
             // 
-            this.CustomFoV1Trackbar.Location = new System.Drawing.Point(6, 260);
+            this.CustomFoV1Trackbar.Location = new System.Drawing.Point(6, 284);
             this.CustomFoV1Trackbar.Maximum = 150;
             this.CustomFoV1Trackbar.Minimum = 75;
             this.CustomFoV1Trackbar.Name = "CustomFoV1Trackbar";
@@ -2540,7 +2559,7 @@
             // 
             // MouseSensitivityTrackbar
             // 
-            this.MouseSensitivityTrackbar.Location = new System.Drawing.Point(6, 408);
+            this.MouseSensitivityTrackbar.Location = new System.Drawing.Point(6, 432);
             this.MouseSensitivityTrackbar.Maximum = 100;
             this.MouseSensitivityTrackbar.Minimum = 1;
             this.MouseSensitivityTrackbar.Name = "MouseSensitivityTrackbar";
@@ -2570,7 +2589,7 @@
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CustomFoV2ValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(628, 308);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(628, 332);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(30, 23);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2595,7 +2614,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(20, 308);
+            this.label10.Location = new System.Drawing.Point(20, 332);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(171, 23);
             this.label10.TabIndex = 162;
@@ -2617,7 +2636,7 @@
             // 
             // CustomFoV2Trackbar
             // 
-            this.CustomFoV2Trackbar.Location = new System.Drawing.Point(6, 334);
+            this.CustomFoV2Trackbar.Location = new System.Drawing.Point(6, 358);
             this.CustomFoV2Trackbar.Maximum = 150;
             this.CustomFoV2Trackbar.Minimum = 75;
             this.CustomFoV2Trackbar.Name = "CustomFoV2Trackbar";
@@ -2751,9 +2770,10 @@
             this.CustomFoV1ValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomFoV1ValueLabel.AutoSize = true;
+            this.CustomFoV1ValueLabel.BackColor = System.Drawing.SystemColors.Control;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CustomFoV1ValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(628, 234);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(628, 258);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(30, 23);
             this.CustomFoV1ValueLabel.TabIndex = 156;
@@ -2778,7 +2798,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(20, 234);
+            this.label7.Location = new System.Drawing.Point(20, 258);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(171, 23);
             this.label7.TabIndex = 154;
@@ -2790,7 +2810,7 @@
             this.MouseSmoothingBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.MouseSmoothingBox.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MouseSmoothingBox.ForeColor = System.Drawing.Color.Black;
-            this.MouseSmoothingBox.Location = new System.Drawing.Point(126, 187);
+            this.MouseSmoothingBox.Location = new System.Drawing.Point(126, 186);
             this.MouseSmoothingBox.Name = "MouseSmoothingBox";
             this.MouseSmoothingBox.Size = new System.Drawing.Size(188, 30);
             this.MouseSmoothingBox.TabIndex = 149;
@@ -3286,5 +3306,6 @@
         public CheckBox TexturePlusCheckBox;
         public Button TextureFixButton;
         public ToolTip BasicToolTip;
+        public CheckBox checkBox1;
     }
 }

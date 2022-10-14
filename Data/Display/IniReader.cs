@@ -13,6 +13,7 @@ namespace CityLauncher
             InitDisplayAdvanced();
             InitColors();
             InitTexturePackFix();
+            InitCommunityPatchSupport();
             Program.MainWindow.DisplaySettingChanged = false;
             Program.MainWindow.ApplySettingsButton.Enabled = false;
             Nlog.Info("InitDisplay - Successfully initialized display settings.");
@@ -389,6 +390,18 @@ namespace CityLauncher
 
             Nlog.Info("InitTexturePackFix - Texture Pack is enabled: {0} || Texture Pack Plus is enabled: {1}.", Program.IniHandler.TexPackEnabled.All(x => x).ToString(), Program.IniHandler.TexPackPlusEnabled.All(x => x).ToString());
 
+        }
+
+        private void InitCommunityPatchSupport()
+        {
+            if (IniHandler.BmEngineData["Engine.Engine"]["bOnScreenKismetWarnings"] == "TRUE")
+            {
+                Program.MainWindow.checkBox1.Checked = true;
+            }
+            else
+            {
+                Program.MainWindow.checkBox1.Checked = false;
+            }
         }
     }
 }

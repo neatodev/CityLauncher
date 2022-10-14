@@ -32,6 +32,7 @@ namespace CityLauncher
             WriteBmEngineAdvanced();
             WriteColors();
             WriteTextureGroupLines();
+            SetCommunityPatchCompatibility(Program.MainWindow.checkBox1.Checked);
             WriteToTempFile();
             MergeBmEngine();
             WriteToUserEngine();
@@ -562,6 +563,12 @@ namespace CityLauncher
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] = Program.IniHandler.TexturePackDefaults[2];
             }
             Nlog.Info("WriteTextureGroupLines - Set Texture Pack Fix to: {0} || Set Texture Pack Plus to: {1}.", Program.IniHandler.TexPackEnabled.All(x => x).ToString(), Program.IniHandler.TexPackPlusEnabled.All(x => x).ToString());
+        }
+
+        private void SetCommunityPatchCompatibility(bool Checked)
+        {
+            IniHandler.BmEngineData["Engine.Engine"]["bOnScreenKismetWarnings"] = Checked.ToString().ToUpper();
+            Nlog.Info("SetCommunityPatchCompatibility - Set compatibility to: {0}", Checked.ToString());
         }
     }
 }

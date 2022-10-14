@@ -148,9 +148,6 @@
   <data name="BmEngine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BmEngine.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="UserInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UserInput.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
   <data name="centre_camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\centre_camera.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
@@ -172,9 +169,6 @@
   <data name="startup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\startup.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="BmInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BmInput.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
   <data name="Default_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Default_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -195,5 +189,11 @@
   </data>
   <data name="About_Image_4_border" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\About_Image_4_border.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BmInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bminput.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="UserInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\userinput.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>
