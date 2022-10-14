@@ -2196,7 +2196,7 @@
             this.ShadowsValueLabel.AutoSize = true;
             this.ShadowsValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ShadowsValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.ShadowsValueLabel.Location = new System.Drawing.Point(624, 315);
+            this.ShadowsValueLabel.Location = new System.Drawing.Point(619, 315);
             this.ShadowsValueLabel.Name = "ShadowsValueLabel";
             this.ShadowsValueLabel.Size = new System.Drawing.Size(34, 26);
             this.ShadowsValueLabel.TabIndex = 178;
@@ -2209,7 +2209,7 @@
             this.MidtonesValueLabel.AutoSize = true;
             this.MidtonesValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MidtonesValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.MidtonesValueLabel.Location = new System.Drawing.Point(624, 238);
+            this.MidtonesValueLabel.Location = new System.Drawing.Point(619, 238);
             this.MidtonesValueLabel.Name = "MidtonesValueLabel";
             this.MidtonesValueLabel.Size = new System.Drawing.Size(34, 26);
             this.MidtonesValueLabel.TabIndex = 167;
@@ -2222,7 +2222,7 @@
             this.HighlightsValueLabel.AutoSize = true;
             this.HighlightsValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.HighlightsValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.HighlightsValueLabel.Location = new System.Drawing.Point(624, 161);
+            this.HighlightsValueLabel.Location = new System.Drawing.Point(619, 161);
             this.HighlightsValueLabel.Name = "HighlightsValueLabel";
             this.HighlightsValueLabel.Size = new System.Drawing.Size(34, 26);
             this.HighlightsValueLabel.TabIndex = 177;
@@ -2235,7 +2235,7 @@
             this.SaturationValueLabel.AutoSize = true;
             this.SaturationValueLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SaturationValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.SaturationValueLabel.Location = new System.Drawing.Point(624, 84);
+            this.SaturationValueLabel.Location = new System.Drawing.Point(619, 84);
             this.SaturationValueLabel.Name = "SaturationValueLabel";
             this.SaturationValueLabel.Size = new System.Drawing.Size(34, 26);
             this.SaturationValueLabel.TabIndex = 166;
