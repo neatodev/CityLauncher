@@ -2763,7 +2763,9 @@
             this.SpeedRunLabel.Size = new System.Drawing.Size(86, 23);
             this.SpeedRunLabel.TabIndex = 147;
             this.SpeedRunLabel.Text = "Speedrun";
-            this.BasicToolTip.SetToolTip(this.SpeedRunLabel, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.");
+            this.BasicToolTip.SetToolTip(this.SpeedRunLabel, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.\r\nRIGH" +
+        "T CLICK to open the guide in your browser.");
+            this.SpeedRunLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SpeedRunLabel_MouseDown);
             // 
             // CustomFoV1ValueLabel
             // 
@@ -2789,9 +2791,11 @@
             this.SpeedRunButton.Size = new System.Drawing.Size(175, 35);
             this.SpeedRunButton.TabIndex = 148;
             this.SpeedRunButton.Text = "SpeedRun";
-            this.BasicToolTip.SetToolTip(this.SpeedRunButton, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.");
+            this.BasicToolTip.SetToolTip(this.SpeedRunButton, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.\r\nRIGH" +
+        "T CLICK to open the guide in your browser.");
             this.SpeedRunButton.UseVisualStyleBackColor = true;
             this.SpeedRunButton.Click += new System.EventHandler(this.SpeedRunButton_Click);
+            this.SpeedRunButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SpeedRunButton_MouseDown);
             // 
             // label7
             // 

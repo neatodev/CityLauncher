@@ -755,5 +755,21 @@ namespace CityLauncher
                 Process.Start(new ProcessStartInfo { FileName = @"https://www.nexusmods.com/batmanarkhamcity/mods/1", UseShellExecute = true });
             }
         }
+
+        private void SpeedRunButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Process.Start(new ProcessStartInfo { FileName = @"https://web.archive.org/web/20221015040849/https://www.speedrun.com/arkhamcity/guide/xiqk2", UseShellExecute = true });
+            }
+        }
+
+        private void SpeedRunLabel_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Process.Start(new ProcessStartInfo { FileName = @"https://web.archive.org/web/20221015040849/https://www.speedrun.com/arkhamcity/guide/xiqk2", UseShellExecute = true });
+            }
+        }
     }
 }
