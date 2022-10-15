@@ -46,12 +46,12 @@ For the *GOG* version, click the icon next to the PLAY button and select "Manage
 To achieve the best results when using the Launcher, you should install the Calibri font for 
 
 Protontricks:
-`protontricks 35140 -q calibri`
+`protontricks 200260 -q calibri`
 
 or
 
 Winetricks:
-`WINEPREFIX=<path-to-SteamLibrary>/steamapps/compatdata/35140/pfx winetricks -q calibri`
+`WINEPREFIX=<path-to-SteamLibrary>/steamapps/compatdata/200260/pfx winetricks -q calibri`
 
 ## Bug Reports
 
