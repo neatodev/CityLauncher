@@ -1110,7 +1110,7 @@
             this.ResetControlButton.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ResetControlButton.Location = new System.Drawing.Point(3, 1061);
             this.ResetControlButton.Name = "ResetControlButton";
-            this.ResetControlButton.Size = new System.Drawing.Size(678, 44);
+            this.ResetControlButton.Size = new System.Drawing.Size(683, 44);
             this.ResetControlButton.TabIndex = 3;
             this.ResetControlButton.Text = "RESET CONTROLS";
             this.BasicToolTip.SetToolTip(this.ResetControlButton, "Reverts keyboard mapping to vanilla setting. Will affect miscellaneous keys.");
