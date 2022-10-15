@@ -1800,7 +1800,7 @@
             this.CWDisarmFixLabel.AutoSize = true;
             this.CWDisarmFixLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CWDisarmFixLabel.ForeColor = System.Drawing.Color.Black;
-            this.CWDisarmFixLabel.Location = new System.Drawing.Point(395, 402);
+            this.CWDisarmFixLabel.Location = new System.Drawing.Point(395, 401);
             this.CWDisarmFixLabel.Name = "CWDisarmFixLabel";
             this.CWDisarmFixLabel.Size = new System.Drawing.Size(94, 46);
             this.CWDisarmFixLabel.TabIndex = 139;
@@ -1823,7 +1823,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(436, 330);
+            this.label8.Location = new System.Drawing.Point(436, 327);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 69);
             this.label8.TabIndex = 107;
@@ -1835,7 +1835,7 @@
             this.CapeStunLabel.AutoSize = true;
             this.CapeStunLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CapeStunLabel.ForeColor = System.Drawing.Color.Black;
-            this.CapeStunLabel.Location = new System.Drawing.Point(398, 255);
+            this.CapeStunLabel.Location = new System.Drawing.Point(398, 254);
             this.CapeStunLabel.Name = "CapeStunLabel";
             this.CapeStunLabel.Size = new System.Drawing.Size(89, 23);
             this.CapeStunLabel.TabIndex = 141;
@@ -1846,7 +1846,7 @@
             this.DetectiveModeLabel.AutoSize = true;
             this.DetectiveModeLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DetectiveModeLabel.ForeColor = System.Drawing.Color.Black;
-            this.DetectiveModeLabel.Location = new System.Drawing.Point(350, 296);
+            this.DetectiveModeLabel.Location = new System.Drawing.Point(350, 295);
             this.DetectiveModeLabel.Name = "DetectiveModeLabel";
             this.DetectiveModeLabel.Size = new System.Drawing.Size(138, 23);
             this.DetectiveModeLabel.TabIndex = 9;
@@ -1977,7 +1977,7 @@
             this.GadgetSecLabel.AutoSize = true;
             this.GadgetSecLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.GadgetSecLabel.ForeColor = System.Drawing.Color.Black;
-            this.GadgetSecLabel.Location = new System.Drawing.Point(335, 196);
+            this.GadgetSecLabel.Location = new System.Drawing.Point(335, 195);
             this.GadgetSecLabel.Name = "GadgetSecLabel";
             this.GadgetSecLabel.Size = new System.Drawing.Size(153, 46);
             this.GadgetSecLabel.TabIndex = 36;
