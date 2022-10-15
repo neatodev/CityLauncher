@@ -740,7 +740,7 @@
             this.AntiAliasingBox.Size = new System.Drawing.Size(152, 27);
             this.AntiAliasingBox.TabIndex = 9;
             this.BasicToolTip.SetToolTip(this.AntiAliasingBox, "Cleans up edge aliasing. MSAA may induce stutter. Reshade SMAA suggested for shar" +
-        "p and stable AA (see \'About\' section).");
+        "p and stable AA.");
             this.AntiAliasingBox.SelectedIndexChanged += new System.EventHandler(this.AntiAliasingBox_SelectedIndexChanged);
             // 
             // AnisoBox
@@ -816,7 +816,7 @@
             this.AntiAliasingLabel.TabIndex = 1;
             this.AntiAliasingLabel.Text = "Anti-Aliasing";
             this.BasicToolTip.SetToolTip(this.AntiAliasingLabel, "Cleans up edge aliasing. MSAA may induce stutter. Reshade SMAA suggested for shar" +
-        "p and stable AA (see \'About\' section).");
+        "p and stable AA.");
             // 
             // MaxShadowLabel
             // 
@@ -949,7 +949,8 @@
             this.ResetDisplayButton.Size = new System.Drawing.Size(152, 59);
             this.ResetDisplayButton.TabIndex = 4;
             this.ResetDisplayButton.Text = "RESET DISPLAY";
-            this.BasicToolTip.SetToolTip(this.ResetDisplayButton, "Resets display settings to their defaults. ");
+            this.BasicToolTip.SetToolTip(this.ResetDisplayButton, "Resets display settings to their defaults.\r\nWill affect \'Community Patch Support\'" +
+        " setting.");
             this.ResetDisplayButton.UseVisualStyleBackColor = true;
             this.ResetDisplayButton.Click += new System.EventHandler(this.ResetDisplayButton_Click);
             // 
@@ -2159,7 +2160,7 @@
             this.AdvancedColorBox.Controls.Add(this.label12);
             this.AdvancedColorBox.Controls.Add(this.label9);
             this.AdvancedColorBox.ForeColor = System.Drawing.Color.Maroon;
-            this.AdvancedColorBox.Location = new System.Drawing.Point(3, 557);
+            this.AdvancedColorBox.Location = new System.Drawing.Point(3, 556);
             this.AdvancedColorBox.Name = "AdvancedColorBox";
             this.AdvancedColorBox.Size = new System.Drawing.Size(684, 421);
             this.AdvancedColorBox.TabIndex = 165;
@@ -2411,7 +2412,7 @@
             this.groupBox4.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox4.Location = new System.Drawing.Point(3, 6);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(684, 545);
+            this.groupBox4.Size = new System.Drawing.Size(684, 542);
             this.groupBox4.TabIndex = 181;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "MAIN";
@@ -2763,8 +2764,9 @@
             this.SpeedRunLabel.Size = new System.Drawing.Size(86, 23);
             this.SpeedRunLabel.TabIndex = 147;
             this.SpeedRunLabel.Text = "Speedrun";
-            this.BasicToolTip.SetToolTip(this.SpeedRunLabel, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.\r\nRIGH" +
-        "T CLICK to open the guide in your browser.");
+            this.BasicToolTip.SetToolTip(this.SpeedRunLabel, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.\r\n\'Mou" +
+        "sewheel Up\' or \'Mousewheel Down\' are recommended for this setting.\r\nRIGHT CLICK " +
+        "to open the guide in your browser.");
             this.SpeedRunLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SpeedRunLabel_MouseDown);
             // 
             // CustomFoV1ValueLabel
@@ -2791,8 +2793,9 @@
             this.SpeedRunButton.Size = new System.Drawing.Size(175, 35);
             this.SpeedRunButton.TabIndex = 148;
             this.SpeedRunButton.Text = "SpeedRun";
-            this.BasicToolTip.SetToolTip(this.SpeedRunButton, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.\r\nRIGH" +
-        "T CLICK to open the guide in your browser.");
+            this.BasicToolTip.SetToolTip(this.SpeedRunButton, "Maps speedrun key based on https://www.speedrun.com/arkhamcity/guide/xiqk2.\r\n\'Mou" +
+        "sewheel Up\' or \'Mousewheel Down\' are recommended for this setting.\r\nRIGHT CLICK " +
+        "to open the guide in your browser.");
             this.SpeedRunButton.UseVisualStyleBackColor = true;
             this.SpeedRunButton.Click += new System.EventHandler(this.SpeedRunButton_Click);
             this.SpeedRunButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SpeedRunButton_MouseDown);
