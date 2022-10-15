@@ -698,7 +698,10 @@ namespace CityLauncher
 
         private void StartGameButton_MouseDown(object sender, MouseEventArgs e)
         {
-            this.StartGameButton.Image = (Image)Properties.Resources.Phase3;
+            if (e.Button == MouseButtons.Left)
+            {
+                this.StartGameButton.Image = (Image)Properties.Resources.Phase3;
+            }
         }
 
         private void TextureFixButton_Click(object sender, EventArgs e)
