@@ -1113,7 +1113,7 @@
             this.ResetControlButton.Size = new System.Drawing.Size(683, 44);
             this.ResetControlButton.TabIndex = 3;
             this.ResetControlButton.Text = "RESET CONTROLS";
-            this.BasicToolTip.SetToolTip(this.ResetControlButton, "Reverts keyboard mapping to vanilla setting. Will affect miscellaneous keys.");
+            this.BasicToolTip.SetToolTip(this.ResetControlButton, "Reverts keyboard mapping to vanilla setting. Will affect extra settings.");
             this.ResetControlButton.UseVisualStyleBackColor = true;
             this.ResetControlButton.Click += new System.EventHandler(this.ResetControlButton_Click);
             // 
@@ -2428,7 +2428,7 @@
             this.checkBox1.TabIndex = 179;
             this.checkBox1.Text = "Community Patch Support";
             this.BasicToolTip.SetToolTip(this.checkBox1, "Only enable if you\'re using the \'Arkham City Community Patch\'. \r\nRIGHT CLICK to o" +
-        "pen the relevant Nexusmods page.");
+        "pen the relevant Nexusmods page in your browser.");
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             this.checkBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.checkBox1_MouseDown);
