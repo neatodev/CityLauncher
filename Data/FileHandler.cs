@@ -126,11 +126,13 @@ namespace CityLauncher
             }
             if (File.Exists(BmInputPath))
             {
+                BmInput.IsReadOnly = false;
                 string[] BMLines = File.ReadAllLines(BmInputPath);
                 if (BMLines.Length < 718)
                 {
                     File.Delete(BmInputPath);
                     CreateConfigFile(BmInputPath, Resources.BmInput);
+                    BmInput.IsReadOnly = true;
                     Nlog.Info("CheckConfigFilesExist - Overwriting the default 'BmInput.ini' file with a custom-made one.");
                 }
             }
