@@ -33,6 +33,11 @@ namespace CityLauncher
                     Program.MainWindow.ResolutionBox.SelectedIndex = Program.MainWindow.ResolutionBox.Items.IndexOf(Resolution);
                 }
             }
+            if (Program.MainWindow.ResolutionBox.Text == "".Trim())
+            {
+                Program.MainWindow.ResolutionBox.Items.Insert(Program.MainWindow.ResolutionBox.Items.Count, ResX + "x" + ResY);
+                Program.MainWindow.ResolutionBox.SelectedIndex = Program.MainWindow.ResolutionBox.Items.Count - 1;
+            }
 
             // Fullscreen
             if (IniHandler.BmEngineData["SystemSettings"]["Fullscreen"] == "True")
