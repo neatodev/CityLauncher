@@ -636,13 +636,13 @@
             this.ShadowDrawLabel.AutoSize = true;
             this.ShadowDrawLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ShadowDrawLabel.ForeColor = System.Drawing.Color.Black;
-            this.ShadowDrawLabel.Location = new System.Drawing.Point(345, 201);
+            this.ShadowDrawLabel.Location = new System.Drawing.Point(347, 201);
             this.ShadowDrawLabel.Name = "ShadowDrawLabel";
-            this.ShadowDrawLabel.Size = new System.Drawing.Size(166, 19);
+            this.ShadowDrawLabel.Size = new System.Drawing.Size(164, 19);
             this.ShadowDrawLabel.TabIndex = 36;
-            this.ShadowDrawLabel.Text = "Shadow Draw Distance";
-            this.BasicToolTip.SetToolTip(this.ShadowDrawLabel, "Increases shadow draw distance. Directx 11 is recommended before pushing this set" +
-        "ting.");
+            this.ShadowDrawLabel.Text = "Detail Render Distance";
+            this.BasicToolTip.SetToolTip(this.ShadowDrawLabel, "Increases shadow and tessellation draw distance. Tessellation range only increase" +
+        "s in interiors.");
             // 
             // MVSSBox
             // 

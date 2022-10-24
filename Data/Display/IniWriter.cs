@@ -465,6 +465,26 @@ namespace CityLauncher
                 3 => "4.000000",
                 _ => "1.000000",
             };
+
+            switch (Program.MainWindow.ShadowDrawDistBox.SelectedIndex)
+            {
+                case 1:
+                    IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"] = "1.500000";
+                    IniHandler.BmEngineData["SystemSettings"]["TessellationDistance"] = "2000.000000";
+                    break;
+                case 2:
+                    IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"] = "2.000000";
+                    IniHandler.BmEngineData["SystemSettings"]["TessellationDistance"] = "3000.000000";
+                    break;
+                case 3:
+                    IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"] = "4.000000";
+                    IniHandler.BmEngineData["SystemSettings"]["TessellationDistance"] = "4000.000000";
+                    break;
+                default:
+                    IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"] = "1.000000";
+                    IniHandler.BmEngineData["SystemSettings"]["TessellationDistance"] = "1000.000000";
+                    break;
+            }
             Nlog.Info("WriteBmEngineAdvanced - Set Shadow Draw Distance to {0}", IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"]);
 
             // PhysX
