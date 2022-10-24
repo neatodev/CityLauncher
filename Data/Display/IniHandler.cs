@@ -22,8 +22,8 @@ namespace CityLauncher
                                                "(MinLODSize=128,MaxLODSize=8192,LODBias=0,MinMagFilter=Aniso,MipFilter=Point,MipGenSettings=TMGS_SimpleAverage)",
                                                "(MinLODSize=1024,MaxLODSize=4096,LODBias=0,MinMagFilter=Aniso,MipFilter=Point,MipGenSettings=TMGS_SimpleAverage)"};
 
-        public bool[] TexPackEnabled = { false, false, false, false };
-        public bool[] TexPackPlusEnabled = { false, false };
+        public bool[] TexPackEnabled = { false, false, false, false, false };
+        public bool[] TexPackPlusEnabled = { false, false, false };
 
         public IniHandler()
         {

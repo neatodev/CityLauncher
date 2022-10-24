@@ -353,24 +353,34 @@ namespace CityLauncher
                 Program.IniHandler.TexPackEnabled[1] = true;
             }
             //TEXTUREGROUP_World_Hi
-            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World_Hi"] == Program.IniHandler.TexturePackEnabled[1])
+            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World_Hi"] == Program.IniHandler.TexturePackEnabled[2])
             {
                 Program.IniHandler.TexPackEnabled[2] = true;
             }
             //TEXTUREGROUP_WorldNormalMap_Hi
-            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap_Hi"] == Program.IniHandler.TexturePackEnabled[1])
+            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap_Hi"] == Program.IniHandler.TexturePackEnabled[2])
             {
                 Program.IniHandler.TexPackEnabled[3] = true;
             }
+            //TEXTUREGROUP_UI
+            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_UI"] == Program.IniHandler.TexturePackEnabled[3])
+            {
+                Program.IniHandler.TexPackEnabled[4] = true;
+            }
             //TEXTUREGROUP_World
-            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] == Program.IniHandler.TexturePackEnabled[1])
+            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] == Program.IniHandler.TexturePackEnabled[2])
             {
                 Program.IniHandler.TexPackPlusEnabled[0] = true;
             }
             //TEXTUREGROUP_WorldNormalMap
-            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] == Program.IniHandler.TexturePackEnabled[1])
+            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] == Program.IniHandler.TexturePackEnabled[2])
             {
                 Program.IniHandler.TexPackPlusEnabled[1] = true;
+            }
+            //TEXTUREGROUP_WorldSpecular
+            if (IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldSpecular"] == Program.IniHandler.TexturePackDefaults[1])
+            {
+                Program.IniHandler.TexPackPlusEnabled[2] = true;
             }
 
             if (Program.IniHandler.TexPackEnabled.All(x => x) && Program.IniHandler.TexPackPlusEnabled.All(x => x))

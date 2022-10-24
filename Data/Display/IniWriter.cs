@@ -548,7 +548,7 @@ namespace CityLauncher
                 //TEXTUREGROUP_CharacterNormalMap
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_CharacterNormalMap"] = Program.IniHandler.TexturePackEnabled[1];
                 //TEXTUREGROUP_World_Hi
-                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World_Hi"] = Program.IniHandler.TexturePackEnabled[1];
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World_Hi"] = Program.IniHandler.TexturePackEnabled[2];
                 //TEXTUREGROUP_WorldNormalMap_Hi
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap_Hi"] = Program.IniHandler.TexturePackEnabled[2];
                 //TEXTUREGROUP_UI
