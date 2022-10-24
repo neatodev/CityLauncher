@@ -550,14 +550,18 @@ namespace CityLauncher
                 //TEXTUREGROUP_World_Hi
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World_Hi"] = Program.IniHandler.TexturePackEnabled[1];
                 //TEXTUREGROUP_WorldNormalMap_Hi
-                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap_Hi"] = Program.IniHandler.TexturePackEnabled[1];
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap_Hi"] = Program.IniHandler.TexturePackEnabled[2];
+                //TEXTUREGROUP_UI
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_UI"] = Program.IniHandler.TexturePackEnabled[3];
 
                 if (Program.MainWindow.TexturePlusCheckBox.Enabled && Program.MainWindow.TexturePlusCheckBox.Checked)
                 {
                     //TEXTUREGROUP_World
-                    IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] = Program.IniHandler.TexturePackEnabled[1];
+                    IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] = Program.IniHandler.TexturePackEnabled[2];
                     //TEXTUREGROUP_WorldNormalMap
-                    IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] = Program.IniHandler.TexturePackEnabled[1];
+                    IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] = Program.IniHandler.TexturePackEnabled[2];
+                    //TEXTUREGROUP_WorldSpecular
+                    IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldSpecular"] = Program.IniHandler.TexturePackDefaults[1];
                 }
                 else
                 {
@@ -565,6 +569,8 @@ namespace CityLauncher
                     IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] = Program.IniHandler.TexturePackDefaults[2];
                     //TEXTUREGROUP_WorldNormalMap
                     IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] = Program.IniHandler.TexturePackDefaults[2];
+                    //TEXTUREGROUP_WorldSpecular
+                    IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldSpecular"] = Program.IniHandler.TexturePackDefaults[2];
                 }
             }
             else
@@ -581,6 +587,10 @@ namespace CityLauncher
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_World"] = Program.IniHandler.TexturePackDefaults[2];
                 //TEXTUREGROUP_WorldNormalMap
                 IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldNormalMap"] = Program.IniHandler.TexturePackDefaults[2];
+                //TEXTUREGROUP_WorldSpecular
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_WorldSpecular"] = Program.IniHandler.TexturePackDefaults[2];
+                //TEXTUREGROUP_UI
+                IniHandler.BmEngineData["SystemSettings"]["TEXTUREGROUP_UI"] = Program.IniHandler.TexturePackDefaults[3];
             }
             Nlog.Info("WriteTextureGroupLines - Set Texture Pack Fix to: {0} || Set Texture Pack Plus to: {1}.", Program.IniHandler.TexPackEnabled.All(x => x).ToString(), Program.IniHandler.TexPackPlusEnabled.All(x => x).ToString());
         }
