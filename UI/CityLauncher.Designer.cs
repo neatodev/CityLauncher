@@ -386,7 +386,7 @@
             this.ShadowSoftnessLabel.AutoSize = true;
             this.ShadowSoftnessLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ShadowSoftnessLabel.ForeColor = System.Drawing.Color.Black;
-            this.ShadowSoftnessLabel.Location = new System.Drawing.Point(387, 234);
+            this.ShadowSoftnessLabel.Location = new System.Drawing.Point(387, 201);
             this.ShadowSoftnessLabel.Name = "ShadowSoftnessLabel";
             this.ShadowSoftnessLabel.Size = new System.Drawing.Size(124, 19);
             this.ShadowSoftnessLabel.TabIndex = 52;
@@ -404,7 +404,7 @@
             "Balanced",
             "Soft (Default)",
             "Very Soft"});
-            this.ShadowSoftnessBox.Location = new System.Drawing.Point(517, 231);
+            this.ShadowSoftnessBox.Location = new System.Drawing.Point(517, 198);
             this.ShadowSoftnessBox.Name = "ShadowSoftnessBox";
             this.ShadowSoftnessBox.Size = new System.Drawing.Size(152, 27);
             this.ShadowSoftnessBox.TabIndex = 51;
@@ -572,13 +572,13 @@
             this.PoolsizeBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PoolsizeBox.FormattingEnabled = true;
             this.PoolsizeBox.Items.AddRange(new object[] {
-            "512 (Default)",
-            "1024",
-            "2048",
-            "3072",
-            "4096",
+            "512MB (Default)",
+            "1GB",
+            "2GB",
+            "3GB",
+            "4GB",
             "Infinite"});
-            this.PoolsizeBox.Location = new System.Drawing.Point(124, 231);
+            this.PoolsizeBox.Location = new System.Drawing.Point(129, 132);
             this.PoolsizeBox.Name = "PoolsizeBox";
             this.PoolsizeBox.Size = new System.Drawing.Size(152, 27);
             this.PoolsizeBox.TabIndex = 40;
@@ -590,11 +590,11 @@
             this.PoolsizeLabel.AutoSize = true;
             this.PoolsizeLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PoolsizeLabel.ForeColor = System.Drawing.Color.Black;
-            this.PoolsizeLabel.Location = new System.Drawing.Point(54, 234);
+            this.PoolsizeLabel.Location = new System.Drawing.Point(1, 135);
             this.PoolsizeLabel.Name = "PoolsizeLabel";
-            this.PoolsizeLabel.Size = new System.Drawing.Size(64, 19);
+            this.PoolsizeLabel.Size = new System.Drawing.Size(122, 19);
             this.PoolsizeLabel.TabIndex = 39;
-            this.PoolsizeLabel.Text = "Poolsize";
+            this.PoolsizeLabel.Text = "Texture Memory";
             this.BasicToolTip.SetToolTip(this.PoolsizeLabel, resources.GetString("PoolsizeLabel.ToolTip"));
             // 
             // PhysXBox
@@ -606,7 +606,7 @@
             "Off",
             "Medium",
             "High"});
-            this.PhysXBox.Location = new System.Drawing.Point(124, 198);
+            this.PhysXBox.Location = new System.Drawing.Point(129, 231);
             this.PhysXBox.Name = "PhysXBox";
             this.PhysXBox.Size = new System.Drawing.Size(152, 27);
             this.PhysXBox.TabIndex = 38;
@@ -623,12 +623,12 @@
             "Medium",
             "High",
             "Very High"});
-            this.ShadowDrawDistBox.Location = new System.Drawing.Point(517, 198);
+            this.ShadowDrawDistBox.Location = new System.Drawing.Point(517, 231);
             this.ShadowDrawDistBox.Name = "ShadowDrawDistBox";
             this.ShadowDrawDistBox.Size = new System.Drawing.Size(152, 27);
             this.ShadowDrawDistBox.TabIndex = 37;
-            this.BasicToolTip.SetToolTip(this.ShadowDrawDistBox, "Increases shadow draw distance. Directx 11 is recommended before pushing this set" +
-        "ting.");
+            this.BasicToolTip.SetToolTip(this.ShadowDrawDistBox, "Increases shadow and tessellation draw distance. Tessellation range only increase" +
+        "s in interiors.\r\n");
             this.ShadowDrawDistBox.SelectedIndexChanged += new System.EventHandler(this.ShadowDrawDistBox_SelectedIndexChanged);
             // 
             // ShadowDrawLabel
@@ -636,7 +636,7 @@
             this.ShadowDrawLabel.AutoSize = true;
             this.ShadowDrawLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ShadowDrawLabel.ForeColor = System.Drawing.Color.Black;
-            this.ShadowDrawLabel.Location = new System.Drawing.Point(347, 201);
+            this.ShadowDrawLabel.Location = new System.Drawing.Point(347, 234);
             this.ShadowDrawLabel.Name = "ShadowDrawLabel";
             this.ShadowDrawLabel.Size = new System.Drawing.Size(164, 19);
             this.ShadowDrawLabel.TabIndex = 36;
@@ -654,7 +654,7 @@
             "Medium",
             "High",
             "Very High"});
-            this.MVSSBox.Location = new System.Drawing.Point(124, 132);
+            this.MVSSBox.Location = new System.Drawing.Point(129, 165);
             this.MVSSBox.Name = "MVSSBox";
             this.MVSSBox.Size = new System.Drawing.Size(152, 27);
             this.MVSSBox.TabIndex = 35;
@@ -685,7 +685,7 @@
             this.PhysXLabel.AutoSize = true;
             this.PhysXLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PhysXLabel.ForeColor = System.Drawing.Color.Black;
-            this.PhysXLabel.Location = new System.Drawing.Point(20, 201);
+            this.PhysXLabel.Location = new System.Drawing.Point(25, 234);
             this.PhysXLabel.Name = "PhysXLabel";
             this.PhysXLabel.Size = new System.Drawing.Size(98, 19);
             this.PhysXLabel.TabIndex = 24;
@@ -697,7 +697,7 @@
             this.MVSSLabel.AutoSize = true;
             this.MVSSLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MVSSLabel.ForeColor = System.Drawing.Color.Black;
-            this.MVSSLabel.Location = new System.Drawing.Point(3, 135);
+            this.MVSSLabel.Location = new System.Drawing.Point(8, 168);
             this.MVSSLabel.Name = "MVSSLabel";
             this.MVSSLabel.Size = new System.Drawing.Size(115, 19);
             this.MVSSLabel.TabIndex = 23;
@@ -714,7 +714,7 @@
             "Subtle",
             "Medium (Default)",
             "Intense"});
-            this.HbaoBox.Location = new System.Drawing.Point(124, 165);
+            this.HbaoBox.Location = new System.Drawing.Point(129, 198);
             this.HbaoBox.Name = "HbaoBox";
             this.HbaoBox.Size = new System.Drawing.Size(152, 27);
             this.HbaoBox.TabIndex = 14;
@@ -735,7 +735,7 @@
             "2x MSAA",
             "4x MSAA",
             "8x MSAA"});
-            this.AntiAliasingBox.Location = new System.Drawing.Point(124, 99);
+            this.AntiAliasingBox.Location = new System.Drawing.Point(129, 99);
             this.AntiAliasingBox.Name = "AntiAliasingBox";
             this.AntiAliasingBox.Size = new System.Drawing.Size(152, 27);
             this.AntiAliasingBox.TabIndex = 9;
@@ -797,7 +797,7 @@
             this.HBAOLabel.AutoSize = true;
             this.HBAOLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.HBAOLabel.ForeColor = System.Drawing.Color.Black;
-            this.HBAOLabel.Location = new System.Drawing.Point(5, 168);
+            this.HBAOLabel.Location = new System.Drawing.Point(10, 201);
             this.HBAOLabel.Name = "HBAOLabel";
             this.HBAOLabel.Size = new System.Drawing.Size(113, 19);
             this.HBAOLabel.TabIndex = 2;
@@ -810,7 +810,7 @@
             this.AntiAliasingLabel.AutoSize = true;
             this.AntiAliasingLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AntiAliasingLabel.ForeColor = System.Drawing.Color.Black;
-            this.AntiAliasingLabel.Location = new System.Drawing.Point(23, 102);
+            this.AntiAliasingLabel.Location = new System.Drawing.Point(28, 102);
             this.AntiAliasingLabel.Name = "AntiAliasingLabel";
             this.AntiAliasingLabel.Size = new System.Drawing.Size(95, 19);
             this.AntiAliasingLabel.TabIndex = 1;
@@ -876,7 +876,7 @@
             this.SkipIntroBox.Enabled = false;
             this.SkipIntroBox.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SkipIntroBox.ForeColor = System.Drawing.Color.Black;
-            this.SkipIntroBox.Location = new System.Drawing.Point(62, 170);
+            this.SkipIntroBox.Location = new System.Drawing.Point(67, 170);
             this.SkipIntroBox.Name = "SkipIntroBox";
             this.SkipIntroBox.Size = new System.Drawing.Size(214, 27);
             this.SkipIntroBox.TabIndex = 16;
@@ -891,7 +891,7 @@
             this.Dx11Box.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Dx11Box.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Dx11Box.ForeColor = System.Drawing.Color.Black;
-            this.Dx11Box.Location = new System.Drawing.Point(90, 137);
+            this.Dx11Box.Location = new System.Drawing.Point(95, 137);
             this.Dx11Box.Name = "Dx11Box";
             this.Dx11Box.Size = new System.Drawing.Size(186, 27);
             this.Dx11Box.TabIndex = 15;
@@ -928,7 +928,7 @@
             // FrameCapTextBox
             // 
             this.FrameCapTextBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.FrameCapTextBox.Location = new System.Drawing.Point(245, 104);
+            this.FrameCapTextBox.Location = new System.Drawing.Point(250, 104);
             this.FrameCapTextBox.Mask = "000";
             this.FrameCapTextBox.Name = "FrameCapTextBox";
             this.FrameCapTextBox.PromptChar = ' ';
@@ -959,7 +959,7 @@
             this.ResolutionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ResolutionBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ResolutionBox.FormattingEnabled = true;
-            this.ResolutionBox.Location = new System.Drawing.Point(124, 38);
+            this.ResolutionBox.Location = new System.Drawing.Point(129, 38);
             this.ResolutionBox.Name = "ResolutionBox";
             this.ResolutionBox.Size = new System.Drawing.Size(152, 27);
             this.ResolutionBox.TabIndex = 7;
@@ -974,7 +974,7 @@
             this.VsyncBox.Items.AddRange(new object[] {
             "Enabled",
             "Disabled"});
-            this.VsyncBox.Location = new System.Drawing.Point(124, 71);
+            this.VsyncBox.Location = new System.Drawing.Point(129, 71);
             this.VsyncBox.Name = "VsyncBox";
             this.VsyncBox.Size = new System.Drawing.Size(152, 27);
             this.VsyncBox.TabIndex = 9;
@@ -1031,7 +1031,7 @@
             this.VsyncLabel.AutoSize = true;
             this.VsyncLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.VsyncLabel.ForeColor = System.Drawing.Color.Black;
-            this.VsyncLabel.Location = new System.Drawing.Point(23, 74);
+            this.VsyncLabel.Location = new System.Drawing.Point(28, 74);
             this.VsyncLabel.Name = "VsyncLabel";
             this.VsyncLabel.Size = new System.Drawing.Size(95, 19);
             this.VsyncLabel.TabIndex = 3;
@@ -1043,7 +1043,7 @@
             this.FrameCapLabel.AutoSize = true;
             this.FrameCapLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FrameCapLabel.ForeColor = System.Drawing.Color.Black;
-            this.FrameCapLabel.Location = new System.Drawing.Point(122, 107);
+            this.FrameCapLabel.Location = new System.Drawing.Point(127, 107);
             this.FrameCapLabel.Name = "FrameCapLabel";
             this.FrameCapLabel.Size = new System.Drawing.Size(117, 19);
             this.FrameCapLabel.TabIndex = 2;
@@ -1057,7 +1057,7 @@
             this.ResolutionLabel.AutoSize = true;
             this.ResolutionLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ResolutionLabel.ForeColor = System.Drawing.Color.Black;
-            this.ResolutionLabel.Location = new System.Drawing.Point(37, 41);
+            this.ResolutionLabel.Location = new System.Drawing.Point(42, 41);
             this.ResolutionLabel.Name = "ResolutionLabel";
             this.ResolutionLabel.Size = new System.Drawing.Size(81, 19);
             this.ResolutionLabel.TabIndex = 1;
