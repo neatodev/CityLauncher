@@ -192,6 +192,16 @@ namespace CityLauncher
             {
                 Program.MainWindow.DOFBox.Checked = false;
                 Program.MainWindow.AdvancedColorBox.Text = "Advanced Color Settings ('Depth of Field' must be enabled to edit.)";
+                Program.MainWindow.DefaultColorButton.Enabled = false;
+                Program.MainWindow.NoirColorButton.Enabled = false;
+                Program.MainWindow.MutedColorButton.Enabled = false;
+                Program.MainWindow.LowContrastColorButton.Enabled = false;
+                Program.MainWindow.HighContrastColorButton.Enabled = false;
+                Program.MainWindow.VividColorButton.Enabled = false;
+                Program.MainWindow.SaturationTrackbar.Enabled = false;
+                Program.MainWindow.HighlightsTrackbar.Enabled = false;
+                Program.MainWindow.MidtonesTrackbar.Enabled = false;
+                Program.MainWindow.ShadowsTrackbar.Enabled = false;
             }
 
             // Motion Blur
