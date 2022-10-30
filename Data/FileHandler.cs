@@ -5,7 +5,6 @@ namespace CityLauncher
 {
     internal class FileHandler
     {
-
         private bool IntroFilesRenamed;
         private readonly string CustomDirectoryPath = Path.Combine(Directory.GetCurrentDirectory(), "Custom");
         private readonly string Startup = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\BmGame\\Movies\\Startup.swf");
@@ -22,6 +21,10 @@ namespace CityLauncher
         public FileInfo BmEngine = new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
         public FileInfo UserEngine = new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserEngine.ini"));
         public FileInfo BmInput = new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini"));
+
+        private static readonly string ExeChecksumMD5_STEAM = "F18E985B0BE14210C9726C4A4EC8F5ED";
+        private static readonly string ExeChecksumMD5_EPIC = "96830C0F0026C06D548A9F57ADEE8E32";
+        private static readonly string ExeChecksumMD5_GOG = "6E8F9DE533738451F5166427CB378E0F";
 
         private static readonly Logger Nlog = LogManager.GetCurrentClassLogger();
 
@@ -189,10 +192,14 @@ namespace CityLauncher
 
         public static bool DetectGameExe()
         {
-            var GameExe = Path.Combine(Directory.GetCurrentDirectory(), "BatmanAC.exe");
+            string GameExe = Path.Combine(Directory.GetCurrentDirectory(), "BatmanAC.exe");
             if (File.Exists(GameExe))
             {
-                return true;
+                string ExeChecksum = SetMD5(GameExe);
+                if (ExeChecksum == ExeChecksumMD5_STEAM || ExeChecksum == ExeChecksumMD5_EPIC || ExeChecksum == ExeChecksumMD5_GOG)
+                {
+                    return true;
+                }
             }
             return false;
         }
@@ -249,6 +256,18 @@ namespace CityLauncher
                 File.Move(StartupNVRenamed, StartupNV);
                 IntroFilesRenamed = !IntroFilesRenamed;
                 Nlog.Info("RenameIntroVideoFiles - Enabling Startup Movies.");
+            }
+        }
+
+        private static string SetMD5(string ExeFile)
+        {
+            using (var md5 = System.Security.Cryptography.MD5.Create())
+            {
+                using (var stream = File.OpenRead(ExeFile))
+                {
+                    var hash = md5.ComputeHash(stream);
+                    return BitConverter.ToString(hash).Replace("-", "");
+                }
             }
         }
     }
