@@ -44,7 +44,14 @@
             Program.MainWindow.AntiAliasingBox.SelectedIndex = 3;
             Program.MainWindow.MVSSBox.SelectedIndex = 2;
             Program.MainWindow.PhysXBox.SelectedIndex = 1;
-            Program.MainWindow.PoolsizeBox.SelectedIndex = 0;
+            if (Program.MainWindow.PoolsizeBox.SelectedIndex != 2 && Program.MainWindow.TextureFixButton.Text == "ENABLE TEXTURE PACK FIX")
+            {
+                Program.MainWindow.PoolsizeBox.SelectedIndex = 0;
+            }
+            else
+            {
+                Program.MainWindow.PoolsizeBox.SelectedIndex = 2;
+            }
             Program.MainWindow.AnisoBox.SelectedIndex = 2;
             Program.MainWindow.TessellationBox.SelectedIndex = 2;
             Program.MainWindow.ShadowQualityBox.SelectedIndex = 2;
@@ -69,9 +76,13 @@
             Program.MainWindow.AntiAliasingBox.SelectedIndex = 4;
             Program.MainWindow.MVSSBox.SelectedIndex = 3;
             Program.MainWindow.PhysXBox.SelectedIndex = 2;
-            if (Program.MainWindow.PoolsizeBox.SelectedIndex != 1)
+            if (Program.MainWindow.PoolsizeBox.SelectedIndex != 2 && Program.MainWindow.TextureFixButton.Text == "ENABLE TEXTURE PACK FIX")
             {
                 Program.MainWindow.PoolsizeBox.SelectedIndex = 1;
+            }
+            else
+            {
+                Program.MainWindow.PoolsizeBox.SelectedIndex = 2;
             }
             Program.MainWindow.AnisoBox.SelectedIndex = 2;
             Program.MainWindow.TessellationBox.SelectedIndex = 4;
