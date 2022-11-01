@@ -61,22 +61,17 @@
     <value>17, 17</value>
   </metadata>
   <data name="PoolsizeBox.ToolTip" xml:space="preserve">
-    <value>Allocates GPU memory to texture streaming. Value should be lower than GPU ram. 
-2GB minimum is recommended for a smooth experience with the HD Texture Pack. 
-Higher values may improve texture streaming stability.
+    <value>Allocates GPU memory to texture streaming and should be set to a portion of the GPU ram.
+2GB minimum is recommended for a smooth experience with the HD Texture Pack.
 
-- 'Infinite'= Streaming limit will be removed. Useful for in-game texture dumping and debugging.</value>
+- 'Infinite'= Streaming limit will be removed. Useful for in-game texture dumping and debugging, but may cause crashes.</value>
   </data>
   <data name="PoolsizeLabel.ToolTip" xml:space="preserve">
-    <value>Allocates GPU memory to texture streaming. Value should be lower than GPU ram. 
-2GB minimum is recommended for a smooth experience with the HD Texture Pack. 
-Higher values may improve texture streaming stability.
+    <value>Allocates GPU memory to texture streaming and should be set to a portion of the GPU ram.
+2GB minimum is recommended for a smooth experience with the HD Texture Pack.
 
-- 'Infinite'= Streaming limit will be removed. Useful for in-game texture dumping and debugging.</value>
+- 'Infinite'= Streaming limit will be removed. Useful for in-game texture dumping and debugging, but may cause crashes.</value>
   </data>
-  <metadata name="BasicToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
