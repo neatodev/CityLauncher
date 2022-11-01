@@ -43,7 +43,6 @@
             Program.MainWindow.HbaoBox.SelectedIndex = 1;
             Program.MainWindow.AntiAliasingBox.SelectedIndex = 3;
             Program.MainWindow.MVSSBox.SelectedIndex = 2;
-            Program.MainWindow.PhysXBox.SelectedIndex = 1;
             Program.MainWindow.PoolsizeBox.SelectedIndex = 2;
             Program.MainWindow.AnisoBox.SelectedIndex = 2;
             Program.MainWindow.TessellationBox.SelectedIndex = 2;
@@ -69,7 +68,10 @@
             Program.MainWindow.AntiAliasingBox.SelectedIndex = 4;
             Program.MainWindow.MVSSBox.SelectedIndex = 3;
             Program.MainWindow.PhysXBox.SelectedIndex = 2;
-            Program.MainWindow.PoolsizeBox.SelectedIndex = 4;
+            if (Program.MainWindow.PoolsizeBox.SelectedIndex == 0)
+            {
+                Program.MainWindow.PoolsizeBox.SelectedIndex = 1;
+            }
             Program.MainWindow.AnisoBox.SelectedIndex = 2;
             Program.MainWindow.TessellationBox.SelectedIndex = 4;
             Program.MainWindow.ShadowQualityBox.SelectedIndex = 2;
