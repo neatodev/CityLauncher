@@ -458,14 +458,6 @@ namespace CityLauncher
             Nlog.Info("WriteBmEngineAdvanced - Set MVSS Coverage to {0}", IniHandler.BmEngineData["SystemSettings"]["MultiViewSoftShadowDepthBiasScale"]);
 
             // Shadow Draw Distance
-            IniHandler.BmEngineData["SystemSettings"]["ShadowTexelsPerPixel"] = Program.MainWindow.ShadowDrawDistBox.SelectedIndex switch
-            {
-                1 => "1.500000",
-                2 => "2.000000",
-                3 => "4.000000",
-                _ => "1.000000",
-            };
-
             switch (Program.MainWindow.ShadowDrawDistBox.SelectedIndex)
             {
                 case 1:
@@ -513,7 +505,7 @@ namespace CityLauncher
                     break;
                 case 4:
                     IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "4096";
-                    IniHandler.BmEngineData["TextureStreaming"]["MemoryMargin"] = "32";
+                    IniHandler.BmEngineData["TextureStreaming"]["MemoryMargin"] = "64";
                     break;
                 case 5:
                     IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "0";
