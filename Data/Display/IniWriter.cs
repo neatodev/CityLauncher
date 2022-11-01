@@ -497,16 +497,34 @@ namespace CityLauncher
             Nlog.Info("WriteBmEngineAdvanced - Set PhysX to {0}", IniHandler.BmEngineData["Engine.Engine"]["PhysXLevel"]);
 
             // Poolsize
-            IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = Program.MainWindow.PoolsizeBox.SelectedIndex switch
+            switch (Program.MainWindow.PoolsizeBox.SelectedIndex)
             {
-                1 => "1024",
-                2 => "2048",
-                3 => "3072",
-                4 => "4096",
-                5 => "0",
-                _ => "512",
-            };
-            Nlog.Info("WriteBmEngineAdvanced - Set Poolsize to {0}", IniHandler.BmEngineData["TextureStreaming"]["PoolSize"]);
+                case 1:
+                    IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "1024";
+                    IniHandler.BmEngineData["TextureStreaming"]["MemoryMargin"] = "32";
+                    break;
+                case 2:
+                    IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "2048";
+                    IniHandler.BmEngineData["TextureStreaming"]["MemoryMargin"] = "32";
+                    break;
+                case 3:
+                    IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "3072";
+                    IniHandler.BmEngineData["TextureStreaming"]["MemoryMargin"] = "64";
+                    break;
+                case 4:
+                    IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "4096";
+                    IniHandler.BmEngineData["TextureStreaming"]["MemoryMargin"] = "32";
+                    break;
+                case 5:
+                    IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "0";
+                    IniHandler.BmEngineData["TextureStreaming"]["MemoryMargin"] = "64";
+                    break;
+                default:
+                    IniHandler.BmEngineData["TextureStreaming"]["PoolSize"] = "512";
+                    IniHandler.BmEngineData["TextureStreaming"]["MemoryMargin"] = "16";
+                    break;
+            }
+            Nlog.Info("WriteBmEngineAdvanced - Set Poolsize to {0}. Set MemoryMargin to {1}", IniHandler.BmEngineData["TextureStreaming"]["PoolSize"], IniHandler.BmEngineData["TextureStreaming"]["MemoryMargin"]);
 
             // Reflections
             if (Program.MainWindow.ReflectionBox.Checked)
