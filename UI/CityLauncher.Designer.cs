@@ -2161,7 +2161,7 @@
             this.AdvancedColorBox.Controls.Add(this.label12);
             this.AdvancedColorBox.Controls.Add(this.label9);
             this.AdvancedColorBox.ForeColor = System.Drawing.Color.Maroon;
-            this.AdvancedColorBox.Location = new System.Drawing.Point(3, 556);
+            this.AdvancedColorBox.Location = new System.Drawing.Point(3, 559);
             this.AdvancedColorBox.Name = "AdvancedColorBox";
             this.AdvancedColorBox.Size = new System.Drawing.Size(684, 421);
             this.AdvancedColorBox.TabIndex = 165;
@@ -2414,7 +2414,7 @@
             this.groupBox4.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox4.Location = new System.Drawing.Point(3, 6);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(684, 542);
+            this.groupBox4.Size = new System.Drawing.Size(684, 539);
             this.groupBox4.TabIndex = 181;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "MAIN";
@@ -2425,11 +2425,13 @@
             this.CatwomanCheckbox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CatwomanCheckbox.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CatwomanCheckbox.ForeColor = System.Drawing.Color.Black;
-            this.CatwomanCheckbox.Location = new System.Drawing.Point(102, 202);
+            this.CatwomanCheckbox.Location = new System.Drawing.Point(102, 225);
             this.CatwomanCheckbox.Name = "CatwomanCheckbox";
             this.CatwomanCheckbox.Size = new System.Drawing.Size(212, 30);
             this.CatwomanCheckbox.TabIndex = 180;
             this.CatwomanCheckbox.Text = "Catwoman Story DLC";
+            this.BasicToolTip.SetToolTip(this.CatwomanCheckbox, "Tooltip: Disables Catwoman\'s story missions during the campaign. \r\nCatwoman\'s cha" +
+        "llenge maps will still be playable.\r\n\r\nThe change will instantly be applied.");
             this.CatwomanCheckbox.UseVisualStyleBackColor = true;
             this.CatwomanCheckbox.Click += new System.EventHandler(this.CatwomanCheckbox_Click);
             // 
@@ -2439,7 +2441,7 @@
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.checkBox1.ForeColor = System.Drawing.Color.Black;
-            this.checkBox1.Location = new System.Drawing.Point(57, 227);
+            this.checkBox1.Location = new System.Drawing.Point(409, 225);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(257, 30);
             this.checkBox1.TabIndex = 179;
@@ -2530,7 +2532,7 @@
             this.MouseSensitivityValueLabel.AutoSize = true;
             this.MouseSensitivityValueLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MouseSensitivityValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(628, 406);
+            this.MouseSensitivityValueLabel.Location = new System.Drawing.Point(628, 412);
             this.MouseSensitivityValueLabel.Name = "MouseSensitivityValueLabel";
             this.MouseSensitivityValueLabel.Size = new System.Drawing.Size(30, 23);
             this.MouseSensitivityValueLabel.TabIndex = 155;
@@ -2555,7 +2557,7 @@
             this.MouseSensitivityLabel.AutoSize = true;
             this.MouseSensitivityLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MouseSensitivityLabel.ForeColor = System.Drawing.Color.Black;
-            this.MouseSensitivityLabel.Location = new System.Drawing.Point(20, 406);
+            this.MouseSensitivityLabel.Location = new System.Drawing.Point(20, 412);
             this.MouseSensitivityLabel.Name = "MouseSensitivityLabel";
             this.MouseSensitivityLabel.Size = new System.Drawing.Size(157, 23);
             this.MouseSensitivityLabel.TabIndex = 153;
@@ -2565,7 +2567,7 @@
             // 
             // CustomFoV1Trackbar
             // 
-            this.CustomFoV1Trackbar.Location = new System.Drawing.Point(6, 284);
+            this.CustomFoV1Trackbar.Location = new System.Drawing.Point(6, 290);
             this.CustomFoV1Trackbar.Maximum = 150;
             this.CustomFoV1Trackbar.Minimum = 75;
             this.CustomFoV1Trackbar.Name = "CustomFoV1Trackbar";
@@ -2576,7 +2578,7 @@
             // 
             // MouseSensitivityTrackbar
             // 
-            this.MouseSensitivityTrackbar.Location = new System.Drawing.Point(6, 432);
+            this.MouseSensitivityTrackbar.Location = new System.Drawing.Point(6, 438);
             this.MouseSensitivityTrackbar.Maximum = 100;
             this.MouseSensitivityTrackbar.Minimum = 1;
             this.MouseSensitivityTrackbar.Name = "MouseSensitivityTrackbar";
@@ -2606,7 +2608,7 @@
             this.CustomFoV2ValueLabel.AutoSize = true;
             this.CustomFoV2ValueLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CustomFoV2ValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(628, 332);
+            this.CustomFoV2ValueLabel.Location = new System.Drawing.Point(628, 338);
             this.CustomFoV2ValueLabel.Name = "CustomFoV2ValueLabel";
             this.CustomFoV2ValueLabel.Size = new System.Drawing.Size(30, 23);
             this.CustomFoV2ValueLabel.TabIndex = 163;
@@ -2631,7 +2633,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(20, 332);
+            this.label10.Location = new System.Drawing.Point(20, 338);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(171, 23);
             this.label10.TabIndex = 162;
@@ -2653,7 +2655,7 @@
             // 
             // CustomFoV2Trackbar
             // 
-            this.CustomFoV2Trackbar.Location = new System.Drawing.Point(6, 358);
+            this.CustomFoV2Trackbar.Location = new System.Drawing.Point(6, 364);
             this.CustomFoV2Trackbar.Maximum = 150;
             this.CustomFoV2Trackbar.Minimum = 75;
             this.CustomFoV2Trackbar.Name = "CustomFoV2Trackbar";
@@ -2793,7 +2795,7 @@
             this.CustomFoV1ValueLabel.BackColor = System.Drawing.SystemColors.Control;
             this.CustomFoV1ValueLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CustomFoV1ValueLabel.ForeColor = System.Drawing.Color.Black;
-            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(628, 258);
+            this.CustomFoV1ValueLabel.Location = new System.Drawing.Point(628, 264);
             this.CustomFoV1ValueLabel.Name = "CustomFoV1ValueLabel";
             this.CustomFoV1ValueLabel.Size = new System.Drawing.Size(30, 23);
             this.CustomFoV1ValueLabel.TabIndex = 156;
@@ -2821,7 +2823,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(20, 258);
+            this.label7.Location = new System.Drawing.Point(20, 264);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(171, 23);
             this.label7.TabIndex = 154;
@@ -2833,12 +2835,13 @@
             this.MouseSmoothingBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.MouseSmoothingBox.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MouseSmoothingBox.ForeColor = System.Drawing.Color.Black;
-            this.MouseSmoothingBox.Location = new System.Drawing.Point(126, 177);
+            this.MouseSmoothingBox.Location = new System.Drawing.Point(126, 187);
             this.MouseSmoothingBox.Name = "MouseSmoothingBox";
             this.MouseSmoothingBox.Size = new System.Drawing.Size(188, 30);
             this.MouseSmoothingBox.TabIndex = 149;
             this.MouseSmoothingBox.Text = "Mouse Smoothing";
             this.MouseSmoothingBox.UseVisualStyleBackColor = true;
+            this.MouseSmoothingBox.Click += new System.EventHandler(this.MouseSmoothingBox_Click);
             // 
             // CustomFoV1Button
             // 

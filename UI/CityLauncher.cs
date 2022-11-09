@@ -788,5 +788,10 @@ namespace CityLauncher
             Program.FileHandler.ToggleCatwomanDLC(this.CatwomanCheckbox.Checked);
 
         }
+
+        private void MouseSmoothingBox_Click(object sender, EventArgs e)
+        {
+            this.ControlSettingChanged = true;
+        }
     }
 }
