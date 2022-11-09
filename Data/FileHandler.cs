@@ -17,7 +17,7 @@ namespace CityLauncher
         public string UserEnginePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserEngine.ini");
         public string BmInputPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini");
         public string UserInputPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserInput.ini");
-
+        private string BmGamePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmGame.ini");
         public FileInfo BmEngine = new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
         public FileInfo UserEngine = new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\UserEngine.ini"));
         public FileInfo BmInput = new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini"));
@@ -34,6 +34,7 @@ namespace CityLauncher
             CheckConfigFilesExist();
             CheckCustomFilesExist();
             CheckIntroVideoFilesRenamed();
+            InitCatwomanDLC();
             Nlog.Info("Constructor - Successfully initialized FileHandler.");
             CheckLightingFix();
         }
@@ -233,6 +234,54 @@ namespace CityLauncher
                 Program.MainWindow.SkipIntroBox.Enabled = true;
                 Program.MainWindow.SkipIntroBox.Checked = true;
                 IntroFilesRenamed = true;
+            }
+        }
+
+        private void InitCatwomanDLC()
+        {
+            string[] BmGameLines = File.ReadAllLines(BmGamePath);
+            foreach (string line in BmGameLines)
+            {
+                if (line.Equals("DLCBundlesInstalled=Catwoman")) 
+                {
+                    Program.MainWindow.CatwomanCheckbox.Checked = true;
+                }
+            }
+        }
+
+        public void ToggleCatwomanDLC(bool ShouldActivate)
+        {
+            string[] BmGameLines = File.ReadAllLines(BmGamePath);
+            using (StreamWriter BmGameFile = new(BmGamePath))
+            {
+                if (ShouldActivate)
+                {
+                    foreach (string line in BmGameLines)
+                    {
+                        if (line.Contains("DLCBundlesInstalled=Catwoman"))
+                        {
+                            BmGameFile.WriteLine("DLCBundlesInstalled=Catwoman");
+                        } else
+                        {
+                            BmGameFile.WriteLine(line);
+                        }
+                    }
+                } 
+                else
+                {
+                    foreach (string line in BmGameLines)
+                    {
+                        if (line.Contains("DLCBundlesInstalled=Catwoman"))
+                        {
+                            BmGameFile.WriteLine("\\\\DLCBundlesInstalled=Catwoman");
+                        }
+                        else
+                        {
+                            BmGameFile.WriteLine(line);
+                        }
+                    }
+                }
+                BmGameFile.Close();
             }
         }
 

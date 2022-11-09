@@ -782,5 +782,11 @@ namespace CityLauncher
                 Process.Start(new ProcessStartInfo { FileName = @"https://web.archive.org/web/20221015040849/https://www.speedrun.com/arkhamcity/guide/xiqk2", UseShellExecute = true });
             }
         }
+
+        private void CatwomanCheckbox_Click(object sender, EventArgs e)
+        {
+            Program.FileHandler.ToggleCatwomanDLC(this.CatwomanCheckbox.Checked);
+
+        }
     }
 }
