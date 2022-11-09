@@ -12,6 +12,7 @@
 	  <SignAssembly>False</SignAssembly>
 	  <PublishReadyToRun>true</PublishReadyToRun>
 	  <StartupObject>CityLauncher.Program</StartupObject>
+	  <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

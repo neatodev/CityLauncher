@@ -2,6 +2,7 @@
 using IniParser;
 using IniParser.Model;
 using NLog;
+using System.Globalization;
 
 namespace CityLauncher
 {
@@ -117,8 +118,7 @@ namespace CityLauncher
 
         public int ColorIniToLauncher(string input)
         {
-            double inp = double.Parse(input);
-
+            double inp = double.Parse(input, CultureInfo.InvariantCulture);
             return (int)((inp / 0.04) - 125) * (-1);
         }
 
