@@ -23,7 +23,7 @@ A standalone, dependency free executable is also available.
 
 ## Preview
 
-![CityLauncher Preview](https://user-images.githubusercontent.com/49599979/199281990-35cc014b-7032-42e7-aae6-4f21cc46ecf7.png)
+![CityLauncher Preview](https://user-images.githubusercontent.com/49599979/200977596-67652c37-e733-4f17-a787-940ba28a324e.png)
 
 ## Download
 
