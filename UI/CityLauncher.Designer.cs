@@ -187,7 +187,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.CatwomanCheckbox = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
             this.DebugMenuButton = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
@@ -2378,7 +2377,6 @@
             // 
             this.groupBox4.AutoSize = true;
             this.groupBox4.Controls.Add(this.CatwomanCheckbox);
-            this.groupBox4.Controls.Add(this.checkBox1);
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Controls.Add(this.DebugMenuButton);
             this.groupBox4.Controls.Add(this.label16);
@@ -2425,7 +2423,7 @@
             this.CatwomanCheckbox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CatwomanCheckbox.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CatwomanCheckbox.ForeColor = System.Drawing.Color.Black;
-            this.CatwomanCheckbox.Location = new System.Drawing.Point(102, 225);
+            this.CatwomanCheckbox.Location = new System.Drawing.Point(102, 222);
             this.CatwomanCheckbox.Name = "CatwomanCheckbox";
             this.CatwomanCheckbox.Size = new System.Drawing.Size(212, 30);
             this.CatwomanCheckbox.TabIndex = 180;
@@ -2434,23 +2432,6 @@
         "llenge maps will still be playable.\r\n\r\nThe change will instantly be applied.");
             this.CatwomanCheckbox.UseVisualStyleBackColor = true;
             this.CatwomanCheckbox.Click += new System.EventHandler(this.CatwomanCheckbox_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.ForeColor = System.Drawing.Color.Black;
-            this.checkBox1.Location = new System.Drawing.Point(409, 225);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(257, 30);
-            this.checkBox1.TabIndex = 179;
-            this.checkBox1.Text = "Community Patch Support";
-            this.BasicToolTip.SetToolTip(this.checkBox1, "Only enable if you\'re using the \'Arkham City Community Patch\'. \r\nRIGHT CLICK to o" +
-        "pen the relevant Nexusmods page in your browser.");
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            this.checkBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.checkBox1_MouseDown);
             // 
             // label15
             // 
@@ -3332,7 +3313,6 @@
         public CheckBox TexturePlusCheckBox;
         public Button TextureFixButton;
         public ToolTip BasicToolTip;
-        public CheckBox checkBox1;
         public CheckBox CatwomanCheckbox;
     }
 }

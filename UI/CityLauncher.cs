@@ -750,23 +750,6 @@ namespace CityLauncher
             DisplaySettingChanged = true;
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked && DisplaySettingChanged)
-            {
-                MessageBox.Show("Only check this box if you're using the 'Arkham City Community Patch'.\nEnabling this option without the patch WILL CRASH YOUR GAME.", "Warning!", MessageBoxButtons.OK);
-            }
-            DisplaySettingChanged = true;
-        }
-
-        private void checkBox1_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-            {
-                Process.Start(new ProcessStartInfo { FileName = @"https://www.nexusmods.com/batmanarkhamcity/mods/1", UseShellExecute = true });
-            }
-        }
-
         private void SpeedRunButton_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
