@@ -11,7 +11,6 @@ This is a replacement application for the original BmLauncher.exe of the game. A
 - Automatic DirectX11 Lighting Bug Fix (No actions needed. It happens in the background!)
 - Customizable Field of View Hotkeys
 - Compatibility Fixes for [HD Texture Packs](https://steamcommunity.com/sharedfiles/filedetails/?id=1188257825)
-- Integrated support for the [Arkham City Community Patch](https://www.nexusmods.com/batmanarkhamcity/mods/1)
 - Extensive Logging Functionality (Powered by [NLog](https://github.com/NLog/NLog))
 - ... and more!
 
@@ -23,7 +22,7 @@ A standalone, dependency free executable is also available.
 
 ## Preview
 
-![CityLauncher Preview](https://user-images.githubusercontent.com/49599979/200977596-67652c37-e733-4f17-a787-940ba28a324e.png)
+![CityLauncher Preview](https://user-images.githubusercontent.com/49599979/201522680-351ff4fb-92b9-4ce5-8193-f30a68c36d06.png)
 
 ## Download
 
