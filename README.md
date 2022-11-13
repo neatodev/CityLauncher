@@ -7,7 +7,7 @@ This is a replacement application for the original BmLauncher.exe of the game. A
 - Very high customizability
 - Color settings (Including color palette presets)
 - Two pre-made color profiles for HDR injection
-- Keybind option for [Catwomans "Quickfire Disarm"](https://www.pcgamingwiki.com/wiki/Batman:_Arkham_City#Fix_for_Catwoman.27s_Quickfire_Disarm_key_missing_on_keyboard)
+- Keybind option for [Catwoman's "Quickfire Disarm"](https://www.pcgamingwiki.com/wiki/Batman:_Arkham_City#Fix_for_Catwoman.27s_Quickfire_Disarm_key_missing_on_keyboard)
 - Automatic DirectX11 Lighting Bug Fix (No actions needed. It happens in the background!)
 - Customizable Field of View Hotkeys
 - Compatibility Fixes for [HD Texture Packs](https://steamcommunity.com/sharedfiles/filedetails/?id=1188257825)
@@ -23,7 +23,7 @@ A standalone, dependency free executable is also available.
 
 ## Preview
 
-![CityLauncher Preview](https://user-images.githubusercontent.com/49599979/199281990-35cc014b-7032-42e7-aae6-4f21cc46ecf7.png)
+![CityLauncher Preview](https://user-images.githubusercontent.com/49599979/200977596-67652c37-e733-4f17-a787-940ba28a324e.png)
 
 ## Download
 
