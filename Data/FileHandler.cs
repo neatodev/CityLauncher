@@ -116,7 +116,7 @@ namespace CityLauncher
             if (File.Exists(UserInputPath))
             {
                 string[] UserLines = File.ReadAllLines(UserInputPath);
-                if (UserLines.Length < 111)
+                if (UserLines.Length < 110)
                 {
                     File.Delete(UserInputPath);
                     CreateConfigFile(UserInputPath, Resources.UserInput);
@@ -132,7 +132,7 @@ namespace CityLauncher
             {
                 BmInput.IsReadOnly = false;
                 string[] BMLines = File.ReadAllLines(BmInputPath);
-                if (BMLines.Length < 718)
+                if (BMLines.Length < 717)
                 {
                     File.Delete(BmInputPath);
                     CreateConfigFile(BmInputPath, Resources.BmInput);
