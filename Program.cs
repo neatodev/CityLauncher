@@ -41,6 +41,7 @@ namespace CityLauncher
             {
                 if (IsNewWindow)
                 {
+                    SetupCulture();
                     SetupLogger();
                     InitializeProgram();
                     Application.Run(MainWindow);
@@ -58,6 +59,11 @@ namespace CityLauncher
                     }
                 }
             }
+        }
+
+        private static void SetupCulture()
+        {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         }
 
         private static void InitializeProgram()

@@ -60,7 +60,7 @@
 		<Authors>Neato</Authors>
 		<FileVersion>1.0.0</FileVersion>
 		<AssemblyVersion>1.0</AssemblyVersion>
-		<Copyright>Mario Schweidler</Copyright>
+		<Copyright>https://github.com/neatodev</Copyright>
 		<WebPage>https://github.com/neatodev/CityLauncher</WebPage>
 		<AssemblyTitle>Batman: Arkham City - Advanced Launcher</AssemblyTitle>
 		<ApplicationIcon>Resources\icon2.ico</ApplicationIcon>
