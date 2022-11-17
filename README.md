@@ -57,6 +57,7 @@ Firstly, make sure you have **[`Wine-Staging`](https://wiki.winehq.org/Wine-Stag
 **Ubuntu/Debian/Fedora/PopOS/Linux Mint/etc.**:
 - Use [Lutris](https://lutris.net/) or [PlayOnLinux](https://www.playonlinux.com/). Make sure to install `Wine-Gecko` and `Wine-Mono` through either of these programs as well.
 - Install `Winetricks` if it does not exist already. Either via your package manager or [manually](https://github.com/Winetricks/winetricks).
+
 **SteamOS/Arch Linux\***: 
 - Simply run: `sudo pacman -Syu wine-staging wine-mono wine-gecko winetricks`
 
