@@ -47,9 +47,24 @@ For the *GOG* version, click the icon next to the PLAY button and select "Manage
 There seems to be an issue executing the program using Wine, as their .NET 6 implementation isn't complete yet and there are some bugs with Mono.
 To bypass these issues and run the launcher anyway, a small workaround is required.
 
-Firstly, make sure you have **[`Wine-Staging`](https://wiki.winehq.org/Wine-Staging)** installed,
+Firstly, make sure you have **[`Wine-Staging`](https://wiki.winehq.org/Wine-Staging)** installed.
 
-then run the listed Wine commands in the following order:
+### Install Wine-Staging
+
+**Debian/Ubuntu 64-Bit Setup**:
+- If you run 64-Bit Debian or Ubuntu, execute `sudo dpkg --add-architecture i386` before proceeding.
+
+**Ubuntu/Debian/Fedora/PopOS/Linux Mint/etc.**:
+- Use [Lutris](https://lutris.net/) or [PlayOnLinux](https://www.playonlinux.com/). Make sure to install `Wine-Gecko` and `Wine-Mono` through either of these programs as well.
+- Install `Winetricks` if it does not exist already. Either via your package manager or [manually](https://github.com/Winetricks/winetricks).
+**SteamOS/Arch Linux\***: 
+- Simply run: `sudo pacman -Syu wine-staging wine-mono wine-gecko winetricks`
+
+*SteamOS and Arch Linux can also use Lutris.
+
+### Configure Winetricks
+
+After installing Wine-Staging, run the following Winetricks commands in this exact order:
 
 `winetricks -q dotnet48 calibri impact`
 
