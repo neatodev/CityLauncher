@@ -98,12 +98,44 @@ namespace CityLauncher
             else if (e.KeyCode != Keys.Enter)
             {
                 KeyString = SanitizeInput(e.KeyCode.ToString());
+                switch (e.KeyCode)
+                {
+                    case Keys.NumPad0:
+                        KeyString = "Num 0";
+                        break;
+                    case Keys.NumPad1:
+                        KeyString = "Num 1";
+                        break;
+                    case Keys.NumPad2:
+                        KeyString = "Num 2";
+                        break;
+                    case Keys.NumPad3:
+                        KeyString = "Num 3";
+                        break;
+                    case Keys.NumPad4:
+                        KeyString = "Num 4";
+                        break;
+                    case Keys.NumPad5:
+                        KeyString = "Num 5";
+                        break;
+                    case Keys.NumPad6:
+                        KeyString = "Num 6";
+                        break;
+                    case Keys.NumPad7:
+                        KeyString = "Num 7";
+                        break;
+                    case Keys.NumPad8:
+                        KeyString = "Num 8";
+                        break;
+                    case Keys.NumPad9:
+                        KeyString = "Num 9";
+                        break;
+                }
             }
 
             KeybindValueLabel.Text = ModifierString + KeyString;
 
-            switch (e.KeyCode)
-            {
+            switch (e.KeyCode) { 
                 case Keys.Escape:
                     this.Close();
                     break;
