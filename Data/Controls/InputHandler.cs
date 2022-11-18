@@ -78,7 +78,9 @@ namespace CityLauncher
                 "Eight",
                 "Nine",
                 "Underscore",
-                "TAB"
+                "TAB", 
+                "LeftShift",
+                "LeftAlt"
             };
             return style;
         }
@@ -134,7 +136,9 @@ namespace CityLauncher
                 "8",
                 "9",
                 "-",
-                "Tab"
+                "Tab",
+                "Shift",
+                "Alt"
             };
             return style;
         }

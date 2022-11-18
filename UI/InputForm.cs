@@ -37,12 +37,23 @@ namespace CityLauncher
             if (e.Delta > 0)
             {
                 KeyString = "Mousewheel Up";
-                KeybindValueLabel.Text = ModifierString + KeyString;
             }
             else
             {
                 KeyString = "Mousewheel Down";
-                KeybindValueLabel.Text = ModifierString + KeyString;
+            }
+
+            if (ModifierString != "" && KeyString != "")
+            {
+                KeybindValueLabel.Text = ModifierString + " + " + KeyString;
+            }
+            else if (ModifierString != "" && KeyString == "")
+            {
+                KeybindValueLabel.Text = ModifierString;
+            }
+            else
+            {
+                KeybindValueLabel.Text = KeyString;
             }
         }
 
@@ -52,24 +63,32 @@ namespace CityLauncher
             {
                 case MouseButtons.Left:
                     KeyString = "Left Mouse";
-                    KeybindValueLabel.Text = ModifierString + KeyString;
                     break;
                 case MouseButtons.Right:
                     KeyString = "Right Mouse";
-                    KeybindValueLabel.Text = ModifierString + KeyString;
                     break;
                 case MouseButtons.Middle:
                     KeyString = "Middle Mouse";
-                    KeybindValueLabel.Text = ModifierString + KeyString;
                     break;
                 case MouseButtons.XButton1:
                     KeyString = "Mouse Thumb 1";
-                    KeybindValueLabel.Text = ModifierString + KeyString;
                     break;
                 case MouseButtons.XButton2:
                     KeyString = "Mouse Thumb 2";
-                    KeybindValueLabel.Text = ModifierString + KeyString;
                     break;
+            }
+
+            if (ModifierString != "" && KeyString != "")
+            {
+                KeybindValueLabel.Text = ModifierString + " + " + KeyString;
+            }
+            else if (ModifierString != "" && KeyString == "")
+            {
+                KeybindValueLabel.Text = ModifierString;
+            }
+            else
+            {
+                KeybindValueLabel.Text = KeyString;
             }
         }
 
@@ -82,18 +101,18 @@ namespace CityLauncher
 
             if (e.KeyCode is Keys.Shift or Keys.ShiftKey or Keys.LShiftKey)
             {
-                ModifierString = "Shift + ";
-                KeybindValueLabel.Text = ModifierString + KeyString;
+                ModifierString = "Shift";
+                KeybindValueLabel.Text = ModifierString + " + " + KeyString;
             }
             else if (e.KeyCode is Keys.Control or Keys.ControlKey or Keys.LControlKey)
             {
-                ModifierString = "Ctrl + ";
-                KeybindValueLabel.Text = ModifierString + KeyString;
+                ModifierString = "Ctrl";
+                KeybindValueLabel.Text = ModifierString + " + " + KeyString;
             }
             else if (e.KeyCode is Keys.Alt or Keys.Menu or Keys.LMenu)
             {
-                ModifierString = "Alt + ";
-                KeybindValueLabel.Text = ModifierString + KeyString;
+                ModifierString = "Alt";
+                KeybindValueLabel.Text = ModifierString + " + " + KeyString;
             }
             else if (e.KeyCode != Keys.Enter)
             {
@@ -133,14 +152,25 @@ namespace CityLauncher
                 }
             }
 
-            KeybindValueLabel.Text = ModifierString + KeyString;
+            if (ModifierString != "" && KeyString != "")
+            {
+                KeybindValueLabel.Text = ModifierString + " + " + KeyString;
+            } 
+            else if (ModifierString != "" && KeyString == "")
+            {
+                KeybindValueLabel.Text = ModifierString;
+            } 
+            else
+            {
+                KeybindValueLabel.Text = KeyString;
+            }
 
             switch (e.KeyCode) { 
                 case Keys.Escape:
                     this.Close();
                     break;
                 case Keys.Enter:
-                    if (KeyString.Length > 0)
+                    if (KeyString.Length > 0 || ModifierString != "")
                     {
                         Program.InputHandler.SetButton(Input, KeybindValueLabel.Text);
                         this.Close();
