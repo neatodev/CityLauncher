@@ -22,6 +22,7 @@ namespace CityLauncher
         /// </summary>
         public void GetResolutions()
         {
+            ResolutionList.Clear();
             List<string> TempList = new();
             DEVMODE vDevMode = new();
             int i = 0;
@@ -31,9 +32,16 @@ namespace CityLauncher
                 i++;
             }
 
-            int MaxLength = TempList.Max(x => x.Length);
-            IOrderedEnumerable<string> OrderedList = TempList.OrderBy(x => x.PadLeft(MaxLength, '0'));
-            ResolutionList = OrderedList.Distinct().ToList();
+            if (TempList.Count > 1)
+            {
+                int MaxLength = TempList.Max(x => x.Length);
+                IOrderedEnumerable<string> OrderedList = TempList.OrderBy(x => x.PadLeft(MaxLength, '0'));
+                ResolutionList = OrderedList.Distinct().ToList();
+            }
+            else
+            {
+                ResolutionList = TempList;
+            }
             Nlog.Debug("GetResolutions - found a total of {0} available resolutions.", ResolutionList.Count);
         }
 

@@ -24,6 +24,7 @@ namespace CityLauncher
             var ResX = IniHandler.BmEngineData["SystemSettings"]["ResX"];
             var ResY = IniHandler.BmEngineData["SystemSettings"]["ResY"];
             new Resolution().GetResolutions();
+            Program.MainWindow.ResolutionBox.Items.Clear();
             foreach (string Resolution in Resolution.ResolutionList)
             {
                 Program.MainWindow.ResolutionBox.Items.Add(Resolution);
