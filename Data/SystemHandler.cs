@@ -84,7 +84,7 @@ namespace CityLauncher
                     break;
                 }
             }
-            Nlog.Warn("SetGPUNameVideoController - Used fallback method to determine GPU as {0}. Could not correctly determine VRAM amount.", GPU);
+            Nlog.Warn("SetGPUNameVideoController - Used fallback method to determine GPU as {0}. Could not correctly determine VRAM amount. Your GPU drivers may be corrupted.", GPU);
             return GPU;
         }
 
@@ -105,6 +105,10 @@ namespace CityLauncher
                 return "(" + VRamValue.ToString() + Affix + ")";
             }
             catch (InvalidCastException)
+            {
+                return "";
+            }
+            catch (NullReferenceException)
             {
                 return "";
             }
