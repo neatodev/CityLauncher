@@ -74,7 +74,7 @@
 		<PackageLicenseExpression>CC BY-NC-SA 4.0</PackageLicenseExpression>
 		<DelaySign>False</DelaySign>
 		<Title>Batman: Arkham City Advanced Launcher</Title>
-		<Version>1.0.2.3</Version>
+		<Version>1.0.2.4</Version>
 	</PropertyGroup>
 
 </Project>
