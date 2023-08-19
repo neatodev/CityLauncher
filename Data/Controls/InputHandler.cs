@@ -145,9 +145,15 @@ namespace CityLauncher
 
         public void SetButton(Button Bt, string Text)
         {
+            string TxtName = Text;
+            if (TxtName.Contains("+"))
+            {
+                TxtName = TxtName.Substring(TxtName.IndexOf("+") + 1);
+                TxtName = TxtName.Trim();
+            }
             foreach (Button KeyButton in ButtonList)
             {
-                if (KeyButton.Text == Text)
+                if (KeyButton.Text == Text || KeyButton.Text.Equals(TxtName))
                 {
                     KeyButton.Text = "Unbound";
                     KeyButton.ForeColor = Color.Maroon;
@@ -159,6 +165,7 @@ namespace CityLauncher
                 if (Bt.Name == KeyButton.Name)
                 {
                     KeyButton.Text = Text;
+                    KeyButton.ForeColor = Color.Black;
                     break;
                 }
             }
