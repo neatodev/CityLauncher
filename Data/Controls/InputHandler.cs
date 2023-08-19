@@ -153,7 +153,13 @@ namespace CityLauncher
             }
             foreach (Button KeyButton in ButtonList)
             {
-                if (KeyButton.Text == Text || KeyButton.Text.Equals(TxtName))
+                string KeyButtonTrimmed = "";
+                if (KeyButton.Text.Contains("+"))
+                {
+                    KeyButtonTrimmed = KeyButton.Text.Substring(KeyButton.Text.IndexOf("+") + 1);
+                    KeyButtonTrimmed = KeyButtonTrimmed.Trim();
+                }
+                if (KeyButton.Text == Text || KeyButton.Text.Equals(TxtName) || KeyButtonTrimmed == Text)
                 {
                     KeyButton.Text = "Unbound";
                     KeyButton.ForeColor = Color.Maroon;
