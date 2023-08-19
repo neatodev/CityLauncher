@@ -776,5 +776,10 @@ namespace CityLauncher
         {
             this.ControlSettingChanged = true;
         }
+
+        private void FrameCapTextBox_TextChanged(object sender, EventArgs e)
+        {
+            this.DisplaySettingChanged = true;
+        }
     }
 }
