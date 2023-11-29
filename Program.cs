@@ -3,6 +3,7 @@ using NLog.Config;
 using NLog.Targets;
 using System.Diagnostics;
 using System.Globalization;
+using System.Media;
 using System.Runtime.InteropServices;
 
 namespace CityLauncher
@@ -34,12 +35,18 @@ namespace CityLauncher
         ///     @author Neato (https://steamcommunity.com/id/frofoo)
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             bool IsNewWindow = true;
             using (Mutex mtx = new(true, "{BD4C408D-EF15-4C98-B792-C30D089E19D1}", out IsNewWindow))
             {
-                if (IsNewWindow)
+                if (args.Contains("-nolauncher"))
+                {
+                    SetupCulture();
+                    SetupLogger();
+                    LauncherBypass();
+                }
+                else if (IsNewWindow)
                 {
                     SetupCulture();
                     SetupLogger();
@@ -108,5 +115,25 @@ namespace CityLauncher
             config.AddRule(LogLevel.Debug, LogLevel.Warn, logfile);
             LogManager.Configuration = config;
         }
-    }
+
+        private static void LauncherBypass()
+        {
+            Nlog.Info("LauncherBypass - Starting logs at {0} on {1}.", DateTime.Now.ToString("HH:mm:ss"), DateTime.Now.ToString("D", new CultureInfo("en-GB")));
+            using (Process LaunchGame = new())
+            {
+                if (FileHandler.DetectGameExe())
+                {
+                    LaunchGame.StartInfo.FileName = "BatmanAC.exe";
+                    LaunchGame.StartInfo.CreateNoWindow = true;
+                    LaunchGame.Start();
+                    Nlog.Info("LauncherBypass - Launching the game. Concluding logs at {0} on {1}.", DateTime.Now.ToString("HH:mm:ss"), DateTime.Now.ToString("D", new CultureInfo("en-GB")));
+                    Application.Exit();
+                }
+                else
+                {
+                    MessageBox.Show("Could not find 'BatmanAC.exe'.\nIs the Launcher in the correct folder?", "Error!", MessageBoxButtons.OK);
+                }
+            }
+        }
+}
 }
