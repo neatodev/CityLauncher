@@ -8,6 +8,7 @@ This is a replacement application for the original BmLauncher.exe of the game. A
 - Color settings (Including color palette presets)
 - Two pre-made color profiles for HDR injection
 - Keybind option for [Catwoman's "Quickfire Disarm"](https://www.pcgamingwiki.com/wiki/Batman:_Arkham_City#Fix_for_Catwoman.27s_Quickfire_Disarm_key_missing_on_keyboard)
+- Option to boot directly into the game, skipping launcher screen
 - Automatic DirectX11 Lighting Bug Fix (No actions needed. It happens in the background!)
 - Customizable Field of View Hotkeys
 - Compatibility Fixes for [HD Texture Packs](https://steamcommunity.com/sharedfiles/filedetails/?id=1188257825)
@@ -41,6 +42,18 @@ To find this folder for the *Steam* version, just right-click the game in Steam,
 To find it for the *EGS* version, right-click the game and select "Manage". Then click the folder icon in the "Installation" tab and navigate from there.
 
 For the *GOG* version, click the icon next to the PLAY button and select "Manage installation->Show folder" and navigate from there.
+
+## Usage
+
+You can just launch your game via Steam or EGS as you normally would, though in some cases you might need to unblock the BmLauncher application for it to work properly.
+
+Once you're happy with your settings, you can skip the launcher entirely by using the `-nolauncher` launch option.
+
+- On *EGS* you can add this under Settings->Arkham Asylum->Additional Command Line Arguments. 
+- On *GOG GALAXY* Customize->Manage Installation->Configure, enable Launch parameters, select Duplicate. It should be added under Additional executables.
+- If you use a shortcut in Windows, right click->Properties->Shortcut and add it at the end of Target.
+- Not necessary for *Steam*, which already has built-in launcher skipping for this game. 
+
 
 ## Guide for Linux users
 
