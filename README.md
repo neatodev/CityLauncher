@@ -49,7 +49,7 @@ You can just launch your game via Steam or EGS as you normally would, though in 
 
 Once you're happy with your settings, you can skip the launcher entirely by using the `-nolauncher` launch option.
 
-- On *EGS* you can add this under Settings->Arkham Asylum->Additional Command Line Arguments. 
+- On *EGS* you can add this under Settings->Arkham City->Additional Command Line Arguments. 
 - On *GOG GALAXY* Customize->Manage Installation->Configure, enable Launch parameters, select Duplicate. It should be added under Additional executables.
 - If you use a shortcut in Windows, right click->Properties->Shortcut and add it at the end of Target.
 - Not necessary for *Steam*, which already has built-in launcher skipping for this game. 
