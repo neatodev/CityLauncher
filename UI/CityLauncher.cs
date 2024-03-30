@@ -119,19 +119,19 @@ namespace CityLauncher
         private void MouseSensitivityTrackbar_Scroll(object sender, EventArgs e)
         {
             MouseSensitivityValueLabel.Text = MouseSensitivityTrackbar.Value.ToString();
-            DisplaySettingChanged = true;
+            ControlSettingChanged = true;
         }
 
         private void CustomFoV1Trackbar_Scroll(object sender, EventArgs e)
         {
             CustomFoV1ValueLabel.Text = CustomFoV1Trackbar.Value.ToString();
-            DisplaySettingChanged = true;
+            ControlSettingChanged = true;
         }
 
         private void CustomFoV2Trackbar_Scroll(object sender, EventArgs e)
         {
             CustomFoV2ValueLabel.Text = CustomFoV2Trackbar.Value.ToString();
-            DisplaySettingChanged = true;
+            ControlSettingChanged = true;
         }
 
         private void FwButton1_Click(object sender, EventArgs e)
