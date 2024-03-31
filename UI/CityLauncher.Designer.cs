@@ -872,7 +872,7 @@
             ResetDisplayButton.Size = new Size(152, 59);
             ResetDisplayButton.TabIndex = 4;
             ResetDisplayButton.Text = "RESET DISPLAY";
-            BasicToolTip.SetToolTip(ResetDisplayButton, "Resets display settings to their defaults.\r\nWill affect 'Community Patch Support' setting.");
+            BasicToolTip.SetToolTip(ResetDisplayButton, "Resets display settings to their defaults.\r\n");
             ResetDisplayButton.UseVisualStyleBackColor = true;
             ResetDisplayButton.Click += ResetDisplayButton_Click;
             // 
@@ -2339,7 +2339,7 @@
             CatwomanCheckbox.Size = new Size(212, 30);
             CatwomanCheckbox.TabIndex = 180;
             CatwomanCheckbox.Text = "Catwoman Story DLC";
-            BasicToolTip.SetToolTip(CatwomanCheckbox, "Enabling this setting will disable Catwoman's story missions during the campaign. \r\nCatwoman's challenge maps will still be playable.\r\n\r\nThe change will instantly be applied.");
+            BasicToolTip.SetToolTip(CatwomanCheckbox, "Disabling this setting will disable Catwoman's story missions during the campaign. \r\nCatwoman's challenge maps will still be playable.\r\n\r\nThe change will instantly be applied.");
             CatwomanCheckbox.UseVisualStyleBackColor = true;
             CatwomanCheckbox.Click += CatwomanCheckbox_Click;
             // 
