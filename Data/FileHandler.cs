@@ -196,11 +196,12 @@ namespace CityLauncher
             string GameExe = Path.Combine(Directory.GetCurrentDirectory(), "BatmanAC.exe");
             if (File.Exists(GameExe))
             {
-                string ExeChecksum = SetMD5(GameExe);
-                if (ExeChecksum == ExeChecksumMD5_STEAM || ExeChecksum == ExeChecksumMD5_EPIC || ExeChecksum == ExeChecksumMD5_GOG)
-                {
-                    return true;
-                }
+                //string ExeChecksum = SetMD5(GameExe);
+                //if (ExeChecksum == ExeChecksumMD5_STEAM || ExeChecksum == ExeChecksumMD5_EPIC || ExeChecksum == ExeChecksumMD5_GOG)
+                //{
+                //    return true;
+                //}
+                return true;
             }
             return false;
         }
