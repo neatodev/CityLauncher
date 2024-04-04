@@ -111,8 +111,8 @@ namespace CityLauncher
                 }
             }
 
-            config.AddRule(LogLevel.Debug, LogLevel.Warn, logconsole);
-            config.AddRule(LogLevel.Debug, LogLevel.Warn, logfile);
+            config.AddRule(LogLevel.Debug, LogLevel.Error, logconsole);
+            config.AddRule(LogLevel.Debug, LogLevel.Error, logfile);
             LogManager.Configuration = config;
         }
 

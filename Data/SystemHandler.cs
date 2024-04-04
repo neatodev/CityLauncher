@@ -21,38 +21,52 @@ namespace CityLauncher
 
         private string InitializeCPU()
         {
-            var CPU = new ManagementObjectSearcher("select * from Win32_Processor").Get().Cast<ManagementObject>().First();
-            uint Clockspeed = (uint)CPU["MaxClockSpeed"];
-            double GHzSpeed = (double)Clockspeed / 1000;
-            Nlog.Info("InitializeCPU - Recognized CPU as {0} with a base clock speed of {1}GHz.", CPU["Name"].ToString().Trim(' '), Math.Round(GHzSpeed, 1));
-            var CPUName = CPU["Name"].ToString().Trim(' ');
-            if (CPUName.ToUpper().Contains("GHZ"))
+            try
             {
-                return CPUName;
-            }
-            else
+                var CPU = new ManagementObjectSearcher("select * from Win32_Processor").Get().Cast<ManagementObject>().First();
+                uint Clockspeed = (uint)CPU["MaxClockSpeed"];
+                double GHzSpeed = (double)Clockspeed / 1000;
+                Nlog.Info("InitializeCPU - Recognized CPU as {0} with a base clock speed of {1}GHz.", CPU["Name"].ToString().Trim(' '), Math.Round(GHzSpeed, 1));
+                var CPUName = CPU["Name"].ToString().Trim(' ');
+                if (CPUName.ToUpper().Contains("GHZ"))
+                {
+                    return CPUName;
+                }
+                else
+                {
+                    return CPUName + " @ " + Math.Round(GHzSpeed, 1) + "GHz";
+                }
+            } catch (Exception e)
             {
-                return CPUName + " @ " + Math.Round(GHzSpeed, 1) + "GHz";
+                Nlog.Error("InitializeCPU - Could not read CPU information. Error: {0}", e);
+                return "";
             }
         }
 
         private string InitializeGPUValues()
         {
-            RegDirectory = Path.Combine(Registry.LocalMachine.ToString(), "SYSTEM\\ControlSet001\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}\\0000");
-            var key = Registry.LocalMachine.OpenSubKey(@"SYSTEM\\ControlSet001\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}\\0000");
-
-            if (key == null)
+            try
             {
-                RegDirectory = Path.Combine(Registry.LocalMachine.ToString(), "SYSTEM\\ControlSet001\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}\\0001");
-            }
+                RegDirectory = Path.Combine(Registry.LocalMachine.ToString(), "SYSTEM\\ControlSet001\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}\\0000");
+                var key = Registry.LocalMachine.OpenSubKey(@"SYSTEM\\ControlSet001\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}\\0000");
 
-            var VRam = ConvertVRamValue((object)Registry.GetValue(RegDirectory, "HardwareInformation.qwMemorySize", 0));
-            if (VRam.Trim() == "")
+                if (key == null)
+                {
+                    RegDirectory = Path.Combine(Registry.LocalMachine.ToString(), "SYSTEM\\ControlSet001\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}\\0001");
+                }
+
+                var VRam = ConvertVRamValue((object)Registry.GetValue(RegDirectory, "HardwareInformation.qwMemorySize", 0));
+                if (VRam.Trim() == "")
+                {
+                    return SetGPUNameVideoController();
+                }
+                Nlog.Info("InitializeGPUValues - Recognized GPU as {0} with a total VRAM amount of {1}.", (string)Registry.GetValue(RegDirectory, "DriverDesc", "Could not find GPU name."), ConvertVRamValue((object)Registry.GetValue(RegDirectory, "HardwareInformation.qwMemorySize", 0)));
+                return (string)Registry.GetValue(RegDirectory, "DriverDesc", "GPU not found.") + " " + ConvertVRamValue((object)Registry.GetValue(RegDirectory, "HardwareInformation.qwMemorySize", 0));
+            } catch (Exception e)
             {
-                return SetGPUNameVideoController();
+                Nlog.Error("InitializeGPUValues - Could not read Graphics Card information. Error: {0}", e);
+                return "";
             }
-            Nlog.Info("InitializeGPUValues - Recognized GPU as {0} with a total VRAM amount of {1}.", (string)Registry.GetValue(RegDirectory, "DriverDesc", "Could not find GPU name."), ConvertVRamValue((object)Registry.GetValue(RegDirectory, "HardwareInformation.qwMemorySize", 0)));
-            return (string)Registry.GetValue(RegDirectory, "DriverDesc", "GPU not found.") + " " + ConvertVRamValue((object)Registry.GetValue(RegDirectory, "HardwareInformation.qwMemorySize", 0));
 
         }
 
