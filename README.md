@@ -9,7 +9,7 @@ This is a replacement application for the original BmLauncher.exe of the game. A
 - Two pre-made color profiles for HDR injection
 - Keybind option for [Catwoman's "Quickfire Disarm"](https://www.pcgamingwiki.com/wiki/Batman:_Arkham_City#Fix_for_Catwoman.27s_Quickfire_Disarm_key_missing_on_keyboard)
 - Option to boot directly into the game, skipping launcher screen
-- Automatic DirectX11 Lighting Bug Fix (No actions needed. It happens in the background!)
+- Automatic DirectX11 Lighting Bug Fix (No action needed. It happens automatically!)
 - Customizable Field of View Hotkeys
 - Compatibility Fixes for [HD Texture Packs](https://steamcommunity.com/sharedfiles/filedetails/?id=1188257825)
 - Extensive Logging Functionality (Powered by [NLog](https://github.com/NLog/NLog))
@@ -35,66 +35,38 @@ If you like this application, please consider donating.
 
 ## Installation
 
-Drag the contents of the .zip file into the 'Batman Arkham City GOTY\Binaries\Win32' folder.
+Drag the contents of the .zip file into the **'Batman Arkham City GOTY\Binaries\Win32'** folder.
 
-To find this folder for the *Steam* version, just right-click the game in Steam, select Properties->Local Files->Browse Local Files and navigate from there.
+To find this folder for the ***Steam*** version, just right-click the game in Steam, select Properties->Local Files->Browse Local Files and navigate from there.
 
-To find it for the *EGS* version, right-click the game and select "Manage". Then click the folder icon in the "Installation" tab and navigate from there.
+To find it for the ***EGS*** version, right-click the game and select "Manage". Then click the folder icon in the "Installation" tab and navigate from there.
 
-For the *GOG* version, click the icon next to the PLAY button and select "Manage installation->Show folder" and navigate from there.
+For the ***GOG*** version, click the icon next to the PLAY button and select "Manage installation->Show folder" and navigate from there.
 
 ## Usage
 
-You can just launch your game via Steam or EGS as you normally would, though in some cases you might need to unblock the BmLauncher application for it to work properly.
+You can just launch your game via Steam, GOG or EGS as you normally would, though in some cases you might need to unblock the BmLauncher application for it to work properly.
 
-Once you're happy with your settings, you can skip the launcher entirely by using the `-nolauncher` launch option.
+Once you're happy with your settings, **you can skip the launcher entirely by using the `-nolauncher` launch option.**
 
-- On *EGS* you can add this under Settings->Arkham City->Additional Command Line Arguments. 
-- On *GOG GALAXY* Customize->Manage Installation->Configure, enable Launch parameters, select Duplicate. It should be added under Additional executables.
+- On ***EGS*** you can add this under Settings->Arkham City->Additional Command Line Arguments. 
+- On ***GOG GALAXY*** Customize->Manage Installation->Configure, enable Launch parameters, select Duplicate. It should be added under Additional executables.
 - If you use a shortcut in Windows, right click->Properties->Shortcut and add it at the end of Target.
-- Not necessary for *Steam*, which already has built-in launcher skipping for this game. 
+- ***Not necessary for Steam***, which already has built-in launcher skipping for this game. 
 
 
-## Guide for Linux users
+## Info for Linux users
 
-There seems to be an issue executing the program using Wine, as their .NET 6 implementation isn't complete yet and there are some bugs with Mono.
-To bypass these issues and run the launcher anyway, a small workaround is required.
+Install the **Calibri** and **Impact** fonts for your Wine environment so you don't encounter any display issues.
 
-Firstly, make sure you have **[`Wine-Staging`](https://wiki.winehq.org/Wine-Staging)** installed.
+`winetricks -q calibri impact`
 
-### Install Wine-Staging
-
-**Debian/Ubuntu 64-Bit Setup**:
-- If you run 64-Bit Debian or Ubuntu, execute `sudo dpkg --add-architecture i386` before proceeding.
-
-**Ubuntu/Debian/Fedora/PopOS/Linux Mint/etc.**:
-- Use [Lutris](https://lutris.net/) or [PlayOnLinux](https://www.playonlinux.com/). Make sure to install `Wine-Gecko` and `Wine-Mono` through either of these programs as well.
-- Install `Winetricks` if it does not exist already. Either via your package manager or [manually](https://github.com/Winetricks/winetricks).
-
-**Arch Linux\***: 
-- Simply run: `sudo pacman -Syu wine-staging wine-mono wine-gecko winetricks`
-
-*Arch Linux can also use Lutris.
-
-### Configure Winetricks
-
-After installing Wine-Staging, run the following Winetricks commands in this exact order:
-
-`winetricks -q dotnet48 calibri impact`
-
-`winetricks renderer=vulkan`
-
-`wine reg.exe COPY "HKLM\SYSTEM\CurrentControlSet" "HKLM\SYSTEM\ControlSet001" /s /f`
-
-Lastly, make sure you are using the **standalone, dependency free** executable.
 
 ## Bug Reports
 
 To file a bug report, or if you have suggestions for the Launcher in general, please file an [issue](https://github.com/neatodev/CityLauncher/issues/new). I read these regularly and should normally be able to respond within a day. Please also include the most recent citylauncher_report in the issue (if available). You can find the reports in the 'Batman Arkham City GOTY\Binaries\Win32\logs' folder.
 
-#### License
-
-[![CC BY 4.0][cc-by-shield]][cc-by]
+##### License[![CC BY 4.0][cc-by-shield]][cc-by]
 
 [cc-by]: https://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-shield]: https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png
