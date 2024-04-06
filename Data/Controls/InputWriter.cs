@@ -143,7 +143,14 @@ namespace CityLauncher
 
             foreach (Button KeyButton in Program.InputHandler.ButtonList)
             {
-                KeyButton.ForeColor = Color.Black;
+                if (!KeyButton.Text.Contains("Unbound"))
+                {
+                    KeyButton.ForeColor = Color.Black;
+                }
+                else
+                {
+                    KeyButton.ForeColor = Color.Maroon;
+                }
             }
         }
 
