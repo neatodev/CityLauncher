@@ -66,7 +66,7 @@ Install the **Calibri** and **Impact** fonts for your Wine environment so you do
 
 To file a bug report, or if you have suggestions for the Launcher in general, please file an [issue](https://github.com/neatodev/CityLauncher/issues/new). I read these regularly and should normally be able to respond within a day. Please also include the most recent citylauncher_report in the issue (if available). You can find the reports in the 'Batman Arkham City GOTY\Binaries\Win32\logs' folder.
 
-##### License [![CC BY 4.0][cc-by-shield]][cc-by]
+##### License: [![CC BY 4.0][cc-by-shield]][cc-by]
 
 [cc-by]: https://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-shield]: https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png
