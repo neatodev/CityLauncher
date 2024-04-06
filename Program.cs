@@ -2,8 +2,9 @@ using NLog;
 using NLog.Config;
 using NLog.Targets;
 using System.Diagnostics;
+using System.Drawing.Text;
 using System.Globalization;
-using System.Media;
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 namespace CityLauncher
@@ -76,7 +77,9 @@ namespace CityLauncher
         private static void InitializeProgram()
         {
             Nlog.Info("InitializeProgram - Starting logs at {0} on {1}.", DateTime.Now.ToString("HH:mm:ss"), DateTime.Now.ToString("D", new CultureInfo("en-GB")));
+            Nlog.Info("InitializeProgram - Current application version: {0}", Assembly.GetExecutingAssembly().GetName().Version.ToString());
             ApplicationConfiguration.Initialize();
+            InitFonts();
             MainWindow = new CityLauncher();
             FileHandler = new FileHandler();
             IniHandler = new IniHandler();
@@ -116,6 +119,41 @@ namespace CityLauncher
             LogManager.Configuration = config;
         }
 
+        private static void InitFonts()
+        {
+            bool calibri = IsFontInstalled("calibri");
+            bool impact = IsFontInstalled("impact");
+
+            if (!impact && !calibri)
+            {
+                Nlog.Warn("InitFonts - Impact and Calibri are not installed. May cause display issues.");
+                MessageBox.Show("The fonts \"Calibri\" and \"Impact\" are missing on your system. This may lead to display and scaling issues inside of the application.", "Missing fonts!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else if (!impact)
+            {
+                Nlog.Warn("InitFonts - Impact is not installed. May cause display issues.");
+                MessageBox.Show("The font \"Impact\" is missing on your system. This may lead to display and scaling issues inside of the application.", "Missing font!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else if (!calibri)
+            {
+                Nlog.Warn("InitFonts - Calibri is not installed. May cause display issues.");
+                MessageBox.Show("The font \"Calibri\" is missing on your system. This may lead to display and scaling issues inside of the application.", "Missing font!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            Nlog.Info("InitFonts - Necessary fonts installed.");
+        }
+
+        private static bool IsFontInstalled(string FontFamily)
+        {
+            using (Font f = new Font(FontFamily, 10f, FontStyle.Regular))
+            {
+                StringComparison comparison = StringComparison.InvariantCultureIgnoreCase;
+                return (string.Compare(FontFamily, f.Name, comparison) == 0);
+            }
+        }
+
         private static void LauncherBypass()
         {
             Nlog.Info("LauncherBypass - Starting logs at {0} on {1}.", DateTime.Now.ToString("HH:mm:ss"), DateTime.Now.ToString("D", new CultureInfo("en-GB")));
@@ -135,5 +173,5 @@ namespace CityLauncher
                 }
             }
         }
-}
+    }
 }
