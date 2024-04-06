@@ -1,6 +1,8 @@
 ﻿using Microsoft.Win32;
 using NLog;
+using System.Globalization;
 using System.Management;
+using System.Reflection;
 
 namespace CityLauncher
 {
@@ -39,7 +41,7 @@ namespace CityLauncher
             } catch (Exception e)
             {
                 Nlog.Error("InitializeCPU - Could not read CPU information. Error: {0}", e);
-                return "";
+                return DateTime.Now.ToString("dddd, MMMM dd, yyyy", new CultureInfo("en-GB"));
             }
         }
 
@@ -65,7 +67,7 @@ namespace CityLauncher
             } catch (Exception e)
             {
                 Nlog.Error("InitializeGPUValues - Could not read Graphics Card information. Error: {0}", e);
-                return "";
+                return "Application Version: " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
             }
 
         }
