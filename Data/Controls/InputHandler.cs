@@ -197,6 +197,7 @@ namespace CityLauncher
             {
                 KeyButton.ForeColor = Color.Black;
             }
+            Program.FileHandler.BmInput.IsReadOnly = true;
             new InputReader().InitControls();
             Nlog.Info("ResetControls - Sucessfully reset control scheme.");
         }
