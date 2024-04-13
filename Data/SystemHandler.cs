@@ -41,6 +41,7 @@ namespace CityLauncher
             } catch (Exception e)
             {
                 Nlog.Error("InitializeCPU - Could not read CPU information. Error: {0}", e);
+                Program.MainWindow.BasicToolTip.SetToolTip(Program.MainWindow.CPULabel, "Current date.");
                 return DateTime.Now.ToString("dddd, MMMM dd, yyyy", new CultureInfo("en-GB"));
             }
         }
@@ -67,6 +68,7 @@ namespace CityLauncher
             } catch (Exception e)
             {
                 Nlog.Error("InitializeGPUValues - Could not read Graphics Card information. Error: {0}", e);
+                Program.MainWindow.BasicToolTip.SetToolTip(Program.MainWindow.GPULabel, "Current version.");
                 return "Application Version: " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
             }
 
