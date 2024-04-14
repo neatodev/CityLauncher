@@ -49,8 +49,8 @@ You can just launch your game via Steam, GOG or EGS as you normally would, thoug
 
 Once you're happy with your settings, **you can skip the launcher entirely by using the `-nolauncher` launch option.**
 
-- On ***EGS*** you can add this under Settings->Arkham City->Additional Command Line Arguments. 
-- On ***GOG GALAXY*** Customize->Manage Installation->Configure, enable Launch parameters, select Duplicate. It should be added under Additional executables.
+- On ***EGS*** you can do this by going into Settings->Arkham City>Additional Command Line Arguments. 
+- On ***GOG GALAXY*** you have to select Customize->Manage Installation->Configure, enable Launch parameters, select Duplicate. It should be added under Additional executables.
 - If you use a shortcut in Windows, right click->Properties->Shortcut and add it at the end of Target.
 - ***Not necessary for Steam***, which already has built-in launcher skipping for this game. 
 
@@ -64,7 +64,7 @@ Install the **Calibri** and **Impact** fonts for your Wine environment so you do
 
 ## Bug Reports
 
-To file a bug report, or if you have suggestions for the Launcher in general, please file an [issue](https://github.com/neatodev/CityLauncher/issues/new). I read these regularly and should normally be able to respond within a day. Please also include the most recent citylauncher_report in the issue (if available). You can find the reports in the 'Batman Arkham City GOTY\Binaries\Win32\logs' folder.
+To file a bug report, or if you have suggestions for the Launcher in general, please file an [issue](https://github.com/neatodev/CityLauncher/issues/new). I read these regularly and should normally be able to respond within a reasonable amount of time. Please also include the most recent citylauncher_report in the issue (if available). You can find the reports in the 'Batman Arkham City GOTY\Binaries\Win32\logs' folder.
 
 ##### License: [![CC BY 4.0][cc-by-shield]][cc-by]
 
