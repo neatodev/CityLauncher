@@ -437,6 +437,10 @@ namespace CityLauncher
 
         private void DetailModeBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (TextureFixButton.Text == "DISABLE TEXTURE PACK FIX" || TexturePlusCheckBox.Checked)
+            {
+                DetailModeBox.SelectedIndex = 2;
+            }
             DisplaySettingChanged = true;
         }
 
@@ -735,6 +739,7 @@ namespace CityLauncher
                 Program.MainWindow.TextureFixButton.Text = "DISABLE TEXTURE PACK FIX";
                 Program.MainWindow.BasicToolTip.SetToolTip(Program.MainWindow.TextureFixButton, "Disable Texture Pack Fix. It is currently enabled.");
                 Program.MainWindow.TexturePlusCheckBox.Enabled = true;
+                Program.MainWindow.DetailModeBox.SelectedIndex = 2;
                 if (Program.MainWindow.PoolsizeBox.SelectedIndex < 2)
                 {
                     Program.MainWindow.PoolsizeBox.SelectedIndex = 2;
