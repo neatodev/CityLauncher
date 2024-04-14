@@ -417,7 +417,7 @@ namespace CityLauncher
 
         private void TempLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(new ProcessStartInfo { FileName = @"https://github.com/neatodev/CityLauncher", UseShellExecute = true });
+            Process.Start(new ProcessStartInfo { FileName = @"https://neatodev.github.io/CityLauncher/", UseShellExecute = true });
         }
 
         private void ResolutionBox_SelectedIndexChanged(object sender, EventArgs e)
