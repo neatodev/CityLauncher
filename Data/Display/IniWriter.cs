@@ -46,7 +46,7 @@ namespace CityLauncher
         {
             var TempDir = Path.Combine(Environment.CurrentDirectory, "Temp");
             BmEngineTemp = Path.Combine(TempDir, "BmEngineTemp.ini");
-            Directory.CreateDirectory(TempDir);
+            _ = Directory.CreateDirectory(TempDir);
             File.Create(BmEngineTemp).Dispose();
 
             DataParser.WriteFile(BmEngineTemp, IniHandler.BmEngineData);
