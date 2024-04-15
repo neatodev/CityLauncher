@@ -406,6 +406,7 @@
             // 
             // ReflectionBox
             // 
+            ReflectionBox.Anchor = AnchorStyles.Top;
             ReflectionBox.AutoSize = true;
             ReflectionBox.CheckAlign = ContentAlignment.MiddleRight;
             ReflectionBox.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -451,6 +452,7 @@
             // 
             // BloomBox
             // 
+            BloomBox.Anchor = AnchorStyles.Top;
             BloomBox.AutoSize = true;
             BloomBox.CheckAlign = ContentAlignment.MiddleRight;
             BloomBox.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
