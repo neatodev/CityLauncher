@@ -187,13 +187,13 @@
   <data name="BmInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\bminput.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="UserInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\userinput.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
   <data name="startup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\startup.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BmEngine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BmEngine.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="UserInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UserInput.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>

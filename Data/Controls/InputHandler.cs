@@ -161,8 +161,11 @@ namespace CityLauncher
                 }
                 if (KeyButton.Text == Text || KeyButton.Text.Equals(TxtName) || KeyButtonTrimmed == Text)
                 {
-                    KeyButton.Text = "Unbound";
-                    KeyButton.ForeColor = Color.Maroon;
+                    if (!Program.MainWindow.SpeedRunButton.Text.Contains(TxtName))
+                    {
+                        KeyButton.Text = "Unbound";
+                        KeyButton.ForeColor = Color.Maroon;
+                    }
                 }
             }
 
