@@ -10,6 +10,7 @@ namespace CityLauncher
     {
         private bool DisplaySetting = false;
         private bool ControlSetting = false;
+        private bool FirstSpeedrun = true;
         private ImageTooltip ImgToolTip;
         public bool DisplaySettingChanged
         {
@@ -328,6 +329,16 @@ namespace CityLauncher
 
         private void SpeedRunButton_Click(object sender, EventArgs e)
         {
+            if (FirstSpeedrun)
+            {
+                DialogResult Result = MessageBox.Show("Assigning a key to the 'Speedrun' option may unbind existing keybinds you've already set up in preparation. Simply re-assign them, the 'Speedrun' option will stay unaffected.", "May affect existing keybinds", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (Result == DialogResult.OK)
+                {
+                    FirstSpeedrun = false;
+                    new InputForm(SpeedRunButton).ShowDialog();
+                }
+                return;
+            }
             new InputForm(SpeedRunButton).ShowDialog();
         }
 
