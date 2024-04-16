@@ -2610,7 +2610,7 @@
             CentreCameraLabel.Name = "CentreCameraLabel";
             CentreCameraLabel.Size = new Size(128, 23);
             CentreCameraLabel.TabIndex = 145;
-            CentreCameraLabel.Text = "Centre Camera";
+            CentreCameraLabel.Text = "Center Camera";
             BasicToolTip.SetToolTip(CentreCameraLabel, "Camera will centre on player character. Requires running while pressing hotkey to trigger. \r\n- Advanced users can repurpose 'centre_camera' file as a second Custom Command function.");
             // 
             // CustomCommandButton

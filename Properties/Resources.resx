@@ -145,9 +145,6 @@
   <data name="BmGame" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BmGame.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="BmEngine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BmEngine.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
   <data name="centre_camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\centre_camera.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
@@ -195,5 +192,8 @@
   </data>
   <data name="startup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\startup.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BmEngine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BmEngine.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>
