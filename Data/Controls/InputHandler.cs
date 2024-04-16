@@ -178,6 +178,11 @@ namespace CityLauncher
                     break;
                 }
             }
+
+            if (Bt.Text.Equals("Unbound"))
+            {
+                Bt.ForeColor = Color.Maroon;
+            }
         }
 
         public bool KeyIsBanned(KeyEventArgs e)
