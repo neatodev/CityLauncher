@@ -166,6 +166,15 @@ namespace CityLauncher
                         KeyButton.Text = "Unbound";
                         KeyButton.ForeColor = Color.Maroon;
                     }
+
+                    if (Bt.Equals(Program.MainWindow.ToggleHudButton) || Bt.Equals(Program.MainWindow.CentreCameraButton) || Bt.Equals(Program.MainWindow.ResetFoVButton)
+                        || Bt.Equals(Program.MainWindow.CustomCommandButton) || Bt.Equals(Program.MainWindow.OpenConsoleButton) || Bt.Equals(Program.MainWindow.DebugMenuButton)
+                        || Bt.Equals(Program.MainWindow.CustomFoV1Button) || Bt.Equals(Program.MainWindow.ResetFoVButton))
+                    {
+                        KeyButton.Text = "Unbound";
+                        KeyButton.ForeColor = Color.Maroon;
+                    }
+                    RemoveKeybindOverlap(KeyButton);
                 }
             }
 
@@ -182,6 +191,24 @@ namespace CityLauncher
             if (Bt.Text.Equals("Unbound"))
             {
                 Bt.ForeColor = Color.Maroon;
+            }
+        }
+        private void RemoveKeybindOverlap(Button bt)
+        {
+            Button[] ControlList = new Button[38];
+
+            for (int i = 0; i < ControlList.Length; i++)
+            {
+                ControlList[i] = ButtonList[i];
+            }
+
+            foreach (Button cbt in ControlList) 
+            {
+                if (cbt.Equals(bt))
+                {
+                    bt.Text = "Unbound";
+                    bt.ForeColor = Color.Maroon;
+                }
             }
         }
 
