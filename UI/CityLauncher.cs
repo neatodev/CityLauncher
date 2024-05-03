@@ -722,7 +722,7 @@ namespace CityLauncher
 
         private void StartGameButton_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left && FileHandler.DetectGameExe())
             {
                 this.StartGameButton.Image = (Image)Properties.Resources.Phase3;
             }
