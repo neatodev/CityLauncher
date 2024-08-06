@@ -717,7 +717,7 @@ namespace CityLauncher
 
         private void PayPalLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(new ProcessStartInfo { FileName = @"https://www.paypal.com/donate/?hosted_button_id=LG7YTKP4JYN5S", UseShellExecute = true });
+            Process.Start(new ProcessStartInfo { FileName = @"https://ko-fi.com/neatodev", UseShellExecute = true });
         }
 
         private void StartGameButton_MouseDown(object sender, MouseEventArgs e)
