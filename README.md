@@ -11,7 +11,7 @@ This is a replacement application for the original BmLauncher.exe of the game. A
 - Option to boot directly into the game, skipping launcher screen
 - Automatic DirectX11 Lighting Bug Fix (No action needed. It happens automatically!)
 - Customizable Field of View Hotkeys
-- Compatibility Fixes for [HD Texture Packs](https://steamcommunity.com/sharedfiles/filedetails/?id=1188257825)
+- Compatibility Fixes for [HD Texture Packs](https://www.nexusmods.com/batmanarkhamcity/mods/407)
 - Extensive Logging Functionality (Powered by [NLog](https://github.com/NLog/NLog))
 - ... and more!
 
