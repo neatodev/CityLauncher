@@ -29,9 +29,31 @@ namespace CityLauncher
         public IniHandler()
         {
             BmEngineData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmEngine.ini"));
+            var BmInputLines = File.ReadAllLines(Program.FileHandler.BmInputPath);
+            Program.FileHandler.BmInput.IsReadOnly = false;
+            File.Delete(Program.FileHandler.BmInputPath);
+            Program.FileHandler.CreateConfigFile(Program.FileHandler.BmInputPath, Resources.BmInput);
             BmInputData = SetIniData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "WB Games\\Batman Arkham City GOTY\\BmGame\\Config\\BmInput.ini"));
+            InitBmInputValues(BmInputLines);
+            InputReader.InitBmInputLines();
             RemoveSections();
             Nlog.Info("Constructor - Successfully initialized IniHandler.");
+        }
+
+        private void InitBmInputValues(string[] BmInputLines)
+        {
+            for (int i = 0; i < 308; i++)
+            {
+                if (BmInputLines[i].Contains("MouseSensitivity="))
+                {
+                    BmInputData["Engine.PlayerInput"]["MouseSensitivity"] = BmInputLines[i].Substring(BmInputLines[i].IndexOf("=") + 1);
+                }
+
+                if (BmInputLines[i].Contains("bEnableMouseSmoothing="))
+                {
+                    BmInputData["Engine.PlayerInput"]["bEnableMouseSmoothing"] = BmInputLines[i].Substring(BmInputLines[i].IndexOf("=") + 1);
+                }
+            }
         }
 
         private IniData SetIniData(string Path)

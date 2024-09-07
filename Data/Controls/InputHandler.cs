@@ -7,6 +7,8 @@ namespace CityLauncher
     {
         public string UserInputFile;
 
+        public string BmInputFile;
+
         public string[] LinesConfigStyle;
 
         public string[] LinesHumanReadable;
@@ -22,6 +24,7 @@ namespace CityLauncher
         public InputHandler()
         {
             UserInputFile = Program.FileHandler.UserInputPath;
+            BmInputFile = Program.FileHandler.BmInputPath;
             LinesConfigStyle = FillConfigStyle();
             LinesHumanReadable = FillHumanReadable();
             Nlog.Info("Constructor - Successfully initialized InputHandler.");
@@ -226,14 +229,18 @@ namespace CityLauncher
 
         public void ResetControls()
         {
+            Program.FileHandler.BmInput.IsReadOnly = false;
             File.Delete(UserInputFile);
+            File.Delete(BmInputFile);
             Program.FileHandler.CreateConfigFile(UserInputFile, Resources.UserInput);
+            Program.FileHandler.CreateConfigFile(BmInputFile, Resources.BmInput);
             foreach (Button KeyButton in ButtonList)
             {
                 KeyButton.ForeColor = Color.Black;
             }
             Program.FileHandler.BmInput.IsReadOnly = true;
             new InputReader().InitControls();
+            InputReader.InitBmInputLines();
             Nlog.Info("ResetControls - Sucessfully reset control scheme.");
         }
     }

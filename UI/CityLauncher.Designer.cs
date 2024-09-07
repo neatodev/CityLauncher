@@ -843,7 +843,7 @@
             LanguageBox.DropDownStyle = ComboBoxStyle.DropDownList;
             LanguageBox.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             LanguageBox.FormattingEnabled = true;
-            LanguageBox.Items.AddRange(new object[] { "English", "Deutsch", "Español (México)", "Español (España)", "Français", "Italiano", "やまと", "한국인", "Polskie", "Português", "Русский" });
+            LanguageBox.Items.AddRange(new object[] { "English", "Deutsch", "Español (México)", "Español (España)", "Français", "Italiano", "日本語", "한국인", "Polskie", "Português", "Русский" });
             LanguageBox.Location = new Point(517, 104);
             LanguageBox.Name = "LanguageBox";
             LanguageBox.Size = new Size(152, 27);
