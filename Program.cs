@@ -39,19 +39,24 @@ namespace CityLauncher
         [STAThread]
         static void Main(string[] args)
         {
+            bool logs = true;
             bool IsNewWindow = true;
             using (Mutex mtx = new(true, "{BD4C408D-EF15-4C98-B792-C30D089E19D1}", out IsNewWindow))
             {
+                if (args.Contains("-nologs"))
+                {
+                    logs = false;
+                }
                 if (args.Contains("-nolauncher"))
                 {
                     SetupCulture();
-                    SetupLogger();
+                    SetupLogger(logs);
                     LauncherBypass();
                 }
                 else if (IsNewWindow)
                 {
                     SetupCulture();
-                    SetupLogger();
+                    SetupLogger(logs);
                     InitializeProgram();
                     Application.Run(MainWindow);
                 }
@@ -93,7 +98,7 @@ namespace CityLauncher
             new InputWriter().WriteBmInput();
         }
 
-        private static void SetupLogger()
+        private static void SetupLogger(bool logs)
         {
             LoggingConfiguration config = new();
             ConsoleTarget logconsole = new("logconsole");
@@ -102,10 +107,14 @@ namespace CityLauncher
                 Directory.CreateDirectory("logs");
             }
 
-            FileTarget logfile = new("logfile")
+            if (logs)
             {
-                FileName = Directory.GetCurrentDirectory() + "\\logs\\citylauncher_report__" + CurrentTime + ".log"
-            };
+                FileTarget logfile = new("logfile")
+                {
+                    FileName = Directory.GetCurrentDirectory() + "\\logs\\citylauncher_report__" + CurrentTime + ".log"
+                };
+                config.AddRule(LogLevel.Debug, LogLevel.Error, logfile);
+            }
             DirectoryInfo LogDirectory = new(Directory.GetCurrentDirectory() + "\\logs");
             DateTime OldestAllowedArchive = DateTime.Now - new TimeSpan(3, 0, 0, 0);
             foreach (FileInfo file in LogDirectory.GetFiles())
@@ -117,7 +126,6 @@ namespace CityLauncher
             }
 
             config.AddRule(LogLevel.Debug, LogLevel.Error, logconsole);
-            config.AddRule(LogLevel.Debug, LogLevel.Error, logfile);
             LogManager.Configuration = config;
         }
 
