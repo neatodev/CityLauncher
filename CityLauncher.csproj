@@ -58,6 +58,7 @@
 
 	<PropertyGroup>
 		<Authors>Neato</Authors>
+		<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
 		<FileVersion>1.0.3.5</FileVersion>
 		<AssemblyVersion>1.0.3.5</AssemblyVersion>
 		<Copyright>https://github.com/neatodev</Copyright>
