@@ -17,7 +17,7 @@ This is a replacement application for the original BmLauncher.exe of the game. A
 
 Supports the GOTY version on STEAM, GOG and EPIC GAMES.
 
-**This Application is built with .NET 6**. If you are using Windows 10 and above you shouldn't have any issues simply running the program. Some users might need to install [.NET 6 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) manually.
+**This Application is built with .NET 8**. If you are using Windows 10 and above you shouldn't have any issues simply running the program. Some users might need to install [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) manually.
 
 A standalone, dependency free executable is also available.
 
