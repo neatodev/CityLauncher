@@ -2,14 +2,14 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
     <Nullable>enable</Nullable>
 	  <PublishSingleFile>true</PublishSingleFile>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <PlatformTarget>x64</PlatformTarget>
 	  <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-	  <SignAssembly>False</SignAssembly>
+	  <SignAssembly>True</SignAssembly>
 	  <PublishReadyToRun>true</PublishReadyToRun>
 	  <StartupObject>CityLauncher.Program</StartupObject>
 	  <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
@@ -17,6 +17,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <Optimize>True</Optimize>
+    <DebugType>none</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -77,6 +78,11 @@
 		<Title>Batman: Arkham City Advanced Launcher</Title>
 		<Version>1.0.3.5</Version>
 		<AssemblyName>BmLauncher</AssemblyName>
+		<AnalysisLevel>6.0-all</AnalysisLevel>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <DebugType>none</DebugType>
 	</PropertyGroup>
 
 </Project>
