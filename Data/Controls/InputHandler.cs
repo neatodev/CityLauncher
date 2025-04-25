@@ -148,35 +148,22 @@ namespace CityLauncher
 
         public void SetButton(Button Bt, string Text)
         {
-            string TxtName = Text;
-            if (TxtName.Contains("+"))
-            {
-                TxtName = TxtName.Substring(TxtName.IndexOf("+") + 1);
-                TxtName = TxtName.Trim();
-            }
             foreach (Button KeyButton in ButtonList)
             {
-                string KeyButtonTrimmed = "";
-                if (KeyButton.Text.Contains("+"))
+                if (KeyButton.Text == Text)
                 {
-                    KeyButtonTrimmed = KeyButton.Text.Substring(KeyButton.Text.IndexOf("+") + 1);
-                    KeyButtonTrimmed = KeyButtonTrimmed.Trim();
-                }
-                if (KeyButton.Text == Text || KeyButton.Text.Equals(TxtName) || KeyButtonTrimmed == Text)
-                {
-                    if (!Program.MainWindow.SpeedRunButton.Text.Contains(TxtName))
+                    if (!Program.MainWindow.SpeedRunButton.Text.Contains(Text))
                     {
                         KeyButton.Text = "Unbound";
                         KeyButton.ForeColor = Color.Maroon;
                     }
 
-                    if (Bt.Equals(Program.MainWindow.ToggleHudButton) || Bt.Equals(Program.MainWindow.CentreCameraButton) || Bt.Equals(Program.MainWindow.ResetFoVButton)
-                        || Bt.Equals(Program.MainWindow.CustomCommandButton) || Bt.Equals(Program.MainWindow.OpenConsoleButton) || Bt.Equals(Program.MainWindow.DebugMenuButton)
-                        || Bt.Equals(Program.MainWindow.CustomFoV1Button) || Bt.Equals(Program.MainWindow.ResetFoVButton))
+                    if (IsSpecialButton(Bt))
                     {
                         KeyButton.Text = "Unbound";
                         KeyButton.ForeColor = Color.Maroon;
                     }
+
                     RemoveKeybindOverlap(KeyButton);
                 }
             }
@@ -196,6 +183,14 @@ namespace CityLauncher
                 Bt.ForeColor = Color.Maroon;
             }
         }
+        private bool IsSpecialButton(Button Bt)
+        {
+            return Bt.Equals(Program.MainWindow.ToggleHudButton) || Bt.Equals(Program.MainWindow.CentreCameraButton) ||
+                   Bt.Equals(Program.MainWindow.ResetFoVButton) || Bt.Equals(Program.MainWindow.CustomCommandButton) ||
+                   Bt.Equals(Program.MainWindow.OpenConsoleButton) || Bt.Equals(Program.MainWindow.DebugMenuButton) ||
+                   Bt.Equals(Program.MainWindow.CustomFoV1Button);
+        }
+
         private void RemoveKeybindOverlap(Button bt)
         {
             Button[] ControlList = new Button[38];
