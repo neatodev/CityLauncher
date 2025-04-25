@@ -87,6 +87,7 @@ namespace CityLauncher
             ApplicationConfiguration.Initialize();
             InitFonts();
             MainWindow = new CityLauncher();
+            MainWindow.Text = MainWindow.Text + " " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
             FileHandler = new FileHandler();
             IniHandler = new IniHandler();
             InputHandler = new InputHandler();
