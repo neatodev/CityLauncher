@@ -265,7 +265,7 @@ namespace CityLauncher
                 return Input;
             }
 
-            TimeSpan Time = new(0, 0, 0, 0, 3);
+            TimeSpan Time = new(0, 0, 0, 0, 30);
 
             switch (Modifier)
             {
@@ -303,7 +303,7 @@ namespace CityLauncher
             TypeKeyValue = TypeKeyValue.Substring(0, TypeKeyValue.IndexOf("\""));
             var NewTypeKey = "set console TypeKey " + TypeKeyValue;
 
-            TimeSpan Time = new(0, 0, 0, 0, 3);
+            TimeSpan Time = new(0, 0, 0, 0, 9);
 
             ConsoleLine = Regex.Replace(ConsoleLine, TrimmedLine, NewTypeKey, RegexOptions.Compiled, Time);
             return ConsoleLine;
@@ -316,7 +316,7 @@ namespace CityLauncher
             FoVSection = FoVSection.Substring(0, FoVSection.IndexOf("\""));
             var UpdatedValue = "fov " + FoVValue;
 
-            TimeSpan Time = new(0, 0, 0, 0, 3);
+            TimeSpan Time = new(0, 0, 0, 0, 9);
 
             ConfigLine = Regex.Replace(ConfigLine, FoVSection, UpdatedValue, RegexOptions.Compiled, Time);
             return ConfigLine;
