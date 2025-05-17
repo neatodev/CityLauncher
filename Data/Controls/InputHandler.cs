@@ -14,7 +14,7 @@ namespace CityLauncher
         public string[] LinesHumanReadable;
 
         private readonly string[] BannedKeys = { "OEM8", "OEM6", "OEM5", "LWIN", "RWIN", "OEM7", "SCROLL", "OEM1", "OEMTILDE", "OEM7", "NUMLOCK", "MULTIPLY",
-                                        "DIVIDE", "SUBTRACT", "ADD", "DECIMAL", "PAUSE", "CLEAR", "F1" };
+                                        "DIVIDE", "SUBTRACT", "ADD", "DECIMAL", "PAUSE", "CLEAR", "F1", "OEM2", "OEM3", "OEMSEMICOLON", "OEM4", "OEMPIPE" };
 
 
         public List<Button> ButtonList = new();
