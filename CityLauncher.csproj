@@ -60,8 +60,8 @@
 	<PropertyGroup>
 		<Authors>Neato</Authors>
 		<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
-		<FileVersion>1.1.0.1</FileVersion>
-		<AssemblyVersion>1.1.0.1</AssemblyVersion>
+		<FileVersion>1.1.0.2</FileVersion>
+		<AssemblyVersion>1.1.0.2</AssemblyVersion>
 		<Copyright>https://github.com/neatodev</Copyright>
 		<WebPage>https://github.com/neatodev/CityLauncher</WebPage>
 		<AssemblyTitle>Batman: Arkham City - Advanced Launcher</AssemblyTitle>
@@ -76,7 +76,7 @@
 		<PackageLicenseExpression>CC BY-NC-SA 4.0</PackageLicenseExpression>
 		<DelaySign>False</DelaySign>
 		<Title>Batman: Arkham City Advanced Launcher</Title>
-		<Version>1.1.0.0</Version>
+		<Version>1.1.0.2</Version>
 		<AssemblyName>BmLauncher</AssemblyName>
 		<AnalysisLevel>6.0-all</AnalysisLevel>
 	</PropertyGroup>
