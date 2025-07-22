@@ -18,7 +18,7 @@
             Program.MainWindow.HbaoBox.SelectedIndex = 1;
             Program.MainWindow.AntiAliasingBox.SelectedIndex = 3;
             Program.MainWindow.MVSSBox.SelectedIndex = 0;
-            Program.MainWindow.PhysXBox.SelectedIndex = 2;
+            Program.MainWindow.PhysXBox.SelectedIndex = 0;
             Program.MainWindow.PoolsizeBox.SelectedIndex = 0;
             Program.MainWindow.AnisoBox.SelectedIndex = 0;
             Program.MainWindow.TessellationBox.SelectedIndex = 3;
@@ -43,8 +43,15 @@
             Program.MainWindow.HbaoBox.SelectedIndex = 1;
             Program.MainWindow.AntiAliasingBox.SelectedIndex = 3;
             Program.MainWindow.MVSSBox.SelectedIndex = 2;
-            Program.MainWindow.PhysXBox.SelectedIndex = 1;
-            if (Program.MainWindow.PoolsizeBox.SelectedIndex != 2 && Program.MainWindow.TextureFixButton.Text == "ENABLE TEXTURE PACK FIX")
+            if (Program.MainWindow.GPULabel.Text.Contains("NVIDIA", StringComparison.OrdinalIgnoreCase)) 
+            {
+                Program.MainWindow.PhysXBox.SelectedIndex = 1;
+            }
+            else
+            {
+                Program.MainWindow.PhysXBox.SelectedIndex = 0;
+            }
+            if (Program.MainWindow.TextureFixButton.Text == "ENABLE TEXTURE PACK FIX")
             {
                 Program.MainWindow.PoolsizeBox.SelectedIndex = 0;
             }
@@ -75,8 +82,15 @@
             Program.MainWindow.HbaoBox.SelectedIndex = 1;
             Program.MainWindow.AntiAliasingBox.SelectedIndex = 4;
             Program.MainWindow.MVSSBox.SelectedIndex = 3;
-            Program.MainWindow.PhysXBox.SelectedIndex = 2;
-            if (Program.MainWindow.PoolsizeBox.SelectedIndex != 2 && Program.MainWindow.TextureFixButton.Text == "ENABLE TEXTURE PACK FIX")
+            if (Program.MainWindow.GPULabel.Text.Contains("NVIDIA", StringComparison.OrdinalIgnoreCase)) 
+            {
+                Program.MainWindow.PhysXBox.SelectedIndex = 2;
+            }
+            else
+            {
+                Program.MainWindow.PhysXBox.SelectedIndex = 0;
+            }
+            if (Program.MainWindow.PoolsizeBox.SelectedIndex < 2 && Program.MainWindow.TextureFixButton.Text == "ENABLE TEXTURE PACK FIX")
             {
                 Program.MainWindow.PoolsizeBox.SelectedIndex = 1;
             }
